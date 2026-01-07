@@ -1,0 +1,6 @@
+project: Authenticator.xcworkspace
+retain_public: true
+schemes:
+- Authenticator
+index_exclude:
+  - "Derived/**"
