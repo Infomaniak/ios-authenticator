@@ -106,6 +106,9 @@
 /* loco:695ea1ebe68cb2e4f30e8532 */
 "dataManagementTitle" = "Data management";
 
+/* loco:695e92767f6aec3380096f72 */
+"daysSupportAvailability" = "%1$d d. / %2$d";
+
 /* loco:695ea2cfbb1684fadb060f92 */
 "deletePreventionDescription" = "Deleting the app may compromise the security of your account.";
 
