@@ -1,0 +1,320 @@
+/*
+ * Loco ios export: Xcode Strings (legacy)
+ * Project: Authenticator
+ * Locale: fr, French
+ * Tagged: ios
+ * Exported by: Jordan Chapelle
+ * Exported at: Mon, 12 Jan 2026 16:49:05 +0100
+ */
+
+/* loco:695e825042bb2b44f30a2bc3 */
+"accountLoggedOut" = "Compte déconnecté";
+
+/* loco:695e9973dcf32d81c903b462 */
+"accountLossRiskBackupVerificationDescription" = "Assurez-vous qu’une autre méthode de validation en deux étapes est fonctionnelle.";
+
+/* loco:695e994ef4fe9f8bc30c6912 */
+"accountLossRiskLastDoubleAuthDescription" = "Si Authenticator est votre dernière méthode de validation en deux étapes, vous pourriez être bloqué à la prochaine connexion.";
+
+/* loco:695e990e6d0bdf05900b9af2 */
+"accountLossRiskTitle" = "Vous risquez de perdre l’accès à ce compte";
+
+/* loco:695e9e1d78dc6afe20011632 */
+"accountPasswordTitle" = "Mot de passe du compte";
+
+/* loco:695e810c94da2a73e50c2492 */
+"accountProtected" = "Compte protégé";
+
+/* loco:695ea133cd8f322c3a017e83 */
+"accountProtectionDisabledWarningDescription" = "Cet appareil est le seul à valider vos connexions à votre compte Infomaniak.\n\n Nous vous recommandons d’ajouter un autre appareil ou une autre méthode de vérification avant de continuer.";
+
+/* loco:695ea0f01f7c9c75e20e56d2 */
+"accountProtectionDisabledWarningTitle" = "Attention, votre compte ne sera plus protégé";
+
+/* loco:695ea44290fff826b9059d62 */
+"accountRemovedAuthenticatorDescription" = "Vous ne recevrez plus les connexions à approuver sur cet appareil pour le compte %@";
+
+/* loco:695ea3ef386e597d05019742 */
+"accountRemovedAuthenticatorTitle" = "Compte déconnecté d’Authenticator";
+
+/* loco:695ea3ad79be1c39d80a6a63 */
+"accountSecurityVerificationDescription" = "Si vous n’avez pas effectué cette action, nous vous recommandons de modifier votre mot de passe et de vérifier vos paramètres de sécurité.";
+
+/* loco:695ea3a3bb1684fadb060f95 */
+"accountSecurityVerificationTitle" = "Vérifiez la sécurité de votre compte";
+
+/* loco:695e819bcd0de60112063f13 */
+"accountSettingsButton" = "Paramètres du compte";
+
+/* loco:695e7a333d7bce20d10d4832 */
+"accountTitle-plural" = "Comptes";
+
+/* loco:695e8a847621dbcb890cd633 */
+"actionRequiredDescription" = "Une action est requise pour sécuriser l’un de vos comptes.";
+
+/* loco:695e816eb64a80c12b005d63 */
+"activityHistoryButton" = "Historique des activités";
+
+/* loco:695e9a949d8b472044005a42 */
+"appAccessIsSecure" = "L’accès à Authenticator\nest sécurisé";
+
+/* loco:695e8b3ae290381a34091ec2 */
+"authorizationCodeTitle" = "Votre code d’autorisation";
+
+/* loco:695e9faf7c7344111d0a3d84 */
+"autoCloseTitle" = "Cette information se ferme automatiquement dans 15 secondes.";
+
+/* loco:695e8b5c59029a2c62047642 */
+"callButton" = "Appeler";
+
+/* loco:695e9f9104a9f05d81021c22 */
+"cancelButton" = "Annuler";
+
+/* loco:695e9cac486dc755330119d2 */
+"changePasswordButton" = "Modifier le mot de passe";
+
+/* loco:695e9a051238ecd6bf060e82 */
+"checkMyMethodsButton" = "Vérifier mes méthodes";
+
+/* loco:695e99e8456bc82f0204b2e2 */
+"closeButton" = "Fermer";
+
+/* loco:695e9141f755e6a2a80eb5d2 */
+"closedSupportStatus" = "Fermé";
+
+/* loco:695e9a4312611437ac0f7042 */
+"confirmActionCompleteButton" = "J’ai fait le nécessaire";
+
+/* loco:695e9ae505e8ecd7cf0f5b22 */
+"confirmButton" = "Confirmer";
+
+/* loco:695e9b2a9d8b472044005a44 */
+"confirmLoginNotificationTitle" = "Confirmer la connexion";
+
+/* loco:695e8b0257b12526a4058922 */
+"contactSupportDescription" = "Joignez nos équipes par téléphone ou e-mail pour vous aider à résoudre votre problème.";
+
+/* loco:695e8ad99771c5be5c0070b2 */
+"contactSupportTitle" = "Contacter le support";
+
+/* loco:695e9f7b3b993ba71c01fbb5 */
+"continueButton" = "Continuer";
+
+/* loco:695e9fe4ffea9abfd80a1ae4 */
+"copyPassword" = "Copier le mot de passe";
+
+/* loco:695ea1ebe68cb2e4f30e8532 */
+"dataManagementTitle" = "Gestion des données";
+
+/* loco:695e92767f6aec3380096f72 */
+"daysSupportAvailability" = "%1$d j. / %2$d";
+
+/* loco:695ea2cfbb1684fadb060f92 */
+"deletePreventionDescription" = "Supprimer l’app peut compromettre la sécurité de votre compte.";
+
+/* loco:695ea2b7776ee93221014822 */
+"deletePreventionTitle" = "Besoin d’aide ?";
+
+/* loco:695e9aff3c59258bef0431a3 */
+"denyButton" = "Refuser";
+
+/* loco:695e978a96d09ec429013162 */
+"descriptionPlaceholder" = "Description";
+
+/* loco:695e9bdbee3a7d21340527d2 */
+"deviceLoginTitle" = "Appareil";
+
+/* loco:695ea16b39ee5b4bb80bd342 */
+"disconnectAccountDescription" = "Votre compte ne sera plus protégé par la validation en deux étapes et deviendra vulnérable aux accès non autorisés.";
+
+/* loco:695ea05c8d0943c57704f5d3 */
+"disconnectAccountOnThisDeviceDescription" = "Vous ne pourrez plus valider la connexion sur cet appareil avec Authenticator.";
+
+/* loco:695ea0448d0943c57704f5d2 */
+"disconnectAccountTitle" = "Déconnecter ce compte ";
+
+/* loco:695ea01fcd8f322c3a017e82 */
+"disconnectAccountWarningDescription" = "Vérifiez que vos méthodes de validation et de récupération soient toujours à jour pour ne pas perdre l’accès à votre compte.";
+
+/* loco:695ea0112b033801a6078ff3 */
+"disconnectAccountWarningTitle" = "Déconnecter ce compte peut affaiblir sa sécurité";
+
+/* loco:695e81d0dcf344a547026d33 */
+"disconnectButton" = "Se déconnecter";
+
+/* loco:695ea0798d0943c57704f5d4 */
+"disconnectSuccess" = "Compte déconnecté";
+
+/* loco:695e7d009913b5c3930ed7a2 */
+"doneButton" = "Terminer";
+
+/* loco:695ea28bf0e7cc81470dd482 */
+"emailPlaceholder" = "E-mail";
+
+/* loco:695e76fb8f64df326a00c934 */
+"enableButton" = "Activer";
+
+/* loco:695ea25e8ea9fc514a04e622 */
+"enableNotifications" = "Activer les notifications";
+
+/* loco:695e8322b85b83d8780f97f2 */
+"errorLoginFailed" = "La connexion au compte a échoué.\nVeuillez réessayer ou contacter le support. (code erreur : %d)";
+
+/* loco:695e9d93cae4b614fd0d5a23 */
+"errorOccuredDescription" = "Impossible de terminer l’opération.\nRelancez la demande.";
+
+/* loco:695e9d72bc601c317401c9d4 */
+"errorOccuredTitle" = "Une erreur est survenue";
+
+/* loco:695e95bc3614499244057df2 */
+"estimatedWait" = "Attente estimée %@";
+
+/* loco:695ea205e68cb2e4f30e8534 */
+"feedbackTitle" = "Feedback";
+
+/* loco:695e7a578a61f47e160981c2 */
+"laterButton" = "Plus tard";
+
+/* loco:695e9bbb6734592dc60d0973 */
+"locationLoginTitle" = "Lieu";
+
+/* loco:695e87462daa8c005402c422 */
+"logInButton" = "Se connecter";
+
+/* loco:695e9b60eb4a5e9ff3045a82 */
+"loginAttemptQuery" = "Êtes-vous en train d’essayer\nde vous connecter ?";
+
+/* loco:695e9b86eb4a5e9ff3045a84 */
+"loginAuthorizationWarning" = "Confirmer cette connexion autorisera cet appareil à accéder à votre compte Infomaniak";
+
+/* loco:695e9c9194a0d83c6a006812 */
+"loginDeniedSuccessDescription" = "Vous avez refusé une tentative de connexion. Pour sécuriser votre compte, changez votre mot de passe.\n\nSi vous êtes à l’origine de cette demande, réessayez de vous connecter.";
+
+/* loco:695e9c5e8e68db1c11095922 */
+"loginDeniedSuccessTitle" = "Connexion refusée avec succès";
+
+/* loco:695e9d518d775ee8030366c2 */
+"loginRequestAlreadyProcessedDescription" = "Vous n’êtes pas à l’origine de cette action ? Vérifiez vos appareils actifs et déconnectez ceux que vous ne reconnaissez pas.";
+
+/* loco:695e9d299fefb63d66099183 */
+"loginRequestAlreadyProcessedTitle" = "Cette demande a déjà été traitée";
+
+/* loco:695e9d0626db6838400a8f43 */
+"loginRequestExpiredDescription" = "Le délai de validation est terminé.\nRelancez la demande.";
+
+/* loco:695e9ce7fb4842ffed0c4603 */
+"loginRequestExpiredTitle" = "Cette demande de connexion a expiré";
+
+/* loco:695e9ddb3b993ba71c01fbb2 */
+"noInternetDescription" = "Impossible de terminer l’opération.\nVérifiez vos paramètres et réessayez.";
+
+/* loco:695e9dbf2e191d3ca00bfb15 */
+"noInternetTitle" = "Pas de connexion Internet";
+
+/* loco:695ea387b5eb46654b038d54 */
+"notMeButton" = "Ce n’était pas moi";
+
+/* loco:695ea2390a6bee6dc70a2f02 */
+"notificationsDescription" = "Activez les notifications pour recevoir les informations relatives à la sécurité de vos comptes Infomaniak.";
+
+/* loco:695ea1d70c7a5aa3f90bdbe2 */
+"notificationsTitle" = "Notifications";
+
+/* loco:695e75b2da2ea35ca2034864 */
+"onBoardingFaceIdDescription" = "Activer Face ID permet de sécuriser l’accès à l’application.";
+
+/* loco:695e6cf1c7935dac5607ef72 */
+"onBoardingFaceIdTitle" = "Voulez-vous activer Face ID ?";
+
+/* loco:695e66d7da70ee75420a0566 */
+"onBoardingLoginDescription" = "Connectez-vous pour approuver vos connexions en toute sécurité et sécuriser vos accès.";
+
+/* loco:695e667cda70ee75420a0562 */
+"onBoardingLoginTitle" = "Sécurisez votre compte Infomaniak avec Authenticator";
+
+/* loco:695e8025b83bf418520281fc */
+"onBoardingMigrationDescription" = "Profitez d’une nouvelle interface modernisée, conçue pour votre sécurité.";
+
+/* loco:695e7fc7532760eb490d7e13 */
+"onBoardingMigrationTitle" = "kAuth fait peau neuve et devient Authenticator";
+
+/* loco:695e8078e4b913be7f089fa4 */
+"onBoardingSecuringAccount" = "Sécurisation du compte en cours…";
+
+/* loco:695e7c8684378769c70b7733 */
+"onBoardingSuccessDescription" = "Vous pouvez désormais valider vos connexions avec Authenticator.";
+
+/* loco:695e7c6a812646fa430f8222 */
+"onBoardingSuccessTitle" = "Tout est prêt";
+
+/* loco:695e91208384843ef3052bb2 */
+"openSupportStatus" = "Ouvert";
+
+/* loco:695e9ea5ffea9abfd80a1ae2 */
+"passwordAskingWarning" = "Infomaniak ne vous demandera jamais votre mot de passe de manière inattendue.\n\nAssurez-vous d’être à l’origine de cette action avant de continuer.";
+
+/* loco:695ea35f801b8bcab20b3bd2 */
+"passwordChangedDescription" = "Le mot de passe de connexion du compte Infomaniak %@ a été mis à jour.";
+
+/* loco:695ea3dabb1684fadb060f96 */
+"passwordChangedNotification" = "Mot de passe de connexion modifié";
+
+/* loco:695ea34f347ac04921054554 */
+"passwordChangedTitle" = "Mot de passe de connexion modifié";
+
+/* loco:695e8135925530d3a102c763 */
+"refreshPendingLoginsButton" = "Actualiser les connexions en attente";
+
+/* loco:695e999acdb8bbf8ca077d52 */
+"removeAccountDescription" = "Vous ne pourrez plus valider la connexion à ce compte avec Authenticator.";
+
+/* loco:695e99d414279d1eea090442 */
+"removeAccountSuccess" = "Compte retiré";
+
+/* loco:695e878a4ff7a8c5a8050c53 */
+"removeAccountTitle" = "Retirer le compte";
+
+/* loco:695e99b261ee1c8c900db0e2 */
+"removeButton" = "Retirer";
+
+/* loco:695e7d2aaf61b386540bf272 */
+"settingsTitle" = "Paramètres";
+
+/* loco:695e8157925530d3a102c765 */
+"showAccountPasswordButton" = "Afficher le mot de passe du compte";
+
+/* loco:695ea2fd347ac04921054552 */
+"startButton" = "Commencer";
+
+/* loco:695e97760f03fede890fbc42 */
+"subjectPlaceholder" = "Sujet";
+
+/* loco:695e973fa8c67b89040bbbc2 */
+"submitTicketDescription" = "Afin que nous puissions vous aider efficacement, merci de nous transmettre le maximum de détails concernant votre problème.";
+
+/* loco:695e8b7f9264ac7b900409d2 */
+"submitTicketTitle" = "Envoyer un ticket";
+
+/* loco:695e97c480cab9ddd40df272 */
+"supportResponseDelay" = "Nous répondrons dans les prochaines 24h ouvrées.";
+
+/* loco:695e981795a53b5f09055eb2 */
+"ticketSentSuccessDescription" = "Nous mettons tout en oeuvre afin qu’un de nos agents vous apporte une réponse dans les plus brefs délais.";
+
+/* loco:695e97f63a155d22d007d2f4 */
+"ticketSentSuccessTitle" = "Votre ticket a bien été envoyé à nos équipes !";
+
+/* loco:695ea3342372447ed50ee242 */
+"understandConfirmButton" = "J’ai compris";
+
+/* loco:695ea1be1f7c9c75e20e56d4 */
+"unlockingWithFaceId" = "Déverrouiller avec Face ID";
+
+/* loco:695ea02fac23a6f91c072a74 */
+"verifySecurityButton" = "Vérifier ma sécurité";
+
+/* loco:695e8b943eee444fde041612 */
+"viewGuidesButton" = "Consulter les guides";
+
+/* loco:695e9ba3ae7a65d0a10aba73 */
+"whenLoginTitle" = "Quand";
