@@ -58,6 +58,9 @@
 /* loco:695e9a949d8b472044005a42 */
 "appAccessIsSecure" = "L’accès à Authenticator\nest sécurisé";
 
+/* loco:696e4c9fa6eb6338a90e5f72 */
+"appSecurityDescription" = "Protégez l’accès à votre application en activant le verrouillage de votre téléphone.";
+
 /* loco:695e8b3ae290381a34091ec2 */
 "authorizationCodeTitle" = "Votre code d’autorisation";
 
