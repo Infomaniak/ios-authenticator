@@ -16,25 +16,13 @@
  along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-import AuthenticatorCoreUI
 import SwiftUI
 
-public struct SettingsView: View {
-    public init() {}
-
-    public var body: some View {
-        NavigationStack {
-            List {
-                Section {
-                    ToggleAppLockSettingsView()
-                }
-            }
-            .authListStyle()
-            .navigationTitle("Infomaniak authenticator")
-        }
+extension List {
+    public func authListStyle() -> some View {
+        self
+            .listStyle(.insetGrouped)
+            .scrollContentBackground(.hidden)
+            .appBackground()
     }
-}
-
-#Preview {
-    SettingsView()
 }

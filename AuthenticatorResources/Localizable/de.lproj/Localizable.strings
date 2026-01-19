@@ -58,6 +58,9 @@
 /* loco:695e9a949d8b472044005a42 */
 "appAccessIsSecure" = "Der Zugriff auf Authenticator ist sicher";
 
+/* loco:696e4c9fa6eb6338a90e5f72 */
+"appSecurityDescription" = "Schützen Sie den Zugriff auf Ihre App, indem Sie Ihre Telefonsperre aktivieren.";
+
 /* loco:695e8b3ae290381a34091ec2 */
 "authorizationCodeTitle" = "Ihr Autorisierungscode";
 

@@ -58,6 +58,9 @@
 /* loco:695e9a949d8b472044005a42 */
 "appAccessIsSecure" = "El acceso a Authenticator está seguro";
 
+/* loco:696e4c9fa6eb6338a90e5f72 */
+"appSecurityDescription" = "Protege el acceso a tu aplicación activando el bloqueo del teléfono.";
+
 /* loco:695e8b3ae290381a34091ec2 */
 "authorizationCodeTitle" = "Tu código de autorización";
 

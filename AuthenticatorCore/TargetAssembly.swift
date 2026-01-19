@@ -58,6 +58,9 @@ open class TargetAssembly {
             },
             Factory(type: InfomaniakLoginable.self) { _, _ in
                 InfomaniakLogin(config: loginConfig)
+            },
+            Factory(type: AppLockHelper.self) { _, _ in
+                AppLockHelper()
             }
         ]
     }
