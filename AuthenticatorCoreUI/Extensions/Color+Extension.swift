@@ -20,6 +20,7 @@ import AuthenticatorResources
 import Foundation
 import SwiftUI
 
+// swiftlint:disable nesting
 public extension Color {
     enum Token {
         typealias AuthColor = AuthenticatorResourcesAsset.Colors
@@ -50,6 +51,8 @@ public extension Color {
         }
     }
 }
+
+// swiftlint:enable nesting
 
 extension Color {
     init(light: AuthenticatorResourcesColors, dark: AuthenticatorResourcesColors) {
