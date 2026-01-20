@@ -21,4 +21,5 @@ import InfomaniakCore
 
 public extension UserDefaults.Keys {
     static let appLock = UserDefaults.Keys(rawValue: "appLock")
+    static let notificationsEnabled = UserDefaults.Keys(rawValue: "notificationsEnabled")
 }

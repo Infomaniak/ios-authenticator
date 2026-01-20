@@ -16,16 +16,22 @@
  along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
+import AuthenticatorCore
 import AuthenticatorCoreUI
+import AuthenticatorResources
 import SwiftUI
 
 public struct SettingsView: View {
-    public init() {}
+    @AppStorage(UserDefaults.shared.key(.notificationsEnabled)) private var isNotificationsEnabled = DefaultPreferences.notificationsEnabled
+
+        public init() {}
 
     public var body: some View {
         NavigationStack {
             List {
                 Section {
+                    Toggle(AuthenticatorResourcesStrings.enableNotifications, isOn: $isNotificationsEnabled)
+
                     ToggleAppLockSettingsView()
                 }
             }
