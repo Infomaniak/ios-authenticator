@@ -23,6 +23,8 @@ public enum Constants {
     public static let appName = Bundle.main.object(forInfoDictionaryKey: "CFBundleName") as! String? ?? "Authenticator"
 
     public static let matomoId = "40"
+
+    public static let supportNumber = "+41228203541"
 }
 
 public struct URLConstants: Sendable {
