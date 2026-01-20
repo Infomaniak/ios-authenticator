@@ -18,6 +18,7 @@
 
 import AuthenticatorCore
 import AuthenticatorCoreUI
+import AuthenticatorCore
 import AuthenticatorResources
 import SwiftUI
 
@@ -36,7 +37,7 @@ public struct SettingsView: View {
                 }
             }
             .authListStyle()
-            .navigationTitle("Infomaniak authenticator")
+            .navigationTitle(Constants.appName)
         }
     }
 }
