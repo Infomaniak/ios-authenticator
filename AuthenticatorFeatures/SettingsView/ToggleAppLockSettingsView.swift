@@ -25,19 +25,19 @@ import SwiftUI
 struct ToggleAppLockSettingsView: View {
     @AppStorage(UserDefaults.shared.key(.appLock)) private var isAppLockEnabled: Bool = DefaultPreferences.appLock
 
-    @State private var userChange = false
+    @State private var isProcessingUserAction = false
 
     var body: some View {
         Toggle(AuthenticatorResourcesStrings.unlockingWithFaceId, isOn: $isAppLockEnabled)
             .onChange(of: isAppLockEnabled) { newValue in
-                guard userChange != newValue else { return }
-                userChange = newValue
-                enableAppLock()
+                guard isProcessingUserAction != newValue else { return }
+                isProcessingUserAction = newValue
+                toggleAppLock()
             }
     }
 
-    private func enableAppLock() {
-        @LazyInjectService var appLockHelper: AppLockHelper
+    private func toggleAppLock() {
+        @InjectService var appLockHelper: AppLockHelper
 
         appLockHelper.setTime()
 
@@ -45,13 +45,16 @@ struct ToggleAppLockSettingsView: View {
             do {
                 if try await !appLockHelper
                     .evaluatePolicy(reason: AuthenticatorResourcesStrings.appSecurityDescription) {
-                    isAppLockEnabled.toggle()
-                    userChange.toggle()
+                    didFailToEnableAppLock()
                 }
             } catch {
-                isAppLockEnabled.toggle()
-                userChange.toggle()
+                didFailToEnableAppLock()
             }
         }
+    }
+
+    private func didFailToEnableAppLock() {
+        isAppLockEnabled.toggle()
+        isProcessingUserAction.toggle()
     }
 }

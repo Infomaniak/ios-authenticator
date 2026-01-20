@@ -18,14 +18,14 @@
 
 import AuthenticatorCore
 import AuthenticatorCoreUI
-import AuthenticatorCore
 import AuthenticatorResources
 import SwiftUI
 
 public struct SettingsView: View {
-    @AppStorage(UserDefaults.shared.key(.notificationsEnabled)) private var isNotificationsEnabled = DefaultPreferences.notificationsEnabled
+    @AppStorage(UserDefaults.shared.key(.notificationsEnabled)) private var isNotificationsEnabled = DefaultPreferences
+        .notificationsEnabled
 
-        public init() {}
+    public init() {}
 
     public var body: some View {
         NavigationStack {
