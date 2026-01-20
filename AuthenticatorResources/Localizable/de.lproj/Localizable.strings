@@ -4,7 +4,7 @@
  * Locale: de, German
  * Tagged: ios
  * Exported by: Jordan Chapelle
- * Exported at: Mon, 12 Jan 2026 16:49:06 +0100
+ * Exported at: Tue, 20 Jan 2026 09:37:17 +0100
  */
 
 /* loco:695e825042bb2b44f30a2bc3 */
@@ -306,6 +306,9 @@
 
 /* loco:695e97f63a155d22d007d2f4 */
 "ticketSentSuccessTitle" = "Ihr Ticket wurde an unsere Teams gesendet!";
+
+/* loco:695e9548833bf5c3c1037d42 */
+"timeSupportAvailability" = "%1$@ bis %2$@";
 
 /* loco:695ea3342372447ed50ee242 */
 "understandConfirmButton" = "Ich verstehe";
