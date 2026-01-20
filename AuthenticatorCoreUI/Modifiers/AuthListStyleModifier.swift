@@ -18,10 +18,9 @@
 
 import SwiftUI
 
-extension List {
-    public func authListStyle() -> some View {
-        self
-            .listStyle(.insetGrouped)
+public extension List {
+    func authListStyle() -> some View {
+        listStyle(.insetGrouped)
             .scrollContentBackground(.hidden)
             .appBackground()
     }
