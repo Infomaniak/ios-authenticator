@@ -63,6 +63,7 @@ let mainiOSAppFeatures = [
 
 let project = Project(
     name: Constants.projectName,
+    options: .options(developmentRegion: "en"),
     targets: mainiOSAppFeatures.asTargets + [
         .target(
             name: Constants.projectName,
