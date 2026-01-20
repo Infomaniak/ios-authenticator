@@ -26,6 +26,7 @@ let accountsView = Feature(name: "AccountsView")
 let settingsView = Feature(
     name: "SettingsView",
     additionalDependencies: [
+        TargetDependency.target(name: "\(Constants.projectName)Resources"),
         TargetDependency.external(name: "InfomaniakPrivacyManagement"),
         TargetDependency.external(name: "InfomaniakCoreUIResources")
     ]
