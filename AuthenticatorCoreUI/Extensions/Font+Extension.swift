@@ -18,10 +18,8 @@
 
 import SwiftUI
 
-public extension List {
-    func authListStyle() -> some View {
-        listStyle(.insetGrouped)
-            .scrollContentBackground(.hidden)
-            .appBackground()
+public extension Font {
+    enum Token {
+        public static let body = Font.body
     }
 }
