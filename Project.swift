@@ -120,6 +120,7 @@ let project = Project(
                 sources: "\(Constants.projectName)CoreUI/**",
                 dependencies: [
                     .target(name: "\(Constants.projectName)Core"),
+                    .target(name: "\(Constants.projectName)Resources"),
                     .external(name: "InfomaniakCoreUIResources")
                 ],
                 settings: .settings(base: Constants.baseSettings)),
