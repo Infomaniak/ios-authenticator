@@ -16,25 +16,10 @@
  along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-import Foundation
+import SwiftUI
 
-public enum Constants {
-    public static let bundleId = "com.infomaniak.authenticator"
-    public static let appName = Bundle.main.object(forInfoDictionaryKey: "CFBundleName") as! String? ?? "Authenticator"
-
-    public static let matomoId = ""
-}
-
-public struct URLConstants: Sendable {
-    public static let githubRepository = URLConstants(urlString: "https://github.com/Infomaniak/ios-authenticator")
-    public static let matomo = URLConstants(urlString: "https://analytics.infomaniak.com/matomo.php")
-
-    private var urlString: String
-
-    public var url: URL {
-        guard let url = URL(string: urlString) else {
-            fatalError("Invalid URL")
-        }
-        return url
+public extension Font {
+    enum Token {
+        public static let body = Font.body
     }
 }

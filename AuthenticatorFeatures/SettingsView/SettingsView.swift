@@ -27,9 +27,10 @@ import SwiftUI
 public struct SettingsView: View {
     @LazyInjectService private var matomo: MatomoUtils
 
-    @AppStorage(UserDefaults.shared.key(.notificationsEnabled)) private var isNotificationsEnabled = DefaultPreferences.notificationsEnabled
+    @AppStorage(UserDefaults.shared.key(.notificationsEnabled)) private var isNotificationsEnabled = DefaultPreferences
+        .notificationsEnabled
 
-        public init() {}
+    public init() {}
 
     public var body: some View {
         NavigationStack {
@@ -51,6 +52,12 @@ public struct SettingsView: View {
                             userDefaultKeySentry: UserDefaults.shared.key(.sentryAuthorized),
                             matomo: matomo
                         )
+                    }
+
+                    if let feedbackUrl = URL(string: "https://www.infomaniak.ch") { // TODO: Replace with localized feedback url
+                        Link(destination: feedbackUrl) {
+                            AuthenticatorTrailingLabel(\.feedbackTitle, iconKey: \.squareArrowDiagonalUp)
+                        }
                     }
                 }
             }
