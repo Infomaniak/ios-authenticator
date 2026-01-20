@@ -21,5 +21,6 @@ import SwiftUI
 public extension Font {
     enum Token {
         public static let body = Font.body
+        public static let subheadline = Font.subheadline
     }
 }
