@@ -54,6 +54,10 @@ public struct SettingsView: View {
                         )
                     }
 
+                    NavigationLink(AuthenticatorResourcesStrings.contactSupportTitle) {
+                        ContactSupportSettingsView(accounts: [])
+                    }
+
                     if let feedbackUrl = URL(string: "https://www.infomaniak.ch") { // TODO: Replace with localized feedback url
                         Link(destination: feedbackUrl) {
                             AuthenticatorTrailingLabel(\.feedbackTitle, iconKey: \.squareArrowDiagonalUp)
