@@ -74,9 +74,10 @@ let project = Project(
             sources: "\(Constants.projectName)/Sources/**",
             resources: [
                 "\(Constants.projectName)/Resources/LaunchScreen.storyboard",
-                "\(Constants.projectName)/Resources/Assets.xcassets", // Needed for AppIcon and LaunchScreen
+                "\(Constants.projectName)/Resources/Assets.xcassets", // Needed for LaunchScreen
                 "\(Constants.projectName)/Resources/PrivacyInfo.xcprivacy",
-                "\(Constants.projectName)/Resources/Localizable/**/InfoPlist.strings"
+                "\(Constants.projectName)/Resources/Localizable/**/InfoPlist.strings",
+                "\(Constants.projectName)/Resources/AppIcon.icon/**"
             ],
             entitlements: "\(Constants.projectName)/Resources/\(Constants.projectName).entitlements",
             scripts: [
