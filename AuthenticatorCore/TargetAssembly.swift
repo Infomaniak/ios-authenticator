@@ -59,6 +59,13 @@ open class TargetAssembly {
             Factory(type: InfomaniakLoginable.self) { _, _ in
                 InfomaniakLogin(config: loginConfig)
             },
+            Factory(type: MatomoUtils.self) { _, _ in
+                let matomo = MatomoUtils(siteId: Constants.matomoId, baseURL: URLConstants.matomo.url)
+                #if DEBUG
+                matomo.optOut(true)
+                #endif
+                return matomo
+            },
             Factory(type: AppLockHelper.self) { _, _ in
                 AppLockHelper()
             }
