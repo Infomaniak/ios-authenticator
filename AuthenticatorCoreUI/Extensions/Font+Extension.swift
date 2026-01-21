@@ -20,7 +20,13 @@ import SwiftUI
 
 public extension Font {
     enum Token {
+        public static let title2 = Font.title2
+
         public static let body = Font.body
+
+        public static let headline = Font.headline
         public static let subheadline = Font.subheadline
+
+        public static let callout = Font.callout
     }
 }

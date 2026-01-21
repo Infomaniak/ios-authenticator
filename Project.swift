@@ -21,7 +21,7 @@ import ProjectDescription
 import ProjectDescriptionHelpers
 
 let preloadingView = Feature(name: "PreloadingView")
-let accountsView = Feature(name: "AccountsView")
+let accountsView = Feature(name: "AccountsView", additionalDependencies: [TargetDependency.external(name: "NukeUI")])
 
 let settingsView = Feature(
     name: "SettingsView",
