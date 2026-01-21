@@ -4,7 +4,7 @@
  * Locale: fr, French
  * Tagged: ios
  * Exported by: Jordan Chapelle
- * Exported at: Tue, 20 Jan 2026 09:37:17 +0100
+ * Exported at: Thu, 22 Jan 2026 11:09:44 +0100
  */
 
 /* loco:695e825042bb2b44f30a2bc3 */
@@ -18,6 +18,12 @@
 
 /* loco:695e990e6d0bdf05900b9af2 */
 "accountLossRiskTitle" = "Vous risquez de perdre l’accès à ce compte";
+
+/* loco:6971f70a9cc4bfa2380b3456 */
+"accountPartiallyProtectedDescription" = "Mettez à jour vos paramètres de sécurité pour protéger votre compte.";
+
+/* loco:6971f124ef49edbd82004c02 */
+"accountPartiallyProtectedTitle" = "Compte partiellement protégé";
 
 /* loco:695e9e1d78dc6afe20011632 */
 "accountPasswordTitle" = "Mot de passe du compte";

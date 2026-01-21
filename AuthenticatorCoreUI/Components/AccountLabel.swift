@@ -34,6 +34,10 @@ public struct AccountLabel: View {
             LazyImage(url: account.profilePictureURL) { state in
                 if let image = state.image {
                     image
+                        .resizable()
+                        .scaledToFill()
+                        .frame(width: size.iconSize, height: size.iconSize)
+                        .clipShape(.circle)
                 } else {
                     InitialsView(
                         initials: account.initials,

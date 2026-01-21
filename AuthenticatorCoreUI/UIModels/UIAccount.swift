@@ -45,29 +45,50 @@ public struct UIAccount: Identifiable, Hashable, Sendable {
         return name.prefix(2).uppercased()
     }
 
-    public enum Status: Sendable {
+    public enum Status: Sendable, CaseIterable {
         case protected
-        case unprotected
+        case partiallyProtected
+        case loggedOut
 
         public var color: Color {
             switch self {
             case .protected:
                 .Token.Status.valid
-            case .unprotected:
+            case .partiallyProtected:
                 .Token.Status.warning
+            case .loggedOut:
+                .Token.Status.error
             }
-        }
-
-        public var backgroundColor: Color {
-            color.opacity(0.15)
         }
 
         public var icon: Image {
             switch self {
             case .protected:
                 AuthenticatorResourcesAsset.Images.shieldCheck.swiftUIImage
-            case .unprotected:
+            case .partiallyProtected:
                 AuthenticatorResourcesAsset.Images.shieldWarning.swiftUIImage
+            case .loggedOut:
+                AuthenticatorResourcesAsset.Images.circleCross.swiftUIImage
+            }
+        }
+
+        public var title: String {
+            switch self {
+            case .protected:
+                AuthenticatorResourcesStrings.accountProtected
+            case .partiallyProtected:
+                AuthenticatorResourcesStrings.accountPartiallyProtectedTitle
+            case .loggedOut:
+                AuthenticatorResourcesStrings.accountLoggedOut
+            }
+        }
+
+        public var description: String? {
+            switch self {
+            case .partiallyProtected:
+                AuthenticatorResourcesStrings.accountPartiallyProtectedDescription
+            default:
+                nil
             }
         }
     }

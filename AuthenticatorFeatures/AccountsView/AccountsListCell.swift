@@ -25,6 +25,7 @@ struct AccountsListCell: View {
 
     var body: some View {
         NavigationLink {
+            AccountDetailView(account: account)
         } label: {
             AccountCell(account: account)
         }
