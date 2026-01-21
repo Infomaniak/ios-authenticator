@@ -16,29 +16,20 @@
  along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-import AuthenticatorCore
 import AuthenticatorCoreUI
 import InfomaniakCoreSwiftUI
 import SwiftUI
 
-public struct AccountsView: View {
-    let accounts: [UIAccount]
+struct AccountsListCell: View {
+    let account: UIAccount
 
-    public init(accounts: [UIAccount]) {
-        self.accounts = accounts
-    }
-
-    public var body: some View {
-        NavigationStack {
-            List(accounts) { account in
-                AccountsListCell(account: account)
-            }
-            .authListStyle()
-            .navigationTitle(Constants.appName)
+    var body: some View {
+        NavigationLink {} label: {
+            AccountCell(account: account)
         }
     }
 }
 
 #Preview {
-    AccountsView(accounts: PreviewHelper.sampleUIAccounts)
+    AccountsListCell(account: PreviewHelper.sampleUIAccount)
 }

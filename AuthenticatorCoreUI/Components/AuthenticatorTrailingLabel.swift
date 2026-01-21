@@ -61,7 +61,7 @@ public struct AuthenticatorTrailingLabel: View {
 
             if let icon {
                 icon
-                    .iconSize(.large)
+                    .iconSize(.medium)
                     .foregroundStyle(iconColor ?? Color.accentColor)
             }
         }
