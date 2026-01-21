@@ -21,7 +21,7 @@ import ProjectDescription
 import ProjectDescriptionHelpers
 
 let preloadingView = Feature(name: "PreloadingView")
-let accountsView = Feature(name: "AccountsView")
+let accountsView = Feature(name: "AccountsView", additionalDependencies: [TargetDependency.external(name: "NukeUI")])
 
 let settingsView = Feature(
     name: "SettingsView",
@@ -125,7 +125,9 @@ let project = Project(
                     .target(name: "\(Constants.projectName)Resources"),
                     .external(name: "InfomaniakCoreUIResources"),
                     .external(name: "InfomaniakCoreSwiftUI"),
-                    .external(name: "DesignSystem")
+                    .external(name: "InfomaniakCore"),
+                    .external(name: "DesignSystem"),
+                    .external(name: "NukeUI")
                 ],
                 settings: .settings(base: Constants.baseSettings)),
         .target(name: "\(Constants.projectName)Resources",

@@ -33,6 +33,7 @@ public extension Color {
             public static let primary = Color(light: AuthColor.neutralBlue800, dark: AuthColor.neutralBlue50)
             public static let secondary = Color(light: AuthColor.neutralBlue500, dark: AuthColor.neutralBlue200)
             public static let tertiary = Color(light: AuthColor.neutralBlue400, dark: AuthColor.neutralBlue500)
+            public static let coloredBackground = Color(light: AuthColor.neutralBlue100, dark: AuthColor.neutralBlue800)
         }
 
         /// General background colors

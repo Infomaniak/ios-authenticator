@@ -33,7 +33,7 @@ public enum PreviewHelper {
             name: "Laura Snow",
             email: "laura.snow@ik.me",
             profilePictureURL: URL(
-                string: "https://media.4-paws.org/4/9/8/9/49896113ec1edb7553e53df93fec214bfba35e4d/VIER%20PFOTEN_2015-04-27_010-3369x2246-3246x2246-1920x1329.jpg"
+                string: "https://thispersondoesnotexist.com/"
             ),
             status: .protected
         ),
