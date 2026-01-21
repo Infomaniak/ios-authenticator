@@ -51,6 +51,10 @@ public struct AuthenticatorTrailingLabel: View {
         self.init(title: title, icon: icon, iconColor: iconColor)
     }
 
+    public init(accountStatus: UIAccount.Status) {
+        self.init(title: accountStatus.title, icon: accountStatus.icon, iconColor: accountStatus.color)
+    }
+
     public var body: some View {
         HStack(spacing: IKPadding.small) {
             Text(title)

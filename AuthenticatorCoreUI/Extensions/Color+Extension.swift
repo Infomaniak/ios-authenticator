@@ -40,6 +40,7 @@ public extension Color {
         public enum Surface {
             public static let primary = Color(light: AuthColor.neutralBlue100, dark: AuthColor.neutralBlue800)
             public static let secondary = Color(light: AuthColor.neutralBlue200, dark: AuthColor.neutralBlue700)
+            public static let tertiary = Color(light: AuthColor.neutralBlue300, dark: AuthColor.neutralBlue500)
         }
 
         /// Green, Orange, Red status colors
