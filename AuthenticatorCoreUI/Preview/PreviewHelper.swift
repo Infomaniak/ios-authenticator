@@ -23,7 +23,7 @@ public enum PreviewHelper {
         id: "1",
         name: "Laura Snow",
         email: "laura.snow@ik.me",
-        profilePictureURL: URL(string: ""),
+        profilePictureURL: URL(string: "https://media.4-paws.org/4/9/8/9/49896113ec1edb7553e53df93fec214bfba35e4d/VIER%20PFOTEN_2015-04-27_010-3369x2246-3246x2246-1920x1329.jpg"),
         status: .protected
     )
 
@@ -33,7 +33,7 @@ public enum PreviewHelper {
             name: "Laura Snow",
             email: "laura.snow@ik.me",
             profilePictureURL: URL(
-                string: "https://media.4-paws.org/1/2/6/0/1260b8bbeb9d82d5a6caaa078d5061bbf626f94e/VIER%20PFOTEN_2015-04-27_010-1927x1333-1920x1328.jpg"
+                string: "https://media.4-paws.org/4/9/8/9/49896113ec1edb7553e53df93fec214bfba35e4d/VIER%20PFOTEN_2015-04-27_010-3369x2246-3246x2246-1920x1329.jpg"
             ),
             status: .protected
         ),
