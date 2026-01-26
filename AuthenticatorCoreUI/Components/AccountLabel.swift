@@ -41,7 +41,7 @@ public struct AccountLabel: View {
                 } else {
                     InitialsView(
                         initials: account.initials,
-                        backgroundColor: Color.backgroundColor(from: account.hashValue),
+                        backgroundColor: Color.backgroundColor(from: account.email.hashValue),
                         foregroundColor: Color.Token.Text.coloredBackground,
                         size: size.iconSize
                     )
