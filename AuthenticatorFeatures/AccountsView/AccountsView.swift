@@ -43,6 +43,7 @@ public struct AccountsView: View {
                     } label: {
                         AuthenticatorLabel(\.addAccountButton, iconKey: \.plus)
                     }
+                    .primaryActionToolbarButtonStyle()
                 }
             }
         }
