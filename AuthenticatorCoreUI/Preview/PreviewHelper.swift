@@ -52,4 +52,7 @@ public enum PreviewHelper {
             status: .protected
         )
     ]
+
+    @MainActor
+    public static let sampleMainViewState = MainViewState(accounts: sampleUIAccounts)
 }
