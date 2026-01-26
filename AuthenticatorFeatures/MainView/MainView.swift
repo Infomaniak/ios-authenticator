@@ -16,16 +16,31 @@
  along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
+import AuthenticatorAccountsView
+import AuthenticatorCoreUI
+import AuthenticatorResources
+import AuthenticatorSettingsView
 import SwiftUI
 
 public struct MainView: View {
     public init() {}
 
     public var body: some View {
-        Text("MainView")
+        TabView {
+            AccountsView()
+                .tabItem {
+                    AuthenticatorLabel(\.accountTitlePlural, iconKey: \.house)
+                }
+
+            SettingsView()
+                .tabItem {
+                    AuthenticatorLabel(\.settingsTitle, iconKey: \.gear)
+                }
+        }
     }
 }
 
 #Preview {
     MainView()
+        .environmentObject(PreviewHelper.sampleMainViewState)
 }
