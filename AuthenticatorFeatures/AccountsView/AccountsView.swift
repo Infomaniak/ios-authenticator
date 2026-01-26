@@ -18,27 +18,42 @@
 
 import AuthenticatorCore
 import AuthenticatorCoreUI
+import DesignSystem
 import InfomaniakCoreSwiftUI
 import SwiftUI
 
 public struct AccountsView: View {
-    let accounts: [UIAccount]
+    @EnvironmentObject private var mainViewState: MainViewState
 
-    public init(accounts: [UIAccount]) {
-        self.accounts = accounts
-    }
+    public init() {}
 
     public var body: some View {
         NavigationStack {
-            List(accounts) { account in
+            List(mainViewState.accountsManager.accounts, selection: $mainViewState.accountsManager.selectedAccount) { account in
                 AccountsListCell(account: account)
+                    .tag(account)
             }
             .authListStyle()
             .navigationTitle(Constants.appName)
+            .refreshable(action: refreshAccountsList)
+            .toolbar {
+                ToolbarItem(placement: .primaryAction) {
+                    Button {
+                        // TODO: Add an account
+                    } label: {
+                        AuthenticatorLabel(\.addAccountButton, iconKey: \.plus)
+                    }
+                }
+            }
         }
+    }
+
+    private func refreshAccountsList() {
+        // TODO: Refresh accounts list
     }
 }
 
 #Preview {
-    AccountsView(accounts: PreviewHelper.sampleUIAccounts)
+    AccountsView()
+        .environmentObject(PreviewHelper.sampleMainViewState)
 }
