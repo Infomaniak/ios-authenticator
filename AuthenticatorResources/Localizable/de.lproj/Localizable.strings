@@ -61,6 +61,9 @@
 /* loco:695e816eb64a80c12b005d63 */
 "activityHistoryButton" = "Aktivitätsverlauf";
 
+/* loco:69777a4068f29e950204eae4 */
+"addAccountButton" = "Ein Konto hinzufügen";
+
 /* loco:695e9a949d8b472044005a42 */
 "appAccessIsSecure" = "Der Zugriff auf Authenticator ist sicher";
 
