@@ -16,16 +16,28 @@
  along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
+import AuthenticatorAccountsView
+import AuthenticatorCoreUI
+import AuthenticatorResources
+import AuthenticatorSettingsView
 import SwiftUI
 
 public struct MainView: View {
+    @EnvironmentObject private var mainViewState: MainViewState
+
     public init() {}
 
     public var body: some View {
-        Text("MainView")
+        TabView {
+            ForEach(MainViewTab.allCases, id: \.title) { tab in
+                tab.content
+                    .tabItem { tab.label }
+            }
+        }
     }
 }
 
 #Preview {
     MainView()
+        .environmentObject(PreviewHelper.sampleMainViewState)
 }
