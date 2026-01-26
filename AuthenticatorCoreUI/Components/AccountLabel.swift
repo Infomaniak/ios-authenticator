@@ -16,6 +16,7 @@
  along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
+import DesignSystem
 import InfomaniakCoreSwiftUI
 import NukeUI
 import SwiftUI
@@ -36,7 +37,6 @@ public struct AccountLabel: View {
                     image
                         .resizable()
                         .scaledToFill()
-                        .frame(width: size.iconSize, height: size.iconSize)
                         .clipShape(.circle)
                 } else {
                     InitialsView(
@@ -47,6 +47,7 @@ public struct AccountLabel: View {
                     )
                 }
             }
+            .frame(width: size.iconSize, height: size.iconSize)
 
             VStack(alignment: .leading) {
                 Text(account.name)
