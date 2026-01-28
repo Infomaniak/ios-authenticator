@@ -123,7 +123,9 @@ let project = Project(
                 dependencies: [
                     .target(name: "\(Constants.projectName)Core"),
                     .target(name: "\(Constants.projectName)Resources"),
-                    .external(name: "InfomaniakCoreUIResources")
+                    .external(name: "InfomaniakCoreUIResources"),
+                    .external(name: "InfomaniakCoreSwiftUI"),
+                    .external(name: "DesignSystem")
                 ],
                 settings: .settings(base: Constants.baseSettings)),
         .target(name: "\(Constants.projectName)Resources",
