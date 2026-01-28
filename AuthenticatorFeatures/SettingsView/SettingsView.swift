@@ -19,9 +19,14 @@
 import AuthenticatorCore
 import AuthenticatorCoreUI
 import AuthenticatorResources
+import InfomaniakCoreCommonUI
+import InfomaniakDI
+import InfomaniakPrivacyManagement
 import SwiftUI
 
 public struct SettingsView: View {
+    @InjectService private var matomo: MatomoUtils
+
     @AppStorage(UserDefaults.shared.key(.notificationsEnabled)) private var isNotificationsEnabled = DefaultPreferences
         .notificationsEnabled
 
@@ -34,6 +39,20 @@ public struct SettingsView: View {
                     Toggle(AuthenticatorResourcesStrings.enableNotifications, isOn: $isNotificationsEnabled)
 
                     ToggleAppLockSettingsView()
+                }
+
+                Section {
+                    NavigationLink(AuthenticatorResourcesStrings.dataManagementTitle) {
+                        PrivacyManagementView(
+                            urlRepository: URLConstants.githubRepository.url,
+                            backgroundColor: .Token.Surface.primary,
+                            illustration: .init(systemName: ""),
+                            userDefaultStore: .shared,
+                            userDefaultKeyMatomo: UserDefaults.shared.key(.matomoAuthorized),
+                            userDefaultKeySentry: UserDefaults.shared.key(.sentryAuthorized),
+                            matomo: matomo
+                        )
+                    }
                 }
             }
             .authListStyle()
