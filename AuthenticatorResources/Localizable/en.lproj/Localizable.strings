@@ -4,7 +4,7 @@
  * Locale: en, English
  * Tagged: ios
  * Exported by: Jordan Chapelle
- * Exported at: Tue, 20 Jan 2026 09:37:17 +0100
+ * Exported at: Thu, 29 Jan 2026 09:18:36 +0100
  */
 
 /* loco:695e825042bb2b44f30a2bc3 */
@@ -18,6 +18,12 @@
 
 /* loco:695e990e6d0bdf05900b9af2 */
 "accountLossRiskTitle" = "You may lose access to this account";
+
+/* loco:6971f70a9cc4bfa2380b3456 */
+"accountPartiallyProtectedDescription" = "Update your security settings to protect your account.";
+
+/* loco:6971f124ef49edbd82004c02 */
+"accountPartiallyProtectedTitle" = "Partially protected account";
 
 /* loco:695e9e1d78dc6afe20011632 */
 "accountPasswordTitle" = "Account password";
@@ -46,6 +52,9 @@
 /* loco:695e819bcd0de60112063f13 */
 "accountSettingsButton" = "Account settings";
 
+/* loco:695e7991ebf1603a2d0fa823 */
+"accountTitle" = "Account";
+
 /* loco:695e7a333d7bce20d10d4832 */
 "accountTitle-plural" = "Accounts";
 
@@ -54,6 +63,9 @@
 
 /* loco:695e816eb64a80c12b005d63 */
 "activityHistoryButton" = "Activity history";
+
+/* loco:69777a4068f29e950204eae4 */
+"addAccountButton" = "Add an account";
 
 /* loco:695e9a949d8b472044005a42 */
 "appAccessIsSecure" = "Access to Authenticator is secure";
@@ -291,6 +303,9 @@
 
 /* loco:695e97760f03fede890fbc42 */
 "subjectPlaceholder" = "Subject";
+
+/* loco:697a3be9708976638d060702 */
+"submitMyTicketButton" = "Submit my ticket";
 
 /* loco:695e973fa8c67b89040bbbc2 */
 "submitTicketDescription" = "To help us assist you effectively, please provide as many details as possible regarding your issue.";

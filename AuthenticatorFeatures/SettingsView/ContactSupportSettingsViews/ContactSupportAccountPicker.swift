@@ -28,7 +28,7 @@ struct ContactSupportAccountPicker: View {
 
     var body: some View {
         if accounts.count > 1 {
-            Picker(AuthenticatorResourcesStrings.accountTitlePlural, selection: $selection) {
+            Picker(AuthenticatorResourcesStrings.accountTitle, selection: $selection) {
                 ForEach(accounts) { account in
                     Text(account.email)
                         .tag(account)
@@ -38,7 +38,7 @@ struct ContactSupportAccountPicker: View {
             .frame(maxWidth: .infinity, alignment: .trailing)
             .tint(Color.Token.Text.tertiary)
         } else {
-            InfoCell(AuthenticatorResourcesStrings.accountTitlePlural, value: selection.email)
+            InfoCell(AuthenticatorResourcesStrings.accountTitle, value: selection.email)
         }
     }
 }
