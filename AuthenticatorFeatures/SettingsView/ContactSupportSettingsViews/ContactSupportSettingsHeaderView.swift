@@ -25,6 +25,7 @@ struct ContactSupportSettingsHeaderView: View {
         VStack(alignment: .leading, spacing: IKPadding.huge) {
             Text(AuthenticatorResourcesStrings.contactSupportDescription)
                 .font(.Token.body)
+                .foregroundStyle(Color.Token.Text.secondary)
 
             SupportInfoView()
         }
