@@ -56,6 +56,7 @@ struct ContactSupportActionsView: View {
                 .ikButtonFullWidth(true)
 
             Button(AuthenticatorResourcesStrings.viewGuidesButton) {}
+            if let guidesUrl = URL(string: "https://www.infomaniak.com") { // TODO: Replace with correct Guides URL
                 .buttonStyle(.ikBordered)
                 .ikButtonFullWidth(true)
         }
