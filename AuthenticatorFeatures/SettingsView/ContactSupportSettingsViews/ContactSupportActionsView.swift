@@ -57,8 +57,12 @@ struct ContactSupportActionsView: View {
 
             Button(AuthenticatorResourcesStrings.viewGuidesButton) {}
             if let guidesUrl = URL(string: "https://www.infomaniak.com") { // TODO: Replace with correct Guides URL
+                Link(destination: guidesUrl) {
+                    Text(AuthenticatorResourcesStrings.viewGuidesButton)
+                }
                 .buttonStyle(.ikBordered)
                 .ikButtonFullWidth(true)
+            }
         }
     }
 }
