@@ -24,7 +24,8 @@ import SwiftUI
 
 struct SubmitTicketView: View {
     @State private var email: String
-    @State private var ticket: (subject: String, message: String) = ("", "")
+    @State private var ticketSubject = ""
+    @State private var ticketMessage = ""
 
     let accountsEmailsList: [String]
 
@@ -53,9 +54,9 @@ struct SubmitTicketView: View {
                     InfoCell(AuthenticatorResourcesStrings.accountTitle, value: email)
                 }
 
-                TextField(AuthenticatorResourcesStrings.subjectPlaceholder, text: $ticket.subject)
+                TextField(AuthenticatorResourcesStrings.subjectPlaceholder, text: $ticketSubject)
 
-                TextField(AuthenticatorResourcesStrings.descriptionPlaceholder, text: $ticket.message, axis: .vertical)
+                TextField(AuthenticatorResourcesStrings.descriptionPlaceholder, text: $ticketMessage, axis: .vertical)
                     .lineLimit(5 ... 10)
             } header: {
                 Text(AuthenticatorResourcesStrings.submitTicketDescription)
