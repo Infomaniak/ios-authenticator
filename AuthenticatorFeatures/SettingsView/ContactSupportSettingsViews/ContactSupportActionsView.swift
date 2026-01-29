@@ -26,6 +26,9 @@ import SwiftUI
 struct ContactSupportActionsView: View {
     @State private var supportPhoneNumber = "+41228203541" // TODO: Fetch by api
 
+    @Binding var selectedAccount: UIAccount?
+
+    let accountsEmailsList: [String]
     let waitTime: TimeInterval
 
     var formattedWaitTime: String {
@@ -51,11 +54,12 @@ struct ContactSupportActionsView: View {
                 }
             }
 
-            Button(AuthenticatorResourcesStrings.submitTicketTitle) {}
-                .buttonStyle(.ikBordered)
-                .ikButtonFullWidth(true)
+            NavigationLink(AuthenticatorResourcesStrings.submitTicketTitle) {
+                SubmitTicketView(selectedEmail: selectedAccount?.email, accountsEmailsList: accountsEmailsList)
+            }
+            .buttonStyle(.ikBordered)
+            .ikButtonFullWidth(true)
 
-            Button(AuthenticatorResourcesStrings.viewGuidesButton) {}
             if let guidesUrl = URL(string: "https://www.infomaniak.com") { // TODO: Replace with correct Guides URL
                 Link(destination: guidesUrl) {
                     Text(AuthenticatorResourcesStrings.viewGuidesButton)
@@ -68,5 +72,9 @@ struct ContactSupportActionsView: View {
 }
 
 #Preview {
-    ContactSupportActionsView(waitTime: 1200)
+    ContactSupportActionsView(
+        selectedAccount: .constant(PreviewHelper.sampleUIAccount),
+        accountsEmailsList: PreviewHelper.sampleUIAccounts.map(\.email),
+        waitTime: 1200
+    )
 }
