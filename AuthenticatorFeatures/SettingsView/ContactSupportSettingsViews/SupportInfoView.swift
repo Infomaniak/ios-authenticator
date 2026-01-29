@@ -23,7 +23,7 @@ import SwiftUI
 
 struct SupportInfoView: View {
     private var supportAvailability: (from: String, to: String) {
-        ("06h00", "21h00")
+        ("06h00", "21h00") // TODO: Get supports availability by API
     }
 
     var body: some View {
@@ -31,7 +31,7 @@ struct SupportInfoView: View {
             AuthenticatorLabel(\.openSupportStatus, iconKey: \.circleFill, iconColor: .Token.Status.valid)
 
             AuthenticatorLabel(
-                AuthenticatorResourcesStrings.daysSupportAvailability(1, 1),
+                AuthenticatorResourcesStrings.daysSupportAvailability(1, 1), // TODO: Get days by API
                 iconKey: \.calendar,
                 iconColor: .Token.Text.tertiary
             )
