@@ -20,18 +20,32 @@ import AuthenticatorResources
 import DesignSystem
 import SwiftUI
 
-struct ContactSupportSettingsHeaderView: View {
+struct SubmitTicketActionView: View {
     var body: some View {
-        VStack(alignment: .leading, spacing: IKPadding.huge) {
-            Text(AuthenticatorResourcesStrings.contactSupportDescription)
-                .font(.Token.body)
-                .foregroundStyle(Color.Token.Text.secondary)
+        VStack(spacing: 8) {
+            Button {
+                submitTicket()
+            } label: {
+                Text(AuthenticatorResourcesStrings.submitMyTicketButton)
+                    .font(.Token.bodyBold)
+            }
+            .controlSize(.large)
+            .buttonStyle(.ikBorderedProminent)
+            .ikButtonFullWidth(true)
 
-            SupportInfoView()
+            Text(AuthenticatorResourcesStrings.supportResponseDelay)
+                .foregroundStyle(Color.Token.Text.secondary)
+                .font(.Token.subheadline)
+                .padding(.horizontal)
+                .multilineTextAlignment(.center)
         }
+    }
+
+    private func submitTicket() {
+        // TODO: Submit ticket
     }
 }
 
 #Preview {
-    ContactSupportSettingsHeaderView()
+    SubmitTicketActionView()
 }

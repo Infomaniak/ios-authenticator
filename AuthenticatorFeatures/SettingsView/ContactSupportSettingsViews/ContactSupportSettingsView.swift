@@ -56,8 +56,12 @@ struct ContactSupportSettingsView: View {
         .navigationTitle(AuthenticatorResourcesStrings.contactSupportTitle)
         .scrollBounceBehavior(.basedOnSize)
         .safeAreaInset(edge: .bottom) {
-            ContactSupportActionsView(waitTime: waitTime)
-                .padding()
+            ContactSupportActionsView(
+                selectedAccount: $selectedAccount,
+                accountsEmailsList: accounts.map(\.email),
+                waitTime: waitTime
+            )
+            .padding()
         }
         .task {
             waitTime = 1200 // TODO: Fetch real wait time from API
