@@ -38,6 +38,7 @@ public extension Color {
         /// General background colors
         public enum Surface {
             public static let primary = Color(light: AuthColor.neutralBlue100, dark: AuthColor.neutralBlue800)
+            public static let secondary = Color(light: AuthColor.neutralBlue200, dark: AuthColor.neutralBlue700)
         }
 
         /// Green, Orange, Red status colors

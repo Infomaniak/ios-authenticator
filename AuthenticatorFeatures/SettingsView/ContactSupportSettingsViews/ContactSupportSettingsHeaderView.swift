@@ -16,12 +16,22 @@
  along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
+import AuthenticatorResources
+import DesignSystem
 import SwiftUI
 
-public extension Font {
-    enum Token {
-        public static let body = Font.body
-        public static let bodyBold = Font.body.bold()
-        public static let subheadline = Font.subheadline
+struct ContactSupportSettingsHeaderView: View {
+    var body: some View {
+        VStack(alignment: .leading, spacing: IKPadding.huge) {
+            Text(AuthenticatorResourcesStrings.contactSupportDescription)
+                .font(.Token.body)
+                .foregroundStyle(Color.Token.Text.secondary)
+
+            SupportInfoView()
+        }
     }
+}
+
+#Preview {
+    ContactSupportSettingsHeaderView()
 }

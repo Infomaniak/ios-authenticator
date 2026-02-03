@@ -4,7 +4,7 @@
  * Locale: it, Italian
  * Tagged: ios
  * Exported by: Jordan Chapelle
- * Exported at: Mon, 12 Jan 2026 16:49:06 +0100
+ * Exported at: Thu, 29 Jan 2026 09:18:36 +0100
  */
 
 /* loco:695e825042bb2b44f30a2bc3 */
@@ -18,6 +18,12 @@
 
 /* loco:695e990e6d0bdf05900b9af2 */
 "accountLossRiskTitle" = "Potresti perdere l’accesso a questo account";
+
+/* loco:6971f70a9cc4bfa2380b3456 */
+"accountPartiallyProtectedDescription" = "Aggiorna le impostazioni di sicurezza per proteggere il tuo account.";
+
+/* loco:6971f124ef49edbd82004c02 */
+"accountPartiallyProtectedTitle" = "Account parzialmente protetto";
 
 /* loco:695e9e1d78dc6afe20011632 */
 "accountPasswordTitle" = "Password account";
@@ -46,6 +52,9 @@
 /* loco:695e819bcd0de60112063f13 */
 "accountSettingsButton" = "Impostazioni account";
 
+/* loco:695e7991ebf1603a2d0fa823 */
+"accountTitle" = "Conto";
+
 /* loco:695e7a333d7bce20d10d4832 */
 "accountTitle-plural" = "Account";
 
@@ -54,6 +63,9 @@
 
 /* loco:695e816eb64a80c12b005d63 */
 "activityHistoryButton" = "Cronologia attività";
+
+/* loco:69777a4068f29e950204eae4 */
+"addAccountButton" = "Aggiungere un account";
 
 /* loco:695e9a949d8b472044005a42 */
 "appAccessIsSecure" = "L’accesso ad Authenticator è sicuro";
@@ -292,6 +304,9 @@
 /* loco:695e97760f03fede890fbc42 */
 "subjectPlaceholder" = "Oggetto";
 
+/* loco:697a3be9708976638d060702 */
+"submitMyTicketButton" = "Invia il mio biglietto";
+
 /* loco:695e973fa8c67b89040bbbc2 */
 "submitTicketDescription" = "Per aiutarci a supportarti efficacemente, fornisci il maggior numero possibile di dettagli riguardo al tuo problema.";
 
@@ -306,6 +321,9 @@
 
 /* loco:695e97f63a155d22d007d2f4 */
 "ticketSentSuccessTitle" = "Il tuo ticket è stato inviato ai nostri team!";
+
+/* loco:695e9548833bf5c3c1037d42 */
+"timeSupportAvailability" = "%1$@ - %2$@";
 
 /* loco:695ea3342372447ed50ee242 */
 "understandConfirmButton" = "Capito";

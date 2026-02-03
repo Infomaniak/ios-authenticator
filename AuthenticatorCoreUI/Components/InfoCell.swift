@@ -16,12 +16,25 @@
  along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
+import DesignSystem
 import SwiftUI
 
-public extension Font {
-    enum Token {
-        public static let body = Font.body
-        public static let bodyBold = Font.body.bold()
-        public static let subheadline = Font.subheadline
+public struct InfoCell: View {
+    let title: String
+    let value: String
+
+    public init(_ title: String, value: String) {
+        self.title = title
+        self.value = value
+    }
+
+    public var body: some View {
+        HStack(spacing: 0) {
+            Text(title)
+                .frame(maxWidth: .infinity, alignment: .leading)
+
+            Text(value)
+                .foregroundStyle(Color.Token.Text.tertiary)
+        }
     }
 }
