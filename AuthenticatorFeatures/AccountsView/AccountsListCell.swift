@@ -24,7 +24,9 @@ struct AccountsListCell: View {
     let account: UIAccount
 
     var body: some View {
-        NavigationLink {} label: {
+        NavigationLink {
+            AccountDetailView(account: account)
+        } label: {
             AccountCell(account: account)
         }
     }
