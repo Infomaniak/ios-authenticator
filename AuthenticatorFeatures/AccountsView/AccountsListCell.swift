@@ -16,12 +16,20 @@
  along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-public struct UIAccount: Identifiable, Hashable, Sendable {
-    public let id: String
-    public let email: String
+import AuthenticatorCoreUI
+import InfomaniakCoreSwiftUI
+import SwiftUI
 
-    public init(id: String, email: String) {
-        self.id = id
-        self.email = email
+struct AccountsListCell: View {
+    let account: UIAccount
+
+    var body: some View {
+        NavigationLink {} label: {
+            AccountCell(account: account)
+        }
     }
+}
+
+#Preview {
+    AccountsListCell(account: PreviewHelper.sampleUIAccount)
 }

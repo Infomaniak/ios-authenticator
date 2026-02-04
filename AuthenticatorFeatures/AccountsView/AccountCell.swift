@@ -16,9 +16,25 @@
  along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-import Foundation
+import AuthenticatorCoreUI
+import InfomaniakCoreSwiftUI
+import NukeUI
+import SwiftUI
 
-public enum PreviewHelper {
-    public static let sampleUIAccount = UIAccount(id: "1", email: "laura.snow@ik.me")
-    public static let sampleUIAccounts = [PreviewHelper.sampleUIAccount, UIAccount(id: "2", email: "john.apple@ik.me")]
+struct AccountCell: View {
+    let account: UIAccount
+
+    var body: some View {
+        HStack {
+            AccountLabel(account: account, size: .small)
+                .frame(maxWidth: .infinity, alignment: .leading)
+
+            account.status.icon
+                .foregroundStyle(account.status.color)
+        }
+    }
+}
+
+#Preview {
+    AccountCell(account: PreviewHelper.sampleUIAccount)
 }
