@@ -24,7 +24,7 @@ struct AccountDetailHeaderView: View {
     let account: UIAccount
 
     var body: some View {
-        VStack(alignment: .leading, spacing: 24) {
+        VStack(alignment: .leading, spacing: IKPadding.large) {
             AccountLabel(account: account, size: .large)
 
             VStack(alignment: .leading) {
@@ -48,7 +48,7 @@ struct AccountDetailHeaderView: View {
     }
 
     private var roundedRectangle: some Shape {
-        RoundedRectangle(cornerRadius: 26.0)
+        RoundedRectangle(cornerRadius: 24.0)
     }
 }
 
