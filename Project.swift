@@ -25,6 +25,7 @@ let preloadingView = Feature(name: "PreloadingView")
 let accountsView = Feature(
     name: "AccountsView",
     additionalDependencies: [
+        TargetDependency.target(name: "\(Constants.projectName)Resources"),
         TargetDependency.external(name: "NukeUI"),
         TargetDependency.external(name: "InfomaniakCoreSwiftUI")
     ]

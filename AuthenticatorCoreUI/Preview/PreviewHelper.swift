@@ -42,7 +42,7 @@ public enum PreviewHelper {
             name: "John Appleseed",
             email: "john.apple@etik.com",
             profilePictureURL: nil,
-            status: .unprotected
+            status: .partiallyProtected
         ),
         UIAccount(
             id: "3",
