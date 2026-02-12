@@ -21,6 +21,7 @@ import InfomaniakCore
 import InfomaniakCoreCommonUI
 import InfomaniakDI
 import InfomaniakLogin
+import InterAppLogin
 import OSLog
 
 private let appGroupIdentifier = "group.\(Constants.bundleId)"
@@ -39,10 +40,11 @@ extension [Factory] {
 @MainActor
 open class TargetAssembly {
     private static let logger = Logger(category: "TargetAssembly")
+    private static let realmRootPath = "chats"
 
     private static let apiEnvironment: ApiEnvironment = .prod
     public static let loginConfig = InfomaniakLogin.Config(
-        clientId: "",
+        clientId: "", // TODO: Ask to generate one
         loginURL: URL(string: "https://login.\(apiEnvironment.host)/")!,
         accessType: nil
     )
@@ -53,6 +55,22 @@ open class TargetAssembly {
 
     open class func getCommonServices() -> [Factory] {
         return [
+            Factory(type: ConnectedAccountManagerable.self) { _, _ in
+                ConnectedAccountManager(currentAppKeychainIdentifier: AppIdentifierBuilder.euriaKeychainIdentifier)
+            },
+            Factory(type: AccountManagerable.self) { _, _ in
+                AccountManager()
+            },
+            Factory(type: AppGroupPathProvidable.self) { _, _ in
+                guard let provider = AppGroupPathProvider(
+                    realmRootPath: realmRootPath,
+                    appGroupIdentifier: Constants.appGroupIdentifier
+                ) else {
+                    fatalError("could not safely init AppGroupPathProvider")
+                }
+
+                return provider
+            },
             Factory(type: InfomaniakNetworkLoginable.self) { _, _ in
                 InfomaniakNetworkLogin(config: loginConfig)
             },
