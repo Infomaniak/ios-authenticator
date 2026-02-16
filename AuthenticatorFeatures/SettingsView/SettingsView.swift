@@ -77,4 +77,5 @@ public struct SettingsView: View {
 
 #Preview {
     SettingsView()
+        .environmentObject(PreviewHelper.sampleMainViewState)
 }
