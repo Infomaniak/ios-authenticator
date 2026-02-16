@@ -16,18 +16,21 @@
  along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-import OSLog
 import SwiftUI
 
-@MainActor
-public final class MainViewState: ObservableObject, @MainActor Equatable {
-    @Published public var accountsManager: UIAccountsManager
-
-    public init(accounts: [UIAccount] = []) {
-        accountsManager = UIAccountsManager(accounts: accounts)
+public extension Button {
+    func primaryActionToolbarButtonStyle() -> some View {
+        modifier(PrimaryActionToolbarButtonStyleModifier())
     }
+}
 
-    public static func == (lhs: MainViewState, rhs: MainViewState) -> Bool {
-        return true // TODO: Implement proper equality check based on properties
+private struct PrimaryActionToolbarButtonStyleModifier: ViewModifier {
+    func body(content: Content) -> some View {
+        if #available(iOS 26.0, *) {
+            content
+                .buttonStyle(.borderedProminent)
+        } else {
+            content
+        }
     }
 }

@@ -16,18 +16,14 @@
  along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-import OSLog
-import SwiftUI
+import Foundation
 
-@MainActor
-public final class MainViewState: ObservableObject, @MainActor Equatable {
-    @Published public var accountsManager: UIAccountsManager
+public class UIAccountsManager: ObservableObject {
+    @Published public var selectedAccount: UIAccount?
+    @Published public var accounts: [UIAccount]
 
-    public init(accounts: [UIAccount] = []) {
-        accountsManager = UIAccountsManager(accounts: accounts)
-    }
-
-    public static func == (lhs: MainViewState, rhs: MainViewState) -> Bool {
-        return true // TODO: Implement proper equality check based on properties
+    public init(selectedAccount: UIAccount? = nil, accounts: [UIAccount] = []) {
+        self.selectedAccount = selectedAccount
+        self.accounts = accounts
     }
 }
