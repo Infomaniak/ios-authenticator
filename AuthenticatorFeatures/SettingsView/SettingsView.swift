@@ -25,8 +25,9 @@ import InfomaniakPrivacyManagement
 import SwiftUI
 
 public struct SettingsView: View {
+    @InjectService private var matomo: MatomoUtils
+
     @EnvironmentObject private var mainViewState: MainViewState
-    @LazyInjectService private var matomo: MatomoUtils
 
     @AppStorage(UserDefaults.shared.key(.notificationsEnabled)) private var isNotificationsEnabled = DefaultPreferences
         .notificationsEnabled
