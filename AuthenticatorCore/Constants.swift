@@ -21,6 +21,7 @@ import Foundation
 public enum Constants {
     public static let bundleId = "com.infomaniak.authenticator"
     public static let appName = Bundle.main.object(forInfoDictionaryKey: "CFBundleName") as! String? ?? "Authenticator"
+    public static let appGroupIdentifier = "group.\(Constants.bundleId)"
 
     public static let matomoId = "40"
 }

@@ -1,5 +1,5 @@
 {
-  "originHash" : "a923bd07e11f4680bcc8e71c09509e3bcf4f27ea6c3bbb92d61d4fcc0d21c5f4",
+  "originHash" : "e57e7bb5e83594698e330aa33f5f977c5619f24393b9f61ae3fe43af122fe765",
   "pins" : [
     {
       "identity" : "alamofire",
@@ -29,6 +29,15 @@
       }
     },
     {
+      "identity" : "ios-create-account",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Infomaniak/ios-create-account",
+      "state" : {
+        "revision" : "433480fee3ccf22a766078bf288efb6e85d2d881",
+        "version" : "23.2.0"
+      }
+    },
+    {
       "identity" : "ios-dependency-injection",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/Infomaniak/ios-dependency-injection",
@@ -38,12 +47,30 @@
       }
     },
     {
+      "identity" : "ios-features",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Infomaniak/ios-features",
+      "state" : {
+        "revision" : "aa7a0c221a3b111011f95bc9e136b26fc047d721",
+        "version" : "8.4.3"
+      }
+    },
+    {
       "identity" : "ios-login",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/Infomaniak/ios-login",
       "state" : {
         "revision" : "3862e03c6c3305ec59d3171dc1152b179d59c334",
         "version" : "7.5.0"
+      }
+    },
+    {
+      "identity" : "ios-notifications",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Infomaniak/ios-notifications",
+      "state" : {
+        "revision" : "bf0722c1392a783ac3e1fe2a69b10ae3e45350ff",
+        "version" : "15.1.0"
       }
     },
     {
@@ -143,6 +170,15 @@
       "state" : {
         "revision" : "2842e6e84e82eb9a8dac0100ca90d9444b0307f4",
         "version" : "5.7.1"
+      }
+    },
+    {
+      "identity" : "swift-modal-presentation",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Infomaniak/swift-modal-presentation",
+      "state" : {
+        "revision" : "febc32d164f2fb29086a1aa65f7d1d4efbe726a2",
+        "version" : "1.1.0"
       }
     },
     {

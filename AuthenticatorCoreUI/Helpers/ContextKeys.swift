@@ -16,18 +16,6 @@
  along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-import SwiftUI
-
-public extension Font {
-    enum Token {
-        public static let title2 = Font.title2.bold()
-
-        public static let body = Font.body
-        public static let bodyBold = Font.body.bold()
-
-        public static let headline = Font.headline
-        public static let subheadline = Font.subheadline
-
-        public static let callout = Font.callout
-    }
+public enum ContextKeys {
+    public static let onboarding = "onboardingContext"
 }

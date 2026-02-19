@@ -16,16 +16,79 @@
  along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
+import AuthenticationServices
+import AuthenticatorCore
+import AuthenticatorCoreUI
+import AuthenticatorResources
+import DesignSystem
+import InfomaniakCoreCommonUI
+import InfomaniakCoreUIResources
+import InfomaniakCreateAccount
+import InfomaniakDI
+import InfomaniakLogin
+import InfomaniakOnboarding
+import InterAppLogin
+import SwiftModalPresentation
 import SwiftUI
 
 public struct OnboardingView: View {
-    public init() {}
+    @InjectService private var accountManager: AccountManagerable
+
+    @State private var loginHandler = LoginHandler()
+    @State private var excludedUserIds: [Int] = []
+
+    @ModalState(context: ContextKeys.onboarding) private var isPresentingCreateAccount = false
+
+    let type: OnboardingType
+
+    var slides: [Slide] {
+        type == .newUser ? Slide.onboardingSlides : Slide.migratingSlides
+    }
 
     public var body: some View {
-        Text("OnboardingView")
+        CarouselView(slides: slides, selectedSlide: .constant(0)) { _ in
+            ContinueWithAccountView(isLoading: loginHandler.isLoading, excludingUserIds: excludedUserIds) {
+                login()
+            } onLoginWithAccountsPressed: { accounts in
+                login(with: accounts)
+            } onCreateAccountPressed: {
+                isPresentingCreateAccount = true
+            }
+            .ikButtonFullWidth(true)
+            .controlSize(.large)
+            .padding(.horizontal, value: .large)
+        }
+        .appBackground()
+        .ignoresSafeArea()
+        .sheet(isPresented: $isPresentingCreateAccount) {
+            RegisterView(registrationProcess: .mail) { viewController in // TODO: Change with his own registration process
+                guard let viewController else { return }
+                loginHandler.loginAfterAccountCreation(from: viewController)
+            }
+        }
+        .task {
+            loginHandler.isLoading = true
+            excludedUserIds = await accountManager.getAccountsIds()
+            loginHandler.isLoading = false
+        }
+    }
+
+    private func login(with accounts: [ConnectedAccount] = []) {
+        Task {
+            if accounts.isEmpty {
+                await loginHandler.login()
+            } else {
+                await loginHandler.login(with: accounts)
+            }
+        }
+    }
+
+    public enum OnboardingType {
+        case newUser
+        case migrating
     }
 }
 
 #Preview {
-    OnboardingView()
+    OnboardingView(type: .newUser)
 }

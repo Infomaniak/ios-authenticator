@@ -16,18 +16,31 @@
  along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
+import AuthenticatorResources
+import DesignSystem
 import SwiftUI
 
-public extension Font {
-    enum Token {
-        public static let title2 = Font.title2.bold()
+struct OnboardingProgressBarBottomView: View {
+    let title: String
 
-        public static let body = Font.body
-        public static let bodyBold = Font.body.bold()
+    private init(title: String) {
+        self.title = title
+    }
 
-        public static let headline = Font.headline
-        public static let subheadline = Font.subheadline
+    init(_ titleKey: KeyPath<AuthenticatorResourcesStrings.Type, String>) {
+        let title = AuthenticatorResourcesStrings.self[keyPath: titleKey]
 
-        public static let callout = Font.callout
+        self.init(title: title)
+    }
+
+    var body: some View {
+        VStack(spacing: IKPadding.medium) {
+            Text(title)
+                .font(.Token.title2)
+
+            ProgressView(value: 0.5) // TODO: Replace with fetched one
+                .progressViewStyle(.linear)
+        }
+        .multilineTextAlignment(.center)
     }
 }
