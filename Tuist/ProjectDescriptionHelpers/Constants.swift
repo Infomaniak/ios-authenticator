@@ -33,7 +33,7 @@ public enum Constants {
         .swiftVersion("6.0")
         .merging([:])
 
-    public static let deploymentTarget = DeploymentTargets.iOS("16.6")
+    public static let deploymentTarget = DeploymentTargets.iOS("16.4")
 
     public static let destinations = Set<Destination>([.iPhone, .iPad, .mac])
 
