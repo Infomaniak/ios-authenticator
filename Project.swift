@@ -45,6 +45,7 @@ let mainView = Feature(
     additionalDependencies: [
         settingsView,
         accountsView,
+        TargetDependency.target(name: "\(Constants.projectName)Resources"),
         TargetDependency.external(name: "InfomaniakCoreUIResources"),
         TargetDependency.external(name: "VersionChecker")
     ]
