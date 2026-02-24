@@ -16,18 +16,26 @@
  along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-import SwiftUI
+import Combine
+import DeviceAssociation
+import Foundation
+import InfomaniakCore
+import InfomaniakDI
+import InfomaniakLogin
+import InfomaniakNotifications
+import OSLog
 
-public extension Font {
-    enum Token {
-        public static let title2 = Font.title2.bold()
+public protocol UserSessionable: Sendable {
+    var userId: Int { get }
+    var apiFetcher: ApiFetcher { get }
+}
 
-        public static let body = Font.body
-        public static let bodyBold = Font.body.bold()
+public struct UserSession: UserSessionable, @unchecked Sendable {
+    public let apiFetcher: ApiFetcher
+    public let userId: Int
 
-        public static let headline = Font.headline
-        public static let subheadline = Font.subheadline
-
-        public static let callout = Font.callout
+    public init(userId: Int, apiFetcher: ApiFetcher) {
+        self.userId = userId
+        self.apiFetcher = apiFetcher
     }
 }

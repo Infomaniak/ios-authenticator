@@ -16,18 +16,27 @@
  along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-import SwiftUI
+import Sentry
 
-public extension Font {
-    enum Token {
-        public static let title2 = Font.title2.bold()
+public enum SentryDebug {
+    public static func setUserID(_ userID: Int?) {
+        guard let userID, userID != 0 else {
+            SentrySDK.setUser(nil)
+            return
+        }
 
-        public static let body = Font.body
-        public static let bodyBold = Font.body.bold()
+        let user = Sentry.User(userId: "\(userID)")
+        user.ipAddress = "{{auto}}"
+        SentrySDK.setUser(user)
+    }
 
-        public static let headline = Font.headline
-        public static let subheadline = Font.subheadline
-
-        public static let callout = Font.callout
+    public static func loginError(error: Error, step: String) {
+        SentrySDK.capture(message: "Error while logging") { scope in
+            scope.setLevel(.error)
+            scope.setContext(
+                value: ["step": step, "error": error, "description": error.localizedDescription],
+                key: "underlying error"
+            )
+        }
     }
 }
