@@ -23,6 +23,11 @@ import SwiftUI
 struct AccountDetailHeaderView: View {
     let account: UIAccount
 
+    var alertAccount: StatusHeaderView.StatusHeaderType? {
+        // TODO: Return appropriate status based on account.state, or nil if no alert needed
+        return nil
+    }
+
     var body: some View {
         VStack(alignment: .leading, spacing: IKPadding.large) {
             AccountLabel(account: account, size: .large)
@@ -42,6 +47,10 @@ struct AccountDetailHeaderView: View {
             .overlay {
                 roundedRectangle
                     .stroke(Color.Token.Surface.tertiary, lineWidth: 1)
+            }
+
+            if let alertAccount {
+                StatusHeaderView(type: alertAccount)
             }
         }
         .listRowInsets(EdgeInsets(top: IKPadding.medium, leading: 0, bottom: IKPadding.huge, trailing: 0))
