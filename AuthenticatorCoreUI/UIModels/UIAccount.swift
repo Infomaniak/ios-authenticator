@@ -39,14 +39,14 @@ public struct UIAccount: Identifiable, Hashable, Sendable {
         case partiallyProtected
         case loggedOut
 
-        public var color: Color {
+        public var color: Color.Token.StatusColors {
             switch self {
             case .protected:
-                .Token.Status.valid
+                .valid
             case .partiallyProtected:
-                .Token.Status.warning
+                .warning
             case .loggedOut:
-                .Token.Status.error
+                .error
             }
         }
 

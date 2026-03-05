@@ -52,14 +52,24 @@ let mainView = Feature(
 )
 
 let onboardingView = Feature(name: "OnboardingView", additionalDependencies: [
+    TargetDependency.target(name: "\(Constants.projectName)Resources"),
     TargetDependency.external(name: "InfomaniakCoreUIResources"),
     TargetDependency.external(name: "InfomaniakOnboarding"),
-    TargetDependency.external(name: "Lottie")
+    TargetDependency.external(name: "Lottie"),
+    TargetDependency.external(name: "InterAppLogin"),
+    TargetDependency.external(name: "SwiftModalPresentation"),
+    TargetDependency.external(name: "InfomaniakCreateAccount")
 ])
 
 let rootView = Feature(
     name: "RootView",
-    dependencies: [mainView, preloadingView, onboardingView, TargetDependency.external(name: "VersionChecker")]
+    dependencies: [
+        mainView,
+        preloadingView,
+        onboardingView,
+        TargetDependency.target(name: "\(Constants.projectName)CoreUI"),
+        TargetDependency.external(name: "VersionChecker")
+    ]
 )
 
 let mainiOSAppFeatures = [
@@ -119,7 +129,12 @@ let project = Project(
                     .external(name: "InfomaniakCoreSwiftUI"),
                     .external(name: "InfomaniakCoreUIKit"),
                     .external(name: "InfomaniakLogin"),
-                    .external(name: "Sentry-Dynamic")
+                    .external(name: "InfomaniakCreateAccount"),
+                    .external(name: "Sentry-Dynamic"),
+                    .external(name: "InterAppLogin"),
+                    .external(name: "DeviceAssociation"),
+//                    .external(name: "InAppTwoFactorAuthentication"),
+                    .external(name: "InfomaniakNotifications")
                 ],
                 settings: .settings(base: Constants.baseSettings)),
         .target(name: "\(Constants.projectName)CoreUI",
