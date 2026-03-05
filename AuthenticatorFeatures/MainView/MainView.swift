@@ -29,7 +29,7 @@ public struct MainView: View {
         TabView {
             AccountsView()
                 .tabItem {
-                    AuthenticatorLabel(\.accountTitlePlural, iconKey: \.house)
+                    AuthenticatorLabel(\.accountsTitle, iconKey: \.house)
                 }
 
             SettingsView()

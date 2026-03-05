@@ -52,7 +52,7 @@ public struct AuthenticatorTrailingLabel: View {
     }
 
     public init(accountStatus: UIAccount.Status) {
-        self.init(title: accountStatus.title, icon: accountStatus.icon, iconColor: accountStatus.color)
+        self.init(title: accountStatus.title, icon: accountStatus.icon, iconColor: accountStatus.color.foreground)
     }
 
     public var body: some View {
