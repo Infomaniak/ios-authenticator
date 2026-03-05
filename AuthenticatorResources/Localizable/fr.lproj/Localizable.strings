@@ -4,7 +4,7 @@
  * Locale: fr, French
  * Tagged: ios
  * Exported by: Jordan Chapelle
- * Exported at: Thu, 29 Jan 2026 09:18:36 +0100
+ * Exported at: Tue, 24 Feb 2026 11:05:16 +0100
  */
 
 /* loco:695e825042bb2b44f30a2bc3 */
@@ -19,8 +19,11 @@
 /* loco:695e990e6d0bdf05900b9af2 */
 "accountLossRiskTitle" = "Vous risquez de perdre l’accès à ce compte";
 
+/* loco:69835aa143cd06068f066b52 */
+"accountNotConnectedWarningTitle" = "Connectez-vous à nouveau pour sécuriser votre compte.";
+
 /* loco:6971f70a9cc4bfa2380b3456 */
-"accountPartiallyProtectedDescription" = "Mettez à jour vos paramètres de sécurité pour protéger votre compte.";
+"accountPartiallyProtectedDescription" = "Mettez à jour vos paramètres de sécurité pour protéger votre compte";
 
 /* loco:6971f124ef49edbd82004c02 */
 "accountPartiallyProtectedTitle" = "Compte partiellement protégé";
@@ -43,6 +46,9 @@
 /* loco:695ea3ef386e597d05019742 */
 "accountRemovedAuthenticatorTitle" = "Compte déconnecté d’Authenticator";
 
+/* loco:6985be69b61359b21b015a52 */
+"accountSecurityLevelContentDescription" = "Niveau de sécurité du compte";
+
 /* loco:695ea3ad79be1c39d80a6a63 */
 "accountSecurityVerificationDescription" = "Si vous n’avez pas effectué cette action, nous vous recommandons de modifier votre mot de passe et de vérifier vos paramètres de sécurité.";
 
@@ -52,11 +58,11 @@
 /* loco:695e819bcd0de60112063f13 */
 "accountSettingsButton" = "Paramètres du compte";
 
-/* loco:695e7991ebf1603a2d0fa823 */
+/* loco:697b2cae81f566e0780ea873 */
 "accountTitle" = "Compte";
 
-/* loco:695e7a333d7bce20d10d4832 */
-"accountTitle-plural" = "Comptes";
+/* loco:697b2c8165f2b518e801e292 */
+"accountsTitle" = "Comptes";
 
 /* loco:695e8a847621dbcb890cd633 */
 "actionRequiredDescription" = "Une action est requise pour sécuriser l’un de vos comptes.";
@@ -66,6 +72,9 @@
 
 /* loco:69777a4068f29e950204eae4 */
 "addAccountButton" = "Ajouter un compte";
+
+/* loco:69849b6fd84e3f199e0455f2 */
+"addAccountContentDescription" = "Ajouter un compte";
 
 /* loco:695e9a949d8b472044005a42 */
 "appAccessIsSecure" = "L’accès à Authenticator\nest sécurisé";
@@ -78,6 +87,9 @@
 
 /* loco:695e9faf7c7344111d0a3d84 */
 "autoCloseTitle" = "Cette information se ferme automatiquement dans 15 secondes.";
+
+/* loco:6984a2f068397af26e00c502 */
+"avatarContentDescription" = "Avatar du compte";
 
 /* loco:695e8b5c59029a2c62047642 */
 "callButton" = "Appeler";
