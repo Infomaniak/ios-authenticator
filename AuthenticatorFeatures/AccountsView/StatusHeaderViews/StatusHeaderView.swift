@@ -28,8 +28,13 @@ struct StatusHeaderView: View {
     private let roundedRectangle = RoundedRectangle(cornerRadius: 24.0)
 
     var body: some View {
-        VStack {
+        VStack(spacing: IKPadding.medium) {
             AuthenticatorLabel(title: type.description, icon: type.icon, iconColor: type.statusColor.foreground)
+                .frame(maxWidth: .infinity, alignment: .leading)
+
+            StatusHeaderActionsView(type: type)
+                .foregroundStyle(Color.Token.Text.primary)
+                .ikButtonTheme(.statusAlert)
         }
         .frame(maxWidth: .infinity, alignment: .leading)
         .padding(.vertical, value: .medium)
