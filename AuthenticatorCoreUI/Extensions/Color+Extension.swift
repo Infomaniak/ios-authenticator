@@ -44,13 +44,35 @@ public extension Color {
         }
 
         /// Green, Orange, Red status colors
-        public enum Status {
+        public struct StatusColors: Sendable {
+            public let foreground: Color
+            public let surface: Color
+            public let text: Color
+
+            init(foreground: Color, surface: Color = Surface.secondary, text: Color = Text.primary) {
+                self.foreground = foreground
+                self.surface = surface
+                self.text = text
+            }
+
             /// Green
-            public static let valid = Color(light: AuthColor.green500, dark: AuthColor.green300)
+            public static let valid = StatusColors(
+                foreground: Color(light: AuthColor.green500, dark: AuthColor.green300)
+            )
+
             /// Orange
-            public static let warning = Color(light: AuthColor.orange500, dark: AuthColor.orange300)
+            public static let warning = StatusColors(
+                foreground: Color(light: AuthColor.orange500, dark: AuthColor.orange300),
+                surface: Color(light: AuthColor.orange50, dark: AuthColor.orange950),
+                text: Color(light: AuthColor.orange900, dark: AuthColor.orange100)
+            )
+
             /// Red
-            public static let error = Color(light: AuthColor.red500, dark: AuthColor.red300)
+            public static let error = StatusColors(
+                foreground: Color(light: AuthColor.red500, dark: AuthColor.red300),
+                surface: Color(light: AuthColor.red50, dark: AuthColor.red950),
+                text: Color(light: AuthColor.red900, dark: AuthColor.red100)
+            )
         }
     }
 }
