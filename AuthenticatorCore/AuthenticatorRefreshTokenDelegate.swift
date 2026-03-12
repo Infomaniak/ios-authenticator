@@ -16,23 +16,14 @@
  along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-import SwiftUI
-import AuthenticatorCoreUI
+import Foundation
+import InfomaniakLogin
+import InfomaniakCore
 
-public struct PreloadingView: View {
-    @EnvironmentObject private var rootViewState: RootViewState
-
-    public init() {}
-
-    public var body: some View {
-        ProgressView()
-            .progressViewStyle(.circular)
-            .task {
-                rootViewState.state = .onboarding
-            }
+public final class AuthenticatorRefreshTokenDelegate: RefreshTokenDelegate, Sendable {
+    public func didUpdateToken(newToken: ApiToken, oldToken: ApiToken) {
+        // TODO: Refresh using key
     }
-}
 
-#Preview {
-    PreloadingView()
+    public func didFailRefreshToken(_ token: ApiToken) {}
 }

@@ -45,6 +45,10 @@ public struct OnboardingView: View {
         type == .newUser ? Slide.onboardingSlides : Slide.migratingSlides
     }
 
+    public init(type: OnboardingType) {
+        self.type = type
+    }
+
     public var body: some View {
         CarouselView(slides: slides, selectedSlide: .constant(0)) { _ in
             ContinueWithAccountView(isLoading: loginHandler.isLoading, excludingUserIds: excludedUserIds) {

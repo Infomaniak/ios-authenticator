@@ -19,11 +19,26 @@
 import Combine
 import DeviceAssociation
 import Foundation
-import InfomaniakCore
+@preconcurrency import InfomaniakCore
 import InfomaniakDI
 import InfomaniakLogin
 import InfomaniakNotifications
 import OSLog
+
+public extension ApiFetcher {
+    convenience init(token: ApiToken, delegate: RefreshTokenDelegate) {
+        let decoder = JSONDecoder()
+        decoder.dateDecodingStrategy = .iso8601
+        decoder.keyDecodingStrategy = .convertFromSnakeCase
+
+        self.init(decoder: decoder)
+        createAuthenticatedSession(
+            token,
+            authenticator: OAuthAuthenticator(refreshTokenDelegate: delegate),
+            additionalAdapters: [UserAgentAdapter()]
+        )
+    }
+}
 
 public protocol AccountManagerable: Sendable {
     typealias UserId = Int
@@ -42,18 +57,55 @@ public extension AccountManager {
 }
 
 public actor AccountManager: AccountManagerable {
-    public var accounts: [ApiToken]
+    @InjectService private var tokenStore: TokenStore
+    @LazyInjectService private var networkLoginService: InfomaniakNetworkLoginable
+    @LazyInjectService private var deviceManager: DeviceManagerable
+
+    public var accounts: [ApiToken] {
+        return tokenStore.getAllTokens().values.map { $0.apiToken }
+    }
     public var userProfileStore: InfomaniakCore.UserProfileStore
     public var currentSession: Int?
 
-    init(accounts: [ApiToken], userProfileStore: InfomaniakCore.UserProfileStore, currentSession: Int?) {
-        self.accounts = accounts
+    private let refreshTokenDelegate = AuthenticatorRefreshTokenDelegate()
+
+    init(userProfileStore: InfomaniakCore.UserProfileStore, currentSession: Int?) {
         self.userProfileStore = userProfileStore
         self.currentSession = currentSession
     }
 
     init() {
-        self.init(accounts: [], userProfileStore: UserProfileStore(), currentSession: nil)
+        self.init(userProfileStore: UserProfileStore(), currentSession: nil)
+    }
+
+    public func createAndSetCurrentAccount(code: String, codeVerifier: String) async throws {
+        let token = try await networkLoginService.apiTokenUsing(code: code, codeVerifier: codeVerifier)
+
+        do {
+            try await createAccount(token: token)
+        } catch {
+            throw error
+        }
+    }
+
+    public func createAccount(token: ApiToken) async throws {
+        let temporaryApiFetcher = ApiFetcher(token: token, delegate: refreshTokenDelegate)
+        let user = try await userProfileStore.updateUserProfile(with: temporaryApiFetcher)
+
+        let deviceId = try await deviceManager.getOrCreateCurrentDevice().uid
+        tokenStore.addToken(newToken: token, associatedDeviceId: deviceId)
+        attachDeviceToApiToken(token, apiFetcher: temporaryApiFetcher)
+    }
+
+    private func attachDeviceToApiToken(_ token: ApiToken, apiFetcher: ApiFetcher) {
+        Task {
+            do {
+                let device = try await deviceManager.getOrCreateCurrentDevice()
+                try await deviceManager.attachDeviceIfNeeded(device, to: token, apiFetcher: apiFetcher)
+            } catch {
+                Logger.general.error("Failed to attach device to token: \(error.localizedDescription)")
+            }
+        }
     }
 
     public func getAccountsIds() async -> [Int] {

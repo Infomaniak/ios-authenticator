@@ -38,6 +38,7 @@ public enum RootViewType: @MainActor Equatable {
 
     case mainView(MainViewState)
     case preloading
+    case migration
     case onboarding
     case updateRequired
 }

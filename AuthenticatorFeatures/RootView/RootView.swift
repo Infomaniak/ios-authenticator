@@ -16,13 +16,33 @@
  along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
+import AuthenticatorCoreUI
+import AuthenticatorMainView
+import AuthenticatorOnboardingView
+import AuthenticatorPreloadingView
 import SwiftUI
 
 public struct RootView: View {
+    @EnvironmentObject private var rootViewState: RootViewState
+
     public init() {}
 
     public var body: some View {
-        Text("RootView")
+        ZStack {
+            switch rootViewState.state {
+            case .mainView(let mainViewState):
+                MainView()
+                    .environmentObject(mainViewState)
+            case .preloading:
+                PreloadingView()
+            case .onboarding:
+                OnboardingView(type: .newUser)
+            case .migration:
+                OnboardingView(type: .migrating)
+            case .updateRequired:
+                Text("Updated required") // TODO: Implement update required screen
+            }
+        }
     }
 }
 

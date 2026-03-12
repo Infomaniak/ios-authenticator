@@ -17,6 +17,7 @@
  */
 
 import AuthenticatorCore
+import AuthenticatorCoreUI
 import AuthenticatorRootView
 import SwiftUI
 
@@ -25,9 +26,12 @@ struct AuthenticatorApp: App {
     // periphery:ignore - Making sure the DI is registered at a very early stage of the app launch.
     private let dependencyInjectionHook = TargetAssembly()
 
+    @StateObject private var rootViewState = RootViewState()
+
     var body: some Scene {
         WindowGroup {
             RootView()
+                .environmentObject(rootViewState)
         }
         .defaultAppStorage(.shared)
     }

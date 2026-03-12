@@ -61,6 +61,12 @@ open class TargetAssembly {
             Factory(type: AccountManagerable.self) { _, _ in
                 AccountManager()
             },
+            Factory(type: KeychainHelper.self) { _, _ in
+                KeychainHelper(accessGroup: AppIdentifierBuilder.authenticatorKeychainIdentifier)
+            },
+            Factory(type: TokenStore.self) { _, _ in
+                TokenStore()
+            },
             Factory(type: AppGroupPathProvidable.self) { _, _ in
                 guard let provider = AppGroupPathProvider(
                     realmRootPath: realmRootPath,
