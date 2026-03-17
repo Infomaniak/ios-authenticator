@@ -3371,6 +3371,281 @@
                 "children": [
                   {
                     "kind": "TypeDecl",
+                    "name": "LoginRequired",
+                    "printedName": "LoginRequired",
+                    "children": [
+                      {
+                        "kind": "TypeDecl",
+                        "name": "__Sealed",
+                        "printedName": "__Sealed",
+                        "children": [
+                          {
+                            "kind": "Var",
+                            "name": "migratingFromLegacyKAuth",
+                            "printedName": "migratingFromLegacyKAuth",
+                            "children": [
+                              {
+                                "kind": "TypeFunc",
+                                "name": "Function",
+                                "printedName": "(CoreAuthenticator.Skie.MultiplatformLib.AppStatus.LoginRequired.__Sealed.Type) -> (CoreAuthenticator.AppStatusLoginRequiredMigratingFromLegacyKAuth) -> CoreAuthenticator.Skie.MultiplatformLib.AppStatus.LoginRequired.__Sealed",
+                                "children": [
+                                  {
+                                    "kind": "TypeFunc",
+                                    "name": "Function",
+                                    "printedName": "(CoreAuthenticator.AppStatusLoginRequiredMigratingFromLegacyKAuth) -> CoreAuthenticator.Skie.MultiplatformLib.AppStatus.LoginRequired.__Sealed",
+                                    "children": [
+                                      {
+                                        "kind": "TypeNominal",
+                                        "name": "__Sealed",
+                                        "printedName": "CoreAuthenticator.Skie.MultiplatformLib.AppStatus.LoginRequired.__Sealed",
+                                        "usr": "s:17CoreAuthenticator4SkieO16MultiplatformLibO9AppStatusO13LoginRequiredO8__SealedO"
+                                      },
+                                      {
+                                        "kind": "TypeNominal",
+                                        "name": "AppStatusLoginRequiredMigratingFromLegacyKAuth",
+                                        "printedName": "CoreAuthenticator.AppStatusLoginRequiredMigratingFromLegacyKAuth",
+                                        "usr": "c:objc(cs)CoreAuthenticatorAppStatusLoginRequiredMigratingFromLegacyKAuth"
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "Metatype",
+                                    "printedName": "CoreAuthenticator.Skie.MultiplatformLib.AppStatus.LoginRequired.__Sealed.Type",
+                                    "children": [
+                                      {
+                                        "kind": "TypeNominal",
+                                        "name": "__Sealed",
+                                        "printedName": "CoreAuthenticator.Skie.MultiplatformLib.AppStatus.LoginRequired.__Sealed",
+                                        "usr": "s:17CoreAuthenticator4SkieO16MultiplatformLibO9AppStatusO13LoginRequiredO8__SealedO"
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ],
+                            "declKind": "EnumElement",
+                            "usr": "s:17CoreAuthenticator4SkieO16MultiplatformLibO9AppStatusO13LoginRequiredO8__SealedO24migratingFromLegacyKAuthyAKSo0abfghi9MigratinglmN0CcAKmF",
+                            "mangledName": "$s17CoreAuthenticator4SkieO16MultiplatformLibO9AppStatusO13LoginRequiredO8__SealedO24migratingFromLegacyKAuthyAKSo0abfghi9MigratinglmN0CcAKmF",
+                            "moduleName": "CoreAuthenticator",
+                            "fixedbinaryorder": 0
+                          },
+                          {
+                            "kind": "Var",
+                            "name": "notMigrating",
+                            "printedName": "notMigrating",
+                            "children": [
+                              {
+                                "kind": "TypeFunc",
+                                "name": "Function",
+                                "printedName": "(CoreAuthenticator.Skie.MultiplatformLib.AppStatus.LoginRequired.__Sealed.Type) -> (CoreAuthenticator.AppStatusLoginRequiredNotMigrating) -> CoreAuthenticator.Skie.MultiplatformLib.AppStatus.LoginRequired.__Sealed",
+                                "children": [
+                                  {
+                                    "kind": "TypeFunc",
+                                    "name": "Function",
+                                    "printedName": "(CoreAuthenticator.AppStatusLoginRequiredNotMigrating) -> CoreAuthenticator.Skie.MultiplatformLib.AppStatus.LoginRequired.__Sealed",
+                                    "children": [
+                                      {
+                                        "kind": "TypeNominal",
+                                        "name": "__Sealed",
+                                        "printedName": "CoreAuthenticator.Skie.MultiplatformLib.AppStatus.LoginRequired.__Sealed",
+                                        "usr": "s:17CoreAuthenticator4SkieO16MultiplatformLibO9AppStatusO13LoginRequiredO8__SealedO"
+                                      },
+                                      {
+                                        "kind": "TypeNominal",
+                                        "name": "AppStatusLoginRequiredNotMigrating",
+                                        "printedName": "CoreAuthenticator.AppStatusLoginRequiredNotMigrating",
+                                        "usr": "c:objc(cs)CoreAuthenticatorAppStatusLoginRequiredNotMigrating"
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "Metatype",
+                                    "printedName": "CoreAuthenticator.Skie.MultiplatformLib.AppStatus.LoginRequired.__Sealed.Type",
+                                    "children": [
+                                      {
+                                        "kind": "TypeNominal",
+                                        "name": "__Sealed",
+                                        "printedName": "CoreAuthenticator.Skie.MultiplatformLib.AppStatus.LoginRequired.__Sealed",
+                                        "usr": "s:17CoreAuthenticator4SkieO16MultiplatformLibO9AppStatusO13LoginRequiredO8__SealedO"
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ],
+                            "declKind": "EnumElement",
+                            "usr": "s:17CoreAuthenticator4SkieO16MultiplatformLibO9AppStatusO13LoginRequiredO8__SealedO12notMigratingyAKSo0abfghi3NotL0CcAKmF",
+                            "mangledName": "$s17CoreAuthenticator4SkieO16MultiplatformLibO9AppStatusO13LoginRequiredO8__SealedO12notMigratingyAKSo0abfghi3NotL0CcAKmF",
+                            "moduleName": "CoreAuthenticator",
+                            "fixedbinaryorder": 1
+                          },
+                          {
+                            "kind": "Var",
+                            "name": "hashValue",
+                            "printedName": "hashValue",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Int",
+                                "printedName": "Swift.Int",
+                                "usr": "s:Si"
+                              }
+                            ],
+                            "declKind": "Var",
+                            "usr": "s:17CoreAuthenticator4SkieO16MultiplatformLibO9AppStatusO13LoginRequiredO8__SealedO9hashValueSivp",
+                            "mangledName": "$s17CoreAuthenticator4SkieO16MultiplatformLibO9AppStatusO13LoginRequiredO8__SealedO9hashValueSivp",
+                            "moduleName": "CoreAuthenticator",
+                            "implicit": true,
+                            "accessors": [
+                              {
+                                "kind": "Accessor",
+                                "name": "Get",
+                                "printedName": "Get()",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "Int",
+                                    "printedName": "Swift.Int",
+                                    "usr": "s:Si"
+                                  }
+                                ],
+                                "declKind": "Accessor",
+                                "usr": "s:17CoreAuthenticator4SkieO16MultiplatformLibO9AppStatusO13LoginRequiredO8__SealedO9hashValueSivg",
+                                "mangledName": "$s17CoreAuthenticator4SkieO16MultiplatformLibO9AppStatusO13LoginRequiredO8__SealedO9hashValueSivg",
+                                "moduleName": "CoreAuthenticator",
+                                "implicit": true,
+                                "accessorKind": "get"
+                              }
+                            ]
+                          },
+                          {
+                            "kind": "Function",
+                            "name": "hash",
+                            "printedName": "hash(into:)",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Void",
+                                "printedName": "()"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Hasher",
+                                "printedName": "Swift.Hasher",
+                                "paramValueOwnership": "InOut",
+                                "usr": "s:s6HasherV"
+                              }
+                            ],
+                            "declKind": "Func",
+                            "usr": "s:17CoreAuthenticator4SkieO16MultiplatformLibO9AppStatusO13LoginRequiredO8__SealedO4hash4intoys6HasherVz_tF",
+                            "mangledName": "$s17CoreAuthenticator4SkieO16MultiplatformLibO9AppStatusO13LoginRequiredO8__SealedO4hash4intoys6HasherVz_tF",
+                            "moduleName": "CoreAuthenticator",
+                            "implicit": true,
+                            "funcSelfKind": "NonMutating"
+                          },
+                          {
+                            "kind": "Function",
+                            "name": "==",
+                            "printedName": "==(_:_:)",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Bool",
+                                "printedName": "Swift.Bool",
+                                "usr": "s:Sb"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "__Sealed",
+                                "printedName": "CoreAuthenticator.Skie.MultiplatformLib.AppStatus.LoginRequired.__Sealed",
+                                "usr": "s:17CoreAuthenticator4SkieO16MultiplatformLibO9AppStatusO13LoginRequiredO8__SealedO"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "__Sealed",
+                                "printedName": "CoreAuthenticator.Skie.MultiplatformLib.AppStatus.LoginRequired.__Sealed",
+                                "usr": "s:17CoreAuthenticator4SkieO16MultiplatformLibO9AppStatusO13LoginRequiredO8__SealedO"
+                              }
+                            ],
+                            "declKind": "Func",
+                            "usr": "s:17CoreAuthenticator4SkieO16MultiplatformLibO9AppStatusO13LoginRequiredO8__SealedO2eeoiySbAK_AKtFZ",
+                            "mangledName": "$s17CoreAuthenticator4SkieO16MultiplatformLibO9AppStatusO13LoginRequiredO8__SealedO2eeoiySbAK_AKtFZ",
+                            "moduleName": "CoreAuthenticator",
+                            "static": true,
+                            "implicit": true,
+                            "funcSelfKind": "NonMutating"
+                          }
+                        ],
+                        "declKind": "Enum",
+                        "usr": "s:17CoreAuthenticator4SkieO16MultiplatformLibO9AppStatusO13LoginRequiredO8__SealedO",
+                        "mangledName": "$s17CoreAuthenticator4SkieO16MultiplatformLibO9AppStatusO13LoginRequiredO8__SealedO",
+                        "moduleName": "CoreAuthenticator",
+                        "declAttributes": [
+                          "AccessControl",
+                          "Frozen"
+                        ],
+                        "isFromExtension": true,
+                        "isEnumExhaustive": true,
+                        "conformances": [
+                          {
+                            "kind": "Conformance",
+                            "name": "Copyable",
+                            "printedName": "Copyable",
+                            "usr": "s:s8CopyableP",
+                            "mangledName": "$ss8CopyableP"
+                          },
+                          {
+                            "kind": "Conformance",
+                            "name": "Escapable",
+                            "printedName": "Escapable",
+                            "usr": "s:s9EscapableP",
+                            "mangledName": "$ss9EscapableP"
+                          },
+                          {
+                            "kind": "Conformance",
+                            "name": "Hashable",
+                            "printedName": "Hashable",
+                            "usr": "s:SH",
+                            "mangledName": "$sSH"
+                          },
+                          {
+                            "kind": "Conformance",
+                            "name": "Equatable",
+                            "printedName": "Equatable",
+                            "usr": "s:SQ",
+                            "mangledName": "$sSQ"
+                          }
+                        ]
+                      }
+                    ],
+                    "declKind": "Enum",
+                    "usr": "s:17CoreAuthenticator4SkieO16MultiplatformLibO9AppStatusO13LoginRequiredO",
+                    "mangledName": "$s17CoreAuthenticator4SkieO16MultiplatformLibO9AppStatusO13LoginRequiredO",
+                    "moduleName": "CoreAuthenticator",
+                    "declAttributes": [
+                      "AccessControl"
+                    ],
+                    "conformances": [
+                      {
+                        "kind": "Conformance",
+                        "name": "Copyable",
+                        "printedName": "Copyable",
+                        "usr": "s:s8CopyableP",
+                        "mangledName": "$ss8CopyableP"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "Escapable",
+                        "printedName": "Escapable",
+                        "usr": "s:s9EscapableP",
+                        "mangledName": "$ss9EscapableP"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeDecl",
                     "name": "__Sealed",
                     "printedName": "__Sealed",
                     "children": [
@@ -3433,12 +3708,12 @@
                           {
                             "kind": "TypeFunc",
                             "name": "Function",
-                            "printedName": "(CoreAuthenticator.Skie.MultiplatformLib.AppStatus.__Sealed.Type) -> (CoreAuthenticator.AppStatusLoginRequired) -> CoreAuthenticator.Skie.MultiplatformLib.AppStatus.__Sealed",
+                            "printedName": "(CoreAuthenticator.Skie.MultiplatformLib.AppStatus.__Sealed.Type) -> (any CoreAuthenticator.AppStatusLoginRequired) -> CoreAuthenticator.Skie.MultiplatformLib.AppStatus.__Sealed",
                             "children": [
                               {
                                 "kind": "TypeFunc",
                                 "name": "Function",
-                                "printedName": "(CoreAuthenticator.AppStatusLoginRequired) -> CoreAuthenticator.Skie.MultiplatformLib.AppStatus.__Sealed",
+                                "printedName": "(any CoreAuthenticator.AppStatusLoginRequired) -> CoreAuthenticator.Skie.MultiplatformLib.AppStatus.__Sealed",
                                 "children": [
                                   {
                                     "kind": "TypeNominal",
@@ -3449,8 +3724,8 @@
                                   {
                                     "kind": "TypeNominal",
                                     "name": "AppStatusLoginRequired",
-                                    "printedName": "CoreAuthenticator.AppStatusLoginRequired",
-                                    "usr": "c:objc(cs)CoreAuthenticatorAppStatusLoginRequired"
+                                    "printedName": "any CoreAuthenticator.AppStatusLoginRequired",
+                                    "usr": "c:objc(pl)CoreAuthenticatorAppStatusLoginRequired"
                                   }
                                 ]
                               },
@@ -3471,8 +3746,8 @@
                           }
                         ],
                         "declKind": "EnumElement",
-                        "usr": "s:17CoreAuthenticator4SkieO16MultiplatformLibO9AppStatusO8__SealedO13loginRequiredyAISo0abfg5LoginJ0CcAImF",
-                        "mangledName": "$s17CoreAuthenticator4SkieO16MultiplatformLibO9AppStatusO8__SealedO13loginRequiredyAISo0abfg5LoginJ0CcAImF",
+                        "usr": "s:17CoreAuthenticator4SkieO16MultiplatformLibO9AppStatusO8__SealedO13loginRequiredyAISo0abfg5LoginJ0_pcAImF",
+                        "mangledName": "$s17CoreAuthenticator4SkieO16MultiplatformLibO9AppStatusO8__SealedO13loginRequiredyAISo0abfg5LoginJ0_pcAImF",
                         "moduleName": "CoreAuthenticator",
                         "fixedbinaryorder": 1
                       },
@@ -3577,102 +3852,6 @@
                         "mangledName": "$s17CoreAuthenticator4SkieO16MultiplatformLibO9AppStatusO8__SealedO13setupCompleteyAISo0abfg5SetupJ0CcAImF",
                         "moduleName": "CoreAuthenticator",
                         "fixedbinaryorder": 3
-                      },
-                      {
-                        "kind": "Var",
-                        "name": "hashValue",
-                        "printedName": "hashValue",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Int",
-                            "printedName": "Swift.Int",
-                            "usr": "s:Si"
-                          }
-                        ],
-                        "declKind": "Var",
-                        "usr": "s:17CoreAuthenticator4SkieO16MultiplatformLibO9AppStatusO8__SealedO9hashValueSivp",
-                        "mangledName": "$s17CoreAuthenticator4SkieO16MultiplatformLibO9AppStatusO8__SealedO9hashValueSivp",
-                        "moduleName": "CoreAuthenticator",
-                        "implicit": true,
-                        "accessors": [
-                          {
-                            "kind": "Accessor",
-                            "name": "Get",
-                            "printedName": "Get()",
-                            "children": [
-                              {
-                                "kind": "TypeNominal",
-                                "name": "Int",
-                                "printedName": "Swift.Int",
-                                "usr": "s:Si"
-                              }
-                            ],
-                            "declKind": "Accessor",
-                            "usr": "s:17CoreAuthenticator4SkieO16MultiplatformLibO9AppStatusO8__SealedO9hashValueSivg",
-                            "mangledName": "$s17CoreAuthenticator4SkieO16MultiplatformLibO9AppStatusO8__SealedO9hashValueSivg",
-                            "moduleName": "CoreAuthenticator",
-                            "implicit": true,
-                            "accessorKind": "get"
-                          }
-                        ]
-                      },
-                      {
-                        "kind": "Function",
-                        "name": "hash",
-                        "printedName": "hash(into:)",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Void",
-                            "printedName": "()"
-                          },
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Hasher",
-                            "printedName": "Swift.Hasher",
-                            "paramValueOwnership": "InOut",
-                            "usr": "s:s6HasherV"
-                          }
-                        ],
-                        "declKind": "Func",
-                        "usr": "s:17CoreAuthenticator4SkieO16MultiplatformLibO9AppStatusO8__SealedO4hash4intoys6HasherVz_tF",
-                        "mangledName": "$s17CoreAuthenticator4SkieO16MultiplatformLibO9AppStatusO8__SealedO4hash4intoys6HasherVz_tF",
-                        "moduleName": "CoreAuthenticator",
-                        "implicit": true,
-                        "funcSelfKind": "NonMutating"
-                      },
-                      {
-                        "kind": "Function",
-                        "name": "==",
-                        "printedName": "==(_:_:)",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Bool",
-                            "printedName": "Swift.Bool",
-                            "usr": "s:Sb"
-                          },
-                          {
-                            "kind": "TypeNominal",
-                            "name": "__Sealed",
-                            "printedName": "CoreAuthenticator.Skie.MultiplatformLib.AppStatus.__Sealed",
-                            "usr": "s:17CoreAuthenticator4SkieO16MultiplatformLibO9AppStatusO8__SealedO"
-                          },
-                          {
-                            "kind": "TypeNominal",
-                            "name": "__Sealed",
-                            "printedName": "CoreAuthenticator.Skie.MultiplatformLib.AppStatus.__Sealed",
-                            "usr": "s:17CoreAuthenticator4SkieO16MultiplatformLibO9AppStatusO8__SealedO"
-                          }
-                        ],
-                        "declKind": "Func",
-                        "usr": "s:17CoreAuthenticator4SkieO16MultiplatformLibO9AppStatusO8__SealedO2eeoiySbAI_AItFZ",
-                        "mangledName": "$s17CoreAuthenticator4SkieO16MultiplatformLibO9AppStatusO8__SealedO2eeoiySbAI_AItFZ",
-                        "moduleName": "CoreAuthenticator",
-                        "static": true,
-                        "implicit": true,
-                        "funcSelfKind": "NonMutating"
                       }
                     ],
                     "declKind": "Enum",
@@ -3699,20 +3878,6 @@
                         "printedName": "Escapable",
                         "usr": "s:s9EscapableP",
                         "mangledName": "$ss9EscapableP"
-                      },
-                      {
-                        "kind": "Conformance",
-                        "name": "Hashable",
-                        "printedName": "Hashable",
-                        "usr": "s:SH",
-                        "mangledName": "$sSH"
-                      },
-                      {
-                        "kind": "Conformance",
-                        "name": "Equatable",
-                        "printedName": "Equatable",
-                        "usr": "s:SQ",
-                        "mangledName": "$sSQ"
                       }
                     ]
                   }
@@ -29436,8 +29601,8 @@
           },
           {
             "kind": "Var",
-            "name": "notConnectedEmpty",
-            "printedName": "notConnectedEmpty",
+            "name": "notConnected",
+            "printedName": "notConnected",
             "children": [
               {
                 "kind": "TypeFunc",
@@ -29467,86 +29632,10 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "s:17CoreAuthenticator12StatusEntityO17notConnectedEmptyyA2CmF",
-            "mangledName": "$s17CoreAuthenticator12StatusEntityO17notConnectedEmptyyA2CmF",
+            "usr": "s:17CoreAuthenticator12StatusEntityO12notConnectedyA2CmF",
+            "mangledName": "$s17CoreAuthenticator12StatusEntityO12notConnectedyA2CmF",
             "moduleName": "CoreAuthenticator",
             "fixedbinaryorder": 1
-          },
-          {
-            "kind": "Var",
-            "name": "notConnectedReLogin",
-            "printedName": "notConnectedReLogin",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(CoreAuthenticator.StatusEntity.Type) -> CoreAuthenticator.StatusEntity",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "StatusEntity",
-                    "printedName": "CoreAuthenticator.StatusEntity",
-                    "usr": "s:17CoreAuthenticator12StatusEntityO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "CoreAuthenticator.StatusEntity.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "StatusEntity",
-                        "printedName": "CoreAuthenticator.StatusEntity",
-                        "usr": "s:17CoreAuthenticator12StatusEntityO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:17CoreAuthenticator12StatusEntityO19notConnectedReLoginyA2CmF",
-            "mangledName": "$s17CoreAuthenticator12StatusEntityO19notConnectedReLoginyA2CmF",
-            "moduleName": "CoreAuthenticator",
-            "fixedbinaryorder": 2
-          },
-          {
-            "kind": "Var",
-            "name": "notConnectedIssue",
-            "printedName": "notConnectedIssue",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(CoreAuthenticator.StatusEntity.Type) -> CoreAuthenticator.StatusEntity",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "StatusEntity",
-                    "printedName": "CoreAuthenticator.StatusEntity",
-                    "usr": "s:17CoreAuthenticator12StatusEntityO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "CoreAuthenticator.StatusEntity.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "StatusEntity",
-                        "printedName": "CoreAuthenticator.StatusEntity",
-                        "usr": "s:17CoreAuthenticator12StatusEntityO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:17CoreAuthenticator12StatusEntityO17notConnectedIssueyA2CmF",
-            "mangledName": "$s17CoreAuthenticator12StatusEntityO17notConnectedIssueyA2CmF",
-            "moduleName": "CoreAuthenticator",
-            "fixedbinaryorder": 3
           },
           {
             "kind": "Var",
@@ -36541,6 +36630,89 @@
           {
             "kind": "TypeNominal",
             "name": "__Sealed",
+            "printedName": "CoreAuthenticator.Skie.MultiplatformLib.AppStatus.LoginRequired.__Sealed",
+            "usr": "s:17CoreAuthenticator4SkieO16MultiplatformLibO9AppStatusO13LoginRequiredO8__SealedO"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "GenericTypeParam",
+            "printedName": "τ_0_0"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "s:17CoreAuthenticator6onEnum2ofAA4SkieO16MultiplatformLibO9AppStatusO13LoginRequiredO8__SealedOx_tSo0abijkL0RzlF",
+        "mangledName": "$s17CoreAuthenticator6onEnum2ofAA4SkieO16MultiplatformLibO9AppStatusO13LoginRequiredO8__SealedOx_tSo0abijkL0RzlF",
+        "moduleName": "CoreAuthenticator",
+        "genericSig": "<τ_0_0 where τ_0_0 : CoreAuthenticator.AppStatusLoginRequired>",
+        "sugared_genericSig": "<__Sealed where __Sealed : CoreAuthenticator.AppStatusLoginRequired>",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Function",
+        "name": "onEnum",
+        "printedName": "onEnum(of:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Optional",
+            "printedName": "CoreAuthenticator.Skie.MultiplatformLib.AppStatus.LoginRequired.__Sealed?",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "__Sealed",
+                "printedName": "CoreAuthenticator.Skie.MultiplatformLib.AppStatus.LoginRequired.__Sealed",
+                "usr": "s:17CoreAuthenticator4SkieO16MultiplatformLibO9AppStatusO13LoginRequiredO8__SealedO"
+              }
+            ],
+            "usr": "s:Sq"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "Optional",
+            "printedName": "τ_0_0?",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_0"
+              }
+            ],
+            "usr": "s:Sq"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "s:17CoreAuthenticator6onEnum2ofAA4SkieO16MultiplatformLibO9AppStatusO13LoginRequiredO8__SealedOSgxSg_tSo0abijkL0RzlF",
+        "mangledName": "$s17CoreAuthenticator6onEnum2ofAA4SkieO16MultiplatformLibO9AppStatusO13LoginRequiredO8__SealedOSgxSg_tSo0abijkL0RzlF",
+        "moduleName": "CoreAuthenticator",
+        "genericSig": "<τ_0_0 where τ_0_0 : CoreAuthenticator.AppStatusLoginRequired>",
+        "sugared_genericSig": "<__Sealed where __Sealed : CoreAuthenticator.AppStatusLoginRequired>",
+        "declAttributes": [
+          "AccessControl",
+          "DisfavoredOverload"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "CoreAuthenticator",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Function",
+        "name": "onEnum",
+        "printedName": "onEnum(of:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "__Sealed",
             "printedName": "CoreAuthenticator.Skie.MultiplatformLib.ApiEnvironment.__Sealed",
             "usr": "s:17CoreAuthenticator4SkieO16MultiplatformLibO14ApiEnvironmentO8__SealedO"
           },
@@ -38029,28 +38201,22 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "Dictionary",
-                "printedName": "[CoreAuthenticator.Account : Swift.String]",
+                "name": "Array",
+                "printedName": "[CoreAuthenticator.Account]",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "Account",
                     "printedName": "CoreAuthenticator.Account",
                     "usr": "c:objc(cs)CoreAuthenticatorAccount"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
                   }
                 ],
-                "usr": "s:SD"
+                "usr": "s:Sa"
               }
             ],
             "declKind": "Func",
-            "usr": "s:So017CoreAuthenticatorB6FacadeC0aB0E11addAccounts09connectedE0ySDySo0aB7AccountCSSG_tYaKF",
-            "mangledName": "$sSo017CoreAuthenticatorB6FacadeC0aB0E11addAccounts09connectedE0ySDySo0aB7AccountCSSG_tYaKF",
+            "usr": "s:So017CoreAuthenticatorB6FacadeC0aB0E11addAccounts09connectedE0ySaySo0aB7AccountCG_tYaKF",
+            "mangledName": "$sSo017CoreAuthenticatorB6FacadeC0aB0E11addAccounts09connectedE0ySaySo0aB7AccountCG_tYaKF",
             "moduleName": "CoreAuthenticator",
             "intro_Macosx": "10.15",
             "intro_iOS": "13",

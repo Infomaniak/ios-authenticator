@@ -112,6 +112,8 @@ public enum Skie {
       }
     }
     public enum AppStatus {
+      public enum LoginRequired {
+      }
     }
     public enum ApiEnvironment {
     }
@@ -486,7 +488,7 @@ extension CoreAuthenticator.Kotlinx_coroutines_coreFlowCollector {
 }
 extension CoreAuthenticator.AuthenticatorFacade {
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
-  public func addAccounts(connectedAccounts: [CoreAuthenticator.Account : Swift.String]) async throws
+  public func addAccounts(connectedAccounts: [CoreAuthenticator.Account]) async throws
 }
 extension CoreAuthenticator.AuthenticatorManager {
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
@@ -1085,9 +1087,7 @@ extension CoreAuthenticator.__BreadcrumbType {
 }
 @frozen public enum StatusEntity : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {
   case loggedIn
-  case notConnectedEmpty
-  case notConnectedReLogin
-  case notConnectedIssue
+  case notConnected
   public var name: Swift.String {
     get
   }
@@ -1574,21 +1574,31 @@ public func onEnum<__Sealed>(of sealed: __Sealed) -> CoreAuthenticator.Skie.Mult
 @_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> CoreAuthenticator.Skie.MultiplatformLib.NotConnectedAction.Issue.__Sealed? where __Sealed : CoreAuthenticator.NotConnectedActionIssue
 #endif
 extension CoreAuthenticator.Skie.MultiplatformLib.AppStatus {
-  @frozen public enum __Sealed : Swift.Hashable {
+  @frozen public enum __Sealed {
     case loggingIn(CoreAuthenticator.AppStatusLoggingIn)
-    case loginRequired(CoreAuthenticator.AppStatusLoginRequired)
+    case loginRequired(any CoreAuthenticator.AppStatusLoginRequired)
     case onboardingDone(CoreAuthenticator.AppStatusOnboardingDone)
     case setupComplete(CoreAuthenticator.AppStatusSetupComplete)
-    public static func == (a: CoreAuthenticator.Skie.MultiplatformLib.AppStatus.__Sealed, b: CoreAuthenticator.Skie.MultiplatformLib.AppStatus.__Sealed) -> Swift.Bool
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> CoreAuthenticator.Skie.MultiplatformLib.AppStatus.__Sealed where __Sealed : CoreAuthenticator.AppStatus
+#if compiler(>=5.3) && $NonescapableTypes
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> CoreAuthenticator.Skie.MultiplatformLib.AppStatus.__Sealed? where __Sealed : CoreAuthenticator.AppStatus
+#endif
+extension CoreAuthenticator.Skie.MultiplatformLib.AppStatus.LoginRequired {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case migratingFromLegacyKAuth(CoreAuthenticator.AppStatusLoginRequiredMigratingFromLegacyKAuth)
+    case notMigrating(CoreAuthenticator.AppStatusLoginRequiredNotMigrating)
+    public static func == (a: CoreAuthenticator.Skie.MultiplatformLib.AppStatus.LoginRequired.__Sealed, b: CoreAuthenticator.Skie.MultiplatformLib.AppStatus.LoginRequired.__Sealed) -> Swift.Bool
     public func hash(into hasher: inout Swift.Hasher)
     public var hashValue: Swift.Int {
       get
     }
   }
 }
-public func onEnum<__Sealed>(of sealed: __Sealed) -> CoreAuthenticator.Skie.MultiplatformLib.AppStatus.__Sealed where __Sealed : CoreAuthenticator.AppStatus
+public func onEnum<__Sealed>(of sealed: __Sealed) -> CoreAuthenticator.Skie.MultiplatformLib.AppStatus.LoginRequired.__Sealed where __Sealed : CoreAuthenticator.AppStatusLoginRequired
 #if compiler(>=5.3) && $NonescapableTypes
-@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> CoreAuthenticator.Skie.MultiplatformLib.AppStatus.__Sealed? where __Sealed : CoreAuthenticator.AppStatus
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> CoreAuthenticator.Skie.MultiplatformLib.AppStatus.LoginRequired.__Sealed? where __Sealed : CoreAuthenticator.AppStatusLoginRequired
 #endif
 extension CoreAuthenticator.Skie.MultiplatformLib.ApiEnvironment {
   @frozen public enum __Sealed : Swift.Hashable {
