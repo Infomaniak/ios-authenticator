@@ -124,6 +124,7 @@ let project = Project(
                 sources: "\(Constants.projectName)Core/**",
                 dependencies: [
                     .target(name: "\(Constants.projectName)Resources"),
+                    .xcframework(path: "./Debug-Frameworks/CoreAuthenticator.xcframework"),
                     .external(name: "DesignSystem"),
                     .external(name: "InfomaniakCoreCommonUI"),
                     .external(name: "InfomaniakCoreSwiftUI"),
