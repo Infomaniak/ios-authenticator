@@ -1275,7 +1275,7 @@ Classes:
       Type: "NSString * _Nullable"
     - Position: 5
       Type: "Skie__TypeDef__0__id_CoreAuthenticatorAccountStatus_"
-  - Selector: "initWithId:fullName:initials:email:status__Skie_DefaultArguments__395:"
+  - Selector: "initWithId:fullName:initials:email:status__Skie_DefaultArguments__396:"
     MethodKind: "Instance"
     SwiftName: "init(id:fullName:initials:email:status:)"
     Parameters:
@@ -2109,18 +2109,18 @@ Classes:
     MethodKind: "Instance"
     SwiftName: "description()"
     ResultType: "NSString * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__293"
+  - Selector: "doCopy__Skie_DefaultArguments__294"
     MethodKind: "Instance"
     SwiftName: "doCopy()"
     ResultType: "CoreAuthenticatorNotConnectedActionReLogin * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__294LegacyAccount:"
+  - Selector: "doCopy__Skie_DefaultArguments__295LegacyAccount:"
     MethodKind: "Instance"
     SwiftName: "doCopy(legacyAccount:)"
     ResultType: "CoreAuthenticatorNotConnectedActionReLogin * _Nonnull"
     Parameters:
     - Position: 0
       Type: "CoreAuthenticatorAccount * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__295SendCredentials:"
+  - Selector: "doCopy__Skie_DefaultArguments__296SendCredentials:"
     MethodKind: "Instance"
     SwiftName: "doCopy(sendCredentials:)"
     ResultType: "CoreAuthenticatorNotConnectedActionReLogin * _Nonnull"
@@ -2163,7 +2163,7 @@ Classes:
     MethodKind: "Instance"
     SwiftName: "description()"
     ResultType: "NSString * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__296"
+  - Selector: "doCopy__Skie_DefaultArguments__297"
     MethodKind: "Instance"
     SwiftName: "doCopy()"
     ResultType: "CoreAuthenticatorNotConnectedActionIssueRetriable * _Nonnull"
@@ -2203,39 +2203,31 @@ Classes:
     MethodKind: "Instance"
     SwiftName: "description()"
     ResultType: "NSString * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__297"
+  - Selector: "doCopy__Skie_DefaultArguments__298"
     MethodKind: "Instance"
     SwiftName: "doCopy()"
     ResultType: "CoreAuthenticatorNotConnectedActionIssueNonRetriable * _Nonnull"
-- Name: "CoreAuthenticatorAppStatusLoginRequired"
-  SwiftName: "AppStatusLoginRequired"
+- Name: "CoreAuthenticatorAppStatusLoginRequiredMigratingFromLegacyKAuth"
+  SwiftName: "AppStatusLoginRequiredMigratingFromLegacyKAuth"
   Properties:
-  - Name: "isMigratingFromLegacyKAuth"
-    PropertyKind: "Instance"
-    SwiftName: "isMigratingFromLegacyKAuth"
-    Type: "BOOL"
   - Name: "proceed"
     PropertyKind: "Instance"
     SwiftName: "proceed"
-    Type: "void (^ _Nullable)(void)"
+    Type: "void (^ _Nonnull)(void)"
   Methods:
-  - Selector: "initWithIsMigratingFromLegacyKAuth:proceed:"
+  - Selector: "initWithProceed:"
     MethodKind: "Instance"
-    SwiftName: "init(isMigratingFromLegacyKAuth:proceed:)"
+    SwiftName: "init(proceed:)"
     Parameters:
     - Position: 0
-      Type: "BOOL"
-    - Position: 1
-      Type: "void (^ _Nullable)(void)"
-  - Selector: "doCopyIsMigratingFromLegacyKAuth:proceed:"
+      Type: "void (^ _Nonnull)(void)"
+  - Selector: "doCopyProceed:"
     MethodKind: "Instance"
-    SwiftName: "doCopy(isMigratingFromLegacyKAuth:proceed:)"
-    ResultType: "CoreAuthenticatorAppStatusLoginRequired * _Nonnull"
+    SwiftName: "doCopy(proceed:)"
+    ResultType: "CoreAuthenticatorAppStatusLoginRequiredMigratingFromLegacyKAuth * _Nonnull"
     Parameters:
     - Position: 0
-      Type: "BOOL"
-    - Position: 1
-      Type: "void (^ _Nullable)(void)"
+      Type: "void (^ _Nonnull)(void)"
   - Selector: "isEqual:"
     MethodKind: "Instance"
     SwiftName: "isEqual(_:)"
@@ -2254,21 +2246,25 @@ Classes:
   - Selector: "doCopy__Skie_DefaultArguments__64"
     MethodKind: "Instance"
     SwiftName: "doCopy()"
-    ResultType: "CoreAuthenticatorAppStatusLoginRequired * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__65IsMigratingFromLegacyKAuth:"
+    ResultType: "CoreAuthenticatorAppStatusLoginRequiredMigratingFromLegacyKAuth * _Nonnull"
+- Name: "CoreAuthenticatorAppStatusLoginRequiredNotMigrating"
+  SwiftName: "AppStatusLoginRequiredNotMigrating"
+  Methods:
+  - Selector: "isEqual:"
     MethodKind: "Instance"
-    SwiftName: "doCopy(isMigratingFromLegacyKAuth:)"
-    ResultType: "CoreAuthenticatorAppStatusLoginRequired * _Nonnull"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
     Parameters:
     - Position: 0
-      Type: "BOOL"
-  - Selector: "doCopy__Skie_DefaultArguments__66Proceed:"
+      Type: "id _Nullable"
+  - Selector: "hash"
     MethodKind: "Instance"
-    SwiftName: "doCopy(proceed:)"
-    ResultType: "CoreAuthenticatorAppStatusLoginRequired * _Nonnull"
-    Parameters:
-    - Position: 0
-      Type: "void (^ _Nullable)(void)"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
 - Name: "CoreAuthenticatorAppStatusLoggingIn"
   SwiftName: "AppStatusLoggingIn"
   Properties:
@@ -2305,7 +2301,7 @@ Classes:
     MethodKind: "Instance"
     SwiftName: "description()"
     ResultType: "NSString * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__67"
+  - Selector: "doCopy__Skie_DefaultArguments__65"
     MethodKind: "Instance"
     SwiftName: "doCopy()"
     ResultType: "CoreAuthenticatorAppStatusLoggingIn * _Nonnull"
@@ -2345,31 +2341,13 @@ Classes:
     MethodKind: "Instance"
     SwiftName: "description()"
     ResultType: "NSString * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__68"
+  - Selector: "doCopy__Skie_DefaultArguments__66"
     MethodKind: "Instance"
     SwiftName: "doCopy()"
     ResultType: "CoreAuthenticatorAppStatusOnboardingDone * _Nonnull"
 - Name: "CoreAuthenticatorAppStatusSetupComplete"
   SwiftName: "AppStatusSetupComplete"
-  Properties:
-  - Name: "accounts"
-    PropertyKind: "Instance"
-    SwiftName: "accounts"
-    Type: "NSArray<CoreAuthenticatorAccount *> * _Nonnull"
   Methods:
-  - Selector: "initWithAccounts:"
-    MethodKind: "Instance"
-    SwiftName: "init(accounts:)"
-    Parameters:
-    - Position: 0
-      Type: "NSArray<CoreAuthenticatorAccount *> * _Nonnull"
-  - Selector: "doCopyAccounts:"
-    MethodKind: "Instance"
-    SwiftName: "doCopy(accounts:)"
-    ResultType: "CoreAuthenticatorAppStatusSetupComplete * _Nonnull"
-    Parameters:
-    - Position: 0
-      Type: "NSArray<CoreAuthenticatorAccount *> * _Nonnull"
   - Selector: "isEqual:"
     MethodKind: "Instance"
     SwiftName: "isEqual(_:)"
@@ -2385,10 +2363,6 @@ Classes:
     MethodKind: "Instance"
     SwiftName: "description()"
     ResultType: "NSString * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__69"
-    MethodKind: "Instance"
-    SwiftName: "doCopy()"
-    ResultType: "CoreAuthenticatorAppStatusSetupComplete * _Nonnull"
 - Name: "CoreAuthenticatorAuthenticatorFacade"
   SwiftName: "AuthenticatorFacade"
   Properties:
@@ -2408,13 +2382,67 @@ Classes:
     ResultType: "void"
     Parameters:
     - Position: 0
-      Type: "NSDictionary<CoreAuthenticatorAccount *, NSString *> * _Nonnull"
+      Type: "NSArray<CoreAuthenticatorAccount *> * _Nonnull"
     - Position: 1
       Type: "void (^ _Nonnull)(NSError * _Nullable)"
 - Name: "CoreAuthenticatorAuthenticatorFacadeCompanion"
   SwiftName: "AuthenticatorFacade.Companion"
   Methods:
-  - Selector: "dummyInstanceLoadingDurationMillis:resetAfterMillis:"
+  - Selector: "dummyInstanceScope:loadingDurationMillis:resetAfterMillis:"
+    MethodKind: "Instance"
+    SwiftName: "dummyInstance(scope:loadingDurationMillis:resetAfterMillis:)"
+    ResultType: "CoreAuthenticatorAuthenticatorFacade * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "id<CoreAuthenticatorKotlinx_coroutines_coreCoroutineScope> _Nonnull"
+    - Position: 1
+      Type: "int64_t"
+    - Position: 2
+      Type: "int64_t"
+  - Selector: "dummyInstance__Skie_DefaultArguments__67"
+    MethodKind: "Instance"
+    SwiftName: "dummyInstance()"
+    ResultType: "CoreAuthenticatorAuthenticatorFacade * _Nonnull"
+  - Selector: "dummyInstance__Skie_DefaultArguments__68Scope:"
+    MethodKind: "Instance"
+    SwiftName: "dummyInstance(scope:)"
+    ResultType: "CoreAuthenticatorAuthenticatorFacade * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "id<CoreAuthenticatorKotlinx_coroutines_coreCoroutineScope> _Nonnull"
+  - Selector: "dummyInstance__Skie_DefaultArguments__69LoadingDurationMillis:"
+    MethodKind: "Instance"
+    SwiftName: "dummyInstance(loadingDurationMillis:)"
+    ResultType: "CoreAuthenticatorAuthenticatorFacade * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "int64_t"
+  - Selector: "dummyInstance__Skie_DefaultArguments__70Scope:loadingDurationMillis:"
+    MethodKind: "Instance"
+    SwiftName: "dummyInstance(scope:loadingDurationMillis:)"
+    ResultType: "CoreAuthenticatorAuthenticatorFacade * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "id<CoreAuthenticatorKotlinx_coroutines_coreCoroutineScope> _Nonnull"
+    - Position: 1
+      Type: "int64_t"
+  - Selector: "dummyInstance__Skie_DefaultArguments__71ResetAfterMillis:"
+    MethodKind: "Instance"
+    SwiftName: "dummyInstance(resetAfterMillis:)"
+    ResultType: "CoreAuthenticatorAuthenticatorFacade * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "int64_t"
+  - Selector: "dummyInstance__Skie_DefaultArguments__72Scope:resetAfterMillis:"
+    MethodKind: "Instance"
+    SwiftName: "dummyInstance(scope:resetAfterMillis:)"
+    ResultType: "CoreAuthenticatorAuthenticatorFacade * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "id<CoreAuthenticatorKotlinx_coroutines_coreCoroutineScope> _Nonnull"
+    - Position: 1
+      Type: "int64_t"
+  - Selector: "dummyInstance__Skie_DefaultArguments__73LoadingDurationMillis:resetAfterMillis:"
     MethodKind: "Instance"
     SwiftName: "dummyInstance(loadingDurationMillis:resetAfterMillis:)"
     ResultType: "CoreAuthenticatorAuthenticatorFacade * _Nonnull"
@@ -2422,24 +2450,6 @@ Classes:
     - Position: 0
       Type: "int64_t"
     - Position: 1
-      Type: "int64_t"
-  - Selector: "dummyInstance__Skie_DefaultArguments__70"
-    MethodKind: "Instance"
-    SwiftName: "dummyInstance()"
-    ResultType: "CoreAuthenticatorAuthenticatorFacade * _Nonnull"
-  - Selector: "dummyInstance__Skie_DefaultArguments__71LoadingDurationMillis:"
-    MethodKind: "Instance"
-    SwiftName: "dummyInstance(loadingDurationMillis:)"
-    ResultType: "CoreAuthenticatorAuthenticatorFacade * _Nonnull"
-    Parameters:
-    - Position: 0
-      Type: "int64_t"
-  - Selector: "dummyInstance__Skie_DefaultArguments__72ResetAfterMillis:"
-    MethodKind: "Instance"
-    SwiftName: "dummyInstance(resetAfterMillis:)"
-    ResultType: "CoreAuthenticatorAuthenticatorFacade * _Nonnull"
-    Parameters:
-    - Position: 0
       Type: "int64_t"
 - Name: "CoreAuthenticatorAuthenticatorInjection"
   SwiftName: "AuthenticatorInjection"
@@ -2461,7 +2471,7 @@ Classes:
       Type: "NSString * _Nullable"
     - Position: 3
       Type: "id<CoreAuthenticatorCrashReportInterface> _Nonnull"
-  - Selector: "initWithEnvironment:userAgent:crashReport__Skie_DefaultArguments__396:"
+  - Selector: "initWithEnvironment:userAgent:crashReport__Skie_DefaultArguments__397:"
     MethodKind: "Instance"
     SwiftName: "init(environment:userAgent:crashReport:)"
     Parameters:
@@ -2663,25 +2673,25 @@ Classes:
     MethodKind: "Instance"
     SwiftName: "description()"
     ResultType: "NSString * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__73"
+  - Selector: "doCopy__Skie_DefaultArguments__74"
     MethodKind: "Instance"
     SwiftName: "doCopy()"
     ResultType: "CoreAuthenticatorAuthResult * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__74TokenType:"
+  - Selector: "doCopy__Skie_DefaultArguments__75TokenType:"
     MethodKind: "Instance"
     SwiftName: "doCopy(tokenType:)"
     ResultType: "CoreAuthenticatorAuthResult * _Nonnull"
     Parameters:
     - Position: 0
       Type: "NSString * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__75Scope:"
+  - Selector: "doCopy__Skie_DefaultArguments__76Scope:"
     MethodKind: "Instance"
     SwiftName: "doCopy(scope:)"
     ResultType: "CoreAuthenticatorAuthResult * _Nonnull"
     Parameters:
     - Position: 0
       Type: "NSString * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__76TokenType:scope:"
+  - Selector: "doCopy__Skie_DefaultArguments__77TokenType:scope:"
     MethodKind: "Instance"
     SwiftName: "doCopy(tokenType:scope:)"
     ResultType: "CoreAuthenticatorAuthResult * _Nonnull"
@@ -2690,14 +2700,14 @@ Classes:
       Type: "NSString * _Nonnull"
     - Position: 1
       Type: "NSString * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__77UserId:"
+  - Selector: "doCopy__Skie_DefaultArguments__78UserId:"
     MethodKind: "Instance"
     SwiftName: "doCopy(userId:)"
     ResultType: "CoreAuthenticatorAuthResult * _Nonnull"
     Parameters:
     - Position: 0
       Type: "int64_t"
-  - Selector: "doCopy__Skie_DefaultArguments__78TokenType:userId:"
+  - Selector: "doCopy__Skie_DefaultArguments__79TokenType:userId:"
     MethodKind: "Instance"
     SwiftName: "doCopy(tokenType:userId:)"
     ResultType: "CoreAuthenticatorAuthResult * _Nonnull"
@@ -2706,7 +2716,7 @@ Classes:
       Type: "NSString * _Nonnull"
     - Position: 1
       Type: "int64_t"
-  - Selector: "doCopy__Skie_DefaultArguments__79Scope:userId:"
+  - Selector: "doCopy__Skie_DefaultArguments__80Scope:userId:"
     MethodKind: "Instance"
     SwiftName: "doCopy(scope:userId:)"
     ResultType: "CoreAuthenticatorAuthResult * _Nonnull"
@@ -2715,7 +2725,7 @@ Classes:
       Type: "NSString * _Nonnull"
     - Position: 1
       Type: "int64_t"
-  - Selector: "doCopy__Skie_DefaultArguments__80TokenType:scope:userId:"
+  - Selector: "doCopy__Skie_DefaultArguments__81TokenType:scope:userId:"
     MethodKind: "Instance"
     SwiftName: "doCopy(tokenType:scope:userId:)"
     ResultType: "CoreAuthenticatorAuthResult * _Nonnull"
@@ -2726,14 +2736,14 @@ Classes:
       Type: "NSString * _Nonnull"
     - Position: 2
       Type: "int64_t"
-  - Selector: "doCopy__Skie_DefaultArguments__81AccessToken:"
+  - Selector: "doCopy__Skie_DefaultArguments__82AccessToken:"
     MethodKind: "Instance"
     SwiftName: "doCopy(accessToken:)"
     ResultType: "CoreAuthenticatorAuthResult * _Nonnull"
     Parameters:
     - Position: 0
       Type: "NSString * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__82TokenType:accessToken:"
+  - Selector: "doCopy__Skie_DefaultArguments__83TokenType:accessToken:"
     MethodKind: "Instance"
     SwiftName: "doCopy(tokenType:accessToken:)"
     ResultType: "CoreAuthenticatorAuthResult * _Nonnull"
@@ -2742,7 +2752,7 @@ Classes:
       Type: "NSString * _Nonnull"
     - Position: 1
       Type: "NSString * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__83Scope:accessToken:"
+  - Selector: "doCopy__Skie_DefaultArguments__84Scope:accessToken:"
     MethodKind: "Instance"
     SwiftName: "doCopy(scope:accessToken:)"
     ResultType: "CoreAuthenticatorAuthResult * _Nonnull"
@@ -2751,7 +2761,7 @@ Classes:
       Type: "NSString * _Nonnull"
     - Position: 1
       Type: "NSString * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__84TokenType:scope:accessToken:"
+  - Selector: "doCopy__Skie_DefaultArguments__85TokenType:scope:accessToken:"
     MethodKind: "Instance"
     SwiftName: "doCopy(tokenType:scope:accessToken:)"
     ResultType: "CoreAuthenticatorAuthResult * _Nonnull"
@@ -2762,7 +2772,7 @@ Classes:
       Type: "NSString * _Nonnull"
     - Position: 2
       Type: "NSString * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__85UserId:accessToken:"
+  - Selector: "doCopy__Skie_DefaultArguments__86UserId:accessToken:"
     MethodKind: "Instance"
     SwiftName: "doCopy(userId:accessToken:)"
     ResultType: "CoreAuthenticatorAuthResult * _Nonnull"
@@ -2771,7 +2781,7 @@ Classes:
       Type: "int64_t"
     - Position: 1
       Type: "NSString * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__86TokenType:userId:accessToken:"
+  - Selector: "doCopy__Skie_DefaultArguments__87TokenType:userId:accessToken:"
     MethodKind: "Instance"
     SwiftName: "doCopy(tokenType:userId:accessToken:)"
     ResultType: "CoreAuthenticatorAuthResult * _Nonnull"
@@ -2782,7 +2792,7 @@ Classes:
       Type: "int64_t"
     - Position: 2
       Type: "NSString * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__87Scope:userId:accessToken:"
+  - Selector: "doCopy__Skie_DefaultArguments__88Scope:userId:accessToken:"
     MethodKind: "Instance"
     SwiftName: "doCopy(scope:userId:accessToken:)"
     ResultType: "CoreAuthenticatorAuthResult * _Nonnull"
@@ -2988,25 +2998,25 @@ Classes:
     MethodKind: "Instance"
     SwiftName: "description()"
     ResultType: "NSString * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__88"
+  - Selector: "doCopy__Skie_DefaultArguments__89"
     MethodKind: "Instance"
     SwiftName: "doCopy()"
     ResultType: "CoreAuthenticatorVerifyResponse * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__89AuthenticatorData:"
+  - Selector: "doCopy__Skie_DefaultArguments__90AuthenticatorData:"
     MethodKind: "Instance"
     SwiftName: "doCopy(authenticatorData:)"
     ResultType: "CoreAuthenticatorVerifyResponse * _Nonnull"
     Parameters:
     - Position: 0
       Type: "NSString * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__90ClientDataJSON:"
+  - Selector: "doCopy__Skie_DefaultArguments__91ClientDataJSON:"
     MethodKind: "Instance"
     SwiftName: "doCopy(clientDataJSON:)"
     ResultType: "CoreAuthenticatorVerifyResponse * _Nonnull"
     Parameters:
     - Position: 0
       Type: "NSString * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__91AuthenticatorData:clientDataJSON:"
+  - Selector: "doCopy__Skie_DefaultArguments__92AuthenticatorData:clientDataJSON:"
     MethodKind: "Instance"
     SwiftName: "doCopy(authenticatorData:clientDataJSON:)"
     ResultType: "CoreAuthenticatorVerifyResponse * _Nonnull"
@@ -3015,14 +3025,14 @@ Classes:
       Type: "NSString * _Nonnull"
     - Position: 1
       Type: "NSString * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__92Signature:"
+  - Selector: "doCopy__Skie_DefaultArguments__93Signature:"
     MethodKind: "Instance"
     SwiftName: "doCopy(signature:)"
     ResultType: "CoreAuthenticatorVerifyResponse * _Nonnull"
     Parameters:
     - Position: 0
       Type: "NSString * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__93AuthenticatorData:signature:"
+  - Selector: "doCopy__Skie_DefaultArguments__94AuthenticatorData:signature:"
     MethodKind: "Instance"
     SwiftName: "doCopy(authenticatorData:signature:)"
     ResultType: "CoreAuthenticatorVerifyResponse * _Nonnull"
@@ -3031,7 +3041,7 @@ Classes:
       Type: "NSString * _Nonnull"
     - Position: 1
       Type: "NSString * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__94ClientDataJSON:signature:"
+  - Selector: "doCopy__Skie_DefaultArguments__95ClientDataJSON:signature:"
     MethodKind: "Instance"
     SwiftName: "doCopy(clientDataJSON:signature:)"
     ResultType: "CoreAuthenticatorVerifyResponse * _Nonnull"
@@ -3040,7 +3050,7 @@ Classes:
       Type: "NSString * _Nonnull"
     - Position: 1
       Type: "NSString * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__95AuthenticatorData:clientDataJSON:signature:"
+  - Selector: "doCopy__Skie_DefaultArguments__96AuthenticatorData:clientDataJSON:signature:"
     MethodKind: "Instance"
     SwiftName: "doCopy(authenticatorData:clientDataJSON:signature:)"
     ResultType: "CoreAuthenticatorVerifyResponse * _Nonnull"
@@ -3051,14 +3061,14 @@ Classes:
       Type: "NSString * _Nonnull"
     - Position: 2
       Type: "NSString * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__96UserHandle:"
+  - Selector: "doCopy__Skie_DefaultArguments__97UserHandle:"
     MethodKind: "Instance"
     SwiftName: "doCopy(userHandle:)"
     ResultType: "CoreAuthenticatorVerifyResponse * _Nonnull"
     Parameters:
     - Position: 0
       Type: "NSString * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__97AuthenticatorData:userHandle:"
+  - Selector: "doCopy__Skie_DefaultArguments__98AuthenticatorData:userHandle:"
     MethodKind: "Instance"
     SwiftName: "doCopy(authenticatorData:userHandle:)"
     ResultType: "CoreAuthenticatorVerifyResponse * _Nonnull"
@@ -3067,7 +3077,7 @@ Classes:
       Type: "NSString * _Nonnull"
     - Position: 1
       Type: "NSString * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__98ClientDataJSON:userHandle:"
+  - Selector: "doCopy__Skie_DefaultArguments__99ClientDataJSON:userHandle:"
     MethodKind: "Instance"
     SwiftName: "doCopy(clientDataJSON:userHandle:)"
     ResultType: "CoreAuthenticatorVerifyResponse * _Nonnull"
@@ -3076,7 +3086,7 @@ Classes:
       Type: "NSString * _Nonnull"
     - Position: 1
       Type: "NSString * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__99AuthenticatorData:clientDataJSON:userHandle:"
+  - Selector: "doCopy__Skie_DefaultArguments__100AuthenticatorData:clientDataJSON:userHandle:"
     MethodKind: "Instance"
     SwiftName: "doCopy(authenticatorData:clientDataJSON:userHandle:)"
     ResultType: "CoreAuthenticatorVerifyResponse * _Nonnull"
@@ -3087,7 +3097,7 @@ Classes:
       Type: "NSString * _Nonnull"
     - Position: 2
       Type: "NSString * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__100Signature:userHandle:"
+  - Selector: "doCopy__Skie_DefaultArguments__101Signature:userHandle:"
     MethodKind: "Instance"
     SwiftName: "doCopy(signature:userHandle:)"
     ResultType: "CoreAuthenticatorVerifyResponse * _Nonnull"
@@ -3096,7 +3106,7 @@ Classes:
       Type: "NSString * _Nonnull"
     - Position: 1
       Type: "NSString * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__101AuthenticatorData:signature:userHandle:"
+  - Selector: "doCopy__Skie_DefaultArguments__102AuthenticatorData:signature:userHandle:"
     MethodKind: "Instance"
     SwiftName: "doCopy(authenticatorData:signature:userHandle:)"
     ResultType: "CoreAuthenticatorVerifyResponse * _Nonnull"
@@ -3107,7 +3117,7 @@ Classes:
       Type: "NSString * _Nonnull"
     - Position: 2
       Type: "NSString * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__102ClientDataJSON:signature:userHandle:"
+  - Selector: "doCopy__Skie_DefaultArguments__103ClientDataJSON:signature:userHandle:"
     MethodKind: "Instance"
     SwiftName: "doCopy(clientDataJSON:signature:userHandle:)"
     ResultType: "CoreAuthenticatorVerifyResponse * _Nonnull"
@@ -3300,25 +3310,25 @@ Classes:
     MethodKind: "Instance"
     SwiftName: "description()"
     ResultType: "NSString * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__103"
+  - Selector: "doCopy__Skie_DefaultArguments__104"
     MethodKind: "Instance"
     SwiftName: "doCopy()"
     ResultType: "CoreAuthenticatorRegisterPasskeyResponse * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__104AttestationObject:"
+  - Selector: "doCopy__Skie_DefaultArguments__105AttestationObject:"
     MethodKind: "Instance"
     SwiftName: "doCopy(attestationObject:)"
     ResultType: "CoreAuthenticatorRegisterPasskeyResponse * _Nonnull"
     Parameters:
     - Position: 0
       Type: "NSString * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__105ClientDataJSON:"
+  - Selector: "doCopy__Skie_DefaultArguments__106ClientDataJSON:"
     MethodKind: "Instance"
     SwiftName: "doCopy(clientDataJSON:)"
     ResultType: "CoreAuthenticatorRegisterPasskeyResponse * _Nonnull"
     Parameters:
     - Position: 0
       Type: "NSString * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__106AttestationObject:clientDataJSON:"
+  - Selector: "doCopy__Skie_DefaultArguments__107AttestationObject:clientDataJSON:"
     MethodKind: "Instance"
     SwiftName: "doCopy(attestationObject:clientDataJSON:)"
     ResultType: "CoreAuthenticatorRegisterPasskeyResponse * _Nonnull"
@@ -3327,14 +3337,14 @@ Classes:
       Type: "NSString * _Nonnull"
     - Position: 1
       Type: "NSString * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__107Transports:"
+  - Selector: "doCopy__Skie_DefaultArguments__108Transports:"
     MethodKind: "Instance"
     SwiftName: "doCopy(transports:)"
     ResultType: "CoreAuthenticatorRegisterPasskeyResponse * _Nonnull"
     Parameters:
     - Position: 0
       Type: "NSArray<NSString *> * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__108AttestationObject:transports:"
+  - Selector: "doCopy__Skie_DefaultArguments__109AttestationObject:transports:"
     MethodKind: "Instance"
     SwiftName: "doCopy(attestationObject:transports:)"
     ResultType: "CoreAuthenticatorRegisterPasskeyResponse * _Nonnull"
@@ -3343,7 +3353,7 @@ Classes:
       Type: "NSString * _Nonnull"
     - Position: 1
       Type: "NSArray<NSString *> * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__109ClientDataJSON:transports:"
+  - Selector: "doCopy__Skie_DefaultArguments__110ClientDataJSON:transports:"
     MethodKind: "Instance"
     SwiftName: "doCopy(clientDataJSON:transports:)"
     ResultType: "CoreAuthenticatorRegisterPasskeyResponse * _Nonnull"
@@ -3352,7 +3362,7 @@ Classes:
       Type: "NSString * _Nonnull"
     - Position: 1
       Type: "NSArray<NSString *> * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__110AttestationObject:clientDataJSON:transports:"
+  - Selector: "doCopy__Skie_DefaultArguments__111AttestationObject:clientDataJSON:transports:"
     MethodKind: "Instance"
     SwiftName: "doCopy(attestationObject:clientDataJSON:transports:)"
     ResultType: "CoreAuthenticatorRegisterPasskeyResponse * _Nonnull"
@@ -3363,14 +3373,14 @@ Classes:
       Type: "NSString * _Nonnull"
     - Position: 2
       Type: "NSArray<NSString *> * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__111PublicKeyAlgorithm:"
+  - Selector: "doCopy__Skie_DefaultArguments__112PublicKeyAlgorithm:"
     MethodKind: "Instance"
     SwiftName: "doCopy(publicKeyAlgorithm:)"
     ResultType: "CoreAuthenticatorRegisterPasskeyResponse * _Nonnull"
     Parameters:
     - Position: 0
       Type: "int8_t"
-  - Selector: "doCopy__Skie_DefaultArguments__112AttestationObject:publicKeyAlgorithm:"
+  - Selector: "doCopy__Skie_DefaultArguments__113AttestationObject:publicKeyAlgorithm:"
     MethodKind: "Instance"
     SwiftName: "doCopy(attestationObject:publicKeyAlgorithm:)"
     ResultType: "CoreAuthenticatorRegisterPasskeyResponse * _Nonnull"
@@ -3379,7 +3389,7 @@ Classes:
       Type: "NSString * _Nonnull"
     - Position: 1
       Type: "int8_t"
-  - Selector: "doCopy__Skie_DefaultArguments__113ClientDataJSON:publicKeyAlgorithm:"
+  - Selector: "doCopy__Skie_DefaultArguments__114ClientDataJSON:publicKeyAlgorithm:"
     MethodKind: "Instance"
     SwiftName: "doCopy(clientDataJSON:publicKeyAlgorithm:)"
     ResultType: "CoreAuthenticatorRegisterPasskeyResponse * _Nonnull"
@@ -3388,7 +3398,7 @@ Classes:
       Type: "NSString * _Nonnull"
     - Position: 1
       Type: "int8_t"
-  - Selector: "doCopy__Skie_DefaultArguments__114AttestationObject:clientDataJSON:publicKeyAlgorithm:"
+  - Selector: "doCopy__Skie_DefaultArguments__115AttestationObject:clientDataJSON:publicKeyAlgorithm:"
     MethodKind: "Instance"
     SwiftName: "doCopy(attestationObject:clientDataJSON:publicKeyAlgorithm:)"
     ResultType: "CoreAuthenticatorRegisterPasskeyResponse * _Nonnull"
@@ -3399,7 +3409,7 @@ Classes:
       Type: "NSString * _Nonnull"
     - Position: 2
       Type: "int8_t"
-  - Selector: "doCopy__Skie_DefaultArguments__115Transports:publicKeyAlgorithm:"
+  - Selector: "doCopy__Skie_DefaultArguments__116Transports:publicKeyAlgorithm:"
     MethodKind: "Instance"
     SwiftName: "doCopy(transports:publicKeyAlgorithm:)"
     ResultType: "CoreAuthenticatorRegisterPasskeyResponse * _Nonnull"
@@ -3408,7 +3418,7 @@ Classes:
       Type: "NSArray<NSString *> * _Nonnull"
     - Position: 1
       Type: "int8_t"
-  - Selector: "doCopy__Skie_DefaultArguments__116AttestationObject:transports:publicKeyAlgorithm:"
+  - Selector: "doCopy__Skie_DefaultArguments__117AttestationObject:transports:publicKeyAlgorithm:"
     MethodKind: "Instance"
     SwiftName: "doCopy(attestationObject:transports:publicKeyAlgorithm:)"
     ResultType: "CoreAuthenticatorRegisterPasskeyResponse * _Nonnull"
@@ -3419,7 +3429,7 @@ Classes:
       Type: "NSArray<NSString *> * _Nonnull"
     - Position: 2
       Type: "int8_t"
-  - Selector: "doCopy__Skie_DefaultArguments__117ClientDataJSON:transports:publicKeyAlgorithm:"
+  - Selector: "doCopy__Skie_DefaultArguments__118ClientDataJSON:transports:publicKeyAlgorithm:"
     MethodKind: "Instance"
     SwiftName: "doCopy(clientDataJSON:transports:publicKeyAlgorithm:)"
     ResultType: "CoreAuthenticatorRegisterPasskeyResponse * _Nonnull"
@@ -3430,7 +3440,7 @@ Classes:
       Type: "NSArray<NSString *> * _Nonnull"
     - Position: 2
       Type: "int8_t"
-  - Selector: "doCopy__Skie_DefaultArguments__118AttestationObject:clientDataJSON:transports:publicKeyAlgorithm:"
+  - Selector: "doCopy__Skie_DefaultArguments__119AttestationObject:clientDataJSON:transports:publicKeyAlgorithm:"
     MethodKind: "Instance"
     SwiftName: "doCopy(attestationObject:clientDataJSON:transports:publicKeyAlgorithm:)"
     ResultType: "CoreAuthenticatorRegisterPasskeyResponse * _Nonnull"
@@ -3443,14 +3453,14 @@ Classes:
       Type: "NSArray<NSString *> * _Nonnull"
     - Position: 3
       Type: "int8_t"
-  - Selector: "doCopy__Skie_DefaultArguments__119PublicKey:"
+  - Selector: "doCopy__Skie_DefaultArguments__120PublicKey:"
     MethodKind: "Instance"
     SwiftName: "doCopy(publicKey:)"
     ResultType: "CoreAuthenticatorRegisterPasskeyResponse * _Nonnull"
     Parameters:
     - Position: 0
       Type: "NSString * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__120AttestationObject:publicKey:"
+  - Selector: "doCopy__Skie_DefaultArguments__121AttestationObject:publicKey:"
     MethodKind: "Instance"
     SwiftName: "doCopy(attestationObject:publicKey:)"
     ResultType: "CoreAuthenticatorRegisterPasskeyResponse * _Nonnull"
@@ -3459,7 +3469,7 @@ Classes:
       Type: "NSString * _Nonnull"
     - Position: 1
       Type: "NSString * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__121ClientDataJSON:publicKey:"
+  - Selector: "doCopy__Skie_DefaultArguments__122ClientDataJSON:publicKey:"
     MethodKind: "Instance"
     SwiftName: "doCopy(clientDataJSON:publicKey:)"
     ResultType: "CoreAuthenticatorRegisterPasskeyResponse * _Nonnull"
@@ -3468,7 +3478,7 @@ Classes:
       Type: "NSString * _Nonnull"
     - Position: 1
       Type: "NSString * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__122AttestationObject:clientDataJSON:publicKey:"
+  - Selector: "doCopy__Skie_DefaultArguments__123AttestationObject:clientDataJSON:publicKey:"
     MethodKind: "Instance"
     SwiftName: "doCopy(attestationObject:clientDataJSON:publicKey:)"
     ResultType: "CoreAuthenticatorRegisterPasskeyResponse * _Nonnull"
@@ -3479,7 +3489,7 @@ Classes:
       Type: "NSString * _Nonnull"
     - Position: 2
       Type: "NSString * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__123Transports:publicKey:"
+  - Selector: "doCopy__Skie_DefaultArguments__124Transports:publicKey:"
     MethodKind: "Instance"
     SwiftName: "doCopy(transports:publicKey:)"
     ResultType: "CoreAuthenticatorRegisterPasskeyResponse * _Nonnull"
@@ -3488,7 +3498,7 @@ Classes:
       Type: "NSArray<NSString *> * _Nonnull"
     - Position: 1
       Type: "NSString * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__124AttestationObject:transports:publicKey:"
+  - Selector: "doCopy__Skie_DefaultArguments__125AttestationObject:transports:publicKey:"
     MethodKind: "Instance"
     SwiftName: "doCopy(attestationObject:transports:publicKey:)"
     ResultType: "CoreAuthenticatorRegisterPasskeyResponse * _Nonnull"
@@ -3499,7 +3509,7 @@ Classes:
       Type: "NSArray<NSString *> * _Nonnull"
     - Position: 2
       Type: "NSString * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__125ClientDataJSON:transports:publicKey:"
+  - Selector: "doCopy__Skie_DefaultArguments__126ClientDataJSON:transports:publicKey:"
     MethodKind: "Instance"
     SwiftName: "doCopy(clientDataJSON:transports:publicKey:)"
     ResultType: "CoreAuthenticatorRegisterPasskeyResponse * _Nonnull"
@@ -3510,7 +3520,7 @@ Classes:
       Type: "NSArray<NSString *> * _Nonnull"
     - Position: 2
       Type: "NSString * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__126AttestationObject:clientDataJSON:transports:publicKey:"
+  - Selector: "doCopy__Skie_DefaultArguments__127AttestationObject:clientDataJSON:transports:publicKey:"
     MethodKind: "Instance"
     SwiftName: "doCopy(attestationObject:clientDataJSON:transports:publicKey:)"
     ResultType: "CoreAuthenticatorRegisterPasskeyResponse * _Nonnull"
@@ -3523,7 +3533,7 @@ Classes:
       Type: "NSArray<NSString *> * _Nonnull"
     - Position: 3
       Type: "NSString * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__127PublicKeyAlgorithm:publicKey:"
+  - Selector: "doCopy__Skie_DefaultArguments__128PublicKeyAlgorithm:publicKey:"
     MethodKind: "Instance"
     SwiftName: "doCopy(publicKeyAlgorithm:publicKey:)"
     ResultType: "CoreAuthenticatorRegisterPasskeyResponse * _Nonnull"
@@ -3532,7 +3542,7 @@ Classes:
       Type: "int8_t"
     - Position: 1
       Type: "NSString * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__128AttestationObject:publicKeyAlgorithm:publicKey:"
+  - Selector: "doCopy__Skie_DefaultArguments__129AttestationObject:publicKeyAlgorithm:publicKey:"
     MethodKind: "Instance"
     SwiftName: "doCopy(attestationObject:publicKeyAlgorithm:publicKey:)"
     ResultType: "CoreAuthenticatorRegisterPasskeyResponse * _Nonnull"
@@ -3543,7 +3553,7 @@ Classes:
       Type: "int8_t"
     - Position: 2
       Type: "NSString * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__129ClientDataJSON:publicKeyAlgorithm:publicKey:"
+  - Selector: "doCopy__Skie_DefaultArguments__130ClientDataJSON:publicKeyAlgorithm:publicKey:"
     MethodKind: "Instance"
     SwiftName: "doCopy(clientDataJSON:publicKeyAlgorithm:publicKey:)"
     ResultType: "CoreAuthenticatorRegisterPasskeyResponse * _Nonnull"
@@ -3554,7 +3564,7 @@ Classes:
       Type: "int8_t"
     - Position: 2
       Type: "NSString * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__130AttestationObject:clientDataJSON:publicKeyAlgorithm:publicKey:"
+  - Selector: "doCopy__Skie_DefaultArguments__131AttestationObject:clientDataJSON:publicKeyAlgorithm:publicKey:"
     MethodKind: "Instance"
     SwiftName: "doCopy(attestationObject:clientDataJSON:publicKeyAlgorithm:publicKey:)"
     ResultType: "CoreAuthenticatorRegisterPasskeyResponse * _Nonnull"
@@ -3567,7 +3577,7 @@ Classes:
       Type: "int8_t"
     - Position: 3
       Type: "NSString * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__131Transports:publicKeyAlgorithm:publicKey:"
+  - Selector: "doCopy__Skie_DefaultArguments__132Transports:publicKeyAlgorithm:publicKey:"
     MethodKind: "Instance"
     SwiftName: "doCopy(transports:publicKeyAlgorithm:publicKey:)"
     ResultType: "CoreAuthenticatorRegisterPasskeyResponse * _Nonnull"
@@ -3578,7 +3588,7 @@ Classes:
       Type: "int8_t"
     - Position: 2
       Type: "NSString * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__132AttestationObject:transports:publicKeyAlgorithm:publicKey:"
+  - Selector: "doCopy__Skie_DefaultArguments__133AttestationObject:transports:publicKeyAlgorithm:publicKey:"
     MethodKind: "Instance"
     SwiftName: "doCopy(attestationObject:transports:publicKeyAlgorithm:publicKey:)"
     ResultType: "CoreAuthenticatorRegisterPasskeyResponse * _Nonnull"
@@ -3591,7 +3601,7 @@ Classes:
       Type: "int8_t"
     - Position: 3
       Type: "NSString * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__133ClientDataJSON:transports:publicKeyAlgorithm:publicKey:"
+  - Selector: "doCopy__Skie_DefaultArguments__134ClientDataJSON:transports:publicKeyAlgorithm:publicKey:"
     MethodKind: "Instance"
     SwiftName: "doCopy(clientDataJSON:transports:publicKeyAlgorithm:publicKey:)"
     ResultType: "CoreAuthenticatorRegisterPasskeyResponse * _Nonnull"
@@ -3604,7 +3614,7 @@ Classes:
       Type: "int8_t"
     - Position: 3
       Type: "NSString * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__134AttestationObject:clientDataJSON:transports:publicKeyAlgorithm:publicKey:"
+  - Selector: "doCopy__Skie_DefaultArguments__135AttestationObject:clientDataJSON:transports:publicKeyAlgorithm:publicKey:"
     MethodKind: "Instance"
     SwiftName: "doCopy(attestationObject:clientDataJSON:transports:publicKeyAlgorithm:publicKey:)"
     ResultType: "CoreAuthenticatorRegisterPasskeyResponse * _Nonnull"
@@ -3619,14 +3629,14 @@ Classes:
       Type: "int8_t"
     - Position: 4
       Type: "NSString * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__135AuthenticatorData:"
+  - Selector: "doCopy__Skie_DefaultArguments__136AuthenticatorData:"
     MethodKind: "Instance"
     SwiftName: "doCopy(authenticatorData:)"
     ResultType: "CoreAuthenticatorRegisterPasskeyResponse * _Nonnull"
     Parameters:
     - Position: 0
       Type: "NSString * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__136AttestationObject:authenticatorData:"
+  - Selector: "doCopy__Skie_DefaultArguments__137AttestationObject:authenticatorData:"
     MethodKind: "Instance"
     SwiftName: "doCopy(attestationObject:authenticatorData:)"
     ResultType: "CoreAuthenticatorRegisterPasskeyResponse * _Nonnull"
@@ -3635,7 +3645,7 @@ Classes:
       Type: "NSString * _Nonnull"
     - Position: 1
       Type: "NSString * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__137ClientDataJSON:authenticatorData:"
+  - Selector: "doCopy__Skie_DefaultArguments__138ClientDataJSON:authenticatorData:"
     MethodKind: "Instance"
     SwiftName: "doCopy(clientDataJSON:authenticatorData:)"
     ResultType: "CoreAuthenticatorRegisterPasskeyResponse * _Nonnull"
@@ -3644,7 +3654,7 @@ Classes:
       Type: "NSString * _Nonnull"
     - Position: 1
       Type: "NSString * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__138AttestationObject:clientDataJSON:authenticatorData:"
+  - Selector: "doCopy__Skie_DefaultArguments__139AttestationObject:clientDataJSON:authenticatorData:"
     MethodKind: "Instance"
     SwiftName: "doCopy(attestationObject:clientDataJSON:authenticatorData:)"
     ResultType: "CoreAuthenticatorRegisterPasskeyResponse * _Nonnull"
@@ -3655,7 +3665,7 @@ Classes:
       Type: "NSString * _Nonnull"
     - Position: 2
       Type: "NSString * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__139Transports:authenticatorData:"
+  - Selector: "doCopy__Skie_DefaultArguments__140Transports:authenticatorData:"
     MethodKind: "Instance"
     SwiftName: "doCopy(transports:authenticatorData:)"
     ResultType: "CoreAuthenticatorRegisterPasskeyResponse * _Nonnull"
@@ -3664,7 +3674,7 @@ Classes:
       Type: "NSArray<NSString *> * _Nonnull"
     - Position: 1
       Type: "NSString * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__140AttestationObject:transports:authenticatorData:"
+  - Selector: "doCopy__Skie_DefaultArguments__141AttestationObject:transports:authenticatorData:"
     MethodKind: "Instance"
     SwiftName: "doCopy(attestationObject:transports:authenticatorData:)"
     ResultType: "CoreAuthenticatorRegisterPasskeyResponse * _Nonnull"
@@ -3675,7 +3685,7 @@ Classes:
       Type: "NSArray<NSString *> * _Nonnull"
     - Position: 2
       Type: "NSString * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__141ClientDataJSON:transports:authenticatorData:"
+  - Selector: "doCopy__Skie_DefaultArguments__142ClientDataJSON:transports:authenticatorData:"
     MethodKind: "Instance"
     SwiftName: "doCopy(clientDataJSON:transports:authenticatorData:)"
     ResultType: "CoreAuthenticatorRegisterPasskeyResponse * _Nonnull"
@@ -3686,7 +3696,7 @@ Classes:
       Type: "NSArray<NSString *> * _Nonnull"
     - Position: 2
       Type: "NSString * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__142AttestationObject:clientDataJSON:transports:authenticatorData:"
+  - Selector: "doCopy__Skie_DefaultArguments__143AttestationObject:clientDataJSON:transports:authenticatorData:"
     MethodKind: "Instance"
     SwiftName: "doCopy(attestationObject:clientDataJSON:transports:authenticatorData:)"
     ResultType: "CoreAuthenticatorRegisterPasskeyResponse * _Nonnull"
@@ -3699,7 +3709,7 @@ Classes:
       Type: "NSArray<NSString *> * _Nonnull"
     - Position: 3
       Type: "NSString * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__143PublicKeyAlgorithm:authenticatorData:"
+  - Selector: "doCopy__Skie_DefaultArguments__144PublicKeyAlgorithm:authenticatorData:"
     MethodKind: "Instance"
     SwiftName: "doCopy(publicKeyAlgorithm:authenticatorData:)"
     ResultType: "CoreAuthenticatorRegisterPasskeyResponse * _Nonnull"
@@ -3708,7 +3718,7 @@ Classes:
       Type: "int8_t"
     - Position: 1
       Type: "NSString * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__144AttestationObject:publicKeyAlgorithm:authenticatorData:"
+  - Selector: "doCopy__Skie_DefaultArguments__145AttestationObject:publicKeyAlgorithm:authenticatorData:"
     MethodKind: "Instance"
     SwiftName: "doCopy(attestationObject:publicKeyAlgorithm:authenticatorData:)"
     ResultType: "CoreAuthenticatorRegisterPasskeyResponse * _Nonnull"
@@ -3719,7 +3729,7 @@ Classes:
       Type: "int8_t"
     - Position: 2
       Type: "NSString * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__145ClientDataJSON:publicKeyAlgorithm:authenticatorData:"
+  - Selector: "doCopy__Skie_DefaultArguments__146ClientDataJSON:publicKeyAlgorithm:authenticatorData:"
     MethodKind: "Instance"
     SwiftName: "doCopy(clientDataJSON:publicKeyAlgorithm:authenticatorData:)"
     ResultType: "CoreAuthenticatorRegisterPasskeyResponse * _Nonnull"
@@ -3730,7 +3740,7 @@ Classes:
       Type: "int8_t"
     - Position: 2
       Type: "NSString * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__146AttestationObject:clientDataJSON:publicKeyAlgorithm:authenticatorData:"
+  - Selector: "doCopy__Skie_DefaultArguments__147AttestationObject:clientDataJSON:publicKeyAlgorithm:authenticatorData:"
     MethodKind: "Instance"
     SwiftName: "doCopy(attestationObject:clientDataJSON:publicKeyAlgorithm:authenticatorData:)"
     ResultType: "CoreAuthenticatorRegisterPasskeyResponse * _Nonnull"
@@ -3743,7 +3753,7 @@ Classes:
       Type: "int8_t"
     - Position: 3
       Type: "NSString * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__147Transports:publicKeyAlgorithm:authenticatorData:"
+  - Selector: "doCopy__Skie_DefaultArguments__148Transports:publicKeyAlgorithm:authenticatorData:"
     MethodKind: "Instance"
     SwiftName: "doCopy(transports:publicKeyAlgorithm:authenticatorData:)"
     ResultType: "CoreAuthenticatorRegisterPasskeyResponse * _Nonnull"
@@ -3754,7 +3764,7 @@ Classes:
       Type: "int8_t"
     - Position: 2
       Type: "NSString * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__148AttestationObject:transports:publicKeyAlgorithm:authenticatorData:"
+  - Selector: "doCopy__Skie_DefaultArguments__149AttestationObject:transports:publicKeyAlgorithm:authenticatorData:"
     MethodKind: "Instance"
     SwiftName: "doCopy(attestationObject:transports:publicKeyAlgorithm:authenticatorData:)"
     ResultType: "CoreAuthenticatorRegisterPasskeyResponse * _Nonnull"
@@ -3767,7 +3777,7 @@ Classes:
       Type: "int8_t"
     - Position: 3
       Type: "NSString * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__149ClientDataJSON:transports:publicKeyAlgorithm:authenticatorData:"
+  - Selector: "doCopy__Skie_DefaultArguments__150ClientDataJSON:transports:publicKeyAlgorithm:authenticatorData:"
     MethodKind: "Instance"
     SwiftName: "doCopy(clientDataJSON:transports:publicKeyAlgorithm:authenticatorData:)"
     ResultType: "CoreAuthenticatorRegisterPasskeyResponse * _Nonnull"
@@ -3780,7 +3790,7 @@ Classes:
       Type: "int8_t"
     - Position: 3
       Type: "NSString * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__150AttestationObject:clientDataJSON:transports:publicKeyAlgorithm:authenticatorData:"
+  - Selector: "doCopy__Skie_DefaultArguments__151AttestationObject:clientDataJSON:transports:publicKeyAlgorithm:authenticatorData:"
     MethodKind: "Instance"
     SwiftName: "doCopy(attestationObject:clientDataJSON:transports:publicKeyAlgorithm:authenticatorData:)"
     ResultType: "CoreAuthenticatorRegisterPasskeyResponse * _Nonnull"
@@ -3795,7 +3805,7 @@ Classes:
       Type: "int8_t"
     - Position: 4
       Type: "NSString * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__151PublicKey:authenticatorData:"
+  - Selector: "doCopy__Skie_DefaultArguments__152PublicKey:authenticatorData:"
     MethodKind: "Instance"
     SwiftName: "doCopy(publicKey:authenticatorData:)"
     ResultType: "CoreAuthenticatorRegisterPasskeyResponse * _Nonnull"
@@ -3804,7 +3814,7 @@ Classes:
       Type: "NSString * _Nonnull"
     - Position: 1
       Type: "NSString * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__152AttestationObject:publicKey:authenticatorData:"
+  - Selector: "doCopy__Skie_DefaultArguments__153AttestationObject:publicKey:authenticatorData:"
     MethodKind: "Instance"
     SwiftName: "doCopy(attestationObject:publicKey:authenticatorData:)"
     ResultType: "CoreAuthenticatorRegisterPasskeyResponse * _Nonnull"
@@ -3815,7 +3825,7 @@ Classes:
       Type: "NSString * _Nonnull"
     - Position: 2
       Type: "NSString * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__153ClientDataJSON:publicKey:authenticatorData:"
+  - Selector: "doCopy__Skie_DefaultArguments__154ClientDataJSON:publicKey:authenticatorData:"
     MethodKind: "Instance"
     SwiftName: "doCopy(clientDataJSON:publicKey:authenticatorData:)"
     ResultType: "CoreAuthenticatorRegisterPasskeyResponse * _Nonnull"
@@ -3826,7 +3836,7 @@ Classes:
       Type: "NSString * _Nonnull"
     - Position: 2
       Type: "NSString * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__154AttestationObject:clientDataJSON:publicKey:authenticatorData:"
+  - Selector: "doCopy__Skie_DefaultArguments__155AttestationObject:clientDataJSON:publicKey:authenticatorData:"
     MethodKind: "Instance"
     SwiftName: "doCopy(attestationObject:clientDataJSON:publicKey:authenticatorData:)"
     ResultType: "CoreAuthenticatorRegisterPasskeyResponse * _Nonnull"
@@ -3839,7 +3849,7 @@ Classes:
       Type: "NSString * _Nonnull"
     - Position: 3
       Type: "NSString * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__155Transports:publicKey:authenticatorData:"
+  - Selector: "doCopy__Skie_DefaultArguments__156Transports:publicKey:authenticatorData:"
     MethodKind: "Instance"
     SwiftName: "doCopy(transports:publicKey:authenticatorData:)"
     ResultType: "CoreAuthenticatorRegisterPasskeyResponse * _Nonnull"
@@ -3850,7 +3860,7 @@ Classes:
       Type: "NSString * _Nonnull"
     - Position: 2
       Type: "NSString * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__156AttestationObject:transports:publicKey:authenticatorData:"
+  - Selector: "doCopy__Skie_DefaultArguments__157AttestationObject:transports:publicKey:authenticatorData:"
     MethodKind: "Instance"
     SwiftName: "doCopy(attestationObject:transports:publicKey:authenticatorData:)"
     ResultType: "CoreAuthenticatorRegisterPasskeyResponse * _Nonnull"
@@ -3863,7 +3873,7 @@ Classes:
       Type: "NSString * _Nonnull"
     - Position: 3
       Type: "NSString * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__157ClientDataJSON:transports:publicKey:authenticatorData:"
+  - Selector: "doCopy__Skie_DefaultArguments__158ClientDataJSON:transports:publicKey:authenticatorData:"
     MethodKind: "Instance"
     SwiftName: "doCopy(clientDataJSON:transports:publicKey:authenticatorData:)"
     ResultType: "CoreAuthenticatorRegisterPasskeyResponse * _Nonnull"
@@ -3876,7 +3886,7 @@ Classes:
       Type: "NSString * _Nonnull"
     - Position: 3
       Type: "NSString * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__158AttestationObject:clientDataJSON:transports:publicKey:authenticatorData:"
+  - Selector: "doCopy__Skie_DefaultArguments__159AttestationObject:clientDataJSON:transports:publicKey:authenticatorData:"
     MethodKind: "Instance"
     SwiftName: "doCopy(attestationObject:clientDataJSON:transports:publicKey:authenticatorData:)"
     ResultType: "CoreAuthenticatorRegisterPasskeyResponse * _Nonnull"
@@ -3891,7 +3901,7 @@ Classes:
       Type: "NSString * _Nonnull"
     - Position: 4
       Type: "NSString * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__159PublicKeyAlgorithm:publicKey:authenticatorData:"
+  - Selector: "doCopy__Skie_DefaultArguments__160PublicKeyAlgorithm:publicKey:authenticatorData:"
     MethodKind: "Instance"
     SwiftName: "doCopy(publicKeyAlgorithm:publicKey:authenticatorData:)"
     ResultType: "CoreAuthenticatorRegisterPasskeyResponse * _Nonnull"
@@ -3902,7 +3912,7 @@ Classes:
       Type: "NSString * _Nonnull"
     - Position: 2
       Type: "NSString * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__160AttestationObject:publicKeyAlgorithm:publicKey:authenticatorData:"
+  - Selector: "doCopy__Skie_DefaultArguments__161AttestationObject:publicKeyAlgorithm:publicKey:authenticatorData:"
     MethodKind: "Instance"
     SwiftName: "doCopy(attestationObject:publicKeyAlgorithm:publicKey:authenticatorData:)"
     ResultType: "CoreAuthenticatorRegisterPasskeyResponse * _Nonnull"
@@ -3915,7 +3925,7 @@ Classes:
       Type: "NSString * _Nonnull"
     - Position: 3
       Type: "NSString * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__161ClientDataJSON:publicKeyAlgorithm:publicKey:authenticatorData:"
+  - Selector: "doCopy__Skie_DefaultArguments__162ClientDataJSON:publicKeyAlgorithm:publicKey:authenticatorData:"
     MethodKind: "Instance"
     SwiftName: "doCopy(clientDataJSON:publicKeyAlgorithm:publicKey:authenticatorData:)"
     ResultType: "CoreAuthenticatorRegisterPasskeyResponse * _Nonnull"
@@ -3928,7 +3938,7 @@ Classes:
       Type: "NSString * _Nonnull"
     - Position: 3
       Type: "NSString * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__162AttestationObject:clientDataJSON:publicKeyAlgorithm:publicKey:authenticatorData:"
+  - Selector: "doCopy__Skie_DefaultArguments__163AttestationObject:clientDataJSON:publicKeyAlgorithm:publicKey:authenticatorData:"
     MethodKind: "Instance"
     SwiftName: "doCopy(attestationObject:clientDataJSON:publicKeyAlgorithm:publicKey:authenticatorData:)"
     ResultType: "CoreAuthenticatorRegisterPasskeyResponse * _Nonnull"
@@ -3943,7 +3953,7 @@ Classes:
       Type: "NSString * _Nonnull"
     - Position: 4
       Type: "NSString * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__163Transports:publicKeyAlgorithm:publicKey:authenticatorData:"
+  - Selector: "doCopy__Skie_DefaultArguments__164Transports:publicKeyAlgorithm:publicKey:authenticatorData:"
     MethodKind: "Instance"
     SwiftName: "doCopy(transports:publicKeyAlgorithm:publicKey:authenticatorData:)"
     ResultType: "CoreAuthenticatorRegisterPasskeyResponse * _Nonnull"
@@ -3956,7 +3966,7 @@ Classes:
       Type: "NSString * _Nonnull"
     - Position: 3
       Type: "NSString * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__164AttestationObject:transports:publicKeyAlgorithm:publicKey:authenticatorData:"
+  - Selector: "doCopy__Skie_DefaultArguments__165AttestationObject:transports:publicKeyAlgorithm:publicKey:authenticatorData:"
     MethodKind: "Instance"
     SwiftName: "doCopy(attestationObject:transports:publicKeyAlgorithm:publicKey:authenticatorData:)"
     ResultType: "CoreAuthenticatorRegisterPasskeyResponse * _Nonnull"
@@ -3971,7 +3981,7 @@ Classes:
       Type: "NSString * _Nonnull"
     - Position: 4
       Type: "NSString * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__165ClientDataJSON:transports:publicKeyAlgorithm:publicKey:authenticatorData:"
+  - Selector: "doCopy__Skie_DefaultArguments__166ClientDataJSON:transports:publicKeyAlgorithm:publicKey:authenticatorData:"
     MethodKind: "Instance"
     SwiftName: "doCopy(clientDataJSON:transports:publicKeyAlgorithm:publicKey:authenticatorData:)"
     ResultType: "CoreAuthenticatorRegisterPasskeyResponse * _Nonnull"
@@ -4045,25 +4055,25 @@ Classes:
     MethodKind: "Instance"
     SwiftName: "description()"
     ResultType: "NSString * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__166"
+  - Selector: "doCopy__Skie_DefaultArguments__167"
     MethodKind: "Instance"
     SwiftName: "doCopy()"
     ResultType: "CoreAuthenticatorDeviceInfo * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__167Brand:"
+  - Selector: "doCopy__Skie_DefaultArguments__168Brand:"
     MethodKind: "Instance"
     SwiftName: "doCopy(brand:)"
     ResultType: "CoreAuthenticatorDeviceInfo * _Nonnull"
     Parameters:
     - Position: 0
       Type: "NSString * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__168Model:"
+  - Selector: "doCopy__Skie_DefaultArguments__169Model:"
     MethodKind: "Instance"
     SwiftName: "doCopy(model:)"
     ResultType: "CoreAuthenticatorDeviceInfo * _Nonnull"
     Parameters:
     - Position: 0
       Type: "NSString * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__169Brand:model:"
+  - Selector: "doCopy__Skie_DefaultArguments__170Brand:model:"
     MethodKind: "Instance"
     SwiftName: "doCopy(brand:model:)"
     ResultType: "CoreAuthenticatorDeviceInfo * _Nonnull"
@@ -4072,14 +4082,14 @@ Classes:
       Type: "NSString * _Nonnull"
     - Position: 1
       Type: "NSString * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__170Platform:"
+  - Selector: "doCopy__Skie_DefaultArguments__171Platform:"
     MethodKind: "Instance"
     SwiftName: "doCopy(platform:)"
     ResultType: "CoreAuthenticatorDeviceInfo * _Nonnull"
     Parameters:
     - Position: 0
       Type: "NSString * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__171Brand:platform:"
+  - Selector: "doCopy__Skie_DefaultArguments__172Brand:platform:"
     MethodKind: "Instance"
     SwiftName: "doCopy(brand:platform:)"
     ResultType: "CoreAuthenticatorDeviceInfo * _Nonnull"
@@ -4088,7 +4098,7 @@ Classes:
       Type: "NSString * _Nonnull"
     - Position: 1
       Type: "NSString * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__172Model:platform:"
+  - Selector: "doCopy__Skie_DefaultArguments__173Model:platform:"
     MethodKind: "Instance"
     SwiftName: "doCopy(model:platform:)"
     ResultType: "CoreAuthenticatorDeviceInfo * _Nonnull"
@@ -4124,7 +4134,7 @@ Classes:
       Type: "CoreAuthenticatorApiResponseStatus * _Nonnull"
     - Position: 1
       Type: "T _Nullable"
-  - Selector: "initWithData__Skie_DefaultArguments__397:"
+  - Selector: "initWithData__Skie_DefaultArguments__398:"
     MethodKind: "Instance"
     SwiftName: "init(data:)"
     Parameters:
@@ -4154,18 +4164,18 @@ Classes:
     MethodKind: "Instance"
     SwiftName: "description()"
     ResultType: "NSString * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__173"
+  - Selector: "doCopy__Skie_DefaultArguments__174"
     MethodKind: "Instance"
     SwiftName: "doCopy()"
     ResultType: "CoreAuthenticatorSuccessfulApiResponse<T> * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__174Result:"
+  - Selector: "doCopy__Skie_DefaultArguments__175Result:"
     MethodKind: "Instance"
     SwiftName: "doCopy(result:)"
     ResultType: "CoreAuthenticatorSuccessfulApiResponse<T> * _Nonnull"
     Parameters:
     - Position: 0
       Type: "CoreAuthenticatorApiResponseStatus * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__175Data:"
+  - Selector: "doCopy__Skie_DefaultArguments__176Data:"
     MethodKind: "Instance"
     SwiftName: "doCopy(data:)"
     ResultType: "CoreAuthenticatorSuccessfulApiResponse<T> * _Nonnull"
@@ -4297,25 +4307,25 @@ Classes:
     MethodKind: "Instance"
     SwiftName: "description()"
     ResultType: "NSString * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__176"
+  - Selector: "doCopy__Skie_DefaultArguments__177"
     MethodKind: "Instance"
     SwiftName: "doCopy()"
     ResultType: "CoreAuthenticatorPasskeysOptions * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__177Session:"
+  - Selector: "doCopy__Skie_DefaultArguments__178Session:"
     MethodKind: "Instance"
     SwiftName: "doCopy(session:)"
     ResultType: "CoreAuthenticatorPasskeysOptions * _Nonnull"
     Parameters:
     - Position: 0
       Type: "NSString * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__178Challenge:"
+  - Selector: "doCopy__Skie_DefaultArguments__179Challenge:"
     MethodKind: "Instance"
     SwiftName: "doCopy(challenge:)"
     ResultType: "CoreAuthenticatorPasskeysOptions * _Nonnull"
     Parameters:
     - Position: 0
       Type: "NSString * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__179Session:challenge:"
+  - Selector: "doCopy__Skie_DefaultArguments__180Session:challenge:"
     MethodKind: "Instance"
     SwiftName: "doCopy(session:challenge:)"
     ResultType: "CoreAuthenticatorPasskeysOptions * _Nonnull"
@@ -4324,14 +4334,14 @@ Classes:
       Type: "NSString * _Nonnull"
     - Position: 1
       Type: "NSString * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__180RelyingParty:"
+  - Selector: "doCopy__Skie_DefaultArguments__181RelyingParty:"
     MethodKind: "Instance"
     SwiftName: "doCopy(relyingParty:)"
     ResultType: "CoreAuthenticatorPasskeysOptions * _Nonnull"
     Parameters:
     - Position: 0
       Type: "CoreAuthenticatorRelyingParty * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__181Session:relyingParty:"
+  - Selector: "doCopy__Skie_DefaultArguments__182Session:relyingParty:"
     MethodKind: "Instance"
     SwiftName: "doCopy(session:relyingParty:)"
     ResultType: "CoreAuthenticatorPasskeysOptions * _Nonnull"
@@ -4340,7 +4350,7 @@ Classes:
       Type: "NSString * _Nonnull"
     - Position: 1
       Type: "CoreAuthenticatorRelyingParty * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__182Challenge:relyingParty:"
+  - Selector: "doCopy__Skie_DefaultArguments__183Challenge:relyingParty:"
     MethodKind: "Instance"
     SwiftName: "doCopy(challenge:relyingParty:)"
     ResultType: "CoreAuthenticatorPasskeysOptions * _Nonnull"
@@ -4349,7 +4359,7 @@ Classes:
       Type: "NSString * _Nonnull"
     - Position: 1
       Type: "CoreAuthenticatorRelyingParty * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__183Session:challenge:relyingParty:"
+  - Selector: "doCopy__Skie_DefaultArguments__184Session:challenge:relyingParty:"
     MethodKind: "Instance"
     SwiftName: "doCopy(session:challenge:relyingParty:)"
     ResultType: "CoreAuthenticatorPasskeysOptions * _Nonnull"
@@ -4360,14 +4370,14 @@ Classes:
       Type: "NSString * _Nonnull"
     - Position: 2
       Type: "CoreAuthenticatorRelyingParty * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__184User:"
+  - Selector: "doCopy__Skie_DefaultArguments__185User:"
     MethodKind: "Instance"
     SwiftName: "doCopy(user:)"
     ResultType: "CoreAuthenticatorPasskeysOptions * _Nonnull"
     Parameters:
     - Position: 0
       Type: "CoreAuthenticatorUser * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__185Session:user:"
+  - Selector: "doCopy__Skie_DefaultArguments__186Session:user:"
     MethodKind: "Instance"
     SwiftName: "doCopy(session:user:)"
     ResultType: "CoreAuthenticatorPasskeysOptions * _Nonnull"
@@ -4376,7 +4386,7 @@ Classes:
       Type: "NSString * _Nonnull"
     - Position: 1
       Type: "CoreAuthenticatorUser * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__186Challenge:user:"
+  - Selector: "doCopy__Skie_DefaultArguments__187Challenge:user:"
     MethodKind: "Instance"
     SwiftName: "doCopy(challenge:user:)"
     ResultType: "CoreAuthenticatorPasskeysOptions * _Nonnull"
@@ -4385,7 +4395,7 @@ Classes:
       Type: "NSString * _Nonnull"
     - Position: 1
       Type: "CoreAuthenticatorUser * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__187Session:challenge:user:"
+  - Selector: "doCopy__Skie_DefaultArguments__188Session:challenge:user:"
     MethodKind: "Instance"
     SwiftName: "doCopy(session:challenge:user:)"
     ResultType: "CoreAuthenticatorPasskeysOptions * _Nonnull"
@@ -4396,7 +4406,7 @@ Classes:
       Type: "NSString * _Nonnull"
     - Position: 2
       Type: "CoreAuthenticatorUser * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__188RelyingParty:user:"
+  - Selector: "doCopy__Skie_DefaultArguments__189RelyingParty:user:"
     MethodKind: "Instance"
     SwiftName: "doCopy(relyingParty:user:)"
     ResultType: "CoreAuthenticatorPasskeysOptions * _Nonnull"
@@ -4405,7 +4415,7 @@ Classes:
       Type: "CoreAuthenticatorRelyingParty * _Nonnull"
     - Position: 1
       Type: "CoreAuthenticatorUser * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__189Session:relyingParty:user:"
+  - Selector: "doCopy__Skie_DefaultArguments__190Session:relyingParty:user:"
     MethodKind: "Instance"
     SwiftName: "doCopy(session:relyingParty:user:)"
     ResultType: "CoreAuthenticatorPasskeysOptions * _Nonnull"
@@ -4416,7 +4426,7 @@ Classes:
       Type: "CoreAuthenticatorRelyingParty * _Nonnull"
     - Position: 2
       Type: "CoreAuthenticatorUser * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__190Challenge:relyingParty:user:"
+  - Selector: "doCopy__Skie_DefaultArguments__191Challenge:relyingParty:user:"
     MethodKind: "Instance"
     SwiftName: "doCopy(challenge:relyingParty:user:)"
     ResultType: "CoreAuthenticatorPasskeysOptions * _Nonnull"
@@ -4427,7 +4437,7 @@ Classes:
       Type: "CoreAuthenticatorRelyingParty * _Nonnull"
     - Position: 2
       Type: "CoreAuthenticatorUser * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__191Session:challenge:relyingParty:user:"
+  - Selector: "doCopy__Skie_DefaultArguments__192Session:challenge:relyingParty:user:"
     MethodKind: "Instance"
     SwiftName: "doCopy(session:challenge:relyingParty:user:)"
     ResultType: "CoreAuthenticatorPasskeysOptions * _Nonnull"
@@ -4440,14 +4450,14 @@ Classes:
       Type: "CoreAuthenticatorRelyingParty * _Nonnull"
     - Position: 3
       Type: "CoreAuthenticatorUser * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__192PubKeyCredParams:"
+  - Selector: "doCopy__Skie_DefaultArguments__193PubKeyCredParams:"
     MethodKind: "Instance"
     SwiftName: "doCopy(pubKeyCredParams:)"
     ResultType: "CoreAuthenticatorPasskeysOptions * _Nonnull"
     Parameters:
     - Position: 0
       Type: "NSArray<CoreAuthenticatorPubKeyCredParam *> * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__193Session:pubKeyCredParams:"
+  - Selector: "doCopy__Skie_DefaultArguments__194Session:pubKeyCredParams:"
     MethodKind: "Instance"
     SwiftName: "doCopy(session:pubKeyCredParams:)"
     ResultType: "CoreAuthenticatorPasskeysOptions * _Nonnull"
@@ -4456,7 +4466,7 @@ Classes:
       Type: "NSString * _Nonnull"
     - Position: 1
       Type: "NSArray<CoreAuthenticatorPubKeyCredParam *> * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__194Challenge:pubKeyCredParams:"
+  - Selector: "doCopy__Skie_DefaultArguments__195Challenge:pubKeyCredParams:"
     MethodKind: "Instance"
     SwiftName: "doCopy(challenge:pubKeyCredParams:)"
     ResultType: "CoreAuthenticatorPasskeysOptions * _Nonnull"
@@ -4465,7 +4475,7 @@ Classes:
       Type: "NSString * _Nonnull"
     - Position: 1
       Type: "NSArray<CoreAuthenticatorPubKeyCredParam *> * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__195Session:challenge:pubKeyCredParams:"
+  - Selector: "doCopy__Skie_DefaultArguments__196Session:challenge:pubKeyCredParams:"
     MethodKind: "Instance"
     SwiftName: "doCopy(session:challenge:pubKeyCredParams:)"
     ResultType: "CoreAuthenticatorPasskeysOptions * _Nonnull"
@@ -4476,7 +4486,7 @@ Classes:
       Type: "NSString * _Nonnull"
     - Position: 2
       Type: "NSArray<CoreAuthenticatorPubKeyCredParam *> * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__196RelyingParty:pubKeyCredParams:"
+  - Selector: "doCopy__Skie_DefaultArguments__197RelyingParty:pubKeyCredParams:"
     MethodKind: "Instance"
     SwiftName: "doCopy(relyingParty:pubKeyCredParams:)"
     ResultType: "CoreAuthenticatorPasskeysOptions * _Nonnull"
@@ -4485,7 +4495,7 @@ Classes:
       Type: "CoreAuthenticatorRelyingParty * _Nonnull"
     - Position: 1
       Type: "NSArray<CoreAuthenticatorPubKeyCredParam *> * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__197Session:relyingParty:pubKeyCredParams:"
+  - Selector: "doCopy__Skie_DefaultArguments__198Session:relyingParty:pubKeyCredParams:"
     MethodKind: "Instance"
     SwiftName: "doCopy(session:relyingParty:pubKeyCredParams:)"
     ResultType: "CoreAuthenticatorPasskeysOptions * _Nonnull"
@@ -4496,7 +4506,7 @@ Classes:
       Type: "CoreAuthenticatorRelyingParty * _Nonnull"
     - Position: 2
       Type: "NSArray<CoreAuthenticatorPubKeyCredParam *> * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__198Challenge:relyingParty:pubKeyCredParams:"
+  - Selector: "doCopy__Skie_DefaultArguments__199Challenge:relyingParty:pubKeyCredParams:"
     MethodKind: "Instance"
     SwiftName: "doCopy(challenge:relyingParty:pubKeyCredParams:)"
     ResultType: "CoreAuthenticatorPasskeysOptions * _Nonnull"
@@ -4507,7 +4517,7 @@ Classes:
       Type: "CoreAuthenticatorRelyingParty * _Nonnull"
     - Position: 2
       Type: "NSArray<CoreAuthenticatorPubKeyCredParam *> * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__199Session:challenge:relyingParty:pubKeyCredParams:"
+  - Selector: "doCopy__Skie_DefaultArguments__200Session:challenge:relyingParty:pubKeyCredParams:"
     MethodKind: "Instance"
     SwiftName: "doCopy(session:challenge:relyingParty:pubKeyCredParams:)"
     ResultType: "CoreAuthenticatorPasskeysOptions * _Nonnull"
@@ -4520,7 +4530,7 @@ Classes:
       Type: "CoreAuthenticatorRelyingParty * _Nonnull"
     - Position: 3
       Type: "NSArray<CoreAuthenticatorPubKeyCredParam *> * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__200User:pubKeyCredParams:"
+  - Selector: "doCopy__Skie_DefaultArguments__201User:pubKeyCredParams:"
     MethodKind: "Instance"
     SwiftName: "doCopy(user:pubKeyCredParams:)"
     ResultType: "CoreAuthenticatorPasskeysOptions * _Nonnull"
@@ -4529,7 +4539,7 @@ Classes:
       Type: "CoreAuthenticatorUser * _Nonnull"
     - Position: 1
       Type: "NSArray<CoreAuthenticatorPubKeyCredParam *> * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__201Session:user:pubKeyCredParams:"
+  - Selector: "doCopy__Skie_DefaultArguments__202Session:user:pubKeyCredParams:"
     MethodKind: "Instance"
     SwiftName: "doCopy(session:user:pubKeyCredParams:)"
     ResultType: "CoreAuthenticatorPasskeysOptions * _Nonnull"
@@ -4540,7 +4550,7 @@ Classes:
       Type: "CoreAuthenticatorUser * _Nonnull"
     - Position: 2
       Type: "NSArray<CoreAuthenticatorPubKeyCredParam *> * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__202Challenge:user:pubKeyCredParams:"
+  - Selector: "doCopy__Skie_DefaultArguments__203Challenge:user:pubKeyCredParams:"
     MethodKind: "Instance"
     SwiftName: "doCopy(challenge:user:pubKeyCredParams:)"
     ResultType: "CoreAuthenticatorPasskeysOptions * _Nonnull"
@@ -4551,7 +4561,7 @@ Classes:
       Type: "CoreAuthenticatorUser * _Nonnull"
     - Position: 2
       Type: "NSArray<CoreAuthenticatorPubKeyCredParam *> * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__203Session:challenge:user:pubKeyCredParams:"
+  - Selector: "doCopy__Skie_DefaultArguments__204Session:challenge:user:pubKeyCredParams:"
     MethodKind: "Instance"
     SwiftName: "doCopy(session:challenge:user:pubKeyCredParams:)"
     ResultType: "CoreAuthenticatorPasskeysOptions * _Nonnull"
@@ -4564,7 +4574,7 @@ Classes:
       Type: "CoreAuthenticatorUser * _Nonnull"
     - Position: 3
       Type: "NSArray<CoreAuthenticatorPubKeyCredParam *> * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__204RelyingParty:user:pubKeyCredParams:"
+  - Selector: "doCopy__Skie_DefaultArguments__205RelyingParty:user:pubKeyCredParams:"
     MethodKind: "Instance"
     SwiftName: "doCopy(relyingParty:user:pubKeyCredParams:)"
     ResultType: "CoreAuthenticatorPasskeysOptions * _Nonnull"
@@ -4575,7 +4585,7 @@ Classes:
       Type: "CoreAuthenticatorUser * _Nonnull"
     - Position: 2
       Type: "NSArray<CoreAuthenticatorPubKeyCredParam *> * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__205Session:relyingParty:user:pubKeyCredParams:"
+  - Selector: "doCopy__Skie_DefaultArguments__206Session:relyingParty:user:pubKeyCredParams:"
     MethodKind: "Instance"
     SwiftName: "doCopy(session:relyingParty:user:pubKeyCredParams:)"
     ResultType: "CoreAuthenticatorPasskeysOptions * _Nonnull"
@@ -4588,7 +4598,7 @@ Classes:
       Type: "CoreAuthenticatorUser * _Nonnull"
     - Position: 3
       Type: "NSArray<CoreAuthenticatorPubKeyCredParam *> * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__206Challenge:relyingParty:user:pubKeyCredParams:"
+  - Selector: "doCopy__Skie_DefaultArguments__207Challenge:relyingParty:user:pubKeyCredParams:"
     MethodKind: "Instance"
     SwiftName: "doCopy(challenge:relyingParty:user:pubKeyCredParams:)"
     ResultType: "CoreAuthenticatorPasskeysOptions * _Nonnull"
@@ -4601,7 +4611,7 @@ Classes:
       Type: "CoreAuthenticatorUser * _Nonnull"
     - Position: 3
       Type: "NSArray<CoreAuthenticatorPubKeyCredParam *> * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__207Session:challenge:relyingParty:user:pubKeyCredParams:"
+  - Selector: "doCopy__Skie_DefaultArguments__208Session:challenge:relyingParty:user:pubKeyCredParams:"
     MethodKind: "Instance"
     SwiftName: "doCopy(session:challenge:relyingParty:user:pubKeyCredParams:)"
     ResultType: "CoreAuthenticatorPasskeysOptions * _Nonnull"
@@ -4616,14 +4626,14 @@ Classes:
       Type: "CoreAuthenticatorUser * _Nonnull"
     - Position: 4
       Type: "NSArray<CoreAuthenticatorPubKeyCredParam *> * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__208ExcludeCredentials:"
+  - Selector: "doCopy__Skie_DefaultArguments__209ExcludeCredentials:"
     MethodKind: "Instance"
     SwiftName: "doCopy(excludeCredentials:)"
     ResultType: "CoreAuthenticatorPasskeysOptions * _Nonnull"
     Parameters:
     - Position: 0
       Type: "NSArray<CoreAuthenticatorExcludeCredential *> * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__209Session:excludeCredentials:"
+  - Selector: "doCopy__Skie_DefaultArguments__210Session:excludeCredentials:"
     MethodKind: "Instance"
     SwiftName: "doCopy(session:excludeCredentials:)"
     ResultType: "CoreAuthenticatorPasskeysOptions * _Nonnull"
@@ -4632,7 +4642,7 @@ Classes:
       Type: "NSString * _Nonnull"
     - Position: 1
       Type: "NSArray<CoreAuthenticatorExcludeCredential *> * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__210Challenge:excludeCredentials:"
+  - Selector: "doCopy__Skie_DefaultArguments__211Challenge:excludeCredentials:"
     MethodKind: "Instance"
     SwiftName: "doCopy(challenge:excludeCredentials:)"
     ResultType: "CoreAuthenticatorPasskeysOptions * _Nonnull"
@@ -4641,7 +4651,7 @@ Classes:
       Type: "NSString * _Nonnull"
     - Position: 1
       Type: "NSArray<CoreAuthenticatorExcludeCredential *> * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__211Session:challenge:excludeCredentials:"
+  - Selector: "doCopy__Skie_DefaultArguments__212Session:challenge:excludeCredentials:"
     MethodKind: "Instance"
     SwiftName: "doCopy(session:challenge:excludeCredentials:)"
     ResultType: "CoreAuthenticatorPasskeysOptions * _Nonnull"
@@ -4652,7 +4662,7 @@ Classes:
       Type: "NSString * _Nonnull"
     - Position: 2
       Type: "NSArray<CoreAuthenticatorExcludeCredential *> * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__212RelyingParty:excludeCredentials:"
+  - Selector: "doCopy__Skie_DefaultArguments__213RelyingParty:excludeCredentials:"
     MethodKind: "Instance"
     SwiftName: "doCopy(relyingParty:excludeCredentials:)"
     ResultType: "CoreAuthenticatorPasskeysOptions * _Nonnull"
@@ -4661,7 +4671,7 @@ Classes:
       Type: "CoreAuthenticatorRelyingParty * _Nonnull"
     - Position: 1
       Type: "NSArray<CoreAuthenticatorExcludeCredential *> * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__213Session:relyingParty:excludeCredentials:"
+  - Selector: "doCopy__Skie_DefaultArguments__214Session:relyingParty:excludeCredentials:"
     MethodKind: "Instance"
     SwiftName: "doCopy(session:relyingParty:excludeCredentials:)"
     ResultType: "CoreAuthenticatorPasskeysOptions * _Nonnull"
@@ -4672,7 +4682,7 @@ Classes:
       Type: "CoreAuthenticatorRelyingParty * _Nonnull"
     - Position: 2
       Type: "NSArray<CoreAuthenticatorExcludeCredential *> * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__214Challenge:relyingParty:excludeCredentials:"
+  - Selector: "doCopy__Skie_DefaultArguments__215Challenge:relyingParty:excludeCredentials:"
     MethodKind: "Instance"
     SwiftName: "doCopy(challenge:relyingParty:excludeCredentials:)"
     ResultType: "CoreAuthenticatorPasskeysOptions * _Nonnull"
@@ -4683,7 +4693,7 @@ Classes:
       Type: "CoreAuthenticatorRelyingParty * _Nonnull"
     - Position: 2
       Type: "NSArray<CoreAuthenticatorExcludeCredential *> * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__215Session:challenge:relyingParty:excludeCredentials:"
+  - Selector: "doCopy__Skie_DefaultArguments__216Session:challenge:relyingParty:excludeCredentials:"
     MethodKind: "Instance"
     SwiftName: "doCopy(session:challenge:relyingParty:excludeCredentials:)"
     ResultType: "CoreAuthenticatorPasskeysOptions * _Nonnull"
@@ -4696,7 +4706,7 @@ Classes:
       Type: "CoreAuthenticatorRelyingParty * _Nonnull"
     - Position: 3
       Type: "NSArray<CoreAuthenticatorExcludeCredential *> * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__216User:excludeCredentials:"
+  - Selector: "doCopy__Skie_DefaultArguments__217User:excludeCredentials:"
     MethodKind: "Instance"
     SwiftName: "doCopy(user:excludeCredentials:)"
     ResultType: "CoreAuthenticatorPasskeysOptions * _Nonnull"
@@ -4705,7 +4715,7 @@ Classes:
       Type: "CoreAuthenticatorUser * _Nonnull"
     - Position: 1
       Type: "NSArray<CoreAuthenticatorExcludeCredential *> * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__217Session:user:excludeCredentials:"
+  - Selector: "doCopy__Skie_DefaultArguments__218Session:user:excludeCredentials:"
     MethodKind: "Instance"
     SwiftName: "doCopy(session:user:excludeCredentials:)"
     ResultType: "CoreAuthenticatorPasskeysOptions * _Nonnull"
@@ -4716,7 +4726,7 @@ Classes:
       Type: "CoreAuthenticatorUser * _Nonnull"
     - Position: 2
       Type: "NSArray<CoreAuthenticatorExcludeCredential *> * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__218Challenge:user:excludeCredentials:"
+  - Selector: "doCopy__Skie_DefaultArguments__219Challenge:user:excludeCredentials:"
     MethodKind: "Instance"
     SwiftName: "doCopy(challenge:user:excludeCredentials:)"
     ResultType: "CoreAuthenticatorPasskeysOptions * _Nonnull"
@@ -4727,7 +4737,7 @@ Classes:
       Type: "CoreAuthenticatorUser * _Nonnull"
     - Position: 2
       Type: "NSArray<CoreAuthenticatorExcludeCredential *> * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__219Session:challenge:user:excludeCredentials:"
+  - Selector: "doCopy__Skie_DefaultArguments__220Session:challenge:user:excludeCredentials:"
     MethodKind: "Instance"
     SwiftName: "doCopy(session:challenge:user:excludeCredentials:)"
     ResultType: "CoreAuthenticatorPasskeysOptions * _Nonnull"
@@ -4740,7 +4750,7 @@ Classes:
       Type: "CoreAuthenticatorUser * _Nonnull"
     - Position: 3
       Type: "NSArray<CoreAuthenticatorExcludeCredential *> * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__220RelyingParty:user:excludeCredentials:"
+  - Selector: "doCopy__Skie_DefaultArguments__221RelyingParty:user:excludeCredentials:"
     MethodKind: "Instance"
     SwiftName: "doCopy(relyingParty:user:excludeCredentials:)"
     ResultType: "CoreAuthenticatorPasskeysOptions * _Nonnull"
@@ -4751,7 +4761,7 @@ Classes:
       Type: "CoreAuthenticatorUser * _Nonnull"
     - Position: 2
       Type: "NSArray<CoreAuthenticatorExcludeCredential *> * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__221Session:relyingParty:user:excludeCredentials:"
+  - Selector: "doCopy__Skie_DefaultArguments__222Session:relyingParty:user:excludeCredentials:"
     MethodKind: "Instance"
     SwiftName: "doCopy(session:relyingParty:user:excludeCredentials:)"
     ResultType: "CoreAuthenticatorPasskeysOptions * _Nonnull"
@@ -4764,7 +4774,7 @@ Classes:
       Type: "CoreAuthenticatorUser * _Nonnull"
     - Position: 3
       Type: "NSArray<CoreAuthenticatorExcludeCredential *> * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__222Challenge:relyingParty:user:excludeCredentials:"
+  - Selector: "doCopy__Skie_DefaultArguments__223Challenge:relyingParty:user:excludeCredentials:"
     MethodKind: "Instance"
     SwiftName: "doCopy(challenge:relyingParty:user:excludeCredentials:)"
     ResultType: "CoreAuthenticatorPasskeysOptions * _Nonnull"
@@ -4777,7 +4787,7 @@ Classes:
       Type: "CoreAuthenticatorUser * _Nonnull"
     - Position: 3
       Type: "NSArray<CoreAuthenticatorExcludeCredential *> * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__223Session:challenge:relyingParty:user:excludeCredentials:"
+  - Selector: "doCopy__Skie_DefaultArguments__224Session:challenge:relyingParty:user:excludeCredentials:"
     MethodKind: "Instance"
     SwiftName: "doCopy(session:challenge:relyingParty:user:excludeCredentials:)"
     ResultType: "CoreAuthenticatorPasskeysOptions * _Nonnull"
@@ -4792,7 +4802,7 @@ Classes:
       Type: "CoreAuthenticatorUser * _Nonnull"
     - Position: 4
       Type: "NSArray<CoreAuthenticatorExcludeCredential *> * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__224PubKeyCredParams:excludeCredentials:"
+  - Selector: "doCopy__Skie_DefaultArguments__225PubKeyCredParams:excludeCredentials:"
     MethodKind: "Instance"
     SwiftName: "doCopy(pubKeyCredParams:excludeCredentials:)"
     ResultType: "CoreAuthenticatorPasskeysOptions * _Nonnull"
@@ -4801,7 +4811,7 @@ Classes:
       Type: "NSArray<CoreAuthenticatorPubKeyCredParam *> * _Nonnull"
     - Position: 1
       Type: "NSArray<CoreAuthenticatorExcludeCredential *> * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__225Session:pubKeyCredParams:excludeCredentials:"
+  - Selector: "doCopy__Skie_DefaultArguments__226Session:pubKeyCredParams:excludeCredentials:"
     MethodKind: "Instance"
     SwiftName: "doCopy(session:pubKeyCredParams:excludeCredentials:)"
     ResultType: "CoreAuthenticatorPasskeysOptions * _Nonnull"
@@ -4812,7 +4822,7 @@ Classes:
       Type: "NSArray<CoreAuthenticatorPubKeyCredParam *> * _Nonnull"
     - Position: 2
       Type: "NSArray<CoreAuthenticatorExcludeCredential *> * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__226Challenge:pubKeyCredParams:excludeCredentials:"
+  - Selector: "doCopy__Skie_DefaultArguments__227Challenge:pubKeyCredParams:excludeCredentials:"
     MethodKind: "Instance"
     SwiftName: "doCopy(challenge:pubKeyCredParams:excludeCredentials:)"
     ResultType: "CoreAuthenticatorPasskeysOptions * _Nonnull"
@@ -4823,7 +4833,7 @@ Classes:
       Type: "NSArray<CoreAuthenticatorPubKeyCredParam *> * _Nonnull"
     - Position: 2
       Type: "NSArray<CoreAuthenticatorExcludeCredential *> * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__227Session:challenge:pubKeyCredParams:excludeCredentials:"
+  - Selector: "doCopy__Skie_DefaultArguments__228Session:challenge:pubKeyCredParams:excludeCredentials:"
     MethodKind: "Instance"
     SwiftName: "doCopy(session:challenge:pubKeyCredParams:excludeCredentials:)"
     ResultType: "CoreAuthenticatorPasskeysOptions * _Nonnull"
@@ -4836,7 +4846,7 @@ Classes:
       Type: "NSArray<CoreAuthenticatorPubKeyCredParam *> * _Nonnull"
     - Position: 3
       Type: "NSArray<CoreAuthenticatorExcludeCredential *> * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__228RelyingParty:pubKeyCredParams:excludeCredentials:"
+  - Selector: "doCopy__Skie_DefaultArguments__229RelyingParty:pubKeyCredParams:excludeCredentials:"
     MethodKind: "Instance"
     SwiftName: "doCopy(relyingParty:pubKeyCredParams:excludeCredentials:)"
     ResultType: "CoreAuthenticatorPasskeysOptions * _Nonnull"
@@ -4847,7 +4857,7 @@ Classes:
       Type: "NSArray<CoreAuthenticatorPubKeyCredParam *> * _Nonnull"
     - Position: 2
       Type: "NSArray<CoreAuthenticatorExcludeCredential *> * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__229Session:relyingParty:pubKeyCredParams:excludeCredentials:"
+  - Selector: "doCopy__Skie_DefaultArguments__230Session:relyingParty:pubKeyCredParams:excludeCredentials:"
     MethodKind: "Instance"
     SwiftName: "doCopy(session:relyingParty:pubKeyCredParams:excludeCredentials:)"
     ResultType: "CoreAuthenticatorPasskeysOptions * _Nonnull"
@@ -4860,7 +4870,7 @@ Classes:
       Type: "NSArray<CoreAuthenticatorPubKeyCredParam *> * _Nonnull"
     - Position: 3
       Type: "NSArray<CoreAuthenticatorExcludeCredential *> * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__230Challenge:relyingParty:pubKeyCredParams:excludeCredentials:"
+  - Selector: "doCopy__Skie_DefaultArguments__231Challenge:relyingParty:pubKeyCredParams:excludeCredentials:"
     MethodKind: "Instance"
     SwiftName: "doCopy(challenge:relyingParty:pubKeyCredParams:excludeCredentials:)"
     ResultType: "CoreAuthenticatorPasskeysOptions * _Nonnull"
@@ -4873,7 +4883,7 @@ Classes:
       Type: "NSArray<CoreAuthenticatorPubKeyCredParam *> * _Nonnull"
     - Position: 3
       Type: "NSArray<CoreAuthenticatorExcludeCredential *> * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__231Session:challenge:relyingParty:pubKeyCredParams:excludeCredentials:"
+  - Selector: "doCopy__Skie_DefaultArguments__232Session:challenge:relyingParty:pubKeyCredParams:excludeCredentials:"
     MethodKind: "Instance"
     SwiftName: "doCopy(session:challenge:relyingParty:pubKeyCredParams:excludeCredentials:)"
     ResultType: "CoreAuthenticatorPasskeysOptions * _Nonnull"
@@ -4888,7 +4898,7 @@ Classes:
       Type: "NSArray<CoreAuthenticatorPubKeyCredParam *> * _Nonnull"
     - Position: 4
       Type: "NSArray<CoreAuthenticatorExcludeCredential *> * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__232User:pubKeyCredParams:excludeCredentials:"
+  - Selector: "doCopy__Skie_DefaultArguments__233User:pubKeyCredParams:excludeCredentials:"
     MethodKind: "Instance"
     SwiftName: "doCopy(user:pubKeyCredParams:excludeCredentials:)"
     ResultType: "CoreAuthenticatorPasskeysOptions * _Nonnull"
@@ -4899,7 +4909,7 @@ Classes:
       Type: "NSArray<CoreAuthenticatorPubKeyCredParam *> * _Nonnull"
     - Position: 2
       Type: "NSArray<CoreAuthenticatorExcludeCredential *> * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__233Session:user:pubKeyCredParams:excludeCredentials:"
+  - Selector: "doCopy__Skie_DefaultArguments__234Session:user:pubKeyCredParams:excludeCredentials:"
     MethodKind: "Instance"
     SwiftName: "doCopy(session:user:pubKeyCredParams:excludeCredentials:)"
     ResultType: "CoreAuthenticatorPasskeysOptions * _Nonnull"
@@ -4912,7 +4922,7 @@ Classes:
       Type: "NSArray<CoreAuthenticatorPubKeyCredParam *> * _Nonnull"
     - Position: 3
       Type: "NSArray<CoreAuthenticatorExcludeCredential *> * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__234Challenge:user:pubKeyCredParams:excludeCredentials:"
+  - Selector: "doCopy__Skie_DefaultArguments__235Challenge:user:pubKeyCredParams:excludeCredentials:"
     MethodKind: "Instance"
     SwiftName: "doCopy(challenge:user:pubKeyCredParams:excludeCredentials:)"
     ResultType: "CoreAuthenticatorPasskeysOptions * _Nonnull"
@@ -4925,7 +4935,7 @@ Classes:
       Type: "NSArray<CoreAuthenticatorPubKeyCredParam *> * _Nonnull"
     - Position: 3
       Type: "NSArray<CoreAuthenticatorExcludeCredential *> * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__235Session:challenge:user:pubKeyCredParams:excludeCredentials:"
+  - Selector: "doCopy__Skie_DefaultArguments__236Session:challenge:user:pubKeyCredParams:excludeCredentials:"
     MethodKind: "Instance"
     SwiftName: "doCopy(session:challenge:user:pubKeyCredParams:excludeCredentials:)"
     ResultType: "CoreAuthenticatorPasskeysOptions * _Nonnull"
@@ -4940,7 +4950,7 @@ Classes:
       Type: "NSArray<CoreAuthenticatorPubKeyCredParam *> * _Nonnull"
     - Position: 4
       Type: "NSArray<CoreAuthenticatorExcludeCredential *> * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__236RelyingParty:user:pubKeyCredParams:excludeCredentials:"
+  - Selector: "doCopy__Skie_DefaultArguments__237RelyingParty:user:pubKeyCredParams:excludeCredentials:"
     MethodKind: "Instance"
     SwiftName: "doCopy(relyingParty:user:pubKeyCredParams:excludeCredentials:)"
     ResultType: "CoreAuthenticatorPasskeysOptions * _Nonnull"
@@ -4953,7 +4963,7 @@ Classes:
       Type: "NSArray<CoreAuthenticatorPubKeyCredParam *> * _Nonnull"
     - Position: 3
       Type: "NSArray<CoreAuthenticatorExcludeCredential *> * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__237Session:relyingParty:user:pubKeyCredParams:excludeCredentials:"
+  - Selector: "doCopy__Skie_DefaultArguments__238Session:relyingParty:user:pubKeyCredParams:excludeCredentials:"
     MethodKind: "Instance"
     SwiftName: "doCopy(session:relyingParty:user:pubKeyCredParams:excludeCredentials:)"
     ResultType: "CoreAuthenticatorPasskeysOptions * _Nonnull"
@@ -4968,7 +4978,7 @@ Classes:
       Type: "NSArray<CoreAuthenticatorPubKeyCredParam *> * _Nonnull"
     - Position: 4
       Type: "NSArray<CoreAuthenticatorExcludeCredential *> * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__238Challenge:relyingParty:user:pubKeyCredParams:excludeCredentials:"
+  - Selector: "doCopy__Skie_DefaultArguments__239Challenge:relyingParty:user:pubKeyCredParams:excludeCredentials:"
     MethodKind: "Instance"
     SwiftName: "doCopy(challenge:relyingParty:user:pubKeyCredParams:excludeCredentials:)"
     ResultType: "CoreAuthenticatorPasskeysOptions * _Nonnull"
@@ -5034,18 +5044,18 @@ Classes:
     MethodKind: "Instance"
     SwiftName: "description()"
     ResultType: "NSString * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__239"
+  - Selector: "doCopy__Skie_DefaultArguments__240"
     MethodKind: "Instance"
     SwiftName: "doCopy()"
     ResultType: "CoreAuthenticatorExcludeCredential * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__240Id:"
+  - Selector: "doCopy__Skie_DefaultArguments__241Id:"
     MethodKind: "Instance"
     SwiftName: "doCopy(id:)"
     ResultType: "CoreAuthenticatorExcludeCredential * _Nonnull"
     Parameters:
     - Position: 0
       Type: "NSString * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__241Type:"
+  - Selector: "doCopy__Skie_DefaultArguments__242Type:"
     MethodKind: "Instance"
     SwiftName: "doCopy(type:)"
     ResultType: "CoreAuthenticatorExcludeCredential * _Nonnull"
@@ -5103,18 +5113,18 @@ Classes:
     MethodKind: "Instance"
     SwiftName: "description()"
     ResultType: "NSString * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__242"
+  - Selector: "doCopy__Skie_DefaultArguments__243"
     MethodKind: "Instance"
     SwiftName: "doCopy()"
     ResultType: "CoreAuthenticatorPubKeyCredParam * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__243Type:"
+  - Selector: "doCopy__Skie_DefaultArguments__244Type:"
     MethodKind: "Instance"
     SwiftName: "doCopy(type:)"
     ResultType: "CoreAuthenticatorPubKeyCredParam * _Nonnull"
     Parameters:
     - Position: 0
       Type: "NSString * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__244Algorithm:"
+  - Selector: "doCopy__Skie_DefaultArguments__245Algorithm:"
     MethodKind: "Instance"
     SwiftName: "doCopy(algorithm:)"
     ResultType: "CoreAuthenticatorPubKeyCredParam * _Nonnull"
@@ -5180,25 +5190,25 @@ Classes:
     MethodKind: "Instance"
     SwiftName: "description()"
     ResultType: "NSString * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__245"
+  - Selector: "doCopy__Skie_DefaultArguments__246"
     MethodKind: "Instance"
     SwiftName: "doCopy()"
     ResultType: "CoreAuthenticatorUser * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__246Id:"
+  - Selector: "doCopy__Skie_DefaultArguments__247Id:"
     MethodKind: "Instance"
     SwiftName: "doCopy(id:)"
     ResultType: "CoreAuthenticatorUser * _Nonnull"
     Parameters:
     - Position: 0
       Type: "NSString * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__247Name:"
+  - Selector: "doCopy__Skie_DefaultArguments__248Name:"
     MethodKind: "Instance"
     SwiftName: "doCopy(name:)"
     ResultType: "CoreAuthenticatorUser * _Nonnull"
     Parameters:
     - Position: 0
       Type: "NSString * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__248Id:name:"
+  - Selector: "doCopy__Skie_DefaultArguments__249Id:name:"
     MethodKind: "Instance"
     SwiftName: "doCopy(id:name:)"
     ResultType: "CoreAuthenticatorUser * _Nonnull"
@@ -5207,14 +5217,14 @@ Classes:
       Type: "NSString * _Nonnull"
     - Position: 1
       Type: "NSString * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__249DisplayName:"
+  - Selector: "doCopy__Skie_DefaultArguments__250DisplayName:"
     MethodKind: "Instance"
     SwiftName: "doCopy(displayName:)"
     ResultType: "CoreAuthenticatorUser * _Nonnull"
     Parameters:
     - Position: 0
       Type: "NSString * _Nullable"
-  - Selector: "doCopy__Skie_DefaultArguments__250Id:displayName:"
+  - Selector: "doCopy__Skie_DefaultArguments__251Id:displayName:"
     MethodKind: "Instance"
     SwiftName: "doCopy(id:displayName:)"
     ResultType: "CoreAuthenticatorUser * _Nonnull"
@@ -5223,7 +5233,7 @@ Classes:
       Type: "NSString * _Nonnull"
     - Position: 1
       Type: "NSString * _Nullable"
-  - Selector: "doCopy__Skie_DefaultArguments__251Name:displayName:"
+  - Selector: "doCopy__Skie_DefaultArguments__252Name:displayName:"
     MethodKind: "Instance"
     SwiftName: "doCopy(name:displayName:)"
     ResultType: "CoreAuthenticatorUser * _Nonnull"
@@ -5291,25 +5301,25 @@ Classes:
     MethodKind: "Instance"
     SwiftName: "description()"
     ResultType: "NSString * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__252"
+  - Selector: "doCopy__Skie_DefaultArguments__253"
     MethodKind: "Instance"
     SwiftName: "doCopy()"
     ResultType: "CoreAuthenticatorRelyingParty * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__253Id:"
+  - Selector: "doCopy__Skie_DefaultArguments__254Id:"
     MethodKind: "Instance"
     SwiftName: "doCopy(id:)"
     ResultType: "CoreAuthenticatorRelyingParty * _Nonnull"
     Parameters:
     - Position: 0
       Type: "NSString * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__254Name:"
+  - Selector: "doCopy__Skie_DefaultArguments__255Name:"
     MethodKind: "Instance"
     SwiftName: "doCopy(name:)"
     ResultType: "CoreAuthenticatorRelyingParty * _Nonnull"
     Parameters:
     - Position: 0
       Type: "NSString * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__255Id:name:"
+  - Selector: "doCopy__Skie_DefaultArguments__256Id:name:"
     MethodKind: "Instance"
     SwiftName: "doCopy(id:name:)"
     ResultType: "CoreAuthenticatorRelyingParty * _Nonnull"
@@ -5318,14 +5328,14 @@ Classes:
       Type: "NSString * _Nonnull"
     - Position: 1
       Type: "NSString * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__256IconUrl:"
+  - Selector: "doCopy__Skie_DefaultArguments__257IconUrl:"
     MethodKind: "Instance"
     SwiftName: "doCopy(iconUrl:)"
     ResultType: "CoreAuthenticatorRelyingParty * _Nonnull"
     Parameters:
     - Position: 0
       Type: "NSString * _Nullable"
-  - Selector: "doCopy__Skie_DefaultArguments__257Id:iconUrl:"
+  - Selector: "doCopy__Skie_DefaultArguments__258Id:iconUrl:"
     MethodKind: "Instance"
     SwiftName: "doCopy(id:iconUrl:)"
     ResultType: "CoreAuthenticatorRelyingParty * _Nonnull"
@@ -5334,7 +5344,7 @@ Classes:
       Type: "NSString * _Nonnull"
     - Position: 1
       Type: "NSString * _Nullable"
-  - Selector: "doCopy__Skie_DefaultArguments__258Name:iconUrl:"
+  - Selector: "doCopy__Skie_DefaultArguments__259Name:iconUrl:"
     MethodKind: "Instance"
     SwiftName: "doCopy(name:iconUrl:)"
     ResultType: "CoreAuthenticatorRelyingParty * _Nonnull"
@@ -5402,25 +5412,25 @@ Classes:
     MethodKind: "Instance"
     SwiftName: "description()"
     ResultType: "NSString * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__259"
+  - Selector: "doCopy__Skie_DefaultArguments__260"
     MethodKind: "Instance"
     SwiftName: "doCopy()"
     ResultType: "CoreAuthenticatorMigrationOptions * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__260Session:"
+  - Selector: "doCopy__Skie_DefaultArguments__261Session:"
     MethodKind: "Instance"
     SwiftName: "doCopy(session:)"
     ResultType: "CoreAuthenticatorMigrationOptions * _Nonnull"
     Parameters:
     - Position: 0
       Type: "NSString * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__261DateTime:"
+  - Selector: "doCopy__Skie_DefaultArguments__262DateTime:"
     MethodKind: "Instance"
     SwiftName: "doCopy(dateTime:)"
     ResultType: "CoreAuthenticatorMigrationOptions * _Nonnull"
     Parameters:
     - Position: 0
       Type: "NSString * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__262Session:dateTime:"
+  - Selector: "doCopy__Skie_DefaultArguments__263Session:dateTime:"
     MethodKind: "Instance"
     SwiftName: "doCopy(session:dateTime:)"
     ResultType: "CoreAuthenticatorMigrationOptions * _Nonnull"
@@ -5429,14 +5439,14 @@ Classes:
       Type: "NSString * _Nonnull"
     - Position: 1
       Type: "NSString * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__263TimeZone:"
+  - Selector: "doCopy__Skie_DefaultArguments__264TimeZone:"
     MethodKind: "Instance"
     SwiftName: "doCopy(timeZone:)"
     ResultType: "CoreAuthenticatorMigrationOptions * _Nonnull"
     Parameters:
     - Position: 0
       Type: "NSString * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__264Session:timeZone:"
+  - Selector: "doCopy__Skie_DefaultArguments__265Session:timeZone:"
     MethodKind: "Instance"
     SwiftName: "doCopy(session:timeZone:)"
     ResultType: "CoreAuthenticatorMigrationOptions * _Nonnull"
@@ -5445,7 +5455,7 @@ Classes:
       Type: "NSString * _Nonnull"
     - Position: 1
       Type: "NSString * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__265DateTime:timeZone:"
+  - Selector: "doCopy__Skie_DefaultArguments__266DateTime:timeZone:"
     MethodKind: "Instance"
     SwiftName: "doCopy(dateTime:timeZone:)"
     ResultType: "CoreAuthenticatorMigrationOptions * _Nonnull"
@@ -5521,25 +5531,25 @@ Classes:
     MethodKind: "Instance"
     SwiftName: "description()"
     ResultType: "NSString * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__266"
+  - Selector: "doCopy__Skie_DefaultArguments__267"
     MethodKind: "Instance"
     SwiftName: "doCopy()"
     ResultType: "CoreAuthenticatorAuthenticationOptions * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__267Session:"
+  - Selector: "doCopy__Skie_DefaultArguments__268Session:"
     MethodKind: "Instance"
     SwiftName: "doCopy(session:)"
     ResultType: "CoreAuthenticatorAuthenticationOptions * _Nonnull"
     Parameters:
     - Position: 0
       Type: "NSString * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__268Challenge:"
+  - Selector: "doCopy__Skie_DefaultArguments__269Challenge:"
     MethodKind: "Instance"
     SwiftName: "doCopy(challenge:)"
     ResultType: "CoreAuthenticatorAuthenticationOptions * _Nonnull"
     Parameters:
     - Position: 0
       Type: "NSString * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__269Session:challenge:"
+  - Selector: "doCopy__Skie_DefaultArguments__270Session:challenge:"
     MethodKind: "Instance"
     SwiftName: "doCopy(session:challenge:)"
     ResultType: "CoreAuthenticatorAuthenticationOptions * _Nonnull"
@@ -5548,14 +5558,14 @@ Classes:
       Type: "NSString * _Nonnull"
     - Position: 1
       Type: "NSString * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__270RelyingPartyId:"
+  - Selector: "doCopy__Skie_DefaultArguments__271RelyingPartyId:"
     MethodKind: "Instance"
     SwiftName: "doCopy(relyingPartyId:)"
     ResultType: "CoreAuthenticatorAuthenticationOptions * _Nonnull"
     Parameters:
     - Position: 0
       Type: "NSString * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__271Session:relyingPartyId:"
+  - Selector: "doCopy__Skie_DefaultArguments__272Session:relyingPartyId:"
     MethodKind: "Instance"
     SwiftName: "doCopy(session:relyingPartyId:)"
     ResultType: "CoreAuthenticatorAuthenticationOptions * _Nonnull"
@@ -5564,7 +5574,7 @@ Classes:
       Type: "NSString * _Nonnull"
     - Position: 1
       Type: "NSString * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__272Challenge:relyingPartyId:"
+  - Selector: "doCopy__Skie_DefaultArguments__273Challenge:relyingPartyId:"
     MethodKind: "Instance"
     SwiftName: "doCopy(challenge:relyingPartyId:)"
     ResultType: "CoreAuthenticatorAuthenticationOptions * _Nonnull"
@@ -5573,7 +5583,7 @@ Classes:
       Type: "NSString * _Nonnull"
     - Position: 1
       Type: "NSString * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__273Session:challenge:relyingPartyId:"
+  - Selector: "doCopy__Skie_DefaultArguments__274Session:challenge:relyingPartyId:"
     MethodKind: "Instance"
     SwiftName: "doCopy(session:challenge:relyingPartyId:)"
     ResultType: "CoreAuthenticatorAuthenticationOptions * _Nonnull"
@@ -5584,14 +5594,14 @@ Classes:
       Type: "NSString * _Nonnull"
     - Position: 2
       Type: "NSString * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__274AllowCredentials:"
+  - Selector: "doCopy__Skie_DefaultArguments__275AllowCredentials:"
     MethodKind: "Instance"
     SwiftName: "doCopy(allowCredentials:)"
     ResultType: "CoreAuthenticatorAuthenticationOptions * _Nonnull"
     Parameters:
     - Position: 0
       Type: "NSArray<CoreAuthenticatorAllowCredential *> * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__275Session:allowCredentials:"
+  - Selector: "doCopy__Skie_DefaultArguments__276Session:allowCredentials:"
     MethodKind: "Instance"
     SwiftName: "doCopy(session:allowCredentials:)"
     ResultType: "CoreAuthenticatorAuthenticationOptions * _Nonnull"
@@ -5600,7 +5610,7 @@ Classes:
       Type: "NSString * _Nonnull"
     - Position: 1
       Type: "NSArray<CoreAuthenticatorAllowCredential *> * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__276Challenge:allowCredentials:"
+  - Selector: "doCopy__Skie_DefaultArguments__277Challenge:allowCredentials:"
     MethodKind: "Instance"
     SwiftName: "doCopy(challenge:allowCredentials:)"
     ResultType: "CoreAuthenticatorAuthenticationOptions * _Nonnull"
@@ -5609,7 +5619,7 @@ Classes:
       Type: "NSString * _Nonnull"
     - Position: 1
       Type: "NSArray<CoreAuthenticatorAllowCredential *> * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__277Session:challenge:allowCredentials:"
+  - Selector: "doCopy__Skie_DefaultArguments__278Session:challenge:allowCredentials:"
     MethodKind: "Instance"
     SwiftName: "doCopy(session:challenge:allowCredentials:)"
     ResultType: "CoreAuthenticatorAuthenticationOptions * _Nonnull"
@@ -5620,7 +5630,7 @@ Classes:
       Type: "NSString * _Nonnull"
     - Position: 2
       Type: "NSArray<CoreAuthenticatorAllowCredential *> * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__278RelyingPartyId:allowCredentials:"
+  - Selector: "doCopy__Skie_DefaultArguments__279RelyingPartyId:allowCredentials:"
     MethodKind: "Instance"
     SwiftName: "doCopy(relyingPartyId:allowCredentials:)"
     ResultType: "CoreAuthenticatorAuthenticationOptions * _Nonnull"
@@ -5629,7 +5639,7 @@ Classes:
       Type: "NSString * _Nonnull"
     - Position: 1
       Type: "NSArray<CoreAuthenticatorAllowCredential *> * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__279Session:relyingPartyId:allowCredentials:"
+  - Selector: "doCopy__Skie_DefaultArguments__280Session:relyingPartyId:allowCredentials:"
     MethodKind: "Instance"
     SwiftName: "doCopy(session:relyingPartyId:allowCredentials:)"
     ResultType: "CoreAuthenticatorAuthenticationOptions * _Nonnull"
@@ -5640,7 +5650,7 @@ Classes:
       Type: "NSString * _Nonnull"
     - Position: 2
       Type: "NSArray<CoreAuthenticatorAllowCredential *> * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__280Challenge:relyingPartyId:allowCredentials:"
+  - Selector: "doCopy__Skie_DefaultArguments__281Challenge:relyingPartyId:allowCredentials:"
     MethodKind: "Instance"
     SwiftName: "doCopy(challenge:relyingPartyId:allowCredentials:)"
     ResultType: "CoreAuthenticatorAuthenticationOptions * _Nonnull"
@@ -5710,25 +5720,25 @@ Classes:
     MethodKind: "Instance"
     SwiftName: "description()"
     ResultType: "NSString * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__281"
+  - Selector: "doCopy__Skie_DefaultArguments__282"
     MethodKind: "Instance"
     SwiftName: "doCopy()"
     ResultType: "CoreAuthenticatorAllowCredential * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__282Type:"
+  - Selector: "doCopy__Skie_DefaultArguments__283Type:"
     MethodKind: "Instance"
     SwiftName: "doCopy(type:)"
     ResultType: "CoreAuthenticatorAllowCredential * _Nonnull"
     Parameters:
     - Position: 0
       Type: "NSString * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__283Id:"
+  - Selector: "doCopy__Skie_DefaultArguments__284Id:"
     MethodKind: "Instance"
     SwiftName: "doCopy(id:)"
     ResultType: "CoreAuthenticatorAllowCredential * _Nonnull"
     Parameters:
     - Position: 0
       Type: "NSString * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__284Type:id:"
+  - Selector: "doCopy__Skie_DefaultArguments__285Type:id:"
     MethodKind: "Instance"
     SwiftName: "doCopy(type:id:)"
     ResultType: "CoreAuthenticatorAllowCredential * _Nonnull"
@@ -5737,14 +5747,14 @@ Classes:
       Type: "NSString * _Nonnull"
     - Position: 1
       Type: "NSString * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__285Transports:"
+  - Selector: "doCopy__Skie_DefaultArguments__286Transports:"
     MethodKind: "Instance"
     SwiftName: "doCopy(transports:)"
     ResultType: "CoreAuthenticatorAllowCredential * _Nonnull"
     Parameters:
     - Position: 0
       Type: "NSArray<NSString *> * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__286Type:transports:"
+  - Selector: "doCopy__Skie_DefaultArguments__287Type:transports:"
     MethodKind: "Instance"
     SwiftName: "doCopy(type:transports:)"
     ResultType: "CoreAuthenticatorAllowCredential * _Nonnull"
@@ -5753,7 +5763,7 @@ Classes:
       Type: "NSString * _Nonnull"
     - Position: 1
       Type: "NSArray<NSString *> * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__287Id:transports:"
+  - Selector: "doCopy__Skie_DefaultArguments__288Id:transports:"
     MethodKind: "Instance"
     SwiftName: "doCopy(id:transports:)"
     ResultType: "CoreAuthenticatorAllowCredential * _Nonnull"
@@ -5913,7 +5923,7 @@ Classes:
     MethodKind: "Instance"
     SwiftName: "description()"
     ResultType: "NSString * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__394"
+  - Selector: "doCopy__Skie_DefaultArguments__395"
     MethodKind: "Instance"
     SwiftName: "doCopy()"
     ResultType: "CoreAuthenticatorApiEnvironmentCustom * _Nonnull"
@@ -5961,18 +5971,18 @@ Classes:
     MethodKind: "Instance"
     SwiftName: "description()"
     ResultType: "NSString * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__288"
+  - Selector: "doCopy__Skie_DefaultArguments__289"
     MethodKind: "Instance"
     SwiftName: "doCopy()"
     ResultType: "CoreAuthenticatorCredentialsForMigration * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__289ConfirmedEmail:"
+  - Selector: "doCopy__Skie_DefaultArguments__290ConfirmedEmail:"
     MethodKind: "Instance"
     SwiftName: "doCopy(confirmedEmail:)"
     ResultType: "CoreAuthenticatorCredentialsForMigration * _Nonnull"
     Parameters:
     - Position: 0
       Type: "NSString * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__290Password:"
+  - Selector: "doCopy__Skie_DefaultArguments__291Password:"
     MethodKind: "Instance"
     SwiftName: "doCopy(password:)"
     ResultType: "CoreAuthenticatorCredentialsForMigration * _Nonnull"
@@ -5991,13 +6001,15 @@ Classes:
     SwiftName: "appStatus"
     Type: "CoreAuthenticatorSkieKotlinFlow<id<CoreAuthenticatorAppStatus>> * _Nonnull"
   Methods:
-  - Selector: "initWithLoadingDuration:resetAfter:"
+  - Selector: "initWithScope:loadingDuration:resetAfter:"
     MethodKind: "Instance"
-    SwiftName: "init(loadingDuration:resetAfter:)"
+    SwiftName: "init(scope:loadingDuration:resetAfter:)"
     Parameters:
     - Position: 0
-      Type: "int64_t"
+      Type: "id<CoreAuthenticatorKotlinx_coroutines_coreCoroutineScope> _Nonnull"
     - Position: 1
+      Type: "int64_t"
+    - Position: 2
       Type: "int64_t"
   - Selector: "addAccountsConnectedAccounts:completionHandler:"
     MethodKind: "Instance"
@@ -6006,7 +6018,7 @@ Classes:
     ResultType: "void"
     Parameters:
     - Position: 0
-      Type: "NSDictionary<CoreAuthenticatorAccount *, NSString *> * _Nonnull"
+      Type: "NSArray<CoreAuthenticatorAccount *> * _Nonnull"
     - Position: 1
       Type: "void (^ _Nonnull)(NSError * _Nullable)"
 - Name: "CoreAuthenticatorFailureKeyManagementGenerationFailed"
@@ -6045,7 +6057,7 @@ Classes:
     MethodKind: "Instance"
     SwiftName: "description()"
     ResultType: "NSString * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__291"
+  - Selector: "doCopy__Skie_DefaultArguments__292"
     MethodKind: "Instance"
     SwiftName: "doCopy()"
     ResultType: "CoreAuthenticatorFailureKeyManagementGenerationFailed * _Nonnull"
@@ -6085,7 +6097,7 @@ Classes:
     MethodKind: "Instance"
     SwiftName: "description()"
     ResultType: "NSString * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__292"
+  - Selector: "doCopy__Skie_DefaultArguments__293"
     MethodKind: "Instance"
     SwiftName: "doCopy()"
     ResultType: "CoreAuthenticatorFailureKeyManagementKeyExtractionFailed * _Nonnull"
@@ -6143,7 +6155,7 @@ Classes:
       Type: "NSString * _Nullable"
     - Position: 5
       Type: "CoreAuthenticatorStatusEntity * _Nonnull"
-  - Selector: "initWithFullName:initials:email:status__Skie_DefaultArguments__398:"
+  - Selector: "initWithFullName:initials:email:status__Skie_DefaultArguments__399:"
     MethodKind: "Instance"
     SwiftName: "init(fullName:initials:email:status:)"
     Parameters:
@@ -6155,7 +6167,7 @@ Classes:
       Type: "NSString * _Nonnull"
     - Position: 3
       Type: "CoreAuthenticatorStatusEntity * _Nonnull"
-  - Selector: "initWithId:fullName:initials:email:status__Skie_DefaultArguments__399:"
+  - Selector: "initWithId:fullName:initials:email:status__Skie_DefaultArguments__400:"
     MethodKind: "Instance"
     SwiftName: "init(id:fullName:initials:email:status:)"
     Parameters:
@@ -6169,7 +6181,7 @@ Classes:
       Type: "NSString * _Nonnull"
     - Position: 4
       Type: "CoreAuthenticatorStatusEntity * _Nonnull"
-  - Selector: "initWithFullName:initials:email:avatarUrl:status__Skie_DefaultArguments__400:"
+  - Selector: "initWithFullName:initials:email:avatarUrl:status__Skie_DefaultArguments__401:"
     MethodKind: "Instance"
     SwiftName: "init(fullName:initials:email:avatarUrl:status:)"
     Parameters:
@@ -6215,25 +6227,25 @@ Classes:
     MethodKind: "Instance"
     SwiftName: "description()"
     ResultType: "NSString * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__298"
+  - Selector: "doCopy__Skie_DefaultArguments__299"
     MethodKind: "Instance"
     SwiftName: "doCopy()"
     ResultType: "CoreAuthenticatorAccountEntity * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__299Id:"
+  - Selector: "doCopy__Skie_DefaultArguments__300Id:"
     MethodKind: "Instance"
     SwiftName: "doCopy(id:)"
     ResultType: "CoreAuthenticatorAccountEntity * _Nonnull"
     Parameters:
     - Position: 0
       Type: "int64_t"
-  - Selector: "doCopy__Skie_DefaultArguments__300FullName:"
+  - Selector: "doCopy__Skie_DefaultArguments__301FullName:"
     MethodKind: "Instance"
     SwiftName: "doCopy(fullName:)"
     ResultType: "CoreAuthenticatorAccountEntity * _Nonnull"
     Parameters:
     - Position: 0
       Type: "NSString * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__301Id:fullName:"
+  - Selector: "doCopy__Skie_DefaultArguments__302Id:fullName:"
     MethodKind: "Instance"
     SwiftName: "doCopy(id:fullName:)"
     ResultType: "CoreAuthenticatorAccountEntity * _Nonnull"
@@ -6242,14 +6254,14 @@ Classes:
       Type: "int64_t"
     - Position: 1
       Type: "NSString * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__302Initials:"
+  - Selector: "doCopy__Skie_DefaultArguments__303Initials:"
     MethodKind: "Instance"
     SwiftName: "doCopy(initials:)"
     ResultType: "CoreAuthenticatorAccountEntity * _Nonnull"
     Parameters:
     - Position: 0
       Type: "NSString * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__303Id:initials:"
+  - Selector: "doCopy__Skie_DefaultArguments__304Id:initials:"
     MethodKind: "Instance"
     SwiftName: "doCopy(id:initials:)"
     ResultType: "CoreAuthenticatorAccountEntity * _Nonnull"
@@ -6258,7 +6270,7 @@ Classes:
       Type: "int64_t"
     - Position: 1
       Type: "NSString * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__304FullName:initials:"
+  - Selector: "doCopy__Skie_DefaultArguments__305FullName:initials:"
     MethodKind: "Instance"
     SwiftName: "doCopy(fullName:initials:)"
     ResultType: "CoreAuthenticatorAccountEntity * _Nonnull"
@@ -6267,7 +6279,7 @@ Classes:
       Type: "NSString * _Nonnull"
     - Position: 1
       Type: "NSString * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__305Id:fullName:initials:"
+  - Selector: "doCopy__Skie_DefaultArguments__306Id:fullName:initials:"
     MethodKind: "Instance"
     SwiftName: "doCopy(id:fullName:initials:)"
     ResultType: "CoreAuthenticatorAccountEntity * _Nonnull"
@@ -6278,14 +6290,14 @@ Classes:
       Type: "NSString * _Nonnull"
     - Position: 2
       Type: "NSString * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__306Email:"
+  - Selector: "doCopy__Skie_DefaultArguments__307Email:"
     MethodKind: "Instance"
     SwiftName: "doCopy(email:)"
     ResultType: "CoreAuthenticatorAccountEntity * _Nonnull"
     Parameters:
     - Position: 0
       Type: "NSString * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__307Id:email:"
+  - Selector: "doCopy__Skie_DefaultArguments__308Id:email:"
     MethodKind: "Instance"
     SwiftName: "doCopy(id:email:)"
     ResultType: "CoreAuthenticatorAccountEntity * _Nonnull"
@@ -6294,7 +6306,7 @@ Classes:
       Type: "int64_t"
     - Position: 1
       Type: "NSString * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__308FullName:email:"
+  - Selector: "doCopy__Skie_DefaultArguments__309FullName:email:"
     MethodKind: "Instance"
     SwiftName: "doCopy(fullName:email:)"
     ResultType: "CoreAuthenticatorAccountEntity * _Nonnull"
@@ -6303,7 +6315,7 @@ Classes:
       Type: "NSString * _Nonnull"
     - Position: 1
       Type: "NSString * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__309Id:fullName:email:"
+  - Selector: "doCopy__Skie_DefaultArguments__310Id:fullName:email:"
     MethodKind: "Instance"
     SwiftName: "doCopy(id:fullName:email:)"
     ResultType: "CoreAuthenticatorAccountEntity * _Nonnull"
@@ -6314,7 +6326,7 @@ Classes:
       Type: "NSString * _Nonnull"
     - Position: 2
       Type: "NSString * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__310Initials:email:"
+  - Selector: "doCopy__Skie_DefaultArguments__311Initials:email:"
     MethodKind: "Instance"
     SwiftName: "doCopy(initials:email:)"
     ResultType: "CoreAuthenticatorAccountEntity * _Nonnull"
@@ -6323,7 +6335,7 @@ Classes:
       Type: "NSString * _Nonnull"
     - Position: 1
       Type: "NSString * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__311Id:initials:email:"
+  - Selector: "doCopy__Skie_DefaultArguments__312Id:initials:email:"
     MethodKind: "Instance"
     SwiftName: "doCopy(id:initials:email:)"
     ResultType: "CoreAuthenticatorAccountEntity * _Nonnull"
@@ -6334,7 +6346,7 @@ Classes:
       Type: "NSString * _Nonnull"
     - Position: 2
       Type: "NSString * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__312FullName:initials:email:"
+  - Selector: "doCopy__Skie_DefaultArguments__313FullName:initials:email:"
     MethodKind: "Instance"
     SwiftName: "doCopy(fullName:initials:email:)"
     ResultType: "CoreAuthenticatorAccountEntity * _Nonnull"
@@ -6345,7 +6357,7 @@ Classes:
       Type: "NSString * _Nonnull"
     - Position: 2
       Type: "NSString * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__313Id:fullName:initials:email:"
+  - Selector: "doCopy__Skie_DefaultArguments__314Id:fullName:initials:email:"
     MethodKind: "Instance"
     SwiftName: "doCopy(id:fullName:initials:email:)"
     ResultType: "CoreAuthenticatorAccountEntity * _Nonnull"
@@ -6358,14 +6370,14 @@ Classes:
       Type: "NSString * _Nonnull"
     - Position: 3
       Type: "NSString * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__314AvatarUrl:"
+  - Selector: "doCopy__Skie_DefaultArguments__315AvatarUrl:"
     MethodKind: "Instance"
     SwiftName: "doCopy(avatarUrl:)"
     ResultType: "CoreAuthenticatorAccountEntity * _Nonnull"
     Parameters:
     - Position: 0
       Type: "NSString * _Nullable"
-  - Selector: "doCopy__Skie_DefaultArguments__315Id:avatarUrl:"
+  - Selector: "doCopy__Skie_DefaultArguments__316Id:avatarUrl:"
     MethodKind: "Instance"
     SwiftName: "doCopy(id:avatarUrl:)"
     ResultType: "CoreAuthenticatorAccountEntity * _Nonnull"
@@ -6374,7 +6386,7 @@ Classes:
       Type: "int64_t"
     - Position: 1
       Type: "NSString * _Nullable"
-  - Selector: "doCopy__Skie_DefaultArguments__316FullName:avatarUrl:"
+  - Selector: "doCopy__Skie_DefaultArguments__317FullName:avatarUrl:"
     MethodKind: "Instance"
     SwiftName: "doCopy(fullName:avatarUrl:)"
     ResultType: "CoreAuthenticatorAccountEntity * _Nonnull"
@@ -6383,7 +6395,7 @@ Classes:
       Type: "NSString * _Nonnull"
     - Position: 1
       Type: "NSString * _Nullable"
-  - Selector: "doCopy__Skie_DefaultArguments__317Id:fullName:avatarUrl:"
+  - Selector: "doCopy__Skie_DefaultArguments__318Id:fullName:avatarUrl:"
     MethodKind: "Instance"
     SwiftName: "doCopy(id:fullName:avatarUrl:)"
     ResultType: "CoreAuthenticatorAccountEntity * _Nonnull"
@@ -6394,7 +6406,7 @@ Classes:
       Type: "NSString * _Nonnull"
     - Position: 2
       Type: "NSString * _Nullable"
-  - Selector: "doCopy__Skie_DefaultArguments__318Initials:avatarUrl:"
+  - Selector: "doCopy__Skie_DefaultArguments__319Initials:avatarUrl:"
     MethodKind: "Instance"
     SwiftName: "doCopy(initials:avatarUrl:)"
     ResultType: "CoreAuthenticatorAccountEntity * _Nonnull"
@@ -6403,7 +6415,7 @@ Classes:
       Type: "NSString * _Nonnull"
     - Position: 1
       Type: "NSString * _Nullable"
-  - Selector: "doCopy__Skie_DefaultArguments__319Id:initials:avatarUrl:"
+  - Selector: "doCopy__Skie_DefaultArguments__320Id:initials:avatarUrl:"
     MethodKind: "Instance"
     SwiftName: "doCopy(id:initials:avatarUrl:)"
     ResultType: "CoreAuthenticatorAccountEntity * _Nonnull"
@@ -6414,7 +6426,7 @@ Classes:
       Type: "NSString * _Nonnull"
     - Position: 2
       Type: "NSString * _Nullable"
-  - Selector: "doCopy__Skie_DefaultArguments__320FullName:initials:avatarUrl:"
+  - Selector: "doCopy__Skie_DefaultArguments__321FullName:initials:avatarUrl:"
     MethodKind: "Instance"
     SwiftName: "doCopy(fullName:initials:avatarUrl:)"
     ResultType: "CoreAuthenticatorAccountEntity * _Nonnull"
@@ -6425,7 +6437,7 @@ Classes:
       Type: "NSString * _Nonnull"
     - Position: 2
       Type: "NSString * _Nullable"
-  - Selector: "doCopy__Skie_DefaultArguments__321Id:fullName:initials:avatarUrl:"
+  - Selector: "doCopy__Skie_DefaultArguments__322Id:fullName:initials:avatarUrl:"
     MethodKind: "Instance"
     SwiftName: "doCopy(id:fullName:initials:avatarUrl:)"
     ResultType: "CoreAuthenticatorAccountEntity * _Nonnull"
@@ -6438,7 +6450,7 @@ Classes:
       Type: "NSString * _Nonnull"
     - Position: 3
       Type: "NSString * _Nullable"
-  - Selector: "doCopy__Skie_DefaultArguments__322Email:avatarUrl:"
+  - Selector: "doCopy__Skie_DefaultArguments__323Email:avatarUrl:"
     MethodKind: "Instance"
     SwiftName: "doCopy(email:avatarUrl:)"
     ResultType: "CoreAuthenticatorAccountEntity * _Nonnull"
@@ -6447,7 +6459,7 @@ Classes:
       Type: "NSString * _Nonnull"
     - Position: 1
       Type: "NSString * _Nullable"
-  - Selector: "doCopy__Skie_DefaultArguments__323Id:email:avatarUrl:"
+  - Selector: "doCopy__Skie_DefaultArguments__324Id:email:avatarUrl:"
     MethodKind: "Instance"
     SwiftName: "doCopy(id:email:avatarUrl:)"
     ResultType: "CoreAuthenticatorAccountEntity * _Nonnull"
@@ -6458,7 +6470,7 @@ Classes:
       Type: "NSString * _Nonnull"
     - Position: 2
       Type: "NSString * _Nullable"
-  - Selector: "doCopy__Skie_DefaultArguments__324FullName:email:avatarUrl:"
+  - Selector: "doCopy__Skie_DefaultArguments__325FullName:email:avatarUrl:"
     MethodKind: "Instance"
     SwiftName: "doCopy(fullName:email:avatarUrl:)"
     ResultType: "CoreAuthenticatorAccountEntity * _Nonnull"
@@ -6469,7 +6481,7 @@ Classes:
       Type: "NSString * _Nonnull"
     - Position: 2
       Type: "NSString * _Nullable"
-  - Selector: "doCopy__Skie_DefaultArguments__325Id:fullName:email:avatarUrl:"
+  - Selector: "doCopy__Skie_DefaultArguments__326Id:fullName:email:avatarUrl:"
     MethodKind: "Instance"
     SwiftName: "doCopy(id:fullName:email:avatarUrl:)"
     ResultType: "CoreAuthenticatorAccountEntity * _Nonnull"
@@ -6482,7 +6494,7 @@ Classes:
       Type: "NSString * _Nonnull"
     - Position: 3
       Type: "NSString * _Nullable"
-  - Selector: "doCopy__Skie_DefaultArguments__326Initials:email:avatarUrl:"
+  - Selector: "doCopy__Skie_DefaultArguments__327Initials:email:avatarUrl:"
     MethodKind: "Instance"
     SwiftName: "doCopy(initials:email:avatarUrl:)"
     ResultType: "CoreAuthenticatorAccountEntity * _Nonnull"
@@ -6493,7 +6505,7 @@ Classes:
       Type: "NSString * _Nonnull"
     - Position: 2
       Type: "NSString * _Nullable"
-  - Selector: "doCopy__Skie_DefaultArguments__327Id:initials:email:avatarUrl:"
+  - Selector: "doCopy__Skie_DefaultArguments__328Id:initials:email:avatarUrl:"
     MethodKind: "Instance"
     SwiftName: "doCopy(id:initials:email:avatarUrl:)"
     ResultType: "CoreAuthenticatorAccountEntity * _Nonnull"
@@ -6506,7 +6518,7 @@ Classes:
       Type: "NSString * _Nonnull"
     - Position: 3
       Type: "NSString * _Nullable"
-  - Selector: "doCopy__Skie_DefaultArguments__328FullName:initials:email:avatarUrl:"
+  - Selector: "doCopy__Skie_DefaultArguments__329FullName:initials:email:avatarUrl:"
     MethodKind: "Instance"
     SwiftName: "doCopy(fullName:initials:email:avatarUrl:)"
     ResultType: "CoreAuthenticatorAccountEntity * _Nonnull"
@@ -6519,7 +6531,7 @@ Classes:
       Type: "NSString * _Nonnull"
     - Position: 3
       Type: "NSString * _Nullable"
-  - Selector: "doCopy__Skie_DefaultArguments__329Id:fullName:initials:email:avatarUrl:"
+  - Selector: "doCopy__Skie_DefaultArguments__330Id:fullName:initials:email:avatarUrl:"
     MethodKind: "Instance"
     SwiftName: "doCopy(id:fullName:initials:email:avatarUrl:)"
     ResultType: "CoreAuthenticatorAccountEntity * _Nonnull"
@@ -6534,14 +6546,14 @@ Classes:
       Type: "NSString * _Nonnull"
     - Position: 4
       Type: "NSString * _Nullable"
-  - Selector: "doCopy__Skie_DefaultArguments__330Status:"
+  - Selector: "doCopy__Skie_DefaultArguments__331Status:"
     MethodKind: "Instance"
     SwiftName: "doCopy(status:)"
     ResultType: "CoreAuthenticatorAccountEntity * _Nonnull"
     Parameters:
     - Position: 0
       Type: "CoreAuthenticatorStatusEntity * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__331Id:status:"
+  - Selector: "doCopy__Skie_DefaultArguments__332Id:status:"
     MethodKind: "Instance"
     SwiftName: "doCopy(id:status:)"
     ResultType: "CoreAuthenticatorAccountEntity * _Nonnull"
@@ -6550,7 +6562,7 @@ Classes:
       Type: "int64_t"
     - Position: 1
       Type: "CoreAuthenticatorStatusEntity * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__332FullName:status:"
+  - Selector: "doCopy__Skie_DefaultArguments__333FullName:status:"
     MethodKind: "Instance"
     SwiftName: "doCopy(fullName:status:)"
     ResultType: "CoreAuthenticatorAccountEntity * _Nonnull"
@@ -6559,7 +6571,7 @@ Classes:
       Type: "NSString * _Nonnull"
     - Position: 1
       Type: "CoreAuthenticatorStatusEntity * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__333Id:fullName:status:"
+  - Selector: "doCopy__Skie_DefaultArguments__334Id:fullName:status:"
     MethodKind: "Instance"
     SwiftName: "doCopy(id:fullName:status:)"
     ResultType: "CoreAuthenticatorAccountEntity * _Nonnull"
@@ -6570,7 +6582,7 @@ Classes:
       Type: "NSString * _Nonnull"
     - Position: 2
       Type: "CoreAuthenticatorStatusEntity * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__334Initials:status:"
+  - Selector: "doCopy__Skie_DefaultArguments__335Initials:status:"
     MethodKind: "Instance"
     SwiftName: "doCopy(initials:status:)"
     ResultType: "CoreAuthenticatorAccountEntity * _Nonnull"
@@ -6579,7 +6591,7 @@ Classes:
       Type: "NSString * _Nonnull"
     - Position: 1
       Type: "CoreAuthenticatorStatusEntity * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__335Id:initials:status:"
+  - Selector: "doCopy__Skie_DefaultArguments__336Id:initials:status:"
     MethodKind: "Instance"
     SwiftName: "doCopy(id:initials:status:)"
     ResultType: "CoreAuthenticatorAccountEntity * _Nonnull"
@@ -6590,7 +6602,7 @@ Classes:
       Type: "NSString * _Nonnull"
     - Position: 2
       Type: "CoreAuthenticatorStatusEntity * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__336FullName:initials:status:"
+  - Selector: "doCopy__Skie_DefaultArguments__337FullName:initials:status:"
     MethodKind: "Instance"
     SwiftName: "doCopy(fullName:initials:status:)"
     ResultType: "CoreAuthenticatorAccountEntity * _Nonnull"
@@ -6601,7 +6613,7 @@ Classes:
       Type: "NSString * _Nonnull"
     - Position: 2
       Type: "CoreAuthenticatorStatusEntity * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__337Id:fullName:initials:status:"
+  - Selector: "doCopy__Skie_DefaultArguments__338Id:fullName:initials:status:"
     MethodKind: "Instance"
     SwiftName: "doCopy(id:fullName:initials:status:)"
     ResultType: "CoreAuthenticatorAccountEntity * _Nonnull"
@@ -6614,7 +6626,7 @@ Classes:
       Type: "NSString * _Nonnull"
     - Position: 3
       Type: "CoreAuthenticatorStatusEntity * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__338Email:status:"
+  - Selector: "doCopy__Skie_DefaultArguments__339Email:status:"
     MethodKind: "Instance"
     SwiftName: "doCopy(email:status:)"
     ResultType: "CoreAuthenticatorAccountEntity * _Nonnull"
@@ -6623,7 +6635,7 @@ Classes:
       Type: "NSString * _Nonnull"
     - Position: 1
       Type: "CoreAuthenticatorStatusEntity * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__339Id:email:status:"
+  - Selector: "doCopy__Skie_DefaultArguments__340Id:email:status:"
     MethodKind: "Instance"
     SwiftName: "doCopy(id:email:status:)"
     ResultType: "CoreAuthenticatorAccountEntity * _Nonnull"
@@ -6634,7 +6646,7 @@ Classes:
       Type: "NSString * _Nonnull"
     - Position: 2
       Type: "CoreAuthenticatorStatusEntity * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__340FullName:email:status:"
+  - Selector: "doCopy__Skie_DefaultArguments__341FullName:email:status:"
     MethodKind: "Instance"
     SwiftName: "doCopy(fullName:email:status:)"
     ResultType: "CoreAuthenticatorAccountEntity * _Nonnull"
@@ -6645,7 +6657,7 @@ Classes:
       Type: "NSString * _Nonnull"
     - Position: 2
       Type: "CoreAuthenticatorStatusEntity * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__341Id:fullName:email:status:"
+  - Selector: "doCopy__Skie_DefaultArguments__342Id:fullName:email:status:"
     MethodKind: "Instance"
     SwiftName: "doCopy(id:fullName:email:status:)"
     ResultType: "CoreAuthenticatorAccountEntity * _Nonnull"
@@ -6658,7 +6670,7 @@ Classes:
       Type: "NSString * _Nonnull"
     - Position: 3
       Type: "CoreAuthenticatorStatusEntity * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__342Initials:email:status:"
+  - Selector: "doCopy__Skie_DefaultArguments__343Initials:email:status:"
     MethodKind: "Instance"
     SwiftName: "doCopy(initials:email:status:)"
     ResultType: "CoreAuthenticatorAccountEntity * _Nonnull"
@@ -6669,7 +6681,7 @@ Classes:
       Type: "NSString * _Nonnull"
     - Position: 2
       Type: "CoreAuthenticatorStatusEntity * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__343Id:initials:email:status:"
+  - Selector: "doCopy__Skie_DefaultArguments__344Id:initials:email:status:"
     MethodKind: "Instance"
     SwiftName: "doCopy(id:initials:email:status:)"
     ResultType: "CoreAuthenticatorAccountEntity * _Nonnull"
@@ -6682,7 +6694,7 @@ Classes:
       Type: "NSString * _Nonnull"
     - Position: 3
       Type: "CoreAuthenticatorStatusEntity * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__344FullName:initials:email:status:"
+  - Selector: "doCopy__Skie_DefaultArguments__345FullName:initials:email:status:"
     MethodKind: "Instance"
     SwiftName: "doCopy(fullName:initials:email:status:)"
     ResultType: "CoreAuthenticatorAccountEntity * _Nonnull"
@@ -6695,7 +6707,7 @@ Classes:
       Type: "NSString * _Nonnull"
     - Position: 3
       Type: "CoreAuthenticatorStatusEntity * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__345Id:fullName:initials:email:status:"
+  - Selector: "doCopy__Skie_DefaultArguments__346Id:fullName:initials:email:status:"
     MethodKind: "Instance"
     SwiftName: "doCopy(id:fullName:initials:email:status:)"
     ResultType: "CoreAuthenticatorAccountEntity * _Nonnull"
@@ -6710,7 +6722,7 @@ Classes:
       Type: "NSString * _Nonnull"
     - Position: 4
       Type: "CoreAuthenticatorStatusEntity * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__346AvatarUrl:status:"
+  - Selector: "doCopy__Skie_DefaultArguments__347AvatarUrl:status:"
     MethodKind: "Instance"
     SwiftName: "doCopy(avatarUrl:status:)"
     ResultType: "CoreAuthenticatorAccountEntity * _Nonnull"
@@ -6719,7 +6731,7 @@ Classes:
       Type: "NSString * _Nullable"
     - Position: 1
       Type: "CoreAuthenticatorStatusEntity * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__347Id:avatarUrl:status:"
+  - Selector: "doCopy__Skie_DefaultArguments__348Id:avatarUrl:status:"
     MethodKind: "Instance"
     SwiftName: "doCopy(id:avatarUrl:status:)"
     ResultType: "CoreAuthenticatorAccountEntity * _Nonnull"
@@ -6730,7 +6742,7 @@ Classes:
       Type: "NSString * _Nullable"
     - Position: 2
       Type: "CoreAuthenticatorStatusEntity * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__348FullName:avatarUrl:status:"
+  - Selector: "doCopy__Skie_DefaultArguments__349FullName:avatarUrl:status:"
     MethodKind: "Instance"
     SwiftName: "doCopy(fullName:avatarUrl:status:)"
     ResultType: "CoreAuthenticatorAccountEntity * _Nonnull"
@@ -6741,7 +6753,7 @@ Classes:
       Type: "NSString * _Nullable"
     - Position: 2
       Type: "CoreAuthenticatorStatusEntity * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__349Id:fullName:avatarUrl:status:"
+  - Selector: "doCopy__Skie_DefaultArguments__350Id:fullName:avatarUrl:status:"
     MethodKind: "Instance"
     SwiftName: "doCopy(id:fullName:avatarUrl:status:)"
     ResultType: "CoreAuthenticatorAccountEntity * _Nonnull"
@@ -6754,7 +6766,7 @@ Classes:
       Type: "NSString * _Nullable"
     - Position: 3
       Type: "CoreAuthenticatorStatusEntity * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__350Initials:avatarUrl:status:"
+  - Selector: "doCopy__Skie_DefaultArguments__351Initials:avatarUrl:status:"
     MethodKind: "Instance"
     SwiftName: "doCopy(initials:avatarUrl:status:)"
     ResultType: "CoreAuthenticatorAccountEntity * _Nonnull"
@@ -6765,7 +6777,7 @@ Classes:
       Type: "NSString * _Nullable"
     - Position: 2
       Type: "CoreAuthenticatorStatusEntity * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__351Id:initials:avatarUrl:status:"
+  - Selector: "doCopy__Skie_DefaultArguments__352Id:initials:avatarUrl:status:"
     MethodKind: "Instance"
     SwiftName: "doCopy(id:initials:avatarUrl:status:)"
     ResultType: "CoreAuthenticatorAccountEntity * _Nonnull"
@@ -6778,7 +6790,7 @@ Classes:
       Type: "NSString * _Nullable"
     - Position: 3
       Type: "CoreAuthenticatorStatusEntity * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__352FullName:initials:avatarUrl:status:"
+  - Selector: "doCopy__Skie_DefaultArguments__353FullName:initials:avatarUrl:status:"
     MethodKind: "Instance"
     SwiftName: "doCopy(fullName:initials:avatarUrl:status:)"
     ResultType: "CoreAuthenticatorAccountEntity * _Nonnull"
@@ -6791,7 +6803,7 @@ Classes:
       Type: "NSString * _Nullable"
     - Position: 3
       Type: "CoreAuthenticatorStatusEntity * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__353Id:fullName:initials:avatarUrl:status:"
+  - Selector: "doCopy__Skie_DefaultArguments__354Id:fullName:initials:avatarUrl:status:"
     MethodKind: "Instance"
     SwiftName: "doCopy(id:fullName:initials:avatarUrl:status:)"
     ResultType: "CoreAuthenticatorAccountEntity * _Nonnull"
@@ -6806,7 +6818,7 @@ Classes:
       Type: "NSString * _Nullable"
     - Position: 4
       Type: "CoreAuthenticatorStatusEntity * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__354Email:avatarUrl:status:"
+  - Selector: "doCopy__Skie_DefaultArguments__355Email:avatarUrl:status:"
     MethodKind: "Instance"
     SwiftName: "doCopy(email:avatarUrl:status:)"
     ResultType: "CoreAuthenticatorAccountEntity * _Nonnull"
@@ -6817,7 +6829,7 @@ Classes:
       Type: "NSString * _Nullable"
     - Position: 2
       Type: "CoreAuthenticatorStatusEntity * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__355Id:email:avatarUrl:status:"
+  - Selector: "doCopy__Skie_DefaultArguments__356Id:email:avatarUrl:status:"
     MethodKind: "Instance"
     SwiftName: "doCopy(id:email:avatarUrl:status:)"
     ResultType: "CoreAuthenticatorAccountEntity * _Nonnull"
@@ -6830,7 +6842,7 @@ Classes:
       Type: "NSString * _Nullable"
     - Position: 3
       Type: "CoreAuthenticatorStatusEntity * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__356FullName:email:avatarUrl:status:"
+  - Selector: "doCopy__Skie_DefaultArguments__357FullName:email:avatarUrl:status:"
     MethodKind: "Instance"
     SwiftName: "doCopy(fullName:email:avatarUrl:status:)"
     ResultType: "CoreAuthenticatorAccountEntity * _Nonnull"
@@ -6843,7 +6855,7 @@ Classes:
       Type: "NSString * _Nullable"
     - Position: 3
       Type: "CoreAuthenticatorStatusEntity * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__357Id:fullName:email:avatarUrl:status:"
+  - Selector: "doCopy__Skie_DefaultArguments__358Id:fullName:email:avatarUrl:status:"
     MethodKind: "Instance"
     SwiftName: "doCopy(id:fullName:email:avatarUrl:status:)"
     ResultType: "CoreAuthenticatorAccountEntity * _Nonnull"
@@ -6858,7 +6870,7 @@ Classes:
       Type: "NSString * _Nullable"
     - Position: 4
       Type: "CoreAuthenticatorStatusEntity * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__358Initials:email:avatarUrl:status:"
+  - Selector: "doCopy__Skie_DefaultArguments__359Initials:email:avatarUrl:status:"
     MethodKind: "Instance"
     SwiftName: "doCopy(initials:email:avatarUrl:status:)"
     ResultType: "CoreAuthenticatorAccountEntity * _Nonnull"
@@ -6871,7 +6883,7 @@ Classes:
       Type: "NSString * _Nullable"
     - Position: 3
       Type: "CoreAuthenticatorStatusEntity * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__359Id:initials:email:avatarUrl:status:"
+  - Selector: "doCopy__Skie_DefaultArguments__360Id:initials:email:avatarUrl:status:"
     MethodKind: "Instance"
     SwiftName: "doCopy(id:initials:email:avatarUrl:status:)"
     ResultType: "CoreAuthenticatorAccountEntity * _Nonnull"
@@ -6886,7 +6898,7 @@ Classes:
       Type: "NSString * _Nullable"
     - Position: 4
       Type: "CoreAuthenticatorStatusEntity * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__360FullName:initials:email:avatarUrl:status:"
+  - Selector: "doCopy__Skie_DefaultArguments__361FullName:initials:email:avatarUrl:status:"
     MethodKind: "Instance"
     SwiftName: "doCopy(fullName:initials:email:avatarUrl:status:)"
     ResultType: "CoreAuthenticatorAccountEntity * _Nonnull"
@@ -6910,17 +6922,9 @@ Classes:
     PropertyKind: "Class"
     SwiftName: "loggedIn"
     Type: "CoreAuthenticatorStatusEntity * _Nonnull"
-  - Name: "notconnectedempty"
+  - Name: "notconnected"
     PropertyKind: "Class"
-    SwiftName: "notConnectedEmpty"
-    Type: "CoreAuthenticatorStatusEntity * _Nonnull"
-  - Name: "notconnectedrelogin"
-    PropertyKind: "Class"
-    SwiftName: "notConnectedReLogin"
-    Type: "CoreAuthenticatorStatusEntity * _Nonnull"
-  - Name: "notconnectedissue"
-    PropertyKind: "Class"
-    SwiftName: "notConnectedIssue"
+    SwiftName: "notConnected"
     Type: "CoreAuthenticatorStatusEntity * _Nonnull"
   Methods:
   - Selector: "initWithName:ordinal:"
@@ -6994,19 +6998,19 @@ Classes:
   - Selector: "init"
     MethodKind: "Instance"
     SwiftName: "init()"
-  - Selector: "initWithId__Skie_DefaultArguments__402:"
+  - Selector: "initWithId__Skie_DefaultArguments__403:"
     MethodKind: "Instance"
     SwiftName: "init(id:)"
     Parameters:
     - Position: 0
       Type: "int64_t"
-  - Selector: "initWithIsNotificationEnabled__Skie_DefaultArguments__403:"
+  - Selector: "initWithIsNotificationEnabled__Skie_DefaultArguments__404:"
     MethodKind: "Instance"
     SwiftName: "init(isNotificationEnabled:)"
     Parameters:
     - Position: 0
       Type: "BOOL"
-  - Selector: "initWithId:isNotificationEnabled__Skie_DefaultArguments__404:"
+  - Selector: "initWithId:isNotificationEnabled__Skie_DefaultArguments__405:"
     MethodKind: "Instance"
     SwiftName: "init(id:isNotificationEnabled:)"
     Parameters:
@@ -7014,13 +7018,13 @@ Classes:
       Type: "int64_t"
     - Position: 1
       Type: "BOOL"
-  - Selector: "initWithIsAppLockEnabled__Skie_DefaultArguments__405:"
+  - Selector: "initWithIsAppLockEnabled__Skie_DefaultArguments__406:"
     MethodKind: "Instance"
     SwiftName: "init(isAppLockEnabled:)"
     Parameters:
     - Position: 0
       Type: "BOOL"
-  - Selector: "initWithId:isAppLockEnabled__Skie_DefaultArguments__406:"
+  - Selector: "initWithId:isAppLockEnabled__Skie_DefaultArguments__407:"
     MethodKind: "Instance"
     SwiftName: "init(id:isAppLockEnabled:)"
     Parameters:
@@ -7028,7 +7032,7 @@ Classes:
       Type: "int64_t"
     - Position: 1
       Type: "BOOL"
-  - Selector: "initWithIsNotificationEnabled:isAppLockEnabled__Skie_DefaultArguments__407:"
+  - Selector: "initWithIsNotificationEnabled:isAppLockEnabled__Skie_DefaultArguments__408:"
     MethodKind: "Instance"
     SwiftName: "init(isNotificationEnabled:isAppLockEnabled:)"
     Parameters:
@@ -7036,7 +7040,7 @@ Classes:
       Type: "BOOL"
     - Position: 1
       Type: "BOOL"
-  - Selector: "initWithId:isNotificationEnabled:isAppLockEnabled__Skie_DefaultArguments__408:"
+  - Selector: "initWithId:isNotificationEnabled:isAppLockEnabled__Skie_DefaultArguments__409:"
     MethodKind: "Instance"
     SwiftName: "init(id:isNotificationEnabled:isAppLockEnabled:)"
     Parameters:
@@ -7046,13 +7050,13 @@ Classes:
       Type: "BOOL"
     - Position: 2
       Type: "BOOL"
-  - Selector: "initWithTheme__Skie_DefaultArguments__409:"
+  - Selector: "initWithTheme__Skie_DefaultArguments__410:"
     MethodKind: "Instance"
     SwiftName: "init(theme:)"
     Parameters:
     - Position: 0
       Type: "CoreAuthenticatorTheme * _Nonnull"
-  - Selector: "initWithId:theme__Skie_DefaultArguments__410:"
+  - Selector: "initWithId:theme__Skie_DefaultArguments__411:"
     MethodKind: "Instance"
     SwiftName: "init(id:theme:)"
     Parameters:
@@ -7060,7 +7064,7 @@ Classes:
       Type: "int64_t"
     - Position: 1
       Type: "CoreAuthenticatorTheme * _Nonnull"
-  - Selector: "initWithIsNotificationEnabled:theme__Skie_DefaultArguments__411:"
+  - Selector: "initWithIsNotificationEnabled:theme__Skie_DefaultArguments__412:"
     MethodKind: "Instance"
     SwiftName: "init(isNotificationEnabled:theme:)"
     Parameters:
@@ -7068,7 +7072,7 @@ Classes:
       Type: "BOOL"
     - Position: 1
       Type: "CoreAuthenticatorTheme * _Nonnull"
-  - Selector: "initWithId:isNotificationEnabled:theme__Skie_DefaultArguments__412:"
+  - Selector: "initWithId:isNotificationEnabled:theme__Skie_DefaultArguments__413:"
     MethodKind: "Instance"
     SwiftName: "init(id:isNotificationEnabled:theme:)"
     Parameters:
@@ -7078,7 +7082,7 @@ Classes:
       Type: "BOOL"
     - Position: 2
       Type: "CoreAuthenticatorTheme * _Nonnull"
-  - Selector: "initWithIsAppLockEnabled:theme__Skie_DefaultArguments__413:"
+  - Selector: "initWithIsAppLockEnabled:theme__Skie_DefaultArguments__414:"
     MethodKind: "Instance"
     SwiftName: "init(isAppLockEnabled:theme:)"
     Parameters:
@@ -7086,7 +7090,7 @@ Classes:
       Type: "BOOL"
     - Position: 1
       Type: "CoreAuthenticatorTheme * _Nonnull"
-  - Selector: "initWithId:isAppLockEnabled:theme__Skie_DefaultArguments__414:"
+  - Selector: "initWithId:isAppLockEnabled:theme__Skie_DefaultArguments__415:"
     MethodKind: "Instance"
     SwiftName: "init(id:isAppLockEnabled:theme:)"
     Parameters:
@@ -7096,7 +7100,7 @@ Classes:
       Type: "BOOL"
     - Position: 2
       Type: "CoreAuthenticatorTheme * _Nonnull"
-  - Selector: "initWithIsNotificationEnabled:isAppLockEnabled:theme__Skie_DefaultArguments__415:"
+  - Selector: "initWithIsNotificationEnabled:isAppLockEnabled:theme__Skie_DefaultArguments__416:"
     MethodKind: "Instance"
     SwiftName: "init(isNotificationEnabled:isAppLockEnabled:theme:)"
     Parameters:
@@ -7134,25 +7138,25 @@ Classes:
     MethodKind: "Instance"
     SwiftName: "description()"
     ResultType: "NSString * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__361"
+  - Selector: "doCopy__Skie_DefaultArguments__362"
     MethodKind: "Instance"
     SwiftName: "doCopy()"
     ResultType: "CoreAuthenticatorAppSettingsEntity * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__362Id:"
+  - Selector: "doCopy__Skie_DefaultArguments__363Id:"
     MethodKind: "Instance"
     SwiftName: "doCopy(id:)"
     ResultType: "CoreAuthenticatorAppSettingsEntity * _Nonnull"
     Parameters:
     - Position: 0
       Type: "int64_t"
-  - Selector: "doCopy__Skie_DefaultArguments__363IsNotificationEnabled:"
+  - Selector: "doCopy__Skie_DefaultArguments__364IsNotificationEnabled:"
     MethodKind: "Instance"
     SwiftName: "doCopy(isNotificationEnabled:)"
     ResultType: "CoreAuthenticatorAppSettingsEntity * _Nonnull"
     Parameters:
     - Position: 0
       Type: "BOOL"
-  - Selector: "doCopy__Skie_DefaultArguments__364Id:isNotificationEnabled:"
+  - Selector: "doCopy__Skie_DefaultArguments__365Id:isNotificationEnabled:"
     MethodKind: "Instance"
     SwiftName: "doCopy(id:isNotificationEnabled:)"
     ResultType: "CoreAuthenticatorAppSettingsEntity * _Nonnull"
@@ -7161,14 +7165,14 @@ Classes:
       Type: "int64_t"
     - Position: 1
       Type: "BOOL"
-  - Selector: "doCopy__Skie_DefaultArguments__365IsAppLockEnabled:"
+  - Selector: "doCopy__Skie_DefaultArguments__366IsAppLockEnabled:"
     MethodKind: "Instance"
     SwiftName: "doCopy(isAppLockEnabled:)"
     ResultType: "CoreAuthenticatorAppSettingsEntity * _Nonnull"
     Parameters:
     - Position: 0
       Type: "BOOL"
-  - Selector: "doCopy__Skie_DefaultArguments__366Id:isAppLockEnabled:"
+  - Selector: "doCopy__Skie_DefaultArguments__367Id:isAppLockEnabled:"
     MethodKind: "Instance"
     SwiftName: "doCopy(id:isAppLockEnabled:)"
     ResultType: "CoreAuthenticatorAppSettingsEntity * _Nonnull"
@@ -7177,7 +7181,7 @@ Classes:
       Type: "int64_t"
     - Position: 1
       Type: "BOOL"
-  - Selector: "doCopy__Skie_DefaultArguments__367IsNotificationEnabled:isAppLockEnabled:"
+  - Selector: "doCopy__Skie_DefaultArguments__368IsNotificationEnabled:isAppLockEnabled:"
     MethodKind: "Instance"
     SwiftName: "doCopy(isNotificationEnabled:isAppLockEnabled:)"
     ResultType: "CoreAuthenticatorAppSettingsEntity * _Nonnull"
@@ -7186,7 +7190,7 @@ Classes:
       Type: "BOOL"
     - Position: 1
       Type: "BOOL"
-  - Selector: "doCopy__Skie_DefaultArguments__368Id:isNotificationEnabled:isAppLockEnabled:"
+  - Selector: "doCopy__Skie_DefaultArguments__369Id:isNotificationEnabled:isAppLockEnabled:"
     MethodKind: "Instance"
     SwiftName: "doCopy(id:isNotificationEnabled:isAppLockEnabled:)"
     ResultType: "CoreAuthenticatorAppSettingsEntity * _Nonnull"
@@ -7197,14 +7201,14 @@ Classes:
       Type: "BOOL"
     - Position: 2
       Type: "BOOL"
-  - Selector: "doCopy__Skie_DefaultArguments__369Theme:"
+  - Selector: "doCopy__Skie_DefaultArguments__370Theme:"
     MethodKind: "Instance"
     SwiftName: "doCopy(theme:)"
     ResultType: "CoreAuthenticatorAppSettingsEntity * _Nonnull"
     Parameters:
     - Position: 0
       Type: "CoreAuthenticatorTheme * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__370Id:theme:"
+  - Selector: "doCopy__Skie_DefaultArguments__371Id:theme:"
     MethodKind: "Instance"
     SwiftName: "doCopy(id:theme:)"
     ResultType: "CoreAuthenticatorAppSettingsEntity * _Nonnull"
@@ -7213,7 +7217,7 @@ Classes:
       Type: "int64_t"
     - Position: 1
       Type: "CoreAuthenticatorTheme * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__371IsNotificationEnabled:theme:"
+  - Selector: "doCopy__Skie_DefaultArguments__372IsNotificationEnabled:theme:"
     MethodKind: "Instance"
     SwiftName: "doCopy(isNotificationEnabled:theme:)"
     ResultType: "CoreAuthenticatorAppSettingsEntity * _Nonnull"
@@ -7222,7 +7226,7 @@ Classes:
       Type: "BOOL"
     - Position: 1
       Type: "CoreAuthenticatorTheme * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__372Id:isNotificationEnabled:theme:"
+  - Selector: "doCopy__Skie_DefaultArguments__373Id:isNotificationEnabled:theme:"
     MethodKind: "Instance"
     SwiftName: "doCopy(id:isNotificationEnabled:theme:)"
     ResultType: "CoreAuthenticatorAppSettingsEntity * _Nonnull"
@@ -7233,7 +7237,7 @@ Classes:
       Type: "BOOL"
     - Position: 2
       Type: "CoreAuthenticatorTheme * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__373IsAppLockEnabled:theme:"
+  - Selector: "doCopy__Skie_DefaultArguments__374IsAppLockEnabled:theme:"
     MethodKind: "Instance"
     SwiftName: "doCopy(isAppLockEnabled:theme:)"
     ResultType: "CoreAuthenticatorAppSettingsEntity * _Nonnull"
@@ -7242,7 +7246,7 @@ Classes:
       Type: "BOOL"
     - Position: 1
       Type: "CoreAuthenticatorTheme * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__374Id:isAppLockEnabled:theme:"
+  - Selector: "doCopy__Skie_DefaultArguments__375Id:isAppLockEnabled:theme:"
     MethodKind: "Instance"
     SwiftName: "doCopy(id:isAppLockEnabled:theme:)"
     ResultType: "CoreAuthenticatorAppSettingsEntity * _Nonnull"
@@ -7253,7 +7257,7 @@ Classes:
       Type: "BOOL"
     - Position: 2
       Type: "CoreAuthenticatorTheme * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__375IsNotificationEnabled:isAppLockEnabled:theme:"
+  - Selector: "doCopy__Skie_DefaultArguments__376IsNotificationEnabled:isAppLockEnabled:theme:"
     MethodKind: "Instance"
     SwiftName: "doCopy(isNotificationEnabled:isAppLockEnabled:theme:)"
     ResultType: "CoreAuthenticatorAppSettingsEntity * _Nonnull"
@@ -7441,18 +7445,18 @@ Classes:
     MethodKind: "Instance"
     SwiftName: "description()"
     ResultType: "NSString * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__376"
+  - Selector: "doCopy__Skie_DefaultArguments__377"
     MethodKind: "Instance"
     SwiftName: "doCopy()"
     ResultType: "CoreAuthenticatorApiError * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__377ErrorCode:"
+  - Selector: "doCopy__Skie_DefaultArguments__378ErrorCode:"
     MethodKind: "Instance"
     SwiftName: "doCopy(errorCode:)"
     ResultType: "CoreAuthenticatorApiError * _Nonnull"
     Parameters:
     - Position: 0
       Type: "int32_t"
-  - Selector: "doCopy__Skie_DefaultArguments__378Message:"
+  - Selector: "doCopy__Skie_DefaultArguments__379Message:"
     MethodKind: "Instance"
     SwiftName: "doCopy(message:)"
     ResultType: "CoreAuthenticatorApiError * _Nonnull"
@@ -7526,25 +7530,25 @@ Classes:
     MethodKind: "Instance"
     SwiftName: "description()"
     ResultType: "NSString * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__379"
+  - Selector: "doCopy__Skie_DefaultArguments__380"
     MethodKind: "Instance"
     SwiftName: "doCopy()"
     ResultType: "CoreAuthenticatorWebAuthnClientData * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__380Type:"
+  - Selector: "doCopy__Skie_DefaultArguments__381Type:"
     MethodKind: "Instance"
     SwiftName: "doCopy(type:)"
     ResultType: "CoreAuthenticatorWebAuthnClientData * _Nonnull"
     Parameters:
     - Position: 0
       Type: "NSString * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__381Challenge:"
+  - Selector: "doCopy__Skie_DefaultArguments__382Challenge:"
     MethodKind: "Instance"
     SwiftName: "doCopy(challenge:)"
     ResultType: "CoreAuthenticatorWebAuthnClientData * _Nonnull"
     Parameters:
     - Position: 0
       Type: "NSString * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__382Type:challenge:"
+  - Selector: "doCopy__Skie_DefaultArguments__383Type:challenge:"
     MethodKind: "Instance"
     SwiftName: "doCopy(type:challenge:)"
     ResultType: "CoreAuthenticatorWebAuthnClientData * _Nonnull"
@@ -7553,14 +7557,14 @@ Classes:
       Type: "NSString * _Nonnull"
     - Position: 1
       Type: "NSString * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__383Origin:"
+  - Selector: "doCopy__Skie_DefaultArguments__384Origin:"
     MethodKind: "Instance"
     SwiftName: "doCopy(origin:)"
     ResultType: "CoreAuthenticatorWebAuthnClientData * _Nonnull"
     Parameters:
     - Position: 0
       Type: "NSString * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__384Type:origin:"
+  - Selector: "doCopy__Skie_DefaultArguments__385Type:origin:"
     MethodKind: "Instance"
     SwiftName: "doCopy(type:origin:)"
     ResultType: "CoreAuthenticatorWebAuthnClientData * _Nonnull"
@@ -7569,7 +7573,7 @@ Classes:
       Type: "NSString * _Nonnull"
     - Position: 1
       Type: "NSString * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__385Challenge:origin:"
+  - Selector: "doCopy__Skie_DefaultArguments__386Challenge:origin:"
     MethodKind: "Instance"
     SwiftName: "doCopy(challenge:origin:)"
     ResultType: "CoreAuthenticatorWebAuthnClientData * _Nonnull"
@@ -7578,7 +7582,7 @@ Classes:
       Type: "NSString * _Nonnull"
     - Position: 1
       Type: "NSString * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__386Type:challenge:origin:"
+  - Selector: "doCopy__Skie_DefaultArguments__387Type:challenge:origin:"
     MethodKind: "Instance"
     SwiftName: "doCopy(type:challenge:origin:)"
     ResultType: "CoreAuthenticatorWebAuthnClientData * _Nonnull"
@@ -7589,14 +7593,14 @@ Classes:
       Type: "NSString * _Nonnull"
     - Position: 2
       Type: "NSString * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__387CrossOrigin:"
+  - Selector: "doCopy__Skie_DefaultArguments__388CrossOrigin:"
     MethodKind: "Instance"
     SwiftName: "doCopy(crossOrigin:)"
     ResultType: "CoreAuthenticatorWebAuthnClientData * _Nonnull"
     Parameters:
     - Position: 0
       Type: "BOOL"
-  - Selector: "doCopy__Skie_DefaultArguments__388Type:crossOrigin:"
+  - Selector: "doCopy__Skie_DefaultArguments__389Type:crossOrigin:"
     MethodKind: "Instance"
     SwiftName: "doCopy(type:crossOrigin:)"
     ResultType: "CoreAuthenticatorWebAuthnClientData * _Nonnull"
@@ -7605,7 +7609,7 @@ Classes:
       Type: "NSString * _Nonnull"
     - Position: 1
       Type: "BOOL"
-  - Selector: "doCopy__Skie_DefaultArguments__389Challenge:crossOrigin:"
+  - Selector: "doCopy__Skie_DefaultArguments__390Challenge:crossOrigin:"
     MethodKind: "Instance"
     SwiftName: "doCopy(challenge:crossOrigin:)"
     ResultType: "CoreAuthenticatorWebAuthnClientData * _Nonnull"
@@ -7614,7 +7618,7 @@ Classes:
       Type: "NSString * _Nonnull"
     - Position: 1
       Type: "BOOL"
-  - Selector: "doCopy__Skie_DefaultArguments__390Type:challenge:crossOrigin:"
+  - Selector: "doCopy__Skie_DefaultArguments__391Type:challenge:crossOrigin:"
     MethodKind: "Instance"
     SwiftName: "doCopy(type:challenge:crossOrigin:)"
     ResultType: "CoreAuthenticatorWebAuthnClientData * _Nonnull"
@@ -7625,7 +7629,7 @@ Classes:
       Type: "NSString * _Nonnull"
     - Position: 2
       Type: "BOOL"
-  - Selector: "doCopy__Skie_DefaultArguments__391Origin:crossOrigin:"
+  - Selector: "doCopy__Skie_DefaultArguments__392Origin:crossOrigin:"
     MethodKind: "Instance"
     SwiftName: "doCopy(origin:crossOrigin:)"
     ResultType: "CoreAuthenticatorWebAuthnClientData * _Nonnull"
@@ -7634,7 +7638,7 @@ Classes:
       Type: "NSString * _Nonnull"
     - Position: 1
       Type: "BOOL"
-  - Selector: "doCopy__Skie_DefaultArguments__392Type:origin:crossOrigin:"
+  - Selector: "doCopy__Skie_DefaultArguments__393Type:origin:crossOrigin:"
     MethodKind: "Instance"
     SwiftName: "doCopy(type:origin:crossOrigin:)"
     ResultType: "CoreAuthenticatorWebAuthnClientData * _Nonnull"
@@ -7645,7 +7649,7 @@ Classes:
       Type: "NSString * _Nonnull"
     - Position: 2
       Type: "BOOL"
-  - Selector: "doCopy__Skie_DefaultArguments__393Challenge:origin:crossOrigin:"
+  - Selector: "doCopy__Skie_DefaultArguments__394Challenge:origin:crossOrigin:"
     MethodKind: "Instance"
     SwiftName: "doCopy(challenge:origin:crossOrigin:)"
     ResultType: "CoreAuthenticatorWebAuthnClientData * _Nonnull"
@@ -11478,7 +11482,7 @@ Classes:
     - Position: 0
       Type: "CoreAuthenticatorAuthenticatorFacade * _Nonnull"
     - Position: 1
-      Type: "NSDictionary<CoreAuthenticatorAccount *, NSString *> * _Nonnull"
+      Type: "NSArray<CoreAuthenticatorAccount *> * _Nonnull"
     - Position: 2
       Type: "CoreAuthenticatorSkie_SuspendHandler * _Nonnull"
   - Selector: "Skie_Suspend__4__getTokenDispatchReceiver:clientId:userId:keyId:suspendHandler:"
@@ -11973,6 +11977,72 @@ Protocols:
     MethodKind: "Instance"
     SwiftName: "next()"
     ResultType: "id _Nullable"
+- Name: "CoreAuthenticatorKotlinCoroutineContext"
+  SwiftName: "KotlinCoroutineContext"
+  Methods:
+  - Selector: "foldInitial:operation:"
+    MethodKind: "Instance"
+    SwiftName: "fold(initial:operation:)"
+    ResultType: "id _Nullable"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+    - Position: 1
+      Type: "id _Nullable (^ _Nonnull)(id _Nullable, id<CoreAuthenticatorKotlinCoroutineContextElement> _Nonnull)"
+  - Selector: "getKey:"
+    MethodKind: "Instance"
+    SwiftName: "get(key:)"
+    ResultType: "id<CoreAuthenticatorKotlinCoroutineContextElement> _Nullable"
+    Parameters:
+    - Position: 0
+      Type: "id<CoreAuthenticatorKotlinCoroutineContextKey> _Nonnull"
+  - Selector: "minusKeyKey:"
+    MethodKind: "Instance"
+    SwiftName: "minusKey(key:)"
+    ResultType: "id<CoreAuthenticatorKotlinCoroutineContext> _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "id<CoreAuthenticatorKotlinCoroutineContextKey> _Nonnull"
+  - Selector: "plusContext:"
+    MethodKind: "Instance"
+    SwiftName: "plus(context:)"
+    ResultType: "id<CoreAuthenticatorKotlinCoroutineContext> _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "id<CoreAuthenticatorKotlinCoroutineContext> _Nonnull"
+- Name: "CoreAuthenticatorKotlinCoroutineContextKey"
+  SwiftName: "KotlinCoroutineContextKey"
+- Name: "CoreAuthenticatorKotlinCoroutineContextElement"
+  SwiftName: "KotlinCoroutineContextElement"
+  Properties:
+  - Name: "key"
+    PropertyKind: "Instance"
+    SwiftName: "key"
+    Type: "id<CoreAuthenticatorKotlinCoroutineContextKey> _Nonnull"
+  Methods:
+  - Selector: "foldInitial:operation:"
+    MethodKind: "Instance"
+    SwiftName: "fold(initial:operation:)"
+    ResultType: "id _Nullable"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+    - Position: 1
+      Type: "id _Nullable (^ _Nonnull)(id _Nullable, id<CoreAuthenticatorKotlinCoroutineContextElement> _Nonnull)"
+  - Selector: "getKey:"
+    MethodKind: "Instance"
+    SwiftName: "get(key:)"
+    ResultType: "id<CoreAuthenticatorKotlinCoroutineContextElement> _Nullable"
+    Parameters:
+    - Position: 0
+      Type: "id<CoreAuthenticatorKotlinCoroutineContextKey> _Nonnull"
+  - Selector: "minusKeyKey:"
+    MethodKind: "Instance"
+    SwiftName: "minusKey(key:)"
+    ResultType: "id<CoreAuthenticatorKotlinCoroutineContext> _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "id<CoreAuthenticatorKotlinCoroutineContextKey> _Nonnull"
 - Name: "CoreAuthenticatorKotlinAnnotation"
   SwiftName: "KotlinAnnotation"
 - Name: "CoreAuthenticatorKotlinKClass"
@@ -12043,72 +12113,6 @@ Protocols:
     MethodKind: "Instance"
     SwiftName: "close()"
     ResultType: "void"
-- Name: "CoreAuthenticatorKotlinCoroutineContext"
-  SwiftName: "KotlinCoroutineContext"
-  Methods:
-  - Selector: "foldInitial:operation:"
-    MethodKind: "Instance"
-    SwiftName: "fold(initial:operation:)"
-    ResultType: "id _Nullable"
-    Parameters:
-    - Position: 0
-      Type: "id _Nullable"
-    - Position: 1
-      Type: "id _Nullable (^ _Nonnull)(id _Nullable, id<CoreAuthenticatorKotlinCoroutineContextElement> _Nonnull)"
-  - Selector: "getKey:"
-    MethodKind: "Instance"
-    SwiftName: "get(key:)"
-    ResultType: "id<CoreAuthenticatorKotlinCoroutineContextElement> _Nullable"
-    Parameters:
-    - Position: 0
-      Type: "id<CoreAuthenticatorKotlinCoroutineContextKey> _Nonnull"
-  - Selector: "minusKeyKey:"
-    MethodKind: "Instance"
-    SwiftName: "minusKey(key:)"
-    ResultType: "id<CoreAuthenticatorKotlinCoroutineContext> _Nonnull"
-    Parameters:
-    - Position: 0
-      Type: "id<CoreAuthenticatorKotlinCoroutineContextKey> _Nonnull"
-  - Selector: "plusContext:"
-    MethodKind: "Instance"
-    SwiftName: "plus(context:)"
-    ResultType: "id<CoreAuthenticatorKotlinCoroutineContext> _Nonnull"
-    Parameters:
-    - Position: 0
-      Type: "id<CoreAuthenticatorKotlinCoroutineContext> _Nonnull"
-- Name: "CoreAuthenticatorKotlinCoroutineContextKey"
-  SwiftName: "KotlinCoroutineContextKey"
-- Name: "CoreAuthenticatorKotlinCoroutineContextElement"
-  SwiftName: "KotlinCoroutineContextElement"
-  Properties:
-  - Name: "key"
-    PropertyKind: "Instance"
-    SwiftName: "key"
-    Type: "id<CoreAuthenticatorKotlinCoroutineContextKey> _Nonnull"
-  Methods:
-  - Selector: "foldInitial:operation:"
-    MethodKind: "Instance"
-    SwiftName: "fold(initial:operation:)"
-    ResultType: "id _Nullable"
-    Parameters:
-    - Position: 0
-      Type: "id _Nullable"
-    - Position: 1
-      Type: "id _Nullable (^ _Nonnull)(id _Nullable, id<CoreAuthenticatorKotlinCoroutineContextElement> _Nonnull)"
-  - Selector: "getKey:"
-    MethodKind: "Instance"
-    SwiftName: "get(key:)"
-    ResultType: "id<CoreAuthenticatorKotlinCoroutineContextElement> _Nullable"
-    Parameters:
-    - Position: 0
-      Type: "id<CoreAuthenticatorKotlinCoroutineContextKey> _Nonnull"
-  - Selector: "minusKeyKey:"
-    MethodKind: "Instance"
-    SwiftName: "minusKey(key:)"
-    ResultType: "id<CoreAuthenticatorKotlinCoroutineContext> _Nonnull"
-    Parameters:
-    - Position: 0
-      Type: "id<CoreAuthenticatorKotlinCoroutineContextKey> _Nonnull"
 - Name: "CoreAuthenticatorKotlinKType"
   SwiftName: "KotlinKType"
   Properties:
@@ -12564,6 +12568,8 @@ Protocols:
   SwiftName: "NotConnectedActionIssue"
 - Name: "CoreAuthenticatorAppStatus"
   SwiftName: "AppStatus"
+- Name: "CoreAuthenticatorAppStatusLoginRequired"
+  SwiftName: "AppStatusLoginRequired"
 - Name: "CoreAuthenticatorCrashReportInterface"
   SwiftName: "CrashReportInterface"
   Methods:
