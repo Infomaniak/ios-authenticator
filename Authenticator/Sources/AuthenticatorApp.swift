@@ -18,6 +18,7 @@
 
 import AuthenticatorCore
 import AuthenticatorCoreUI
+import AuthenticatorResources
 import AuthenticatorRootView
 import SwiftUI
 
@@ -32,6 +33,7 @@ struct AuthenticatorApp: App {
         WindowGroup {
             RootView()
                 .environmentObject(rootViewState)
+                .tint(.Token.primary)
         }
         .defaultAppStorage(.shared)
     }

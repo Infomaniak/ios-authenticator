@@ -20,7 +20,7 @@ import Foundation
 
 public enum PreviewHelper {
     public static let sampleUIAccount = UIAccount(
-        id: "1",
+        id: 1,
         name: "Laura Snow",
         email: "laura.snow@ik.me",
         profilePictureURL: nil,
@@ -29,7 +29,7 @@ public enum PreviewHelper {
 
     public static let sampleUIAccounts = [
         UIAccount(
-            id: "1",
+            id: 1,
             name: "Laura Snow",
             email: "laura.snow@ik.me",
             profilePictureURL: URL(
@@ -38,14 +38,14 @@ public enum PreviewHelper {
             status: .protected
         ),
         UIAccount(
-            id: "2",
+            id: 2,
             name: "John Appleseed",
             email: "john.apple@etik.com",
             profilePictureURL: nil,
             status: .partiallyProtected
         ),
         UIAccount(
-            id: "3",
+            id: 3,
             name: "Paul Anderson",
             email: "paul.anderson@infomaniak.com",
             profilePictureURL: nil,

@@ -32,7 +32,14 @@ import SwiftModalPresentation
 import SwiftUI
 
 public struct OnboardingView: View {
+    public enum OnboardingType {
+        case newUser
+        case migrating
+    }
+
     @InjectService private var accountManager: AccountManagerable
+
+    @EnvironmentObject private var rootViewState: RootViewState
 
     @State private var loginHandler = LoginHandler()
     @State private var excludedUserIds: [Int] = []
@@ -40,27 +47,58 @@ public struct OnboardingView: View {
     @ModalState(context: ContextKeys.onboarding) private var isPresentingCreateAccount = false
 
     let type: OnboardingType
+    let step: OnboardingStep
 
     var slides: [Slide] {
         type == .newUser ? Slide.onboardingSlides : Slide.migratingSlides
     }
 
-    public init(type: OnboardingType) {
+    var selectedSlideIndex: Int {
+        switch step {
+        case .initial:
+            return 0
+        case .inProgress:
+            return 1
+        case .success:
+            return 2
+        case .biometry:
+            return 3
+        }
+    }
+
+    public init(type: OnboardingType, step: OnboardingStep) {
         self.type = type
+        self.step = step
     }
 
     public var body: some View {
-        CarouselView(slides: slides, selectedSlide: .constant(0)) { _ in
-            ContinueWithAccountView(isLoading: loginHandler.isLoading, excludingUserIds: excludedUserIds) {
-                login()
-            } onLoginWithAccountsPressed: { accounts in
-                login(with: accounts)
-            } onCreateAccountPressed: {
-                isPresentingCreateAccount = true
+        CarouselView(slides: slides, selectedSlide: .constant(selectedSlideIndex)) { index in
+            if type == .migrating {
+                if index == 0 || index == 2 {
+                    Button(AuthenticatorResourcesStrings.continueButton) {
+                        if index == 0 {
+                            rootViewState.startMigration()
+                        } else if index == 2 {
+                            rootViewState.completeOnboarding()
+                        }
+                    }
+                    .buttonStyle(.ikBorderedProminent)
+                    .ikButtonFullWidth(true)
+                    .controlSize(.large)
+                    .padding(.horizontal, value: .large)
+                }
+            } else {
+                ContinueWithAccountView(isLoading: loginHandler.isLoading, excludingUserIds: excludedUserIds) {
+                    login()
+                } onLoginWithAccountsPressed: { accounts in
+                    login(with: accounts)
+                } onCreateAccountPressed: {
+                    isPresentingCreateAccount = true
+                }
+                .ikButtonFullWidth(true)
+                .controlSize(.large)
+                .padding(.horizontal, value: .large)
             }
-            .ikButtonFullWidth(true)
-            .controlSize(.large)
-            .padding(.horizontal, value: .large)
         }
         .appBackground()
         .ignoresSafeArea()
@@ -86,13 +124,8 @@ public struct OnboardingView: View {
             }
         }
     }
-
-    public enum OnboardingType {
-        case newUser
-        case migrating
-    }
 }
 
 #Preview {
-    OnboardingView(type: .newUser)
+    OnboardingView(type: .newUser, step: .initial)
 }

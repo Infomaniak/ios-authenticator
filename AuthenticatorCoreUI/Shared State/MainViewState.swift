@@ -16,15 +16,32 @@
  along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
+import CoreAuthenticator
+import InfomaniakDI
 import OSLog
 import SwiftUI
 
 @MainActor
 public final class MainViewState: ObservableObject, @MainActor Equatable {
-    @Published public var accountsManager: UIAccountsManager
+    @InjectService private var authenticatorFacade: AuthenticatorFacade
+
+    @Published public var selectedAccount: UIAccount?
+    @Published public var accounts: [UIAccount]
 
     public init(accounts: [UIAccount] = []) {
-        accountsManager = UIAccountsManager(accounts: accounts)
+        self.accounts = accounts
+        observeAccounts()
+    }
+
+    func observeAccounts() {
+        Task {
+            for try await newAccounts in authenticatorFacade.accounts {
+                let newUIAccounts = newAccounts.map { UIAccount(account: $0) }
+                withAnimation {
+                    self.accounts = newUIAccounts
+                }
+            }
+        }
     }
 
     public static func == (lhs: MainViewState, rhs: MainViewState) -> Bool {

@@ -58,12 +58,13 @@ public extension AccountManager {
 
 public actor AccountManager: AccountManagerable {
     @InjectService private var tokenStore: TokenStore
-    @LazyInjectService private var networkLoginService: InfomaniakNetworkLoginable
+    @InjectService private var networkLoginService: InfomaniakNetworkLoginable
     @LazyInjectService private var deviceManager: DeviceManagerable
 
     public var accounts: [ApiToken] {
         return tokenStore.getAllTokens().values.map { $0.apiToken }
     }
+
     public var userProfileStore: InfomaniakCore.UserProfileStore
     public var currentSession: Int?
 

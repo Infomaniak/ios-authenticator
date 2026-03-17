@@ -29,7 +29,7 @@ public struct AccountsView: View {
 
     public var body: some View {
         NavigationStack {
-            List(mainViewState.accountsManager.accounts, selection: $mainViewState.accountsManager.selectedAccount) { account in
+            List(mainViewState.accounts, selection: $mainViewState.selectedAccount) { account in
                 AccountsListCell(account: account)
                     .tag(account)
             }

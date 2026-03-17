@@ -17,8 +17,8 @@
  */
 
 import Foundation
-import InfomaniakLogin
 import InfomaniakCore
+import InfomaniakLogin
 
 public final class AuthenticatorRefreshTokenDelegate: RefreshTokenDelegate, Sendable {
     public func didUpdateToken(newToken: ApiToken, oldToken: ApiToken) {
