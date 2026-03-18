@@ -18,7 +18,7 @@
 
 import CoreAuthenticator
 import Foundation
-import InfomaniakCore
+@preconcurrency import InfomaniakCore
 import InfomaniakCoreCommonUI
 import InfomaniakDI
 import InfomaniakLogin
@@ -38,8 +38,7 @@ extension [Factory] {
 }
 
 /// Each target should subclass `TargetAssembly` and override `getTargetServices` to provide additional, target related, services.
-@MainActor
-open class TargetAssembly {
+open class TargetAssembly: @unchecked Sendable {
     private static let logger = Logger(category: "TargetAssembly")
     private static let realmRootPath = "authenticator"
 
@@ -51,6 +50,7 @@ open class TargetAssembly {
     )
 
     public init() {
+        InfomaniakCore.ApiEnvironment.current = Self.apiEnvironment
         UserDefaults.standard.set(false, forKey: "_UIConstraintBasedLayoutLogUnsatisfiable")
         Self.setupDI()
     }

@@ -57,8 +57,8 @@ public extension AccountManager {
 }
 
 public actor AccountManager: AccountManagerable {
-    @InjectService private var tokenStore: TokenStore
-    @InjectService private var networkLoginService: InfomaniakNetworkLoginable
+    @LazyInjectService private var tokenStore: TokenStore
+    @LazyInjectService private var networkLoginService: InfomaniakNetworkLoginable
     @LazyInjectService private var deviceManager: DeviceManagerable
 
     public var accounts: [ApiToken] {
