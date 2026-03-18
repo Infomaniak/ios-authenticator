@@ -16,15 +16,26 @@
  along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
+import CoreAuthenticator
 import Foundation
+import InfomaniakDI
 import SwiftUI
+
+public enum OnboardingStep: Equatable {
+    case initial
+    case inProgress
+    case success
+    case biometry
+}
 
 @MainActor
 public enum RootViewType: @MainActor Equatable {
     public static func == (lhs: RootViewType, rhs: RootViewType) -> Bool {
         switch (lhs, rhs) {
-        case (.onboarding, .onboarding):
-            return true
+        case (.migration(let lhsOnboardingStep), .migration(let rhsOnboardingStep)):
+            return lhsOnboardingStep == rhsOnboardingStep
+        case (.newAccount(let lhsOnboardingStep), .newAccount(let rhsOnboardingStep)):
+            return lhsOnboardingStep == rhsOnboardingStep
         case (.preloading, .preloading):
             return true
         case (.mainView(let lhsMainViewState), .mainView(let rhsMainViewState)):
@@ -38,13 +49,54 @@ public enum RootViewType: @MainActor Equatable {
 
     case mainView(MainViewState)
     case preloading
-    case onboarding
+    case migration(OnboardingStep)
+    case newAccount(OnboardingStep)
     case updateRequired
 }
 
 @MainActor
 public final class RootViewState: ObservableObject {
-    @Published public var state: RootViewType = .preloading
+    @InjectService private var authenticatorFacade: AuthenticatorFacade
 
-    public init() {}
+    @Published public var state: RootViewType = .preloading
+    private var lastKnownAppStatus: AppStatus?
+
+    public init() {
+        observeAppStatus()
+    }
+
+    public func startMigration() {
+        guard let migrationStatus = lastKnownAppStatus as? AppStatusLoginRequiredMigratingFromLegacyKAuth else {
+            return
+        }
+
+        migrationStatus.proceed()
+    }
+
+    public func completeOnboarding() {
+        guard let onboardingDone = lastKnownAppStatus as? AppStatusOnboardingDone else {
+            return
+        }
+
+        onboardingDone.proceed()
+    }
+
+    func observeAppStatus() {
+        Task {
+            for try await status in authenticatorFacade.appStatus {
+                lastKnownAppStatus = status
+                if let loginRequired = status as? AppStatusLoginRequiredMigratingFromLegacyKAuth {
+                    state = .migration(.initial)
+                } else if let loginRequired = status as? AppStatusLoginRequiredNotMigrating {
+                    state = .newAccount(.initial)
+                } else if let loggingIn = status as? AppStatusLoggingIn {
+                    state = .migration(.inProgress)
+                } else if let setupComplete = status as? AppStatusOnboardingDone {
+                    state = .migration(.success)
+                } else if let loggedIn = status as? AppStatusSetupComplete {
+                    state = .mainView(MainViewState())
+                }
+            }
+        }
+    }
 }

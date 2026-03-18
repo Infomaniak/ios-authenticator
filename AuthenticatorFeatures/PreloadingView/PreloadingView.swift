@@ -16,13 +16,15 @@
  along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
+import AuthenticatorCoreUI
 import SwiftUI
 
 public struct PreloadingView: View {
     public init() {}
 
     public var body: some View {
-        Text("PreloadingView")
+        ProgressView()
+            .progressViewStyle(.circular)
     }
 }
 

@@ -108,6 +108,7 @@ let project = Project(
             dependencies: [
                 .target(name: "\(Constants.projectName)Core"),
                 .target(name: "\(Constants.projectName)CoreUI"),
+                .target(name: "\(Constants.projectName)Resources"),
                 rootView.asDependency
             ],
             settings: .settings(base: Constants.baseSettings),

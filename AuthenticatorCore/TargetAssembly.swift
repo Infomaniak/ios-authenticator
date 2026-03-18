@@ -16,6 +16,7 @@
  along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
+import CoreAuthenticator
 import Foundation
 import InfomaniakCore
 import InfomaniakCoreCommonUI
@@ -42,7 +43,7 @@ open class TargetAssembly {
     private static let logger = Logger(category: "TargetAssembly")
     private static let realmRootPath = "authenticator"
 
-    private static let apiEnvironment: ApiEnvironment = .prod
+    private static let apiEnvironment: InfomaniakCore.ApiEnvironment = .preprod
     public static let loginConfig = InfomaniakLogin.Config(
         clientId: "A7B265CD-C9DB-4E6B-8236-2DFF60F146FC",
         loginURL: URL(string: "https://login.\(apiEnvironment.host)/")!,
@@ -50,6 +51,7 @@ open class TargetAssembly {
     )
 
     public init() {
+        UserDefaults.standard.set(false, forKey: "_UIConstraintBasedLayoutLogUnsatisfiable")
         Self.setupDI()
     }
 
@@ -58,8 +60,17 @@ open class TargetAssembly {
             Factory(type: ConnectedAccountManagerable.self) { _, _ in
                 ConnectedAccountManager(currentAppKeychainIdentifier: AppIdentifierBuilder.euriaKeychainIdentifier)
             },
+            Factory(type: AuthenticatorFacade.self) { _, _ in
+                AuthenticatorFacade.companion.dummyInstance(loadingDurationMillis: 2000, resetAfterMillis: 30000)
+            },
             Factory(type: AccountManagerable.self) { _, _ in
                 AccountManager()
+            },
+            Factory(type: KeychainHelper.self) { _, _ in
+                KeychainHelper(accessGroup: AppIdentifierBuilder.authenticatorKeychainIdentifier)
+            },
+            Factory(type: TokenStore.self) { _, _ in
+                TokenStore()
             },
             Factory(type: AppGroupPathProvidable.self) { _, _ in
                 guard let provider = AppGroupPathProvider(

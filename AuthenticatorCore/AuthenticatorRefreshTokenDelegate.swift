@@ -17,13 +17,13 @@
  */
 
 import Foundation
+import InfomaniakCore
+import InfomaniakLogin
 
-public class UIAccountsManager: ObservableObject {
-    @Published public var selectedAccount: UIAccount?
-    @Published public var accounts: [UIAccount]
-
-    public init(selectedAccount: UIAccount? = nil, accounts: [UIAccount] = []) {
-        self.selectedAccount = selectedAccount
-        self.accounts = accounts
+public final class AuthenticatorRefreshTokenDelegate: RefreshTokenDelegate, Sendable {
+    public func didUpdateToken(newToken: ApiToken, oldToken: ApiToken) {
+        // TODO: Refresh using key
     }
+
+    public func didFailRefreshToken(_ token: ApiToken) {}
 }

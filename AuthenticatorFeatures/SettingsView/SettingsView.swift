@@ -58,8 +58,8 @@ public struct SettingsView: View {
 
                     NavigationLink(AuthenticatorResourcesStrings.contactSupportTitle) {
                         ContactSupportSettingsView(
-                            selectedAccount: mainViewState.accountsManager.selectedAccount,
-                            accounts: mainViewState.accountsManager.accounts
+                            selectedAccount: mainViewState.selectedAccount,
+                            accounts: mainViewState.accounts
                         )
                     }
 

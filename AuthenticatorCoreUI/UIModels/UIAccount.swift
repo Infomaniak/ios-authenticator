@@ -17,16 +17,17 @@
  */
 
 import AuthenticatorResources
+import CoreAuthenticator
 import SwiftUI
 
 public struct UIAccount: Identifiable, Hashable, Sendable {
-    public let id: String
+    public let id: Int64
     public let name: String
     public let email: String
     public let profilePictureURL: URL?
     public let status: Status
 
-    public init(id: String, name: String, email: String, profilePictureURL: URL?, status: Status) {
+    public init(id: Int64, name: String, email: String, profilePictureURL: URL?, status: Status) {
         self.id = id
         self.name = name
         self.email = email
@@ -79,6 +80,37 @@ public struct UIAccount: Identifiable, Hashable, Sendable {
             default:
                 nil
             }
+        }
+    }
+}
+
+extension UIAccount {
+    init(account: CoreAuthenticator.Account) {
+        let avatarURL: URL?
+        if let avatarURLString = account.avatarUrl,
+           let url = URL(string: avatarURLString) {
+            avatarURL = url
+        } else {
+            avatarURL = nil
+        }
+        self.init(
+            id: account.id,
+            name: account.fullName,
+            email: account.email,
+            profilePictureURL: avatarURL,
+            status: UIAccount.Status(accountStatus: account.status)
+        )
+    }
+}
+
+extension UIAccount.Status {
+    init(accountStatus: AccountStatus) {
+        if (accountStatus as? AccountStatusLoggedIn) != nil {
+            self = .protected
+        } else if let notConnectedStatus = accountStatus as? AccountStatusNotConnected {
+            self = .partiallyProtected
+        } else {
+            self = .loggedOut
         }
     }
 }
