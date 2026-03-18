@@ -31,6 +31,19 @@ public extension UserDefaults {
     nonisolated(unsafe) static let shared = UserDefaults(suiteName: appGroupIdentifier)!
 }
 
+extension InfomaniakCore.ApiEnvironment {
+    var kmpEnvironment: CoreAuthenticator.ApiEnvironment {
+        switch self {
+        case .prod:
+            return .Prod()
+        case .preprod:
+            return .Preprod()
+        case .customHost(let string):
+            return .Custom(url: string)
+        }
+    }
+}
+
 extension [Factory] {
     func registerFactoriesInDI() {
         forEach { SimpleResolver.sharedResolver.store(factory: $0) }
@@ -61,7 +74,13 @@ open class TargetAssembly: @unchecked Sendable {
                 ConnectedAccountManager(currentAppKeychainIdentifier: AppIdentifierBuilder.euriaKeychainIdentifier)
             },
             Factory(type: AuthenticatorFacade.self) { _, _ in
-                AuthenticatorFacade.companion.dummyInstance(loadingDurationMillis: 2000, resetAfterMillis: 30000)
+                let sentryWrapper = SentryKMPWrapper()
+
+                return AuthenticatorFacade.companion.dummyInstance(userAgent: UserAgentBuilder().userAgent,
+                                                                   environment: apiEnvironment.kmpEnvironment,
+                                                                   crashReport: sentryWrapper,
+                                                                   loadingDurationMillis: 2000,
+                                                                   resetAfterMillis: 30000)
             },
             Factory(type: AccountManagerable.self) { _, _ in
                 AccountManager()

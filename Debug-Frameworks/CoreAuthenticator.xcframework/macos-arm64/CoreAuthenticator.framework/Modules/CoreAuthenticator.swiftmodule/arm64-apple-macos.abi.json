@@ -4402,6 +4402,57 @@
                           },
                           {
                             "kind": "Var",
+                            "name": "keyNotFound",
+                            "printedName": "keyNotFound",
+                            "children": [
+                              {
+                                "kind": "TypeFunc",
+                                "name": "Function",
+                                "printedName": "(CoreAuthenticator.Skie.MultiplatformLib.Failure.KeyManagement.__Sealed.Type) -> (CoreAuthenticator.FailureKeyManagementKeyNotFound) -> CoreAuthenticator.Skie.MultiplatformLib.Failure.KeyManagement.__Sealed",
+                                "children": [
+                                  {
+                                    "kind": "TypeFunc",
+                                    "name": "Function",
+                                    "printedName": "(CoreAuthenticator.FailureKeyManagementKeyNotFound) -> CoreAuthenticator.Skie.MultiplatformLib.Failure.KeyManagement.__Sealed",
+                                    "children": [
+                                      {
+                                        "kind": "TypeNominal",
+                                        "name": "__Sealed",
+                                        "printedName": "CoreAuthenticator.Skie.MultiplatformLib.Failure.KeyManagement.__Sealed",
+                                        "usr": "s:17CoreAuthenticator4SkieO16MultiplatformLibO7FailureO13KeyManagementO8__SealedO"
+                                      },
+                                      {
+                                        "kind": "TypeNominal",
+                                        "name": "FailureKeyManagementKeyNotFound",
+                                        "printedName": "CoreAuthenticator.FailureKeyManagementKeyNotFound",
+                                        "usr": "c:objc(cs)CoreAuthenticatorFailureKeyManagementKeyNotFound"
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "Metatype",
+                                    "printedName": "CoreAuthenticator.Skie.MultiplatformLib.Failure.KeyManagement.__Sealed.Type",
+                                    "children": [
+                                      {
+                                        "kind": "TypeNominal",
+                                        "name": "__Sealed",
+                                        "printedName": "CoreAuthenticator.Skie.MultiplatformLib.Failure.KeyManagement.__Sealed",
+                                        "usr": "s:17CoreAuthenticator4SkieO16MultiplatformLibO7FailureO13KeyManagementO8__SealedO"
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ],
+                            "declKind": "EnumElement",
+                            "usr": "s:17CoreAuthenticator4SkieO16MultiplatformLibO7FailureO13KeyManagementO8__SealedO11keyNotFoundyAKSo0abfghgkL0CcAKmF",
+                            "mangledName": "$s17CoreAuthenticator4SkieO16MultiplatformLibO7FailureO13KeyManagementO8__SealedO11keyNotFoundyAKSo0abfghgkL0CcAKmF",
+                            "moduleName": "CoreAuthenticator",
+                            "fixedbinaryorder": 2
+                          },
+                          {
+                            "kind": "Var",
                             "name": "hashValue",
                             "printedName": "hashValue",
                             "children": [
@@ -23557,16 +23608,6 @@
         ]
       },
       {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "CoreAuthenticator",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
         "kind": "Function",
         "name": "SkieKotlinFlow",
         "printedName": "SkieKotlinFlow(_:)",
@@ -27568,646 +27609,6 @@
       },
       {
         "kind": "TypeDecl",
-        "name": "ApiResponseStatus",
-        "printedName": "ApiResponseStatus",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "success",
-            "printedName": "success",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(CoreAuthenticator.ApiResponseStatus.Type) -> CoreAuthenticator.ApiResponseStatus",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ApiResponseStatus",
-                    "printedName": "CoreAuthenticator.ApiResponseStatus",
-                    "usr": "s:17CoreAuthenticator17ApiResponseStatusO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "CoreAuthenticator.ApiResponseStatus.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "ApiResponseStatus",
-                        "printedName": "CoreAuthenticator.ApiResponseStatus",
-                        "usr": "s:17CoreAuthenticator17ApiResponseStatusO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:17CoreAuthenticator17ApiResponseStatusO7successyA2CmF",
-            "mangledName": "$s17CoreAuthenticator17ApiResponseStatusO7successyA2CmF",
-            "moduleName": "CoreAuthenticator",
-            "fixedbinaryorder": 0
-          },
-          {
-            "kind": "Var",
-            "name": "asynchronous",
-            "printedName": "asynchronous",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(CoreAuthenticator.ApiResponseStatus.Type) -> CoreAuthenticator.ApiResponseStatus",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ApiResponseStatus",
-                    "printedName": "CoreAuthenticator.ApiResponseStatus",
-                    "usr": "s:17CoreAuthenticator17ApiResponseStatusO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "CoreAuthenticator.ApiResponseStatus.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "ApiResponseStatus",
-                        "printedName": "CoreAuthenticator.ApiResponseStatus",
-                        "usr": "s:17CoreAuthenticator17ApiResponseStatusO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:17CoreAuthenticator17ApiResponseStatusO12asynchronousyA2CmF",
-            "mangledName": "$s17CoreAuthenticator17ApiResponseStatusO12asynchronousyA2CmF",
-            "moduleName": "CoreAuthenticator",
-            "fixedbinaryorder": 1
-          },
-          {
-            "kind": "Var",
-            "name": "name",
-            "printedName": "name",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:17CoreAuthenticator17ApiResponseStatusO4nameSSvp",
-            "mangledName": "$s17CoreAuthenticator17ApiResponseStatusO4nameSSvp",
-            "moduleName": "CoreAuthenticator",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:17CoreAuthenticator17ApiResponseStatusO4nameSSvg",
-                "mangledName": "$s17CoreAuthenticator17ApiResponseStatusO4nameSSvg",
-                "moduleName": "CoreAuthenticator",
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "ordinal",
-            "printedName": "ordinal",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Int32",
-                "printedName": "Swift.Int32",
-                "usr": "s:s5Int32V"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:17CoreAuthenticator17ApiResponseStatusO7ordinals5Int32Vvp",
-            "mangledName": "$s17CoreAuthenticator17ApiResponseStatusO7ordinals5Int32Vvp",
-            "moduleName": "CoreAuthenticator",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int32",
-                    "printedName": "Swift.Int32",
-                    "usr": "s:s5Int32V"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:17CoreAuthenticator17ApiResponseStatusO7ordinals5Int32Vvg",
-                "mangledName": "$s17CoreAuthenticator17ApiResponseStatusO7ordinals5Int32Vvg",
-                "moduleName": "CoreAuthenticator",
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "companion",
-            "printedName": "companion",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Companion",
-                "printedName": "CoreAuthenticator.__ApiResponseStatus.Companion",
-                "usr": "c:objc(cs)CoreAuthenticatorApiResponseStatusCompanion"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:17CoreAuthenticator17ApiResponseStatusO9companionSo0abcdE9CompanionCvpZ",
-            "mangledName": "$s17CoreAuthenticator17ApiResponseStatusO9companionSo0abcdE9CompanionCvpZ",
-            "moduleName": "CoreAuthenticator",
-            "static": true,
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Companion",
-                    "printedName": "CoreAuthenticator.__ApiResponseStatus.Companion",
-                    "usr": "c:objc(cs)CoreAuthenticatorApiResponseStatusCompanion"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:17CoreAuthenticator17ApiResponseStatusO9companionSo0abcdE9CompanionCvgZ",
-                "mangledName": "$s17CoreAuthenticator17ApiResponseStatusO9companionSo0abcdE9CompanionCvgZ",
-                "moduleName": "CoreAuthenticator",
-                "static": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Function",
-            "name": "_forceBridgeFromObjectiveC",
-            "printedName": "_forceBridgeFromObjectiveC(_:result:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "__ApiResponseStatus",
-                "printedName": "CoreAuthenticator.__ApiResponseStatus",
-                "usr": "c:objc(cs)CoreAuthenticatorApiResponseStatus"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "CoreAuthenticator.ApiResponseStatus?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ApiResponseStatus",
-                    "printedName": "CoreAuthenticator.ApiResponseStatus",
-                    "usr": "s:17CoreAuthenticator17ApiResponseStatusO"
-                  }
-                ],
-                "paramValueOwnership": "InOut",
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:17CoreAuthenticator17ApiResponseStatusO26_forceBridgeFromObjectiveC_6resultySo0abcdE0C_ACSgztFZ",
-            "mangledName": "$s17CoreAuthenticator17ApiResponseStatusO26_forceBridgeFromObjectiveC_6resultySo0abcdE0C_ACSgztFZ",
-            "moduleName": "CoreAuthenticator",
-            "static": true,
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "_conditionallyBridgeFromObjectiveC",
-            "printedName": "_conditionallyBridgeFromObjectiveC(_:result:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "__ApiResponseStatus",
-                "printedName": "CoreAuthenticator.__ApiResponseStatus",
-                "usr": "c:objc(cs)CoreAuthenticatorApiResponseStatus"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "CoreAuthenticator.ApiResponseStatus?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ApiResponseStatus",
-                    "printedName": "CoreAuthenticator.ApiResponseStatus",
-                    "usr": "s:17CoreAuthenticator17ApiResponseStatusO"
-                  }
-                ],
-                "paramValueOwnership": "InOut",
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:17CoreAuthenticator17ApiResponseStatusO34_conditionallyBridgeFromObjectiveC_6resultSbSo0abcdE0C_ACSgztFZ",
-            "mangledName": "$s17CoreAuthenticator17ApiResponseStatusO34_conditionallyBridgeFromObjectiveC_6resultSbSo0abcdE0C_ACSgztFZ",
-            "moduleName": "CoreAuthenticator",
-            "static": true,
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "_unconditionallyBridgeFromObjectiveC",
-            "printedName": "_unconditionallyBridgeFromObjectiveC(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "ApiResponseStatus",
-                "printedName": "CoreAuthenticator.ApiResponseStatus",
-                "usr": "s:17CoreAuthenticator17ApiResponseStatusO"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "CoreAuthenticator.__ApiResponseStatus?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "__ApiResponseStatus",
-                    "printedName": "CoreAuthenticator.__ApiResponseStatus",
-                    "usr": "c:objc(cs)CoreAuthenticatorApiResponseStatus"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:17CoreAuthenticator17ApiResponseStatusO36_unconditionallyBridgeFromObjectiveCyACSo0abcdE0CSgFZ",
-            "mangledName": "$s17CoreAuthenticator17ApiResponseStatusO36_unconditionallyBridgeFromObjectiveCyACSo0abcdE0CSgFZ",
-            "moduleName": "CoreAuthenticator",
-            "static": true,
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "_bridgeToObjectiveC",
-            "printedName": "_bridgeToObjectiveC()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "__ApiResponseStatus",
-                "printedName": "CoreAuthenticator.__ApiResponseStatus",
-                "usr": "c:objc(cs)CoreAuthenticatorApiResponseStatus"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:17CoreAuthenticator17ApiResponseStatusO19_bridgeToObjectiveCSo0abcdE0CyF",
-            "mangledName": "$s17CoreAuthenticator17ApiResponseStatusO19_bridgeToObjectiveCSo0abcdE0CyF",
-            "moduleName": "CoreAuthenticator",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "==",
-            "printedName": "==(_:_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "ApiResponseStatus",
-                "printedName": "CoreAuthenticator.ApiResponseStatus",
-                "usr": "s:17CoreAuthenticator17ApiResponseStatusO"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "ApiResponseStatus",
-                "printedName": "CoreAuthenticator.ApiResponseStatus",
-                "usr": "s:17CoreAuthenticator17ApiResponseStatusO"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:17CoreAuthenticator17ApiResponseStatusO2eeoiySbAC_ACtFZ",
-            "mangledName": "$s17CoreAuthenticator17ApiResponseStatusO2eeoiySbAC_ACtFZ",
-            "moduleName": "CoreAuthenticator",
-            "static": true,
-            "implicit": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Var",
-            "name": "hashValue",
-            "printedName": "hashValue",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:17CoreAuthenticator17ApiResponseStatusO9hashValueSivp",
-            "mangledName": "$s17CoreAuthenticator17ApiResponseStatusO9hashValueSivp",
-            "moduleName": "CoreAuthenticator",
-            "implicit": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:17CoreAuthenticator17ApiResponseStatusO9hashValueSivg",
-                "mangledName": "$s17CoreAuthenticator17ApiResponseStatusO9hashValueSivg",
-                "moduleName": "CoreAuthenticator",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Function",
-            "name": "hash",
-            "printedName": "hash(into:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Hasher",
-                "printedName": "Swift.Hasher",
-                "paramValueOwnership": "InOut",
-                "usr": "s:s6HasherV"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:17CoreAuthenticator17ApiResponseStatusO4hash4intoys6HasherVz_tF",
-            "mangledName": "$s17CoreAuthenticator17ApiResponseStatusO4hash4intoys6HasherVz_tF",
-            "moduleName": "CoreAuthenticator",
-            "implicit": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Var",
-            "name": "allCases",
-            "printedName": "allCases",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Array",
-                "printedName": "[CoreAuthenticator.ApiResponseStatus]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ApiResponseStatus",
-                    "printedName": "CoreAuthenticator.ApiResponseStatus",
-                    "usr": "s:17CoreAuthenticator17ApiResponseStatusO"
-                  }
-                ],
-                "usr": "s:Sa"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:17CoreAuthenticator17ApiResponseStatusO8allCasesSayACGvpZ",
-            "mangledName": "$s17CoreAuthenticator17ApiResponseStatusO8allCasesSayACGvpZ",
-            "moduleName": "CoreAuthenticator",
-            "static": true,
-            "implicit": true,
-            "declAttributes": [
-              "Nonisolated"
-            ],
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Array",
-                    "printedName": "[CoreAuthenticator.ApiResponseStatus]",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "ApiResponseStatus",
-                        "printedName": "CoreAuthenticator.ApiResponseStatus",
-                        "usr": "s:17CoreAuthenticator17ApiResponseStatusO"
-                      }
-                    ],
-                    "usr": "s:Sa"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:17CoreAuthenticator17ApiResponseStatusO8allCasesSayACGvgZ",
-                "mangledName": "$s17CoreAuthenticator17ApiResponseStatusO8allCasesSayACGvgZ",
-                "moduleName": "CoreAuthenticator",
-                "static": true,
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Function",
-            "name": "toKotlinEnum",
-            "printedName": "toKotlinEnum()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "__ApiResponseStatus",
-                "printedName": "CoreAuthenticator.__ApiResponseStatus",
-                "usr": "c:objc(cs)CoreAuthenticatorApiResponseStatus"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:17CoreAuthenticator17ApiResponseStatusO12toKotlinEnumSo0abcdE0CyF",
-            "mangledName": "$s17CoreAuthenticator17ApiResponseStatusO12toKotlinEnumSo0abcdE0CyF",
-            "moduleName": "CoreAuthenticator",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Enum",
-        "usr": "s:17CoreAuthenticator17ApiResponseStatusO",
-        "mangledName": "$s17CoreAuthenticator17ApiResponseStatusO",
-        "moduleName": "CoreAuthenticator",
-        "declAttributes": [
-          "AccessControl",
-          "Frozen"
-        ],
-        "isEnumExhaustive": true,
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CaseIterable",
-            "printedName": "CaseIterable",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "AllCases",
-                "printedName": "AllCases",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Array",
-                    "printedName": "[CoreAuthenticator.ApiResponseStatus]",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "ApiResponseStatus",
-                        "printedName": "CoreAuthenticator.ApiResponseStatus",
-                        "usr": "s:17CoreAuthenticator17ApiResponseStatusO"
-                      }
-                    ],
-                    "usr": "s:Sa"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:s12CaseIterableP",
-            "mangledName": "$ss12CaseIterableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_ObjectiveCBridgeable",
-            "printedName": "_ObjectiveCBridgeable",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "_ObjectiveCType",
-                "printedName": "_ObjectiveCType",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "__ApiResponseStatus",
-                    "printedName": "CoreAuthenticator.__ApiResponseStatus",
-                    "usr": "c:objc(cs)CoreAuthenticatorApiResponseStatus"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:s21_ObjectiveCBridgeableP",
-            "mangledName": "$ss21_ObjectiveCBridgeableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Sendable",
-            "printedName": "Sendable",
-            "usr": "s:s8SendableP",
-            "mangledName": "$ss8SendableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "BitwiseCopyable",
-            "printedName": "BitwiseCopyable",
-            "usr": "s:s15BitwiseCopyableP",
-            "mangledName": "$ss15BitwiseCopyableP"
-          }
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "CoreAuthenticator",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "TypeDecl",
         "name": "CrashReportLevel",
         "printedName": "CrashReportLevel",
         "children": [
@@ -29558,9 +28959,123 @@
       },
       {
         "kind": "TypeDecl",
-        "name": "StatusEntity",
-        "printedName": "StatusEntity",
+        "name": "__Bridge__AccountEntity_Status",
+        "printedName": "__Bridge__AccountEntity_Status",
         "children": [
+          {
+            "kind": "Var",
+            "name": "toBeMigrated",
+            "printedName": "toBeMigrated",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CoreAuthenticator.__Bridge__AccountEntity_Status.Type) -> CoreAuthenticator.__Bridge__AccountEntity_Status",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "__Bridge__AccountEntity_Status",
+                    "printedName": "CoreAuthenticator.__Bridge__AccountEntity_Status",
+                    "usr": "s:17CoreAuthenticator30__Bridge__AccountEntity_StatusO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CoreAuthenticator.__Bridge__AccountEntity_Status.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "__Bridge__AccountEntity_Status",
+                        "printedName": "CoreAuthenticator.__Bridge__AccountEntity_Status",
+                        "usr": "s:17CoreAuthenticator30__Bridge__AccountEntity_StatusO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:17CoreAuthenticator30__Bridge__AccountEntity_StatusO12toBeMigratedyA2CmF",
+            "mangledName": "$s17CoreAuthenticator30__Bridge__AccountEntity_StatusO12toBeMigratedyA2CmF",
+            "moduleName": "CoreAuthenticator",
+            "fixedbinaryorder": 0
+          },
+          {
+            "kind": "Var",
+            "name": "passkeyRegistrationPending",
+            "printedName": "passkeyRegistrationPending",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CoreAuthenticator.__Bridge__AccountEntity_Status.Type) -> CoreAuthenticator.__Bridge__AccountEntity_Status",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "__Bridge__AccountEntity_Status",
+                    "printedName": "CoreAuthenticator.__Bridge__AccountEntity_Status",
+                    "usr": "s:17CoreAuthenticator30__Bridge__AccountEntity_StatusO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CoreAuthenticator.__Bridge__AccountEntity_Status.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "__Bridge__AccountEntity_Status",
+                        "printedName": "CoreAuthenticator.__Bridge__AccountEntity_Status",
+                        "usr": "s:17CoreAuthenticator30__Bridge__AccountEntity_StatusO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:17CoreAuthenticator30__Bridge__AccountEntity_StatusO26passkeyRegistrationPendingyA2CmF",
+            "mangledName": "$s17CoreAuthenticator30__Bridge__AccountEntity_StatusO26passkeyRegistrationPendingyA2CmF",
+            "moduleName": "CoreAuthenticator",
+            "fixedbinaryorder": 1
+          },
+          {
+            "kind": "Var",
+            "name": "firstPasskeyAuthenticationPending",
+            "printedName": "firstPasskeyAuthenticationPending",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CoreAuthenticator.__Bridge__AccountEntity_Status.Type) -> CoreAuthenticator.__Bridge__AccountEntity_Status",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "__Bridge__AccountEntity_Status",
+                    "printedName": "CoreAuthenticator.__Bridge__AccountEntity_Status",
+                    "usr": "s:17CoreAuthenticator30__Bridge__AccountEntity_StatusO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CoreAuthenticator.__Bridge__AccountEntity_Status.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "__Bridge__AccountEntity_Status",
+                        "printedName": "CoreAuthenticator.__Bridge__AccountEntity_Status",
+                        "usr": "s:17CoreAuthenticator30__Bridge__AccountEntity_StatusO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:17CoreAuthenticator30__Bridge__AccountEntity_StatusO33firstPasskeyAuthenticationPendingyA2CmF",
+            "mangledName": "$s17CoreAuthenticator30__Bridge__AccountEntity_StatusO33firstPasskeyAuthenticationPendingyA2CmF",
+            "moduleName": "CoreAuthenticator",
+            "fixedbinaryorder": 2
+          },
           {
             "kind": "Var",
             "name": "loggedIn",
@@ -29569,24 +29084,24 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(CoreAuthenticator.StatusEntity.Type) -> CoreAuthenticator.StatusEntity",
+                "printedName": "(CoreAuthenticator.__Bridge__AccountEntity_Status.Type) -> CoreAuthenticator.__Bridge__AccountEntity_Status",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "StatusEntity",
-                    "printedName": "CoreAuthenticator.StatusEntity",
-                    "usr": "s:17CoreAuthenticator12StatusEntityO"
+                    "name": "__Bridge__AccountEntity_Status",
+                    "printedName": "CoreAuthenticator.__Bridge__AccountEntity_Status",
+                    "usr": "s:17CoreAuthenticator30__Bridge__AccountEntity_StatusO"
                   },
                   {
                     "kind": "TypeNominal",
                     "name": "Metatype",
-                    "printedName": "CoreAuthenticator.StatusEntity.Type",
+                    "printedName": "CoreAuthenticator.__Bridge__AccountEntity_Status.Type",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "StatusEntity",
-                        "printedName": "CoreAuthenticator.StatusEntity",
-                        "usr": "s:17CoreAuthenticator12StatusEntityO"
+                        "name": "__Bridge__AccountEntity_Status",
+                        "printedName": "CoreAuthenticator.__Bridge__AccountEntity_Status",
+                        "usr": "s:17CoreAuthenticator30__Bridge__AccountEntity_StatusO"
                       }
                     ]
                   }
@@ -29594,48 +29109,10 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "s:17CoreAuthenticator12StatusEntityO8loggedInyA2CmF",
-            "mangledName": "$s17CoreAuthenticator12StatusEntityO8loggedInyA2CmF",
+            "usr": "s:17CoreAuthenticator30__Bridge__AccountEntity_StatusO8loggedInyA2CmF",
+            "mangledName": "$s17CoreAuthenticator30__Bridge__AccountEntity_StatusO8loggedInyA2CmF",
             "moduleName": "CoreAuthenticator",
-            "fixedbinaryorder": 0
-          },
-          {
-            "kind": "Var",
-            "name": "notConnected",
-            "printedName": "notConnected",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(CoreAuthenticator.StatusEntity.Type) -> CoreAuthenticator.StatusEntity",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "StatusEntity",
-                    "printedName": "CoreAuthenticator.StatusEntity",
-                    "usr": "s:17CoreAuthenticator12StatusEntityO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "CoreAuthenticator.StatusEntity.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "StatusEntity",
-                        "printedName": "CoreAuthenticator.StatusEntity",
-                        "usr": "s:17CoreAuthenticator12StatusEntityO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:17CoreAuthenticator12StatusEntityO12notConnectedyA2CmF",
-            "mangledName": "$s17CoreAuthenticator12StatusEntityO12notConnectedyA2CmF",
-            "moduleName": "CoreAuthenticator",
-            "fixedbinaryorder": 1
+            "fixedbinaryorder": 3
           },
           {
             "kind": "Var",
@@ -29650,8 +29127,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:17CoreAuthenticator12StatusEntityO4nameSSvp",
-            "mangledName": "$s17CoreAuthenticator12StatusEntityO4nameSSvp",
+            "usr": "s:17CoreAuthenticator30__Bridge__AccountEntity_StatusO4nameSSvp",
+            "mangledName": "$s17CoreAuthenticator30__Bridge__AccountEntity_StatusO4nameSSvp",
             "moduleName": "CoreAuthenticator",
             "declAttributes": [
               "AccessControl"
@@ -29670,8 +29147,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:17CoreAuthenticator12StatusEntityO4nameSSvg",
-                "mangledName": "$s17CoreAuthenticator12StatusEntityO4nameSSvg",
+                "usr": "s:17CoreAuthenticator30__Bridge__AccountEntity_StatusO4nameSSvg",
+                "mangledName": "$s17CoreAuthenticator30__Bridge__AccountEntity_StatusO4nameSSvg",
                 "moduleName": "CoreAuthenticator",
                 "accessorKind": "get"
               }
@@ -29690,8 +29167,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:17CoreAuthenticator12StatusEntityO7ordinals5Int32Vvp",
-            "mangledName": "$s17CoreAuthenticator12StatusEntityO7ordinals5Int32Vvp",
+            "usr": "s:17CoreAuthenticator30__Bridge__AccountEntity_StatusO7ordinals5Int32Vvp",
+            "mangledName": "$s17CoreAuthenticator30__Bridge__AccountEntity_StatusO7ordinals5Int32Vvp",
             "moduleName": "CoreAuthenticator",
             "declAttributes": [
               "AccessControl"
@@ -29710,8 +29187,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:17CoreAuthenticator12StatusEntityO7ordinals5Int32Vvg",
-                "mangledName": "$s17CoreAuthenticator12StatusEntityO7ordinals5Int32Vvg",
+                "usr": "s:17CoreAuthenticator30__Bridge__AccountEntity_StatusO7ordinals5Int32Vvg",
+                "mangledName": "$s17CoreAuthenticator30__Bridge__AccountEntity_StatusO7ordinals5Int32Vvg",
                 "moduleName": "CoreAuthenticator",
                 "accessorKind": "get"
               }
@@ -29729,20 +29206,20 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "__StatusEntity",
-                "printedName": "CoreAuthenticator.__StatusEntity",
-                "usr": "c:objc(cs)CoreAuthenticatorStatusEntity"
+                "name": "__Status",
+                "printedName": "CoreAuthenticator.AccountEntity.__Status",
+                "usr": "c:objc(cs)CoreAuthenticatorAccountEntityStatus"
               },
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "CoreAuthenticator.StatusEntity?",
+                "printedName": "CoreAuthenticator.__Bridge__AccountEntity_Status?",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "StatusEntity",
-                    "printedName": "CoreAuthenticator.StatusEntity",
-                    "usr": "s:17CoreAuthenticator12StatusEntityO"
+                    "name": "__Bridge__AccountEntity_Status",
+                    "printedName": "CoreAuthenticator.__Bridge__AccountEntity_Status",
+                    "usr": "s:17CoreAuthenticator30__Bridge__AccountEntity_StatusO"
                   }
                 ],
                 "paramValueOwnership": "InOut",
@@ -29750,8 +29227,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:17CoreAuthenticator12StatusEntityO26_forceBridgeFromObjectiveC_6resultySo0abcD0C_ACSgztFZ",
-            "mangledName": "$s17CoreAuthenticator12StatusEntityO26_forceBridgeFromObjectiveC_6resultySo0abcD0C_ACSgztFZ",
+            "usr": "s:17CoreAuthenticator30__Bridge__AccountEntity_StatusO06_forceC14FromObjectiveC_6resultySo0abdeF0C_ACSgztFZ",
+            "mangledName": "$s17CoreAuthenticator30__Bridge__AccountEntity_StatusO06_forceC14FromObjectiveC_6resultySo0abdeF0C_ACSgztFZ",
             "moduleName": "CoreAuthenticator",
             "static": true,
             "declAttributes": [
@@ -29772,20 +29249,20 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "__StatusEntity",
-                "printedName": "CoreAuthenticator.__StatusEntity",
-                "usr": "c:objc(cs)CoreAuthenticatorStatusEntity"
+                "name": "__Status",
+                "printedName": "CoreAuthenticator.AccountEntity.__Status",
+                "usr": "c:objc(cs)CoreAuthenticatorAccountEntityStatus"
               },
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "CoreAuthenticator.StatusEntity?",
+                "printedName": "CoreAuthenticator.__Bridge__AccountEntity_Status?",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "StatusEntity",
-                    "printedName": "CoreAuthenticator.StatusEntity",
-                    "usr": "s:17CoreAuthenticator12StatusEntityO"
+                    "name": "__Bridge__AccountEntity_Status",
+                    "printedName": "CoreAuthenticator.__Bridge__AccountEntity_Status",
+                    "usr": "s:17CoreAuthenticator30__Bridge__AccountEntity_StatusO"
                   }
                 ],
                 "paramValueOwnership": "InOut",
@@ -29793,8 +29270,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:17CoreAuthenticator12StatusEntityO34_conditionallyBridgeFromObjectiveC_6resultSbSo0abcD0C_ACSgztFZ",
-            "mangledName": "$s17CoreAuthenticator12StatusEntityO34_conditionallyBridgeFromObjectiveC_6resultSbSo0abcD0C_ACSgztFZ",
+            "usr": "s:17CoreAuthenticator30__Bridge__AccountEntity_StatusO014_conditionallyC14FromObjectiveC_6resultSbSo0abdeF0C_ACSgztFZ",
+            "mangledName": "$s17CoreAuthenticator30__Bridge__AccountEntity_StatusO014_conditionallyC14FromObjectiveC_6resultSbSo0abdeF0C_ACSgztFZ",
             "moduleName": "CoreAuthenticator",
             "static": true,
             "declAttributes": [
@@ -29809,28 +29286,28 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "StatusEntity",
-                "printedName": "CoreAuthenticator.StatusEntity",
-                "usr": "s:17CoreAuthenticator12StatusEntityO"
+                "name": "__Bridge__AccountEntity_Status",
+                "printedName": "CoreAuthenticator.__Bridge__AccountEntity_Status",
+                "usr": "s:17CoreAuthenticator30__Bridge__AccountEntity_StatusO"
               },
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "CoreAuthenticator.__StatusEntity?",
+                "printedName": "CoreAuthenticator.AccountEntity.__Status?",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "__StatusEntity",
-                    "printedName": "CoreAuthenticator.__StatusEntity",
-                    "usr": "c:objc(cs)CoreAuthenticatorStatusEntity"
+                    "name": "__Status",
+                    "printedName": "CoreAuthenticator.AccountEntity.__Status",
+                    "usr": "c:objc(cs)CoreAuthenticatorAccountEntityStatus"
                   }
                 ],
                 "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
-            "usr": "s:17CoreAuthenticator12StatusEntityO36_unconditionallyBridgeFromObjectiveCyACSo0abcD0CSgFZ",
-            "mangledName": "$s17CoreAuthenticator12StatusEntityO36_unconditionallyBridgeFromObjectiveCyACSo0abcD0CSgFZ",
+            "usr": "s:17CoreAuthenticator30__Bridge__AccountEntity_StatusO016_unconditionallyC14FromObjectiveCyACSo0abdeF0CSgFZ",
+            "mangledName": "$s17CoreAuthenticator30__Bridge__AccountEntity_StatusO016_unconditionallyC14FromObjectiveCyACSo0abdeF0CSgFZ",
             "moduleName": "CoreAuthenticator",
             "static": true,
             "declAttributes": [
@@ -29845,14 +29322,14 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "__StatusEntity",
-                "printedName": "CoreAuthenticator.__StatusEntity",
-                "usr": "c:objc(cs)CoreAuthenticatorStatusEntity"
+                "name": "__Status",
+                "printedName": "CoreAuthenticator.AccountEntity.__Status",
+                "usr": "c:objc(cs)CoreAuthenticatorAccountEntityStatus"
               }
             ],
             "declKind": "Func",
-            "usr": "s:17CoreAuthenticator12StatusEntityO19_bridgeToObjectiveCSo0abcD0CyF",
-            "mangledName": "$s17CoreAuthenticator12StatusEntityO19_bridgeToObjectiveCSo0abcD0CyF",
+            "usr": "s:17CoreAuthenticator30__Bridge__AccountEntity_StatusO19_bridgeToObjectiveCSo0abdeF0CyF",
+            "mangledName": "$s17CoreAuthenticator30__Bridge__AccountEntity_StatusO19_bridgeToObjectiveCSo0abdeF0CyF",
             "moduleName": "CoreAuthenticator",
             "declAttributes": [
               "AccessControl"
@@ -29872,20 +29349,20 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "StatusEntity",
-                "printedName": "CoreAuthenticator.StatusEntity",
-                "usr": "s:17CoreAuthenticator12StatusEntityO"
+                "name": "__Bridge__AccountEntity_Status",
+                "printedName": "CoreAuthenticator.__Bridge__AccountEntity_Status",
+                "usr": "s:17CoreAuthenticator30__Bridge__AccountEntity_StatusO"
               },
               {
                 "kind": "TypeNominal",
-                "name": "StatusEntity",
-                "printedName": "CoreAuthenticator.StatusEntity",
-                "usr": "s:17CoreAuthenticator12StatusEntityO"
+                "name": "__Bridge__AccountEntity_Status",
+                "printedName": "CoreAuthenticator.__Bridge__AccountEntity_Status",
+                "usr": "s:17CoreAuthenticator30__Bridge__AccountEntity_StatusO"
               }
             ],
             "declKind": "Func",
-            "usr": "s:17CoreAuthenticator12StatusEntityO2eeoiySbAC_ACtFZ",
-            "mangledName": "$s17CoreAuthenticator12StatusEntityO2eeoiySbAC_ACtFZ",
+            "usr": "s:17CoreAuthenticator30__Bridge__AccountEntity_StatusO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s17CoreAuthenticator30__Bridge__AccountEntity_StatusO2eeoiySbAC_ACtFZ",
             "moduleName": "CoreAuthenticator",
             "static": true,
             "implicit": true,
@@ -29904,8 +29381,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:17CoreAuthenticator12StatusEntityO9hashValueSivp",
-            "mangledName": "$s17CoreAuthenticator12StatusEntityO9hashValueSivp",
+            "usr": "s:17CoreAuthenticator30__Bridge__AccountEntity_StatusO9hashValueSivp",
+            "mangledName": "$s17CoreAuthenticator30__Bridge__AccountEntity_StatusO9hashValueSivp",
             "moduleName": "CoreAuthenticator",
             "implicit": true,
             "accessors": [
@@ -29922,8 +29399,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:17CoreAuthenticator12StatusEntityO9hashValueSivg",
-                "mangledName": "$s17CoreAuthenticator12StatusEntityO9hashValueSivg",
+                "usr": "s:17CoreAuthenticator30__Bridge__AccountEntity_StatusO9hashValueSivg",
+                "mangledName": "$s17CoreAuthenticator30__Bridge__AccountEntity_StatusO9hashValueSivg",
                 "moduleName": "CoreAuthenticator",
                 "implicit": true,
                 "accessorKind": "get"
@@ -29949,8 +29426,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:17CoreAuthenticator12StatusEntityO4hash4intoys6HasherVz_tF",
-            "mangledName": "$s17CoreAuthenticator12StatusEntityO4hash4intoys6HasherVz_tF",
+            "usr": "s:17CoreAuthenticator30__Bridge__AccountEntity_StatusO4hash4intoys6HasherVz_tF",
+            "mangledName": "$s17CoreAuthenticator30__Bridge__AccountEntity_StatusO4hash4intoys6HasherVz_tF",
             "moduleName": "CoreAuthenticator",
             "implicit": true,
             "funcSelfKind": "NonMutating"
@@ -29963,21 +29440,21 @@
               {
                 "kind": "TypeNominal",
                 "name": "Array",
-                "printedName": "[CoreAuthenticator.StatusEntity]",
+                "printedName": "[CoreAuthenticator.__Bridge__AccountEntity_Status]",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "StatusEntity",
-                    "printedName": "CoreAuthenticator.StatusEntity",
-                    "usr": "s:17CoreAuthenticator12StatusEntityO"
+                    "name": "__Bridge__AccountEntity_Status",
+                    "printedName": "CoreAuthenticator.__Bridge__AccountEntity_Status",
+                    "usr": "s:17CoreAuthenticator30__Bridge__AccountEntity_StatusO"
                   }
                 ],
                 "usr": "s:Sa"
               }
             ],
             "declKind": "Var",
-            "usr": "s:17CoreAuthenticator12StatusEntityO8allCasesSayACGvpZ",
-            "mangledName": "$s17CoreAuthenticator12StatusEntityO8allCasesSayACGvpZ",
+            "usr": "s:17CoreAuthenticator30__Bridge__AccountEntity_StatusO8allCasesSayACGvpZ",
+            "mangledName": "$s17CoreAuthenticator30__Bridge__AccountEntity_StatusO8allCasesSayACGvpZ",
             "moduleName": "CoreAuthenticator",
             "static": true,
             "implicit": true,
@@ -29993,21 +29470,21 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Array",
-                    "printedName": "[CoreAuthenticator.StatusEntity]",
+                    "printedName": "[CoreAuthenticator.__Bridge__AccountEntity_Status]",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "StatusEntity",
-                        "printedName": "CoreAuthenticator.StatusEntity",
-                        "usr": "s:17CoreAuthenticator12StatusEntityO"
+                        "name": "__Bridge__AccountEntity_Status",
+                        "printedName": "CoreAuthenticator.__Bridge__AccountEntity_Status",
+                        "usr": "s:17CoreAuthenticator30__Bridge__AccountEntity_StatusO"
                       }
                     ],
                     "usr": "s:Sa"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:17CoreAuthenticator12StatusEntityO8allCasesSayACGvgZ",
-                "mangledName": "$s17CoreAuthenticator12StatusEntityO8allCasesSayACGvgZ",
+                "usr": "s:17CoreAuthenticator30__Bridge__AccountEntity_StatusO8allCasesSayACGvgZ",
+                "mangledName": "$s17CoreAuthenticator30__Bridge__AccountEntity_StatusO8allCasesSayACGvgZ",
                 "moduleName": "CoreAuthenticator",
                 "static": true,
                 "implicit": true,
@@ -30022,14 +29499,14 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "__StatusEntity",
-                "printedName": "CoreAuthenticator.__StatusEntity",
-                "usr": "c:objc(cs)CoreAuthenticatorStatusEntity"
+                "name": "__Status",
+                "printedName": "CoreAuthenticator.AccountEntity.__Status",
+                "usr": "c:objc(cs)CoreAuthenticatorAccountEntityStatus"
               }
             ],
             "declKind": "Func",
-            "usr": "s:17CoreAuthenticator12StatusEntityO12toKotlinEnumSo0abcD0CyF",
-            "mangledName": "$s17CoreAuthenticator12StatusEntityO12toKotlinEnumSo0abcD0CyF",
+            "usr": "s:17CoreAuthenticator30__Bridge__AccountEntity_StatusO12toKotlinEnumSo0abdeF0CyF",
+            "mangledName": "$s17CoreAuthenticator30__Bridge__AccountEntity_StatusO12toKotlinEnumSo0abdeF0CyF",
             "moduleName": "CoreAuthenticator",
             "declAttributes": [
               "AccessControl"
@@ -30039,8 +29516,8 @@
           }
         ],
         "declKind": "Enum",
-        "usr": "s:17CoreAuthenticator12StatusEntityO",
-        "mangledName": "$s17CoreAuthenticator12StatusEntityO",
+        "usr": "s:17CoreAuthenticator30__Bridge__AccountEntity_StatusO",
+        "mangledName": "$s17CoreAuthenticator30__Bridge__AccountEntity_StatusO",
         "moduleName": "CoreAuthenticator",
         "declAttributes": [
           "AccessControl",
@@ -30089,13 +29566,13 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Array",
-                    "printedName": "[CoreAuthenticator.StatusEntity]",
+                    "printedName": "[CoreAuthenticator.__Bridge__AccountEntity_Status]",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "StatusEntity",
-                        "printedName": "CoreAuthenticator.StatusEntity",
-                        "usr": "s:17CoreAuthenticator12StatusEntityO"
+                        "name": "__Bridge__AccountEntity_Status",
+                        "printedName": "CoreAuthenticator.__Bridge__AccountEntity_Status",
+                        "usr": "s:17CoreAuthenticator30__Bridge__AccountEntity_StatusO"
                       }
                     ],
                     "usr": "s:Sa"
@@ -30118,9 +29595,9 @@
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "__StatusEntity",
-                    "printedName": "CoreAuthenticator.__StatusEntity",
-                    "usr": "c:objc(cs)CoreAuthenticatorStatusEntity"
+                    "name": "__Status",
+                    "printedName": "CoreAuthenticator.AccountEntity.__Status",
+                    "usr": "c:objc(cs)CoreAuthenticatorAccountEntityStatus"
                   }
                 ]
               }
@@ -33237,6 +32714,646 @@
             "printedName": "Equatable",
             "usr": "s:SQ",
             "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "BitwiseCopyable",
+            "printedName": "BitwiseCopyable",
+            "usr": "s:s15BitwiseCopyableP",
+            "mangledName": "$ss15BitwiseCopyableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "CoreAuthenticator",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ApiResponseStatus",
+        "printedName": "ApiResponseStatus",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "success",
+            "printedName": "success",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CoreAuthenticator.ApiResponseStatus.Type) -> CoreAuthenticator.ApiResponseStatus",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ApiResponseStatus",
+                    "printedName": "CoreAuthenticator.ApiResponseStatus",
+                    "usr": "s:17CoreAuthenticator17ApiResponseStatusO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CoreAuthenticator.ApiResponseStatus.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ApiResponseStatus",
+                        "printedName": "CoreAuthenticator.ApiResponseStatus",
+                        "usr": "s:17CoreAuthenticator17ApiResponseStatusO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:17CoreAuthenticator17ApiResponseStatusO7successyA2CmF",
+            "mangledName": "$s17CoreAuthenticator17ApiResponseStatusO7successyA2CmF",
+            "moduleName": "CoreAuthenticator",
+            "fixedbinaryorder": 0
+          },
+          {
+            "kind": "Var",
+            "name": "asynchronous",
+            "printedName": "asynchronous",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CoreAuthenticator.ApiResponseStatus.Type) -> CoreAuthenticator.ApiResponseStatus",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ApiResponseStatus",
+                    "printedName": "CoreAuthenticator.ApiResponseStatus",
+                    "usr": "s:17CoreAuthenticator17ApiResponseStatusO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CoreAuthenticator.ApiResponseStatus.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ApiResponseStatus",
+                        "printedName": "CoreAuthenticator.ApiResponseStatus",
+                        "usr": "s:17CoreAuthenticator17ApiResponseStatusO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:17CoreAuthenticator17ApiResponseStatusO12asynchronousyA2CmF",
+            "mangledName": "$s17CoreAuthenticator17ApiResponseStatusO12asynchronousyA2CmF",
+            "moduleName": "CoreAuthenticator",
+            "fixedbinaryorder": 1
+          },
+          {
+            "kind": "Var",
+            "name": "name",
+            "printedName": "name",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17CoreAuthenticator17ApiResponseStatusO4nameSSvp",
+            "mangledName": "$s17CoreAuthenticator17ApiResponseStatusO4nameSSvp",
+            "moduleName": "CoreAuthenticator",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17CoreAuthenticator17ApiResponseStatusO4nameSSvg",
+                "mangledName": "$s17CoreAuthenticator17ApiResponseStatusO4nameSSvg",
+                "moduleName": "CoreAuthenticator",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "ordinal",
+            "printedName": "ordinal",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int32",
+                "printedName": "Swift.Int32",
+                "usr": "s:s5Int32V"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17CoreAuthenticator17ApiResponseStatusO7ordinals5Int32Vvp",
+            "mangledName": "$s17CoreAuthenticator17ApiResponseStatusO7ordinals5Int32Vvp",
+            "moduleName": "CoreAuthenticator",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int32",
+                    "printedName": "Swift.Int32",
+                    "usr": "s:s5Int32V"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17CoreAuthenticator17ApiResponseStatusO7ordinals5Int32Vvg",
+                "mangledName": "$s17CoreAuthenticator17ApiResponseStatusO7ordinals5Int32Vvg",
+                "moduleName": "CoreAuthenticator",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "companion",
+            "printedName": "companion",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Companion",
+                "printedName": "CoreAuthenticator.__ApiResponseStatus.Companion",
+                "usr": "c:objc(cs)CoreAuthenticatorApiResponseStatusCompanion"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17CoreAuthenticator17ApiResponseStatusO9companionSo0abcdE9CompanionCvpZ",
+            "mangledName": "$s17CoreAuthenticator17ApiResponseStatusO9companionSo0abcdE9CompanionCvpZ",
+            "moduleName": "CoreAuthenticator",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Companion",
+                    "printedName": "CoreAuthenticator.__ApiResponseStatus.Companion",
+                    "usr": "c:objc(cs)CoreAuthenticatorApiResponseStatusCompanion"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17CoreAuthenticator17ApiResponseStatusO9companionSo0abcdE9CompanionCvgZ",
+                "mangledName": "$s17CoreAuthenticator17ApiResponseStatusO9companionSo0abcdE9CompanionCvgZ",
+                "moduleName": "CoreAuthenticator",
+                "static": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "_forceBridgeFromObjectiveC",
+            "printedName": "_forceBridgeFromObjectiveC(_:result:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "__ApiResponseStatus",
+                "printedName": "CoreAuthenticator.__ApiResponseStatus",
+                "usr": "c:objc(cs)CoreAuthenticatorApiResponseStatus"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "CoreAuthenticator.ApiResponseStatus?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ApiResponseStatus",
+                    "printedName": "CoreAuthenticator.ApiResponseStatus",
+                    "usr": "s:17CoreAuthenticator17ApiResponseStatusO"
+                  }
+                ],
+                "paramValueOwnership": "InOut",
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17CoreAuthenticator17ApiResponseStatusO26_forceBridgeFromObjectiveC_6resultySo0abcdE0C_ACSgztFZ",
+            "mangledName": "$s17CoreAuthenticator17ApiResponseStatusO26_forceBridgeFromObjectiveC_6resultySo0abcdE0C_ACSgztFZ",
+            "moduleName": "CoreAuthenticator",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "_conditionallyBridgeFromObjectiveC",
+            "printedName": "_conditionallyBridgeFromObjectiveC(_:result:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "__ApiResponseStatus",
+                "printedName": "CoreAuthenticator.__ApiResponseStatus",
+                "usr": "c:objc(cs)CoreAuthenticatorApiResponseStatus"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "CoreAuthenticator.ApiResponseStatus?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ApiResponseStatus",
+                    "printedName": "CoreAuthenticator.ApiResponseStatus",
+                    "usr": "s:17CoreAuthenticator17ApiResponseStatusO"
+                  }
+                ],
+                "paramValueOwnership": "InOut",
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17CoreAuthenticator17ApiResponseStatusO34_conditionallyBridgeFromObjectiveC_6resultSbSo0abcdE0C_ACSgztFZ",
+            "mangledName": "$s17CoreAuthenticator17ApiResponseStatusO34_conditionallyBridgeFromObjectiveC_6resultSbSo0abcdE0C_ACSgztFZ",
+            "moduleName": "CoreAuthenticator",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "_unconditionallyBridgeFromObjectiveC",
+            "printedName": "_unconditionallyBridgeFromObjectiveC(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ApiResponseStatus",
+                "printedName": "CoreAuthenticator.ApiResponseStatus",
+                "usr": "s:17CoreAuthenticator17ApiResponseStatusO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "CoreAuthenticator.__ApiResponseStatus?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "__ApiResponseStatus",
+                    "printedName": "CoreAuthenticator.__ApiResponseStatus",
+                    "usr": "c:objc(cs)CoreAuthenticatorApiResponseStatus"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17CoreAuthenticator17ApiResponseStatusO36_unconditionallyBridgeFromObjectiveCyACSo0abcdE0CSgFZ",
+            "mangledName": "$s17CoreAuthenticator17ApiResponseStatusO36_unconditionallyBridgeFromObjectiveCyACSo0abcdE0CSgFZ",
+            "moduleName": "CoreAuthenticator",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "_bridgeToObjectiveC",
+            "printedName": "_bridgeToObjectiveC()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "__ApiResponseStatus",
+                "printedName": "CoreAuthenticator.__ApiResponseStatus",
+                "usr": "c:objc(cs)CoreAuthenticatorApiResponseStatus"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17CoreAuthenticator17ApiResponseStatusO19_bridgeToObjectiveCSo0abcdE0CyF",
+            "mangledName": "$s17CoreAuthenticator17ApiResponseStatusO19_bridgeToObjectiveCSo0abcdE0CyF",
+            "moduleName": "CoreAuthenticator",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ApiResponseStatus",
+                "printedName": "CoreAuthenticator.ApiResponseStatus",
+                "usr": "s:17CoreAuthenticator17ApiResponseStatusO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ApiResponseStatus",
+                "printedName": "CoreAuthenticator.ApiResponseStatus",
+                "usr": "s:17CoreAuthenticator17ApiResponseStatusO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17CoreAuthenticator17ApiResponseStatusO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s17CoreAuthenticator17ApiResponseStatusO2eeoiySbAC_ACtFZ",
+            "moduleName": "CoreAuthenticator",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17CoreAuthenticator17ApiResponseStatusO9hashValueSivp",
+            "mangledName": "$s17CoreAuthenticator17ApiResponseStatusO9hashValueSivp",
+            "moduleName": "CoreAuthenticator",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17CoreAuthenticator17ApiResponseStatusO9hashValueSivg",
+                "mangledName": "$s17CoreAuthenticator17ApiResponseStatusO9hashValueSivg",
+                "moduleName": "CoreAuthenticator",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17CoreAuthenticator17ApiResponseStatusO4hash4intoys6HasherVz_tF",
+            "mangledName": "$s17CoreAuthenticator17ApiResponseStatusO4hash4intoys6HasherVz_tF",
+            "moduleName": "CoreAuthenticator",
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "allCases",
+            "printedName": "allCases",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[CoreAuthenticator.ApiResponseStatus]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ApiResponseStatus",
+                    "printedName": "CoreAuthenticator.ApiResponseStatus",
+                    "usr": "s:17CoreAuthenticator17ApiResponseStatusO"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17CoreAuthenticator17ApiResponseStatusO8allCasesSayACGvpZ",
+            "mangledName": "$s17CoreAuthenticator17ApiResponseStatusO8allCasesSayACGvpZ",
+            "moduleName": "CoreAuthenticator",
+            "static": true,
+            "implicit": true,
+            "declAttributes": [
+              "Nonisolated"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[CoreAuthenticator.ApiResponseStatus]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ApiResponseStatus",
+                        "printedName": "CoreAuthenticator.ApiResponseStatus",
+                        "usr": "s:17CoreAuthenticator17ApiResponseStatusO"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17CoreAuthenticator17ApiResponseStatusO8allCasesSayACGvgZ",
+                "mangledName": "$s17CoreAuthenticator17ApiResponseStatusO8allCasesSayACGvgZ",
+                "moduleName": "CoreAuthenticator",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "toKotlinEnum",
+            "printedName": "toKotlinEnum()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "__ApiResponseStatus",
+                "printedName": "CoreAuthenticator.__ApiResponseStatus",
+                "usr": "c:objc(cs)CoreAuthenticatorApiResponseStatus"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17CoreAuthenticator17ApiResponseStatusO12toKotlinEnumSo0abcdE0CyF",
+            "mangledName": "$s17CoreAuthenticator17ApiResponseStatusO12toKotlinEnumSo0abcdE0CyF",
+            "moduleName": "CoreAuthenticator",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:17CoreAuthenticator17ApiResponseStatusO",
+        "mangledName": "$s17CoreAuthenticator17ApiResponseStatusO",
+        "moduleName": "CoreAuthenticator",
+        "declAttributes": [
+          "AccessControl",
+          "Frozen"
+        ],
+        "isEnumExhaustive": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CaseIterable",
+            "printedName": "CaseIterable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "AllCases",
+                "printedName": "AllCases",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[CoreAuthenticator.ApiResponseStatus]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ApiResponseStatus",
+                        "printedName": "CoreAuthenticator.ApiResponseStatus",
+                        "usr": "s:17CoreAuthenticator17ApiResponseStatusO"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s12CaseIterableP",
+            "mangledName": "$ss12CaseIterableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_ObjectiveCBridgeable",
+            "printedName": "_ObjectiveCBridgeable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "_ObjectiveCType",
+                "printedName": "_ObjectiveCType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "__ApiResponseStatus",
+                    "printedName": "CoreAuthenticator.__ApiResponseStatus",
+                    "usr": "c:objc(cs)CoreAuthenticatorApiResponseStatus"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s21_ObjectiveCBridgeableP",
+            "mangledName": "$ss21_ObjectiveCBridgeableP"
           },
           {
             "kind": "Conformance",
@@ -37703,48 +37820,33 @@
       },
       {
         "kind": "Function",
-        "name": "getAccountsDatabaseBuilder",
-        "printedName": "getAccountsDatabaseBuilder()",
-        "children": [
-          {
-            "kind": "TypeNominal",
-            "name": "Room_runtimeRoomDatabaseBuilder",
-            "printedName": "CoreAuthenticator.Room_runtimeRoomDatabaseBuilder<CoreAuthenticator.AccountsDatabase>",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "AccountsDatabase",
-                "printedName": "CoreAuthenticator.AccountsDatabase",
-                "usr": "c:objc(cs)CoreAuthenticatorAccountsDatabase"
-              }
-            ],
-            "usr": "c:objc(cs)CoreAuthenticatorRoom_runtimeRoomDatabaseBuilder"
-          }
-        ],
-        "declKind": "Func",
-        "usr": "s:17CoreAuthenticator26getAccountsDatabaseBuilderSo0ab12Room_runtimegeF0CySo0abdE0CGyF",
-        "mangledName": "$s17CoreAuthenticator26getAccountsDatabaseBuilderSo0ab12Room_runtimegeF0CySo0abdE0CGyF",
-        "moduleName": "CoreAuthenticator",
-        "declAttributes": [
-          "AccessControl"
-        ],
-        "funcSelfKind": "NonMutating"
-      },
-      {
-        "kind": "Function",
         "name": "getAccountsRoomDatabase",
-        "printedName": "getAccountsRoomDatabase()",
+        "printedName": "getAccountsRoomDatabase(databaseNameOrPath:)",
         "children": [
           {
             "kind": "TypeNominal",
             "name": "AccountsDatabase",
             "printedName": "CoreAuthenticator.AccountsDatabase",
             "usr": "c:objc(cs)CoreAuthenticatorAccountsDatabase"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "Optional",
+            "printedName": "Swift.String?",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "usr": "s:Sq"
           }
         ],
         "declKind": "Func",
-        "usr": "s:17CoreAuthenticator23getAccountsRoomDatabaseSo0abdF0CyF",
-        "mangledName": "$s17CoreAuthenticator23getAccountsRoomDatabaseSo0abdF0CyF",
+        "usr": "s:17CoreAuthenticator23getAccountsRoomDatabase18databaseNameOrPathSo0abdF0CSSSg_tF",
+        "mangledName": "$s17CoreAuthenticator23getAccountsRoomDatabase18databaseNameOrPathSo0abdF0CSSSg_tF",
         "moduleName": "CoreAuthenticator",
         "declAttributes": [
           "AccessControl"
@@ -38232,6 +38334,48 @@
             "isFromExtension": true,
             "throwing": true,
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "removeAccount",
+            "printedName": "removeAccount(token:id:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int64",
+                "printedName": "Swift.Int64",
+                "usr": "s:s5Int64V"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:So017CoreAuthenticatorB6FacadeC0aB0E13removeAccount5token2idySS_s5Int64VtYaKF",
+            "mangledName": "$sSo017CoreAuthenticatorB6FacadeC0aB0E13removeAccount5token2idySS_s5Int64VtYaKF",
+            "moduleName": "CoreAuthenticator",
+            "intro_Macosx": "10.15",
+            "intro_iOS": "13",
+            "intro_tvOS": "13",
+            "intro_watchOS": "6",
+            "declAttributes": [
+              "AccessControl",
+              "Available",
+              "Available",
+              "Available",
+              "Available"
+            ],
+            "isFromExtension": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Class",
@@ -38318,43 +38462,219 @@
       },
       {
         "kind": "TypeDecl",
-        "name": "AuthenticatorManager",
-        "printedName": "AuthenticatorManager",
+        "name": "KotlinSuspendFunction2",
+        "printedName": "KotlinSuspendFunction2",
         "children": [
           {
             "kind": "Function",
-            "name": "getToken",
-            "printedName": "getToken(clientId:userId:keyId:)",
+            "name": "invoke",
+            "printedName": "invoke(p1:p2:)",
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
+                "name": "Optional",
+                "printedName": "Any?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:Sq"
               },
               {
                 "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
+                "name": "Optional",
+                "printedName": "Any?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:Sq"
               },
               {
                 "kind": "TypeNominal",
-                "name": "Int32",
-                "printedName": "Swift.Int32",
-                "usr": "s:s5Int32V"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
+                "name": "Optional",
+                "printedName": "Any?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
-            "usr": "s:So017CoreAuthenticatorB7ManagerC0aB0E8getToken8clientId04userG003keyG0S2S_s5Int32VSStYaKF",
-            "mangledName": "$sSo017CoreAuthenticatorB7ManagerC0aB0E8getToken8clientId04userG003keyG0S2S_s5Int32VSStYaKF",
+            "usr": "s:So39CoreAuthenticatorKotlinSuspendFunction2P0aB0E6invoke2p12p2ypSgAG_AGtYaKF",
+            "mangledName": "$sSo39CoreAuthenticatorKotlinSuspendFunction2P0aB0E6invoke2p12p2ypSgAG_AGtYaKF",
             "moduleName": "CoreAuthenticator",
+            "genericSig": "<τ_0_0 where τ_0_0 : CoreAuthenticator.KotlinSuspendFunction2>",
+            "sugared_genericSig": "<Self where Self : CoreAuthenticator.KotlinSuspendFunction2>",
+            "intro_Macosx": "10.15",
+            "intro_iOS": "13",
+            "intro_tvOS": "13",
+            "intro_watchOS": "6",
+            "declAttributes": [
+              "AccessControl",
+              "Available",
+              "Available",
+              "Available",
+              "Available"
+            ],
+            "isFromExtension": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "c:objc(pl)CoreAuthenticatorKotlinSuspendFunction2",
+        "moduleName": "CoreAuthenticator",
+        "genericSig": "<τ_0_0 : CoreAuthenticator.KotlinFunction>",
+        "sugared_genericSig": "<Self : CoreAuthenticator.KotlinFunction>",
+        "objc_name": "CoreAuthenticatorKotlinSuspendFunction2",
+        "declAttributes": [
+          "ObjC",
+          "Dynamic"
+        ],
+        "isExternal": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "KotlinSuspendFunction1",
+        "printedName": "KotlinSuspendFunction1",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "invoke",
+            "printedName": "invoke(p1:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Any?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Any?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:So39CoreAuthenticatorKotlinSuspendFunction1P0aB0E6invoke2p1ypSgAF_tYaKF",
+            "mangledName": "$sSo39CoreAuthenticatorKotlinSuspendFunction1P0aB0E6invoke2p1ypSgAF_tYaKF",
+            "moduleName": "CoreAuthenticator",
+            "genericSig": "<τ_0_0 where τ_0_0 : CoreAuthenticator.KotlinSuspendFunction1>",
+            "sugared_genericSig": "<Self where Self : CoreAuthenticator.KotlinSuspendFunction1>",
+            "intro_Macosx": "10.15",
+            "intro_iOS": "13",
+            "intro_tvOS": "13",
+            "intro_watchOS": "6",
+            "declAttributes": [
+              "AccessControl",
+              "Available",
+              "Available",
+              "Available",
+              "Available"
+            ],
+            "isFromExtension": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "c:objc(pl)CoreAuthenticatorKotlinSuspendFunction1",
+        "moduleName": "CoreAuthenticator",
+        "genericSig": "<τ_0_0 : CoreAuthenticator.KotlinFunction>",
+        "sugared_genericSig": "<Self : CoreAuthenticator.KotlinFunction>",
+        "objc_name": "CoreAuthenticatorKotlinSuspendFunction1",
+        "declAttributes": [
+          "ObjC",
+          "Dynamic"
+        ],
+        "isExternal": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "AccountsDao",
+        "printedName": "AccountsDao",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "delete",
+            "printedName": "delete(id:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int64",
+                "printedName": "Swift.Int64",
+                "usr": "s:s5Int64V"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:So28CoreAuthenticatorAccountsDaoP0aB0E6delete2idys5Int64V_tYaKF",
+            "mangledName": "$sSo28CoreAuthenticatorAccountsDaoP0aB0E6delete2idys5Int64V_tYaKF",
+            "moduleName": "CoreAuthenticator",
+            "genericSig": "<τ_0_0 where τ_0_0 : CoreAuthenticator.AccountsDao>",
+            "sugared_genericSig": "<Self where Self : CoreAuthenticator.AccountsDao>",
             "intro_Macosx": "10.15",
             "intro_iOS": "13",
             "intro_tvOS": "13",
@@ -38372,8 +38692,8 @@
           },
           {
             "kind": "Function",
-            "name": "registerPasskey",
-            "printedName": "registerPasskey(token:userId:)",
+            "name": "insert",
+            "printedName": "insert(account:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -38382,20 +38702,184 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Int32",
-                "printedName": "Swift.Int32",
-                "usr": "s:s5Int32V"
+                "name": "AccountEntity",
+                "printedName": "CoreAuthenticator.AccountEntity",
+                "usr": "c:objc(cs)CoreAuthenticatorAccountEntity"
               }
             ],
             "declKind": "Func",
-            "usr": "s:So017CoreAuthenticatorB7ManagerC0aB0E15registerPasskey5token6userIdySS_s5Int32VtYaKF",
-            "mangledName": "$sSo017CoreAuthenticatorB7ManagerC0aB0E15registerPasskey5token6userIdySS_s5Int32VtYaKF",
+            "usr": "s:So28CoreAuthenticatorAccountsDaoP0aB0E6insert7accountySo0aB13AccountEntityC_tYaKF",
+            "mangledName": "$sSo28CoreAuthenticatorAccountsDaoP0aB0E6insert7accountySo0aB13AccountEntityC_tYaKF",
+            "moduleName": "CoreAuthenticator",
+            "genericSig": "<τ_0_0 where τ_0_0 : CoreAuthenticator.AccountsDao>",
+            "sugared_genericSig": "<Self where Self : CoreAuthenticator.AccountsDao>",
+            "intro_Macosx": "10.15",
+            "intro_iOS": "13",
+            "intro_tvOS": "13",
+            "intro_watchOS": "6",
+            "declAttributes": [
+              "AccessControl",
+              "Available",
+              "Available",
+              "Available",
+              "Available"
+            ],
+            "isFromExtension": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "upsert",
+            "printedName": "upsert(account:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AccountEntity",
+                "printedName": "CoreAuthenticator.AccountEntity",
+                "usr": "c:objc(cs)CoreAuthenticatorAccountEntity"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:So28CoreAuthenticatorAccountsDaoP0aB0E6upsert7accountySo0aB13AccountEntityC_tYaKF",
+            "mangledName": "$sSo28CoreAuthenticatorAccountsDaoP0aB0E6upsert7accountySo0aB13AccountEntityC_tYaKF",
+            "moduleName": "CoreAuthenticator",
+            "genericSig": "<τ_0_0 where τ_0_0 : CoreAuthenticator.AccountsDao>",
+            "sugared_genericSig": "<Self where Self : CoreAuthenticator.AccountsDao>",
+            "intro_Macosx": "10.15",
+            "intro_iOS": "13",
+            "intro_tvOS": "13",
+            "intro_watchOS": "6",
+            "declAttributes": [
+              "AccessControl",
+              "Available",
+              "Available",
+              "Available",
+              "Available"
+            ],
+            "isFromExtension": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "upsert",
+            "printedName": "upsert(accounts:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[CoreAuthenticator.AccountEntity]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AccountEntity",
+                    "printedName": "CoreAuthenticator.AccountEntity",
+                    "usr": "c:objc(cs)CoreAuthenticatorAccountEntity"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:So28CoreAuthenticatorAccountsDaoP0aB0E6upsert8accountsySaySo0aB13AccountEntityCG_tYaKF",
+            "mangledName": "$sSo28CoreAuthenticatorAccountsDaoP0aB0E6upsert8accountsySaySo0aB13AccountEntityCG_tYaKF",
+            "moduleName": "CoreAuthenticator",
+            "genericSig": "<τ_0_0 where τ_0_0 : CoreAuthenticator.AccountsDao>",
+            "sugared_genericSig": "<Self where Self : CoreAuthenticator.AccountsDao>",
+            "intro_Macosx": "10.15",
+            "intro_iOS": "13",
+            "intro_tvOS": "13",
+            "intro_watchOS": "6",
+            "declAttributes": [
+              "AccessControl",
+              "Available",
+              "Available",
+              "Available",
+              "Available"
+            ],
+            "isFromExtension": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "c:objc(pl)CoreAuthenticatorAccountsDao",
+        "moduleName": "CoreAuthenticator",
+        "genericSig": "<τ_0_0 : AnyObject>",
+        "sugared_genericSig": "<Self : AnyObject>",
+        "objc_name": "CoreAuthenticatorAccountsDao",
+        "declAttributes": [
+          "ObjC",
+          "Dynamic"
+        ],
+        "isExternal": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Room_runtimeRoomDatabase",
+        "printedName": "Room_runtimeRoomDatabase",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "useConnection",
+            "printedName": "useConnection(isReadOnly:block:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Any?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "KotlinSuspendFunction1",
+                "printedName": "any CoreAuthenticator.KotlinSuspendFunction1",
+                "usr": "c:objc(pl)CoreAuthenticatorKotlinSuspendFunction1"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:So029CoreAuthenticatorRoom_runtimeC8DatabaseC0aB0E13useConnection10isReadOnly5blockypSgSb_So0aB22KotlinSuspendFunction1_ptYaKF",
+            "mangledName": "$sSo029CoreAuthenticatorRoom_runtimeC8DatabaseC0aB0E13useConnection10isReadOnly5blockypSgSb_So0aB22KotlinSuspendFunction1_ptYaKF",
             "moduleName": "CoreAuthenticator",
             "intro_Macosx": "10.15",
             "intro_iOS": "13",
@@ -38414,9 +38898,10 @@
           }
         ],
         "declKind": "Class",
-        "usr": "c:objc(cs)CoreAuthenticatorAuthenticatorManager",
+        "usr": "c:objc(cs)CoreAuthenticatorRoom_runtimeRoomDatabase",
         "moduleName": "CoreAuthenticator",
-        "objc_name": "CoreAuthenticatorAuthenticatorManager",
+        "isOpen": true,
+        "objc_name": "CoreAuthenticatorRoom_runtimeRoomDatabase",
         "declAttributes": [
           "ObjC",
           "Dynamic"
@@ -38491,6 +38976,324 @@
             "printedName": "CustomDebugStringConvertible",
             "usr": "s:s28CustomDebugStringConvertibleP",
             "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Room_runtimeInvalidationTracker",
+        "printedName": "Room_runtimeInvalidationTracker",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "refresh",
+            "printedName": "refresh(tables:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "KotlinBoolean",
+                "printedName": "CoreAuthenticator.KotlinBoolean",
+                "usr": "c:objc(cs)CoreAuthenticatorBoolean"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "KotlinArray",
+                "printedName": "CoreAuthenticator.KotlinArray<Foundation.NSString>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSString",
+                    "printedName": "Foundation.NSString",
+                    "usr": "c:objc(cs)NSString"
+                  }
+                ],
+                "usr": "c:objc(cs)CoreAuthenticatorKotlinArray"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:So48CoreAuthenticatorRoom_runtimeInvalidationTrackerC0aB0E7refresh6tablesSo0aB7BooleanCSo0aB11KotlinArrayCySo8NSStringCG_tYaKF",
+            "mangledName": "$sSo48CoreAuthenticatorRoom_runtimeInvalidationTrackerC0aB0E7refresh6tablesSo0aB7BooleanCSo0aB11KotlinArrayCySo8NSStringCG_tYaKF",
+            "moduleName": "CoreAuthenticator",
+            "intro_Macosx": "10.15",
+            "intro_iOS": "13",
+            "intro_tvOS": "13",
+            "intro_watchOS": "6",
+            "declAttributes": [
+              "AccessControl",
+              "Available",
+              "Available",
+              "Available",
+              "Available"
+            ],
+            "isFromExtension": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:objc(cs)CoreAuthenticatorRoom_runtimeInvalidationTracker",
+        "moduleName": "CoreAuthenticator",
+        "objc_name": "CoreAuthenticatorRoom_runtimeInvalidationTracker",
+        "declAttributes": [
+          "ObjC",
+          "Dynamic"
+        ],
+        "superclassUsr": "c:objc(cs)CoreAuthenticatorBase",
+        "isExternal": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "CoreAuthenticator.KotlinBase",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "AppSettingsDao",
+        "printedName": "AppSettingsDao",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "save",
+            "printedName": "save(item:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AppSettingsEntity",
+                "printedName": "CoreAuthenticator.AppSettingsEntity",
+                "usr": "c:objc(cs)CoreAuthenticatorAppSettingsEntity"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:So31CoreAuthenticatorAppSettingsDaoP0aB0E4save4itemySo0abcD6EntityC_tYaKF",
+            "mangledName": "$sSo31CoreAuthenticatorAppSettingsDaoP0aB0E4save4itemySo0abcD6EntityC_tYaKF",
+            "moduleName": "CoreAuthenticator",
+            "genericSig": "<τ_0_0 where τ_0_0 : CoreAuthenticator.AppSettingsDao>",
+            "sugared_genericSig": "<Self where Self : CoreAuthenticator.AppSettingsDao>",
+            "intro_Macosx": "10.15",
+            "intro_iOS": "13",
+            "intro_tvOS": "13",
+            "intro_watchOS": "6",
+            "declAttributes": [
+              "AccessControl",
+              "Available",
+              "Available",
+              "Available",
+              "Available"
+            ],
+            "isFromExtension": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setIsAppLockEnabled",
+            "printedName": "setIsAppLockEnabled(isAppLockEnabled:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:So31CoreAuthenticatorAppSettingsDaoP0aB0E05setIsC11LockEnabled02ischI0ySb_tYaKF",
+            "mangledName": "$sSo31CoreAuthenticatorAppSettingsDaoP0aB0E05setIsC11LockEnabled02ischI0ySb_tYaKF",
+            "moduleName": "CoreAuthenticator",
+            "genericSig": "<τ_0_0 where τ_0_0 : CoreAuthenticator.AppSettingsDao>",
+            "sugared_genericSig": "<Self where Self : CoreAuthenticator.AppSettingsDao>",
+            "intro_Macosx": "10.15",
+            "intro_iOS": "13",
+            "intro_tvOS": "13",
+            "intro_watchOS": "6",
+            "declAttributes": [
+              "AccessControl",
+              "Available",
+              "Available",
+              "Available",
+              "Available"
+            ],
+            "isFromExtension": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setIsNotificationEnabled",
+            "printedName": "setIsNotificationEnabled(isNotificationEnabled:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:So31CoreAuthenticatorAppSettingsDaoP0aB0E24setIsNotificationEnabled02ishI0ySb_tYaKF",
+            "mangledName": "$sSo31CoreAuthenticatorAppSettingsDaoP0aB0E24setIsNotificationEnabled02ishI0ySb_tYaKF",
+            "moduleName": "CoreAuthenticator",
+            "genericSig": "<τ_0_0 where τ_0_0 : CoreAuthenticator.AppSettingsDao>",
+            "sugared_genericSig": "<Self where Self : CoreAuthenticator.AppSettingsDao>",
+            "intro_Macosx": "10.15",
+            "intro_iOS": "13",
+            "intro_tvOS": "13",
+            "intro_watchOS": "6",
+            "declAttributes": [
+              "AccessControl",
+              "Available",
+              "Available",
+              "Available",
+              "Available"
+            ],
+            "isFromExtension": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setTheme",
+            "printedName": "setTheme(theme:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Theme",
+                "printedName": "CoreAuthenticator.Theme",
+                "usr": "s:17CoreAuthenticator5ThemeO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:So31CoreAuthenticatorAppSettingsDaoP0aB0E8setTheme5themeyAC0G0O_tYaKF",
+            "mangledName": "$sSo31CoreAuthenticatorAppSettingsDaoP0aB0E8setTheme5themeyAC0G0O_tYaKF",
+            "moduleName": "CoreAuthenticator",
+            "genericSig": "<τ_0_0 where τ_0_0 : CoreAuthenticator.AppSettingsDao>",
+            "sugared_genericSig": "<Self where Self : CoreAuthenticator.AppSettingsDao>",
+            "intro_Macosx": "10.15",
+            "intro_iOS": "13",
+            "intro_tvOS": "13",
+            "intro_watchOS": "6",
+            "declAttributes": [
+              "AccessControl",
+              "Available",
+              "Available",
+              "Available",
+              "Available"
+            ],
+            "isFromExtension": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "c:objc(pl)CoreAuthenticatorAppSettingsDao",
+        "moduleName": "CoreAuthenticator",
+        "genericSig": "<τ_0_0 : AnyObject>",
+        "sugared_genericSig": "<Self : AnyObject>",
+        "objc_name": "CoreAuthenticatorAppSettingsDao",
+        "declAttributes": [
+          "ObjC",
+          "Dynamic"
+        ],
+        "isExternal": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
           }
         ]
       },
@@ -38926,697 +39729,6 @@
       },
       {
         "kind": "TypeDecl",
-        "name": "AccountsDao",
-        "printedName": "AccountsDao",
-        "children": [
-          {
-            "kind": "Function",
-            "name": "delete",
-            "printedName": "delete(id:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Int64",
-                "printedName": "Swift.Int64",
-                "usr": "s:s5Int64V"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:So28CoreAuthenticatorAccountsDaoP0aB0E6delete2idys5Int64V_tYaKF",
-            "mangledName": "$sSo28CoreAuthenticatorAccountsDaoP0aB0E6delete2idys5Int64V_tYaKF",
-            "moduleName": "CoreAuthenticator",
-            "genericSig": "<τ_0_0 where τ_0_0 : CoreAuthenticator.AccountsDao>",
-            "sugared_genericSig": "<Self where Self : CoreAuthenticator.AccountsDao>",
-            "intro_Macosx": "10.15",
-            "intro_iOS": "13",
-            "intro_tvOS": "13",
-            "intro_watchOS": "6",
-            "declAttributes": [
-              "AccessControl",
-              "Available",
-              "Available",
-              "Available",
-              "Available"
-            ],
-            "isFromExtension": true,
-            "throwing": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "insert",
-            "printedName": "insert(account:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "AccountEntity",
-                "printedName": "CoreAuthenticator.AccountEntity",
-                "usr": "c:objc(cs)CoreAuthenticatorAccountEntity"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:So28CoreAuthenticatorAccountsDaoP0aB0E6insert7accountySo0aB13AccountEntityC_tYaKF",
-            "mangledName": "$sSo28CoreAuthenticatorAccountsDaoP0aB0E6insert7accountySo0aB13AccountEntityC_tYaKF",
-            "moduleName": "CoreAuthenticator",
-            "genericSig": "<τ_0_0 where τ_0_0 : CoreAuthenticator.AccountsDao>",
-            "sugared_genericSig": "<Self where Self : CoreAuthenticator.AccountsDao>",
-            "intro_Macosx": "10.15",
-            "intro_iOS": "13",
-            "intro_tvOS": "13",
-            "intro_watchOS": "6",
-            "declAttributes": [
-              "AccessControl",
-              "Available",
-              "Available",
-              "Available",
-              "Available"
-            ],
-            "isFromExtension": true,
-            "throwing": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "upsert",
-            "printedName": "upsert(account:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "AccountEntity",
-                "printedName": "CoreAuthenticator.AccountEntity",
-                "usr": "c:objc(cs)CoreAuthenticatorAccountEntity"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:So28CoreAuthenticatorAccountsDaoP0aB0E6upsert7accountySo0aB13AccountEntityC_tYaKF",
-            "mangledName": "$sSo28CoreAuthenticatorAccountsDaoP0aB0E6upsert7accountySo0aB13AccountEntityC_tYaKF",
-            "moduleName": "CoreAuthenticator",
-            "genericSig": "<τ_0_0 where τ_0_0 : CoreAuthenticator.AccountsDao>",
-            "sugared_genericSig": "<Self where Self : CoreAuthenticator.AccountsDao>",
-            "intro_Macosx": "10.15",
-            "intro_iOS": "13",
-            "intro_tvOS": "13",
-            "intro_watchOS": "6",
-            "declAttributes": [
-              "AccessControl",
-              "Available",
-              "Available",
-              "Available",
-              "Available"
-            ],
-            "isFromExtension": true,
-            "throwing": true,
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Protocol",
-        "usr": "c:objc(pl)CoreAuthenticatorAccountsDao",
-        "moduleName": "CoreAuthenticator",
-        "genericSig": "<τ_0_0 : AnyObject>",
-        "sugared_genericSig": "<Self : AnyObject>",
-        "objc_name": "CoreAuthenticatorAccountsDao",
-        "declAttributes": [
-          "ObjC",
-          "Dynamic"
-        ],
-        "isExternal": true,
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          }
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "Room_runtimeRoomDatabase",
-        "printedName": "Room_runtimeRoomDatabase",
-        "children": [
-          {
-            "kind": "Function",
-            "name": "useConnection",
-            "printedName": "useConnection(isReadOnly:block:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Any?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ProtocolComposition",
-                    "printedName": "Any"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "KotlinSuspendFunction1",
-                "printedName": "any CoreAuthenticator.KotlinSuspendFunction1",
-                "usr": "c:objc(pl)CoreAuthenticatorKotlinSuspendFunction1"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:So029CoreAuthenticatorRoom_runtimeC8DatabaseC0aB0E13useConnection10isReadOnly5blockypSgSb_So0aB22KotlinSuspendFunction1_ptYaKF",
-            "mangledName": "$sSo029CoreAuthenticatorRoom_runtimeC8DatabaseC0aB0E13useConnection10isReadOnly5blockypSgSb_So0aB22KotlinSuspendFunction1_ptYaKF",
-            "moduleName": "CoreAuthenticator",
-            "intro_Macosx": "10.15",
-            "intro_iOS": "13",
-            "intro_tvOS": "13",
-            "intro_watchOS": "6",
-            "declAttributes": [
-              "AccessControl",
-              "Available",
-              "Available",
-              "Available",
-              "Available"
-            ],
-            "isFromExtension": true,
-            "throwing": true,
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Class",
-        "usr": "c:objc(cs)CoreAuthenticatorRoom_runtimeRoomDatabase",
-        "moduleName": "CoreAuthenticator",
-        "isOpen": true,
-        "objc_name": "CoreAuthenticatorRoom_runtimeRoomDatabase",
-        "declAttributes": [
-          "ObjC",
-          "Dynamic"
-        ],
-        "superclassUsr": "c:objc(cs)CoreAuthenticatorBase",
-        "isExternal": true,
-        "inheritsConvenienceInitializers": true,
-        "superclassNames": [
-          "CoreAuthenticator.KotlinBase",
-          "ObjectiveC.NSObject"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObservingPublishing",
-            "printedName": "_KeyValueCodingAndObservingPublishing",
-            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
-            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomStringConvertible",
-            "printedName": "CustomStringConvertible",
-            "usr": "s:s23CustomStringConvertibleP",
-            "mangledName": "$ss23CustomStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
-          }
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "KotlinSuspendFunction1",
-        "printedName": "KotlinSuspendFunction1",
-        "children": [
-          {
-            "kind": "Function",
-            "name": "invoke",
-            "printedName": "invoke(p1:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Any?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ProtocolComposition",
-                    "printedName": "Any"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Any?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ProtocolComposition",
-                    "printedName": "Any"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:So39CoreAuthenticatorKotlinSuspendFunction1P0aB0E6invoke2p1ypSgAF_tYaKF",
-            "mangledName": "$sSo39CoreAuthenticatorKotlinSuspendFunction1P0aB0E6invoke2p1ypSgAF_tYaKF",
-            "moduleName": "CoreAuthenticator",
-            "genericSig": "<τ_0_0 where τ_0_0 : CoreAuthenticator.KotlinSuspendFunction1>",
-            "sugared_genericSig": "<Self where Self : CoreAuthenticator.KotlinSuspendFunction1>",
-            "intro_Macosx": "10.15",
-            "intro_iOS": "13",
-            "intro_tvOS": "13",
-            "intro_watchOS": "6",
-            "declAttributes": [
-              "AccessControl",
-              "Available",
-              "Available",
-              "Available",
-              "Available"
-            ],
-            "isFromExtension": true,
-            "throwing": true,
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Protocol",
-        "usr": "c:objc(pl)CoreAuthenticatorKotlinSuspendFunction1",
-        "moduleName": "CoreAuthenticator",
-        "genericSig": "<τ_0_0 : CoreAuthenticator.KotlinFunction>",
-        "sugared_genericSig": "<Self : CoreAuthenticator.KotlinFunction>",
-        "objc_name": "CoreAuthenticatorKotlinSuspendFunction1",
-        "declAttributes": [
-          "ObjC",
-          "Dynamic"
-        ],
-        "isExternal": true,
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          }
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "Room_runtimeInvalidationTracker",
-        "printedName": "Room_runtimeInvalidationTracker",
-        "children": [
-          {
-            "kind": "Function",
-            "name": "refresh",
-            "printedName": "refresh(tables:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "KotlinBoolean",
-                "printedName": "CoreAuthenticator.KotlinBoolean",
-                "usr": "c:objc(cs)CoreAuthenticatorBoolean"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "KotlinArray",
-                "printedName": "CoreAuthenticator.KotlinArray<Foundation.NSString>",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "NSString",
-                    "printedName": "Foundation.NSString",
-                    "usr": "c:objc(cs)NSString"
-                  }
-                ],
-                "usr": "c:objc(cs)CoreAuthenticatorKotlinArray"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:So48CoreAuthenticatorRoom_runtimeInvalidationTrackerC0aB0E7refresh6tablesSo0aB7BooleanCSo0aB11KotlinArrayCySo8NSStringCG_tYaKF",
-            "mangledName": "$sSo48CoreAuthenticatorRoom_runtimeInvalidationTrackerC0aB0E7refresh6tablesSo0aB7BooleanCSo0aB11KotlinArrayCySo8NSStringCG_tYaKF",
-            "moduleName": "CoreAuthenticator",
-            "intro_Macosx": "10.15",
-            "intro_iOS": "13",
-            "intro_tvOS": "13",
-            "intro_watchOS": "6",
-            "declAttributes": [
-              "AccessControl",
-              "Available",
-              "Available",
-              "Available",
-              "Available"
-            ],
-            "isFromExtension": true,
-            "throwing": true,
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Class",
-        "usr": "c:objc(cs)CoreAuthenticatorRoom_runtimeInvalidationTracker",
-        "moduleName": "CoreAuthenticator",
-        "objc_name": "CoreAuthenticatorRoom_runtimeInvalidationTracker",
-        "declAttributes": [
-          "ObjC",
-          "Dynamic"
-        ],
-        "superclassUsr": "c:objc(cs)CoreAuthenticatorBase",
-        "isExternal": true,
-        "inheritsConvenienceInitializers": true,
-        "superclassNames": [
-          "CoreAuthenticator.KotlinBase",
-          "ObjectiveC.NSObject"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObservingPublishing",
-            "printedName": "_KeyValueCodingAndObservingPublishing",
-            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
-            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomStringConvertible",
-            "printedName": "CustomStringConvertible",
-            "usr": "s:s23CustomStringConvertibleP",
-            "mangledName": "$ss23CustomStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
-          }
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "AppSettingsDao",
-        "printedName": "AppSettingsDao",
-        "children": [
-          {
-            "kind": "Function",
-            "name": "save",
-            "printedName": "save(item:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "AppSettingsEntity",
-                "printedName": "CoreAuthenticator.AppSettingsEntity",
-                "usr": "c:objc(cs)CoreAuthenticatorAppSettingsEntity"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:So31CoreAuthenticatorAppSettingsDaoP0aB0E4save4itemySo0abcD6EntityC_tYaKF",
-            "mangledName": "$sSo31CoreAuthenticatorAppSettingsDaoP0aB0E4save4itemySo0abcD6EntityC_tYaKF",
-            "moduleName": "CoreAuthenticator",
-            "genericSig": "<τ_0_0 where τ_0_0 : CoreAuthenticator.AppSettingsDao>",
-            "sugared_genericSig": "<Self where Self : CoreAuthenticator.AppSettingsDao>",
-            "intro_Macosx": "10.15",
-            "intro_iOS": "13",
-            "intro_tvOS": "13",
-            "intro_watchOS": "6",
-            "declAttributes": [
-              "AccessControl",
-              "Available",
-              "Available",
-              "Available",
-              "Available"
-            ],
-            "isFromExtension": true,
-            "throwing": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "setIsAppLockEnabled",
-            "printedName": "setIsAppLockEnabled(isAppLockEnabled:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:So31CoreAuthenticatorAppSettingsDaoP0aB0E05setIsC11LockEnabled02ischI0ySb_tYaKF",
-            "mangledName": "$sSo31CoreAuthenticatorAppSettingsDaoP0aB0E05setIsC11LockEnabled02ischI0ySb_tYaKF",
-            "moduleName": "CoreAuthenticator",
-            "genericSig": "<τ_0_0 where τ_0_0 : CoreAuthenticator.AppSettingsDao>",
-            "sugared_genericSig": "<Self where Self : CoreAuthenticator.AppSettingsDao>",
-            "intro_Macosx": "10.15",
-            "intro_iOS": "13",
-            "intro_tvOS": "13",
-            "intro_watchOS": "6",
-            "declAttributes": [
-              "AccessControl",
-              "Available",
-              "Available",
-              "Available",
-              "Available"
-            ],
-            "isFromExtension": true,
-            "throwing": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "setIsNotificationEnabled",
-            "printedName": "setIsNotificationEnabled(isNotificationEnabled:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:So31CoreAuthenticatorAppSettingsDaoP0aB0E24setIsNotificationEnabled02ishI0ySb_tYaKF",
-            "mangledName": "$sSo31CoreAuthenticatorAppSettingsDaoP0aB0E24setIsNotificationEnabled02ishI0ySb_tYaKF",
-            "moduleName": "CoreAuthenticator",
-            "genericSig": "<τ_0_0 where τ_0_0 : CoreAuthenticator.AppSettingsDao>",
-            "sugared_genericSig": "<Self where Self : CoreAuthenticator.AppSettingsDao>",
-            "intro_Macosx": "10.15",
-            "intro_iOS": "13",
-            "intro_tvOS": "13",
-            "intro_watchOS": "6",
-            "declAttributes": [
-              "AccessControl",
-              "Available",
-              "Available",
-              "Available",
-              "Available"
-            ],
-            "isFromExtension": true,
-            "throwing": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "setTheme",
-            "printedName": "setTheme(theme:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Theme",
-                "printedName": "CoreAuthenticator.Theme",
-                "usr": "s:17CoreAuthenticator5ThemeO"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:So31CoreAuthenticatorAppSettingsDaoP0aB0E8setTheme5themeyAC0G0O_tYaKF",
-            "mangledName": "$sSo31CoreAuthenticatorAppSettingsDaoP0aB0E8setTheme5themeyAC0G0O_tYaKF",
-            "moduleName": "CoreAuthenticator",
-            "genericSig": "<τ_0_0 where τ_0_0 : CoreAuthenticator.AppSettingsDao>",
-            "sugared_genericSig": "<Self where Self : CoreAuthenticator.AppSettingsDao>",
-            "intro_Macosx": "10.15",
-            "intro_iOS": "13",
-            "intro_tvOS": "13",
-            "intro_watchOS": "6",
-            "declAttributes": [
-              "AccessControl",
-              "Available",
-              "Available",
-              "Available",
-              "Available"
-            ],
-            "isFromExtension": true,
-            "throwing": true,
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Protocol",
-        "usr": "c:objc(pl)CoreAuthenticatorAppSettingsDao",
-        "moduleName": "CoreAuthenticator",
-        "genericSig": "<τ_0_0 : AnyObject>",
-        "sugared_genericSig": "<Self : AnyObject>",
-        "objc_name": "CoreAuthenticatorAppSettingsDao",
-        "declAttributes": [
-          "ObjC",
-          "Dynamic"
-        ],
-        "isExternal": true,
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          }
-        ]
-      },
-      {
-        "kind": "TypeDecl",
         "name": "Ktor_client_coreHttpClientEngine",
         "printedName": "Ktor_client_coreHttpClientEngine",
         "children": [
@@ -39732,106 +39844,6 @@
         "genericSig": "<τ_0_0 : CoreAuthenticator.KotlinCoroutineContextElement>",
         "sugared_genericSig": "<Self : CoreAuthenticator.KotlinCoroutineContextElement>",
         "objc_name": "CoreAuthenticatorKotlinx_coroutines_coreJob",
-        "declAttributes": [
-          "ObjC",
-          "Dynamic"
-        ],
-        "isExternal": true,
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          }
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "KotlinSuspendFunction2",
-        "printedName": "KotlinSuspendFunction2",
-        "children": [
-          {
-            "kind": "Function",
-            "name": "invoke",
-            "printedName": "invoke(p1:p2:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Any?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ProtocolComposition",
-                    "printedName": "Any"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Any?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ProtocolComposition",
-                    "printedName": "Any"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Any?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ProtocolComposition",
-                    "printedName": "Any"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:So39CoreAuthenticatorKotlinSuspendFunction2P0aB0E6invoke2p12p2ypSgAG_AGtYaKF",
-            "mangledName": "$sSo39CoreAuthenticatorKotlinSuspendFunction2P0aB0E6invoke2p12p2ypSgAG_AGtYaKF",
-            "moduleName": "CoreAuthenticator",
-            "genericSig": "<τ_0_0 where τ_0_0 : CoreAuthenticator.KotlinSuspendFunction2>",
-            "sugared_genericSig": "<Self where Self : CoreAuthenticator.KotlinSuspendFunction2>",
-            "intro_Macosx": "10.15",
-            "intro_iOS": "13",
-            "intro_tvOS": "13",
-            "intro_watchOS": "6",
-            "declAttributes": [
-              "AccessControl",
-              "Available",
-              "Available",
-              "Available",
-              "Available"
-            ],
-            "isFromExtension": true,
-            "throwing": true,
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Protocol",
-        "usr": "c:objc(pl)CoreAuthenticatorKotlinSuspendFunction2",
-        "moduleName": "CoreAuthenticator",
-        "genericSig": "<τ_0_0 : CoreAuthenticator.KotlinFunction>",
-        "sugared_genericSig": "<Self : CoreAuthenticator.KotlinFunction>",
-        "objc_name": "CoreAuthenticatorKotlinSuspendFunction2",
         "declAttributes": [
           "ObjC",
           "Dynamic"
@@ -40223,6 +40235,50 @@
             "declKind": "Func",
             "usr": "s:So35CoreAuthenticatorAccountsRepositoryC0aB0E13upsertAccount7accountySo0abF6EntityC_tYaKF",
             "mangledName": "$sSo35CoreAuthenticatorAccountsRepositoryC0aB0E13upsertAccount7accountySo0abF6EntityC_tYaKF",
+            "moduleName": "CoreAuthenticator",
+            "intro_Macosx": "10.15",
+            "intro_iOS": "13",
+            "intro_tvOS": "13",
+            "intro_watchOS": "6",
+            "declAttributes": [
+              "AccessControl",
+              "Available",
+              "Available",
+              "Available",
+              "Available"
+            ],
+            "isFromExtension": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "upsertAccounts",
+            "printedName": "upsertAccounts(accounts:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[CoreAuthenticator.AccountEntity]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AccountEntity",
+                    "printedName": "CoreAuthenticator.AccountEntity",
+                    "usr": "c:objc(cs)CoreAuthenticatorAccountEntity"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:So35CoreAuthenticatorAccountsRepositoryC0aB0E06upsertC08accountsySaySo0aB13AccountEntityCG_tYaKF",
+            "mangledName": "$sSo35CoreAuthenticatorAccountsRepositoryC0aB0E06upsertC08accountsySaySo0aB13AccountEntityCG_tYaKF",
             "moduleName": "CoreAuthenticator",
             "intro_Macosx": "10.15",
             "intro_iOS": "13",
@@ -40997,116 +41053,6 @@
       },
       {
         "kind": "TypeDecl",
-        "name": "__ApiResponseStatus",
-        "printedName": "__ApiResponseStatus",
-        "children": [
-          {
-            "kind": "Function",
-            "name": "toSwiftEnum",
-            "printedName": "toSwiftEnum()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "ApiResponseStatus",
-                "printedName": "CoreAuthenticator.ApiResponseStatus",
-                "usr": "s:17CoreAuthenticator17ApiResponseStatusO"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:So34CoreAuthenticatorApiResponseStatusC0aB0E11toSwiftEnumAC0cdE0OyF",
-            "mangledName": "$sSo34CoreAuthenticatorApiResponseStatusC0aB0E11toSwiftEnumAC0cdE0OyF",
-            "moduleName": "CoreAuthenticator",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Class",
-        "usr": "c:objc(cs)CoreAuthenticatorApiResponseStatus",
-        "moduleName": "CoreAuthenticator",
-        "objc_name": "CoreAuthenticatorApiResponseStatus",
-        "declAttributes": [
-          "ObjC",
-          "Dynamic"
-        ],
-        "superclassUsr": "c:objc(cs)CoreAuthenticatorKotlinEnum",
-        "isExternal": true,
-        "inheritsConvenienceInitializers": true,
-        "superclassNames": [
-          "CoreAuthenticator.KotlinEnum<CoreAuthenticator.__ApiResponseStatus>",
-          "CoreAuthenticator.KotlinBase",
-          "ObjectiveC.NSObject"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObservingPublishing",
-            "printedName": "_KeyValueCodingAndObservingPublishing",
-            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
-            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomStringConvertible",
-            "printedName": "CustomStringConvertible",
-            "usr": "s:s23CustomStringConvertibleP",
-            "mangledName": "$ss23CustomStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
-          }
-        ]
-      },
-      {
-        "kind": "TypeDecl",
         "name": "__CrashReportLevel",
         "printedName": "__CrashReportLevel",
         "children": [
@@ -41327,8 +41273,8 @@
       },
       {
         "kind": "TypeDecl",
-        "name": "__StatusEntity",
-        "printedName": "__StatusEntity",
+        "name": "__Status",
+        "printedName": "__Status",
         "children": [
           {
             "kind": "Function",
@@ -41337,14 +41283,14 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "StatusEntity",
-                "printedName": "CoreAuthenticator.StatusEntity",
-                "usr": "s:17CoreAuthenticator12StatusEntityO"
+                "name": "__Bridge__AccountEntity_Status",
+                "printedName": "CoreAuthenticator.__Bridge__AccountEntity_Status",
+                "usr": "s:17CoreAuthenticator30__Bridge__AccountEntity_StatusO"
               }
             ],
             "declKind": "Func",
-            "usr": "s:So29CoreAuthenticatorStatusEntityC0aB0E11toSwiftEnumAC0cD0OyF",
-            "mangledName": "$sSo29CoreAuthenticatorStatusEntityC0aB0E11toSwiftEnumAC0cD0OyF",
+            "usr": "s:So36CoreAuthenticatorAccountEntityStatusC0aB0E11toSwiftEnumAC010__Bridge__cd1_E0OyF",
+            "mangledName": "$sSo36CoreAuthenticatorAccountEntityStatusC0aB0E11toSwiftEnumAC010__Bridge__cd1_E0OyF",
             "moduleName": "CoreAuthenticator",
             "declAttributes": [
               "AccessControl"
@@ -41354,18 +41300,19 @@
           }
         ],
         "declKind": "Class",
-        "usr": "c:objc(cs)CoreAuthenticatorStatusEntity",
+        "usr": "c:objc(cs)CoreAuthenticatorAccountEntityStatus",
         "moduleName": "CoreAuthenticator",
-        "objc_name": "CoreAuthenticatorStatusEntity",
+        "objc_name": "CoreAuthenticatorAccountEntityStatus",
         "declAttributes": [
           "ObjC",
           "Dynamic"
         ],
+        "isFromExtension": true,
         "superclassUsr": "c:objc(cs)CoreAuthenticatorKotlinEnum",
         "isExternal": true,
         "inheritsConvenienceInitializers": true,
         "superclassNames": [
-          "CoreAuthenticator.KotlinEnum<CoreAuthenticator.__StatusEntity>",
+          "CoreAuthenticator.KotlinEnum<CoreAuthenticator.AccountEntity.__Status>",
           "CoreAuthenticator.KotlinBase",
           "ObjectiveC.NSObject"
         ],
@@ -41916,6 +41863,116 @@
         "inheritsConvenienceInitializers": true,
         "superclassNames": [
           "CoreAuthenticator.KotlinEnum<CoreAuthenticator.__MatomoScreen>",
+          "CoreAuthenticator.KotlinBase",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "__ApiResponseStatus",
+        "printedName": "__ApiResponseStatus",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "toSwiftEnum",
+            "printedName": "toSwiftEnum()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ApiResponseStatus",
+                "printedName": "CoreAuthenticator.ApiResponseStatus",
+                "usr": "s:17CoreAuthenticator17ApiResponseStatusO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:So34CoreAuthenticatorApiResponseStatusC0aB0E11toSwiftEnumAC0cdE0OyF",
+            "mangledName": "$sSo34CoreAuthenticatorApiResponseStatusC0aB0E11toSwiftEnumAC0cdE0OyF",
+            "moduleName": "CoreAuthenticator",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:objc(cs)CoreAuthenticatorApiResponseStatus",
+        "moduleName": "CoreAuthenticator",
+        "objc_name": "CoreAuthenticatorApiResponseStatus",
+        "declAttributes": [
+          "ObjC",
+          "Dynamic"
+        ],
+        "superclassUsr": "c:objc(cs)CoreAuthenticatorKotlinEnum",
+        "isExternal": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "CoreAuthenticator.KotlinEnum<CoreAuthenticator.__ApiResponseStatus>",
           "CoreAuthenticator.KotlinBase",
           "ObjectiveC.NSObject"
         ],
