@@ -23,7 +23,7 @@
 "accountNotConnectedWarningTitle" = "Inicie sesión de nuevo para proteger su cuenta.";
 
 /* loco:6971f70a9cc4bfa2380b3456 */
-"accountPartiallyProtectedDescription" = "Actualiza tus configuraciones de seguridad para proteger tu cuenta";
+"accountPartiallyProtectedDescription" = "Actualiza tus configuraciones de seguridad para proteger tu cuenta.";
 
 /* loco:6971f124ef49edbd82004c02 */
 "accountPartiallyProtectedTitle" = "Cuenta parcialmente protegida";
