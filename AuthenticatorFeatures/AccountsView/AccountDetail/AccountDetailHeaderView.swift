@@ -43,7 +43,7 @@ struct AccountDetailHeaderView: View {
             }
             .padding(.vertical, value: .medium)
             .padding(.horizontal, value: .large)
-            .background(Color.Token.Surface.secondary.clipShape(roundedRectangle))
+            .background(Color.Token.Surface.secondary, in: roundedRectangle)
             .overlay {
                 roundedRectangle
                     .stroke(Color.Token.Surface.tertiary, lineWidth: 1)
