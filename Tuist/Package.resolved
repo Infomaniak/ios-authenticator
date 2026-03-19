@@ -1,5 +1,5 @@
 {
-  "originHash" : "e57e7bb5e83594698e330aa33f5f977c5619f24393b9f61ae3fe43af122fe765",
+  "originHash" : "d155459438c97762e7e3f01c3950f21213cc5c8555bfbd2e3a7ece9e076d52e9",
   "pins" : [
     {
       "identity" : "alamofire",
@@ -170,6 +170,15 @@
       "state" : {
         "revision" : "2842e6e84e82eb9a8dac0100ca90d9444b0307f4",
         "version" : "5.7.1"
+      }
+    },
+    {
+      "identity" : "swift-concurrency",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Infomaniak/swift-concurrency",
+      "state" : {
+        "revision" : "97ae7c9b998a43812d3f57ae106cb447a853bf3b",
+        "version" : "1.0.0"
       }
     },
     {

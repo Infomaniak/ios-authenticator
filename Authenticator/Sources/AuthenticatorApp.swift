@@ -29,6 +29,8 @@ struct AuthenticatorApp: App {
     // periphery:ignore - Making sure the DI is registered at a very early stage of the app launch.
     private let dependencyInjectionHook = TargetAssembly()
 
+    @UIApplicationDelegateAdaptor private var appDelegateAdaptor: AppDelegate
+
     @StateObject private var rootViewState = RootViewState()
 
     var body: some Scene {

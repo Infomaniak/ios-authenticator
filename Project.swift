@@ -46,7 +46,9 @@ let mainView = Feature(
         settingsView,
         accountsView,
         TargetDependency.target(name: "\(Constants.projectName)Resources"),
+        TargetDependency.external(name: "InAppTwoFactorAuthentication"),
         TargetDependency.external(name: "InfomaniakCoreUIResources"),
+        TargetDependency.external(name: "InfomaniakConcurrency"),
         TargetDependency.external(name: "VersionChecker")
     ]
 )
@@ -109,6 +111,9 @@ let project = Project(
                 .target(name: "\(Constants.projectName)Core"),
                 .target(name: "\(Constants.projectName)CoreUI"),
                 .target(name: "\(Constants.projectName)Resources"),
+                .external(name: "InfomaniakCore"),
+                .external(name: "InfomaniakDI"),
+                .external(name: "InfomaniakNotifications"),
                 rootView.asDependency
             ],
             settings: .settings(base: Constants.baseSettings),
@@ -127,6 +132,7 @@ let project = Project(
                     .target(name: "\(Constants.projectName)Resources"),
                     .xcframework(path: "./Debug-Frameworks/CoreAuthenticator.xcframework"),
                     .external(name: "DesignSystem"),
+                    .external(name: "InfomaniakConcurrency"),
                     .external(name: "InfomaniakCoreCommonUI"),
                     .external(name: "InfomaniakCoreSwiftUI"),
                     .external(name: "InfomaniakCoreUIKit"),
@@ -135,7 +141,7 @@ let project = Project(
                     .external(name: "Sentry-Dynamic"),
                     .external(name: "InterAppLogin"),
                     .external(name: "DeviceAssociation"),
-//                    .external(name: "InAppTwoFactorAuthentication"),
+                    .external(name: "InAppTwoFactorAuthentication"),
                     .external(name: "InfomaniakNotifications")
                 ],
                 settings: .settings(base: Constants.baseSettings)),

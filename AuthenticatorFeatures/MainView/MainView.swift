@@ -17,9 +17,14 @@
  */
 
 import AuthenticatorAccountsView
+import AuthenticatorCore
 import AuthenticatorCoreUI
 import AuthenticatorResources
 import AuthenticatorSettingsView
+@preconcurrency import InAppTwoFactorAuthentication
+import InfomaniakConcurrency
+@preconcurrency import InfomaniakCore
+import InfomaniakDI
 import SwiftUI
 
 public struct MainView: View {
@@ -37,6 +42,32 @@ public struct MainView: View {
                     AuthenticatorLabel(\.settingsTitle, iconKey: \.gear)
                 }
         }
+        .sceneLifecycle(willEnterForeground: willEnterForeground)
+    }
+
+    private func willEnterForeground() {
+        Task {
+            await checkTwoFAChallenges()
+        }
+    }
+
+    private func checkTwoFAChallenges() async {
+        @InjectService var accountManager: AccountManager
+        @InjectService var tokenStore: TokenStore
+
+        let tokens = tokenStore.getAllTokens()
+        let sessions: [InAppTwoFactorAuthenticationSession] = await tokens.values.asyncCompactMap { account in
+            guard let user = await accountManager.userProfileStore.getUserProfile(id: account.userId) else {
+                return nil
+            }
+
+            let apiFetcher = await accountManager.getApiFetcher(token: account.apiToken)
+
+            return InAppTwoFactorAuthenticationSession(user: user, apiFetcher: apiFetcher)
+        }
+
+        @InjectService var inAppTwoFactorAuthenticationManager: InAppTwoFactorAuthenticationManagerable
+        inAppTwoFactorAuthenticationManager.checkConnectionAttempts(using: sessions)
     }
 }
 
