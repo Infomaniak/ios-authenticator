@@ -28,7 +28,7 @@ struct SupportInfoView: View {
 
     var body: some View {
         HStack(spacing: IKPadding.small) {
-            AuthenticatorLabel(\.openSupportStatus, iconKey: \.circleFill, iconColor: .Token.Status.valid)
+            AuthenticatorLabel(\.openSupportStatus, iconKey: \.circleFill, iconColor: .Token.StatusColors.valid.foreground)
 
             AuthenticatorLabel(
                 AuthenticatorResourcesStrings.daysSupportAvailability(1, 1), // TODO: Get days by API

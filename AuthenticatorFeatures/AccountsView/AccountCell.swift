@@ -30,7 +30,7 @@ struct AccountCell: View {
                 .frame(maxWidth: .infinity, alignment: .leading)
 
             account.status.icon
-                .foregroundStyle(account.status.color)
+                .foregroundStyle(account.status.color.foreground)
         }
     }
 }
