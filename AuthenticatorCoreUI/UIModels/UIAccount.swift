@@ -56,7 +56,7 @@ public struct UIAccount: Identifiable, Hashable, Sendable {
             case .protected:
                 AuthenticatorResourcesAsset.Images.shieldCheck.swiftUIImage
             case .partiallyProtected:
-                AuthenticatorResourcesAsset.Images.shieldWarning.swiftUIImage
+                AuthenticatorResourcesAsset.Images.shieldExclamationmark.swiftUIImage
             case .loggedOut:
                 AuthenticatorResourcesAsset.Images.circleCross.swiftUIImage
             }
