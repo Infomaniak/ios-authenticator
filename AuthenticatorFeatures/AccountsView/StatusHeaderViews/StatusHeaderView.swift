@@ -67,9 +67,9 @@ struct StatusHeaderView: View {
         var icon: Image {
             switch self {
             case .warningList, .warningAccount:
-                AuthenticatorResourcesAsset.Images.circleWarning.swiftUIImage
+                AuthenticatorResourcesAsset.Images.circleExclamationmark.swiftUIImage
             case .errorAccount:
-                AuthenticatorResourcesAsset.Images.triangleWarning.swiftUIImage
+                AuthenticatorResourcesAsset.Images.triangleExclamationmark.swiftUIImage
             }
         }
 

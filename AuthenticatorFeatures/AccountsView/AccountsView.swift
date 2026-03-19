@@ -28,14 +28,14 @@ public struct AccountsView: View {
     public init() {}
 
     private var shouldDisplayWarning: Bool {
-        !mainViewState.accountsManager.accounts.allSatisfy { $0.status == .protected }
+        !mainViewState.accounts.allSatisfy { $0.status == .protected }
     }
 
     public var body: some View {
         NavigationStack {
             List {
                 Section {
-                    ForEach(mainViewState.accountsManager.accounts) { account in
+                    ForEach(mainViewState.accounts) { account in
                         AccountsListCell(account: account)
                     }
                 } header: {
