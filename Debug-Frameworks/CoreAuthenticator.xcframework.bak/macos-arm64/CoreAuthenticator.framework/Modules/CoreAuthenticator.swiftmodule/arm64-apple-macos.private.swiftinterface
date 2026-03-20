@@ -1,0 +1,1862 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.2.4 effective-5.10 (swiftlang-6.2.4.1.4 clang-1700.6.4.2)
+// swift-module-flags: -target arm64-apple-macos11.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -O -module-name CoreAuthenticator
+// swift-module-flags-ignorable:  -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.4
+@_exported import CoreAuthenticator
+import Foundation
+import Swift
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+public enum Skie {
+  public enum RuntimeKotlin {
+    public enum SkieColdFlowIterator {
+      public typealias __Kotlin = CoreAuthenticator.SkieColdFlowIterator
+    }
+    public enum SkieKotlinFlow {
+      public typealias __Kotlin = CoreAuthenticator.SkieKotlinFlow
+    }
+    public enum SkieKotlinMutableSharedFlow {
+      public typealias __Kotlin = CoreAuthenticator.SkieKotlinMutableSharedFlow
+    }
+    public enum SkieKotlinMutableStateFlow {
+      public typealias __Kotlin = CoreAuthenticator.SkieKotlinMutableStateFlow
+    }
+    public enum SkieKotlinOptionalFlow {
+      public typealias __Kotlin = CoreAuthenticator.SkieKotlinOptionalFlow
+    }
+    public enum SkieKotlinOptionalMutableSharedFlow {
+      public typealias __Kotlin = CoreAuthenticator.SkieKotlinOptionalMutableSharedFlow
+    }
+    public enum SkieKotlinOptionalMutableStateFlow {
+      public typealias __Kotlin = CoreAuthenticator.SkieKotlinOptionalMutableStateFlow
+    }
+    public enum SkieKotlinOptionalSharedFlow {
+      public typealias __Kotlin = CoreAuthenticator.SkieKotlinOptionalSharedFlow
+    }
+    public enum SkieKotlinOptionalStateFlow {
+      public typealias __Kotlin = CoreAuthenticator.SkieKotlinOptionalStateFlow
+    }
+    public enum SkieKotlinSharedFlow {
+      public typealias __Kotlin = CoreAuthenticator.SkieKotlinSharedFlow
+    }
+    public enum SkieKotlinStateFlow {
+      public typealias __Kotlin = CoreAuthenticator.SkieKotlinStateFlow
+    }
+    public enum Skie_CancellationHandler {
+      public typealias __Kotlin = CoreAuthenticator.Skie_CancellationHandler
+    }
+    public enum Skie_DispatcherDelegate {
+      public typealias __Kotlin = CoreAuthenticator.Skie_DispatcherDelegate
+    }
+    public enum Skie_SuspendHandler {
+      public typealias __Kotlin = CoreAuthenticator.Skie_SuspendHandler
+    }
+    public enum Skie_SuspendResult {
+      public typealias __Kotlin = CoreAuthenticator.Skie_SuspendResult
+      public enum Success {
+        public typealias __Kotlin = CoreAuthenticator.Skie_SuspendResult.Success
+      }
+      public enum Error {
+        public typealias __Kotlin = CoreAuthenticator.Skie_SuspendResult.Error
+      }
+      public enum Canceled {
+        public typealias __Kotlin = CoreAuthenticator.Skie_SuspendResult.Canceled
+      }
+    }
+  }
+  public typealias co_touchlab_skie__runtime_kotlin = CoreAuthenticator.Skie.RuntimeKotlin
+  public enum KotlinxCoroutinesCore {
+    public enum Flow {
+      public typealias __Kotlin = CoreAuthenticator.Kotlinx_coroutines_coreFlow
+    }
+    public enum StateFlow {
+      public typealias __Kotlin = CoreAuthenticator.Kotlinx_coroutines_coreStateFlow
+    }
+    public enum SharedFlow {
+      public typealias __Kotlin = CoreAuthenticator.Kotlinx_coroutines_coreSharedFlow
+    }
+    public enum MutableSharedFlow {
+      public typealias __Kotlin = CoreAuthenticator.Kotlinx_coroutines_coreMutableSharedFlow
+    }
+    public enum MutableStateFlow {
+      public typealias __Kotlin = CoreAuthenticator.Kotlinx_coroutines_coreMutableStateFlow
+    }
+    public enum Runnable {
+      public typealias __Kotlin = CoreAuthenticator.Kotlinx_coroutines_coreRunnable
+    }
+    public enum SelectClause0 {
+    }
+    public enum SelectClause {
+    }
+    public enum SelectInstance {
+    }
+    public enum SelectClause1 {
+    }
+    public enum SelectClause2 {
+    }
+  }
+  public typealias org_jetbrains_kotlinx__kotlinx_coroutines_core = CoreAuthenticator.Skie.KotlinxCoroutinesCore
+  public enum KtorUtils {
+    public enum Pipeline {
+    }
+  }
+  public typealias io_ktor__ktor_utils = CoreAuthenticator.Skie.KtorUtils
+  public enum MultiplatformLib {
+    public enum Account {
+      public enum Status {
+      }
+    }
+    public enum NotConnectedAction {
+      public enum Issue {
+      }
+    }
+    public enum AppStatus {
+      public enum LoginRequired {
+      }
+    }
+    public enum ApiEnvironment {
+    }
+    public enum Failure {
+      public enum KeyManagement {
+      }
+    }
+    public enum ApiException {
+    }
+  }
+  public typealias Authenticator__multiplatform_lib = CoreAuthenticator.Skie.MultiplatformLib
+  public enum KotlinxSerializationCore {
+    public enum SerialKind {
+    }
+    public enum SerializersModule {
+    }
+    public enum PolymorphicKind {
+    }
+    public enum PrimitiveKind {
+    }
+    public enum StructureKind {
+    }
+  }
+  public typealias org_jetbrains_kotlinx__kotlinx_serialization_core = CoreAuthenticator.Skie.KotlinxSerializationCore
+  public enum KtorHttp {
+    public enum OutgoingContent {
+    }
+  }
+  public typealias io_ktor__ktor_http = CoreAuthenticator.Skie.KtorHttp
+  public enum KotlinxIoCore {
+    public enum Source {
+    }
+    public enum Sink {
+    }
+  }
+  public typealias org_jetbrains_kotlinx__kotlinx_io_core = CoreAuthenticator.Skie.KotlinxIoCore
+}
+@_hasMissingDesignatedInitializers public class SkieSwiftFlowIterator<T> : _Concurrency.AsyncIteratorProtocol {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func next() async -> T?
+  #endif
+  @objc deinit
+  public typealias Element = T
+  @available(iOS 18.0, tvOS 18.0, watchOS 11.0, visionOS 2.0, macOS 15.0, *)
+  @_implements(_Concurrency.AsyncIteratorProtocol, Failure) public typealias __AsyncIteratorProtocol_Failure = Swift.Never
+}
+public protocol SkieSwiftFlowProtocol<Element> : _Concurrency.AsyncSequence {
+  associatedtype Element
+  associatedtype Delegate : CoreAuthenticator.Kotlinx_coroutines_coreFlow
+  @_spi(SKIE) var delegate: Self.Delegate { get }
+}
+@_hasMissingDesignatedInitializers final public class SkieSwiftFlow<T> : CoreAuthenticator.SkieSwiftFlowProtocol, Swift._ObjectiveCBridgeable {
+  @_spi(SKIE) final public let delegate: any CoreAuthenticator.Kotlinx_coroutines_coreFlow
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _forceBridgeFromObjectiveC(_ source: CoreAuthenticator.SkieKotlinFlow<Swift.AnyObject>, result: inout CoreAuthenticator.SkieSwiftFlow<T>?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _conditionallyBridgeFromObjectiveC(_ source: CoreAuthenticator.SkieKotlinFlow<Swift.AnyObject>, result: inout CoreAuthenticator.SkieSwiftFlow<T>?) -> Swift.Bool
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: CoreAuthenticator.SkieKotlinFlow<Swift.AnyObject>?) -> Self
+  #endif
+  final public func _bridgeToObjectiveC() -> CoreAuthenticator.SkieKotlinFlow<Swift.AnyObject>
+  final public func makeAsyncIterator() -> CoreAuthenticator.SkieSwiftFlowIterator<T>
+  public typealias AsyncIterator = CoreAuthenticator.SkieSwiftFlowIterator<T>
+  public typealias Element = T
+  public typealias _ObjectiveCType = CoreAuthenticator.SkieKotlinFlow<Swift.AnyObject>
+  public typealias Delegate = any CoreAuthenticator.Kotlinx_coroutines_coreFlow
+  @available(iOS 18.0, tvOS 18.0, watchOS 11.0, visionOS 2.0, macOS 15.0, *)
+  @_implements(_Concurrency.AsyncSequence, Failure) public typealias __AsyncSequence_Failure = Swift.Never
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers final public class SkieSwiftOptionalFlow<T> : CoreAuthenticator.SkieSwiftFlowProtocol, Swift._ObjectiveCBridgeable {
+  @_spi(SKIE) final public let delegate: any CoreAuthenticator.Kotlinx_coroutines_coreFlow
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _forceBridgeFromObjectiveC(_ source: CoreAuthenticator.SkieKotlinOptionalFlow<Swift.AnyObject>, result: inout CoreAuthenticator.SkieSwiftOptionalFlow<T>?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _conditionallyBridgeFromObjectiveC(_ source: CoreAuthenticator.SkieKotlinOptionalFlow<Swift.AnyObject>, result: inout CoreAuthenticator.SkieSwiftOptionalFlow<T>?) -> Swift.Bool
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: CoreAuthenticator.SkieKotlinOptionalFlow<Swift.AnyObject>?) -> Self
+  #endif
+  final public func _bridgeToObjectiveC() -> CoreAuthenticator.SkieKotlinOptionalFlow<Swift.AnyObject>
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public func makeAsyncIterator() -> CoreAuthenticator.SkieSwiftFlowIterator<T?>
+  #endif
+  public typealias AsyncIterator = CoreAuthenticator.SkieSwiftFlowIterator<T?>
+  public typealias Element = T?
+  public typealias _ObjectiveCType = CoreAuthenticator.SkieKotlinOptionalFlow<Swift.AnyObject>
+  public typealias Delegate = any CoreAuthenticator.Kotlinx_coroutines_coreFlow
+  @available(iOS 18.0, tvOS 18.0, watchOS 11.0, visionOS 2.0, macOS 15.0, *)
+  @_implements(_Concurrency.AsyncSequence, Failure) public typealias __AsyncSequence_Failure = Swift.Never
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers final public class SkieSwiftSharedFlow<T> : CoreAuthenticator.SkieSwiftFlowProtocol, Swift._ObjectiveCBridgeable {
+  @_spi(SKIE) final public let delegate: any CoreAuthenticator.Kotlinx_coroutines_coreSharedFlow
+  final public var replayCache: [T] {
+    get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _forceBridgeFromObjectiveC(_ source: CoreAuthenticator.SkieKotlinSharedFlow<Swift.AnyObject>, result: inout CoreAuthenticator.SkieSwiftSharedFlow<T>?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _conditionallyBridgeFromObjectiveC(_ source: CoreAuthenticator.SkieKotlinSharedFlow<Swift.AnyObject>, result: inout CoreAuthenticator.SkieSwiftSharedFlow<T>?) -> Swift.Bool
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: CoreAuthenticator.SkieKotlinSharedFlow<Swift.AnyObject>?) -> Self
+  #endif
+  final public func _bridgeToObjectiveC() -> CoreAuthenticator.SkieKotlinSharedFlow<Swift.AnyObject>
+  final public func makeAsyncIterator() -> CoreAuthenticator.SkieSwiftFlowIterator<T>
+  public typealias AsyncIterator = CoreAuthenticator.SkieSwiftFlowIterator<T>
+  public typealias Element = T
+  public typealias _ObjectiveCType = CoreAuthenticator.SkieKotlinSharedFlow<Swift.AnyObject>
+  public typealias Delegate = any CoreAuthenticator.Kotlinx_coroutines_coreSharedFlow
+  @available(iOS 18.0, tvOS 18.0, watchOS 11.0, visionOS 2.0, macOS 15.0, *)
+  @_implements(_Concurrency.AsyncSequence, Failure) public typealias __AsyncSequence_Failure = Swift.Never
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers final public class SkieSwiftOptionalSharedFlow<T> : CoreAuthenticator.SkieSwiftFlowProtocol, Swift._ObjectiveCBridgeable {
+  @_spi(SKIE) final public let delegate: any CoreAuthenticator.Kotlinx_coroutines_coreSharedFlow
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public var replayCache: [T?] {
+    get
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _forceBridgeFromObjectiveC(_ source: CoreAuthenticator.SkieKotlinOptionalSharedFlow<Swift.AnyObject>, result: inout CoreAuthenticator.SkieSwiftOptionalSharedFlow<T>?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _conditionallyBridgeFromObjectiveC(_ source: CoreAuthenticator.SkieKotlinOptionalSharedFlow<Swift.AnyObject>, result: inout CoreAuthenticator.SkieSwiftOptionalSharedFlow<T>?) -> Swift.Bool
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: CoreAuthenticator.SkieKotlinOptionalSharedFlow<Swift.AnyObject>?) -> Self
+  #endif
+  final public func _bridgeToObjectiveC() -> CoreAuthenticator.SkieKotlinOptionalSharedFlow<Swift.AnyObject>
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public func makeAsyncIterator() -> CoreAuthenticator.SkieSwiftFlowIterator<T?>
+  #endif
+  public typealias AsyncIterator = CoreAuthenticator.SkieSwiftFlowIterator<T?>
+  public typealias Element = T?
+  public typealias _ObjectiveCType = CoreAuthenticator.SkieKotlinOptionalSharedFlow<Swift.AnyObject>
+  public typealias Delegate = any CoreAuthenticator.Kotlinx_coroutines_coreSharedFlow
+  @available(iOS 18.0, tvOS 18.0, watchOS 11.0, visionOS 2.0, macOS 15.0, *)
+  @_implements(_Concurrency.AsyncSequence, Failure) public typealias __AsyncSequence_Failure = Swift.Never
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers final public class SkieSwiftMutableSharedFlow<T> : CoreAuthenticator.SkieSwiftFlowProtocol, Swift._ObjectiveCBridgeable {
+  @_spi(SKIE) final public let delegate: any CoreAuthenticator.Kotlinx_coroutines_coreMutableSharedFlow
+  final public var subscriptionCount: CoreAuthenticator.SkieSwiftStateFlow<CoreAuthenticator.KotlinInt> {
+    get
+  }
+  final public var replayCache: [T] {
+    get
+  }
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  final public func emit(value: T) async throws
+  final public func tryEmit(value: T) -> Swift.Bool
+  final public func resetReplayCache()
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _forceBridgeFromObjectiveC(_ source: CoreAuthenticator.SkieKotlinMutableSharedFlow<Swift.AnyObject>, result: inout CoreAuthenticator.SkieSwiftMutableSharedFlow<T>?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _conditionallyBridgeFromObjectiveC(_ source: CoreAuthenticator.SkieKotlinMutableSharedFlow<Swift.AnyObject>, result: inout CoreAuthenticator.SkieSwiftMutableSharedFlow<T>?) -> Swift.Bool
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: CoreAuthenticator.SkieKotlinMutableSharedFlow<Swift.AnyObject>?) -> Self
+  #endif
+  final public func _bridgeToObjectiveC() -> CoreAuthenticator.SkieKotlinMutableSharedFlow<Swift.AnyObject>
+  final public func makeAsyncIterator() -> CoreAuthenticator.SkieSwiftFlowIterator<T>
+  public typealias AsyncIterator = CoreAuthenticator.SkieSwiftFlowIterator<T>
+  public typealias Element = T
+  public typealias _ObjectiveCType = CoreAuthenticator.SkieKotlinMutableSharedFlow<Swift.AnyObject>
+  public typealias Delegate = any CoreAuthenticator.Kotlinx_coroutines_coreMutableSharedFlow
+  @available(iOS 18.0, tvOS 18.0, watchOS 11.0, visionOS 2.0, macOS 15.0, *)
+  @_implements(_Concurrency.AsyncSequence, Failure) public typealias __AsyncSequence_Failure = Swift.Never
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers final public class SkieSwiftOptionalMutableSharedFlow<T> : CoreAuthenticator.SkieSwiftFlowProtocol, Swift._ObjectiveCBridgeable {
+  @_spi(SKIE) final public let delegate: any CoreAuthenticator.Kotlinx_coroutines_coreMutableSharedFlow
+  final public var subscriptionCount: CoreAuthenticator.SkieSwiftStateFlow<CoreAuthenticator.KotlinInt> {
+    get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public var replayCache: [T?] {
+    get
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  final public func emit(value: T?) async throws
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public func tryEmit(value: T?) -> Swift.Bool
+  #endif
+  final public func resetReplayCache()
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _forceBridgeFromObjectiveC(_ source: CoreAuthenticator.SkieKotlinOptionalMutableSharedFlow<Swift.AnyObject>, result: inout CoreAuthenticator.SkieSwiftOptionalMutableSharedFlow<T>?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _conditionallyBridgeFromObjectiveC(_ source: CoreAuthenticator.SkieKotlinOptionalMutableSharedFlow<Swift.AnyObject>, result: inout CoreAuthenticator.SkieSwiftOptionalMutableSharedFlow<T>?) -> Swift.Bool
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: CoreAuthenticator.SkieKotlinOptionalMutableSharedFlow<Swift.AnyObject>?) -> Self
+  #endif
+  final public func _bridgeToObjectiveC() -> CoreAuthenticator.SkieKotlinOptionalMutableSharedFlow<Swift.AnyObject>
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public func makeAsyncIterator() -> CoreAuthenticator.SkieSwiftFlowIterator<T?>
+  #endif
+  public typealias AsyncIterator = CoreAuthenticator.SkieSwiftFlowIterator<T?>
+  public typealias Element = T?
+  public typealias _ObjectiveCType = CoreAuthenticator.SkieKotlinOptionalMutableSharedFlow<Swift.AnyObject>
+  public typealias Delegate = any CoreAuthenticator.Kotlinx_coroutines_coreMutableSharedFlow
+  @available(iOS 18.0, tvOS 18.0, watchOS 11.0, visionOS 2.0, macOS 15.0, *)
+  @_implements(_Concurrency.AsyncSequence, Failure) public typealias __AsyncSequence_Failure = Swift.Never
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers final public class SkieSwiftStateFlow<T> : CoreAuthenticator.SkieSwiftFlowProtocol, Swift._ObjectiveCBridgeable {
+  @_spi(SKIE) final public let delegate: any CoreAuthenticator.Kotlinx_coroutines_coreStateFlow
+  final public var value: T {
+    get
+  }
+  final public var replayCache: [T] {
+    get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _forceBridgeFromObjectiveC(_ source: CoreAuthenticator.SkieKotlinStateFlow<Swift.AnyObject>, result: inout CoreAuthenticator.SkieSwiftStateFlow<T>?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _conditionallyBridgeFromObjectiveC(_ source: CoreAuthenticator.SkieKotlinStateFlow<Swift.AnyObject>, result: inout CoreAuthenticator.SkieSwiftStateFlow<T>?) -> Swift.Bool
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: CoreAuthenticator.SkieKotlinStateFlow<Swift.AnyObject>?) -> Self
+  #endif
+  final public func _bridgeToObjectiveC() -> CoreAuthenticator.SkieKotlinStateFlow<Swift.AnyObject>
+  final public func makeAsyncIterator() -> CoreAuthenticator.SkieSwiftFlowIterator<T>
+  public typealias AsyncIterator = CoreAuthenticator.SkieSwiftFlowIterator<T>
+  public typealias Element = T
+  public typealias _ObjectiveCType = CoreAuthenticator.SkieKotlinStateFlow<Swift.AnyObject>
+  public typealias Delegate = any CoreAuthenticator.Kotlinx_coroutines_coreStateFlow
+  @available(iOS 18.0, tvOS 18.0, watchOS 11.0, visionOS 2.0, macOS 15.0, *)
+  @_implements(_Concurrency.AsyncSequence, Failure) public typealias __AsyncSequence_Failure = Swift.Never
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers final public class SkieSwiftOptionalStateFlow<T> : CoreAuthenticator.SkieSwiftFlowProtocol, Swift._ObjectiveCBridgeable {
+  @_spi(SKIE) final public let delegate: any CoreAuthenticator.Kotlinx_coroutines_coreStateFlow
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public var value: T? {
+    get
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public var replayCache: [T?] {
+    get
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _forceBridgeFromObjectiveC(_ source: CoreAuthenticator.SkieKotlinOptionalStateFlow<Swift.AnyObject>, result: inout CoreAuthenticator.SkieSwiftOptionalStateFlow<T>?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _conditionallyBridgeFromObjectiveC(_ source: CoreAuthenticator.SkieKotlinOptionalStateFlow<Swift.AnyObject>, result: inout CoreAuthenticator.SkieSwiftOptionalStateFlow<T>?) -> Swift.Bool
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: CoreAuthenticator.SkieKotlinOptionalStateFlow<Swift.AnyObject>?) -> Self
+  #endif
+  final public func _bridgeToObjectiveC() -> CoreAuthenticator.SkieKotlinOptionalStateFlow<Swift.AnyObject>
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public func makeAsyncIterator() -> CoreAuthenticator.SkieSwiftFlowIterator<T?>
+  #endif
+  public typealias AsyncIterator = CoreAuthenticator.SkieSwiftFlowIterator<T?>
+  public typealias Element = T?
+  public typealias _ObjectiveCType = CoreAuthenticator.SkieKotlinOptionalStateFlow<Swift.AnyObject>
+  public typealias Delegate = any CoreAuthenticator.Kotlinx_coroutines_coreStateFlow
+  @available(iOS 18.0, tvOS 18.0, watchOS 11.0, visionOS 2.0, macOS 15.0, *)
+  @_implements(_Concurrency.AsyncSequence, Failure) public typealias __AsyncSequence_Failure = Swift.Never
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers final public class SkieSwiftMutableStateFlow<T> : CoreAuthenticator.SkieSwiftFlowProtocol, Swift._ObjectiveCBridgeable {
+  @_spi(SKIE) final public let delegate: any CoreAuthenticator.Kotlinx_coroutines_coreMutableStateFlow
+  final public var value: T {
+    get
+    set(value)
+  }
+  final public var replayCache: [T] {
+    get
+  }
+  final public var subscriptionCount: CoreAuthenticator.SkieSwiftStateFlow<CoreAuthenticator.KotlinInt> {
+    get
+  }
+  final public func compareAndSet(expect: T, update: T) -> Swift.Bool
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  final public func emit(value: T) async throws
+  final public func tryEmit(value: T) -> Swift.Bool
+  final public func resetReplayCache()
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _forceBridgeFromObjectiveC(_ source: CoreAuthenticator.SkieKotlinMutableStateFlow<Swift.AnyObject>, result: inout CoreAuthenticator.SkieSwiftMutableStateFlow<T>?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _conditionallyBridgeFromObjectiveC(_ source: CoreAuthenticator.SkieKotlinMutableStateFlow<Swift.AnyObject>, result: inout CoreAuthenticator.SkieSwiftMutableStateFlow<T>?) -> Swift.Bool
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: CoreAuthenticator.SkieKotlinMutableStateFlow<Swift.AnyObject>?) -> Self
+  #endif
+  final public func _bridgeToObjectiveC() -> CoreAuthenticator.SkieKotlinMutableStateFlow<Swift.AnyObject>
+  final public func makeAsyncIterator() -> CoreAuthenticator.SkieSwiftFlowIterator<T>
+  public typealias AsyncIterator = CoreAuthenticator.SkieSwiftFlowIterator<T>
+  public typealias Element = T
+  public typealias _ObjectiveCType = CoreAuthenticator.SkieKotlinMutableStateFlow<Swift.AnyObject>
+  public typealias Delegate = any CoreAuthenticator.Kotlinx_coroutines_coreMutableStateFlow
+  @available(iOS 18.0, tvOS 18.0, watchOS 11.0, visionOS 2.0, macOS 15.0, *)
+  @_implements(_Concurrency.AsyncSequence, Failure) public typealias __AsyncSequence_Failure = Swift.Never
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers final public class SkieSwiftOptionalMutableStateFlow<T> : CoreAuthenticator.SkieSwiftFlowProtocol, Swift._ObjectiveCBridgeable {
+  @_spi(SKIE) final public let delegate: any CoreAuthenticator.Kotlinx_coroutines_coreMutableStateFlow
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public var value: T? {
+    get
+    set(value)
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public var replayCache: [T?] {
+    get
+  }
+  #endif
+  final public var subscriptionCount: CoreAuthenticator.SkieSwiftStateFlow<CoreAuthenticator.KotlinInt> {
+    get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public func compareAndSet(expect: T?, update: T?) -> Swift.Bool
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  final public func emit(value: T?) async throws
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public func tryEmit(value: T?) -> Swift.Bool
+  #endif
+  final public func resetReplayCache()
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _forceBridgeFromObjectiveC(_ source: CoreAuthenticator.SkieKotlinOptionalMutableStateFlow<Swift.AnyObject>, result: inout CoreAuthenticator.SkieSwiftOptionalMutableStateFlow<T>?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _conditionallyBridgeFromObjectiveC(_ source: CoreAuthenticator.SkieKotlinOptionalMutableStateFlow<Swift.AnyObject>, result: inout CoreAuthenticator.SkieSwiftOptionalMutableStateFlow<T>?) -> Swift.Bool
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: CoreAuthenticator.SkieKotlinOptionalMutableStateFlow<Swift.AnyObject>?) -> Self
+  #endif
+  final public func _bridgeToObjectiveC() -> CoreAuthenticator.SkieKotlinOptionalMutableStateFlow<Swift.AnyObject>
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public func makeAsyncIterator() -> CoreAuthenticator.SkieSwiftFlowIterator<T?>
+  #endif
+  public typealias AsyncIterator = CoreAuthenticator.SkieSwiftFlowIterator<T?>
+  public typealias Element = T?
+  public typealias _ObjectiveCType = CoreAuthenticator.SkieKotlinOptionalMutableStateFlow<Swift.AnyObject>
+  public typealias Delegate = any CoreAuthenticator.Kotlinx_coroutines_coreMutableStateFlow
+  @available(iOS 18.0, tvOS 18.0, watchOS 11.0, visionOS 2.0, macOS 15.0, *)
+  @_implements(_Concurrency.AsyncSequence, Failure) public typealias __AsyncSequence_Failure = Swift.Never
+  @objc deinit
+}
+extension CoreAuthenticator.Skie.RuntimeKotlin.SkieColdFlowIterator {
+  public struct __Suspend<E> where E : AnyObject {
+    public let __kotlinObject: CoreAuthenticator.SkieColdFlowIterator<E>
+    public init(_ __kotlinObject: CoreAuthenticator.SkieColdFlowIterator<E>)
+  }
+}
+public func skie<E>(_ kotlinObject: CoreAuthenticator.SkieColdFlowIterator<E>) -> CoreAuthenticator.Skie.RuntimeKotlin.SkieColdFlowIterator.__Suspend<E> where E : AnyObject
+extension CoreAuthenticator.Skie.RuntimeKotlin.SkieColdFlowIterator.__Suspend {
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func hasNext() async throws -> CoreAuthenticator.KotlinBoolean
+}
+extension CoreAuthenticator.Kotlinx_coroutines_coreFlow {
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func collect(collector: any CoreAuthenticator.Kotlinx_coroutines_coreFlowCollector) async throws
+}
+extension CoreAuthenticator.Kotlinx_coroutines_coreFlowCollector {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func emit(value: Any?) async throws
+  #endif
+}
+extension CoreAuthenticator.AuthenticatorFacade {
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func addAccounts(connectedAccounts: [CoreAuthenticator.Account]) async throws
+}
+extension CoreAuthenticator.AuthenticatorManager {
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func getToken(clientId: Swift.String, userId: Swift.Int32, keyId: Swift.String) async throws -> Swift.String
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func registerPasskey(token: Swift.String, userId: Swift.Int32) async throws
+}
+extension CoreAuthenticator.WebAuthnRepository {
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func challenge(clientId: Swift.String) async throws -> CoreAuthenticator.AuthenticationOptions
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func completeMigration(token: Swift.String, deviceId: Swift.String) async throws
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func deletePasskey(token: Swift.String, passkeyId: Swift.String) async throws
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func getMigrationOptions(deviceId: Swift.String, userId: Swift.String) async throws -> CoreAuthenticator.MigrationOptions
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func getPasskeysOptions(token: Swift.String) async throws -> CoreAuthenticator.SuccessfulApiResponse<CoreAuthenticator.PasskeysOptions>
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func getTokenForMigration(sessionId: Swift.String, deviceId: Swift.String, userId: Swift.String, otp: Swift.String) async throws -> CoreAuthenticator.AuthResult
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func registerPasskey(token: Swift.String, registerPasskey: CoreAuthenticator.RegisterPasskey) async throws
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func verify(verifyAuthenticationData: CoreAuthenticator.VerifyAuthenticationData) async throws -> CoreAuthenticator.AuthResult
+}
+extension CoreAuthenticator.AccountsDao {
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func delete(id: Swift.Int64) async throws
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func insert(account: CoreAuthenticator.AccountEntity) async throws
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func upsert(account: CoreAuthenticator.AccountEntity) async throws
+}
+extension CoreAuthenticator.Room_runtimeRoomDatabase {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func useConnection(isReadOnly: Swift.Bool, block: any CoreAuthenticator.KotlinSuspendFunction1) async throws -> Any?
+  #endif
+}
+extension CoreAuthenticator.KotlinSuspendFunction1 {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func invoke(p1: Any?) async throws -> Any?
+  #endif
+}
+extension CoreAuthenticator.Room_runtimeInvalidationTracker {
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func refresh(tables: CoreAuthenticator.KotlinArray<Foundation.NSString>) async throws -> CoreAuthenticator.KotlinBoolean
+}
+extension CoreAuthenticator.AppSettingsDao {
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func save(item: CoreAuthenticator.AppSettingsEntity) async throws
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func setIsAppLockEnabled(isAppLockEnabled: Swift.Bool) async throws
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func setIsNotificationEnabled(isNotificationEnabled: Swift.Bool) async throws
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func setTheme(theme: CoreAuthenticator.Theme) async throws
+}
+extension CoreAuthenticator.Ktor_client_coreHttpClientEngine {
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func execute(data: CoreAuthenticator.Ktor_client_coreHttpRequestData) async throws -> CoreAuthenticator.Ktor_client_coreHttpResponseData
+}
+extension CoreAuthenticator.Kotlinx_coroutines_coreJob {
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func join() async throws
+}
+extension CoreAuthenticator.Skie.KtorUtils.Pipeline {
+  public struct __Suspend<TSubject, TContext> where TSubject : AnyObject, TContext : AnyObject {
+    public let __kotlinObject: CoreAuthenticator.Ktor_utilsPipeline<TSubject, TContext>
+    public init(_ __kotlinObject: CoreAuthenticator.Ktor_utilsPipeline<TSubject, TContext>)
+  }
+}
+public func skie<TSubject, TContext>(_ kotlinObject: CoreAuthenticator.Ktor_utilsPipeline<TSubject, TContext>) -> CoreAuthenticator.Skie.KtorUtils.Pipeline.__Suspend<TSubject, TContext> where TSubject : AnyObject, TContext : AnyObject
+extension CoreAuthenticator.Skie.KtorUtils.Pipeline.__Suspend {
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func execute(context: TContext, subject: TSubject) async throws -> TSubject
+}
+extension CoreAuthenticator.KotlinSuspendFunction2 {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func invoke(p1: Any?, p2: Any?) async throws -> Any?
+  #endif
+}
+extension CoreAuthenticator.Ktor_client_coreHttpClientCall {
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func body(info: CoreAuthenticator.Ktor_utilsTypeInfo) async throws -> Any
+  #if compiler(>=5.3) && $NonescapableTypes
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func bodyNullable(info: CoreAuthenticator.Ktor_utilsTypeInfo) async throws -> Any?
+  #endif
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func getResponseContent() async throws -> any CoreAuthenticator.Ktor_ioByteReadChannel
+}
+extension CoreAuthenticator.Ktor_ioByteReadChannel {
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func awaitContent(min: Swift.Int32) async throws -> CoreAuthenticator.KotlinBoolean
+}
+extension CoreAuthenticator.AccountsRepository {
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func deleteAccount(id: Swift.Int64) async throws
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func insertAccount(account: CoreAuthenticator.AccountEntity) async throws
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func upsertAccount(account: CoreAuthenticator.AccountEntity) async throws
+}
+extension CoreAuthenticator.AppSettingsRepository {
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func setIsAppLockEnabled(isAppLockEnabled: Swift.Bool) async throws
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func setIsNotificationEnabled(isNotificationEnabled: Swift.Bool) async throws
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func setTheme(theme: CoreAuthenticator.Theme) async throws
+}
+extension CoreAuthenticator.Ktor_httpOutgoingContent.ProtocolUpgrade {
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func upgrade(input: any CoreAuthenticator.Ktor_ioByteReadChannel, output: any CoreAuthenticator.Ktor_ioByteWriteChannel, engineContext: any CoreAuthenticator.KotlinCoroutineContext, userContext: any CoreAuthenticator.KotlinCoroutineContext) async throws -> any CoreAuthenticator.Kotlinx_coroutines_coreJob
+}
+extension CoreAuthenticator.Ktor_ioByteWriteChannel {
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func flush() async throws
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func flushAndClose() async throws
+}
+extension CoreAuthenticator.Ktor_httpOutgoingContent.WriteChannelContent {
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func writeTo(channel: any CoreAuthenticator.Ktor_ioByteWriteChannel) async throws
+}
+public func SkieKotlinFlow<T>(_ flow: CoreAuthenticator.SkieSwiftFlow<T>) -> CoreAuthenticator.SkieKotlinFlow<T> where T : AnyObject
+public func SkieKotlinFlow<T>(_ flow: CoreAuthenticator.SkieSwiftSharedFlow<T>) -> CoreAuthenticator.SkieKotlinFlow<T> where T : AnyObject
+public func SkieKotlinFlow<T>(_ flow: CoreAuthenticator.SkieSwiftMutableSharedFlow<T>) -> CoreAuthenticator.SkieKotlinFlow<T> where T : AnyObject
+public func SkieKotlinFlow<T>(_ flow: CoreAuthenticator.SkieSwiftStateFlow<T>) -> CoreAuthenticator.SkieKotlinFlow<T> where T : AnyObject
+public func SkieKotlinFlow<T>(_ flow: CoreAuthenticator.SkieSwiftMutableStateFlow<T>) -> CoreAuthenticator.SkieKotlinFlow<T> where T : AnyObject
+public func SkieKotlinFlow<T>(_ flow: CoreAuthenticator.SkieSwiftFlow<T>) -> CoreAuthenticator.SkieKotlinFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinFlow<T>(_ flow: CoreAuthenticator.SkieSwiftSharedFlow<T>) -> CoreAuthenticator.SkieKotlinFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinFlow<T>(_ flow: CoreAuthenticator.SkieSwiftMutableSharedFlow<T>) -> CoreAuthenticator.SkieKotlinFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinFlow<T>(_ flow: CoreAuthenticator.SkieSwiftStateFlow<T>) -> CoreAuthenticator.SkieKotlinFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinFlow<T>(_ flow: CoreAuthenticator.SkieSwiftMutableStateFlow<T>) -> CoreAuthenticator.SkieKotlinFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+extension CoreAuthenticator.SkieSwiftFlow where T : AnyObject {
+  convenience public init(_ flow: CoreAuthenticator.SkieKotlinFlow<T>)
+  convenience public init(_ flow: CoreAuthenticator.SkieKotlinSharedFlow<T>)
+  convenience public init(_ flow: CoreAuthenticator.SkieKotlinMutableSharedFlow<T>)
+  convenience public init(_ flow: CoreAuthenticator.SkieKotlinStateFlow<T>)
+  convenience public init(_ flow: CoreAuthenticator.SkieKotlinMutableStateFlow<T>)
+  convenience public init(_ flow: CoreAuthenticator.SkieSwiftFlow<T>)
+  convenience public init(_ flow: CoreAuthenticator.SkieSwiftSharedFlow<T>)
+  convenience public init(_ flow: CoreAuthenticator.SkieSwiftMutableSharedFlow<T>)
+  convenience public init(_ flow: CoreAuthenticator.SkieSwiftStateFlow<T>)
+  convenience public init(_ flow: CoreAuthenticator.SkieSwiftMutableStateFlow<T>)
+}
+extension CoreAuthenticator.SkieSwiftFlow where T : Swift._ObjectiveCBridgeable {
+  convenience public init(_ flow: CoreAuthenticator.SkieKotlinFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: CoreAuthenticator.SkieKotlinSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: CoreAuthenticator.SkieKotlinMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: CoreAuthenticator.SkieKotlinStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: CoreAuthenticator.SkieKotlinMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: CoreAuthenticator.SkieSwiftFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: CoreAuthenticator.SkieSwiftSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: CoreAuthenticator.SkieSwiftMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: CoreAuthenticator.SkieSwiftStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: CoreAuthenticator.SkieSwiftMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: CoreAuthenticator.SkieSwiftFlow<T>)
+  convenience public init(_ flow: CoreAuthenticator.SkieSwiftSharedFlow<T>)
+  convenience public init(_ flow: CoreAuthenticator.SkieSwiftMutableSharedFlow<T>)
+  convenience public init(_ flow: CoreAuthenticator.SkieSwiftStateFlow<T>)
+  convenience public init(_ flow: CoreAuthenticator.SkieSwiftMutableStateFlow<T>)
+}
+public func SkieKotlinOptionalFlow<T>(_ flow: CoreAuthenticator.SkieSwiftFlow<T>) -> CoreAuthenticator.SkieKotlinOptionalFlow<T> where T : AnyObject
+public func SkieKotlinOptionalFlow<T>(_ flow: CoreAuthenticator.SkieSwiftOptionalFlow<T>) -> CoreAuthenticator.SkieKotlinOptionalFlow<T> where T : AnyObject
+public func SkieKotlinOptionalFlow<T>(_ flow: CoreAuthenticator.SkieSwiftSharedFlow<T>) -> CoreAuthenticator.SkieKotlinOptionalFlow<T> where T : AnyObject
+public func SkieKotlinOptionalFlow<T>(_ flow: CoreAuthenticator.SkieSwiftOptionalSharedFlow<T>) -> CoreAuthenticator.SkieKotlinOptionalFlow<T> where T : AnyObject
+public func SkieKotlinOptionalFlow<T>(_ flow: CoreAuthenticator.SkieSwiftMutableSharedFlow<T>) -> CoreAuthenticator.SkieKotlinOptionalFlow<T> where T : AnyObject
+public func SkieKotlinOptionalFlow<T>(_ flow: CoreAuthenticator.SkieSwiftOptionalMutableSharedFlow<T>) -> CoreAuthenticator.SkieKotlinOptionalFlow<T> where T : AnyObject
+public func SkieKotlinOptionalFlow<T>(_ flow: CoreAuthenticator.SkieSwiftStateFlow<T>) -> CoreAuthenticator.SkieKotlinOptionalFlow<T> where T : AnyObject
+public func SkieKotlinOptionalFlow<T>(_ flow: CoreAuthenticator.SkieSwiftOptionalStateFlow<T>) -> CoreAuthenticator.SkieKotlinOptionalFlow<T> where T : AnyObject
+public func SkieKotlinOptionalFlow<T>(_ flow: CoreAuthenticator.SkieSwiftMutableStateFlow<T>) -> CoreAuthenticator.SkieKotlinOptionalFlow<T> where T : AnyObject
+public func SkieKotlinOptionalFlow<T>(_ flow: CoreAuthenticator.SkieSwiftOptionalMutableStateFlow<T>) -> CoreAuthenticator.SkieKotlinOptionalFlow<T> where T : AnyObject
+public func SkieKotlinOptionalFlow<T>(_ flow: CoreAuthenticator.SkieSwiftFlow<T>) -> CoreAuthenticator.SkieKotlinOptionalFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinOptionalFlow<T>(_ flow: CoreAuthenticator.SkieSwiftOptionalFlow<T>) -> CoreAuthenticator.SkieKotlinOptionalFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinOptionalFlow<T>(_ flow: CoreAuthenticator.SkieSwiftSharedFlow<T>) -> CoreAuthenticator.SkieKotlinOptionalFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinOptionalFlow<T>(_ flow: CoreAuthenticator.SkieSwiftOptionalSharedFlow<T>) -> CoreAuthenticator.SkieKotlinOptionalFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinOptionalFlow<T>(_ flow: CoreAuthenticator.SkieSwiftMutableSharedFlow<T>) -> CoreAuthenticator.SkieKotlinOptionalFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinOptionalFlow<T>(_ flow: CoreAuthenticator.SkieSwiftOptionalMutableSharedFlow<T>) -> CoreAuthenticator.SkieKotlinOptionalFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinOptionalFlow<T>(_ flow: CoreAuthenticator.SkieSwiftStateFlow<T>) -> CoreAuthenticator.SkieKotlinOptionalFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinOptionalFlow<T>(_ flow: CoreAuthenticator.SkieSwiftOptionalStateFlow<T>) -> CoreAuthenticator.SkieKotlinOptionalFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinOptionalFlow<T>(_ flow: CoreAuthenticator.SkieSwiftMutableStateFlow<T>) -> CoreAuthenticator.SkieKotlinOptionalFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinOptionalFlow<T>(_ flow: CoreAuthenticator.SkieSwiftOptionalMutableStateFlow<T>) -> CoreAuthenticator.SkieKotlinOptionalFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+extension CoreAuthenticator.SkieSwiftOptionalFlow where T : AnyObject {
+  convenience public init(_ flow: CoreAuthenticator.SkieKotlinFlow<T>)
+  convenience public init(_ flow: CoreAuthenticator.SkieKotlinOptionalFlow<T>)
+  convenience public init(_ flow: CoreAuthenticator.SkieKotlinSharedFlow<T>)
+  convenience public init(_ flow: CoreAuthenticator.SkieKotlinOptionalSharedFlow<T>)
+  convenience public init(_ flow: CoreAuthenticator.SkieKotlinMutableSharedFlow<T>)
+  convenience public init(_ flow: CoreAuthenticator.SkieKotlinOptionalMutableSharedFlow<T>)
+  convenience public init(_ flow: CoreAuthenticator.SkieKotlinStateFlow<T>)
+  convenience public init(_ flow: CoreAuthenticator.SkieKotlinOptionalStateFlow<T>)
+  convenience public init(_ flow: CoreAuthenticator.SkieKotlinMutableStateFlow<T>)
+  convenience public init(_ flow: CoreAuthenticator.SkieKotlinOptionalMutableStateFlow<T>)
+  convenience public init(_ flow: CoreAuthenticator.SkieSwiftFlow<T>)
+  convenience public init(_ flow: CoreAuthenticator.SkieSwiftOptionalFlow<T>)
+  convenience public init(_ flow: CoreAuthenticator.SkieSwiftSharedFlow<T>)
+  convenience public init(_ flow: CoreAuthenticator.SkieSwiftOptionalSharedFlow<T>)
+  convenience public init(_ flow: CoreAuthenticator.SkieSwiftMutableSharedFlow<T>)
+  convenience public init(_ flow: CoreAuthenticator.SkieSwiftOptionalMutableSharedFlow<T>)
+  convenience public init(_ flow: CoreAuthenticator.SkieSwiftStateFlow<T>)
+  convenience public init(_ flow: CoreAuthenticator.SkieSwiftOptionalStateFlow<T>)
+  convenience public init(_ flow: CoreAuthenticator.SkieSwiftMutableStateFlow<T>)
+  convenience public init(_ flow: CoreAuthenticator.SkieSwiftOptionalMutableStateFlow<T>)
+}
+extension CoreAuthenticator.SkieSwiftOptionalFlow where T : Swift._ObjectiveCBridgeable {
+  convenience public init(_ flow: CoreAuthenticator.SkieKotlinFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: CoreAuthenticator.SkieKotlinOptionalFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: CoreAuthenticator.SkieKotlinSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: CoreAuthenticator.SkieKotlinOptionalSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: CoreAuthenticator.SkieKotlinMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: CoreAuthenticator.SkieKotlinOptionalMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: CoreAuthenticator.SkieKotlinStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: CoreAuthenticator.SkieKotlinOptionalStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: CoreAuthenticator.SkieKotlinMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: CoreAuthenticator.SkieKotlinOptionalMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: CoreAuthenticator.SkieSwiftFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: CoreAuthenticator.SkieSwiftOptionalFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: CoreAuthenticator.SkieSwiftSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: CoreAuthenticator.SkieSwiftOptionalSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: CoreAuthenticator.SkieSwiftMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: CoreAuthenticator.SkieSwiftOptionalMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: CoreAuthenticator.SkieSwiftStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: CoreAuthenticator.SkieSwiftOptionalStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: CoreAuthenticator.SkieSwiftMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: CoreAuthenticator.SkieSwiftOptionalMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: CoreAuthenticator.SkieSwiftFlow<T>)
+  convenience public init(_ flow: CoreAuthenticator.SkieSwiftOptionalFlow<T>)
+  convenience public init(_ flow: CoreAuthenticator.SkieSwiftSharedFlow<T>)
+  convenience public init(_ flow: CoreAuthenticator.SkieSwiftOptionalSharedFlow<T>)
+  convenience public init(_ flow: CoreAuthenticator.SkieSwiftMutableSharedFlow<T>)
+  convenience public init(_ flow: CoreAuthenticator.SkieSwiftOptionalMutableSharedFlow<T>)
+  convenience public init(_ flow: CoreAuthenticator.SkieSwiftStateFlow<T>)
+  convenience public init(_ flow: CoreAuthenticator.SkieSwiftOptionalStateFlow<T>)
+  convenience public init(_ flow: CoreAuthenticator.SkieSwiftMutableStateFlow<T>)
+  convenience public init(_ flow: CoreAuthenticator.SkieSwiftOptionalMutableStateFlow<T>)
+}
+public func SkieKotlinSharedFlow<T>(_ flow: CoreAuthenticator.SkieSwiftSharedFlow<T>) -> CoreAuthenticator.SkieKotlinSharedFlow<T> where T : AnyObject
+public func SkieKotlinSharedFlow<T>(_ flow: CoreAuthenticator.SkieSwiftMutableSharedFlow<T>) -> CoreAuthenticator.SkieKotlinSharedFlow<T> where T : AnyObject
+public func SkieKotlinSharedFlow<T>(_ flow: CoreAuthenticator.SkieSwiftStateFlow<T>) -> CoreAuthenticator.SkieKotlinSharedFlow<T> where T : AnyObject
+public func SkieKotlinSharedFlow<T>(_ flow: CoreAuthenticator.SkieSwiftMutableStateFlow<T>) -> CoreAuthenticator.SkieKotlinSharedFlow<T> where T : AnyObject
+public func SkieKotlinSharedFlow<T>(_ flow: CoreAuthenticator.SkieSwiftSharedFlow<T>) -> CoreAuthenticator.SkieKotlinSharedFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinSharedFlow<T>(_ flow: CoreAuthenticator.SkieSwiftMutableSharedFlow<T>) -> CoreAuthenticator.SkieKotlinSharedFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinSharedFlow<T>(_ flow: CoreAuthenticator.SkieSwiftStateFlow<T>) -> CoreAuthenticator.SkieKotlinSharedFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinSharedFlow<T>(_ flow: CoreAuthenticator.SkieSwiftMutableStateFlow<T>) -> CoreAuthenticator.SkieKotlinSharedFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+extension CoreAuthenticator.SkieSwiftSharedFlow where T : AnyObject {
+  convenience public init(_ flow: CoreAuthenticator.SkieKotlinSharedFlow<T>)
+  convenience public init(_ flow: CoreAuthenticator.SkieKotlinMutableSharedFlow<T>)
+  convenience public init(_ flow: CoreAuthenticator.SkieKotlinStateFlow<T>)
+  convenience public init(_ flow: CoreAuthenticator.SkieKotlinMutableStateFlow<T>)
+  convenience public init(_ flow: CoreAuthenticator.SkieSwiftSharedFlow<T>)
+  convenience public init(_ flow: CoreAuthenticator.SkieSwiftMutableSharedFlow<T>)
+  convenience public init(_ flow: CoreAuthenticator.SkieSwiftStateFlow<T>)
+  convenience public init(_ flow: CoreAuthenticator.SkieSwiftMutableStateFlow<T>)
+}
+extension CoreAuthenticator.SkieSwiftSharedFlow where T : Swift._ObjectiveCBridgeable {
+  convenience public init(_ flow: CoreAuthenticator.SkieKotlinSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: CoreAuthenticator.SkieKotlinMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: CoreAuthenticator.SkieKotlinStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: CoreAuthenticator.SkieKotlinMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: CoreAuthenticator.SkieSwiftSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: CoreAuthenticator.SkieSwiftMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: CoreAuthenticator.SkieSwiftStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: CoreAuthenticator.SkieSwiftMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: CoreAuthenticator.SkieSwiftSharedFlow<T>)
+  convenience public init(_ flow: CoreAuthenticator.SkieSwiftMutableSharedFlow<T>)
+  convenience public init(_ flow: CoreAuthenticator.SkieSwiftStateFlow<T>)
+  convenience public init(_ flow: CoreAuthenticator.SkieSwiftMutableStateFlow<T>)
+}
+public func SkieKotlinOptionalSharedFlow<T>(_ flow: CoreAuthenticator.SkieSwiftSharedFlow<T>) -> CoreAuthenticator.SkieKotlinOptionalSharedFlow<T> where T : AnyObject
+public func SkieKotlinOptionalSharedFlow<T>(_ flow: CoreAuthenticator.SkieSwiftOptionalSharedFlow<T>) -> CoreAuthenticator.SkieKotlinOptionalSharedFlow<T> where T : AnyObject
+public func SkieKotlinOptionalSharedFlow<T>(_ flow: CoreAuthenticator.SkieSwiftMutableSharedFlow<T>) -> CoreAuthenticator.SkieKotlinOptionalSharedFlow<T> where T : AnyObject
+public func SkieKotlinOptionalSharedFlow<T>(_ flow: CoreAuthenticator.SkieSwiftOptionalMutableSharedFlow<T>) -> CoreAuthenticator.SkieKotlinOptionalSharedFlow<T> where T : AnyObject
+public func SkieKotlinOptionalSharedFlow<T>(_ flow: CoreAuthenticator.SkieSwiftStateFlow<T>) -> CoreAuthenticator.SkieKotlinOptionalSharedFlow<T> where T : AnyObject
+public func SkieKotlinOptionalSharedFlow<T>(_ flow: CoreAuthenticator.SkieSwiftOptionalStateFlow<T>) -> CoreAuthenticator.SkieKotlinOptionalSharedFlow<T> where T : AnyObject
+public func SkieKotlinOptionalSharedFlow<T>(_ flow: CoreAuthenticator.SkieSwiftMutableStateFlow<T>) -> CoreAuthenticator.SkieKotlinOptionalSharedFlow<T> where T : AnyObject
+public func SkieKotlinOptionalSharedFlow<T>(_ flow: CoreAuthenticator.SkieSwiftOptionalMutableStateFlow<T>) -> CoreAuthenticator.SkieKotlinOptionalSharedFlow<T> where T : AnyObject
+public func SkieKotlinOptionalSharedFlow<T>(_ flow: CoreAuthenticator.SkieSwiftSharedFlow<T>) -> CoreAuthenticator.SkieKotlinOptionalSharedFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinOptionalSharedFlow<T>(_ flow: CoreAuthenticator.SkieSwiftOptionalSharedFlow<T>) -> CoreAuthenticator.SkieKotlinOptionalSharedFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinOptionalSharedFlow<T>(_ flow: CoreAuthenticator.SkieSwiftMutableSharedFlow<T>) -> CoreAuthenticator.SkieKotlinOptionalSharedFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinOptionalSharedFlow<T>(_ flow: CoreAuthenticator.SkieSwiftOptionalMutableSharedFlow<T>) -> CoreAuthenticator.SkieKotlinOptionalSharedFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinOptionalSharedFlow<T>(_ flow: CoreAuthenticator.SkieSwiftStateFlow<T>) -> CoreAuthenticator.SkieKotlinOptionalSharedFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinOptionalSharedFlow<T>(_ flow: CoreAuthenticator.SkieSwiftOptionalStateFlow<T>) -> CoreAuthenticator.SkieKotlinOptionalSharedFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinOptionalSharedFlow<T>(_ flow: CoreAuthenticator.SkieSwiftMutableStateFlow<T>) -> CoreAuthenticator.SkieKotlinOptionalSharedFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinOptionalSharedFlow<T>(_ flow: CoreAuthenticator.SkieSwiftOptionalMutableStateFlow<T>) -> CoreAuthenticator.SkieKotlinOptionalSharedFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+extension CoreAuthenticator.SkieSwiftOptionalSharedFlow where T : AnyObject {
+  convenience public init(_ flow: CoreAuthenticator.SkieKotlinSharedFlow<T>)
+  convenience public init(_ flow: CoreAuthenticator.SkieKotlinOptionalSharedFlow<T>)
+  convenience public init(_ flow: CoreAuthenticator.SkieKotlinMutableSharedFlow<T>)
+  convenience public init(_ flow: CoreAuthenticator.SkieKotlinOptionalMutableSharedFlow<T>)
+  convenience public init(_ flow: CoreAuthenticator.SkieKotlinStateFlow<T>)
+  convenience public init(_ flow: CoreAuthenticator.SkieKotlinOptionalStateFlow<T>)
+  convenience public init(_ flow: CoreAuthenticator.SkieKotlinMutableStateFlow<T>)
+  convenience public init(_ flow: CoreAuthenticator.SkieKotlinOptionalMutableStateFlow<T>)
+  convenience public init(_ flow: CoreAuthenticator.SkieSwiftSharedFlow<T>)
+  convenience public init(_ flow: CoreAuthenticator.SkieSwiftOptionalSharedFlow<T>)
+  convenience public init(_ flow: CoreAuthenticator.SkieSwiftMutableSharedFlow<T>)
+  convenience public init(_ flow: CoreAuthenticator.SkieSwiftOptionalMutableSharedFlow<T>)
+  convenience public init(_ flow: CoreAuthenticator.SkieSwiftStateFlow<T>)
+  convenience public init(_ flow: CoreAuthenticator.SkieSwiftOptionalStateFlow<T>)
+  convenience public init(_ flow: CoreAuthenticator.SkieSwiftMutableStateFlow<T>)
+  convenience public init(_ flow: CoreAuthenticator.SkieSwiftOptionalMutableStateFlow<T>)
+}
+extension CoreAuthenticator.SkieSwiftOptionalSharedFlow where T : Swift._ObjectiveCBridgeable {
+  convenience public init(_ flow: CoreAuthenticator.SkieKotlinSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: CoreAuthenticator.SkieKotlinOptionalSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: CoreAuthenticator.SkieKotlinMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: CoreAuthenticator.SkieKotlinOptionalMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: CoreAuthenticator.SkieKotlinStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: CoreAuthenticator.SkieKotlinOptionalStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: CoreAuthenticator.SkieKotlinMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: CoreAuthenticator.SkieKotlinOptionalMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: CoreAuthenticator.SkieSwiftSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: CoreAuthenticator.SkieSwiftOptionalSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: CoreAuthenticator.SkieSwiftMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: CoreAuthenticator.SkieSwiftOptionalMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: CoreAuthenticator.SkieSwiftStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: CoreAuthenticator.SkieSwiftOptionalStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: CoreAuthenticator.SkieSwiftMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: CoreAuthenticator.SkieSwiftOptionalMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: CoreAuthenticator.SkieSwiftSharedFlow<T>)
+  convenience public init(_ flow: CoreAuthenticator.SkieSwiftOptionalSharedFlow<T>)
+  convenience public init(_ flow: CoreAuthenticator.SkieSwiftMutableSharedFlow<T>)
+  convenience public init(_ flow: CoreAuthenticator.SkieSwiftOptionalMutableSharedFlow<T>)
+  convenience public init(_ flow: CoreAuthenticator.SkieSwiftStateFlow<T>)
+  convenience public init(_ flow: CoreAuthenticator.SkieSwiftOptionalStateFlow<T>)
+  convenience public init(_ flow: CoreAuthenticator.SkieSwiftMutableStateFlow<T>)
+  convenience public init(_ flow: CoreAuthenticator.SkieSwiftOptionalMutableStateFlow<T>)
+}
+public func SkieKotlinMutableSharedFlow<T>(_ flow: CoreAuthenticator.SkieSwiftMutableSharedFlow<T>) -> CoreAuthenticator.SkieKotlinMutableSharedFlow<T> where T : AnyObject
+public func SkieKotlinMutableSharedFlow<T>(_ flow: CoreAuthenticator.SkieSwiftMutableSharedFlow<T>) -> CoreAuthenticator.SkieKotlinMutableSharedFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+extension CoreAuthenticator.SkieSwiftMutableSharedFlow where T : AnyObject {
+  convenience public init(_ flow: CoreAuthenticator.SkieKotlinMutableSharedFlow<T>)
+  convenience public init(_ flow: CoreAuthenticator.SkieSwiftMutableSharedFlow<T>)
+}
+extension CoreAuthenticator.SkieSwiftMutableSharedFlow where T : Swift._ObjectiveCBridgeable {
+  convenience public init(_ flow: CoreAuthenticator.SkieKotlinMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: CoreAuthenticator.SkieSwiftMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: CoreAuthenticator.SkieSwiftMutableSharedFlow<T>)
+}
+public func SkieKotlinOptionalMutableSharedFlow<T>(_ flow: CoreAuthenticator.SkieSwiftMutableSharedFlow<T>) -> CoreAuthenticator.SkieKotlinOptionalMutableSharedFlow<T> where T : AnyObject
+public func SkieKotlinOptionalMutableSharedFlow<T>(_ flow: CoreAuthenticator.SkieSwiftOptionalMutableSharedFlow<T>) -> CoreAuthenticator.SkieKotlinOptionalMutableSharedFlow<T> where T : AnyObject
+public func SkieKotlinOptionalMutableSharedFlow<T>(_ flow: CoreAuthenticator.SkieSwiftMutableSharedFlow<T>) -> CoreAuthenticator.SkieKotlinOptionalMutableSharedFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinOptionalMutableSharedFlow<T>(_ flow: CoreAuthenticator.SkieSwiftOptionalMutableSharedFlow<T>) -> CoreAuthenticator.SkieKotlinOptionalMutableSharedFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+extension CoreAuthenticator.SkieSwiftOptionalMutableSharedFlow where T : AnyObject {
+  convenience public init(_ flow: CoreAuthenticator.SkieKotlinMutableSharedFlow<T>)
+  convenience public init(_ flow: CoreAuthenticator.SkieKotlinOptionalMutableSharedFlow<T>)
+  convenience public init(_ flow: CoreAuthenticator.SkieSwiftMutableSharedFlow<T>)
+  convenience public init(_ flow: CoreAuthenticator.SkieSwiftOptionalMutableSharedFlow<T>)
+}
+extension CoreAuthenticator.SkieSwiftOptionalMutableSharedFlow where T : Swift._ObjectiveCBridgeable {
+  convenience public init(_ flow: CoreAuthenticator.SkieKotlinMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: CoreAuthenticator.SkieKotlinOptionalMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: CoreAuthenticator.SkieSwiftMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: CoreAuthenticator.SkieSwiftOptionalMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: CoreAuthenticator.SkieSwiftMutableSharedFlow<T>)
+  convenience public init(_ flow: CoreAuthenticator.SkieSwiftOptionalMutableSharedFlow<T>)
+}
+public func SkieKotlinStateFlow<T>(_ flow: CoreAuthenticator.SkieSwiftStateFlow<T>) -> CoreAuthenticator.SkieKotlinStateFlow<T> where T : AnyObject
+public func SkieKotlinStateFlow<T>(_ flow: CoreAuthenticator.SkieSwiftMutableStateFlow<T>) -> CoreAuthenticator.SkieKotlinStateFlow<T> where T : AnyObject
+public func SkieKotlinStateFlow<T>(_ flow: CoreAuthenticator.SkieSwiftStateFlow<T>) -> CoreAuthenticator.SkieKotlinStateFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinStateFlow<T>(_ flow: CoreAuthenticator.SkieSwiftMutableStateFlow<T>) -> CoreAuthenticator.SkieKotlinStateFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+extension CoreAuthenticator.SkieSwiftStateFlow where T : AnyObject {
+  convenience public init(_ flow: CoreAuthenticator.SkieKotlinStateFlow<T>)
+  convenience public init(_ flow: CoreAuthenticator.SkieKotlinMutableStateFlow<T>)
+  convenience public init(_ flow: CoreAuthenticator.SkieSwiftStateFlow<T>)
+  convenience public init(_ flow: CoreAuthenticator.SkieSwiftMutableStateFlow<T>)
+}
+extension CoreAuthenticator.SkieSwiftStateFlow where T : Swift._ObjectiveCBridgeable {
+  convenience public init(_ flow: CoreAuthenticator.SkieKotlinStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: CoreAuthenticator.SkieKotlinMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: CoreAuthenticator.SkieSwiftStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: CoreAuthenticator.SkieSwiftMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: CoreAuthenticator.SkieSwiftStateFlow<T>)
+  convenience public init(_ flow: CoreAuthenticator.SkieSwiftMutableStateFlow<T>)
+}
+public func SkieKotlinOptionalStateFlow<T>(_ flow: CoreAuthenticator.SkieSwiftStateFlow<T>) -> CoreAuthenticator.SkieKotlinOptionalStateFlow<T> where T : AnyObject
+public func SkieKotlinOptionalStateFlow<T>(_ flow: CoreAuthenticator.SkieSwiftOptionalStateFlow<T>) -> CoreAuthenticator.SkieKotlinOptionalStateFlow<T> where T : AnyObject
+public func SkieKotlinOptionalStateFlow<T>(_ flow: CoreAuthenticator.SkieSwiftMutableStateFlow<T>) -> CoreAuthenticator.SkieKotlinOptionalStateFlow<T> where T : AnyObject
+public func SkieKotlinOptionalStateFlow<T>(_ flow: CoreAuthenticator.SkieSwiftOptionalMutableStateFlow<T>) -> CoreAuthenticator.SkieKotlinOptionalStateFlow<T> where T : AnyObject
+public func SkieKotlinOptionalStateFlow<T>(_ flow: CoreAuthenticator.SkieSwiftStateFlow<T>) -> CoreAuthenticator.SkieKotlinOptionalStateFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinOptionalStateFlow<T>(_ flow: CoreAuthenticator.SkieSwiftOptionalStateFlow<T>) -> CoreAuthenticator.SkieKotlinOptionalStateFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinOptionalStateFlow<T>(_ flow: CoreAuthenticator.SkieSwiftMutableStateFlow<T>) -> CoreAuthenticator.SkieKotlinOptionalStateFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinOptionalStateFlow<T>(_ flow: CoreAuthenticator.SkieSwiftOptionalMutableStateFlow<T>) -> CoreAuthenticator.SkieKotlinOptionalStateFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+extension CoreAuthenticator.SkieSwiftOptionalStateFlow where T : AnyObject {
+  convenience public init(_ flow: CoreAuthenticator.SkieKotlinStateFlow<T>)
+  convenience public init(_ flow: CoreAuthenticator.SkieKotlinOptionalStateFlow<T>)
+  convenience public init(_ flow: CoreAuthenticator.SkieKotlinMutableStateFlow<T>)
+  convenience public init(_ flow: CoreAuthenticator.SkieKotlinOptionalMutableStateFlow<T>)
+  convenience public init(_ flow: CoreAuthenticator.SkieSwiftStateFlow<T>)
+  convenience public init(_ flow: CoreAuthenticator.SkieSwiftOptionalStateFlow<T>)
+  convenience public init(_ flow: CoreAuthenticator.SkieSwiftMutableStateFlow<T>)
+  convenience public init(_ flow: CoreAuthenticator.SkieSwiftOptionalMutableStateFlow<T>)
+}
+extension CoreAuthenticator.SkieSwiftOptionalStateFlow where T : Swift._ObjectiveCBridgeable {
+  convenience public init(_ flow: CoreAuthenticator.SkieKotlinStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: CoreAuthenticator.SkieKotlinOptionalStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: CoreAuthenticator.SkieKotlinMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: CoreAuthenticator.SkieKotlinOptionalMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: CoreAuthenticator.SkieSwiftStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: CoreAuthenticator.SkieSwiftOptionalStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: CoreAuthenticator.SkieSwiftMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: CoreAuthenticator.SkieSwiftOptionalMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: CoreAuthenticator.SkieSwiftStateFlow<T>)
+  convenience public init(_ flow: CoreAuthenticator.SkieSwiftOptionalStateFlow<T>)
+  convenience public init(_ flow: CoreAuthenticator.SkieSwiftMutableStateFlow<T>)
+  convenience public init(_ flow: CoreAuthenticator.SkieSwiftOptionalMutableStateFlow<T>)
+}
+public func SkieKotlinMutableStateFlow<T>(_ flow: CoreAuthenticator.SkieSwiftMutableStateFlow<T>) -> CoreAuthenticator.SkieKotlinMutableStateFlow<T> where T : AnyObject
+public func SkieKotlinMutableStateFlow<T>(_ flow: CoreAuthenticator.SkieSwiftMutableStateFlow<T>) -> CoreAuthenticator.SkieKotlinMutableStateFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+extension CoreAuthenticator.SkieSwiftMutableStateFlow where T : AnyObject {
+  convenience public init(_ flow: CoreAuthenticator.SkieKotlinMutableStateFlow<T>)
+  convenience public init(_ flow: CoreAuthenticator.SkieSwiftMutableStateFlow<T>)
+}
+extension CoreAuthenticator.SkieSwiftMutableStateFlow where T : Swift._ObjectiveCBridgeable {
+  convenience public init(_ flow: CoreAuthenticator.SkieKotlinMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: CoreAuthenticator.SkieSwiftMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: CoreAuthenticator.SkieSwiftMutableStateFlow<T>)
+}
+public func SkieKotlinOptionalMutableStateFlow<T>(_ flow: CoreAuthenticator.SkieSwiftMutableStateFlow<T>) -> CoreAuthenticator.SkieKotlinOptionalMutableStateFlow<T> where T : AnyObject
+public func SkieKotlinOptionalMutableStateFlow<T>(_ flow: CoreAuthenticator.SkieSwiftOptionalMutableStateFlow<T>) -> CoreAuthenticator.SkieKotlinOptionalMutableStateFlow<T> where T : AnyObject
+public func SkieKotlinOptionalMutableStateFlow<T>(_ flow: CoreAuthenticator.SkieSwiftMutableStateFlow<T>) -> CoreAuthenticator.SkieKotlinOptionalMutableStateFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinOptionalMutableStateFlow<T>(_ flow: CoreAuthenticator.SkieSwiftOptionalMutableStateFlow<T>) -> CoreAuthenticator.SkieKotlinOptionalMutableStateFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+extension CoreAuthenticator.SkieSwiftOptionalMutableStateFlow where T : AnyObject {
+  convenience public init(_ flow: CoreAuthenticator.SkieKotlinMutableStateFlow<T>)
+  convenience public init(_ flow: CoreAuthenticator.SkieKotlinOptionalMutableStateFlow<T>)
+  convenience public init(_ flow: CoreAuthenticator.SkieSwiftMutableStateFlow<T>)
+  convenience public init(_ flow: CoreAuthenticator.SkieSwiftOptionalMutableStateFlow<T>)
+}
+extension CoreAuthenticator.SkieSwiftOptionalMutableStateFlow where T : Swift._ObjectiveCBridgeable {
+  convenience public init(_ flow: CoreAuthenticator.SkieKotlinMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: CoreAuthenticator.SkieKotlinOptionalMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: CoreAuthenticator.SkieSwiftMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: CoreAuthenticator.SkieSwiftOptionalMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: CoreAuthenticator.SkieSwiftMutableStateFlow<T>)
+  convenience public init(_ flow: CoreAuthenticator.SkieSwiftOptionalMutableStateFlow<T>)
+}
+@frozen public enum KotlinKVariance : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {
+  case invariant
+  case `in`
+  case out
+  public var name: Swift.String {
+    get
+  }
+  public var ordinal: Swift.Int32 {
+    get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _forceBridgeFromObjectiveC(_ source: CoreAuthenticator.__KotlinKVariance, result: inout CoreAuthenticator.KotlinKVariance?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _conditionallyBridgeFromObjectiveC(_ source: CoreAuthenticator.__KotlinKVariance, result: inout CoreAuthenticator.KotlinKVariance?) -> Swift.Bool
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: CoreAuthenticator.__KotlinKVariance?) -> CoreAuthenticator.KotlinKVariance
+  #endif
+  public func _bridgeToObjectiveC() -> CoreAuthenticator.__KotlinKVariance
+  public typealias _ObjectiveCType = CoreAuthenticator.__KotlinKVariance
+  public static func == (a: CoreAuthenticator.KotlinKVariance, b: CoreAuthenticator.KotlinKVariance) -> Swift.Bool
+  public typealias AllCases = [CoreAuthenticator.KotlinKVariance]
+  nonisolated public static var allCases: [CoreAuthenticator.KotlinKVariance] {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension CoreAuthenticator.KotlinKVariance {
+  public func toKotlinEnum() -> CoreAuthenticator.__KotlinKVariance
+}
+extension CoreAuthenticator.__KotlinKVariance {
+  public func toSwiftEnum() -> CoreAuthenticator.KotlinKVariance
+}
+@frozen public enum ApiResponseStatus : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {
+  case success
+  case asynchronous
+  public var name: Swift.String {
+    get
+  }
+  public var ordinal: Swift.Int32 {
+    get
+  }
+  public static var companion: CoreAuthenticator.__ApiResponseStatus.Companion {
+    get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _forceBridgeFromObjectiveC(_ source: CoreAuthenticator.__ApiResponseStatus, result: inout CoreAuthenticator.ApiResponseStatus?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _conditionallyBridgeFromObjectiveC(_ source: CoreAuthenticator.__ApiResponseStatus, result: inout CoreAuthenticator.ApiResponseStatus?) -> Swift.Bool
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: CoreAuthenticator.__ApiResponseStatus?) -> CoreAuthenticator.ApiResponseStatus
+  #endif
+  public func _bridgeToObjectiveC() -> CoreAuthenticator.__ApiResponseStatus
+  public typealias _ObjectiveCType = CoreAuthenticator.__ApiResponseStatus
+  public typealias Companion = CoreAuthenticator.__ApiResponseStatus.Companion
+  public static func == (a: CoreAuthenticator.ApiResponseStatus, b: CoreAuthenticator.ApiResponseStatus) -> Swift.Bool
+  public typealias AllCases = [CoreAuthenticator.ApiResponseStatus]
+  nonisolated public static var allCases: [CoreAuthenticator.ApiResponseStatus] {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension CoreAuthenticator.ApiResponseStatus {
+  public func toKotlinEnum() -> CoreAuthenticator.__ApiResponseStatus
+}
+extension CoreAuthenticator.__ApiResponseStatus {
+  public func toSwiftEnum() -> CoreAuthenticator.ApiResponseStatus
+}
+@frozen public enum CrashReportLevel : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {
+  case debug
+  case info
+  case warning
+  case error
+  case fatal
+  public var name: Swift.String {
+    get
+  }
+  public var ordinal: Swift.Int32 {
+    get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _forceBridgeFromObjectiveC(_ source: CoreAuthenticator.__CrashReportLevel, result: inout CoreAuthenticator.CrashReportLevel?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _conditionallyBridgeFromObjectiveC(_ source: CoreAuthenticator.__CrashReportLevel, result: inout CoreAuthenticator.CrashReportLevel?) -> Swift.Bool
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: CoreAuthenticator.__CrashReportLevel?) -> CoreAuthenticator.CrashReportLevel
+  #endif
+  public func _bridgeToObjectiveC() -> CoreAuthenticator.__CrashReportLevel
+  public typealias _ObjectiveCType = CoreAuthenticator.__CrashReportLevel
+  public static func == (a: CoreAuthenticator.CrashReportLevel, b: CoreAuthenticator.CrashReportLevel) -> Swift.Bool
+  public typealias AllCases = [CoreAuthenticator.CrashReportLevel]
+  nonisolated public static var allCases: [CoreAuthenticator.CrashReportLevel] {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension CoreAuthenticator.CrashReportLevel {
+  public func toKotlinEnum() -> CoreAuthenticator.__CrashReportLevel
+}
+extension CoreAuthenticator.__CrashReportLevel {
+  public func toSwiftEnum() -> CoreAuthenticator.CrashReportLevel
+}
+@frozen public enum BreadcrumbType : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {
+  case `default`
+  case http
+  public var name: Swift.String {
+    get
+  }
+  public var ordinal: Swift.Int32 {
+    get
+  }
+  public var value: Swift.String {
+    get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _forceBridgeFromObjectiveC(_ source: CoreAuthenticator.__BreadcrumbType, result: inout CoreAuthenticator.BreadcrumbType?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _conditionallyBridgeFromObjectiveC(_ source: CoreAuthenticator.__BreadcrumbType, result: inout CoreAuthenticator.BreadcrumbType?) -> Swift.Bool
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: CoreAuthenticator.__BreadcrumbType?) -> CoreAuthenticator.BreadcrumbType
+  #endif
+  public func _bridgeToObjectiveC() -> CoreAuthenticator.__BreadcrumbType
+  public typealias _ObjectiveCType = CoreAuthenticator.__BreadcrumbType
+  public static func == (a: CoreAuthenticator.BreadcrumbType, b: CoreAuthenticator.BreadcrumbType) -> Swift.Bool
+  public typealias AllCases = [CoreAuthenticator.BreadcrumbType]
+  nonisolated public static var allCases: [CoreAuthenticator.BreadcrumbType] {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension CoreAuthenticator.BreadcrumbType {
+  public func toKotlinEnum() -> CoreAuthenticator.__BreadcrumbType
+}
+extension CoreAuthenticator.__BreadcrumbType {
+  public func toSwiftEnum() -> CoreAuthenticator.BreadcrumbType
+}
+@frozen public enum StatusEntity : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {
+  case loggedIn
+  case notConnected
+  public var name: Swift.String {
+    get
+  }
+  public var ordinal: Swift.Int32 {
+    get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _forceBridgeFromObjectiveC(_ source: CoreAuthenticator.__StatusEntity, result: inout CoreAuthenticator.StatusEntity?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _conditionallyBridgeFromObjectiveC(_ source: CoreAuthenticator.__StatusEntity, result: inout CoreAuthenticator.StatusEntity?) -> Swift.Bool
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: CoreAuthenticator.__StatusEntity?) -> CoreAuthenticator.StatusEntity
+  #endif
+  public func _bridgeToObjectiveC() -> CoreAuthenticator.__StatusEntity
+  public typealias _ObjectiveCType = CoreAuthenticator.__StatusEntity
+  public static func == (a: CoreAuthenticator.StatusEntity, b: CoreAuthenticator.StatusEntity) -> Swift.Bool
+  public typealias AllCases = [CoreAuthenticator.StatusEntity]
+  nonisolated public static var allCases: [CoreAuthenticator.StatusEntity] {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension CoreAuthenticator.StatusEntity {
+  public func toKotlinEnum() -> CoreAuthenticator.__StatusEntity
+}
+extension CoreAuthenticator.__StatusEntity {
+  public func toSwiftEnum() -> CoreAuthenticator.StatusEntity
+}
+@frozen public enum Theme : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {
+  case light
+  case dark
+  case system
+  public var name: Swift.String {
+    get
+  }
+  public var ordinal: Swift.Int32 {
+    get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _forceBridgeFromObjectiveC(_ source: CoreAuthenticator.__Theme, result: inout CoreAuthenticator.Theme?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _conditionallyBridgeFromObjectiveC(_ source: CoreAuthenticator.__Theme, result: inout CoreAuthenticator.Theme?) -> Swift.Bool
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: CoreAuthenticator.__Theme?) -> CoreAuthenticator.Theme
+  #endif
+  public func _bridgeToObjectiveC() -> CoreAuthenticator.__Theme
+  public typealias _ObjectiveCType = CoreAuthenticator.__Theme
+  public static func == (a: CoreAuthenticator.Theme, b: CoreAuthenticator.Theme) -> Swift.Bool
+  public typealias AllCases = [CoreAuthenticator.Theme]
+  nonisolated public static var allCases: [CoreAuthenticator.Theme] {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension CoreAuthenticator.Theme {
+  public func toKotlinEnum() -> CoreAuthenticator.__Theme
+}
+extension CoreAuthenticator.__Theme {
+  public func toSwiftEnum() -> CoreAuthenticator.Theme
+}
+@frozen public enum KeyStorageLocation : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {
+  case secureEnclave
+  case keyChain
+  public var name: Swift.String {
+    get
+  }
+  public var ordinal: Swift.Int32 {
+    get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _forceBridgeFromObjectiveC(_ source: CoreAuthenticator.__KeyStorageLocation, result: inout CoreAuthenticator.KeyStorageLocation?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _conditionallyBridgeFromObjectiveC(_ source: CoreAuthenticator.__KeyStorageLocation, result: inout CoreAuthenticator.KeyStorageLocation?) -> Swift.Bool
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: CoreAuthenticator.__KeyStorageLocation?) -> CoreAuthenticator.KeyStorageLocation
+  #endif
+  public func _bridgeToObjectiveC() -> CoreAuthenticator.__KeyStorageLocation
+  public typealias _ObjectiveCType = CoreAuthenticator.__KeyStorageLocation
+  public static func == (a: CoreAuthenticator.KeyStorageLocation, b: CoreAuthenticator.KeyStorageLocation) -> Swift.Bool
+  public typealias AllCases = [CoreAuthenticator.KeyStorageLocation]
+  nonisolated public static var allCases: [CoreAuthenticator.KeyStorageLocation] {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension CoreAuthenticator.KeyStorageLocation {
+  public func toKotlinEnum() -> CoreAuthenticator.__KeyStorageLocation
+}
+extension CoreAuthenticator.__KeyStorageLocation {
+  public func toSwiftEnum() -> CoreAuthenticator.KeyStorageLocation
+}
+@frozen public enum MatomoCategory : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {
+  case account
+  case settingsGeneral
+  public var name: Swift.String {
+    get
+  }
+  public var ordinal: Swift.Int32 {
+    get
+  }
+  public var value: Swift.String {
+    get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _forceBridgeFromObjectiveC(_ source: CoreAuthenticator.__MatomoCategory, result: inout CoreAuthenticator.MatomoCategory?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _conditionallyBridgeFromObjectiveC(_ source: CoreAuthenticator.__MatomoCategory, result: inout CoreAuthenticator.MatomoCategory?) -> Swift.Bool
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: CoreAuthenticator.__MatomoCategory?) -> CoreAuthenticator.MatomoCategory
+  #endif
+  public func _bridgeToObjectiveC() -> CoreAuthenticator.__MatomoCategory
+  public typealias _ObjectiveCType = CoreAuthenticator.__MatomoCategory
+  public static func == (a: CoreAuthenticator.MatomoCategory, b: CoreAuthenticator.MatomoCategory) -> Swift.Bool
+  public typealias AllCases = [CoreAuthenticator.MatomoCategory]
+  nonisolated public static var allCases: [CoreAuthenticator.MatomoCategory] {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension CoreAuthenticator.MatomoCategory {
+  public func toKotlinEnum() -> CoreAuthenticator.__MatomoCategory
+}
+extension CoreAuthenticator.__MatomoCategory {
+  public func toSwiftEnum() -> CoreAuthenticator.MatomoCategory
+}
+@frozen public enum MatomoName : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {
+  case toggleBiometry
+  case loggedIn
+  case openLoginWebview
+  public var name: Swift.String {
+    get
+  }
+  public var ordinal: Swift.Int32 {
+    get
+  }
+  public var value: Swift.String {
+    get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _forceBridgeFromObjectiveC(_ source: CoreAuthenticator.__MatomoName, result: inout CoreAuthenticator.MatomoName?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _conditionallyBridgeFromObjectiveC(_ source: CoreAuthenticator.__MatomoName, result: inout CoreAuthenticator.MatomoName?) -> Swift.Bool
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: CoreAuthenticator.__MatomoName?) -> CoreAuthenticator.MatomoName
+  #endif
+  public func _bridgeToObjectiveC() -> CoreAuthenticator.__MatomoName
+  public typealias _ObjectiveCType = CoreAuthenticator.__MatomoName
+  public static func == (a: CoreAuthenticator.MatomoName, b: CoreAuthenticator.MatomoName) -> Swift.Bool
+  public typealias AllCases = [CoreAuthenticator.MatomoName]
+  nonisolated public static var allCases: [CoreAuthenticator.MatomoName] {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension CoreAuthenticator.MatomoName {
+  public func toKotlinEnum() -> CoreAuthenticator.__MatomoName
+}
+extension CoreAuthenticator.__MatomoName {
+  public func toSwiftEnum() -> CoreAuthenticator.MatomoName
+}
+@frozen public enum MatomoScreen : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {
+  public var name: Swift.String {
+    get
+  }
+  public var ordinal: Swift.Int32 {
+    get
+  }
+  public var value: Swift.String {
+    get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _forceBridgeFromObjectiveC(_ source: CoreAuthenticator.__MatomoScreen, result: inout CoreAuthenticator.MatomoScreen?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _conditionallyBridgeFromObjectiveC(_ source: CoreAuthenticator.__MatomoScreen, result: inout CoreAuthenticator.MatomoScreen?) -> Swift.Bool
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: CoreAuthenticator.__MatomoScreen?) -> CoreAuthenticator.MatomoScreen
+  #endif
+  public func _bridgeToObjectiveC() -> CoreAuthenticator.__MatomoScreen
+  public typealias _ObjectiveCType = CoreAuthenticator.__MatomoScreen
+  public static func == (a: CoreAuthenticator.MatomoScreen, b: CoreAuthenticator.MatomoScreen) -> Swift.Bool
+  public typealias AllCases = [CoreAuthenticator.MatomoScreen]
+  nonisolated public static var allCases: [CoreAuthenticator.MatomoScreen] {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension CoreAuthenticator.MatomoScreen {
+  public func toKotlinEnum() -> CoreAuthenticator.__MatomoScreen
+}
+extension CoreAuthenticator.__MatomoScreen {
+  public func toSwiftEnum() -> CoreAuthenticator.MatomoScreen
+}
+extension CoreAuthenticator.Room_runtimeRoomDatabase {
+  public typealias JournalMode = CoreAuthenticator.__Bridge__Room_runtimeRoomDatabase_JournalMode
+}
+extension CoreAuthenticator.__Bridge__Room_runtimeRoomDatabase_JournalMode {
+  public func toKotlinEnum() -> CoreAuthenticator.Room_runtimeRoomDatabase.__JournalMode
+}
+extension CoreAuthenticator.Room_runtimeRoomDatabase.__JournalMode {
+  public func toSwiftEnum() -> CoreAuthenticator.Room_runtimeRoomDatabase.JournalMode
+}
+@frozen public enum __Bridge__Room_runtimeRoomDatabase_JournalMode : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {
+  case truncate
+  case writeAheadLogging
+  public var name: Swift.String {
+    get
+  }
+  public var ordinal: Swift.Int32 {
+    get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _forceBridgeFromObjectiveC(_ source: CoreAuthenticator.Room_runtimeRoomDatabase.__JournalMode, result: inout CoreAuthenticator.Room_runtimeRoomDatabase.JournalMode?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _conditionallyBridgeFromObjectiveC(_ source: CoreAuthenticator.Room_runtimeRoomDatabase.__JournalMode, result: inout CoreAuthenticator.Room_runtimeRoomDatabase.JournalMode?) -> Swift.Bool
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: CoreAuthenticator.Room_runtimeRoomDatabase.__JournalMode?) -> CoreAuthenticator.__Bridge__Room_runtimeRoomDatabase_JournalMode
+  #endif
+  public func _bridgeToObjectiveC() -> CoreAuthenticator.Room_runtimeRoomDatabase.__JournalMode
+  public typealias _ObjectiveCType = CoreAuthenticator.Room_runtimeRoomDatabase.__JournalMode
+  public static func == (a: CoreAuthenticator.__Bridge__Room_runtimeRoomDatabase_JournalMode, b: CoreAuthenticator.__Bridge__Room_runtimeRoomDatabase_JournalMode) -> Swift.Bool
+  public typealias AllCases = [CoreAuthenticator.__Bridge__Room_runtimeRoomDatabase_JournalMode]
+  nonisolated public static var allCases: [CoreAuthenticator.__Bridge__Room_runtimeRoomDatabase_JournalMode] {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+@frozen public enum Ktor_utilsMonth : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {
+  case january
+  case february
+  case march
+  case april
+  case may
+  case june
+  case july
+  case august
+  case september
+  case october
+  case november
+  case december
+  public var name: Swift.String {
+    get
+  }
+  public var ordinal: Swift.Int32 {
+    get
+  }
+  public var value: Swift.String {
+    get
+  }
+  public static var companion: CoreAuthenticator.__Ktor_utilsMonth.Companion {
+    get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _forceBridgeFromObjectiveC(_ source: CoreAuthenticator.__Ktor_utilsMonth, result: inout CoreAuthenticator.Ktor_utilsMonth?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _conditionallyBridgeFromObjectiveC(_ source: CoreAuthenticator.__Ktor_utilsMonth, result: inout CoreAuthenticator.Ktor_utilsMonth?) -> Swift.Bool
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: CoreAuthenticator.__Ktor_utilsMonth?) -> CoreAuthenticator.Ktor_utilsMonth
+  #endif
+  public func _bridgeToObjectiveC() -> CoreAuthenticator.__Ktor_utilsMonth
+  public typealias _ObjectiveCType = CoreAuthenticator.__Ktor_utilsMonth
+  public typealias Companion = CoreAuthenticator.__Ktor_utilsMonth.Companion
+  public static func == (a: CoreAuthenticator.Ktor_utilsMonth, b: CoreAuthenticator.Ktor_utilsMonth) -> Swift.Bool
+  public typealias AllCases = [CoreAuthenticator.Ktor_utilsMonth]
+  nonisolated public static var allCases: [CoreAuthenticator.Ktor_utilsMonth] {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension CoreAuthenticator.Ktor_utilsMonth {
+  public func toKotlinEnum() -> CoreAuthenticator.__Ktor_utilsMonth
+}
+extension CoreAuthenticator.__Ktor_utilsMonth {
+  public func toSwiftEnum() -> CoreAuthenticator.Ktor_utilsMonth
+}
+@frozen public enum Ktor_utilsWeekDay : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {
+  case monday
+  case tuesday
+  case wednesday
+  case thursday
+  case friday
+  case saturday
+  case sunday
+  public var name: Swift.String {
+    get
+  }
+  public var ordinal: Swift.Int32 {
+    get
+  }
+  public var value: Swift.String {
+    get
+  }
+  public static var companion: CoreAuthenticator.__Ktor_utilsWeekDay.Companion {
+    get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _forceBridgeFromObjectiveC(_ source: CoreAuthenticator.__Ktor_utilsWeekDay, result: inout CoreAuthenticator.Ktor_utilsWeekDay?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _conditionallyBridgeFromObjectiveC(_ source: CoreAuthenticator.__Ktor_utilsWeekDay, result: inout CoreAuthenticator.Ktor_utilsWeekDay?) -> Swift.Bool
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: CoreAuthenticator.__Ktor_utilsWeekDay?) -> CoreAuthenticator.Ktor_utilsWeekDay
+  #endif
+  public func _bridgeToObjectiveC() -> CoreAuthenticator.__Ktor_utilsWeekDay
+  public typealias _ObjectiveCType = CoreAuthenticator.__Ktor_utilsWeekDay
+  public typealias Companion = CoreAuthenticator.__Ktor_utilsWeekDay.Companion
+  public static func == (a: CoreAuthenticator.Ktor_utilsWeekDay, b: CoreAuthenticator.Ktor_utilsWeekDay) -> Swift.Bool
+  public typealias AllCases = [CoreAuthenticator.Ktor_utilsWeekDay]
+  nonisolated public static var allCases: [CoreAuthenticator.Ktor_utilsWeekDay] {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension CoreAuthenticator.Ktor_utilsWeekDay {
+  public func toKotlinEnum() -> CoreAuthenticator.__Ktor_utilsWeekDay
+}
+extension CoreAuthenticator.__Ktor_utilsWeekDay {
+  public func toSwiftEnum() -> CoreAuthenticator.Ktor_utilsWeekDay
+}
+extension CoreAuthenticator.Skie.RuntimeKotlin.Skie_SuspendResult {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case canceled(CoreAuthenticator.Skie_SuspendResult.Canceled)
+    case error(CoreAuthenticator.Skie_SuspendResult.Error)
+    case success(CoreAuthenticator.Skie_SuspendResult.Success)
+    public static func == (a: CoreAuthenticator.Skie.RuntimeKotlin.Skie_SuspendResult.__Sealed, b: CoreAuthenticator.Skie.RuntimeKotlin.Skie_SuspendResult.__Sealed) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> CoreAuthenticator.Skie.RuntimeKotlin.Skie_SuspendResult.__Sealed where __Sealed : CoreAuthenticator.Skie_SuspendResult
+#if compiler(>=5.3) && $NonescapableTypes
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> CoreAuthenticator.Skie.RuntimeKotlin.Skie_SuspendResult.__Sealed? where __Sealed : CoreAuthenticator.Skie_SuspendResult
+#endif
+extension CoreAuthenticator.Skie.KotlinxCoroutinesCore.SelectClause0 {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case `else`
+    public static func == (a: CoreAuthenticator.Skie.KotlinxCoroutinesCore.SelectClause0.__Sealed, b: CoreAuthenticator.Skie.KotlinxCoroutinesCore.SelectClause0.__Sealed) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> CoreAuthenticator.Skie.KotlinxCoroutinesCore.SelectClause0.__Sealed where __Sealed : CoreAuthenticator.Kotlinx_coroutines_coreSelectClause0
+#if compiler(>=5.3) && $NonescapableTypes
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> CoreAuthenticator.Skie.KotlinxCoroutinesCore.SelectClause0.__Sealed? where __Sealed : CoreAuthenticator.Kotlinx_coroutines_coreSelectClause0
+#endif
+extension CoreAuthenticator.Skie.KotlinxCoroutinesCore.SelectClause {
+  @frozen public enum __Sealed {
+    case selectClause0(any CoreAuthenticator.Kotlinx_coroutines_coreSelectClause0)
+    case selectClause1(any CoreAuthenticator.Kotlinx_coroutines_coreSelectClause1)
+    case selectClause2(any CoreAuthenticator.Kotlinx_coroutines_coreSelectClause2)
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> CoreAuthenticator.Skie.KotlinxCoroutinesCore.SelectClause.__Sealed where __Sealed : CoreAuthenticator.Kotlinx_coroutines_coreSelectClause
+#if compiler(>=5.3) && $NonescapableTypes
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> CoreAuthenticator.Skie.KotlinxCoroutinesCore.SelectClause.__Sealed? where __Sealed : CoreAuthenticator.Kotlinx_coroutines_coreSelectClause
+#endif
+extension CoreAuthenticator.Skie.KotlinxCoroutinesCore.SelectInstance {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case `else`
+    public static func == (a: CoreAuthenticator.Skie.KotlinxCoroutinesCore.SelectInstance.__Sealed, b: CoreAuthenticator.Skie.KotlinxCoroutinesCore.SelectInstance.__Sealed) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> CoreAuthenticator.Skie.KotlinxCoroutinesCore.SelectInstance.__Sealed where __Sealed : CoreAuthenticator.Kotlinx_coroutines_coreSelectInstance
+#if compiler(>=5.3) && $NonescapableTypes
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> CoreAuthenticator.Skie.KotlinxCoroutinesCore.SelectInstance.__Sealed? where __Sealed : CoreAuthenticator.Kotlinx_coroutines_coreSelectInstance
+#endif
+extension CoreAuthenticator.Skie.KotlinxCoroutinesCore.SelectClause1 {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case `else`
+    public static func == (a: CoreAuthenticator.Skie.KotlinxCoroutinesCore.SelectClause1.__Sealed, b: CoreAuthenticator.Skie.KotlinxCoroutinesCore.SelectClause1.__Sealed) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> CoreAuthenticator.Skie.KotlinxCoroutinesCore.SelectClause1.__Sealed where __Sealed : CoreAuthenticator.Kotlinx_coroutines_coreSelectClause1
+#if compiler(>=5.3) && $NonescapableTypes
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> CoreAuthenticator.Skie.KotlinxCoroutinesCore.SelectClause1.__Sealed? where __Sealed : CoreAuthenticator.Kotlinx_coroutines_coreSelectClause1
+#endif
+extension CoreAuthenticator.Skie.KotlinxCoroutinesCore.SelectClause2 {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case `else`
+    public static func == (a: CoreAuthenticator.Skie.KotlinxCoroutinesCore.SelectClause2.__Sealed, b: CoreAuthenticator.Skie.KotlinxCoroutinesCore.SelectClause2.__Sealed) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> CoreAuthenticator.Skie.KotlinxCoroutinesCore.SelectClause2.__Sealed where __Sealed : CoreAuthenticator.Kotlinx_coroutines_coreSelectClause2
+#if compiler(>=5.3) && $NonescapableTypes
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> CoreAuthenticator.Skie.KotlinxCoroutinesCore.SelectClause2.__Sealed? where __Sealed : CoreAuthenticator.Kotlinx_coroutines_coreSelectClause2
+#endif
+extension CoreAuthenticator.Skie.MultiplatformLib.Account.Status {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case loggedIn(CoreAuthenticator.AccountStatusLoggedIn)
+    case notConnected(CoreAuthenticator.AccountStatusNotConnected)
+    public static func == (a: CoreAuthenticator.Skie.MultiplatformLib.Account.Status.__Sealed, b: CoreAuthenticator.Skie.MultiplatformLib.Account.Status.__Sealed) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> CoreAuthenticator.Skie.MultiplatformLib.Account.Status.__Sealed where __Sealed : CoreAuthenticator.AccountStatus
+#if compiler(>=5.3) && $NonescapableTypes
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> CoreAuthenticator.Skie.MultiplatformLib.Account.Status.__Sealed? where __Sealed : CoreAuthenticator.AccountStatus
+#endif
+extension CoreAuthenticator.Skie.MultiplatformLib.NotConnectedAction {
+  @frozen public enum __Sealed {
+    case issue(any CoreAuthenticator.NotConnectedActionIssue)
+    case reLogin(CoreAuthenticator.NotConnectedActionReLogin)
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> CoreAuthenticator.Skie.MultiplatformLib.NotConnectedAction.__Sealed where __Sealed : CoreAuthenticator.NotConnectedAction
+#if compiler(>=5.3) && $NonescapableTypes
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> CoreAuthenticator.Skie.MultiplatformLib.NotConnectedAction.__Sealed? where __Sealed : CoreAuthenticator.NotConnectedAction
+#endif
+extension CoreAuthenticator.Skie.MultiplatformLib.NotConnectedAction.Issue {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case nonRetriable(CoreAuthenticator.NotConnectedActionIssueNonRetriable)
+    case retriable(CoreAuthenticator.NotConnectedActionIssueRetriable)
+    public static func == (a: CoreAuthenticator.Skie.MultiplatformLib.NotConnectedAction.Issue.__Sealed, b: CoreAuthenticator.Skie.MultiplatformLib.NotConnectedAction.Issue.__Sealed) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> CoreAuthenticator.Skie.MultiplatformLib.NotConnectedAction.Issue.__Sealed where __Sealed : CoreAuthenticator.NotConnectedActionIssue
+#if compiler(>=5.3) && $NonescapableTypes
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> CoreAuthenticator.Skie.MultiplatformLib.NotConnectedAction.Issue.__Sealed? where __Sealed : CoreAuthenticator.NotConnectedActionIssue
+#endif
+extension CoreAuthenticator.Skie.MultiplatformLib.AppStatus {
+  @frozen public enum __Sealed {
+    case loggingIn(CoreAuthenticator.AppStatusLoggingIn)
+    case loginRequired(any CoreAuthenticator.AppStatusLoginRequired)
+    case onboardingDone(CoreAuthenticator.AppStatusOnboardingDone)
+    case setupComplete(CoreAuthenticator.AppStatusSetupComplete)
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> CoreAuthenticator.Skie.MultiplatformLib.AppStatus.__Sealed where __Sealed : CoreAuthenticator.AppStatus
+#if compiler(>=5.3) && $NonescapableTypes
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> CoreAuthenticator.Skie.MultiplatformLib.AppStatus.__Sealed? where __Sealed : CoreAuthenticator.AppStatus
+#endif
+extension CoreAuthenticator.Skie.MultiplatformLib.AppStatus.LoginRequired {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case migratingFromLegacyKAuth(CoreAuthenticator.AppStatusLoginRequiredMigratingFromLegacyKAuth)
+    case notMigrating(CoreAuthenticator.AppStatusLoginRequiredNotMigrating)
+    public static func == (a: CoreAuthenticator.Skie.MultiplatformLib.AppStatus.LoginRequired.__Sealed, b: CoreAuthenticator.Skie.MultiplatformLib.AppStatus.LoginRequired.__Sealed) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> CoreAuthenticator.Skie.MultiplatformLib.AppStatus.LoginRequired.__Sealed where __Sealed : CoreAuthenticator.AppStatusLoginRequired
+#if compiler(>=5.3) && $NonescapableTypes
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> CoreAuthenticator.Skie.MultiplatformLib.AppStatus.LoginRequired.__Sealed? where __Sealed : CoreAuthenticator.AppStatusLoginRequired
+#endif
+extension CoreAuthenticator.Skie.MultiplatformLib.ApiEnvironment {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case custom(CoreAuthenticator.ApiEnvironment.Custom)
+    case preprod(CoreAuthenticator.ApiEnvironment.Preprod)
+    case prod(CoreAuthenticator.ApiEnvironment.Prod)
+    case staging(CoreAuthenticator.ApiEnvironment.Staging)
+    public static func == (a: CoreAuthenticator.Skie.MultiplatformLib.ApiEnvironment.__Sealed, b: CoreAuthenticator.Skie.MultiplatformLib.ApiEnvironment.__Sealed) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> CoreAuthenticator.Skie.MultiplatformLib.ApiEnvironment.__Sealed where __Sealed : CoreAuthenticator.ApiEnvironment
+#if compiler(>=5.3) && $NonescapableTypes
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> CoreAuthenticator.Skie.MultiplatformLib.ApiEnvironment.__Sealed? where __Sealed : CoreAuthenticator.ApiEnvironment
+#endif
+extension CoreAuthenticator.Skie.MultiplatformLib.Failure {
+  @frozen public enum __Sealed {
+    case keyManagement(any CoreAuthenticator.FailureKeyManagement)
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> CoreAuthenticator.Skie.MultiplatformLib.Failure.__Sealed where __Sealed : CoreAuthenticator.Failure
+#if compiler(>=5.3) && $NonescapableTypes
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> CoreAuthenticator.Skie.MultiplatformLib.Failure.__Sealed? where __Sealed : CoreAuthenticator.Failure
+#endif
+extension CoreAuthenticator.Skie.MultiplatformLib.Failure.KeyManagement {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case generationFailed(CoreAuthenticator.FailureKeyManagementGenerationFailed)
+    case keyExtractionFailed(CoreAuthenticator.FailureKeyManagementKeyExtractionFailed)
+    public static func == (a: CoreAuthenticator.Skie.MultiplatformLib.Failure.KeyManagement.__Sealed, b: CoreAuthenticator.Skie.MultiplatformLib.Failure.KeyManagement.__Sealed) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> CoreAuthenticator.Skie.MultiplatformLib.Failure.KeyManagement.__Sealed where __Sealed : CoreAuthenticator.FailureKeyManagement
+#if compiler(>=5.3) && $NonescapableTypes
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> CoreAuthenticator.Skie.MultiplatformLib.Failure.KeyManagement.__Sealed? where __Sealed : CoreAuthenticator.FailureKeyManagement
+#endif
+extension CoreAuthenticator.Skie.MultiplatformLib.ApiException {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case apiErrorException(CoreAuthenticator.ApiException.ApiErrorException)
+    case unexpectedApiErrorFormatException(CoreAuthenticator.ApiException.UnexpectedApiErrorFormatException)
+    public static func == (a: CoreAuthenticator.Skie.MultiplatformLib.ApiException.__Sealed, b: CoreAuthenticator.Skie.MultiplatformLib.ApiException.__Sealed) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> CoreAuthenticator.Skie.MultiplatformLib.ApiException.__Sealed where __Sealed : CoreAuthenticator.ApiException
+#if compiler(>=5.3) && $NonescapableTypes
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> CoreAuthenticator.Skie.MultiplatformLib.ApiException.__Sealed? where __Sealed : CoreAuthenticator.ApiException
+#endif
+extension CoreAuthenticator.Skie.KotlinxSerializationCore.SerialKind {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case polymorphicKind(CoreAuthenticator.Kotlinx_serialization_corePolymorphicKind)
+    case primitiveKind(CoreAuthenticator.Kotlinx_serialization_corePrimitiveKind)
+    case cONTEXTUAL(CoreAuthenticator.Kotlinx_serialization_coreSerialKind.CONTEXTUAL)
+    case eNUM(CoreAuthenticator.Kotlinx_serialization_coreSerialKind.ENUM)
+    case structureKind(CoreAuthenticator.Kotlinx_serialization_coreStructureKind)
+    public static func == (a: CoreAuthenticator.Skie.KotlinxSerializationCore.SerialKind.__Sealed, b: CoreAuthenticator.Skie.KotlinxSerializationCore.SerialKind.__Sealed) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> CoreAuthenticator.Skie.KotlinxSerializationCore.SerialKind.__Sealed where __Sealed : CoreAuthenticator.Kotlinx_serialization_coreSerialKind
+#if compiler(>=5.3) && $NonescapableTypes
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> CoreAuthenticator.Skie.KotlinxSerializationCore.SerialKind.__Sealed? where __Sealed : CoreAuthenticator.Kotlinx_serialization_coreSerialKind
+#endif
+extension CoreAuthenticator.Skie.KotlinxSerializationCore.SerializersModule {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case `else`
+    public static func == (a: CoreAuthenticator.Skie.KotlinxSerializationCore.SerializersModule.__Sealed, b: CoreAuthenticator.Skie.KotlinxSerializationCore.SerializersModule.__Sealed) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> CoreAuthenticator.Skie.KotlinxSerializationCore.SerializersModule.__Sealed where __Sealed : CoreAuthenticator.Kotlinx_serialization_coreSerializersModule
+#if compiler(>=5.3) && $NonescapableTypes
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> CoreAuthenticator.Skie.KotlinxSerializationCore.SerializersModule.__Sealed? where __Sealed : CoreAuthenticator.Kotlinx_serialization_coreSerializersModule
+#endif
+extension CoreAuthenticator.Skie.KotlinxSerializationCore.PolymorphicKind {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case oPEN(CoreAuthenticator.Kotlinx_serialization_corePolymorphicKind.OPEN)
+    case sEALED(CoreAuthenticator.Kotlinx_serialization_corePolymorphicKind.SEALED)
+    public static func == (a: CoreAuthenticator.Skie.KotlinxSerializationCore.PolymorphicKind.__Sealed, b: CoreAuthenticator.Skie.KotlinxSerializationCore.PolymorphicKind.__Sealed) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> CoreAuthenticator.Skie.KotlinxSerializationCore.PolymorphicKind.__Sealed where __Sealed : CoreAuthenticator.Kotlinx_serialization_corePolymorphicKind
+#if compiler(>=5.3) && $NonescapableTypes
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> CoreAuthenticator.Skie.KotlinxSerializationCore.PolymorphicKind.__Sealed? where __Sealed : CoreAuthenticator.Kotlinx_serialization_corePolymorphicKind
+#endif
+extension CoreAuthenticator.Skie.KotlinxSerializationCore.PrimitiveKind {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case bOOLEAN(CoreAuthenticator.Kotlinx_serialization_corePrimitiveKind.BOOLEAN)
+    case bYTE(CoreAuthenticator.Kotlinx_serialization_corePrimitiveKind.BYTE)
+    case cHAR(CoreAuthenticator.Kotlinx_serialization_corePrimitiveKind.CHAR)
+    case dOUBLE(CoreAuthenticator.Kotlinx_serialization_corePrimitiveKind.DOUBLE)
+    case fLOAT(CoreAuthenticator.Kotlinx_serialization_corePrimitiveKind.FLOAT)
+    case iNT(CoreAuthenticator.Kotlinx_serialization_corePrimitiveKind.INT)
+    case lONG(CoreAuthenticator.Kotlinx_serialization_corePrimitiveKind.LONG)
+    case sHORT(CoreAuthenticator.Kotlinx_serialization_corePrimitiveKind.SHORT)
+    case sTRING(CoreAuthenticator.Kotlinx_serialization_corePrimitiveKind.STRING)
+    public static func == (a: CoreAuthenticator.Skie.KotlinxSerializationCore.PrimitiveKind.__Sealed, b: CoreAuthenticator.Skie.KotlinxSerializationCore.PrimitiveKind.__Sealed) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> CoreAuthenticator.Skie.KotlinxSerializationCore.PrimitiveKind.__Sealed where __Sealed : CoreAuthenticator.Kotlinx_serialization_corePrimitiveKind
+#if compiler(>=5.3) && $NonescapableTypes
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> CoreAuthenticator.Skie.KotlinxSerializationCore.PrimitiveKind.__Sealed? where __Sealed : CoreAuthenticator.Kotlinx_serialization_corePrimitiveKind
+#endif
+extension CoreAuthenticator.Skie.KotlinxSerializationCore.StructureKind {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case cLASS(CoreAuthenticator.Kotlinx_serialization_coreStructureKind.CLASS)
+    case lIST(CoreAuthenticator.Kotlinx_serialization_coreStructureKind.LIST)
+    case mAP(CoreAuthenticator.Kotlinx_serialization_coreStructureKind.MAP)
+    case oBJECT(CoreAuthenticator.Kotlinx_serialization_coreStructureKind.OBJECT)
+    public static func == (a: CoreAuthenticator.Skie.KotlinxSerializationCore.StructureKind.__Sealed, b: CoreAuthenticator.Skie.KotlinxSerializationCore.StructureKind.__Sealed) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> CoreAuthenticator.Skie.KotlinxSerializationCore.StructureKind.__Sealed where __Sealed : CoreAuthenticator.Kotlinx_serialization_coreStructureKind
+#if compiler(>=5.3) && $NonescapableTypes
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> CoreAuthenticator.Skie.KotlinxSerializationCore.StructureKind.__Sealed? where __Sealed : CoreAuthenticator.Kotlinx_serialization_coreStructureKind
+#endif
+extension CoreAuthenticator.Skie.KtorHttp.OutgoingContent {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case byteArrayContent(CoreAuthenticator.Ktor_httpOutgoingContent.ByteArrayContent)
+    case contentWrapper(CoreAuthenticator.Ktor_httpOutgoingContent.ContentWrapper)
+    case noContent(CoreAuthenticator.Ktor_httpOutgoingContent.NoContent)
+    case protocolUpgrade(CoreAuthenticator.Ktor_httpOutgoingContent.ProtocolUpgrade)
+    case readChannelContent(CoreAuthenticator.Ktor_httpOutgoingContent.ReadChannelContent)
+    case writeChannelContent(CoreAuthenticator.Ktor_httpOutgoingContent.WriteChannelContent)
+    public static func == (a: CoreAuthenticator.Skie.KtorHttp.OutgoingContent.__Sealed, b: CoreAuthenticator.Skie.KtorHttp.OutgoingContent.__Sealed) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> CoreAuthenticator.Skie.KtorHttp.OutgoingContent.__Sealed where __Sealed : CoreAuthenticator.Ktor_httpOutgoingContent
+#if compiler(>=5.3) && $NonescapableTypes
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> CoreAuthenticator.Skie.KtorHttp.OutgoingContent.__Sealed? where __Sealed : CoreAuthenticator.Ktor_httpOutgoingContent
+#endif
+extension CoreAuthenticator.Skie.KotlinxIoCore.Source {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case buffer(CoreAuthenticator.Kotlinx_io_coreBuffer)
+    case `else`
+    public static func == (a: CoreAuthenticator.Skie.KotlinxIoCore.Source.__Sealed, b: CoreAuthenticator.Skie.KotlinxIoCore.Source.__Sealed) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> CoreAuthenticator.Skie.KotlinxIoCore.Source.__Sealed where __Sealed : CoreAuthenticator.Kotlinx_io_coreSource
+#if compiler(>=5.3) && $NonescapableTypes
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> CoreAuthenticator.Skie.KotlinxIoCore.Source.__Sealed? where __Sealed : CoreAuthenticator.Kotlinx_io_coreSource
+#endif
+extension CoreAuthenticator.Skie.KotlinxIoCore.Sink {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case buffer(CoreAuthenticator.Kotlinx_io_coreBuffer)
+    case `else`
+    public static func == (a: CoreAuthenticator.Skie.KotlinxIoCore.Sink.__Sealed, b: CoreAuthenticator.Skie.KotlinxIoCore.Sink.__Sealed) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> CoreAuthenticator.Skie.KotlinxIoCore.Sink.__Sealed where __Sealed : CoreAuthenticator.Kotlinx_io_coreSink
+#if compiler(>=5.3) && $NonescapableTypes
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> CoreAuthenticator.Skie.KotlinxIoCore.Sink.__Sealed? where __Sealed : CoreAuthenticator.Kotlinx_io_coreSink
+#endif
+public func getAccountsDatabaseBuilder() -> CoreAuthenticator.Room_runtimeRoomDatabaseBuilder<CoreAuthenticator.AccountsDatabase>
+public func getAccountsRoomDatabase() -> CoreAuthenticator.AccountsDatabase
+public func getAppSettingsDatabaseBuilder() -> CoreAuthenticator.Room_runtimeRoomDatabaseBuilder<CoreAuthenticator.AppSettingsDatabase>
+public func getAppSettingsRoomDatabase() -> CoreAuthenticator.AppSettingsDatabase
+extension Swift.UnsafeMutableRawPointer {
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func use(block: @escaping (Any) -> Any?) -> Any?
+  #endif
+  public func toNSData() -> Foundation.Data
+  public func toNSError() -> any Swift.Error
+}
+extension Foundation.Data {
+  public func toByteArray() -> CoreAuthenticator.KotlinByteArray
+  public func toCFDataRef() -> Swift.UnsafeMutableRawPointer
+}
+public func getHttpClientEngine() -> any CoreAuthenticator.Ktor_client_coreHttpClientEngine
+public var CONTENT_REQUEST_ID_HEADER: Swift.String {
+  get
+}
+public func getDeviceInfo() -> CoreAuthenticator.DeviceInfo
+public func getAccountsRoomDatabase(builder: CoreAuthenticator.Room_runtimeRoomDatabaseBuilder<CoreAuthenticator.AccountsDatabase>) -> CoreAuthenticator.AccountsDatabase
+public func getAppSettingsRoomDatabase(builder: CoreAuthenticator.Room_runtimeRoomDatabaseBuilder<CoreAuthenticator.AppSettingsDatabase>) -> CoreAuthenticator.AppSettingsDatabase
+extension CoreAuthenticator.KotlinKVariance : Swift.Sendable {}
+extension CoreAuthenticator.KotlinKVariance : Swift.BitwiseCopyable {}
+extension CoreAuthenticator.ApiResponseStatus : Swift.Sendable {}
+extension CoreAuthenticator.ApiResponseStatus : Swift.BitwiseCopyable {}
+extension CoreAuthenticator.CrashReportLevel : Swift.Sendable {}
+extension CoreAuthenticator.CrashReportLevel : Swift.BitwiseCopyable {}
+extension CoreAuthenticator.BreadcrumbType : Swift.Sendable {}
+extension CoreAuthenticator.BreadcrumbType : Swift.BitwiseCopyable {}
+extension CoreAuthenticator.StatusEntity : Swift.Sendable {}
+extension CoreAuthenticator.StatusEntity : Swift.BitwiseCopyable {}
+extension CoreAuthenticator.Theme : Swift.Sendable {}
+extension CoreAuthenticator.Theme : Swift.BitwiseCopyable {}
+extension CoreAuthenticator.KeyStorageLocation : Swift.Sendable {}
+extension CoreAuthenticator.KeyStorageLocation : Swift.BitwiseCopyable {}
+extension CoreAuthenticator.MatomoCategory : Swift.Sendable {}
+extension CoreAuthenticator.MatomoCategory : Swift.BitwiseCopyable {}
+extension CoreAuthenticator.MatomoName : Swift.Sendable {}
+extension CoreAuthenticator.MatomoName : Swift.BitwiseCopyable {}
+extension CoreAuthenticator.MatomoScreen : Swift.Sendable {}
+extension CoreAuthenticator.MatomoScreen : Swift.BitwiseCopyable {}
+extension CoreAuthenticator.__Bridge__Room_runtimeRoomDatabase_JournalMode : Swift.Sendable {}
+extension CoreAuthenticator.__Bridge__Room_runtimeRoomDatabase_JournalMode : Swift.BitwiseCopyable {}
+extension CoreAuthenticator.Ktor_utilsMonth : Swift.Sendable {}
+extension CoreAuthenticator.Ktor_utilsMonth : Swift.BitwiseCopyable {}
+extension CoreAuthenticator.Ktor_utilsWeekDay : Swift.Sendable {}
+extension CoreAuthenticator.Ktor_utilsWeekDay : Swift.BitwiseCopyable {}
+extension CoreAuthenticator.Skie.KotlinxCoroutinesCore.SelectClause0.__Sealed : Swift.Sendable {}
+extension CoreAuthenticator.Skie.KotlinxCoroutinesCore.SelectClause0.__Sealed : Swift.BitwiseCopyable {}
+extension CoreAuthenticator.Skie.KotlinxCoroutinesCore.SelectInstance.__Sealed : Swift.Sendable {}
+extension CoreAuthenticator.Skie.KotlinxCoroutinesCore.SelectInstance.__Sealed : Swift.BitwiseCopyable {}
+extension CoreAuthenticator.Skie.KotlinxCoroutinesCore.SelectClause1.__Sealed : Swift.Sendable {}
+extension CoreAuthenticator.Skie.KotlinxCoroutinesCore.SelectClause1.__Sealed : Swift.BitwiseCopyable {}
+extension CoreAuthenticator.Skie.KotlinxCoroutinesCore.SelectClause2.__Sealed : Swift.Sendable {}
+extension CoreAuthenticator.Skie.KotlinxCoroutinesCore.SelectClause2.__Sealed : Swift.BitwiseCopyable {}
+extension CoreAuthenticator.Skie.KotlinxSerializationCore.SerializersModule.__Sealed : Swift.Sendable {}
+extension CoreAuthenticator.Skie.KotlinxSerializationCore.SerializersModule.__Sealed : Swift.BitwiseCopyable {}
