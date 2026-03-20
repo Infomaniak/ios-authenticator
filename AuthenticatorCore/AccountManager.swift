@@ -60,14 +60,16 @@ public actor AccountManager: AccountManagerable {
     @LazyInjectService private var tokenStore: TokenStore
     @LazyInjectService private var networkLoginService: InfomaniakNetworkLoginable
     @LazyInjectService private var deviceManager: DeviceManagerable
+    @LazyInjectService private var notificationService: InfomaniakNotifications
 
     public var accounts: [ApiToken] {
         return tokenStore.getAllTokens().values.map { $0.apiToken }
     }
 
-    public var userProfileStore: InfomaniakCore.UserProfileStore
+    public let userProfileStore: InfomaniakCore.UserProfileStore
     public var currentSession: Int?
 
+    private var apiFetchers: [UserId: ApiFetcher] = [:]
     private let refreshTokenDelegate = AuthenticatorRefreshTokenDelegate()
 
     init(userProfileStore: InfomaniakCore.UserProfileStore, currentSession: Int?) {
@@ -90,12 +92,23 @@ public actor AccountManager: AccountManagerable {
     }
 
     public func createAccount(token: ApiToken) async throws {
-        let temporaryApiFetcher = ApiFetcher(token: token, delegate: refreshTokenDelegate)
+        let temporaryApiFetcher = getApiFetcher(token: token)
         let user = try await userProfileStore.updateUserProfile(with: temporaryApiFetcher)
 
         let deviceId = try await deviceManager.getOrCreateCurrentDevice().uid
         tokenStore.addToken(newToken: token, associatedDeviceId: deviceId)
         attachDeviceToApiToken(token, apiFetcher: temporaryApiFetcher)
+        await notificationService.updateTopicsIfNeeded([Topic.twoFAPushChallenge], userApiFetcher: temporaryApiFetcher)
+    }
+
+    public func getApiFetcher(token: ApiToken) -> ApiFetcher {
+        if let apiFetcher = apiFetchers[token.userId] {
+            return apiFetcher
+        }
+
+        let newApiFetcher = ApiFetcher(token: token, delegate: refreshTokenDelegate)
+        apiFetchers[token.userId] = newApiFetcher
+        return newApiFetcher
     }
 
     private func attachDeviceToApiToken(_ token: ApiToken, apiFetcher: ApiFetcher) {
