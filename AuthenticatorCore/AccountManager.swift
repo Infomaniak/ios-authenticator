@@ -17,6 +17,7 @@
  */
 
 import Combine
+@preconcurrency import CoreAuthenticator
 import DeviceAssociation
 import Foundation
 @preconcurrency import InfomaniakCore
@@ -47,11 +48,13 @@ public protocol AccountManagerable: Sendable {
     var userProfileStore: UserProfileStore { get async }
 
     func getAccountsIds() async -> [Int]
+    func createAndSetCurrentAccount(code: String, codeVerifier: String) async throws
+    func getApiFetcher(token: ApiToken) async -> ApiFetcher
 }
 
 public extension AccountManager {
     enum DomainError: Error {
-        case noUserSession
+        case tokenKeyExchangeFailed
     }
 }
 
@@ -59,6 +62,7 @@ public actor AccountManager: AccountManagerable {
     @LazyInjectService private var tokenStore: TokenStore
     @LazyInjectService private var networkLoginService: InfomaniakNetworkLoginable
     @LazyInjectService private var deviceManager: DeviceManagerable
+    @LazyInjectService private var authenticatorFacade: AuthenticatorFacade
     @LazyInjectService private var notificationService: InfomaniakNotifications
 
     public var accounts: [ApiToken] {
@@ -76,13 +80,22 @@ public actor AccountManager: AccountManagerable {
     }
 
     public func createAccount(token: ApiToken) async throws {
-        let temporaryApiFetcher = getApiFetcher(token: token)
+        let temporaryApiFetcher = ApiFetcher(token: token, delegate: refreshTokenDelegate)
         let user = try await userProfileStore.updateUserProfile(with: temporaryApiFetcher)
 
         let deviceId = try await deviceManager.getOrCreateCurrentDevice().uid
         tokenStore.addToken(newToken: token, associatedDeviceId: deviceId)
-        attachDeviceToApiToken(token, apiFetcher: temporaryApiFetcher)
-        await notificationService.updateTopicsIfNeeded([Topic.twoFAPushChallenge], userApiFetcher: temporaryApiFetcher)
+
+        let account = CoreAuthenticator.Account(from: user)
+        try await authenticatorFacade.addAccounts(connectedAccounts: [account])
+
+        guard let newToken = tokenStore.tokenFor(userId: user.id)?.apiToken else {
+            throw DomainError.tokenKeyExchangeFailed
+        }
+
+        let apiFetcher = getApiFetcher(token: newToken)
+        attachDeviceToApiToken(newToken, apiFetcher: apiFetcher)
+        await notificationService.updateTopicsIfNeeded([Topic.twoFAPushChallenge], userApiFetcher: apiFetcher)
     }
 
     public func getApiFetcher(token: ApiToken) -> ApiFetcher {

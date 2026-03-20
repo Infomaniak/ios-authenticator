@@ -28,6 +28,7 @@ import SwiftUI
 @MainActor
 final class LoginHandler: InfomaniakLoginDelegate, ObservableObject {
     @LazyInjectService private var loginService: InfomaniakLoginable
+    @LazyInjectService private var accountManager: AccountManagerable
 
     @Published var isLoading = false
     @Published var error: ErrorDomain?
@@ -103,9 +104,8 @@ final class LoginHandler: InfomaniakLoginDelegate, ObservableObject {
         loginService.webviewLoginFrom(viewController: viewController, hideCreateAccountButton: true, delegate: self)
     }
 
-    // periphery:ignore - Todo implementation
     private func loginSuccessful(code: String, codeVerifier verifier: String) async throws {
-        // TODO:
+        try await accountManager.createAndSetCurrentAccount(code: code, codeVerifier: verifier)
     }
 
     private func loginFailed(error: Error) {

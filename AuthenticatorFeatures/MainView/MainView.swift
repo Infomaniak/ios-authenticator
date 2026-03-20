@@ -52,7 +52,7 @@ public struct MainView: View {
     }
 
     private func checkTwoFAChallenges() async {
-        @InjectService var accountManager: AccountManager
+        @InjectService var accountManager: AccountManagerable
         @InjectService var tokenStore: TokenStore
 
         let tokens = tokenStore.getAllTokens()

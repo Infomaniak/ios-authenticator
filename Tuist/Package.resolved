@@ -1,5 +1,5 @@
 {
-  "originHash" : "d155459438c97762e7e3f01c3950f21213cc5c8555bfbd2e3a7ece9e076d52e9",
+  "originHash" : "3aeb4be04b7356dec4486773db684286d4a2401f2c17dc7814475919c1ecdb37",
   "pins" : [
     {
       "identity" : "alamofire",
@@ -60,8 +60,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/Infomaniak/ios-login",
       "state" : {
-        "revision" : "2bd3a484802879f54c27407671cf80906c34b528",
-        "version" : "7.6.0"
+        "revision" : "569e7087a164cc708b7c81a6cbad73fdfa3c1a88",
+        "version" : "7.7.0"
       }
     },
     {
