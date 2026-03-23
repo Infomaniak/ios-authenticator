@@ -16,12 +16,17 @@
  along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
+import AuthenticatorCore
 import AuthenticatorCoreUI
 import AuthenticatorResources
 import DesignSystem
+import InfomaniakDI
 import SwiftUI
 
 struct AccountDetailView: View {
+    @State private var isShowingDisconnectConfirmationAlert = false
+    @State private var isShowingDisconnectWarningAlert = false
+
     let account: UIAccount
 
     var body: some View {
@@ -42,11 +47,39 @@ struct AccountDetailView: View {
                     AuthenticatorTrailingLabel(\.accountSettingsButton, iconKey: \.squareArrowDiagonalUp)
                 }
 
-                Button(AuthenticatorResourcesStrings.disconnectButton, role: .destructive) {} // TODO: Disconnect action
+                Button(AuthenticatorResourcesStrings.disconnectButton, role: .destructive) {
+                    isShowingDisconnectWarningAlert = true
+                }
             }
         }
         .authListStyle()
         .scrollBounceBehavior(.basedOnSize)
+        .alert(AuthenticatorResourcesStrings.disconnectAccountWarningTitle, isPresented: $isShowingDisconnectWarningAlert) {
+            Button(AuthenticatorResourcesStrings.checkMyMethodsButton) {}
+                .keyboardShortcut(.defaultAction)
+
+            Button(AuthenticatorResourcesStrings.disconnectAccountTitle, role: .destructive) {
+                isShowingDisconnectConfirmationAlert = true
+            }
+
+            Button(AuthenticatorResourcesStrings.cancelButton, role: .cancel) {}
+        } message: {
+            Text(AuthenticatorResourcesStrings.disconnectAccountWarningDescription)
+        }
+        .alert(AuthenticatorResourcesStrings.disconnectAccountTitle, isPresented: $isShowingDisconnectConfirmationAlert) {
+            Button(AuthenticatorResourcesStrings.disconnectAccountTitle, role: .destructive, action: disconnectUser)
+
+            Button(AuthenticatorResourcesStrings.cancelButton, role: .cancel) {}
+        } message: {
+            Text(AuthenticatorResourcesStrings.disconnectAccountOnThisDeviceDescription)
+        }
+    }
+
+    private func disconnectUser() {
+        Task {
+            @InjectService var accountManager: AccountManagerable
+            await accountManager.removeAccount(userId: account.id)
+        }
     }
 }
 
