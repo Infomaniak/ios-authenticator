@@ -19,7 +19,7 @@
 import Foundation
 
 public enum Constants {
-    public static let bundleId = "com.infomaniak.authenticator"
+    public static let bundleId = "com.infomaniak.auth"
     public static let sharedAppGroupName = "group.com.infomaniak"
     public static let appName = Bundle.main.object(forInfoDictionaryKey: "CFBundleName") as! String? ?? "Authenticator"
     public static let appGroupIdentifier = "group.\(Constants.bundleId)"
