@@ -36,7 +36,6 @@ struct StatusHeaderView: View {
                 .foregroundStyle(Color.Token.Text.primary)
                 .ikButtonTheme(.statusAlert)
         }
-        .frame(maxWidth: .infinity, alignment: .leading)
         .padding(.vertical, value: .medium)
         .padding(.horizontal, value: .medium)
         .font(.Token.callout)

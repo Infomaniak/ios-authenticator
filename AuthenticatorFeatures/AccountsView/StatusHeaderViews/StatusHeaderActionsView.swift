@@ -28,11 +28,10 @@ struct StatusHeaderActionsView: View {
         if type == .errorAccount {
             VStack(spacing: IKPadding.small) {
                 Button(AuthenticatorResourcesStrings.contactSupportTitle) {}
-                    .font(.Token.bodyBold)
                     .buttonStyle(.ikBordered)
 
                 Button(AuthenticatorResourcesStrings.logInButton, action: login)
-                    .buttonStyle(.plain)
+                    .buttonStyle(.ikBorderless)
             }
             .font(.Token.bodyBold)
             .ikButtonFullWidth(true)
@@ -40,7 +39,6 @@ struct StatusHeaderActionsView: View {
             Button(AuthenticatorResourcesStrings.logInButton, action: login)
                 .buttonStyle(.ikBordered)
                 .ikButtonFullWidth(true)
-                .tint(Color.Token.Text.primary)
         }
     }
 

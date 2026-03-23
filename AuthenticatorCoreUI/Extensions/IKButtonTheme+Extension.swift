@@ -21,13 +21,13 @@ import SwiftUI
 
 public extension IKButtonTheme {
     static let statusAlert = IKButtonTheme(
-        primary: .primary,
-        secondary: .secondary,
-        tertiary: .secondary.opacity(0.12),
+        primary: Color.Token.Text.primary,
+        secondary: Color.Token.Text.secondary,
+        tertiary: Color.Token.Text.tertiary.opacity(0.12),
         disabledPrimary: .gray, // Default value
         disabledSecondary: .white, // Default value
         error: .red, // Default value
         smallFont: .callout, // Default value
-        mediumFont: .headline
+        mediumFont: .Token.headline
     )
 }
