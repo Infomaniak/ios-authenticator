@@ -2400,9 +2400,9 @@ Classes:
 - Name: "CoreAuthenticatorAuthenticatorFacadeCompanion"
   SwiftName: "AuthenticatorFacade.Companion"
   Methods:
-  - Selector: "createEnvironment:userAgent:clientId:databaseNameOrPath:crashReport:getTokenFromCrossAppLogin:getTokenFromDatabase:persistTokenForAccount:scope:"
+  - Selector: "createEnvironment:userAgent:clientId:databaseNameOrPath:crashReport:tokenProvider:scope:"
     MethodKind: "Instance"
-    SwiftName: "create(environment:userAgent:clientId:databaseNameOrPath:crashReport:getTokenFromCrossAppLogin:getTokenFromDatabase:persistTokenForAccount:scope:)"
+    SwiftName: "create(environment:userAgent:clientId:databaseNameOrPath:crashReport:tokenProvider:scope:)"
     ResultType: "CoreAuthenticatorAuthenticatorFacade * _Nonnull"
     Parameters:
     - Position: 0
@@ -2416,12 +2416,8 @@ Classes:
     - Position: 4
       Type: "id<CoreAuthenticatorCrashReportInterface> _Nonnull"
     - Position: 5
-      Type: "id<CoreAuthenticatorKotlinSuspendFunction1> _Nonnull"
+      Type: "id<CoreAuthenticatorTokenProvider> _Nonnull"
     - Position: 6
-      Type: "id<CoreAuthenticatorKotlinSuspendFunction1> _Nonnull"
-    - Position: 7
-      Type: "id<CoreAuthenticatorKotlinSuspendFunction2> _Nonnull"
-    - Position: 8
       Type: "id<CoreAuthenticatorKotlinx_coroutines_coreCoroutineScope> _Nonnull"
   - Selector: "dummyInstanceUserAgent:environment:crashReport:scope:loadingDurationMillis:resetAfterMillis:"
     MethodKind: "Instance"
@@ -2440,9 +2436,9 @@ Classes:
       Type: "int64_t"
     - Position: 5
       Type: "int64_t"
-  - Selector: "create__Skie_DefaultArguments__67Environment:userAgent:clientId:crashReport:getTokenFromCrossAppLogin:getTokenFromDatabase:persistTokenForAccount:"
+  - Selector: "create__Skie_DefaultArguments__67Environment:userAgent:clientId:crashReport:tokenProvider:"
     MethodKind: "Instance"
-    SwiftName: "create(environment:userAgent:clientId:crashReport:getTokenFromCrossAppLogin:getTokenFromDatabase:persistTokenForAccount:)"
+    SwiftName: "create(environment:userAgent:clientId:crashReport:tokenProvider:)"
     ResultType: "CoreAuthenticatorAuthenticatorFacade * _Nonnull"
     Parameters:
     - Position: 0
@@ -2454,14 +2450,10 @@ Classes:
     - Position: 3
       Type: "id<CoreAuthenticatorCrashReportInterface> _Nonnull"
     - Position: 4
-      Type: "id<CoreAuthenticatorKotlinSuspendFunction1> _Nonnull"
-    - Position: 5
-      Type: "id<CoreAuthenticatorKotlinSuspendFunction1> _Nonnull"
-    - Position: 6
-      Type: "id<CoreAuthenticatorKotlinSuspendFunction2> _Nonnull"
-  - Selector: "create__Skie_DefaultArguments__68Environment:userAgent:clientId:databaseNameOrPath:crashReport:getTokenFromCrossAppLogin:getTokenFromDatabase:persistTokenForAccount:"
+      Type: "id<CoreAuthenticatorTokenProvider> _Nonnull"
+  - Selector: "create__Skie_DefaultArguments__68Environment:userAgent:clientId:databaseNameOrPath:crashReport:tokenProvider:"
     MethodKind: "Instance"
-    SwiftName: "create(environment:userAgent:clientId:databaseNameOrPath:crashReport:getTokenFromCrossAppLogin:getTokenFromDatabase:persistTokenForAccount:)"
+    SwiftName: "create(environment:userAgent:clientId:databaseNameOrPath:crashReport:tokenProvider:)"
     ResultType: "CoreAuthenticatorAuthenticatorFacade * _Nonnull"
     Parameters:
     - Position: 0
@@ -2475,14 +2467,10 @@ Classes:
     - Position: 4
       Type: "id<CoreAuthenticatorCrashReportInterface> _Nonnull"
     - Position: 5
-      Type: "id<CoreAuthenticatorKotlinSuspendFunction1> _Nonnull"
-    - Position: 6
-      Type: "id<CoreAuthenticatorKotlinSuspendFunction1> _Nonnull"
-    - Position: 7
-      Type: "id<CoreAuthenticatorKotlinSuspendFunction2> _Nonnull"
-  - Selector: "create__Skie_DefaultArguments__69Environment:userAgent:clientId:crashReport:getTokenFromCrossAppLogin:getTokenFromDatabase:persistTokenForAccount:scope:"
+      Type: "id<CoreAuthenticatorTokenProvider> _Nonnull"
+  - Selector: "create__Skie_DefaultArguments__69Environment:userAgent:clientId:crashReport:tokenProvider:scope:"
     MethodKind: "Instance"
-    SwiftName: "create(environment:userAgent:clientId:crashReport:getTokenFromCrossAppLogin:getTokenFromDatabase:persistTokenForAccount:scope:)"
+    SwiftName: "create(environment:userAgent:clientId:crashReport:tokenProvider:scope:)"
     ResultType: "CoreAuthenticatorAuthenticatorFacade * _Nonnull"
     Parameters:
     - Position: 0
@@ -2494,12 +2482,8 @@ Classes:
     - Position: 3
       Type: "id<CoreAuthenticatorCrashReportInterface> _Nonnull"
     - Position: 4
-      Type: "id<CoreAuthenticatorKotlinSuspendFunction1> _Nonnull"
+      Type: "id<CoreAuthenticatorTokenProvider> _Nonnull"
     - Position: 5
-      Type: "id<CoreAuthenticatorKotlinSuspendFunction1> _Nonnull"
-    - Position: 6
-      Type: "id<CoreAuthenticatorKotlinSuspendFunction2> _Nonnull"
-    - Position: 7
       Type: "id<CoreAuthenticatorKotlinx_coroutines_coreCoroutineScope> _Nonnull"
   - Selector: "dummyInstance__Skie_DefaultArguments__70UserAgent:environment:crashReport:"
     MethodKind: "Instance"
@@ -11689,35 +11673,47 @@ Classes:
       Type: "int64_t"
     - Position: 3
       Type: "CoreAuthenticatorSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__5__invokeDispatchReceiver:p1:p2:suspendHandler:"
+  - Selector: "Skie_Suspend__5__getTokenFromCrossAppLoginDispatchReceiver:userId:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__5__invoke(dispatchReceiver:p1:p2:suspendHandler:)"
+    SwiftName: "Skie_Suspend__5__getTokenFromCrossAppLogin(dispatchReceiver:userId:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
     - Position: 0
-      Type: "id<CoreAuthenticatorKotlinSuspendFunction2> _Nonnull"
+      Type: "id<CoreAuthenticatorTokenProvider> _Nonnull"
     - Position: 1
-      Type: "id _Nullable"
+      Type: "int64_t"
     - Position: 2
-      Type: "id _Nullable"
+      Type: "CoreAuthenticatorSkie_SuspendHandler * _Nonnull"
+  - Selector: "Skie_Suspend__6__getTokenFromDatabaseDispatchReceiver:userId:suspendHandler:"
+    MethodKind: "Class"
+    SwiftName: "Skie_Suspend__6__getTokenFromDatabase(dispatchReceiver:userId:suspendHandler:)"
+    Availability: "nonswift"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "id<CoreAuthenticatorTokenProvider> _Nonnull"
+    - Position: 1
+      Type: "int64_t"
+    - Position: 2
+      Type: "CoreAuthenticatorSkie_SuspendHandler * _Nonnull"
+  - Selector: "Skie_Suspend__7__persistTokenForAccountDispatchReceiver:userId:token:suspendHandler:"
+    MethodKind: "Class"
+    SwiftName: "Skie_Suspend__7__persistTokenForAccount(dispatchReceiver:userId:token:suspendHandler:)"
+    Availability: "nonswift"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "id<CoreAuthenticatorTokenProvider> _Nonnull"
+    - Position: 1
+      Type: "int64_t"
+    - Position: 2
+      Type: "NSString * _Nonnull"
     - Position: 3
       Type: "CoreAuthenticatorSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__6__invokeDispatchReceiver:p1:suspendHandler:"
+  - Selector: "Skie_Suspend__8__deleteDispatchReceiver:id:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__6__invoke(dispatchReceiver:p1:suspendHandler:)"
-    Availability: "nonswift"
-    ResultType: "void"
-    Parameters:
-    - Position: 0
-      Type: "id<CoreAuthenticatorKotlinSuspendFunction1> _Nonnull"
-    - Position: 1
-      Type: "id _Nullable"
-    - Position: 2
-      Type: "CoreAuthenticatorSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__7__deleteDispatchReceiver:id:suspendHandler:"
-    MethodKind: "Class"
-    SwiftName: "Skie_Suspend__7__delete(dispatchReceiver:id:suspendHandler:)"
+    SwiftName: "Skie_Suspend__8__delete(dispatchReceiver:id:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -11727,9 +11723,9 @@ Classes:
       Type: "int64_t"
     - Position: 2
       Type: "CoreAuthenticatorSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__8__insertDispatchReceiver:account:suspendHandler:"
+  - Selector: "Skie_Suspend__9__insertDispatchReceiver:account:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__8__insert(dispatchReceiver:account:suspendHandler:)"
+    SwiftName: "Skie_Suspend__9__insert(dispatchReceiver:account:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -11739,9 +11735,9 @@ Classes:
       Type: "CoreAuthenticatorAccountEntity * _Nonnull"
     - Position: 2
       Type: "CoreAuthenticatorSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__9__upsertDispatchReceiver:account:suspendHandler:"
+  - Selector: "Skie_Suspend__10__upsertDispatchReceiver:account:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__9__upsert(dispatchReceiver:account:suspendHandler:)"
+    SwiftName: "Skie_Suspend__10__upsert(dispatchReceiver:account:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -11751,9 +11747,9 @@ Classes:
       Type: "CoreAuthenticatorAccountEntity * _Nonnull"
     - Position: 2
       Type: "CoreAuthenticatorSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__10__upsertDispatchReceiver:accounts:suspendHandler:"
+  - Selector: "Skie_Suspend__11__upsertDispatchReceiver:accounts:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__10__upsert(dispatchReceiver:accounts:suspendHandler:)"
+    SwiftName: "Skie_Suspend__11__upsert(dispatchReceiver:accounts:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -11763,9 +11759,9 @@ Classes:
       Type: "NSArray<CoreAuthenticatorAccountEntity *> * _Nonnull"
     - Position: 2
       Type: "CoreAuthenticatorSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__11__useConnectionDispatchReceiver:isReadOnly:block:suspendHandler:"
+  - Selector: "Skie_Suspend__12__useConnectionDispatchReceiver:isReadOnly:block:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__11__useConnection(dispatchReceiver:isReadOnly:block:suspendHandler:)"
+    SwiftName: "Skie_Suspend__12__useConnection(dispatchReceiver:isReadOnly:block:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -11777,9 +11773,21 @@ Classes:
       Type: "id<CoreAuthenticatorKotlinSuspendFunction1> _Nonnull"
     - Position: 3
       Type: "CoreAuthenticatorSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__12__refreshDispatchReceiver:tables:suspendHandler:"
+  - Selector: "Skie_Suspend__13__invokeDispatchReceiver:p1:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__12__refresh(dispatchReceiver:tables:suspendHandler:)"
+    SwiftName: "Skie_Suspend__13__invoke(dispatchReceiver:p1:suspendHandler:)"
+    Availability: "nonswift"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "id<CoreAuthenticatorKotlinSuspendFunction1> _Nonnull"
+    - Position: 1
+      Type: "id _Nullable"
+    - Position: 2
+      Type: "CoreAuthenticatorSkie_SuspendHandler * _Nonnull"
+  - Selector: "Skie_Suspend__14__refreshDispatchReceiver:tables:suspendHandler:"
+    MethodKind: "Class"
+    SwiftName: "Skie_Suspend__14__refresh(dispatchReceiver:tables:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -11789,9 +11797,9 @@ Classes:
       Type: "CoreAuthenticatorKotlinArray<NSString *> * _Nonnull"
     - Position: 2
       Type: "CoreAuthenticatorSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__13__saveDispatchReceiver:item:suspendHandler:"
+  - Selector: "Skie_Suspend__15__saveDispatchReceiver:item:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__13__save(dispatchReceiver:item:suspendHandler:)"
+    SwiftName: "Skie_Suspend__15__save(dispatchReceiver:item:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -11801,9 +11809,9 @@ Classes:
       Type: "CoreAuthenticatorAppSettingsEntity * _Nonnull"
     - Position: 2
       Type: "CoreAuthenticatorSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__14__setIsAppLockEnabledDispatchReceiver:isAppLockEnabled:suspendHandler:"
+  - Selector: "Skie_Suspend__16__setIsAppLockEnabledDispatchReceiver:isAppLockEnabled:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__14__setIsAppLockEnabled(dispatchReceiver:isAppLockEnabled:suspendHandler:)"
+    SwiftName: "Skie_Suspend__16__setIsAppLockEnabled(dispatchReceiver:isAppLockEnabled:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -11813,9 +11821,9 @@ Classes:
       Type: "BOOL"
     - Position: 2
       Type: "CoreAuthenticatorSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__15__setIsNotificationEnabledDispatchReceiver:isNotificationEnabled:suspendHandler:"
+  - Selector: "Skie_Suspend__17__setIsNotificationEnabledDispatchReceiver:isNotificationEnabled:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__15__setIsNotificationEnabled(dispatchReceiver:isNotificationEnabled:suspendHandler:)"
+    SwiftName: "Skie_Suspend__17__setIsNotificationEnabled(dispatchReceiver:isNotificationEnabled:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -11825,9 +11833,9 @@ Classes:
       Type: "BOOL"
     - Position: 2
       Type: "CoreAuthenticatorSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__16__setThemeDispatchReceiver:theme:suspendHandler:"
+  - Selector: "Skie_Suspend__18__setThemeDispatchReceiver:theme:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__16__setTheme(dispatchReceiver:theme:suspendHandler:)"
+    SwiftName: "Skie_Suspend__18__setTheme(dispatchReceiver:theme:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -11837,9 +11845,9 @@ Classes:
       Type: "CoreAuthenticatorTheme * _Nonnull"
     - Position: 2
       Type: "CoreAuthenticatorSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__17__challengeDispatchReceiver:clientId:suspendHandler:"
+  - Selector: "Skie_Suspend__19__challengeDispatchReceiver:clientId:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__17__challenge(dispatchReceiver:clientId:suspendHandler:)"
+    SwiftName: "Skie_Suspend__19__challenge(dispatchReceiver:clientId:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -11849,23 +11857,9 @@ Classes:
       Type: "NSString * _Nonnull"
     - Position: 2
       Type: "CoreAuthenticatorSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__18__completeMigrationDispatchReceiver:token:deviceId:suspendHandler:"
+  - Selector: "Skie_Suspend__20__completeMigrationDispatchReceiver:token:deviceId:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__18__completeMigration(dispatchReceiver:token:deviceId:suspendHandler:)"
-    Availability: "nonswift"
-    ResultType: "void"
-    Parameters:
-    - Position: 0
-      Type: "CoreAuthenticatorWebAuthnRepository * _Nonnull"
-    - Position: 1
-      Type: "NSString * _Nonnull"
-    - Position: 2
-      Type: "NSString * _Nonnull"
-    - Position: 3
-      Type: "CoreAuthenticatorSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__19__deletePasskeyDispatchReceiver:token:passkeyId:suspendHandler:"
-    MethodKind: "Class"
-    SwiftName: "Skie_Suspend__19__deletePasskey(dispatchReceiver:token:passkeyId:suspendHandler:)"
+    SwiftName: "Skie_Suspend__20__completeMigration(dispatchReceiver:token:deviceId:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -11877,9 +11871,9 @@ Classes:
       Type: "NSString * _Nonnull"
     - Position: 3
       Type: "CoreAuthenticatorSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__20__getMigrationOptionsDispatchReceiver:deviceId:userId:suspendHandler:"
+  - Selector: "Skie_Suspend__21__deletePasskeyDispatchReceiver:token:passkeyId:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__20__getMigrationOptions(dispatchReceiver:deviceId:userId:suspendHandler:)"
+    SwiftName: "Skie_Suspend__21__deletePasskey(dispatchReceiver:token:passkeyId:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -11891,9 +11885,23 @@ Classes:
       Type: "NSString * _Nonnull"
     - Position: 3
       Type: "CoreAuthenticatorSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__21__getPasskeysOptionsDispatchReceiver:token:suspendHandler:"
+  - Selector: "Skie_Suspend__22__getMigrationOptionsDispatchReceiver:deviceId:userId:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__21__getPasskeysOptions(dispatchReceiver:token:suspendHandler:)"
+    SwiftName: "Skie_Suspend__22__getMigrationOptions(dispatchReceiver:deviceId:userId:suspendHandler:)"
+    Availability: "nonswift"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "CoreAuthenticatorWebAuthnRepository * _Nonnull"
+    - Position: 1
+      Type: "NSString * _Nonnull"
+    - Position: 2
+      Type: "NSString * _Nonnull"
+    - Position: 3
+      Type: "CoreAuthenticatorSkie_SuspendHandler * _Nonnull"
+  - Selector: "Skie_Suspend__23__getPasskeysOptionsDispatchReceiver:token:suspendHandler:"
+    MethodKind: "Class"
+    SwiftName: "Skie_Suspend__23__getPasskeysOptions(dispatchReceiver:token:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -11903,9 +11911,9 @@ Classes:
       Type: "NSString * _Nonnull"
     - Position: 2
       Type: "CoreAuthenticatorSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__22__getTokenForMigrationDispatchReceiver:sessionId:deviceId:userId:otp:suspendHandler:"
+  - Selector: "Skie_Suspend__24__getTokenForMigrationDispatchReceiver:sessionId:deviceId:userId:otp:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__22__getTokenForMigration(dispatchReceiver:sessionId:deviceId:userId:otp:suspendHandler:)"
+    SwiftName: "Skie_Suspend__24__getTokenForMigration(dispatchReceiver:sessionId:deviceId:userId:otp:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -11921,9 +11929,9 @@ Classes:
       Type: "NSString * _Nonnull"
     - Position: 5
       Type: "CoreAuthenticatorSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__23__registerPasskeyDispatchReceiver:token:registerPasskey:suspendHandler:"
+  - Selector: "Skie_Suspend__25__registerPasskeyDispatchReceiver:token:registerPasskey:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__23__registerPasskey(dispatchReceiver:token:registerPasskey:suspendHandler:)"
+    SwiftName: "Skie_Suspend__25__registerPasskey(dispatchReceiver:token:registerPasskey:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -11935,9 +11943,9 @@ Classes:
       Type: "CoreAuthenticatorRegisterPasskey * _Nonnull"
     - Position: 3
       Type: "CoreAuthenticatorSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__24__verifyDispatchReceiver:verifyAuthenticationData:suspendHandler:"
+  - Selector: "Skie_Suspend__26__verifyDispatchReceiver:verifyAuthenticationData:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__24__verify(dispatchReceiver:verifyAuthenticationData:suspendHandler:)"
+    SwiftName: "Skie_Suspend__26__verify(dispatchReceiver:verifyAuthenticationData:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -11947,9 +11955,9 @@ Classes:
       Type: "CoreAuthenticatorVerifyAuthenticationData * _Nonnull"
     - Position: 2
       Type: "CoreAuthenticatorSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__25__executeDispatchReceiver:data:suspendHandler:"
+  - Selector: "Skie_Suspend__27__executeDispatchReceiver:data:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__25__execute(dispatchReceiver:data:suspendHandler:)"
+    SwiftName: "Skie_Suspend__27__execute(dispatchReceiver:data:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -11959,9 +11967,9 @@ Classes:
       Type: "CoreAuthenticatorKtor_client_coreHttpRequestData * _Nonnull"
     - Position: 2
       Type: "CoreAuthenticatorSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__26__joinDispatchReceiver:suspendHandler:"
+  - Selector: "Skie_Suspend__28__joinDispatchReceiver:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__26__join(dispatchReceiver:suspendHandler:)"
+    SwiftName: "Skie_Suspend__28__join(dispatchReceiver:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -11969,9 +11977,9 @@ Classes:
       Type: "id<CoreAuthenticatorKotlinx_coroutines_coreJob> _Nonnull"
     - Position: 1
       Type: "CoreAuthenticatorSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__27__executeDispatchReceiver:context:subject:suspendHandler:"
+  - Selector: "Skie_Suspend__29__executeDispatchReceiver:context:subject:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__27__execute(dispatchReceiver:context:subject:suspendHandler:)"
+    SwiftName: "Skie_Suspend__29__execute(dispatchReceiver:context:subject:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -11983,9 +11991,23 @@ Classes:
       Type: "id _Nonnull"
     - Position: 3
       Type: "CoreAuthenticatorSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__28__bodyDispatchReceiver:info:suspendHandler:"
+  - Selector: "Skie_Suspend__30__invokeDispatchReceiver:p1:p2:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__28__body(dispatchReceiver:info:suspendHandler:)"
+    SwiftName: "Skie_Suspend__30__invoke(dispatchReceiver:p1:p2:suspendHandler:)"
+    Availability: "nonswift"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "id<CoreAuthenticatorKotlinSuspendFunction2> _Nonnull"
+    - Position: 1
+      Type: "id _Nullable"
+    - Position: 2
+      Type: "id _Nullable"
+    - Position: 3
+      Type: "CoreAuthenticatorSkie_SuspendHandler * _Nonnull"
+  - Selector: "Skie_Suspend__31__bodyDispatchReceiver:info:suspendHandler:"
+    MethodKind: "Class"
+    SwiftName: "Skie_Suspend__31__body(dispatchReceiver:info:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -11995,9 +12017,9 @@ Classes:
       Type: "CoreAuthenticatorKtor_utilsTypeInfo * _Nonnull"
     - Position: 2
       Type: "CoreAuthenticatorSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__29__bodyNullableDispatchReceiver:info:suspendHandler:"
+  - Selector: "Skie_Suspend__32__bodyNullableDispatchReceiver:info:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__29__bodyNullable(dispatchReceiver:info:suspendHandler:)"
+    SwiftName: "Skie_Suspend__32__bodyNullable(dispatchReceiver:info:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -12007,9 +12029,9 @@ Classes:
       Type: "CoreAuthenticatorKtor_utilsTypeInfo * _Nonnull"
     - Position: 2
       Type: "CoreAuthenticatorSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__30__getResponseContentDispatchReceiver:suspendHandler:"
+  - Selector: "Skie_Suspend__33__getResponseContentDispatchReceiver:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__30__getResponseContent(dispatchReceiver:suspendHandler:)"
+    SwiftName: "Skie_Suspend__33__getResponseContent(dispatchReceiver:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -12017,9 +12039,9 @@ Classes:
       Type: "CoreAuthenticatorKtor_client_coreHttpClientCall * _Nonnull"
     - Position: 1
       Type: "CoreAuthenticatorSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__31__awaitContentDispatchReceiver:min:suspendHandler:"
+  - Selector: "Skie_Suspend__34__awaitContentDispatchReceiver:min:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__31__awaitContent(dispatchReceiver:min:suspendHandler:)"
+    SwiftName: "Skie_Suspend__34__awaitContent(dispatchReceiver:min:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -12029,9 +12051,9 @@ Classes:
       Type: "int32_t"
     - Position: 2
       Type: "CoreAuthenticatorSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__32__deleteAccountDispatchReceiver:id:suspendHandler:"
+  - Selector: "Skie_Suspend__35__deleteAccountDispatchReceiver:id:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__32__deleteAccount(dispatchReceiver:id:suspendHandler:)"
+    SwiftName: "Skie_Suspend__35__deleteAccount(dispatchReceiver:id:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -12041,9 +12063,9 @@ Classes:
       Type: "int64_t"
     - Position: 2
       Type: "CoreAuthenticatorSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__33__insertAccountDispatchReceiver:account:suspendHandler:"
+  - Selector: "Skie_Suspend__36__insertAccountDispatchReceiver:account:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__33__insertAccount(dispatchReceiver:account:suspendHandler:)"
+    SwiftName: "Skie_Suspend__36__insertAccount(dispatchReceiver:account:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -12053,9 +12075,9 @@ Classes:
       Type: "CoreAuthenticatorAccountEntity * _Nonnull"
     - Position: 2
       Type: "CoreAuthenticatorSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__34__upsertAccountDispatchReceiver:account:suspendHandler:"
+  - Selector: "Skie_Suspend__37__upsertAccountDispatchReceiver:account:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__34__upsertAccount(dispatchReceiver:account:suspendHandler:)"
+    SwiftName: "Skie_Suspend__37__upsertAccount(dispatchReceiver:account:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -12065,9 +12087,9 @@ Classes:
       Type: "CoreAuthenticatorAccountEntity * _Nonnull"
     - Position: 2
       Type: "CoreAuthenticatorSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__35__upsertAccountsDispatchReceiver:accounts:suspendHandler:"
+  - Selector: "Skie_Suspend__38__upsertAccountsDispatchReceiver:accounts:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__35__upsertAccounts(dispatchReceiver:accounts:suspendHandler:)"
+    SwiftName: "Skie_Suspend__38__upsertAccounts(dispatchReceiver:accounts:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -12077,9 +12099,9 @@ Classes:
       Type: "NSArray<CoreAuthenticatorAccountEntity *> * _Nonnull"
     - Position: 2
       Type: "CoreAuthenticatorSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__36__setIsAppLockEnabledDispatchReceiver:isAppLockEnabled:suspendHandler:"
+  - Selector: "Skie_Suspend__39__setIsAppLockEnabledDispatchReceiver:isAppLockEnabled:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__36__setIsAppLockEnabled(dispatchReceiver:isAppLockEnabled:suspendHandler:)"
+    SwiftName: "Skie_Suspend__39__setIsAppLockEnabled(dispatchReceiver:isAppLockEnabled:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -12089,9 +12111,9 @@ Classes:
       Type: "BOOL"
     - Position: 2
       Type: "CoreAuthenticatorSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__37__setIsNotificationEnabledDispatchReceiver:isNotificationEnabled:suspendHandler:"
+  - Selector: "Skie_Suspend__40__setIsNotificationEnabledDispatchReceiver:isNotificationEnabled:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__37__setIsNotificationEnabled(dispatchReceiver:isNotificationEnabled:suspendHandler:)"
+    SwiftName: "Skie_Suspend__40__setIsNotificationEnabled(dispatchReceiver:isNotificationEnabled:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -12101,9 +12123,9 @@ Classes:
       Type: "BOOL"
     - Position: 2
       Type: "CoreAuthenticatorSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__38__setThemeDispatchReceiver:theme:suspendHandler:"
+  - Selector: "Skie_Suspend__41__setThemeDispatchReceiver:theme:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__38__setTheme(dispatchReceiver:theme:suspendHandler:)"
+    SwiftName: "Skie_Suspend__41__setTheme(dispatchReceiver:theme:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -12113,9 +12135,9 @@ Classes:
       Type: "CoreAuthenticatorTheme * _Nonnull"
     - Position: 2
       Type: "CoreAuthenticatorSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__39__upgradeDispatchReceiver:input:output:engineContext:userContext:suspendHandler:"
+  - Selector: "Skie_Suspend__42__upgradeDispatchReceiver:input:output:engineContext:userContext:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__39__upgrade(dispatchReceiver:input:output:engineContext:userContext:suspendHandler:)"
+    SwiftName: "Skie_Suspend__42__upgrade(dispatchReceiver:input:output:engineContext:userContext:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -12131,9 +12153,9 @@ Classes:
       Type: "id<CoreAuthenticatorKotlinCoroutineContext> _Nonnull"
     - Position: 5
       Type: "CoreAuthenticatorSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__40__flushDispatchReceiver:suspendHandler:"
+  - Selector: "Skie_Suspend__43__flushDispatchReceiver:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__40__flush(dispatchReceiver:suspendHandler:)"
+    SwiftName: "Skie_Suspend__43__flush(dispatchReceiver:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -12141,9 +12163,9 @@ Classes:
       Type: "id<CoreAuthenticatorKtor_ioByteWriteChannel> _Nonnull"
     - Position: 1
       Type: "CoreAuthenticatorSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__41__flushAndCloseDispatchReceiver:suspendHandler:"
+  - Selector: "Skie_Suspend__44__flushAndCloseDispatchReceiver:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__41__flushAndClose(dispatchReceiver:suspendHandler:)"
+    SwiftName: "Skie_Suspend__44__flushAndClose(dispatchReceiver:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -12151,9 +12173,9 @@ Classes:
       Type: "id<CoreAuthenticatorKtor_ioByteWriteChannel> _Nonnull"
     - Position: 1
       Type: "CoreAuthenticatorSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__42__writeToDispatchReceiver:channel:suspendHandler:"
+  - Selector: "Skie_Suspend__45__writeToDispatchReceiver:channel:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__42__writeTo(dispatchReceiver:channel:suspendHandler:)"
+    SwiftName: "Skie_Suspend__45__writeTo(dispatchReceiver:channel:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -12251,23 +12273,6 @@ Protocols:
     Parameters:
     - Position: 0
       Type: "id _Nullable"
-- Name: "CoreAuthenticatorKotlinSuspendFunction2"
-  SwiftName: "KotlinSuspendFunction2"
-  Methods:
-  - Selector: "invokeP1:p2:completionHandler:"
-    MethodKind: "Instance"
-    SwiftName: "__invoke(p1:p2:completionHandler:)"
-    SwiftPrivate: true
-    ResultType: "void"
-    Parameters:
-    - Position: 0
-      Type: "id _Nullable"
-    - Position: 1
-      Type: "id _Nullable"
-    - Position: 2
-      Type: "void (^ _Nonnull)(id _Nullable_result, NSError * _Nullable)"
-- Name: "CoreAuthenticatorKotlinFunction"
-  SwiftName: "KotlinFunction"
 - Name: "CoreAuthenticatorKotlinSuspendFunction1"
   SwiftName: "KotlinSuspendFunction1"
   Methods:
@@ -12281,6 +12286,8 @@ Protocols:
       Type: "id _Nullable"
     - Position: 1
       Type: "void (^ _Nonnull)(id _Nullable_result, NSError * _Nullable)"
+- Name: "CoreAuthenticatorKotlinFunction"
+  SwiftName: "KotlinFunction"
 - Name: "CoreAuthenticatorKotlinAutoCloseable"
   SwiftName: "KotlinAutoCloseable"
   Methods:
@@ -12359,6 +12366,21 @@ Protocols:
     MethodKind: "Instance"
     SwiftName: "iterator()"
     ResultType: "id<CoreAuthenticatorKotlinIterator> _Nonnull"
+- Name: "CoreAuthenticatorKotlinSuspendFunction2"
+  SwiftName: "KotlinSuspendFunction2"
+  Methods:
+  - Selector: "invokeP1:p2:completionHandler:"
+    MethodKind: "Instance"
+    SwiftName: "__invoke(p1:p2:completionHandler:)"
+    SwiftPrivate: true
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+    - Position: 1
+      Type: "id _Nullable"
+    - Position: 2
+      Type: "void (^ _Nonnull)(id _Nullable_result, NSError * _Nullable)"
 - Name: "CoreAuthenticatorKotlinContinuation"
   SwiftName: "KotlinContinuation"
   Properties:
@@ -12808,6 +12830,41 @@ Protocols:
       Type: "NSDictionary<NSString *, NSString *> * _Nullable"
     - Position: 2
       Type: "CoreAuthenticatorCrashReportLevel * _Nullable"
+- Name: "CoreAuthenticatorTokenProvider"
+  SwiftName: "TokenProvider"
+  Methods:
+  - Selector: "getTokenFromCrossAppLoginUserId:completionHandler:"
+    MethodKind: "Instance"
+    SwiftName: "__getTokenFromCrossAppLogin(userId:completionHandler:)"
+    SwiftPrivate: true
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "int64_t"
+    - Position: 1
+      Type: "void (^ _Nonnull)(NSString * _Nullable_result, NSError * _Nullable)"
+  - Selector: "getTokenFromDatabaseUserId:completionHandler:"
+    MethodKind: "Instance"
+    SwiftName: "__getTokenFromDatabase(userId:completionHandler:)"
+    SwiftPrivate: true
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "int64_t"
+    - Position: 1
+      Type: "void (^ _Nonnull)(NSString * _Nullable_result, NSError * _Nullable)"
+  - Selector: "persistTokenForAccountUserId:token:completionHandler:"
+    MethodKind: "Instance"
+    SwiftName: "__persistTokenForAccount(userId:token:completionHandler:)"
+    SwiftPrivate: true
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "int64_t"
+    - Position: 1
+      Type: "NSString * _Nonnull"
+    - Position: 2
+      Type: "void (^ _Nonnull)(NSError * _Nullable)"
 - Name: "CoreAuthenticatorFailure"
   SwiftName: "Failure"
 - Name: "CoreAuthenticatorFailureKeyManagement"

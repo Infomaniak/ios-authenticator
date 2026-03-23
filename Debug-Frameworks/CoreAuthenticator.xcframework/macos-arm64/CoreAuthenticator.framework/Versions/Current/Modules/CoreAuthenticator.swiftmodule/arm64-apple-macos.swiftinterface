@@ -492,17 +492,17 @@ extension CoreAuthenticator.AuthenticatorFacade {
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
   public func removeAccount(token: Swift.String, id: Swift.Int64) async throws
 }
-extension CoreAuthenticator.KotlinSuspendFunction2 {
+extension CoreAuthenticator.TokenProvider {
   #if compiler(>=5.3) && $NonescapableTypes
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
-  public func invoke(p1: Any?, p2: Any?) async throws -> Any?
+  public func getTokenFromCrossAppLogin(userId: Swift.Int64) async throws -> Swift.String?
   #endif
-}
-extension CoreAuthenticator.KotlinSuspendFunction1 {
   #if compiler(>=5.3) && $NonescapableTypes
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
-  public func invoke(p1: Any?) async throws -> Any?
+  public func getTokenFromDatabase(userId: Swift.Int64) async throws -> Swift.String?
   #endif
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func persistTokenForAccount(userId: Swift.Int64, token: Swift.String) async throws
 }
 extension CoreAuthenticator.AccountsDao {
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
@@ -518,6 +518,12 @@ extension CoreAuthenticator.Room_runtimeRoomDatabase {
   #if compiler(>=5.3) && $NonescapableTypes
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
   public func useConnection(isReadOnly: Swift.Bool, block: any CoreAuthenticator.KotlinSuspendFunction1) async throws -> Any?
+  #endif
+}
+extension CoreAuthenticator.KotlinSuspendFunction1 {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func invoke(p1: Any?) async throws -> Any?
   #endif
 }
 extension CoreAuthenticator.Room_runtimeInvalidationTracker {
@@ -570,6 +576,12 @@ public func skie<TSubject, TContext>(_ kotlinObject: CoreAuthenticator.Ktor_util
 extension CoreAuthenticator.Skie.KtorUtils.Pipeline.__Suspend {
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
   public func execute(context: TContext, subject: TSubject) async throws -> TSubject
+}
+extension CoreAuthenticator.KotlinSuspendFunction2 {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func invoke(p1: Any?, p2: Any?) async throws -> Any?
+  #endif
 }
 extension CoreAuthenticator.Ktor_client_coreHttpClientCall {
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
