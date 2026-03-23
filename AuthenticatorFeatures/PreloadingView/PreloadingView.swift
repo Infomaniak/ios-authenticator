@@ -17,6 +17,8 @@
  */
 
 import AuthenticatorCoreUI
+import InfomaniakCore
+import InfomaniakDI
 import SwiftUI
 
 public struct PreloadingView: View {
@@ -25,6 +27,16 @@ public struct PreloadingView: View {
     public var body: some View {
         ProgressView()
             .progressViewStyle(.circular)
+            .task {
+                @InjectService var appLaunchCounter: AppLaunchCounter
+                @InjectService var tokenStore: TokenStore
+
+                guard !appLaunchCounter.isFirstLaunch else {
+                    tokenStore.removeAllTokens()
+                    appLaunchCounter.increase()
+                    return
+                }
+            }
     }
 }
 

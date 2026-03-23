@@ -83,6 +83,7 @@ public actor AccountManager: AccountManagerable {
         let temporaryApiFetcher = ApiFetcher(token: token, delegate: refreshTokenDelegate)
         let user = try await userProfileStore.updateUserProfile(with: temporaryApiFetcher)
 
+        @InjectService var deviceManager: DeviceManagerable
         let deviceId = try await deviceManager.getOrCreateCurrentDevice().uid
         tokenStore.addToken(newToken: token, associatedDeviceId: deviceId)
 

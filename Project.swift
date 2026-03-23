@@ -20,7 +20,11 @@ import Foundation
 import ProjectDescription
 import ProjectDescriptionHelpers
 
-let preloadingView = Feature(name: "PreloadingView")
+let preloadingView = Feature(name: "PreloadingView",
+                             additionalDependencies: [
+                                 TargetDependency.external(name: "InfomaniakDI"),
+                                 TargetDependency.external(name: "InfomaniakCore")
+                             ])
 
 let accountsView = Feature(
     name: "AccountsView",
