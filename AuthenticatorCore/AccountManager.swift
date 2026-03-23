@@ -45,13 +45,12 @@ public protocol AccountManagerable: Sendable {
 
     var accounts: [ApiToken] { get async }
     var userProfileStore: UserProfileStore { get async }
-    var currentSession: Int? { get async }
 
     func getAccountsIds() async -> [Int]
 }
 
 public extension AccountManager {
-    enum ErrorDomain: Error {
+    enum DomainError: Error {
         case noUserSession
     }
 }
@@ -66,29 +65,14 @@ public actor AccountManager: AccountManagerable {
         return tokenStore.getAllTokens().values.map { $0.apiToken }
     }
 
-    public let userProfileStore: InfomaniakCore.UserProfileStore
-    public var currentSession: Int?
+    public let userProfileStore = UserProfileStore()
 
     private var apiFetchers: [UserId: ApiFetcher] = [:]
     private let refreshTokenDelegate = AuthenticatorRefreshTokenDelegate()
 
-    init(userProfileStore: InfomaniakCore.UserProfileStore, currentSession: Int?) {
-        self.userProfileStore = userProfileStore
-        self.currentSession = currentSession
-    }
-
-    init() {
-        self.init(userProfileStore: UserProfileStore(), currentSession: nil)
-    }
-
     public func createAndSetCurrentAccount(code: String, codeVerifier: String) async throws {
         let token = try await networkLoginService.apiTokenUsing(code: code, codeVerifier: codeVerifier)
-
-        do {
-            try await createAccount(token: token)
-        } catch {
-            throw error
-        }
+        try await createAccount(token: token)
     }
 
     public func createAccount(token: ApiToken) async throws {
