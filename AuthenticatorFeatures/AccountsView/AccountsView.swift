@@ -27,11 +27,24 @@ public struct AccountsView: View {
 
     public init() {}
 
+    private var shouldDisplayWarning: Bool {
+        !mainViewState.accounts.allSatisfy { $0.status == .protected }
+    }
+
     public var body: some View {
         NavigationStack {
-            List(mainViewState.accounts, selection: $mainViewState.selectedAccount) { account in
-                AccountsListCell(account: account)
-                    .tag(account)
+            List {
+                Section {
+                    ForEach(mainViewState.accounts) { account in
+                        AccountsListCell(account: account)
+                    }
+                } header: {
+                    if shouldDisplayWarning {
+                        StatusHeaderView(type: .warningList)
+                            .listRowInsets(EdgeInsets(top: IKPadding.medium, leading: 0, bottom: IKPadding.large, trailing: 0))
+                    }
+                }
+                .headerProminence(.increased)
             }
             .authListStyle()
             .navigationTitle(Constants.appName)

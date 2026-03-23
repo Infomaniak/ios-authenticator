@@ -24,7 +24,7 @@ public struct AuthenticatorLabel: View {
     let icon: Image
     let iconColor: Color?
 
-    private init(title: String, icon: Image, iconColor: Color? = nil) {
+    public init(title: String, icon: Image, iconColor: Color? = nil) {
         self.title = title
         self.icon = icon
         self.iconColor = iconColor
