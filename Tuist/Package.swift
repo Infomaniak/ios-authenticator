@@ -10,6 +10,7 @@ let packageSettings = PackageSettings(
         "DesignSystem": .framework,
         "DeviceAssociation": .framework,
         "InAppTwoFactorAuthentication": .framework,
+        "InfomaniakConcurrency": .framework,
         "InfomaniakCoreCommonUI": .framework,
         "InfomaniakCoreSwiftUI": .framework,
         "InfomaniakCoreUIResources": .framework,
