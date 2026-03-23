@@ -17,11 +17,14 @@
  */
 
 import CoreAuthenticator
+import DeviceAssociation
 import Foundation
+import InAppTwoFactorAuthentication
 @preconcurrency import InfomaniakCore
 import InfomaniakCoreCommonUI
 import InfomaniakDI
 import InfomaniakLogin
+import InfomaniakNotifications
 import InterAppLogin
 import OSLog
 
@@ -38,8 +41,8 @@ extension InfomaniakCore.ApiEnvironment {
             return .Prod()
         case .preprod:
             return .Preprod()
-        case .customHost(let string):
-            return .Custom(url: string)
+        case .customHost:
+            return .Staging()
         }
     }
 }
@@ -55,7 +58,7 @@ open class TargetAssembly: @unchecked Sendable {
     private static let logger = Logger(category: "TargetAssembly")
     private static let realmRootPath = "authenticator"
 
-    private static let apiEnvironment: InfomaniakCore.ApiEnvironment = .preprod
+    private static let apiEnvironment: InfomaniakCore.ApiEnvironment = .customHost("staging-authenticator.dev.infomaniak.ch")
     public static let loginConfig = InfomaniakLogin.Config(
         clientId: "A7B265CD-C9DB-4E6B-8236-2DFF60F146FC",
         loginURL: URL(string: "https://login.\(apiEnvironment.host)/")!,
@@ -70,17 +73,44 @@ open class TargetAssembly: @unchecked Sendable {
 
     open class func getCommonServices() -> [Factory] {
         return [
+            Factory(type: AppLaunchCounter.self) { _, _ in
+                AppLaunchCounter()
+            },
             Factory(type: ConnectedAccountManagerable.self) { _, _ in
                 ConnectedAccountManager(currentAppKeychainIdentifier: AppIdentifierBuilder.euriaKeychainIdentifier)
             },
-            Factory(type: AuthenticatorFacade.self) { _, _ in
+            Factory(type: InfomaniakNotifications.self) { _, _ in
+                InfomaniakNotifications(appGroup: Constants.appGroupIdentifier)
+            },
+            Factory(type: InAppTwoFactorAuthenticationManagerable.self) { _, _ in
+                InAppTwoFactorAuthenticationManager()
+            },
+            Factory(type: AuthenticatorFacade.self) { _, resolver in
+                let appGroupPath = try resolver.resolve(
+                    type: AppGroupPathProvidable.self,
+                    forCustomTypeIdentifier: nil,
+                    factoryParameters: nil,
+                    resolver: resolver
+                )
+
                 let sentryWrapper = SentryKMPWrapper()
 
-                return AuthenticatorFacade.companion.dummyInstance(userAgent: UserAgentBuilder().userAgent,
-                                                                   environment: apiEnvironment.kmpEnvironment,
-                                                                   crashReport: sentryWrapper,
-                                                                   loadingDurationMillis: 2000,
-                                                                   resetAfterMillis: 30000)
+                let tokenProvider = TokenProviderImplementation()
+
+                return AuthenticatorFacade.companion.create(
+                    environment: apiEnvironment.kmpEnvironment,
+                    userAgent: UserAgentBuilder().userAgent,
+                    clientId: Self.loginConfig.clientId,
+                    databaseNameOrPath: appGroupPath.realmRootURL.appending(path: "accounts.db").path(),
+                    crashReport: sentryWrapper,
+                    tokenProvider: tokenProvider
+                )
+            },
+            Factory(type: DeviceManagerable.self) { _, _ in
+                let version = Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString") as! String? ?? "x.x"
+                return DeviceManager(appGroupIdentifier: Constants.sharedAppGroupName,
+                                     appMarketingVersion: version,
+                                     capabilities: [.twoFactorAuthenticationChallengeApproval])
             },
             Factory(type: AccountManagerable.self) { _, _ in
                 AccountManager()
