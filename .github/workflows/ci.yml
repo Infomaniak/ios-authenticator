@@ -23,3 +23,7 @@ jobs:
         run: tuist inspect implicit-imports
       - name: Build
         run: tuist build --clean "Authenticator"
+      - name: SonarQube Scan
+        uses: SonarSource/sonarqube-scan-action@fd88b7d7ccbaefd23d8f36f73b59db7a3d246602 #6.0.0
+        env:
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
