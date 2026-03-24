@@ -16,43 +16,57 @@
  along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
+import AuthenticatorCoreUI
 import AuthenticatorResources
 import InfomaniakOnboarding
 
-extension Slide {
-    static let onboardingSlides: [Slide] = [
-        Slide(
-            backgroundImage: AuthenticatorResourcesAsset.Images.onboardingBlur.image,
-            backgroundImageTintColor: nil,
-            content: .illustration(AuthenticatorResourcesAsset.Images.onboardingShield.image),
-            bottomView: OnboardingTextBottomView(\.onBoardingLoginTitle, descriptionKey: \.onBoardingLoginDescription)
-        ),
-        Slide(
-            backgroundImage: AuthenticatorResourcesAsset.Images.onboardingBlur.image,
-            backgroundImageTintColor: nil,
-            content: .illustration(AuthenticatorResourcesAsset.Images.onboardingCreation.image),
-            bottomView: OnboardingProgressBarBottomView(\.onBoardingSecuringAccount)
-        ),
-        onboardingSuccessSlide,
-        onboardingFaceIdSlide
-    ]
+extension OnboardingStep {
+    var slide: Slide {
+        switch self {
+        case .login:
+            return .login
+        case .migration:
+            return .migration
+        case .loginInProgress:
+            return .loginInProgress
+        case .migrationInProgress:
+            return .migrationInProgress
+        case .success:
+            return .onboardingSuccessSlide
+        case .biometry:
+            return .onboardingFaceIdSlide
+        }
+    }
+}
 
-    static let migratingSlides: [Slide] = [
-        Slide(
-            backgroundImage: AuthenticatorResourcesAsset.Images.onboardingBlur.image,
-            backgroundImageTintColor: nil,
-            content: .illustration(AuthenticatorResourcesAsset.Images.onboardingGrid.image),
-            bottomView: OnboardingTextBottomView(\.onBoardingMigrationTitle, descriptionKey: \.onBoardingMigrationDescription)
-        ),
-        Slide(
-            backgroundImage: AuthenticatorResourcesAsset.Images.onboardingBlur.image,
-            backgroundImageTintColor: nil,
-            content: .illustration(AuthenticatorResourcesAsset.Images.onboardingMigration.image),
-            bottomView: OnboardingProgressBarBottomView(\.onBoardingSecuringAccount)
-        ),
-        onboardingSuccessSlide,
-        onboardingFaceIdSlide
-    ]
+extension Slide {
+    static let login = Slide(
+        backgroundImage: AuthenticatorResourcesAsset.Images.onboardingBlur.image,
+        backgroundImageTintColor: nil,
+        content: .illustration(AuthenticatorResourcesAsset.Images.onboardingShield.image),
+        bottomView: OnboardingTextBottomView(\.onBoardingLoginTitle, descriptionKey: \.onBoardingLoginDescription)
+    )
+
+    static let loginInProgress = Slide(
+        backgroundImage: AuthenticatorResourcesAsset.Images.onboardingBlur.image,
+        backgroundImageTintColor: nil,
+        content: .illustration(AuthenticatorResourcesAsset.Images.onboardingCreation.image),
+        bottomView: OnboardingProgressBarBottomView(\.onBoardingSecuringAccount)
+    )
+
+    static let migration = Slide(
+        backgroundImage: AuthenticatorResourcesAsset.Images.onboardingBlur.image,
+        backgroundImageTintColor: nil,
+        content: .illustration(AuthenticatorResourcesAsset.Images.onboardingGrid.image),
+        bottomView: OnboardingTextBottomView(\.onBoardingMigrationTitle, descriptionKey: \.onBoardingMigrationDescription)
+    )
+
+    static let migrationInProgress = Slide(
+        backgroundImage: AuthenticatorResourcesAsset.Images.onboardingBlur.image,
+        backgroundImageTintColor: nil,
+        content: .illustration(AuthenticatorResourcesAsset.Images.onboardingMigration.image),
+        bottomView: OnboardingProgressBarBottomView(\.onBoardingSecuringAccount)
+    )
 
     static let onboardingSuccessSlide = Slide(
         backgroundImage: AuthenticatorResourcesAsset.Images.onboardingBlur.image,

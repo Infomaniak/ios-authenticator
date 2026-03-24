@@ -21,11 +21,17 @@ import Foundation
 import InfomaniakDI
 import SwiftUI
 
+@MainActor
 public enum OnboardingStep: Equatable {
-    case initial
-    case inProgress
+    case login
+    case migration
+    case loginInProgress
+    case migrationInProgress
     case success
     case biometry
+
+    public static let loginSteps: [OnboardingStep] = [.login, .loginInProgress, .success]
+    public static let migrationSteps: [OnboardingStep] = [.migration, .migrationInProgress, .success]
 }
 
 @MainActor
@@ -73,6 +79,10 @@ public final class RootViewState: ObservableObject {
         migrationStatus.proceed()
     }
 
+    public func configureBiometry() {
+        state = .newAccount(.biometry)
+    }
+
     public func completeOnboarding() {
         guard let onboardingDone = lastKnownAppStatus as? AppStatusOnboardingDone else {
             return
@@ -86,13 +96,13 @@ public final class RootViewState: ObservableObject {
             for try await status in authenticatorFacade.appStatus {
                 lastKnownAppStatus = status
                 if let loginRequired = status as? AppStatusLoginRequiredMigratingFromLegacyKAuth {
-                    state = .migration(.initial)
+                    state = .migration(.migration)
                 } else if let loginRequired = status as? AppStatusLoginRequiredNotMigrating {
-                    state = .newAccount(.initial)
+                    state = .newAccount(.login)
                 } else if let loggingIn = status as? AppStatusLoggingIn {
-                    state = .migration(.inProgress)
+                    state = .newAccount(.loginInProgress)
                 } else if let setupComplete = status as? AppStatusOnboardingDone {
-                    state = .migration(.success)
+                    state = .newAccount(.success)
                 } else if let loggedIn = status as? AppStatusSetupComplete {
                     state = .mainView(MainViewState())
                 }

@@ -32,11 +32,6 @@ import SwiftModalPresentation
 import SwiftUI
 
 public struct OnboardingView: View {
-    public enum OnboardingType {
-        case newUser
-        case migrating
-    }
-
     @InjectService private var accountManager: AccountManagerable
 
     @EnvironmentObject private var rootViewState: RootViewState
@@ -46,48 +41,25 @@ public struct OnboardingView: View {
 
     @ModalState(context: ContextKeys.onboarding) private var isPresentingCreateAccount = false
 
-    let type: OnboardingType
-    let step: OnboardingStep
-
+    let currentStep: OnboardingStep
+    let steps: [OnboardingStep]
     var slides: [Slide] {
-        type == .newUser ? Slide.onboardingSlides : Slide.migratingSlides
+        return steps.map { $0.slide }
     }
 
     var selectedSlideIndex: Int {
-        switch step {
-        case .initial:
-            return 0
-        case .inProgress:
-            return 1
-        case .success:
-            return 2
-        case .biometry:
-            return 3
-        }
+        return steps.firstIndex(of: currentStep) ?? 0
     }
 
-    public init(type: OnboardingType, step: OnboardingStep) {
-        self.type = type
-        self.step = step
+    public init(steps: [OnboardingStep], currentStep: OnboardingStep) {
+        self.steps = steps + (UserDefaults.shared.isAppLockEnabled ? [] : [.biometry])
+        self.currentStep = currentStep
     }
 
     public var body: some View {
         CarouselView(slides: slides, selectedSlide: .constant(selectedSlideIndex)) { index in
-            if type == .migrating {
-                if index == 0 || index == 2 {
-                    Button(AuthenticatorResourcesStrings.continueButton) {
-                        if index == 0 {
-                            rootViewState.startMigration()
-                        } else if index == 2 {
-                            rootViewState.completeOnboarding()
-                        }
-                    }
-                    .buttonStyle(.ikBorderedProminent)
-                    .ikButtonFullWidth(true)
-                    .controlSize(.large)
-                    .padding(.horizontal, value: .large)
-                }
-            } else {
+            switch steps[index] {
+            case .login:
                 ContinueWithAccountView(isLoading: loginHandler.isLoading, excludingUserIds: excludedUserIds) {
                     login()
                 } onLoginWithAccountsPressed: { accounts in
@@ -98,6 +70,36 @@ public struct OnboardingView: View {
                 .ikButtonFullWidth(true)
                 .controlSize(.large)
                 .padding(.horizontal, value: .large)
+            case .loginInProgress, .migrationInProgress:
+                EmptyView()
+            case .migration:
+                EmptyView()
+            case .success:
+                Button(AuthenticatorResourcesStrings.continueButton) {
+                    goToNextStep(index: index)
+                }
+                .buttonStyle(.ikBorderedProminent)
+                .ikButtonFullWidth(true)
+                .controlSize(.large)
+                .padding(.horizontal, value: .large)
+            case .biometry:
+                VStack {
+                    Button(AuthenticatorResourcesStrings.enableButton) {
+                        enableBiometry()
+                    }
+                    .buttonStyle(.ikBorderedProminent)
+                    .ikButtonFullWidth(true)
+                    .controlSize(.large)
+                    .padding(.horizontal, value: .large)
+
+                    Button(AuthenticatorResourcesStrings.laterButton) {
+                        goToNextStep(index: index)
+                    }
+                    .buttonStyle(.ikBorderless)
+                    .ikButtonFullWidth(true)
+                    .controlSize(.large)
+                    .padding(.horizontal, value: .large)
+                }
             }
         }
         .appBackground()
@@ -124,8 +126,50 @@ public struct OnboardingView: View {
             }
         }
     }
+
+    private func enableBiometry() {
+        @InjectService var appLockHelper: AppLockHelper
+
+        appLockHelper.setTime()
+
+        Task {
+            do {
+                let unlocked = try await appLockHelper
+                    .evaluatePolicy(reason: AuthenticatorResourcesStrings.appSecurityDescription)
+                guard unlocked else {
+                    UserDefaults.shared.isAppLockEnabled = false
+                    rootViewState.completeOnboarding()
+                    return
+                }
+
+                UserDefaults.shared.isAppLockEnabled = true
+                rootViewState.completeOnboarding()
+            } catch {
+                UserDefaults.shared.isAppLockEnabled = false
+                rootViewState.completeOnboarding()
+            }
+        }
+    }
+
+    private func goToNextStep(index: Int) {
+        switch steps[index] {
+        case .migration:
+            rootViewState.startMigration()
+        case .success:
+            if UserDefaults.shared.isAppLockEnabled {
+                rootViewState.completeOnboarding()
+            } else {
+                rootViewState.configureBiometry()
+            }
+        case .biometry:
+            rootViewState.completeOnboarding()
+        default:
+            // All other cases are handled by KMP
+            break
+        }
+    }
 }
 
 #Preview {
-    OnboardingView(type: .newUser, step: .initial)
+    OnboardingView(steps: OnboardingStep.loginSteps, currentStep: .login)
 }
