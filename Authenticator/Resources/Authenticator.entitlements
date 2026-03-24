@@ -5,15 +5,15 @@
 	<key>com.apple.security.application-groups</key>
 	<array>
 		<string>group.com.infomaniak</string>
-		<string>group.com.infomaniak.authenticator</string>
+		<string>group.com.infomaniak.auth</string>
 	</array>
 	<key>keychain-access-groups</key>
 	<array>
-		<string>$(AppIdentifierPrefix)com.infomaniak.authenticator</string>
-        <string>$(AppIdentifierPrefix)com.infomaniak.swisstransfer</string>
-        <string>$(AppIdentifierPrefix)com.infomaniak.mail</string>
-        <string>$(AppIdentifierPrefix)com.infomaniak.drive</string>
-        <string>$(AppIdentifierPrefix)com.infomaniak.euria</string>
+		<string>$(AppIdentifierPrefix)com.infomaniak.auth</string>
+		<string>$(AppIdentifierPrefix)com.infomaniak.swisstransfer</string>
+		<string>$(AppIdentifierPrefix)com.infomaniak.mail</string>
+		<string>$(AppIdentifierPrefix)com.infomaniak.drive</string>
+		<string>$(AppIdentifierPrefix)com.infomaniak.euria</string>
 	</array>
 </dict>
 </plist>

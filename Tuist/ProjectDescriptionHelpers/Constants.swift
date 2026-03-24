@@ -20,7 +20,7 @@ import ProjectDescription
 
 public enum Constants {
     public static let projectName = "Authenticator"
-    public static let baseIdentifier = "com.infomaniak.authenticator"
+    public static let baseIdentifier = "com.infomaniak.auth"
 
     public static let testSettings: [String: SettingValue] = [
         "SWIFT_ACTIVE_COMPILATION_CONDITIONS": "TEST DEBUG"
