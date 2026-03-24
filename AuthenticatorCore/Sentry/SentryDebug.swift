@@ -39,4 +39,8 @@ public enum SentryDebug {
             )
         }
     }
+
+    public static func capture(error: Error) {
+        SentrySDK.capture(error: error)
+    }
 }

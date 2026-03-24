@@ -50,6 +50,7 @@ public protocol AccountManagerable: Sendable {
     func getAccountsIds() async -> [Int]
     func createAndSetCurrentAccount(code: String, codeVerifier: String) async throws
     func getApiFetcher(token: ApiToken) async -> ApiFetcher
+    func removeAccount(userId: Int64) async
 }
 
 public extension AccountManager {
@@ -122,5 +123,17 @@ public actor AccountManager: AccountManagerable {
 
     public func getAccountsIds() async -> [Int] {
         return accounts.map { $0.userId }
+    }
+
+    public func removeAccount(userId: Int64) async {
+        guard let token = tokenStore.removeTokenFor(userId: TokenStore.UserId(userId)) else {
+            return
+        }
+
+        do {
+            try await authenticatorFacade.removeAccount(token: token.accessToken, id: userId)
+        } catch {
+            SentryDebug.capture(error: error)
+        }
     }
 }
