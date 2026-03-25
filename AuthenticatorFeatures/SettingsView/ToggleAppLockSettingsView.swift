@@ -37,17 +37,10 @@ struct ToggleAppLockSettingsView: View {
     }
 
     private func toggleAppLock() {
-        @InjectService var appLockHelper: AppLockHelper
-
-        appLockHelper.setTime()
-
         Task {
-            do {
-                if try await !appLockHelper
-                    .evaluatePolicy(reason: AuthenticatorResourcesStrings.appSecurityDescription) {
-                    didFailToEnableAppLock()
-                }
-            } catch {
+            @InjectService var appLockHelper: AppLockHelper
+            let enabled = await appLockHelper.canEnableAppLock()
+            if !enabled {
                 didFailToEnableAppLock()
             }
         }

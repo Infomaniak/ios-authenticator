@@ -128,26 +128,12 @@ public struct OnboardingView: View {
     }
 
     private func enableBiometry() {
-        @InjectService var appLockHelper: AppLockHelper
-
-        appLockHelper.setTime()
-
         Task {
-            do {
-                let unlocked = try await appLockHelper
-                    .evaluatePolicy(reason: AuthenticatorResourcesStrings.appSecurityDescription)
-                guard unlocked else {
-                    UserDefaults.shared.isAppLockEnabled = false
-                    rootViewState.completeOnboarding()
-                    return
-                }
+            @InjectService var appLockHelper: AppLockHelper
+            let enabled = await appLockHelper.canEnableAppLock()
 
-                UserDefaults.shared.isAppLockEnabled = true
-                rootViewState.completeOnboarding()
-            } catch {
-                UserDefaults.shared.isAppLockEnabled = false
-                rootViewState.completeOnboarding()
-            }
+            UserDefaults.shared.isAppLockEnabled = enabled
+            rootViewState.completeOnboarding()
         }
     }
 
