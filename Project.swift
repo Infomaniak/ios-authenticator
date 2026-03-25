@@ -31,6 +31,8 @@ let accountsView = Feature(
     additionalDependencies: [
         TargetDependency.target(name: "\(Constants.projectName)Resources"),
         TargetDependency.external(name: "NukeUI"),
+        TargetDependency.external(name: "InAppTwoFactorAuthentication"),
+        TargetDependency.external(name: "InfomaniakConcurrency"),
         TargetDependency.external(name: "InfomaniakCoreSwiftUI")
     ]
 )
