@@ -16,26 +16,23 @@
  along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
+import AuthenticatorResources
 import Foundation
-import InfomaniakCore
+import InfomaniakCoreCommonUI
 
-public extension UserDefaults.Keys {
-    static let appLock = UserDefaults.Keys(rawValue: "appLock")
-    static let notificationsEnabled = UserDefaults.Keys(rawValue: "notificationsEnabled")
-    static let matomoAuthorized = UserDefaults.Keys(rawValue: "matomoAuthorized")
-    static let sentryAuthorized = UserDefaults.Keys(rawValue: "sentryAuthorized")
-}
+public extension AppLockHelper {
+    func canEnableAppLock() async -> Bool {
+        setTime()
 
-public extension UserDefaults {
-    var isAppLockEnabled: Bool {
-        get {
-            if object(forKey: key(.appLock)) == nil {
-                set(DefaultPreferences.appLock, forKey: key(.appLock))
+        do {
+            let unlocked = try await evaluatePolicy(reason: AuthenticatorResourcesStrings.appSecurityDescription)
+            guard unlocked else {
+                return false
             }
-            return bool(forKey: key(.appLock))
-        }
-        set {
-            set(newValue, forKey: key(.appLock))
+
+            return true
+        } catch {
+            return false
         }
     }
 }
