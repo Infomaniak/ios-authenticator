@@ -23608,6 +23608,16 @@
         ]
       },
       {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "CoreAuthenticator",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
         "kind": "Function",
         "name": "SkieKotlinFlow",
         "printedName": "SkieKotlinFlow(_:)",
@@ -38462,60 +38472,41 @@
       },
       {
         "kind": "TypeDecl",
-        "name": "KotlinSuspendFunction2",
-        "printedName": "KotlinSuspendFunction2",
+        "name": "TokenProvider",
+        "printedName": "TokenProvider",
         "children": [
           {
             "kind": "Function",
-            "name": "invoke",
-            "printedName": "invoke(p1:p2:)",
+            "name": "getTokenFromCrossAppLogin",
+            "printedName": "getTokenFromCrossAppLogin(userId:)",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "Any?",
+                "printedName": "Swift.String?",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "ProtocolComposition",
-                    "printedName": "Any"
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
                   }
                 ],
                 "usr": "s:Sq"
               },
               {
                 "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Any?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ProtocolComposition",
-                    "printedName": "Any"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Any?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ProtocolComposition",
-                    "printedName": "Any"
-                  }
-                ],
-                "usr": "s:Sq"
+                "name": "Int64",
+                "printedName": "Swift.Int64",
+                "usr": "s:s5Int64V"
               }
             ],
             "declKind": "Func",
-            "usr": "s:So39CoreAuthenticatorKotlinSuspendFunction2P0aB0E6invoke2p12p2ypSgAG_AGtYaKF",
-            "mangledName": "$sSo39CoreAuthenticatorKotlinSuspendFunction2P0aB0E6invoke2p12p2ypSgAG_AGtYaKF",
+            "usr": "s:So30CoreAuthenticatorTokenProviderP0aB0E03getC17FromCrossAppLogin6userIdSSSgs5Int64V_tYaKF",
+            "mangledName": "$sSo30CoreAuthenticatorTokenProviderP0aB0E03getC17FromCrossAppLogin6userIdSSSgs5Int64V_tYaKF",
             "moduleName": "CoreAuthenticator",
-            "genericSig": "<τ_0_0 where τ_0_0 : CoreAuthenticator.KotlinSuspendFunction2>",
-            "sugared_genericSig": "<Self where Self : CoreAuthenticator.KotlinSuspendFunction2>",
+            "genericSig": "<τ_0_0 where τ_0_0 : CoreAuthenticator.TokenProvider>",
+            "sugared_genericSig": "<Self where Self : CoreAuthenticator.TokenProvider>",
             "intro_Macosx": "10.15",
             "intro_iOS": "13",
             "intro_tvOS": "13",
@@ -38530,79 +38521,83 @@
             "isFromExtension": true,
             "throwing": true,
             "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Protocol",
-        "usr": "c:objc(pl)CoreAuthenticatorKotlinSuspendFunction2",
-        "moduleName": "CoreAuthenticator",
-        "genericSig": "<τ_0_0 : CoreAuthenticator.KotlinFunction>",
-        "sugared_genericSig": "<Self : CoreAuthenticator.KotlinFunction>",
-        "objc_name": "CoreAuthenticatorKotlinSuspendFunction2",
-        "declAttributes": [
-          "ObjC",
-          "Dynamic"
-        ],
-        "isExternal": true,
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
           },
           {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          }
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "KotlinSuspendFunction1",
-        "printedName": "KotlinSuspendFunction1",
-        "children": [
-          {
             "kind": "Function",
-            "name": "invoke",
-            "printedName": "invoke(p1:)",
+            "name": "getTokenFromDatabase",
+            "printedName": "getTokenFromDatabase(userId:)",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "Any?",
+                "printedName": "Swift.String?",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "ProtocolComposition",
-                    "printedName": "Any"
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
                   }
                 ],
                 "usr": "s:Sq"
               },
               {
                 "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Any?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ProtocolComposition",
-                    "printedName": "Any"
-                  }
-                ],
-                "usr": "s:Sq"
+                "name": "Int64",
+                "printedName": "Swift.Int64",
+                "usr": "s:s5Int64V"
               }
             ],
             "declKind": "Func",
-            "usr": "s:So39CoreAuthenticatorKotlinSuspendFunction1P0aB0E6invoke2p1ypSgAF_tYaKF",
-            "mangledName": "$sSo39CoreAuthenticatorKotlinSuspendFunction1P0aB0E6invoke2p1ypSgAF_tYaKF",
+            "usr": "s:So30CoreAuthenticatorTokenProviderP0aB0E03getC12FromDatabase6userIdSSSgs5Int64V_tYaKF",
+            "mangledName": "$sSo30CoreAuthenticatorTokenProviderP0aB0E03getC12FromDatabase6userIdSSSgs5Int64V_tYaKF",
             "moduleName": "CoreAuthenticator",
-            "genericSig": "<τ_0_0 where τ_0_0 : CoreAuthenticator.KotlinSuspendFunction1>",
-            "sugared_genericSig": "<Self where Self : CoreAuthenticator.KotlinSuspendFunction1>",
+            "genericSig": "<τ_0_0 where τ_0_0 : CoreAuthenticator.TokenProvider>",
+            "sugared_genericSig": "<Self where Self : CoreAuthenticator.TokenProvider>",
+            "intro_Macosx": "10.15",
+            "intro_iOS": "13",
+            "intro_tvOS": "13",
+            "intro_watchOS": "6",
+            "declAttributes": [
+              "AccessControl",
+              "Available",
+              "Available",
+              "Available",
+              "Available"
+            ],
+            "isFromExtension": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "persistTokenForAccount",
+            "printedName": "persistTokenForAccount(userId:token:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int64",
+                "printedName": "Swift.Int64",
+                "usr": "s:s5Int64V"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:So30CoreAuthenticatorTokenProviderP0aB0E07persistC10ForAccount6userId5tokenys5Int64V_SStYaKF",
+            "mangledName": "$sSo30CoreAuthenticatorTokenProviderP0aB0E07persistC10ForAccount6userId5tokenys5Int64V_SStYaKF",
+            "moduleName": "CoreAuthenticator",
+            "genericSig": "<τ_0_0 where τ_0_0 : CoreAuthenticator.TokenProvider>",
+            "sugared_genericSig": "<Self where Self : CoreAuthenticator.TokenProvider>",
             "intro_Macosx": "10.15",
             "intro_iOS": "13",
             "intro_tvOS": "13",
@@ -38620,11 +38615,11 @@
           }
         ],
         "declKind": "Protocol",
-        "usr": "c:objc(pl)CoreAuthenticatorKotlinSuspendFunction1",
+        "usr": "c:objc(pl)CoreAuthenticatorTokenProvider",
         "moduleName": "CoreAuthenticator",
-        "genericSig": "<τ_0_0 : CoreAuthenticator.KotlinFunction>",
-        "sugared_genericSig": "<Self : CoreAuthenticator.KotlinFunction>",
-        "objc_name": "CoreAuthenticatorKotlinSuspendFunction1",
+        "genericSig": "<τ_0_0 : AnyObject>",
+        "sugared_genericSig": "<Self : AnyObject>",
+        "objc_name": "CoreAuthenticatorTokenProvider",
         "declAttributes": [
           "ObjC",
           "Dynamic"
@@ -38976,6 +38971,93 @@
             "printedName": "CustomDebugStringConvertible",
             "usr": "s:s28CustomDebugStringConvertibleP",
             "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "KotlinSuspendFunction1",
+        "printedName": "KotlinSuspendFunction1",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "invoke",
+            "printedName": "invoke(p1:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Any?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Any?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:So39CoreAuthenticatorKotlinSuspendFunction1P0aB0E6invoke2p1ypSgAF_tYaKF",
+            "mangledName": "$sSo39CoreAuthenticatorKotlinSuspendFunction1P0aB0E6invoke2p1ypSgAF_tYaKF",
+            "moduleName": "CoreAuthenticator",
+            "genericSig": "<τ_0_0 where τ_0_0 : CoreAuthenticator.KotlinSuspendFunction1>",
+            "sugared_genericSig": "<Self where Self : CoreAuthenticator.KotlinSuspendFunction1>",
+            "intro_Macosx": "10.15",
+            "intro_iOS": "13",
+            "intro_tvOS": "13",
+            "intro_watchOS": "6",
+            "declAttributes": [
+              "AccessControl",
+              "Available",
+              "Available",
+              "Available",
+              "Available"
+            ],
+            "isFromExtension": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "c:objc(pl)CoreAuthenticatorKotlinSuspendFunction1",
+        "moduleName": "CoreAuthenticator",
+        "genericSig": "<τ_0_0 : CoreAuthenticator.KotlinFunction>",
+        "sugared_genericSig": "<Self : CoreAuthenticator.KotlinFunction>",
+        "objc_name": "CoreAuthenticatorKotlinSuspendFunction1",
+        "declAttributes": [
+          "ObjC",
+          "Dynamic"
+        ],
+        "isExternal": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
           }
         ]
       },
@@ -39844,6 +39926,106 @@
         "genericSig": "<τ_0_0 : CoreAuthenticator.KotlinCoroutineContextElement>",
         "sugared_genericSig": "<Self : CoreAuthenticator.KotlinCoroutineContextElement>",
         "objc_name": "CoreAuthenticatorKotlinx_coroutines_coreJob",
+        "declAttributes": [
+          "ObjC",
+          "Dynamic"
+        ],
+        "isExternal": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "KotlinSuspendFunction2",
+        "printedName": "KotlinSuspendFunction2",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "invoke",
+            "printedName": "invoke(p1:p2:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Any?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Any?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Any?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:So39CoreAuthenticatorKotlinSuspendFunction2P0aB0E6invoke2p12p2ypSgAG_AGtYaKF",
+            "mangledName": "$sSo39CoreAuthenticatorKotlinSuspendFunction2P0aB0E6invoke2p12p2ypSgAG_AGtYaKF",
+            "moduleName": "CoreAuthenticator",
+            "genericSig": "<τ_0_0 where τ_0_0 : CoreAuthenticator.KotlinSuspendFunction2>",
+            "sugared_genericSig": "<Self where Self : CoreAuthenticator.KotlinSuspendFunction2>",
+            "intro_Macosx": "10.15",
+            "intro_iOS": "13",
+            "intro_tvOS": "13",
+            "intro_watchOS": "6",
+            "declAttributes": [
+              "AccessControl",
+              "Available",
+              "Available",
+              "Available",
+              "Available"
+            ],
+            "isFromExtension": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "c:objc(pl)CoreAuthenticatorKotlinSuspendFunction2",
+        "moduleName": "CoreAuthenticator",
+        "genericSig": "<τ_0_0 : CoreAuthenticator.KotlinFunction>",
+        "sugared_genericSig": "<Self : CoreAuthenticator.KotlinFunction>",
+        "objc_name": "CoreAuthenticatorKotlinSuspendFunction2",
         "declAttributes": [
           "ObjC",
           "Dynamic"
