@@ -95,7 +95,7 @@ open class TargetAssembly: @unchecked Sendable {
 
                 let sentryWrapper = SentryKMPWrapper()
 
-                let tokenProvider = TokenProviderImplementation()
+                let tokenBridge = TokenBridgeImplementation()
 
                 return AuthenticatorFacade.companion.create(
                     environment: apiEnvironment.kmpEnvironment,
@@ -103,7 +103,7 @@ open class TargetAssembly: @unchecked Sendable {
                     clientId: Self.loginConfig.clientId,
                     databaseNameOrPath: appGroupPath.realmRootURL.appending(path: "accounts.db").path(),
                     crashReport: sentryWrapper,
-                    tokenProvider: tokenProvider
+                    tokenBridge: tokenBridge
                 )
             },
             Factory(type: DeviceManagerable.self) { _, _ in

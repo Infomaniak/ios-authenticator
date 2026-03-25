@@ -23,7 +23,7 @@ import InfomaniakCore
 import InfomaniakDI
 import InfomaniakLogin
 
-final class TokenProviderImplementation: TokenProvider {
+final class TokenBridgeImplementation: TokenBridge {
     @LazyInjectService private var tokenStore: TokenStore
 
     func __getTokenFromCrossAppLogin(userId: Int64) async throws -> String? {
