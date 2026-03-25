@@ -17,6 +17,7 @@
  */
 
 import Foundation
+@preconcurrency import InfomaniakCore
 
 public enum Constants {
     public static let bundleId = "com.infomaniak.auth"
@@ -25,11 +26,24 @@ public enum Constants {
     public static let appGroupIdentifier = "group.\(Constants.bundleId)"
 
     public static let matomoId = "40"
+
+    public static func autologinURL(to destination: URL) -> URL? {
+        return URL(string: "https://\(Constants.managerHost)/v3/mobile_login/?url=\(destination.absoluteString)")
+    }
+
+    public static let managerHost = "manager.\(ApiEnvironment.current.host)"
 }
 
 public struct URLConstants: Sendable {
     public static let githubRepository = URLConstants(urlString: "https://github.com/Infomaniak/ios-authenticator")
     public static let matomo = URLConstants(urlString: "https://analytics.infomaniak.com/matomo.php")
+
+    public static let accountActivity =
+        URLConstants(urlString: "https://\(Constants.managerHost)/v3/ng/profile/user/connection-history/activity")
+    public static let accountParameters =
+        URLConstants(
+            urlString: "https://\(Constants.managerHost)/v3/ng/profile/user/security-and-recovery-parameters/dashboard"
+        )
 
     private var urlString: String
 
