@@ -27,6 +27,8 @@ struct AccountDetailView: View {
     @State private var isShowingDisconnectConfirmationAlert = false
     @State private var isShowingDisconnectWarningAlert = false
 
+    @State private var webViewURL: URL?
+
     let account: UIAccount
 
     var body: some View {
@@ -39,11 +41,15 @@ struct AccountDetailView: View {
             .headerProminence(.increased)
 
             Section {
-                Link(destination: URL(string: "https://www.infomaniak.com/support")!) { // TODO: Replace with correct url
+                Button {
+                    webViewURL = URLConstants.accountActivity.url
+                } label: {
                     AuthenticatorTrailingLabel(\.activityHistoryButton, iconKey: \.squareArrowDiagonalUp)
                 }
 
-                Link(destination: URL(string: "https://www.infomaniak.com/support")!) { // TODO: Replace with correct url
+                Button {
+                    webViewURL = URLConstants.accountParameters.url
+                } label: {
                     AuthenticatorTrailingLabel(\.accountSettingsButton, iconKey: \.squareArrowDiagonalUp)
                 }
 
@@ -54,6 +60,7 @@ struct AccountDetailView: View {
         }
         .authListStyle()
         .scrollBounceBehavior(.basedOnSize)
+        .autoLoginWebView(protectedURL: $webViewURL, userId: Int(account.id))
         .alert(AuthenticatorResourcesStrings.disconnectAccountWarningTitle, isPresented: $isShowingDisconnectWarningAlert) {
             Button(AuthenticatorResourcesStrings.checkMyMethodsButton) {}
                 .keyboardShortcut(.defaultAction)
