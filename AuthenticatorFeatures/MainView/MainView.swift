@@ -26,6 +26,7 @@ import InfomaniakConcurrency
 @preconcurrency import InfomaniakCore
 import InfomaniakDI
 import SwiftUI
+import UserNotifications
 
 public struct MainView: View {
     public init() {}
@@ -43,6 +44,17 @@ public struct MainView: View {
                 }
         }
         .sceneLifecycle(willEnterForeground: willEnterForeground)
+        .onAppear(perform: requestPermissionIfNeeded)
+    }
+
+    private func requestPermissionIfNeeded() {
+        Task {
+            let center = UNUserNotificationCenter.current()
+            let settings = await center.notificationSettings()
+
+            guard settings.authorizationStatus == .notDetermined else { return }
+            _ = try? await center.requestAuthorization(options: [.alert, .sound])
+        }
     }
 
     private func willEnterForeground() {
