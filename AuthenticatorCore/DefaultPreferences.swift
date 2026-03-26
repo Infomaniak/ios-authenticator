@@ -19,4 +19,5 @@
 public enum DefaultPreferences {
     public static let notificationsEnabled = true
     public static let appLock = false
+    public static let sentryAuthorized = true
 }
