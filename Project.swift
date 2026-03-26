@@ -120,6 +120,7 @@ let project = Project(
                 .external(name: "InfomaniakCore"),
                 .external(name: "InfomaniakDI"),
                 .external(name: "InfomaniakNotifications"),
+                .external(name: "InAppTwoFactorAuthentication"),
                 rootView.asDependency
             ],
             settings: .settings(base: Constants.baseSettings),
