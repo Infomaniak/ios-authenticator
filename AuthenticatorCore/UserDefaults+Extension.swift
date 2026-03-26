@@ -38,4 +38,16 @@ public extension UserDefaults {
             set(newValue, forKey: key(.appLock))
         }
     }
+
+    var isSentryAuthorized: Bool {
+        get {
+            if object(forKey: key(.sentryAuthorized)) == nil {
+                set(DefaultPreferences.sentryAuthorized, forKey: key(.sentryAuthorized))
+            }
+            return bool(forKey: key(.sentryAuthorized))
+        }
+        set {
+            set(newValue, forKey: key(.sentryAuthorized))
+        }
+    }
 }
