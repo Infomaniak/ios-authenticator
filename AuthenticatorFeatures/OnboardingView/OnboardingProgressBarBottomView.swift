@@ -38,8 +38,7 @@ struct OnboardingProgressBarBottomView: View {
             Text(title)
                 .font(.Token.title2)
 
-            ProgressView(value: 0.5) // TODO: Replace with fetched one
-                .progressViewStyle(.linear)
+            ProgressView()
         }
         .multilineTextAlignment(.center)
     }

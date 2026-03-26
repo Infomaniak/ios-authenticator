@@ -156,6 +156,10 @@ public struct OnboardingView: View {
     }
 }
 
-#Preview {
-    OnboardingView(steps: OnboardingStep.loginSteps, currentStep: .login)
+#Preview("Login") {
+    OnboardingView(steps: [.login], currentStep: .login)
+}
+
+#Preview("Progress") {
+    OnboardingView(steps: [.loginInProgress], currentStep: .loginInProgress)
 }
