@@ -42,7 +42,7 @@ public struct URLConstants: Sendable {
         URLConstants(urlString: "https://\(Constants.managerHost)/v3/ng/profile/user/connection-history/activity")
     public static let accountParameters =
         URLConstants(
-            urlString: "https://\(Constants.managerHost)/v3/ng/profile/user/security-and-recovery-parameters/dashboard"
+            urlString: "https://\(Constants.managerHost)/v3/ng/profile/user/security-and-recovery-parameters/dashboard?global-settings=user-account-security"
         )
 
     private var urlString: String
