@@ -24,6 +24,15 @@ import InfomaniakNotifications
 import UIKit
 
 class AppDelegate: NSObject, UIApplicationDelegate {
+    private let notificationCenterDelegate = NotificationCenterDelegate()
+
+    func application(_ application: UIApplication,
+                     willFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]? = nil) -> Bool {
+        UNUserNotificationCenter.current().delegate = notificationCenterDelegate
+        application.registerForRemoteNotifications()
+        return true
+    }
+
     func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
         Task {
             @InjectService var notificationService: InfomaniakNotifications
