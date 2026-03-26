@@ -28,7 +28,7 @@ public enum Constants {
 
     public static let baseSettings = SettingsDictionary()
         .currentProjectVersion("1")
-        .marketingVersion("1.0.0")
+        .marketingVersion("2.0.0")
         .automaticCodeSigning(devTeam: "864VDCS2QY")
         .swiftVersion("6.0")
         .merging([:])
