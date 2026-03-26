@@ -20,21 +20,33 @@ import AuthenticatorCore
 import AuthenticatorCoreUI
 import AuthenticatorResources
 import DesignSystem
+import InAppTwoFactorAuthentication
+import InfomaniakCore
 import InfomaniakDI
 import SwiftUI
 
 struct AccountDetailView: View {
     @State private var isShowingDisconnectConfirmationAlert = false
     @State private var isShowingDisconnectWarningAlert = false
+    @State private var presentedWebViewURL: URL?
 
-    @State private var webViewURL: URL?
+    @State private var isFetchingChallenges = false
 
     let account: UIAccount
 
     var body: some View {
         List {
             Section {
-                Button(AuthenticatorResourcesStrings.refreshPendingLoginsButton) {}
+                Button(action: fetchChallenges) {
+                    HStack {
+                        Text(AuthenticatorResourcesStrings.refreshPendingLoginsButton)
+                            .frame(maxWidth: .infinity, alignment: .leading)
+
+                        if isFetchingChallenges {
+                            ProgressView()
+                        }
+                    }
+                }
             } header: {
                 AccountDetailHeaderView(account: account)
             }
@@ -42,13 +54,13 @@ struct AccountDetailView: View {
 
             Section {
                 Button {
-                    webViewURL = URLConstants.accountActivity.url
+                    presentedWebViewURL = URLConstants.accountActivity.url
                 } label: {
                     AuthenticatorTrailingLabel(\.activityHistoryButton, iconKey: \.squareArrowDiagonalUp)
                 }
 
                 Button {
-                    webViewURL = URLConstants.accountParameters.url
+                    presentedWebViewURL = URLConstants.accountParameters.url
                 } label: {
                     AuthenticatorTrailingLabel(\.accountSettingsButton, iconKey: \.squareArrowDiagonalUp)
                 }
@@ -60,7 +72,7 @@ struct AccountDetailView: View {
         }
         .authListStyle()
         .scrollBounceBehavior(.basedOnSize)
-        .autoLoginWebView(protectedURL: $webViewURL, userId: Int(account.id))
+        .autoLoginWebView(protectedURL: $presentedWebViewURL, userId: Int(account.id))
         .alert(AuthenticatorResourcesStrings.disconnectAccountWarningTitle, isPresented: $isShowingDisconnectWarningAlert) {
             Button(AuthenticatorResourcesStrings.checkMyMethodsButton) {}
                 .keyboardShortcut(.defaultAction)
@@ -86,6 +98,32 @@ struct AccountDetailView: View {
         Task {
             @InjectService var accountManager: AccountManagerable
             await accountManager.removeAccount(userId: account.id)
+        }
+    }
+
+    private func fetchChallenges() {
+        guard !isFetchingChallenges else { return }
+        isFetchingChallenges = true
+
+        Task {
+            @InjectService var tokenStore: TokenStore
+            @InjectService var accountManager: AccountManagerable
+
+            let userId = TokenStore.UserId(account.id)
+            guard let token = tokenStore.tokenFor(userId: userId)?.apiToken,
+                  let user = await accountManager.userProfileStore.getUserProfile(id: userId) else {
+                isFetchingChallenges = false
+                return
+            }
+
+            let apiFetcher = await accountManager.getApiFetcher(token: token)
+
+            let session = InAppTwoFactorAuthenticationSession(user: user, apiFetcher: apiFetcher)
+
+            @InjectService var inAppTwoFactorAuthenticationManager: InAppTwoFactorAuthenticationManagerable
+            await inAppTwoFactorAuthenticationManager.checkConnectionAttemptsFor(session: session)
+
+            isFetchingChallenges = false
         }
     }
 }

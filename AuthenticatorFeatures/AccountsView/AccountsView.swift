@@ -19,7 +19,11 @@
 import AuthenticatorCore
 import AuthenticatorCoreUI
 import DesignSystem
+@preconcurrency import InAppTwoFactorAuthentication
+import InfomaniakConcurrency
+import InfomaniakCore
 import InfomaniakCoreSwiftUI
+import InfomaniakDI
 import SwiftUI
 
 public struct AccountsView: View {
@@ -62,8 +66,23 @@ public struct AccountsView: View {
         }
     }
 
-    private func refreshAccountsList() {
-        // TODO: Refresh accounts list
+    private func refreshAccountsList() async {
+        @InjectService var accountManager: AccountManagerable
+        @InjectService var tokenStore: TokenStore
+        @InjectService var inAppTwoFactorAuthenticationManager: InAppTwoFactorAuthenticationManagerable
+
+        let tokens = tokenStore.getAllTokens()
+        await tokens.values.asyncForEach { account in
+            guard let user = await accountManager.userProfileStore.getUserProfile(id: account.userId) else {
+                return
+            }
+
+            let apiFetcher = await accountManager.getApiFetcher(token: account.apiToken)
+
+            let session = InAppTwoFactorAuthenticationSession(user: user, apiFetcher: apiFetcher)
+
+            await inAppTwoFactorAuthenticationManager.checkConnectionAttemptsFor(session: session)
+        }
     }
 }
 
