@@ -22,12 +22,26 @@ import Foundation
 import InfomaniakCore
 import InfomaniakDI
 import InfomaniakLogin
+import InterAppLogin
 
 final class TokenBridgeImplementation: TokenBridge {
     @LazyInjectService private var tokenStore: TokenStore
+    @LazyInjectService private var connectedAccountManager: ConnectedAccountManagerable
+    @LazyInjectService private var networkLogin: InfomaniakNetworkLoginable
 
     func __getTokenFromCrossAppLogin(userId: Int64) async throws -> String? {
-        return nil
+        let connectedAccounts = await connectedAccountManager.listAllLocalAccounts()
+
+        guard let matchingConnectedAccount = connectedAccounts.first(where: { $0.userId == userId }) else {
+            return nil
+        }
+
+        let derivedToken = try await networkLogin.derivateApiToken(
+            for: matchingConnectedAccount,
+            appBundleId: Constants.bundleId
+        )
+
+        return derivedToken.accessToken
     }
 
     func __getTokenFromDatabase(userId: Int64) async throws -> String? {
