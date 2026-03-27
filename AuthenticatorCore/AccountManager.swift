@@ -20,6 +20,7 @@ import Combine
 @preconcurrency import CoreAuthenticator
 import DeviceAssociation
 import Foundation
+import InfomaniakConcurrency
 @preconcurrency import InfomaniakCore
 import InfomaniakDI
 import InfomaniakLogin
@@ -52,7 +53,7 @@ public protocol AccountManagerable: Sendable {
 
     func getAccountsIds() async -> [Int]
     func createAndSetCurrentAccount(code: String, codeVerifier: String) async throws
-    func createAccounts(derivedAccounts: [ConnectedAccount]) async throws
+    func createAccounts(accountsToDerive: [ConnectedAccount]) async throws
     func createAccount(token: ApiToken) async throws
     func getApiFetcher(token: ApiToken) async -> ApiFetcher
     func removeAccount(userId: Int64) async
@@ -86,13 +87,21 @@ public actor AccountManager: AccountManagerable {
         try await createAccount(token: token)
     }
 
-    public func createAccounts(derivedAccounts: [ConnectedAccount]) async throws {
+    public func createAccounts(accountsToDerive: [ConnectedAccount]) async throws {
         let deviceId = try await deviceManager.getOrCreateCurrentDevice().uid
 
-        var accounts: [CoreAuthenticator.Account] = []
-        for derivedAccount in derivedAccounts {
-            tokenStore.addToken(newToken: derivedAccount.token, associatedDeviceId: deviceId)
-            accounts.append(Account(from: derivedAccount.userProfile))
+        let accounts: [CoreAuthenticator.Account] = await accountsToDerive.asyncCompactMap { [self] accountToDerive in
+            do {
+                let derivedApiToken = try await networkLoginService.derivateApiToken(
+                    for: accountToDerive,
+                    appBundleId: Constants.bundleId
+                )
+                await tokenStore.addToken(newToken: derivedApiToken, associatedDeviceId: deviceId)
+                return Account(from: accountToDerive.userProfile)
+            } catch {
+                Logger.general.warning("Failed to derive token for \(accountToDerive.userId): \(error)")
+                return nil
+            }
         }
 
         try await createAccounts(accounts: accounts)

@@ -98,7 +98,7 @@ final class LoginHandler: InfomaniakLoginDelegate, ObservableObject {
         defer { isLoading = false }
 
         do {
-            try await accountManager.createAccounts(derivedAccounts: accounts)
+            try await accountManager.createAccounts(accountsToDerive: accounts)
         } catch {
             loginFailed(error: error)
         }
