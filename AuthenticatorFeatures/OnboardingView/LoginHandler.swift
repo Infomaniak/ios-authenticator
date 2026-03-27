@@ -58,14 +58,23 @@ final class LoginHandler: InfomaniakLoginDelegate, ObservableObject {
         }
     }
 
-    // periphery:ignore - Todo implementation
     nonisolated func didCompleteLoginWith(code: String, verifier: String) {
-        // TODO:
+        Task { @MainActor in
+            isLoading = true
+            defer { isLoading = false }
+
+            do {
+                try await loginSuccessful(code: code, codeVerifier: verifier)
+            } catch {
+                loginFailed(error: error)
+            }
+        }
     }
 
-    // periphery:ignore - Todo implementation
     nonisolated func didFailLoginWith(error: any Error) {
-        // TODO:
+        Task { @MainActor in
+            loginFailed(error: error)
+        }
     }
 
     func login() async {
