@@ -24,7 +24,10 @@ import Foundation
 import InfomaniakDI
 import InfomaniakLogin
 import InfomaniakNotifications
+import InterAppLogin
 import OSLog
+
+extension CoreAuthenticator.Account: @unchecked @retroactive Sendable {}
 
 public extension ApiFetcher {
     convenience init(token: ApiToken, delegate: RefreshTokenDelegate) {
@@ -49,6 +52,8 @@ public protocol AccountManagerable: Sendable {
 
     func getAccountsIds() async -> [Int]
     func createAndSetCurrentAccount(code: String, codeVerifier: String) async throws
+    func createAccounts(derivedAccounts: [ConnectedAccount]) async throws
+    func createAccount(token: ApiToken) async throws
     func getApiFetcher(token: ApiToken) async -> ApiFetcher
     func removeAccount(userId: Int64) async
 }
@@ -56,6 +61,7 @@ public protocol AccountManagerable: Sendable {
 public extension AccountManager {
     enum DomainError: Error {
         case tokenKeyExchangeFailed
+        case missingAccounts
     }
 }
 
@@ -80,24 +86,54 @@ public actor AccountManager: AccountManagerable {
         try await createAccount(token: token)
     }
 
+    public func createAccounts(derivedAccounts: [ConnectedAccount]) async throws {
+        let deviceId = try await deviceManager.getOrCreateCurrentDevice().uid
+
+        var accounts: [CoreAuthenticator.Account] = []
+        for derivedAccount in derivedAccounts {
+            tokenStore.addToken(newToken: derivedAccount.token, associatedDeviceId: deviceId)
+            accounts.append(Account(from: derivedAccount.userProfile))
+        }
+
+        try await createAccounts(accounts: accounts)
+    }
+
     public func createAccount(token: ApiToken) async throws {
+        let deviceId = try await deviceManager.getOrCreateCurrentDevice().uid
+
         let temporaryApiFetcher = ApiFetcher(token: token, delegate: refreshTokenDelegate)
         let user = try await userProfileStore.updateUserProfile(with: temporaryApiFetcher)
 
-        @InjectService var deviceManager: DeviceManagerable
-        let deviceId = try await deviceManager.getOrCreateCurrentDevice().uid
         tokenStore.addToken(newToken: token, associatedDeviceId: deviceId)
 
-        let account = CoreAuthenticator.Account(from: user)
-        try await authenticatorFacade.addAccounts(connectedAccounts: [account])
+        let account = Account(from: user)
 
-        guard let newToken = tokenStore.tokenFor(userId: user.id)?.apiToken else {
-            throw DomainError.tokenKeyExchangeFailed
+        try await createAccounts(accounts: [account])
+    }
+
+    private func createAccounts(accounts: [CoreAuthenticator.Account]) async throws {
+        guard !accounts.isEmpty else {
+            throw DomainError.missingAccounts
         }
 
-        let apiFetcher = getApiFetcher(token: newToken)
-        attachDeviceToApiToken(newToken, apiFetcher: apiFetcher)
-        await notificationService.updateTopicsIfNeeded([Topic.twoFAPushChallenge], userApiFetcher: apiFetcher)
+        try await authenticatorFacade.addAccounts(connectedAccounts: accounts)
+
+        var atLeastOneAccountAdded = false
+        for account in accounts {
+            guard let newToken = tokenStore.tokenFor(userId: TokenStore.UserId(account.id))?.apiToken else {
+                continue
+            }
+
+            atLeastOneAccountAdded = true
+
+            let apiFetcher = getApiFetcher(token: newToken)
+            attachDeviceToApiToken(newToken, apiFetcher: apiFetcher)
+            async let _ = notificationService.updateTopicsIfNeeded([Topic.twoFAPushChallenge], userApiFetcher: apiFetcher)
+        }
+
+        if !atLeastOneAccountAdded {
+            throw DomainError.tokenKeyExchangeFailed
+        }
     }
 
     public func getApiFetcher(token: ApiToken) -> ApiFetcher {
