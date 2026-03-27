@@ -93,9 +93,15 @@ final class LoginHandler: InfomaniakLoginDelegate, ObservableObject {
         }
     }
 
-    // periphery:ignore - Todo implementation
     func login(with accounts: [ConnectedAccount]) async {
-        // TODO:
+        isLoading = true
+        defer { isLoading = false }
+
+        do {
+            try await accountManager.createAccounts(derivedAccounts: accounts)
+        } catch {
+            loginFailed(error: error)
+        }
     }
 
     func loginAfterAccountCreation(from viewController: UIViewController) {
