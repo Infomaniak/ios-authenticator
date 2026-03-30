@@ -39,7 +39,7 @@ public extension ApiFetcher {
         self.init(decoder: decoder)
         createAuthenticatedSession(
             token,
-            authenticator: OAuthAuthenticator(refreshTokenDelegate: delegate),
+            authenticator: KeyBasedRefreshAuthenticator(refreshTokenDelegate: delegate),
             additionalAdapters: [UserAgentAdapter()]
         )
     }
