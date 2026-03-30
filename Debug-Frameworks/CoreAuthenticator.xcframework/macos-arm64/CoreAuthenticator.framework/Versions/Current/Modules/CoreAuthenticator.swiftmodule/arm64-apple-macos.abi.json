@@ -27983,6 +27983,42 @@
           },
           {
             "kind": "Function",
+            "name": "refreshTokenFor",
+            "printedName": "refreshTokenFor(userId:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int64",
+                "printedName": "Swift.Int64",
+                "usr": "s:s5Int64V"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:So017CoreAuthenticatorB6FacadeC0aB0E15refreshTokenFor6userIdys5Int64V_tYaKF",
+            "mangledName": "$sSo017CoreAuthenticatorB6FacadeC0aB0E15refreshTokenFor6userIdys5Int64V_tYaKF",
+            "moduleName": "CoreAuthenticator",
+            "intro_Macosx": "10.15",
+            "intro_iOS": "13",
+            "intro_tvOS": "13",
+            "intro_watchOS": "6",
+            "declAttributes": [
+              "AccessControl",
+              "Available",
+              "Available",
+              "Available",
+              "Available"
+            ],
+            "isFromExtension": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "removeAccount",
             "printedName": "removeAccount(token:id:)",
             "children": [
@@ -28341,44 +28377,6 @@
             "declKind": "Func",
             "usr": "s:So31CoreAuthenticatorAppSettingsDaoP0aB0E05setIsC11LockEnabled02ischI0ySb_tYaKF",
             "mangledName": "$sSo31CoreAuthenticatorAppSettingsDaoP0aB0E05setIsC11LockEnabled02ischI0ySb_tYaKF",
-            "moduleName": "CoreAuthenticator",
-            "genericSig": "<τ_0_0 where τ_0_0 : CoreAuthenticator.AppSettingsDao>",
-            "sugared_genericSig": "<Self where Self : CoreAuthenticator.AppSettingsDao>",
-            "intro_Macosx": "10.15",
-            "intro_iOS": "13",
-            "intro_tvOS": "13",
-            "intro_watchOS": "6",
-            "declAttributes": [
-              "AccessControl",
-              "Available",
-              "Available",
-              "Available",
-              "Available"
-            ],
-            "isFromExtension": true,
-            "throwing": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "setIsNotificationEnabled",
-            "printedName": "setIsNotificationEnabled(isNotificationEnabled:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:So31CoreAuthenticatorAppSettingsDaoP0aB0E24setIsNotificationEnabled02ishI0ySb_tYaKF",
-            "mangledName": "$sSo31CoreAuthenticatorAppSettingsDaoP0aB0E24setIsNotificationEnabled02ishI0ySb_tYaKF",
             "moduleName": "CoreAuthenticator",
             "genericSig": "<τ_0_0 where τ_0_0 : CoreAuthenticator.AppSettingsDao>",
             "sugared_genericSig": "<Self where Self : CoreAuthenticator.AppSettingsDao>",
@@ -28846,42 +28844,6 @@
             "declKind": "Func",
             "usr": "s:So38CoreAuthenticatorAppSettingsRepositoryC0aB0E05setIsC11LockEnabled02ischI0ySb_tYaKF",
             "mangledName": "$sSo38CoreAuthenticatorAppSettingsRepositoryC0aB0E05setIsC11LockEnabled02ischI0ySb_tYaKF",
-            "moduleName": "CoreAuthenticator",
-            "intro_Macosx": "10.15",
-            "intro_iOS": "13",
-            "intro_tvOS": "13",
-            "intro_watchOS": "6",
-            "declAttributes": [
-              "AccessControl",
-              "Available",
-              "Available",
-              "Available",
-              "Available"
-            ],
-            "isFromExtension": true,
-            "throwing": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "setIsNotificationEnabled",
-            "printedName": "setIsNotificationEnabled(isNotificationEnabled:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:So38CoreAuthenticatorAppSettingsRepositoryC0aB0E24setIsNotificationEnabled02ishI0ySb_tYaKF",
-            "mangledName": "$sSo38CoreAuthenticatorAppSettingsRepositoryC0aB0E24setIsNotificationEnabled02ishI0ySb_tYaKF",
             "moduleName": "CoreAuthenticator",
             "intro_Macosx": "10.15",
             "intro_iOS": "13",

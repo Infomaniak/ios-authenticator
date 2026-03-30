@@ -932,7 +932,7 @@ Classes:
       Type: "NSString * _Nullable"
     - Position: 5
       Type: "Skie__TypeDef__0__id_CoreAuthenticatorAccountStatus_"
-  - Selector: "initWithId:fullName:initials:email:status__Skie_DefaultArguments__101:"
+  - Selector: "initWithId:fullName:initials:email:status__Skie_DefaultArguments__93:"
     MethodKind: "Instance"
     SwiftName: "init(id:fullName:initials:email:status:)"
     Parameters:
@@ -2042,6 +2042,16 @@ Classes:
       Type: "NSArray<CoreAuthenticatorAccount *> * _Nonnull"
     - Position: 1
       Type: "void (^ _Nonnull)(NSError * _Nullable)"
+  - Selector: "refreshTokenForUserId:completionHandler:"
+    MethodKind: "Instance"
+    SwiftName: "__refreshTokenFor(userId:completionHandler:)"
+    SwiftPrivate: true
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "int64_t"
+    - Position: 1
+      Type: "void (^ _Nonnull)(NSError * _Nullable)"
   - Selector: "removeAccountToken:id:completionHandler:"
     MethodKind: "Instance"
     SwiftName: "__removeAccount(token:id:completionHandler:)"
@@ -2381,7 +2391,7 @@ Classes:
     MethodKind: "Instance"
     SwiftName: "description()"
     ResultType: "NSString * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__100"
+  - Selector: "doCopy__Skie_DefaultArguments__92"
     MethodKind: "Instance"
     SwiftName: "doCopy()"
     ResultType: "CoreAuthenticatorApiEnvironmentCustom * _Nonnull"
@@ -2405,7 +2415,7 @@ Classes:
       Type: "NSString * _Nullable"
     - Position: 3
       Type: "id<CoreAuthenticatorCrashReportInterface> _Nonnull"
-  - Selector: "initWithEnvironment:userAgent:crashReport__Skie_DefaultArguments__102:"
+  - Selector: "initWithEnvironment:userAgent:crashReport__Skie_DefaultArguments__94:"
     MethodKind: "Instance"
     SwiftName: "init(environment:userAgent:crashReport:)"
     Parameters:
@@ -2508,6 +2518,16 @@ Classes:
       Type: "NSArray<CoreAuthenticatorAccount *> * _Nonnull"
     - Position: 1
       Type: "void (^ _Nonnull)(NSError * _Nullable)"
+  - Selector: "refreshTokenForUserId:completionHandler:"
+    MethodKind: "Instance"
+    SwiftName: "__refreshTokenFor(userId:completionHandler:)"
+    SwiftPrivate: true
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "int64_t"
+    - Position: 1
+      Type: "void (^ _Nonnull)(NSError * _Nullable)"
   - Selector: "removeAccountToken:id:completionHandler:"
     MethodKind: "Instance"
     SwiftName: "__removeAccount(token:id:completionHandler:)"
@@ -2563,123 +2583,12 @@ Classes:
     PropertyKind: "Instance"
     SwiftName: "isAppLockEnabled"
     Type: "BOOL"
-  - Name: "isNotificationEnabled"
-    PropertyKind: "Instance"
-    SwiftName: "isNotificationEnabled"
-    Type: "BOOL"
   - Name: "theme"
     PropertyKind: "Instance"
     SwiftName: "theme"
     Type: "CoreAuthenticatorTheme * _Nonnull"
   Methods:
-  - Selector: "initWithId:isNotificationEnabled:isAppLockEnabled:theme:"
-    MethodKind: "Instance"
-    SwiftName: "init(id:isNotificationEnabled:isAppLockEnabled:theme:)"
-    Parameters:
-    - Position: 0
-      Type: "int64_t"
-    - Position: 1
-      Type: "BOOL"
-    - Position: 2
-      Type: "BOOL"
-    - Position: 3
-      Type: "CoreAuthenticatorTheme * _Nonnull"
-  - Selector: "init"
-    MethodKind: "Instance"
-    SwiftName: "init()"
-  - Selector: "initWithId__Skie_DefaultArguments__104:"
-    MethodKind: "Instance"
-    SwiftName: "init(id:)"
-    Parameters:
-    - Position: 0
-      Type: "int64_t"
-  - Selector: "initWithIsNotificationEnabled__Skie_DefaultArguments__105:"
-    MethodKind: "Instance"
-    SwiftName: "init(isNotificationEnabled:)"
-    Parameters:
-    - Position: 0
-      Type: "BOOL"
-  - Selector: "initWithId:isNotificationEnabled__Skie_DefaultArguments__106:"
-    MethodKind: "Instance"
-    SwiftName: "init(id:isNotificationEnabled:)"
-    Parameters:
-    - Position: 0
-      Type: "int64_t"
-    - Position: 1
-      Type: "BOOL"
-  - Selector: "initWithIsAppLockEnabled__Skie_DefaultArguments__107:"
-    MethodKind: "Instance"
-    SwiftName: "init(isAppLockEnabled:)"
-    Parameters:
-    - Position: 0
-      Type: "BOOL"
-  - Selector: "initWithId:isAppLockEnabled__Skie_DefaultArguments__108:"
-    MethodKind: "Instance"
-    SwiftName: "init(id:isAppLockEnabled:)"
-    Parameters:
-    - Position: 0
-      Type: "int64_t"
-    - Position: 1
-      Type: "BOOL"
-  - Selector: "initWithIsNotificationEnabled:isAppLockEnabled__Skie_DefaultArguments__109:"
-    MethodKind: "Instance"
-    SwiftName: "init(isNotificationEnabled:isAppLockEnabled:)"
-    Parameters:
-    - Position: 0
-      Type: "BOOL"
-    - Position: 1
-      Type: "BOOL"
-  - Selector: "initWithId:isNotificationEnabled:isAppLockEnabled__Skie_DefaultArguments__110:"
-    MethodKind: "Instance"
-    SwiftName: "init(id:isNotificationEnabled:isAppLockEnabled:)"
-    Parameters:
-    - Position: 0
-      Type: "int64_t"
-    - Position: 1
-      Type: "BOOL"
-    - Position: 2
-      Type: "BOOL"
-  - Selector: "initWithTheme__Skie_DefaultArguments__111:"
-    MethodKind: "Instance"
-    SwiftName: "init(theme:)"
-    Parameters:
-    - Position: 0
-      Type: "CoreAuthenticatorTheme * _Nonnull"
-  - Selector: "initWithId:theme__Skie_DefaultArguments__112:"
-    MethodKind: "Instance"
-    SwiftName: "init(id:theme:)"
-    Parameters:
-    - Position: 0
-      Type: "int64_t"
-    - Position: 1
-      Type: "CoreAuthenticatorTheme * _Nonnull"
-  - Selector: "initWithIsNotificationEnabled:theme__Skie_DefaultArguments__113:"
-    MethodKind: "Instance"
-    SwiftName: "init(isNotificationEnabled:theme:)"
-    Parameters:
-    - Position: 0
-      Type: "BOOL"
-    - Position: 1
-      Type: "CoreAuthenticatorTheme * _Nonnull"
-  - Selector: "initWithId:isNotificationEnabled:theme__Skie_DefaultArguments__114:"
-    MethodKind: "Instance"
-    SwiftName: "init(id:isNotificationEnabled:theme:)"
-    Parameters:
-    - Position: 0
-      Type: "int64_t"
-    - Position: 1
-      Type: "BOOL"
-    - Position: 2
-      Type: "CoreAuthenticatorTheme * _Nonnull"
-  - Selector: "initWithIsAppLockEnabled:theme__Skie_DefaultArguments__115:"
-    MethodKind: "Instance"
-    SwiftName: "init(isAppLockEnabled:theme:)"
-    Parameters:
-    - Position: 0
-      Type: "BOOL"
-    - Position: 1
-      Type: "CoreAuthenticatorTheme * _Nonnull"
-  - Selector: "initWithId:isAppLockEnabled:theme__Skie_DefaultArguments__116:"
+  - Selector: "initWithId:isAppLockEnabled:theme:"
     MethodKind: "Instance"
     SwiftName: "init(id:isAppLockEnabled:theme:)"
     Parameters:
@@ -2689,19 +2598,54 @@ Classes:
       Type: "BOOL"
     - Position: 2
       Type: "CoreAuthenticatorTheme * _Nonnull"
-  - Selector: "initWithIsNotificationEnabled:isAppLockEnabled:theme__Skie_DefaultArguments__117:"
+  - Selector: "init"
     MethodKind: "Instance"
-    SwiftName: "init(isNotificationEnabled:isAppLockEnabled:theme:)"
+    SwiftName: "init()"
+  - Selector: "initWithId__Skie_DefaultArguments__96:"
+    MethodKind: "Instance"
+    SwiftName: "init(id:)"
+    Parameters:
+    - Position: 0
+      Type: "int64_t"
+  - Selector: "initWithIsAppLockEnabled__Skie_DefaultArguments__97:"
+    MethodKind: "Instance"
+    SwiftName: "init(isAppLockEnabled:)"
+    Parameters:
+    - Position: 0
+      Type: "BOOL"
+  - Selector: "initWithId:isAppLockEnabled__Skie_DefaultArguments__98:"
+    MethodKind: "Instance"
+    SwiftName: "init(id:isAppLockEnabled:)"
+    Parameters:
+    - Position: 0
+      Type: "int64_t"
+    - Position: 1
+      Type: "BOOL"
+  - Selector: "initWithTheme__Skie_DefaultArguments__99:"
+    MethodKind: "Instance"
+    SwiftName: "init(theme:)"
+    Parameters:
+    - Position: 0
+      Type: "CoreAuthenticatorTheme * _Nonnull"
+  - Selector: "initWithId:theme__Skie_DefaultArguments__100:"
+    MethodKind: "Instance"
+    SwiftName: "init(id:theme:)"
+    Parameters:
+    - Position: 0
+      Type: "int64_t"
+    - Position: 1
+      Type: "CoreAuthenticatorTheme * _Nonnull"
+  - Selector: "initWithIsAppLockEnabled:theme__Skie_DefaultArguments__101:"
+    MethodKind: "Instance"
+    SwiftName: "init(isAppLockEnabled:theme:)"
     Parameters:
     - Position: 0
       Type: "BOOL"
     - Position: 1
-      Type: "BOOL"
-    - Position: 2
       Type: "CoreAuthenticatorTheme * _Nonnull"
-  - Selector: "doCopyId:isNotificationEnabled:isAppLockEnabled:theme:"
+  - Selector: "doCopyId:isAppLockEnabled:theme:"
     MethodKind: "Instance"
-    SwiftName: "doCopy(id:isNotificationEnabled:isAppLockEnabled:theme:)"
+    SwiftName: "doCopy(id:isAppLockEnabled:theme:)"
     ResultType: "CoreAuthenticatorAppSettingsEntity * _Nonnull"
     Parameters:
     - Position: 0
@@ -2709,8 +2653,6 @@ Classes:
     - Position: 1
       Type: "BOOL"
     - Position: 2
-      Type: "BOOL"
-    - Position: 3
       Type: "CoreAuthenticatorTheme * _Nonnull"
   - Selector: "isEqual:"
     MethodKind: "Instance"
@@ -2738,30 +2680,14 @@ Classes:
     Parameters:
     - Position: 0
       Type: "int64_t"
-  - Selector: "doCopy__Skie_DefaultArguments__87IsNotificationEnabled:"
-    MethodKind: "Instance"
-    SwiftName: "doCopy(isNotificationEnabled:)"
-    ResultType: "CoreAuthenticatorAppSettingsEntity * _Nonnull"
-    Parameters:
-    - Position: 0
-      Type: "BOOL"
-  - Selector: "doCopy__Skie_DefaultArguments__88Id:isNotificationEnabled:"
-    MethodKind: "Instance"
-    SwiftName: "doCopy(id:isNotificationEnabled:)"
-    ResultType: "CoreAuthenticatorAppSettingsEntity * _Nonnull"
-    Parameters:
-    - Position: 0
-      Type: "int64_t"
-    - Position: 1
-      Type: "BOOL"
-  - Selector: "doCopy__Skie_DefaultArguments__89IsAppLockEnabled:"
+  - Selector: "doCopy__Skie_DefaultArguments__87IsAppLockEnabled:"
     MethodKind: "Instance"
     SwiftName: "doCopy(isAppLockEnabled:)"
     ResultType: "CoreAuthenticatorAppSettingsEntity * _Nonnull"
     Parameters:
     - Position: 0
       Type: "BOOL"
-  - Selector: "doCopy__Skie_DefaultArguments__90Id:isAppLockEnabled:"
+  - Selector: "doCopy__Skie_DefaultArguments__88Id:isAppLockEnabled:"
     MethodKind: "Instance"
     SwiftName: "doCopy(id:isAppLockEnabled:)"
     ResultType: "CoreAuthenticatorAppSettingsEntity * _Nonnull"
@@ -2770,34 +2696,14 @@ Classes:
       Type: "int64_t"
     - Position: 1
       Type: "BOOL"
-  - Selector: "doCopy__Skie_DefaultArguments__91IsNotificationEnabled:isAppLockEnabled:"
-    MethodKind: "Instance"
-    SwiftName: "doCopy(isNotificationEnabled:isAppLockEnabled:)"
-    ResultType: "CoreAuthenticatorAppSettingsEntity * _Nonnull"
-    Parameters:
-    - Position: 0
-      Type: "BOOL"
-    - Position: 1
-      Type: "BOOL"
-  - Selector: "doCopy__Skie_DefaultArguments__92Id:isNotificationEnabled:isAppLockEnabled:"
-    MethodKind: "Instance"
-    SwiftName: "doCopy(id:isNotificationEnabled:isAppLockEnabled:)"
-    ResultType: "CoreAuthenticatorAppSettingsEntity * _Nonnull"
-    Parameters:
-    - Position: 0
-      Type: "int64_t"
-    - Position: 1
-      Type: "BOOL"
-    - Position: 2
-      Type: "BOOL"
-  - Selector: "doCopy__Skie_DefaultArguments__93Theme:"
+  - Selector: "doCopy__Skie_DefaultArguments__89Theme:"
     MethodKind: "Instance"
     SwiftName: "doCopy(theme:)"
     ResultType: "CoreAuthenticatorAppSettingsEntity * _Nonnull"
     Parameters:
     - Position: 0
       Type: "CoreAuthenticatorTheme * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__94Id:theme:"
+  - Selector: "doCopy__Skie_DefaultArguments__90Id:theme:"
     MethodKind: "Instance"
     SwiftName: "doCopy(id:theme:)"
     ResultType: "CoreAuthenticatorAppSettingsEntity * _Nonnull"
@@ -2806,27 +2712,7 @@ Classes:
       Type: "int64_t"
     - Position: 1
       Type: "CoreAuthenticatorTheme * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__95IsNotificationEnabled:theme:"
-    MethodKind: "Instance"
-    SwiftName: "doCopy(isNotificationEnabled:theme:)"
-    ResultType: "CoreAuthenticatorAppSettingsEntity * _Nonnull"
-    Parameters:
-    - Position: 0
-      Type: "BOOL"
-    - Position: 1
-      Type: "CoreAuthenticatorTheme * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__96Id:isNotificationEnabled:theme:"
-    MethodKind: "Instance"
-    SwiftName: "doCopy(id:isNotificationEnabled:theme:)"
-    ResultType: "CoreAuthenticatorAppSettingsEntity * _Nonnull"
-    Parameters:
-    - Position: 0
-      Type: "int64_t"
-    - Position: 1
-      Type: "BOOL"
-    - Position: 2
-      Type: "CoreAuthenticatorTheme * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__97IsAppLockEnabled:theme:"
+  - Selector: "doCopy__Skie_DefaultArguments__91IsAppLockEnabled:theme:"
     MethodKind: "Instance"
     SwiftName: "doCopy(isAppLockEnabled:theme:)"
     ResultType: "CoreAuthenticatorAppSettingsEntity * _Nonnull"
@@ -2834,28 +2720,6 @@ Classes:
     - Position: 0
       Type: "BOOL"
     - Position: 1
-      Type: "CoreAuthenticatorTheme * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__98Id:isAppLockEnabled:theme:"
-    MethodKind: "Instance"
-    SwiftName: "doCopy(id:isAppLockEnabled:theme:)"
-    ResultType: "CoreAuthenticatorAppSettingsEntity * _Nonnull"
-    Parameters:
-    - Position: 0
-      Type: "int64_t"
-    - Position: 1
-      Type: "BOOL"
-    - Position: 2
-      Type: "CoreAuthenticatorTheme * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__99IsNotificationEnabled:isAppLockEnabled:theme:"
-    MethodKind: "Instance"
-    SwiftName: "doCopy(isNotificationEnabled:isAppLockEnabled:theme:)"
-    ResultType: "CoreAuthenticatorAppSettingsEntity * _Nonnull"
-    Parameters:
-    - Position: 0
-      Type: "BOOL"
-    - Position: 1
-      Type: "BOOL"
-    - Position: 2
       Type: "CoreAuthenticatorTheme * _Nonnull"
 - Name: "CoreAuthenticatorKeyStorageLocation"
   SwiftBridge: "KeyStorageLocation"
@@ -2990,16 +2854,6 @@ Classes:
       Type: "BOOL"
     - Position: 1
       Type: "void (^ _Nonnull)(NSError * _Nullable)"
-  - Selector: "setIsNotificationEnabledIsNotificationEnabled:completionHandler:"
-    MethodKind: "Instance"
-    SwiftName: "__setIsNotificationEnabled(isNotificationEnabled:completionHandler:)"
-    SwiftPrivate: true
-    ResultType: "void"
-    Parameters:
-    - Position: 0
-      Type: "BOOL"
-    - Position: 1
-      Type: "void (^ _Nonnull)(NSError * _Nullable)"
   - Selector: "setThemeTheme:completionHandler:"
     MethodKind: "Instance"
     SwiftName: "__setTheme(theme:completionHandler:)"
@@ -3062,16 +2916,6 @@ Classes:
   - Selector: "setIsAppLockEnabledIsAppLockEnabled:completionHandler:"
     MethodKind: "Instance"
     SwiftName: "__setIsAppLockEnabled(isAppLockEnabled:completionHandler:)"
-    SwiftPrivate: true
-    ResultType: "void"
-    Parameters:
-    - Position: 0
-      Type: "BOOL"
-    - Position: 1
-      Type: "void (^ _Nonnull)(NSError * _Nullable)"
-  - Selector: "setIsNotificationEnabledIsNotificationEnabled:completionHandler:"
-    MethodKind: "Instance"
-    SwiftName: "__setIsNotificationEnabled(isNotificationEnabled:completionHandler:)"
     SwiftPrivate: true
     ResultType: "void"
     Parameters:
@@ -3702,9 +3546,21 @@ Classes:
       Type: "NSArray<CoreAuthenticatorAccount *> * _Nonnull"
     - Position: 2
       Type: "CoreAuthenticatorSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__4__removeAccountDispatchReceiver:token:id:suspendHandler:"
+  - Selector: "Skie_Suspend__4__refreshTokenForDispatchReceiver:userId:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__4__removeAccount(dispatchReceiver:token:id:suspendHandler:)"
+    SwiftName: "Skie_Suspend__4__refreshTokenFor(dispatchReceiver:userId:suspendHandler:)"
+    Availability: "nonswift"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "CoreAuthenticatorAuthenticatorFacade * _Nonnull"
+    - Position: 1
+      Type: "int64_t"
+    - Position: 2
+      Type: "CoreAuthenticatorSkie_SuspendHandler * _Nonnull"
+  - Selector: "Skie_Suspend__5__removeAccountDispatchReceiver:token:id:suspendHandler:"
+    MethodKind: "Class"
+    SwiftName: "Skie_Suspend__5__removeAccount(dispatchReceiver:token:id:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -3716,9 +3572,9 @@ Classes:
       Type: "int64_t"
     - Position: 3
       Type: "CoreAuthenticatorSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__5__getTokenFromCrossAppLoginDispatchReceiver:userId:suspendHandler:"
+  - Selector: "Skie_Suspend__6__getTokenFromCrossAppLoginDispatchReceiver:userId:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__5__getTokenFromCrossAppLogin(dispatchReceiver:userId:suspendHandler:)"
+    SwiftName: "Skie_Suspend__6__getTokenFromCrossAppLogin(dispatchReceiver:userId:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -3728,9 +3584,9 @@ Classes:
       Type: "int64_t"
     - Position: 2
       Type: "CoreAuthenticatorSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__6__getTokenFromDatabaseDispatchReceiver:userId:suspendHandler:"
+  - Selector: "Skie_Suspend__7__getTokenFromDatabaseDispatchReceiver:userId:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__6__getTokenFromDatabase(dispatchReceiver:userId:suspendHandler:)"
+    SwiftName: "Skie_Suspend__7__getTokenFromDatabase(dispatchReceiver:userId:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -3740,9 +3596,9 @@ Classes:
       Type: "int64_t"
     - Position: 2
       Type: "CoreAuthenticatorSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__7__persistTokenForAccountDispatchReceiver:userId:token:suspendHandler:"
+  - Selector: "Skie_Suspend__8__persistTokenForAccountDispatchReceiver:userId:token:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__7__persistTokenForAccount(dispatchReceiver:userId:token:suspendHandler:)"
+    SwiftName: "Skie_Suspend__8__persistTokenForAccount(dispatchReceiver:userId:token:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -3754,9 +3610,9 @@ Classes:
       Type: "NSString * _Nonnull"
     - Position: 3
       Type: "CoreAuthenticatorSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__8__saveDispatchReceiver:item:suspendHandler:"
+  - Selector: "Skie_Suspend__9__saveDispatchReceiver:item:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__8__save(dispatchReceiver:item:suspendHandler:)"
+    SwiftName: "Skie_Suspend__9__save(dispatchReceiver:item:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -3766,21 +3622,9 @@ Classes:
       Type: "CoreAuthenticatorAppSettingsEntity * _Nonnull"
     - Position: 2
       Type: "CoreAuthenticatorSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__9__setIsAppLockEnabledDispatchReceiver:isAppLockEnabled:suspendHandler:"
+  - Selector: "Skie_Suspend__10__setIsAppLockEnabledDispatchReceiver:isAppLockEnabled:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__9__setIsAppLockEnabled(dispatchReceiver:isAppLockEnabled:suspendHandler:)"
-    Availability: "nonswift"
-    ResultType: "void"
-    Parameters:
-    - Position: 0
-      Type: "id<CoreAuthenticatorAppSettingsDao> _Nonnull"
-    - Position: 1
-      Type: "BOOL"
-    - Position: 2
-      Type: "CoreAuthenticatorSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__10__setIsNotificationEnabledDispatchReceiver:isNotificationEnabled:suspendHandler:"
-    MethodKind: "Class"
-    SwiftName: "Skie_Suspend__10__setIsNotificationEnabled(dispatchReceiver:isNotificationEnabled:suspendHandler:)"
+    SwiftName: "Skie_Suspend__10__setIsAppLockEnabled(dispatchReceiver:isAppLockEnabled:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -3852,21 +3696,9 @@ Classes:
       Type: "BOOL"
     - Position: 2
       Type: "CoreAuthenticatorSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__16__setIsNotificationEnabledDispatchReceiver:isNotificationEnabled:suspendHandler:"
+  - Selector: "Skie_Suspend__16__setThemeDispatchReceiver:theme:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__16__setIsNotificationEnabled(dispatchReceiver:isNotificationEnabled:suspendHandler:)"
-    Availability: "nonswift"
-    ResultType: "void"
-    Parameters:
-    - Position: 0
-      Type: "CoreAuthenticatorAppSettingsRepository * _Nonnull"
-    - Position: 1
-      Type: "BOOL"
-    - Position: 2
-      Type: "CoreAuthenticatorSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__17__setThemeDispatchReceiver:theme:suspendHandler:"
-    MethodKind: "Class"
-    SwiftName: "Skie_Suspend__17__setTheme(dispatchReceiver:theme:suspendHandler:)"
+    SwiftName: "Skie_Suspend__16__setTheme(dispatchReceiver:theme:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -4249,16 +4081,6 @@ Protocols:
   - Selector: "setIsAppLockEnabledIsAppLockEnabled:completionHandler:"
     MethodKind: "Instance"
     SwiftName: "__setIsAppLockEnabled(isAppLockEnabled:completionHandler:)"
-    SwiftPrivate: true
-    ResultType: "void"
-    Parameters:
-    - Position: 0
-      Type: "BOOL"
-    - Position: 1
-      Type: "void (^ _Nonnull)(NSError * _Nullable)"
-  - Selector: "setIsNotificationEnabledIsNotificationEnabled:completionHandler:"
-    MethodKind: "Instance"
-    SwiftName: "__setIsNotificationEnabled(isNotificationEnabled:completionHandler:)"
     SwiftPrivate: true
     ResultType: "void"
     Parameters:
