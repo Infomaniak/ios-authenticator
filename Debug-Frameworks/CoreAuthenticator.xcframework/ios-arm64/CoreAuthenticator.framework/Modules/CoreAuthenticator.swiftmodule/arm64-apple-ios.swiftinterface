@@ -446,6 +446,8 @@ extension CoreAuthenticator.AuthenticatorFacade {
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
   public func addAccounts(connectedAccounts: [CoreAuthenticator.Account]) async throws
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func refreshTokenFor(userId: Swift.Int64) async throws
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
   public func removeAccount(token: Swift.String, id: Swift.Int64) async throws
 }
 extension CoreAuthenticator.TokenBridge {
@@ -465,8 +467,6 @@ extension CoreAuthenticator.AppSettingsDao {
   public func save(item: CoreAuthenticator.AppSettingsEntity) async throws
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
   public func setIsAppLockEnabled(isAppLockEnabled: Swift.Bool) async throws
-  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
-  public func setIsNotificationEnabled(isNotificationEnabled: Swift.Bool) async throws
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
   public func setTheme(theme: CoreAuthenticator.Theme) async throws
 }
@@ -489,8 +489,6 @@ extension CoreAuthenticator.Room_runtimeInvalidationTracker {
 extension CoreAuthenticator.AppSettingsRepository {
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
   public func setIsAppLockEnabled(isAppLockEnabled: Swift.Bool) async throws
-  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
-  public func setIsNotificationEnabled(isNotificationEnabled: Swift.Bool) async throws
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
   public func setTheme(theme: CoreAuthenticator.Theme) async throws
 }

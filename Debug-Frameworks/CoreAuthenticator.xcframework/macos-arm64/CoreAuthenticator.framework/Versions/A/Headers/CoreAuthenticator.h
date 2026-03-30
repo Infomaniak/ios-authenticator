@@ -489,7 +489,7 @@ __attribute__((swift_name("Account")))
 @property (readonly) NSString *initials __attribute__((swift_name("initials")));
 @property (readonly) id<CoreAuthenticatorAccountStatus> status __attribute__((swift_name("status")));
 - (instancetype)initWithId:(int64_t)id fullName:(NSString *)fullName initials:(NSString *)initials email:(NSString *)email avatarUrl:(NSString * _Nullable)avatarUrl status:(id<CoreAuthenticatorAccountStatus>)status __attribute__((swift_name("init(id:fullName:initials:email:avatarUrl:status:)"))) __attribute__((objc_designated_initializer));
-- (instancetype)initWithId:(int64_t)id fullName:(NSString *)fullName initials:(NSString *)initials email:(NSString *)email status__Skie_DefaultArguments__101:(id<CoreAuthenticatorAccountStatus>)status__Skie_DefaultArguments__101 __attribute__((swift_name("init(id:fullName:initials:email:status__Skie_DefaultArguments__101:)"))) __attribute__((objc_designated_initializer));
+- (instancetype)initWithId:(int64_t)id fullName:(NSString *)fullName initials:(NSString *)initials email:(NSString *)email status__Skie_DefaultArguments__93:(id<CoreAuthenticatorAccountStatus>)status__Skie_DefaultArguments__93 __attribute__((swift_name("init(id:fullName:initials:email:status__Skie_DefaultArguments__93:)"))) __attribute__((objc_designated_initializer));
 - (CoreAuthenticatorAccount *)doCopyId:(int64_t)id fullName:(NSString *)fullName initials:(NSString *)initials email:(NSString *)email avatarUrl:(NSString * _Nullable)avatarUrl status:(id<CoreAuthenticatorAccountStatus>)status __attribute__((swift_name("doCopy(id:fullName:initials:email:avatarUrl:status:)")));
 - (CoreAuthenticatorAccount *)doCopy__Skie_DefaultArguments__0 __attribute__((swift_name("doCopy__Skie_DefaultArguments__0()")));
 - (CoreAuthenticatorAccount *)doCopy__Skie_DefaultArguments__1Id:(int64_t)id __attribute__((swift_name("doCopy__Skie_DefaultArguments__1(id:)")));
@@ -768,6 +768,14 @@ __attribute__((swift_name("AuthenticatorFacade")))
 - (void)addAccountsConnectedAccounts:(NSArray<CoreAuthenticatorAccount *> *)connectedAccounts completionHandler:(void (^)(NSError * _Nullable))completionHandler __attribute__((swift_name("addAccounts(connectedAccounts:completionHandler:)")));
 
 /**
+ * Refresh the token for the specific userId
+ *
+ * @note This method converts instances of Exception to errors.
+ * Other uncaught Kotlin exceptions are fatal.
+*/
+- (void)refreshTokenForUserId:(int64_t)userId completionHandler:(void (^)(NSError * _Nullable))completionHandler __attribute__((swift_name("refreshTokenFor(userId:completionHandler:)")));
+
+/**
  * Remove account from the authenticator.
  *
  * @note This method converts instances of CancellationException to errors.
@@ -802,7 +810,7 @@ __attribute__((swift_name("AuthenticatorInjection")))
 @interface CoreAuthenticatorAuthenticatorInjection : CoreAuthenticatorBase
 @property (readonly) CoreAuthenticatorAuthenticatorFacade *authenticatorFacade __attribute__((swift_name("authenticatorFacade")));
 - (instancetype)initWithEnvironment:(CoreAuthenticatorApiEnvironment *)environment userAgent:(NSString *)userAgent databaseRootDirectory:(NSString * _Nullable)databaseRootDirectory crashReport:(id<CoreAuthenticatorCrashReportInterface>)crashReport __attribute__((swift_name("init(environment:userAgent:databaseRootDirectory:crashReport:)"))) __attribute__((objc_designated_initializer));
-- (instancetype)initWithEnvironment:(CoreAuthenticatorApiEnvironment *)environment userAgent:(NSString *)userAgent crashReport__Skie_DefaultArguments__102:(id<CoreAuthenticatorCrashReportInterface>)crashReport__Skie_DefaultArguments__102 __attribute__((swift_name("init(environment:userAgent:crashReport__Skie_DefaultArguments__102:)"))) __attribute__((objc_designated_initializer));
+- (instancetype)initWithEnvironment:(CoreAuthenticatorApiEnvironment *)environment userAgent:(NSString *)userAgent crashReport__Skie_DefaultArguments__94:(id<CoreAuthenticatorCrashReportInterface>)crashReport__Skie_DefaultArguments__94 __attribute__((swift_name("init(environment:userAgent:crashReport__Skie_DefaultArguments__94:)"))) __attribute__((objc_designated_initializer));
 - (CoreAuthenticatorAuthenticatorFacade *)getAuthenticatorFacadeClientId:(NSString *)clientId tokenBridge:(id<CoreAuthenticatorTokenBridge>)tokenBridge __attribute__((swift_name("getAuthenticatorFacade(clientId:tokenBridge:)")));
 @end
 
@@ -832,6 +840,12 @@ __attribute__((swift_name("DummyAuthenticatorFacade")))
  * Other uncaught Kotlin exceptions are fatal.
 */
 - (void)addAccountsConnectedAccounts:(NSArray<CoreAuthenticatorAccount *> *)connectedAccounts completionHandler:(void (^)(NSError * _Nullable))completionHandler __attribute__((swift_name("addAccounts(connectedAccounts:completionHandler:)")));
+
+/**
+ * @note This method converts instances of Exception to errors.
+ * Other uncaught Kotlin exceptions are fatal.
+*/
+- (void)refreshTokenForUserId:(int64_t)userId completionHandler:(void (^)(NSError * _Nullable))completionHandler __attribute__((swift_name("refreshTokenFor(userId:completionHandler:)")));
 
 /**
  * @note This method converts instances of CancellationException to errors.
@@ -1186,12 +1200,6 @@ __attribute__((swift_name("AppSettingsRepository")))
  * @note This method converts instances of CancellationException to errors.
  * Other uncaught Kotlin exceptions are fatal.
 */
-- (void)setIsNotificationEnabledIsNotificationEnabled:(BOOL)isNotificationEnabled completionHandler:(void (^)(NSError * _Nullable))completionHandler __attribute__((swift_name("setIsNotificationEnabled(isNotificationEnabled:completionHandler:)")));
-
-/**
- * @note This method converts instances of CancellationException to errors.
- * Other uncaught Kotlin exceptions are fatal.
-*/
 - (void)setThemeTheme:(CoreAuthenticatorTheme *)theme completionHandler:(void (^)(NSError * _Nullable))completionHandler __attribute__((swift_name("setTheme(theme:completionHandler:)")));
 @end
 
@@ -1211,12 +1219,6 @@ __attribute__((swift_name("AppSettingsDao")))
  * Other uncaught Kotlin exceptions are fatal.
 */
 - (void)setIsAppLockEnabledIsAppLockEnabled:(BOOL)isAppLockEnabled completionHandler:(void (^)(NSError * _Nullable))completionHandler __attribute__((swift_name("setIsAppLockEnabled(isAppLockEnabled:completionHandler:)")));
-
-/**
- * @note This method converts instances of CancellationException to errors.
- * Other uncaught Kotlin exceptions are fatal.
-*/
-- (void)setIsNotificationEnabledIsNotificationEnabled:(BOOL)isNotificationEnabled completionHandler:(void (^)(NSError * _Nullable))completionHandler __attribute__((swift_name("setIsNotificationEnabled(isNotificationEnabled:completionHandler:)")));
 
 /**
  * @note This method converts instances of CancellationException to errors.
@@ -1243,12 +1245,6 @@ __attribute__((swift_name("AppSettingsDao_Impl")))
  * Other uncaught Kotlin exceptions are fatal.
 */
 - (void)setIsAppLockEnabledIsAppLockEnabled:(BOOL)isAppLockEnabled completionHandler:(void (^)(NSError * _Nullable))completionHandler __attribute__((swift_name("setIsAppLockEnabled(isAppLockEnabled:completionHandler:)")));
-
-/**
- * @note This method converts instances of CancellationException to errors.
- * Other uncaught Kotlin exceptions are fatal.
-*/
-- (void)setIsNotificationEnabledIsNotificationEnabled:(BOOL)isNotificationEnabled completionHandler:(void (^)(NSError * _Nullable))completionHandler __attribute__((swift_name("setIsNotificationEnabled(isNotificationEnabled:completionHandler:)")));
 
 /**
  * @note This method converts instances of CancellationException to errors.
@@ -1386,41 +1382,24 @@ __attribute__((swift_name("AppSettingsEntity")))
 @interface CoreAuthenticatorAppSettingsEntity : CoreAuthenticatorBase
 @property (readonly) int64_t id __attribute__((swift_name("id")));
 @property (readonly) BOOL isAppLockEnabled __attribute__((swift_name("isAppLockEnabled")));
-@property (readonly) BOOL isNotificationEnabled __attribute__((swift_name("isNotificationEnabled")));
 @property (readonly) CoreAuthenticatorTheme *theme __attribute__((swift_name("theme")));
-- (instancetype)initWithId:(int64_t)id isNotificationEnabled:(BOOL)isNotificationEnabled isAppLockEnabled:(BOOL)isAppLockEnabled theme:(CoreAuthenticatorTheme *)theme __attribute__((swift_name("init(id:isNotificationEnabled:isAppLockEnabled:theme:)"))) __attribute__((objc_designated_initializer));
+- (instancetype)initWithId:(int64_t)id isAppLockEnabled:(BOOL)isAppLockEnabled theme:(CoreAuthenticatorTheme *)theme __attribute__((swift_name("init(id:isAppLockEnabled:theme:)"))) __attribute__((objc_designated_initializer));
+- (instancetype)initWithId:(int64_t)id theme__Skie_DefaultArguments__100:(CoreAuthenticatorTheme *)theme__Skie_DefaultArguments__100 __attribute__((swift_name("init(id:theme__Skie_DefaultArguments__100:)"))) __attribute__((objc_designated_initializer));
+- (instancetype)initWithIsAppLockEnabled:(BOOL)isAppLockEnabled theme__Skie_DefaultArguments__101:(CoreAuthenticatorTheme *)theme__Skie_DefaultArguments__101 __attribute__((swift_name("init(isAppLockEnabled:theme__Skie_DefaultArguments__101:)"))) __attribute__((objc_designated_initializer));
 - (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer));
 + (instancetype)new __attribute__((availability(swift, unavailable, message="use object initializers instead")));
-- (instancetype)initWithId__Skie_DefaultArguments__104:(int64_t)id__Skie_DefaultArguments__104 __attribute__((swift_name("init(id__Skie_DefaultArguments__104:)"))) __attribute__((objc_designated_initializer));
-- (instancetype)initWithIsNotificationEnabled__Skie_DefaultArguments__105:(BOOL)isNotificationEnabled__Skie_DefaultArguments__105 __attribute__((swift_name("init(isNotificationEnabled__Skie_DefaultArguments__105:)"))) __attribute__((objc_designated_initializer));
-- (instancetype)initWithId:(int64_t)id isNotificationEnabled__Skie_DefaultArguments__106:(BOOL)isNotificationEnabled__Skie_DefaultArguments__106 __attribute__((swift_name("init(id:isNotificationEnabled__Skie_DefaultArguments__106:)"))) __attribute__((objc_designated_initializer));
-- (instancetype)initWithIsAppLockEnabled__Skie_DefaultArguments__107:(BOOL)isAppLockEnabled__Skie_DefaultArguments__107 __attribute__((swift_name("init(isAppLockEnabled__Skie_DefaultArguments__107:)"))) __attribute__((objc_designated_initializer));
-- (instancetype)initWithId:(int64_t)id isAppLockEnabled__Skie_DefaultArguments__108:(BOOL)isAppLockEnabled__Skie_DefaultArguments__108 __attribute__((swift_name("init(id:isAppLockEnabled__Skie_DefaultArguments__108:)"))) __attribute__((objc_designated_initializer));
-- (instancetype)initWithIsNotificationEnabled:(BOOL)isNotificationEnabled isAppLockEnabled__Skie_DefaultArguments__109:(BOOL)isAppLockEnabled__Skie_DefaultArguments__109 __attribute__((swift_name("init(isNotificationEnabled:isAppLockEnabled__Skie_DefaultArguments__109:)"))) __attribute__((objc_designated_initializer));
-- (instancetype)initWithId:(int64_t)id isNotificationEnabled:(BOOL)isNotificationEnabled isAppLockEnabled__Skie_DefaultArguments__110:(BOOL)isAppLockEnabled__Skie_DefaultArguments__110 __attribute__((swift_name("init(id:isNotificationEnabled:isAppLockEnabled__Skie_DefaultArguments__110:)"))) __attribute__((objc_designated_initializer));
-- (instancetype)initWithTheme__Skie_DefaultArguments__111:(CoreAuthenticatorTheme *)theme__Skie_DefaultArguments__111 __attribute__((swift_name("init(theme__Skie_DefaultArguments__111:)"))) __attribute__((objc_designated_initializer));
-- (instancetype)initWithId:(int64_t)id theme__Skie_DefaultArguments__112:(CoreAuthenticatorTheme *)theme__Skie_DefaultArguments__112 __attribute__((swift_name("init(id:theme__Skie_DefaultArguments__112:)"))) __attribute__((objc_designated_initializer));
-- (instancetype)initWithIsNotificationEnabled:(BOOL)isNotificationEnabled theme__Skie_DefaultArguments__113:(CoreAuthenticatorTheme *)theme__Skie_DefaultArguments__113 __attribute__((swift_name("init(isNotificationEnabled:theme__Skie_DefaultArguments__113:)"))) __attribute__((objc_designated_initializer));
-- (instancetype)initWithId:(int64_t)id isNotificationEnabled:(BOOL)isNotificationEnabled theme__Skie_DefaultArguments__114:(CoreAuthenticatorTheme *)theme__Skie_DefaultArguments__114 __attribute__((swift_name("init(id:isNotificationEnabled:theme__Skie_DefaultArguments__114:)"))) __attribute__((objc_designated_initializer));
-- (instancetype)initWithIsAppLockEnabled:(BOOL)isAppLockEnabled theme__Skie_DefaultArguments__115:(CoreAuthenticatorTheme *)theme__Skie_DefaultArguments__115 __attribute__((swift_name("init(isAppLockEnabled:theme__Skie_DefaultArguments__115:)"))) __attribute__((objc_designated_initializer));
-- (instancetype)initWithId:(int64_t)id isAppLockEnabled:(BOOL)isAppLockEnabled theme__Skie_DefaultArguments__116:(CoreAuthenticatorTheme *)theme__Skie_DefaultArguments__116 __attribute__((swift_name("init(id:isAppLockEnabled:theme__Skie_DefaultArguments__116:)"))) __attribute__((objc_designated_initializer));
-- (instancetype)initWithIsNotificationEnabled:(BOOL)isNotificationEnabled isAppLockEnabled:(BOOL)isAppLockEnabled theme__Skie_DefaultArguments__117:(CoreAuthenticatorTheme *)theme__Skie_DefaultArguments__117 __attribute__((swift_name("init(isNotificationEnabled:isAppLockEnabled:theme__Skie_DefaultArguments__117:)"))) __attribute__((objc_designated_initializer));
-- (CoreAuthenticatorAppSettingsEntity *)doCopyId:(int64_t)id isNotificationEnabled:(BOOL)isNotificationEnabled isAppLockEnabled:(BOOL)isAppLockEnabled theme:(CoreAuthenticatorTheme *)theme __attribute__((swift_name("doCopy(id:isNotificationEnabled:isAppLockEnabled:theme:)")));
+- (instancetype)initWithId__Skie_DefaultArguments__96:(int64_t)id__Skie_DefaultArguments__96 __attribute__((swift_name("init(id__Skie_DefaultArguments__96:)"))) __attribute__((objc_designated_initializer));
+- (instancetype)initWithIsAppLockEnabled__Skie_DefaultArguments__97:(BOOL)isAppLockEnabled__Skie_DefaultArguments__97 __attribute__((swift_name("init(isAppLockEnabled__Skie_DefaultArguments__97:)"))) __attribute__((objc_designated_initializer));
+- (instancetype)initWithId:(int64_t)id isAppLockEnabled__Skie_DefaultArguments__98:(BOOL)isAppLockEnabled__Skie_DefaultArguments__98 __attribute__((swift_name("init(id:isAppLockEnabled__Skie_DefaultArguments__98:)"))) __attribute__((objc_designated_initializer));
+- (instancetype)initWithTheme__Skie_DefaultArguments__99:(CoreAuthenticatorTheme *)theme__Skie_DefaultArguments__99 __attribute__((swift_name("init(theme__Skie_DefaultArguments__99:)"))) __attribute__((objc_designated_initializer));
+- (CoreAuthenticatorAppSettingsEntity *)doCopyId:(int64_t)id isAppLockEnabled:(BOOL)isAppLockEnabled theme:(CoreAuthenticatorTheme *)theme __attribute__((swift_name("doCopy(id:isAppLockEnabled:theme:)")));
 - (CoreAuthenticatorAppSettingsEntity *)doCopy__Skie_DefaultArguments__85 __attribute__((swift_name("doCopy__Skie_DefaultArguments__85()")));
 - (CoreAuthenticatorAppSettingsEntity *)doCopy__Skie_DefaultArguments__86Id:(int64_t)id __attribute__((swift_name("doCopy__Skie_DefaultArguments__86(id:)")));
-- (CoreAuthenticatorAppSettingsEntity *)doCopy__Skie_DefaultArguments__87IsNotificationEnabled:(BOOL)isNotificationEnabled __attribute__((swift_name("doCopy__Skie_DefaultArguments__87(isNotificationEnabled:)")));
-- (CoreAuthenticatorAppSettingsEntity *)doCopy__Skie_DefaultArguments__88Id:(int64_t)id isNotificationEnabled:(BOOL)isNotificationEnabled __attribute__((swift_name("doCopy__Skie_DefaultArguments__88(id:isNotificationEnabled:)")));
-- (CoreAuthenticatorAppSettingsEntity *)doCopy__Skie_DefaultArguments__89IsAppLockEnabled:(BOOL)isAppLockEnabled __attribute__((swift_name("doCopy__Skie_DefaultArguments__89(isAppLockEnabled:)")));
-- (CoreAuthenticatorAppSettingsEntity *)doCopy__Skie_DefaultArguments__90Id:(int64_t)id isAppLockEnabled:(BOOL)isAppLockEnabled __attribute__((swift_name("doCopy__Skie_DefaultArguments__90(id:isAppLockEnabled:)")));
-- (CoreAuthenticatorAppSettingsEntity *)doCopy__Skie_DefaultArguments__91IsNotificationEnabled:(BOOL)isNotificationEnabled isAppLockEnabled:(BOOL)isAppLockEnabled __attribute__((swift_name("doCopy__Skie_DefaultArguments__91(isNotificationEnabled:isAppLockEnabled:)")));
-- (CoreAuthenticatorAppSettingsEntity *)doCopy__Skie_DefaultArguments__92Id:(int64_t)id isNotificationEnabled:(BOOL)isNotificationEnabled isAppLockEnabled:(BOOL)isAppLockEnabled __attribute__((swift_name("doCopy__Skie_DefaultArguments__92(id:isNotificationEnabled:isAppLockEnabled:)")));
-- (CoreAuthenticatorAppSettingsEntity *)doCopy__Skie_DefaultArguments__93Theme:(CoreAuthenticatorTheme *)theme __attribute__((swift_name("doCopy__Skie_DefaultArguments__93(theme:)")));
-- (CoreAuthenticatorAppSettingsEntity *)doCopy__Skie_DefaultArguments__94Id:(int64_t)id theme:(CoreAuthenticatorTheme *)theme __attribute__((swift_name("doCopy__Skie_DefaultArguments__94(id:theme:)")));
-- (CoreAuthenticatorAppSettingsEntity *)doCopy__Skie_DefaultArguments__95IsNotificationEnabled:(BOOL)isNotificationEnabled theme:(CoreAuthenticatorTheme *)theme __attribute__((swift_name("doCopy__Skie_DefaultArguments__95(isNotificationEnabled:theme:)")));
-- (CoreAuthenticatorAppSettingsEntity *)doCopy__Skie_DefaultArguments__96Id:(int64_t)id isNotificationEnabled:(BOOL)isNotificationEnabled theme:(CoreAuthenticatorTheme *)theme __attribute__((swift_name("doCopy__Skie_DefaultArguments__96(id:isNotificationEnabled:theme:)")));
-- (CoreAuthenticatorAppSettingsEntity *)doCopy__Skie_DefaultArguments__97IsAppLockEnabled:(BOOL)isAppLockEnabled theme:(CoreAuthenticatorTheme *)theme __attribute__((swift_name("doCopy__Skie_DefaultArguments__97(isAppLockEnabled:theme:)")));
-- (CoreAuthenticatorAppSettingsEntity *)doCopy__Skie_DefaultArguments__98Id:(int64_t)id isAppLockEnabled:(BOOL)isAppLockEnabled theme:(CoreAuthenticatorTheme *)theme __attribute__((swift_name("doCopy__Skie_DefaultArguments__98(id:isAppLockEnabled:theme:)")));
-- (CoreAuthenticatorAppSettingsEntity *)doCopy__Skie_DefaultArguments__99IsNotificationEnabled:(BOOL)isNotificationEnabled isAppLockEnabled:(BOOL)isAppLockEnabled theme:(CoreAuthenticatorTheme *)theme __attribute__((swift_name("doCopy__Skie_DefaultArguments__99(isNotificationEnabled:isAppLockEnabled:theme:)")));
+- (CoreAuthenticatorAppSettingsEntity *)doCopy__Skie_DefaultArguments__87IsAppLockEnabled:(BOOL)isAppLockEnabled __attribute__((swift_name("doCopy__Skie_DefaultArguments__87(isAppLockEnabled:)")));
+- (CoreAuthenticatorAppSettingsEntity *)doCopy__Skie_DefaultArguments__88Id:(int64_t)id isAppLockEnabled:(BOOL)isAppLockEnabled __attribute__((swift_name("doCopy__Skie_DefaultArguments__88(id:isAppLockEnabled:)")));
+- (CoreAuthenticatorAppSettingsEntity *)doCopy__Skie_DefaultArguments__89Theme:(CoreAuthenticatorTheme *)theme __attribute__((swift_name("doCopy__Skie_DefaultArguments__89(theme:)")));
+- (CoreAuthenticatorAppSettingsEntity *)doCopy__Skie_DefaultArguments__90Id:(int64_t)id theme:(CoreAuthenticatorTheme *)theme __attribute__((swift_name("doCopy__Skie_DefaultArguments__90(id:theme:)")));
+- (CoreAuthenticatorAppSettingsEntity *)doCopy__Skie_DefaultArguments__91IsAppLockEnabled:(BOOL)isAppLockEnabled theme:(CoreAuthenticatorTheme *)theme __attribute__((swift_name("doCopy__Skie_DefaultArguments__91(isAppLockEnabled:theme:)")));
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
 - (NSString *)description __attribute__((swift_name("description()")));
@@ -1533,7 +1512,7 @@ __attribute__((swift_name("ApiEnvironment.Custom")))
 @interface CoreAuthenticatorApiEnvironmentCustom : CoreAuthenticatorApiEnvironment
 - (instancetype)initWithUrl:(NSString *)url __attribute__((swift_name("init(url:)"))) __attribute__((objc_designated_initializer));
 - (CoreAuthenticatorApiEnvironmentCustom *)doCopyUrl:(NSString *)url __attribute__((swift_name("doCopy(url:)")));
-- (CoreAuthenticatorApiEnvironmentCustom *)doCopy__Skie_DefaultArguments__100 __attribute__((swift_name("doCopy__Skie_DefaultArguments__100()")));
+- (CoreAuthenticatorApiEnvironmentCustom *)doCopy__Skie_DefaultArguments__92 __attribute__((swift_name("doCopy__Skie_DefaultArguments__92()")));
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
 - (NSString *)description __attribute__((swift_name("description()")));
@@ -1592,23 +1571,22 @@ __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("__SkieSuspendWrappersKt")))
 @interface CoreAuthenticator__SkieSuspendWrappersKt : CoreAuthenticatorBase
 + (void)Skie_Suspend__0__hasNextDispatchReceiver:(CoreAuthenticatorSkieColdFlowIterator<id> *)dispatchReceiver suspendHandler:(CoreAuthenticatorSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__0__hasNext(dispatchReceiver:suspendHandler:)")));
-+ (void)Skie_Suspend__10__setIsNotificationEnabledDispatchReceiver:(id<CoreAuthenticatorAppSettingsDao>)dispatchReceiver isNotificationEnabled:(BOOL)isNotificationEnabled suspendHandler:(CoreAuthenticatorSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__10__setIsNotificationEnabled(dispatchReceiver:isNotificationEnabled:suspendHandler:)")));
++ (void)Skie_Suspend__10__setIsAppLockEnabledDispatchReceiver:(id<CoreAuthenticatorAppSettingsDao>)dispatchReceiver isAppLockEnabled:(BOOL)isAppLockEnabled suspendHandler:(CoreAuthenticatorSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__10__setIsAppLockEnabled(dispatchReceiver:isAppLockEnabled:suspendHandler:)")));
 + (void)Skie_Suspend__11__setThemeDispatchReceiver:(id<CoreAuthenticatorAppSettingsDao>)dispatchReceiver theme:(CoreAuthenticatorTheme *)theme suspendHandler:(CoreAuthenticatorSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__11__setTheme(dispatchReceiver:theme:suspendHandler:)")));
 + (void)Skie_Suspend__12__useConnectionDispatchReceiver:(CoreAuthenticatorRoom_runtimeRoomDatabase *)dispatchReceiver isReadOnly:(BOOL)isReadOnly block:(id<CoreAuthenticatorKotlinSuspendFunction1>)block suspendHandler:(CoreAuthenticatorSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__12__useConnection(dispatchReceiver:isReadOnly:block:suspendHandler:)")));
 + (void)Skie_Suspend__13__invokeDispatchReceiver:(id<CoreAuthenticatorKotlinSuspendFunction1>)dispatchReceiver p1:(id _Nullable)p1 suspendHandler:(CoreAuthenticatorSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__13__invoke(dispatchReceiver:p1:suspendHandler:)")));
 + (void)Skie_Suspend__14__refreshDispatchReceiver:(CoreAuthenticatorRoom_runtimeInvalidationTracker *)dispatchReceiver tables:(CoreAuthenticatorKotlinArray<NSString *> *)tables suspendHandler:(CoreAuthenticatorSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__14__refresh(dispatchReceiver:tables:suspendHandler:)")));
 + (void)Skie_Suspend__15__setIsAppLockEnabledDispatchReceiver:(CoreAuthenticatorAppSettingsRepository *)dispatchReceiver isAppLockEnabled:(BOOL)isAppLockEnabled suspendHandler:(CoreAuthenticatorSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__15__setIsAppLockEnabled(dispatchReceiver:isAppLockEnabled:suspendHandler:)")));
-+ (void)Skie_Suspend__16__setIsNotificationEnabledDispatchReceiver:(CoreAuthenticatorAppSettingsRepository *)dispatchReceiver isNotificationEnabled:(BOOL)isNotificationEnabled suspendHandler:(CoreAuthenticatorSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__16__setIsNotificationEnabled(dispatchReceiver:isNotificationEnabled:suspendHandler:)")));
-+ (void)Skie_Suspend__17__setThemeDispatchReceiver:(CoreAuthenticatorAppSettingsRepository *)dispatchReceiver theme:(CoreAuthenticatorTheme *)theme suspendHandler:(CoreAuthenticatorSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__17__setTheme(dispatchReceiver:theme:suspendHandler:)")));
++ (void)Skie_Suspend__16__setThemeDispatchReceiver:(CoreAuthenticatorAppSettingsRepository *)dispatchReceiver theme:(CoreAuthenticatorTheme *)theme suspendHandler:(CoreAuthenticatorSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__16__setTheme(dispatchReceiver:theme:suspendHandler:)")));
 + (void)Skie_Suspend__1__collectDispatchReceiver:(id<CoreAuthenticatorKotlinx_coroutines_coreFlow>)dispatchReceiver collector:(id<CoreAuthenticatorKotlinx_coroutines_coreFlowCollector>)collector suspendHandler:(CoreAuthenticatorSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__1__collect(dispatchReceiver:collector:suspendHandler:)")));
 + (void)Skie_Suspend__2__emitDispatchReceiver:(id<CoreAuthenticatorKotlinx_coroutines_coreFlowCollector>)dispatchReceiver value:(id _Nullable)value suspendHandler:(CoreAuthenticatorSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__2__emit(dispatchReceiver:value:suspendHandler:)")));
 + (void)Skie_Suspend__3__addAccountsDispatchReceiver:(CoreAuthenticatorAuthenticatorFacade *)dispatchReceiver connectedAccounts:(NSArray<CoreAuthenticatorAccount *> *)connectedAccounts suspendHandler:(CoreAuthenticatorSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__3__addAccounts(dispatchReceiver:connectedAccounts:suspendHandler:)")));
-+ (void)Skie_Suspend__4__removeAccountDispatchReceiver:(CoreAuthenticatorAuthenticatorFacade *)dispatchReceiver token:(NSString *)token id:(int64_t)id suspendHandler:(CoreAuthenticatorSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__4__removeAccount(dispatchReceiver:token:id:suspendHandler:)")));
-+ (void)Skie_Suspend__5__getTokenFromCrossAppLoginDispatchReceiver:(id<CoreAuthenticatorTokenBridge>)dispatchReceiver userId:(int64_t)userId suspendHandler:(CoreAuthenticatorSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__5__getTokenFromCrossAppLogin(dispatchReceiver:userId:suspendHandler:)")));
-+ (void)Skie_Suspend__6__getTokenFromDatabaseDispatchReceiver:(id<CoreAuthenticatorTokenBridge>)dispatchReceiver userId:(int64_t)userId suspendHandler:(CoreAuthenticatorSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__6__getTokenFromDatabase(dispatchReceiver:userId:suspendHandler:)")));
-+ (void)Skie_Suspend__7__persistTokenForAccountDispatchReceiver:(id<CoreAuthenticatorTokenBridge>)dispatchReceiver userId:(int64_t)userId token:(NSString *)token suspendHandler:(CoreAuthenticatorSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__7__persistTokenForAccount(dispatchReceiver:userId:token:suspendHandler:)")));
-+ (void)Skie_Suspend__8__saveDispatchReceiver:(id<CoreAuthenticatorAppSettingsDao>)dispatchReceiver item:(CoreAuthenticatorAppSettingsEntity *)item suspendHandler:(CoreAuthenticatorSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__8__save(dispatchReceiver:item:suspendHandler:)")));
-+ (void)Skie_Suspend__9__setIsAppLockEnabledDispatchReceiver:(id<CoreAuthenticatorAppSettingsDao>)dispatchReceiver isAppLockEnabled:(BOOL)isAppLockEnabled suspendHandler:(CoreAuthenticatorSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__9__setIsAppLockEnabled(dispatchReceiver:isAppLockEnabled:suspendHandler:)")));
++ (void)Skie_Suspend__4__refreshTokenForDispatchReceiver:(CoreAuthenticatorAuthenticatorFacade *)dispatchReceiver userId:(int64_t)userId suspendHandler:(CoreAuthenticatorSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__4__refreshTokenFor(dispatchReceiver:userId:suspendHandler:)")));
++ (void)Skie_Suspend__5__removeAccountDispatchReceiver:(CoreAuthenticatorAuthenticatorFacade *)dispatchReceiver token:(NSString *)token id:(int64_t)id suspendHandler:(CoreAuthenticatorSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__5__removeAccount(dispatchReceiver:token:id:suspendHandler:)")));
++ (void)Skie_Suspend__6__getTokenFromCrossAppLoginDispatchReceiver:(id<CoreAuthenticatorTokenBridge>)dispatchReceiver userId:(int64_t)userId suspendHandler:(CoreAuthenticatorSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__6__getTokenFromCrossAppLogin(dispatchReceiver:userId:suspendHandler:)")));
++ (void)Skie_Suspend__7__getTokenFromDatabaseDispatchReceiver:(id<CoreAuthenticatorTokenBridge>)dispatchReceiver userId:(int64_t)userId suspendHandler:(CoreAuthenticatorSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__7__getTokenFromDatabase(dispatchReceiver:userId:suspendHandler:)")));
++ (void)Skie_Suspend__8__persistTokenForAccountDispatchReceiver:(id<CoreAuthenticatorTokenBridge>)dispatchReceiver userId:(int64_t)userId token:(NSString *)token suspendHandler:(CoreAuthenticatorSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__8__persistTokenForAccount(dispatchReceiver:userId:token:suspendHandler:)")));
++ (void)Skie_Suspend__9__saveDispatchReceiver:(id<CoreAuthenticatorAppSettingsDao>)dispatchReceiver item:(CoreAuthenticatorAppSettingsEntity *)item suspendHandler:(CoreAuthenticatorSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__9__save(dispatchReceiver:item:suspendHandler:)")));
 @end
 
 __attribute__((swift_name("KotlinRuntimeException")))
