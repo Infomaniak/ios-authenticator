@@ -84,7 +84,7 @@ public struct UIAccount: Identifiable, Hashable, Sendable {
     }
 }
 
-extension UIAccount {
+public extension UIAccount {
     init(account: CoreAuthenticator.Account) {
         let avatarURL: URL?
         if let avatarURLString = account.avatarUrl,
