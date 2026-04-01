@@ -46,7 +46,8 @@ public struct SettingsView: View {
                         PrivacyManagementView(
                             urlRepository: URLConstants.githubRepository.url,
                             backgroundColor: .Token.Surface.primary,
-                            illustration: .init(systemName: ""),
+                            groupedStyle: true,
+                            illustration: AuthenticatorResourcesAsset.Images.privacy.swiftUIImage,
                             userDefaultStore: .shared,
                             userDefaultKeyMatomo: UserDefaults.shared.key(.matomoAuthorized),
                             userDefaultKeySentry: UserDefaults.shared.key(.sentryAuthorized),
