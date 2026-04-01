@@ -28,6 +28,7 @@ struct AccountCell: View {
         HStack {
             AccountLabel(account: account, size: .small)
                 .frame(maxWidth: .infinity, alignment: .leading)
+                .lineLimit(1)
 
             account.status.icon
                 .foregroundStyle(account.status.color.foreground)
