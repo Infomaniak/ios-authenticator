@@ -84,7 +84,7 @@ public final class RootViewState: ObservableObject {
     }
 
     public func completeOnboarding() {
-        guard let onboardingDone = lastKnownAppStatus as? AppStatusOnboardingDone else {
+        guard let onboardingDone = lastKnownAppStatus as? AppStatusEverythingReady else {
             return
         }
 
@@ -101,7 +101,7 @@ public final class RootViewState: ObservableObject {
                     state = .newAccount(.login)
                 } else if let loggingIn = status as? AppStatusLoggingIn {
                     state = .newAccount(.loginInProgress)
-                } else if let setupComplete = status as? AppStatusOnboardingDone {
+                } else if let setupComplete = status as? AppStatusEverythingReady {
                     state = .newAccount(.success)
                 } else if let loggedIn = status as? AppStatusSetupComplete {
                     state = .mainView(MainViewState())
