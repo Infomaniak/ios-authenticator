@@ -31,6 +31,9 @@ struct AuthenticatorApp: App {
 
     @UIApplicationDelegateAdaptor private var appDelegateAdaptor: AppDelegate
 
+    @ScaledMetric(relativeTo: .largeTitle) private var scaledLargeTitle: CGFloat = UIFont.preferredFont(forTextStyle: .largeTitle)
+        .pointSize
+
     @StateObject private var rootViewState = RootViewState()
 
     var body: some Scene {
@@ -38,7 +41,23 @@ struct AuthenticatorApp: App {
             RootView()
                 .environmentObject(rootViewState)
                 .tint(.Token.primary)
+                .onChange(of: scaledLargeTitle) { newValue in
+                    setCustomNavigationBarAppearance(fontSize: newValue)
+                }
+                .onAppear {
+                    setCustomNavigationBarAppearance(fontSize: scaledLargeTitle)
+                }
         }
         .defaultAppStorage(.shared)
+    }
+
+    func setCustomNavigationBarAppearance(fontSize: CGFloat) {
+        let smallerLargeTitleAppearance = UINavigationBarAppearance()
+        smallerLargeTitleAppearance.largeTitleTextAttributes = [
+            .font: UIFontMetrics(forTextStyle: .largeTitle).scaledFont(for: UIFont.boldSystemFont(ofSize: fontSize - 4))
+        ]
+
+        let appearance = UINavigationBar.appearance()
+        appearance.standardAppearance = smallerLargeTitleAppearance
     }
 }
