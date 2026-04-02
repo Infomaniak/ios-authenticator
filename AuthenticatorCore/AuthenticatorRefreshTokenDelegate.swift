@@ -21,9 +21,9 @@ import InfomaniakCore
 import InfomaniakLogin
 
 public final class AuthenticatorRefreshTokenDelegate: RefreshTokenDelegate, Sendable {
-    public func didUpdateToken(newToken: ApiToken, oldToken: ApiToken) {
-        // TODO: Refresh using key
-    }
+    public func didUpdateToken(newToken: ApiToken, oldToken: ApiToken) {}
 
-    public func didFailRefreshToken(_ token: ApiToken) {}
+    public func didFailRefreshToken(_ token: ApiToken) {
+        // TODO: Handle failed refresh, currently backend / KMP doesn't provide a different error
+    }
 }
