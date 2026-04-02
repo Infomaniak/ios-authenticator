@@ -68,12 +68,15 @@ public struct OnboardingView: View {
                     isPresentingCreateAccount = true
                 }
                 .ikButtonFullWidth(true)
+                .environment(\.outlinedButtonBackgroundColor, Color.Token.Surface.outlined)
                 .controlSize(.large)
                 .padding(.horizontal, value: .large)
             case .loginInProgress, .migrationInProgress:
                 EmptyView()
             case .migration:
-                EmptyView()
+                MigrateAccountsBottomView {
+                    goToNextStep(index: index)
+                }
             case .success:
                 Button(AuthenticatorResourcesStrings.continueButton) {
                     goToNextStep(index: index)
@@ -162,4 +165,8 @@ public struct OnboardingView: View {
 
 #Preview("Progress") {
     OnboardingView(steps: [.loginInProgress], currentStep: .loginInProgress)
+}
+
+#Preview("Migration") {
+    OnboardingView(steps: [.migration], currentStep: .migration)
 }

@@ -41,6 +41,7 @@ public extension Color {
             public static let primary = Color(light: AuthColor.neutralBlue100, dark: AuthColor.neutralBlue800)
             public static let secondary = Color(light: AuthColor.neutralBlue200, dark: AuthColor.neutralBlue700)
             public static let tertiary = Color(light: AuthColor.neutralBlue300, dark: AuthColor.neutralBlue500)
+            public static let outlined = Color(light: AuthColor.white, dark: AuthColor.neutralBlue600)
         }
 
         /// Green, Orange, Red status colors
