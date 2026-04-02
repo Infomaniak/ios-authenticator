@@ -27,8 +27,6 @@ import SwiftUI
 public struct SettingsView: View {
     @InjectService private var matomo: MatomoUtils
 
-    @EnvironmentObject private var mainViewState: MainViewState
-
     @AppStorage(UserDefaults.shared.key(.notificationsEnabled)) private var isNotificationsEnabled = DefaultPreferences
         .notificationsEnabled
 
@@ -55,18 +53,13 @@ public struct SettingsView: View {
                             matomo: matomo
                         )
                     }
-
-                    NavigationLink(AuthenticatorResourcesStrings.contactSupportTitle) {
-                        ContactSupportSettingsView(
-                            selectedAccount: mainViewState.selectedAccount,
-                            accounts: mainViewState.accounts
-                        )
-                    }
-
                     if let feedbackUrl = URL(string: "https://www.infomaniak.ch") { // TODO: Replace with localized feedback url
                         Link(destination: feedbackUrl) {
                             AuthenticatorTrailingLabel(\.feedbackTitle, iconKey: \.squareArrowDiagonalUp)
                         }
+                    }
+                    Link(destination: URLConstants.support.url) {
+                        AuthenticatorTrailingLabel(\.contactSupportTitle, iconKey: \.squareArrowDiagonalUp)
                     }
                 }
             }
