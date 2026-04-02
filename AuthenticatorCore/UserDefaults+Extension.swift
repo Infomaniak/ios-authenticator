@@ -24,6 +24,7 @@ public extension UserDefaults.Keys {
     static let notificationsEnabled = UserDefaults.Keys(rawValue: "notificationsEnabled")
     static let matomoAuthorized = UserDefaults.Keys(rawValue: "matomoAuthorized")
     static let sentryAuthorized = UserDefaults.Keys(rawValue: "sentryAuthorized")
+    static let theme = UserDefaults.Keys(rawValue: "theme")
 }
 
 public extension UserDefaults {

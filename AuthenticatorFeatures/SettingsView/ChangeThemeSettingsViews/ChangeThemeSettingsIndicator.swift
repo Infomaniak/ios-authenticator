@@ -5,16 +5,18 @@
 //  Created by Killian Mathias on 02.04.2026.
 //
 
+import AuthenticatorCore
 import SwiftUI
 
 struct ChangeThemeSettingsIndicator: View {
+    @Environment(\.colorScheme) var colorScheme
     let theme: Theme
     var body: some View {
         ZStack {
             switch theme {
             case .light:
                 Circle()
-                    .fill(Color(uiColor: .systemGroupedBackground))
+                    .foregroundStyle(colorScheme == .light ? Color(uiColor: .systemGroupedBackground) : .white)
             case .dark:
                 Circle()
                     .fill(.black)
@@ -25,7 +27,7 @@ struct ChangeThemeSettingsIndicator: View {
                         .fill(.black)
                     Circle()
                         .trim(from: 0, to: 0.5)
-                        .fill(Color(uiColor: .systemGroupedBackground))
+                        .foregroundStyle(colorScheme == .light ? Color(uiColor: .systemGroupedBackground) : .white)
                 }
                 .rotationEffect(Angle(degrees: 135))
             }
@@ -37,5 +39,5 @@ struct ChangeThemeSettingsIndicator: View {
 }
 
 #Preview {
-    ChangeThemeSettingsIndicator(theme: .system)
+    ChangeThemeSettingsIndicator(theme: .dark)
 }

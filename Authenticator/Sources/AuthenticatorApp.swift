@@ -29,6 +29,8 @@ struct AuthenticatorApp: App {
     // periphery:ignore - Making sure the DI is registered at a very early stage of the app launch.
     private let dependencyInjectionHook = TargetAssembly()
 
+    @AppStorage(UserDefaults.shared.key(.theme)) private var theme = DefaultPreferences.theme
+
     @UIApplicationDelegateAdaptor private var appDelegateAdaptor: AppDelegate
 
     @StateObject private var rootViewState = RootViewState()
@@ -37,6 +39,7 @@ struct AuthenticatorApp: App {
         WindowGroup {
             RootView()
                 .environmentObject(rootViewState)
+                .preferredColorScheme(theme == "light" ? .light : theme == "dark" ? .dark : nil)
         }
         .defaultAppStorage(.shared)
     }

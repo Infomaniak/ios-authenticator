@@ -21,4 +21,15 @@ enum Theme {
             return "Système"
         }
     }
+
+    var rawValue: String {
+        switch self {
+        case .dark:
+            return "dark"
+        case .light:
+            return "light"
+        case .system:
+            return "system"
+        }
+    }
 }
