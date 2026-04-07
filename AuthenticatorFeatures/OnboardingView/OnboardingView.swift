@@ -117,6 +117,7 @@ public struct OnboardingView: View {
                 }
             }
         }
+        .id(excludedUserIds)
         .appBackground()
         .ignoresSafeArea()
         .sheet(isPresented: $isPresentingCreateAccount) {
