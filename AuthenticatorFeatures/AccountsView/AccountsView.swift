@@ -29,6 +29,9 @@ import SwiftUI
 public struct AccountsView: View {
     @EnvironmentObject private var mainViewState: MainViewState
 
+    @ScaledMetric(relativeTo: .largeTitle) private var scaledLargeTitle: CGFloat = UIFont.preferredFont(forTextStyle: .largeTitle)
+        .pointSize // ⚠️ Reading ScaledMetric at app level breaks app tinting - FB22435372
+
     public init() {}
 
     private var shouldDisplayWarning: Bool {
@@ -63,6 +66,12 @@ public struct AccountsView: View {
                     .primaryActionToolbarButtonStyle()
                 }
             }
+            .onChange(of: scaledLargeTitle) { newValue in
+                setCustomNavigationBarAppearance(fontSize: newValue)
+            }
+            .onAppear {
+                setCustomNavigationBarAppearance(fontSize: scaledLargeTitle)
+            }
         }
     }
 
@@ -83,6 +92,16 @@ public struct AccountsView: View {
 
             await inAppTwoFactorAuthenticationManager.checkConnectionAttemptsFor(session: session)
         }
+    }
+
+    private func setCustomNavigationBarAppearance(fontSize: CGFloat) {
+        let smallerLargeTitleAppearance = UINavigationBarAppearance()
+        smallerLargeTitleAppearance.largeTitleTextAttributes = [
+            .font: UIFontMetrics(forTextStyle: .largeTitle).scaledFont(for: UIFont.boldSystemFont(ofSize: fontSize - 4))
+        ]
+
+        let appearance = UINavigationBar.appearance()
+        appearance.standardAppearance = smallerLargeTitleAppearance
     }
 }
 
