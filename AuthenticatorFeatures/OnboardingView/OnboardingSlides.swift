@@ -23,7 +23,7 @@ import InfomaniakOnboarding
 extension OnboardingStep {
     var slide: Slide {
         switch self {
-        case .login:
+        case .login, .addAccount:
             return .login
         case .migration:
             return .migration

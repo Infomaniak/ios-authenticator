@@ -41,14 +41,26 @@ public struct OnboardingView: View {
 
     @ModalState(context: ContextKeys.onboarding) private var isPresentingCreateAccount = false
 
-    let currentStep: OnboardingStep
-    let steps: [OnboardingStep]
-    var slides: [Slide] {
+    private let currentStep: OnboardingStep
+    private let steps: [OnboardingStep]
+    private var slides: [Slide] {
         return steps.map { $0.slide }
     }
 
-    var selectedSlideIndex: Int {
+    private var selectedSlideIndex: Int {
         return steps.firstIndex(of: currentStep) ?? 0
+    }
+
+    private var dismissHandler: (@Sendable () -> Void)? {
+        guard currentStep == .addAccount else {
+            return nil
+        }
+
+        return {
+            Task { @MainActor in
+                rootViewState.cancelAddAccount()
+            }
+        }
     }
 
     public init(steps: [OnboardingStep], currentStep: OnboardingStep) {
@@ -57,9 +69,9 @@ public struct OnboardingView: View {
     }
 
     public var body: some View {
-        CarouselView(slides: slides, selectedSlide: .constant(selectedSlideIndex)) { index in
+        CarouselView(slides: slides, selectedSlide: .constant(selectedSlideIndex), dismissHandler: dismissHandler) { index in
             switch steps[index] {
-            case .login:
+            case .login, .addAccount:
                 ContinueWithAccountView(isLoading: loginHandler.isLoading, excludingUserIds: excludedUserIds) {
                     login()
                 } onLoginWithAccountsPressed: { accounts in
