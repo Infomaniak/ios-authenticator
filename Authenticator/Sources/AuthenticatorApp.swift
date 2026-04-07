@@ -37,7 +37,6 @@ struct AuthenticatorApp: App {
         WindowGroup {
             RootView()
                 .environmentObject(rootViewState)
-                .tint(.Token.primary)
         }
         .defaultAppStorage(.shared)
     }
