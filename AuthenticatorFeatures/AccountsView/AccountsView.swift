@@ -30,7 +30,7 @@ public struct AccountsView: View {
     @EnvironmentObject private var mainViewState: MainViewState
 
     @ScaledMetric(relativeTo: .largeTitle) private var scaledLargeTitle: CGFloat = UIFont.preferredFont(forTextStyle: .largeTitle)
-        .pointSize
+        .pointSize // ⚠️ Reading ScaledMetric at app level breaks app tinting - FB22435372
 
     public init() {}
 
