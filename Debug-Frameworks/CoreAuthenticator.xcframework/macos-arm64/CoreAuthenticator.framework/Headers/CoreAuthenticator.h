@@ -6,9 +6,9 @@
 #import <Foundation/NSString.h>
 #import <Foundation/NSValue.h>
 
-@class NSString, NSSet<ObjectType>, NSObject, NSNumber, NSMutableSet<ObjectType>, NSMutableDictionary<KeyType, ObjectType>, NSMutableArray<ObjectType>, NSError, NSDictionary<KeyType, ObjectType>, NSArray<ObjectType>, CoreAuthenticator__SkieSuspendWrappersKt, CoreAuthenticatorUrlConstants, CoreAuthenticatorUnknownException, CoreAuthenticatorUShort, CoreAuthenticatorULong, CoreAuthenticatorUInt, CoreAuthenticatorUByte, CoreAuthenticatorThemeConverter, CoreAuthenticatorTheme, CoreAuthenticatorSkie_SuspendResultSuccess, CoreAuthenticatorSkie_SuspendResultError, CoreAuthenticatorSkie_SuspendResultCanceled, CoreAuthenticatorSkie_SuspendResult, CoreAuthenticatorSkie_SuspendHandler, CoreAuthenticatorSkie_CancellationHandler, CoreAuthenticatorSkieKotlinStateFlow<T>, CoreAuthenticatorSkieKotlinSharedFlow<T>, CoreAuthenticatorSkieKotlinOptionalStateFlow<T>, CoreAuthenticatorSkieKotlinOptionalSharedFlow<T>, CoreAuthenticatorSkieKotlinOptionalMutableStateFlow<T>, CoreAuthenticatorSkieKotlinOptionalMutableSharedFlow<T>, CoreAuthenticatorSkieKotlinOptionalFlow<T>, CoreAuthenticatorSkieKotlinMutableStateFlow<T>, CoreAuthenticatorSkieKotlinMutableSharedFlow<T>, CoreAuthenticatorSkieKotlinFlow<T>, CoreAuthenticatorSkieColdFlowIterator<E>, CoreAuthenticatorShort, CoreAuthenticatorRoom_runtimeRoomOpenDelegateValidationResult, CoreAuthenticatorRoom_runtimeRoomOpenDelegate, CoreAuthenticatorRoom_runtimeRoomDatabaseJournalMode, CoreAuthenticatorRoom_runtimeRoomDatabaseCallback, CoreAuthenticatorRoom_runtimeRoomDatabaseBuilder<T>, CoreAuthenticatorRoom_runtimeRoomDatabase, CoreAuthenticatorRoom_runtimeMigration, CoreAuthenticatorRoom_runtimeInvalidationTracker, CoreAuthenticatorNumber, CoreAuthenticatorNotConnectedActionReLogin, CoreAuthenticatorNotConnectedActionIssueRetriable, CoreAuthenticatorNotConnectedActionIssueNonRetriable, CoreAuthenticatorNetworkException, CoreAuthenticatorMutableSet<ObjectType>, CoreAuthenticatorMutableDictionary<KeyType, ObjectType>, CoreAuthenticatorMatomoScreen, CoreAuthenticatorMatomoName, CoreAuthenticatorMatomoCategory, CoreAuthenticatorLong, CoreAuthenticatorKotlinThrowable, CoreAuthenticatorKotlinRuntimeException, CoreAuthenticatorKotlinIntIterator, CoreAuthenticatorKotlinIntArray, CoreAuthenticatorKotlinIllegalStateException, CoreAuthenticatorKotlinException, CoreAuthenticatorKotlinEnumCompanion, CoreAuthenticatorKotlinEnum<E>, CoreAuthenticatorKotlinCancellationException, CoreAuthenticatorKotlinByteIterator, CoreAuthenticatorKotlinByteArray, CoreAuthenticatorKotlinArray<T>, CoreAuthenticatorKeyStorageLocation, CoreAuthenticatorInt, CoreAuthenticatorFloat, CoreAuthenticatorDummyAuthenticatorFacade, CoreAuthenticatorDouble, CoreAuthenticatorCredentialsForMigration, CoreAuthenticatorCrashReportLevel, CoreAuthenticatorByte, CoreAuthenticatorBreadcrumbType, CoreAuthenticatorBoolean, CoreAuthenticatorBase, CoreAuthenticatorAuthenticatorInjection, CoreAuthenticatorAuthenticatorFacadeCompanion, CoreAuthenticatorAuthenticatorFacade, CoreAuthenticatorAppStatusSetupComplete, CoreAuthenticatorAppStatusOnboardingDone, CoreAuthenticatorAppStatusLoginRequiredNotMigrating, CoreAuthenticatorAppStatusLoginRequiredMigratingFromLegacyKAuth, CoreAuthenticatorAppStatusLoggingIn, CoreAuthenticatorAppSettingsRepository, CoreAuthenticatorAppSettingsEntity, CoreAuthenticatorAppSettingsDatabase_iosKt, CoreAuthenticatorAppSettingsDatabase_Impl, CoreAuthenticatorAppSettingsDatabaseKt, CoreAuthenticatorAppSettingsDatabaseConstructor, CoreAuthenticatorAppSettingsDatabase, CoreAuthenticatorAppSettingsDao_ImplCompanion, CoreAuthenticatorAppSettingsDao_Impl, CoreAuthenticatorApiExceptionUnexpectedApiErrorFormatException, CoreAuthenticatorApiExceptionApiErrorException, CoreAuthenticatorApiException, CoreAuthenticatorApiEnvironmentStaging, CoreAuthenticatorApiEnvironmentProd, CoreAuthenticatorApiEnvironmentPreprod, CoreAuthenticatorApiEnvironmentCustom, CoreAuthenticatorApiEnvironment, CoreAuthenticatorAccountStatusNotConnected, CoreAuthenticatorAccountStatusLoggedIn, CoreAuthenticatorAccount;
+@class NSString, NSSet<ObjectType>, NSObject, NSNumber, NSMutableSet<ObjectType>, NSMutableDictionary<KeyType, ObjectType>, NSMutableArray<ObjectType>, NSError, NSDictionary<KeyType, ObjectType>, NSArray<ObjectType>, CoreAuthenticator__SkieTypeExportsKt, CoreAuthenticator__SkieSuspendWrappersKt, CoreAuthenticatorUrlConstants, CoreAuthenticatorUnknownException, CoreAuthenticatorUShort, CoreAuthenticatorULong, CoreAuthenticatorUInt, CoreAuthenticatorUByte, CoreAuthenticatorThemeConverter, CoreAuthenticatorTheme, CoreAuthenticatorSkie_SuspendResultSuccess, CoreAuthenticatorSkie_SuspendResultError, CoreAuthenticatorSkie_SuspendResultCanceled, CoreAuthenticatorSkie_SuspendResult, CoreAuthenticatorSkie_SuspendHandler, CoreAuthenticatorSkie_CancellationHandler, CoreAuthenticatorSkieKotlinStateFlow<T>, CoreAuthenticatorSkieKotlinSharedFlow<T>, CoreAuthenticatorSkieKotlinOptionalStateFlow<T>, CoreAuthenticatorSkieKotlinOptionalSharedFlow<T>, CoreAuthenticatorSkieKotlinOptionalMutableStateFlow<T>, CoreAuthenticatorSkieKotlinOptionalMutableSharedFlow<T>, CoreAuthenticatorSkieKotlinOptionalFlow<T>, CoreAuthenticatorSkieKotlinMutableStateFlow<T>, CoreAuthenticatorSkieKotlinMutableSharedFlow<T>, CoreAuthenticatorSkieKotlinFlow<T>, CoreAuthenticatorSkieColdFlowIterator<E>, CoreAuthenticatorShort, CoreAuthenticatorRoom_runtimeRoomOpenDelegateValidationResult, CoreAuthenticatorRoom_runtimeRoomOpenDelegate, CoreAuthenticatorRoom_runtimeRoomDatabaseJournalMode, CoreAuthenticatorRoom_runtimeRoomDatabaseCallback, CoreAuthenticatorRoom_runtimeRoomDatabaseBuilder<T>, CoreAuthenticatorRoom_runtimeRoomDatabase, CoreAuthenticatorRoom_runtimeMigration, CoreAuthenticatorRoom_runtimeInvalidationTracker, CoreAuthenticatorNumber, CoreAuthenticatorNotConnectedActionReLogin, CoreAuthenticatorNotConnectedActionIssueRetriable, CoreAuthenticatorNotConnectedActionIssueNonRetriable, CoreAuthenticatorNetworkException, CoreAuthenticatorMutableSet<ObjectType>, CoreAuthenticatorMutableDictionary<KeyType, ObjectType>, CoreAuthenticatorMatomoScreen, CoreAuthenticatorMatomoName, CoreAuthenticatorMatomoCategory, CoreAuthenticatorLong, CoreAuthenticatorKotlinx_serialization_coreStructureKindOBJECT, CoreAuthenticatorKotlinx_serialization_coreStructureKindMAP, CoreAuthenticatorKotlinx_serialization_coreStructureKindLIST, CoreAuthenticatorKotlinx_serialization_coreStructureKindCLASS, CoreAuthenticatorKotlinx_serialization_coreStructureKind, CoreAuthenticatorKotlinx_serialization_coreSerializersModule, CoreAuthenticatorKotlinx_serialization_coreSerialKindENUM, CoreAuthenticatorKotlinx_serialization_coreSerialKindCONTEXTUAL, CoreAuthenticatorKotlinx_serialization_coreSerialKind, CoreAuthenticatorKotlinx_serialization_corePrimitiveKindSTRING, CoreAuthenticatorKotlinx_serialization_corePrimitiveKindSHORT, CoreAuthenticatorKotlinx_serialization_corePrimitiveKindLONG, CoreAuthenticatorKotlinx_serialization_corePrimitiveKindINT, CoreAuthenticatorKotlinx_serialization_corePrimitiveKindFLOAT, CoreAuthenticatorKotlinx_serialization_corePrimitiveKindDOUBLE, CoreAuthenticatorKotlinx_serialization_corePrimitiveKindCHAR, CoreAuthenticatorKotlinx_serialization_corePrimitiveKindBYTE, CoreAuthenticatorKotlinx_serialization_corePrimitiveKindBOOLEAN, CoreAuthenticatorKotlinx_serialization_corePrimitiveKind, CoreAuthenticatorKotlinx_serialization_corePolymorphicKindSEALED, CoreAuthenticatorKotlinx_serialization_corePolymorphicKindOPEN, CoreAuthenticatorKotlinx_serialization_corePolymorphicKind, CoreAuthenticatorKotlinThrowable, CoreAuthenticatorKotlinRuntimeException, CoreAuthenticatorKotlinNothing, CoreAuthenticatorKotlinIntIterator, CoreAuthenticatorKotlinIntArray, CoreAuthenticatorKotlinIllegalStateException, CoreAuthenticatorKotlinException, CoreAuthenticatorKotlinEnumCompanion, CoreAuthenticatorKotlinEnum<E>, CoreAuthenticatorKotlinCancellationException, CoreAuthenticatorKotlinByteIterator, CoreAuthenticatorKotlinByteArray, CoreAuthenticatorKotlinArray<T>, CoreAuthenticatorKeyStorageLocation, CoreAuthenticatorInt, CoreAuthenticatorFloat, CoreAuthenticatorDummyAuthenticatorFacade, CoreAuthenticatorDouble, CoreAuthenticatorCredentialsForMigration, CoreAuthenticatorCrashReportLevel, CoreAuthenticatorByte, CoreAuthenticatorBreadcrumbType, CoreAuthenticatorBoolean, CoreAuthenticatorBase, CoreAuthenticatorAuthenticatorFacadeCompanion, CoreAuthenticatorAuthenticatorFacade, CoreAuthenticatorAppStatusSetupComplete, CoreAuthenticatorAppStatusLoginRequiredNotMigrating, CoreAuthenticatorAppStatusLoginRequiredMigratingFromLegacyKAuth, CoreAuthenticatorAppStatusLoggingIn, CoreAuthenticatorAppStatusEverythingReady, CoreAuthenticatorAppStatusAddingAnAccount, CoreAuthenticatorAppSettingsRepository, CoreAuthenticatorAppSettingsEntity, CoreAuthenticatorAppSettingsDatabase_iosKt, CoreAuthenticatorAppSettingsDatabase_Impl, CoreAuthenticatorAppSettingsDatabaseKt, CoreAuthenticatorAppSettingsDatabaseConstructor, CoreAuthenticatorAppSettingsDatabase, CoreAuthenticatorAppSettingsDao_ImplCompanion, CoreAuthenticatorAppSettingsDao_Impl, CoreAuthenticatorApiResponseStatusCompanion, CoreAuthenticatorApiResponseStatus, CoreAuthenticatorApiExceptionUnexpectedApiErrorFormatException, CoreAuthenticatorApiExceptionApiErrorException, CoreAuthenticatorApiException, CoreAuthenticatorApiErrorV2Companion, CoreAuthenticatorApiErrorV2, CoreAuthenticatorApiEnvironmentStaging, CoreAuthenticatorApiEnvironmentProd, CoreAuthenticatorApiEnvironmentPreprod, CoreAuthenticatorApiEnvironmentCustom, CoreAuthenticatorApiEnvironment, CoreAuthenticatorAccountStatusNotConnected, CoreAuthenticatorAccountStatusLoggedIn, CoreAuthenticatorAccount;
 
-@protocol NSCopying, CoreAuthenticatorTokenBridge, CoreAuthenticatorSqliteSQLiteStatement, CoreAuthenticatorSqliteSQLiteDriver, CoreAuthenticatorSqliteSQLiteConnection, CoreAuthenticatorSkie_DispatcherDelegate, CoreAuthenticatorRoom_runtimeRoomOpenDelegateMarker, CoreAuthenticatorRoom_runtimeRoomDatabaseConstructor, CoreAuthenticatorRoom_runtimeAutoMigrationSpec, CoreAuthenticatorNotConnectedActionIssue, CoreAuthenticatorNotConnectedAction, CoreAuthenticatorKotlinx_coroutines_coreStateFlow, CoreAuthenticatorKotlinx_coroutines_coreSharedFlow, CoreAuthenticatorKotlinx_coroutines_coreRunnable, CoreAuthenticatorKotlinx_coroutines_coreMutableStateFlow, CoreAuthenticatorKotlinx_coroutines_coreMutableSharedFlow, CoreAuthenticatorKotlinx_coroutines_coreFlowCollector, CoreAuthenticatorKotlinx_coroutines_coreFlow, CoreAuthenticatorKotlinx_coroutines_coreCoroutineScope, CoreAuthenticatorKotlinSuspendFunction1, CoreAuthenticatorKotlinKDeclarationContainer, CoreAuthenticatorKotlinKClassifier, CoreAuthenticatorKotlinKClass, CoreAuthenticatorKotlinKAnnotatedElement, CoreAuthenticatorKotlinIterator, CoreAuthenticatorKotlinFunction, CoreAuthenticatorKotlinCoroutineContextKey, CoreAuthenticatorKotlinCoroutineContextElement, CoreAuthenticatorKotlinCoroutineContext, CoreAuthenticatorKotlinComparable, CoreAuthenticatorKotlinAutoCloseable, CoreAuthenticatorCrashReportInterface, CoreAuthenticatorAppStatusLoginRequired, CoreAuthenticatorAppStatus, CoreAuthenticatorAppSettingsDao, CoreAuthenticatorAccountStatus;
+@protocol NSCopying, CoreAuthenticatorTokenBridge, CoreAuthenticatorSqliteSQLiteStatement, CoreAuthenticatorSqliteSQLiteDriver, CoreAuthenticatorSqliteSQLiteConnection, CoreAuthenticatorSkie_DispatcherDelegate, CoreAuthenticatorRoom_runtimeRoomOpenDelegateMarker, CoreAuthenticatorRoom_runtimeRoomDatabaseConstructor, CoreAuthenticatorRoom_runtimeAutoMigrationSpec, CoreAuthenticatorNotConnectedActionIssue, CoreAuthenticatorNotConnectedAction, CoreAuthenticatorKotlinx_serialization_coreSerializersModuleCollector, CoreAuthenticatorKotlinx_serialization_coreSerializationStrategy, CoreAuthenticatorKotlinx_serialization_coreSerialDescriptor, CoreAuthenticatorKotlinx_serialization_coreKSerializer, CoreAuthenticatorKotlinx_serialization_coreEncoder, CoreAuthenticatorKotlinx_serialization_coreDeserializationStrategy, CoreAuthenticatorKotlinx_serialization_coreDecoder, CoreAuthenticatorKotlinx_serialization_coreCompositeEncoder, CoreAuthenticatorKotlinx_serialization_coreCompositeDecoder, CoreAuthenticatorKotlinx_coroutines_coreStateFlow, CoreAuthenticatorKotlinx_coroutines_coreSharedFlow, CoreAuthenticatorKotlinx_coroutines_coreRunnable, CoreAuthenticatorKotlinx_coroutines_coreMutableStateFlow, CoreAuthenticatorKotlinx_coroutines_coreMutableSharedFlow, CoreAuthenticatorKotlinx_coroutines_coreFlowCollector, CoreAuthenticatorKotlinx_coroutines_coreFlow, CoreAuthenticatorKotlinx_coroutines_coreCoroutineScope, CoreAuthenticatorKotlinSuspendFunction1, CoreAuthenticatorKotlinKDeclarationContainer, CoreAuthenticatorKotlinKClassifier, CoreAuthenticatorKotlinKClass, CoreAuthenticatorKotlinKAnnotatedElement, CoreAuthenticatorKotlinIterator, CoreAuthenticatorKotlinFunction, CoreAuthenticatorKotlinCoroutineContextKey, CoreAuthenticatorKotlinCoroutineContextElement, CoreAuthenticatorKotlinCoroutineContext, CoreAuthenticatorKotlinComparable, CoreAuthenticatorKotlinAutoCloseable, CoreAuthenticatorKotlinAnnotation, CoreAuthenticatorCrashReportInterface, CoreAuthenticatorAppStatusLoginRequired, CoreAuthenticatorAppStatus, CoreAuthenticatorAppSettingsDao, CoreAuthenticatorAccountStatus;
 
 // Due to an Obj-C/Swift interop limitation, SKIE cannot generate Swift types with a lambda type argument.
 // Example of such type is: A<() -> Unit> where A<T> is a generic class.
@@ -489,7 +489,7 @@ __attribute__((swift_name("Account")))
 @property (readonly) NSString *initials __attribute__((swift_name("initials")));
 @property (readonly) id<CoreAuthenticatorAccountStatus> status __attribute__((swift_name("status")));
 - (instancetype)initWithId:(int64_t)id fullName:(NSString *)fullName initials:(NSString *)initials email:(NSString *)email avatarUrl:(NSString * _Nullable)avatarUrl status:(id<CoreAuthenticatorAccountStatus>)status __attribute__((swift_name("init(id:fullName:initials:email:avatarUrl:status:)"))) __attribute__((objc_designated_initializer));
-- (instancetype)initWithId:(int64_t)id fullName:(NSString *)fullName initials:(NSString *)initials email:(NSString *)email status__Skie_DefaultArguments__93:(id<CoreAuthenticatorAccountStatus>)status__Skie_DefaultArguments__93 __attribute__((swift_name("init(id:fullName:initials:email:status__Skie_DefaultArguments__93:)"))) __attribute__((objc_designated_initializer));
+- (instancetype)initWithId:(int64_t)id fullName:(NSString *)fullName initials:(NSString *)initials email:(NSString *)email status__Skie_DefaultArguments__97:(id<CoreAuthenticatorAccountStatus>)status__Skie_DefaultArguments__97 __attribute__((swift_name("init(id:fullName:initials:email:status__Skie_DefaultArguments__97:)"))) __attribute__((objc_designated_initializer));
 - (CoreAuthenticatorAccount *)doCopyId:(int64_t)id fullName:(NSString *)fullName initials:(NSString *)initials email:(NSString *)email avatarUrl:(NSString * _Nullable)avatarUrl status:(id<CoreAuthenticatorAccountStatus>)status __attribute__((swift_name("doCopy(id:fullName:initials:email:avatarUrl:status:)")));
 - (CoreAuthenticatorAccount *)doCopy__Skie_DefaultArguments__0 __attribute__((swift_name("doCopy__Skie_DefaultArguments__0()")));
 - (CoreAuthenticatorAccount *)doCopy__Skie_DefaultArguments__1Id:(int64_t)id __attribute__((swift_name("doCopy__Skie_DefaultArguments__1(id:)")));
@@ -593,50 +593,107 @@ __attribute__((swift_name("AppStatus")))
 @required
 @end
 
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("AppStatusAddingAnAccount")))
+@interface CoreAuthenticatorAppStatusAddingAnAccount : CoreAuthenticatorBase <CoreAuthenticatorAppStatus>
+@property (readonly) void (^cancel)(void) __attribute__((swift_name("cancel")));
+- (instancetype)initWithCancel:(void (^)(void))cancel __attribute__((swift_name("init(cancel:)"))) __attribute__((objc_designated_initializer));
+- (CoreAuthenticatorAppStatusAddingAnAccount *)doCopyCancel:(void (^)(void))cancel __attribute__((swift_name("doCopy(cancel:)")));
+- (CoreAuthenticatorAppStatusAddingAnAccount *)doCopy__Skie_DefaultArguments__67 __attribute__((swift_name("doCopy__Skie_DefaultArguments__67()")));
+- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+- (NSUInteger)hash __attribute__((swift_name("hash()")));
+- (NSString *)description __attribute__((swift_name("description()")));
+@end
+
 
 /**
- * This status is emitted by [AuthenticatorFacade.appStatus] once [AuthenticatorFacade.addAccounts] is called.
+ * Comes right after [AppStatus.LoggingIn], if at least one account was successfully connected/migrated.
  *
- * After the login completes successfully, [AuthenticatorFacade.appStatus] will switch to [OnboardingDone].
- *
- * If [needsResolution] is true, the [Account.status] property from the accounts in [AuthenticatorFacade.accounts]
- * need to be checked, and addressed.
+ * Calling [proceed] will lead [AuthenticatorFacade.appStatus] to switch to [SetupComplete].
  */
 __attribute__((objc_subclassing_restricted))
-__attribute__((swift_name("AppStatusLoggingIn")))
-@interface CoreAuthenticatorAppStatusLoggingIn : CoreAuthenticatorBase <CoreAuthenticatorAppStatus>
-@property (readonly) BOOL needsResolution __attribute__((swift_name("needsResolution")));
-- (instancetype)initWithNeedsResolution:(BOOL)needsResolution __attribute__((swift_name("init(needsResolution:)"))) __attribute__((objc_designated_initializer));
-- (CoreAuthenticatorAppStatusLoggingIn *)doCopyNeedsResolution:(BOOL)needsResolution __attribute__((swift_name("doCopy(needsResolution:)")));
-- (CoreAuthenticatorAppStatusLoggingIn *)doCopy__Skie_DefaultArguments__65 __attribute__((swift_name("doCopy__Skie_DefaultArguments__65()")));
+__attribute__((swift_name("AppStatusEverythingReady")))
+@interface CoreAuthenticatorAppStatusEverythingReady : CoreAuthenticatorBase <CoreAuthenticatorAppStatus>
+@property (readonly) void (^proceed)(void) __attribute__((swift_name("proceed")));
+- (instancetype)initWithProceed:(void (^)(void))proceed __attribute__((swift_name("init(proceed:)"))) __attribute__((objc_designated_initializer));
+- (CoreAuthenticatorAppStatusEverythingReady *)doCopyProceed:(void (^)(void))proceed __attribute__((swift_name("doCopy(proceed:)")));
+- (CoreAuthenticatorAppStatusEverythingReady *)doCopy__Skie_DefaultArguments__65 __attribute__((swift_name("doCopy__Skie_DefaultArguments__65()")));
 
 /**
- * This status is emitted by [AuthenticatorFacade.appStatus] once [AuthenticatorFacade.addAccounts] is called.
+ * Comes right after [AppStatus.LoggingIn], if at least one account was successfully connected/migrated.
  *
- * After the login completes successfully, [AuthenticatorFacade.appStatus] will switch to [OnboardingDone].
- *
- * If [needsResolution] is true, the [Account.status] property from the accounts in [AuthenticatorFacade.accounts]
- * need to be checked, and addressed.
+ * Calling [proceed] will lead [AuthenticatorFacade.appStatus] to switch to [SetupComplete].
  */
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
 
 /**
- * This status is emitted by [AuthenticatorFacade.appStatus] once [AuthenticatorFacade.addAccounts] is called.
+ * Comes right after [AppStatus.LoggingIn], if at least one account was successfully connected/migrated.
  *
- * After the login completes successfully, [AuthenticatorFacade.appStatus] will switch to [OnboardingDone].
- *
- * If [needsResolution] is true, the [Account.status] property from the accounts in [AuthenticatorFacade.accounts]
- * need to be checked, and addressed.
+ * Calling [proceed] will lead [AuthenticatorFacade.appStatus] to switch to [SetupComplete].
  */
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
 
 /**
- * This status is emitted by [AuthenticatorFacade.appStatus] once [AuthenticatorFacade.addAccounts] is called.
+ * Comes right after [AppStatus.LoggingIn], if at least one account was successfully connected/migrated.
  *
- * After the login completes successfully, [AuthenticatorFacade.appStatus] will switch to [OnboardingDone].
+ * Calling [proceed] will lead [AuthenticatorFacade.appStatus] to switch to [SetupComplete].
+ */
+- (NSString *)description __attribute__((swift_name("description()")));
+@end
+
+
+/**
+ * This status is emitted by [AuthenticatorFacade.appStatus] once either
+ * [AuthenticatorFacade.addAccounts] or [LoginRequired.MigratingFromLegacyKAuth.proceed] is called.
  *
- * If [needsResolution] is true, the [Account.status] property from the accounts in [AuthenticatorFacade.accounts]
- * need to be checked, and addressed.
+ * After the 1st login completes, [AuthenticatorFacade.appStatus] will switch to [EverythingReady], if at least one
+ * account was successfully connected/migrated, or straight to [SetupComplete] otherwise, with the errors being
+ * surfaced in the [Account.status] property from the accounts in [AuthenticatorFacade.accounts].
+ */
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("AppStatusLoggingIn")))
+@interface CoreAuthenticatorAppStatusLoggingIn : CoreAuthenticatorBase <CoreAuthenticatorAppStatus>
+@property (class, readonly, getter=shared) CoreAuthenticatorAppStatusLoggingIn *shared __attribute__((swift_name("shared")));
++ (instancetype)alloc __attribute__((unavailable));
+
+/**
+ * This status is emitted by [AuthenticatorFacade.appStatus] once either
+ * [AuthenticatorFacade.addAccounts] or [LoginRequired.MigratingFromLegacyKAuth.proceed] is called.
+ *
+ * After the 1st login completes, [AuthenticatorFacade.appStatus] will switch to [EverythingReady], if at least one
+ * account was successfully connected/migrated, or straight to [SetupComplete] otherwise, with the errors being
+ * surfaced in the [Account.status] property from the accounts in [AuthenticatorFacade.accounts].
+ */
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)loggingIn __attribute__((swift_name("init()")));
+
+/**
+ * This status is emitted by [AuthenticatorFacade.appStatus] once either
+ * [AuthenticatorFacade.addAccounts] or [LoginRequired.MigratingFromLegacyKAuth.proceed] is called.
+ *
+ * After the 1st login completes, [AuthenticatorFacade.appStatus] will switch to [EverythingReady], if at least one
+ * account was successfully connected/migrated, or straight to [SetupComplete] otherwise, with the errors being
+ * surfaced in the [Account.status] property from the accounts in [AuthenticatorFacade.accounts].
+ */
+- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+
+/**
+ * This status is emitted by [AuthenticatorFacade.appStatus] once either
+ * [AuthenticatorFacade.addAccounts] or [LoginRequired.MigratingFromLegacyKAuth.proceed] is called.
+ *
+ * After the 1st login completes, [AuthenticatorFacade.appStatus] will switch to [EverythingReady], if at least one
+ * account was successfully connected/migrated, or straight to [SetupComplete] otherwise, with the errors being
+ * surfaced in the [Account.status] property from the accounts in [AuthenticatorFacade.accounts].
+ */
+- (NSUInteger)hash __attribute__((swift_name("hash()")));
+
+/**
+ * This status is emitted by [AuthenticatorFacade.appStatus] once either
+ * [AuthenticatorFacade.addAccounts] or [LoginRequired.MigratingFromLegacyKAuth.proceed] is called.
+ *
+ * After the 1st login completes, [AuthenticatorFacade.appStatus] will switch to [EverythingReady], if at least one
+ * account was successfully connected/migrated, or straight to [SetupComplete] otherwise, with the errors being
+ * surfaced in the [Account.status] property from the accounts in [AuthenticatorFacade.accounts].
  */
 - (NSString *)description __attribute__((swift_name("description()")));
 @end
@@ -711,41 +768,13 @@ __attribute__((swift_name("AppStatusLoginRequiredNotMigrating")))
 - (NSString *)description __attribute__((swift_name("description()")));
 @end
 
-
-/**
- * Calling [proceed] will lead [AuthenticatorFacade.appStatus] to switch to [SetupComplete].
- */
-__attribute__((objc_subclassing_restricted))
-__attribute__((swift_name("AppStatusOnboardingDone")))
-@interface CoreAuthenticatorAppStatusOnboardingDone : CoreAuthenticatorBase <CoreAuthenticatorAppStatus>
-@property (readonly) void (^proceed)(void) __attribute__((swift_name("proceed")));
-- (instancetype)initWithProceed:(void (^)(void))proceed __attribute__((swift_name("init(proceed:)"))) __attribute__((objc_designated_initializer));
-- (CoreAuthenticatorAppStatusOnboardingDone *)doCopyProceed:(void (^)(void))proceed __attribute__((swift_name("doCopy(proceed:)")));
-- (CoreAuthenticatorAppStatusOnboardingDone *)doCopy__Skie_DefaultArguments__66 __attribute__((swift_name("doCopy__Skie_DefaultArguments__66()")));
-
-/**
- * Calling [proceed] will lead [AuthenticatorFacade.appStatus] to switch to [SetupComplete].
- */
-- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
-
-/**
- * Calling [proceed] will lead [AuthenticatorFacade.appStatus] to switch to [SetupComplete].
- */
-- (NSUInteger)hash __attribute__((swift_name("hash()")));
-
-/**
- * Calling [proceed] will lead [AuthenticatorFacade.appStatus] to switch to [SetupComplete].
- */
-- (NSString *)description __attribute__((swift_name("description()")));
-@end
-
 __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("AppStatusSetupComplete")))
 @interface CoreAuthenticatorAppStatusSetupComplete : CoreAuthenticatorBase <CoreAuthenticatorAppStatus>
-@property (class, readonly, getter=shared) CoreAuthenticatorAppStatusSetupComplete *shared __attribute__((swift_name("shared")));
-+ (instancetype)alloc __attribute__((unavailable));
-+ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
-+ (instancetype)setupComplete __attribute__((swift_name("init()")));
+@property (readonly) void (^addAnAccount)(void) __attribute__((swift_name("addAnAccount")));
+- (instancetype)initWithAddAnAccount:(void (^)(void))addAnAccount __attribute__((swift_name("init(addAnAccount:)"))) __attribute__((objc_designated_initializer));
+- (CoreAuthenticatorAppStatusSetupComplete *)doCopyAddAnAccount:(void (^)(void))addAnAccount __attribute__((swift_name("doCopy(addAnAccount:)")));
+- (CoreAuthenticatorAppStatusSetupComplete *)doCopy__Skie_DefaultArguments__66 __attribute__((swift_name("doCopy__Skie_DefaultArguments__66()")));
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
 - (NSString *)description __attribute__((swift_name("description()")));
@@ -766,6 +795,7 @@ __attribute__((swift_name("AuthenticatorFacade")))
  * Other uncaught Kotlin exceptions are fatal.
 */
 - (void)addAccountsConnectedAccounts:(NSArray<CoreAuthenticatorAccount *> *)connectedAccounts completionHandler:(void (^)(NSError * _Nullable))completionHandler __attribute__((swift_name("addAccounts(connectedAccounts:completionHandler:)")));
+- (id<CoreAuthenticatorAppStatus> _Nullable)appStatusOrNull __attribute__((swift_name("appStatusOrNull()")));
 
 /**
  * Refresh the token for the specific userId
@@ -792,26 +822,17 @@ __attribute__((swift_name("AuthenticatorFacade.Companion")))
 + (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
 + (instancetype)companion __attribute__((swift_name("init()")));
 - (CoreAuthenticatorAuthenticatorFacade *)createEnvironment:(CoreAuthenticatorApiEnvironment *)environment userAgent:(NSString *)userAgent clientId:(NSString *)clientId databaseNameOrPath:(NSString * _Nullable)databaseNameOrPath crashReport:(id<CoreAuthenticatorCrashReportInterface>)crashReport tokenBridge:(id<CoreAuthenticatorTokenBridge>)tokenBridge scope:(id<CoreAuthenticatorKotlinx_coroutines_coreCoroutineScope>)scope __attribute__((swift_name("create(environment:userAgent:clientId:databaseNameOrPath:crashReport:tokenBridge:scope:)")));
-- (CoreAuthenticatorAuthenticatorFacade *)create__Skie_DefaultArguments__67Environment:(CoreAuthenticatorApiEnvironment *)environment userAgent:(NSString *)userAgent clientId:(NSString *)clientId crashReport:(id<CoreAuthenticatorCrashReportInterface>)crashReport tokenBridge:(id<CoreAuthenticatorTokenBridge>)tokenBridge __attribute__((swift_name("create__Skie_DefaultArguments__67(environment:userAgent:clientId:crashReport:tokenBridge:)")));
-- (CoreAuthenticatorAuthenticatorFacade *)create__Skie_DefaultArguments__68Environment:(CoreAuthenticatorApiEnvironment *)environment userAgent:(NSString *)userAgent clientId:(NSString *)clientId databaseNameOrPath:(NSString * _Nullable)databaseNameOrPath crashReport:(id<CoreAuthenticatorCrashReportInterface>)crashReport tokenBridge:(id<CoreAuthenticatorTokenBridge>)tokenBridge __attribute__((swift_name("create__Skie_DefaultArguments__68(environment:userAgent:clientId:databaseNameOrPath:crashReport:tokenBridge:)")));
-- (CoreAuthenticatorAuthenticatorFacade *)create__Skie_DefaultArguments__69Environment:(CoreAuthenticatorApiEnvironment *)environment userAgent:(NSString *)userAgent clientId:(NSString *)clientId crashReport:(id<CoreAuthenticatorCrashReportInterface>)crashReport tokenBridge:(id<CoreAuthenticatorTokenBridge>)tokenBridge scope:(id<CoreAuthenticatorKotlinx_coroutines_coreCoroutineScope>)scope __attribute__((swift_name("create__Skie_DefaultArguments__69(environment:userAgent:clientId:crashReport:tokenBridge:scope:)")));
+- (CoreAuthenticatorAuthenticatorFacade *)create__Skie_DefaultArguments__68Environment:(CoreAuthenticatorApiEnvironment *)environment userAgent:(NSString *)userAgent clientId:(NSString *)clientId crashReport:(id<CoreAuthenticatorCrashReportInterface>)crashReport tokenBridge:(id<CoreAuthenticatorTokenBridge>)tokenBridge __attribute__((swift_name("create__Skie_DefaultArguments__68(environment:userAgent:clientId:crashReport:tokenBridge:)")));
+- (CoreAuthenticatorAuthenticatorFacade *)create__Skie_DefaultArguments__69Environment:(CoreAuthenticatorApiEnvironment *)environment userAgent:(NSString *)userAgent clientId:(NSString *)clientId databaseNameOrPath:(NSString * _Nullable)databaseNameOrPath crashReport:(id<CoreAuthenticatorCrashReportInterface>)crashReport tokenBridge:(id<CoreAuthenticatorTokenBridge>)tokenBridge __attribute__((swift_name("create__Skie_DefaultArguments__69(environment:userAgent:clientId:databaseNameOrPath:crashReport:tokenBridge:)")));
+- (CoreAuthenticatorAuthenticatorFacade *)create__Skie_DefaultArguments__70Environment:(CoreAuthenticatorApiEnvironment *)environment userAgent:(NSString *)userAgent clientId:(NSString *)clientId crashReport:(id<CoreAuthenticatorCrashReportInterface>)crashReport tokenBridge:(id<CoreAuthenticatorTokenBridge>)tokenBridge scope:(id<CoreAuthenticatorKotlinx_coroutines_coreCoroutineScope>)scope __attribute__((swift_name("create__Skie_DefaultArguments__70(environment:userAgent:clientId:crashReport:tokenBridge:scope:)")));
 - (CoreAuthenticatorAuthenticatorFacade *)dummyInstanceUserAgent:(NSString *)userAgent environment:(CoreAuthenticatorApiEnvironment *)environment crashReport:(id<CoreAuthenticatorCrashReportInterface> _Nullable)crashReport scope:(id<CoreAuthenticatorKotlinx_coroutines_coreCoroutineScope>)scope loadingDurationMillis:(int64_t)loadingDurationMillis resetAfterMillis:(int64_t)resetAfterMillis __attribute__((swift_name("dummyInstance(userAgent:environment:crashReport:scope:loadingDurationMillis:resetAfterMillis:)")));
-- (CoreAuthenticatorAuthenticatorFacade *)dummyInstance__Skie_DefaultArguments__70UserAgent:(NSString *)userAgent environment:(CoreAuthenticatorApiEnvironment *)environment crashReport:(id<CoreAuthenticatorCrashReportInterface> _Nullable)crashReport __attribute__((swift_name("dummyInstance__Skie_DefaultArguments__70(userAgent:environment:crashReport:)")));
-- (CoreAuthenticatorAuthenticatorFacade *)dummyInstance__Skie_DefaultArguments__71UserAgent:(NSString *)userAgent environment:(CoreAuthenticatorApiEnvironment *)environment crashReport:(id<CoreAuthenticatorCrashReportInterface> _Nullable)crashReport scope:(id<CoreAuthenticatorKotlinx_coroutines_coreCoroutineScope>)scope __attribute__((swift_name("dummyInstance__Skie_DefaultArguments__71(userAgent:environment:crashReport:scope:)")));
-- (CoreAuthenticatorAuthenticatorFacade *)dummyInstance__Skie_DefaultArguments__72UserAgent:(NSString *)userAgent environment:(CoreAuthenticatorApiEnvironment *)environment crashReport:(id<CoreAuthenticatorCrashReportInterface> _Nullable)crashReport loadingDurationMillis:(int64_t)loadingDurationMillis __attribute__((swift_name("dummyInstance__Skie_DefaultArguments__72(userAgent:environment:crashReport:loadingDurationMillis:)")));
-- (CoreAuthenticatorAuthenticatorFacade *)dummyInstance__Skie_DefaultArguments__73UserAgent:(NSString *)userAgent environment:(CoreAuthenticatorApiEnvironment *)environment crashReport:(id<CoreAuthenticatorCrashReportInterface> _Nullable)crashReport scope:(id<CoreAuthenticatorKotlinx_coroutines_coreCoroutineScope>)scope loadingDurationMillis:(int64_t)loadingDurationMillis __attribute__((swift_name("dummyInstance__Skie_DefaultArguments__73(userAgent:environment:crashReport:scope:loadingDurationMillis:)")));
-- (CoreAuthenticatorAuthenticatorFacade *)dummyInstance__Skie_DefaultArguments__74UserAgent:(NSString *)userAgent environment:(CoreAuthenticatorApiEnvironment *)environment crashReport:(id<CoreAuthenticatorCrashReportInterface> _Nullable)crashReport resetAfterMillis:(int64_t)resetAfterMillis __attribute__((swift_name("dummyInstance__Skie_DefaultArguments__74(userAgent:environment:crashReport:resetAfterMillis:)")));
-- (CoreAuthenticatorAuthenticatorFacade *)dummyInstance__Skie_DefaultArguments__75UserAgent:(NSString *)userAgent environment:(CoreAuthenticatorApiEnvironment *)environment crashReport:(id<CoreAuthenticatorCrashReportInterface> _Nullable)crashReport scope:(id<CoreAuthenticatorKotlinx_coroutines_coreCoroutineScope>)scope resetAfterMillis:(int64_t)resetAfterMillis __attribute__((swift_name("dummyInstance__Skie_DefaultArguments__75(userAgent:environment:crashReport:scope:resetAfterMillis:)")));
-- (CoreAuthenticatorAuthenticatorFacade *)dummyInstance__Skie_DefaultArguments__76UserAgent:(NSString *)userAgent environment:(CoreAuthenticatorApiEnvironment *)environment crashReport:(id<CoreAuthenticatorCrashReportInterface> _Nullable)crashReport loadingDurationMillis:(int64_t)loadingDurationMillis resetAfterMillis:(int64_t)resetAfterMillis __attribute__((swift_name("dummyInstance__Skie_DefaultArguments__76(userAgent:environment:crashReport:loadingDurationMillis:resetAfterMillis:)")));
-@end
-
-__attribute__((objc_subclassing_restricted))
-__attribute__((swift_name("AuthenticatorInjection")))
-@interface CoreAuthenticatorAuthenticatorInjection : CoreAuthenticatorBase
-@property (readonly) CoreAuthenticatorAuthenticatorFacade *authenticatorFacade __attribute__((swift_name("authenticatorFacade")));
-- (instancetype)initWithEnvironment:(CoreAuthenticatorApiEnvironment *)environment userAgent:(NSString *)userAgent databaseRootDirectory:(NSString * _Nullable)databaseRootDirectory crashReport:(id<CoreAuthenticatorCrashReportInterface>)crashReport __attribute__((swift_name("init(environment:userAgent:databaseRootDirectory:crashReport:)"))) __attribute__((objc_designated_initializer));
-- (instancetype)initWithEnvironment:(CoreAuthenticatorApiEnvironment *)environment userAgent:(NSString *)userAgent crashReport__Skie_DefaultArguments__94:(id<CoreAuthenticatorCrashReportInterface>)crashReport__Skie_DefaultArguments__94 __attribute__((swift_name("init(environment:userAgent:crashReport__Skie_DefaultArguments__94:)"))) __attribute__((objc_designated_initializer));
-- (CoreAuthenticatorAuthenticatorFacade *)getAuthenticatorFacadeClientId:(NSString *)clientId tokenBridge:(id<CoreAuthenticatorTokenBridge>)tokenBridge __attribute__((swift_name("getAuthenticatorFacade(clientId:tokenBridge:)")));
+- (CoreAuthenticatorAuthenticatorFacade *)dummyInstance__Skie_DefaultArguments__71UserAgent:(NSString *)userAgent environment:(CoreAuthenticatorApiEnvironment *)environment crashReport:(id<CoreAuthenticatorCrashReportInterface> _Nullable)crashReport __attribute__((swift_name("dummyInstance__Skie_DefaultArguments__71(userAgent:environment:crashReport:)")));
+- (CoreAuthenticatorAuthenticatorFacade *)dummyInstance__Skie_DefaultArguments__72UserAgent:(NSString *)userAgent environment:(CoreAuthenticatorApiEnvironment *)environment crashReport:(id<CoreAuthenticatorCrashReportInterface> _Nullable)crashReport scope:(id<CoreAuthenticatorKotlinx_coroutines_coreCoroutineScope>)scope __attribute__((swift_name("dummyInstance__Skie_DefaultArguments__72(userAgent:environment:crashReport:scope:)")));
+- (CoreAuthenticatorAuthenticatorFacade *)dummyInstance__Skie_DefaultArguments__73UserAgent:(NSString *)userAgent environment:(CoreAuthenticatorApiEnvironment *)environment crashReport:(id<CoreAuthenticatorCrashReportInterface> _Nullable)crashReport loadingDurationMillis:(int64_t)loadingDurationMillis __attribute__((swift_name("dummyInstance__Skie_DefaultArguments__73(userAgent:environment:crashReport:loadingDurationMillis:)")));
+- (CoreAuthenticatorAuthenticatorFacade *)dummyInstance__Skie_DefaultArguments__74UserAgent:(NSString *)userAgent environment:(CoreAuthenticatorApiEnvironment *)environment crashReport:(id<CoreAuthenticatorCrashReportInterface> _Nullable)crashReport scope:(id<CoreAuthenticatorKotlinx_coroutines_coreCoroutineScope>)scope loadingDurationMillis:(int64_t)loadingDurationMillis __attribute__((swift_name("dummyInstance__Skie_DefaultArguments__74(userAgent:environment:crashReport:scope:loadingDurationMillis:)")));
+- (CoreAuthenticatorAuthenticatorFacade *)dummyInstance__Skie_DefaultArguments__75UserAgent:(NSString *)userAgent environment:(CoreAuthenticatorApiEnvironment *)environment crashReport:(id<CoreAuthenticatorCrashReportInterface> _Nullable)crashReport resetAfterMillis:(int64_t)resetAfterMillis __attribute__((swift_name("dummyInstance__Skie_DefaultArguments__75(userAgent:environment:crashReport:resetAfterMillis:)")));
+- (CoreAuthenticatorAuthenticatorFacade *)dummyInstance__Skie_DefaultArguments__76UserAgent:(NSString *)userAgent environment:(CoreAuthenticatorApiEnvironment *)environment crashReport:(id<CoreAuthenticatorCrashReportInterface> _Nullable)crashReport scope:(id<CoreAuthenticatorKotlinx_coroutines_coreCoroutineScope>)scope resetAfterMillis:(int64_t)resetAfterMillis __attribute__((swift_name("dummyInstance__Skie_DefaultArguments__76(userAgent:environment:crashReport:scope:resetAfterMillis:)")));
+- (CoreAuthenticatorAuthenticatorFacade *)dummyInstance__Skie_DefaultArguments__77UserAgent:(NSString *)userAgent environment:(CoreAuthenticatorApiEnvironment *)environment crashReport:(id<CoreAuthenticatorCrashReportInterface> _Nullable)crashReport loadingDurationMillis:(int64_t)loadingDurationMillis resetAfterMillis:(int64_t)resetAfterMillis __attribute__((swift_name("dummyInstance__Skie_DefaultArguments__77(userAgent:environment:crashReport:loadingDurationMillis:resetAfterMillis:)")));
 @end
 
 __attribute__((objc_subclassing_restricted))
@@ -821,9 +842,9 @@ __attribute__((swift_name("CredentialsForMigration")))
 @property (readonly) NSString *password __attribute__((swift_name("password")));
 - (instancetype)initWithConfirmedEmail:(NSString *)confirmedEmail password:(NSString *)password __attribute__((swift_name("init(confirmedEmail:password:)"))) __attribute__((objc_designated_initializer));
 - (CoreAuthenticatorCredentialsForMigration *)doCopyConfirmedEmail:(NSString *)confirmedEmail password:(NSString *)password __attribute__((swift_name("doCopy(confirmedEmail:password:)")));
-- (CoreAuthenticatorCredentialsForMigration *)doCopy__Skie_DefaultArguments__77 __attribute__((swift_name("doCopy__Skie_DefaultArguments__77()")));
-- (CoreAuthenticatorCredentialsForMigration *)doCopy__Skie_DefaultArguments__78ConfirmedEmail:(NSString *)confirmedEmail __attribute__((swift_name("doCopy__Skie_DefaultArguments__78(confirmedEmail:)")));
-- (CoreAuthenticatorCredentialsForMigration *)doCopy__Skie_DefaultArguments__79Password:(NSString *)password __attribute__((swift_name("doCopy__Skie_DefaultArguments__79(password:)")));
+- (CoreAuthenticatorCredentialsForMigration *)doCopy__Skie_DefaultArguments__78 __attribute__((swift_name("doCopy__Skie_DefaultArguments__78()")));
+- (CoreAuthenticatorCredentialsForMigration *)doCopy__Skie_DefaultArguments__79ConfirmedEmail:(NSString *)confirmedEmail __attribute__((swift_name("doCopy__Skie_DefaultArguments__79(confirmedEmail:)")));
+- (CoreAuthenticatorCredentialsForMigration *)doCopy__Skie_DefaultArguments__80Password:(NSString *)password __attribute__((swift_name("doCopy__Skie_DefaultArguments__80(password:)")));
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
 - (NSString *)description __attribute__((swift_name("description()")));
@@ -870,7 +891,7 @@ __attribute__((swift_name("NotConnectedActionIssueNonRetriable")))
 @property (readonly) NSString *message __attribute__((swift_name("message")));
 - (instancetype)initWithMessage:(NSString *)message __attribute__((swift_name("init(message:)"))) __attribute__((objc_designated_initializer));
 - (CoreAuthenticatorNotConnectedActionIssueNonRetriable *)doCopyMessage:(NSString *)message __attribute__((swift_name("doCopy(message:)")));
-- (CoreAuthenticatorNotConnectedActionIssueNonRetriable *)doCopy__Skie_DefaultArguments__84 __attribute__((swift_name("doCopy__Skie_DefaultArguments__84()")));
+- (CoreAuthenticatorNotConnectedActionIssueNonRetriable *)doCopy__Skie_DefaultArguments__85 __attribute__((swift_name("doCopy__Skie_DefaultArguments__85()")));
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
 - (NSString *)description __attribute__((swift_name("description()")));
@@ -887,7 +908,7 @@ __attribute__((swift_name("NotConnectedActionIssueRetriable")))
 @property (readonly) void (^proceed)(CoreAuthenticatorBoolean *shouldRetry) __attribute__((swift_name("proceed")));
 - (instancetype)initWithProceed:(void (^)(CoreAuthenticatorBoolean *shouldRetry))proceed __attribute__((swift_name("init(proceed:)"))) __attribute__((objc_designated_initializer));
 - (CoreAuthenticatorNotConnectedActionIssueRetriable *)doCopyProceed:(void (^)(CoreAuthenticatorBoolean *shouldRetry))proceed __attribute__((swift_name("doCopy(proceed:)")));
-- (CoreAuthenticatorNotConnectedActionIssueRetriable *)doCopy__Skie_DefaultArguments__83 __attribute__((swift_name("doCopy__Skie_DefaultArguments__83()")));
+- (CoreAuthenticatorNotConnectedActionIssueRetriable *)doCopy__Skie_DefaultArguments__84 __attribute__((swift_name("doCopy__Skie_DefaultArguments__84()")));
 
 /**
  * When coming from kAuth, if at least one account was successfully migrated, we don't have this at all.
@@ -921,9 +942,9 @@ __attribute__((swift_name("NotConnectedActionReLogin")))
 @property (readonly) void (^sendCredentials)(CoreAuthenticatorCredentialsForMigration *) __attribute__((swift_name("sendCredentials")));
 - (instancetype)initWithLegacyAccount:(CoreAuthenticatorAccount *)legacyAccount sendCredentials:(void (^)(CoreAuthenticatorCredentialsForMigration *))sendCredentials __attribute__((swift_name("init(legacyAccount:sendCredentials:)"))) __attribute__((objc_designated_initializer));
 - (CoreAuthenticatorNotConnectedActionReLogin *)doCopyLegacyAccount:(CoreAuthenticatorAccount *)legacyAccount sendCredentials:(void (^)(CoreAuthenticatorCredentialsForMigration *))sendCredentials __attribute__((swift_name("doCopy(legacyAccount:sendCredentials:)")));
-- (CoreAuthenticatorNotConnectedActionReLogin *)doCopy__Skie_DefaultArguments__80 __attribute__((swift_name("doCopy__Skie_DefaultArguments__80()")));
-- (CoreAuthenticatorNotConnectedActionReLogin *)doCopy__Skie_DefaultArguments__81LegacyAccount:(CoreAuthenticatorAccount *)legacyAccount __attribute__((swift_name("doCopy__Skie_DefaultArguments__81(legacyAccount:)")));
-- (CoreAuthenticatorNotConnectedActionReLogin *)doCopy__Skie_DefaultArguments__82SendCredentials:(void (^)(CoreAuthenticatorCredentialsForMigration *))sendCredentials __attribute__((swift_name("doCopy__Skie_DefaultArguments__82(sendCredentials:)")));
+- (CoreAuthenticatorNotConnectedActionReLogin *)doCopy__Skie_DefaultArguments__81 __attribute__((swift_name("doCopy__Skie_DefaultArguments__81()")));
+- (CoreAuthenticatorNotConnectedActionReLogin *)doCopy__Skie_DefaultArguments__82LegacyAccount:(CoreAuthenticatorAccount *)legacyAccount __attribute__((swift_name("doCopy__Skie_DefaultArguments__82(legacyAccount:)")));
+- (CoreAuthenticatorNotConnectedActionReLogin *)doCopy__Skie_DefaultArguments__83SendCredentials:(void (^)(CoreAuthenticatorCredentialsForMigration *))sendCredentials __attribute__((swift_name("doCopy__Skie_DefaultArguments__83(sendCredentials:)")));
 
 /**
  * The actual email of the account might have changed since then, and we can't know about it.
@@ -977,6 +998,68 @@ __attribute__((swift_name("KeyStorageLocation")))
 + (CoreAuthenticatorKotlinArray<CoreAuthenticatorKeyStorageLocation *> *)values __attribute__((swift_name("values()")));
 @end
 
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.Serializable
+*/
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("ApiErrorV2")))
+@interface CoreAuthenticatorApiErrorV2 : CoreAuthenticatorBase
+@property (class, readonly, getter=companion) CoreAuthenticatorApiErrorV2Companion *companion __attribute__((swift_name("companion")));
+@property (readonly) NSString *code __attribute__((swift_name("code")));
+@property (readonly) NSString *description_ __attribute__((swift_name("description_")));
+- (instancetype)initWithCode:(NSString *)code description:(NSString *)description __attribute__((swift_name("init(code:description:)"))) __attribute__((objc_designated_initializer));
+- (CoreAuthenticatorApiErrorV2 *)doCopyCode:(NSString *)code description:(NSString *)description __attribute__((swift_name("doCopy(code:description:)")));
+- (CoreAuthenticatorApiErrorV2 *)doCopy__Skie_DefaultArguments__93 __attribute__((swift_name("doCopy__Skie_DefaultArguments__93()")));
+- (CoreAuthenticatorApiErrorV2 *)doCopy__Skie_DefaultArguments__94Code:(NSString *)code __attribute__((swift_name("doCopy__Skie_DefaultArguments__94(code:)")));
+- (CoreAuthenticatorApiErrorV2 *)doCopy__Skie_DefaultArguments__95Description:(NSString *)description __attribute__((swift_name("doCopy__Skie_DefaultArguments__95(description:)")));
+- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+- (NSUInteger)hash __attribute__((swift_name("hash()")));
+- (NSString *)description __attribute__((swift_name("description()")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("ApiErrorV2.Companion")))
+@interface CoreAuthenticatorApiErrorV2Companion : CoreAuthenticatorBase
+@property (class, readonly, getter=shared) CoreAuthenticatorApiErrorV2Companion *shared __attribute__((swift_name("shared")));
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)companion __attribute__((swift_name("init()")));
+- (id<CoreAuthenticatorKotlinx_serialization_coreKSerializer>)serializer __attribute__((swift_name("serializer()")));
+@end
+
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.Serializable
+*/
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("ApiResponseStatus")))
+@interface CoreAuthenticatorApiResponseStatus : CoreAuthenticatorKotlinEnum<CoreAuthenticatorApiResponseStatus *>
+@property (class, readonly, getter=companion) CoreAuthenticatorApiResponseStatusCompanion *companion __attribute__((swift_name("companion")));
+@property (class, readonly) CoreAuthenticatorApiResponseStatus *error __attribute__((swift_name("error")));
+@property (class, readonly) CoreAuthenticatorApiResponseStatus *success __attribute__((swift_name("success")));
+@property (class, readonly) CoreAuthenticatorApiResponseStatus *asynchronous __attribute__((swift_name("asynchronous")));
+@property (class, readonly) CoreAuthenticatorApiResponseStatus *unknown __attribute__((swift_name("unknown")));
+@property (class, readonly) NSArray<CoreAuthenticatorApiResponseStatus *> *entries __attribute__((swift_name("entries")));
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
+- (instancetype)initWithName:(NSString *)name ordinal:(int32_t)ordinal __attribute__((swift_name("init(name:ordinal:)"))) __attribute__((objc_designated_initializer)) __attribute__((unavailable));
++ (CoreAuthenticatorKotlinArray<CoreAuthenticatorApiResponseStatus *> *)values __attribute__((swift_name("values()")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("ApiResponseStatus.Companion")))
+@interface CoreAuthenticatorApiResponseStatusCompanion : CoreAuthenticatorBase
+@property (class, readonly, getter=shared) CoreAuthenticatorApiResponseStatusCompanion *shared __attribute__((swift_name("shared")));
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)companion __attribute__((swift_name("init()")));
+- (id<CoreAuthenticatorKotlinx_serialization_coreKSerializer>)serializer __attribute__((swift_name("serializer()")));
+- (id<CoreAuthenticatorKotlinx_serialization_coreKSerializer>)serializerTypeParamsSerializers:(CoreAuthenticatorKotlinArray<id<CoreAuthenticatorKotlinx_serialization_coreKSerializer>> *)typeParamsSerializers __attribute__((swift_name("serializer(typeParamsSerializers:)")));
+@end
+
 __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("MatomoCategory")))
 @interface CoreAuthenticatorMatomoCategory : CoreAuthenticatorKotlinEnum<CoreAuthenticatorMatomoCategory *>
@@ -1020,6 +1103,7 @@ __attribute__((swift_name("UrlConstants")))
 @interface CoreAuthenticatorUrlConstants : CoreAuthenticatorBase
 @property (class, readonly, getter=shared) CoreAuthenticatorUrlConstants *shared __attribute__((swift_name("shared")));
 @property (readonly) NSString *ACTIVITY_MANAGER_URL __attribute__((swift_name("ACTIVITY_MANAGER_URL")));
+@property (readonly) NSString *SETTINGS_2FA_MANAGER_URL __attribute__((swift_name("SETTINGS_2FA_MANAGER_URL")));
 @property (readonly) NSString *SETTINGS_MANAGER_URL __attribute__((swift_name("SETTINGS_MANAGER_URL")));
 + (instancetype)alloc __attribute__((unavailable));
 + (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
@@ -1384,22 +1468,22 @@ __attribute__((swift_name("AppSettingsEntity")))
 @property (readonly) BOOL isAppLockEnabled __attribute__((swift_name("isAppLockEnabled")));
 @property (readonly) CoreAuthenticatorTheme *theme __attribute__((swift_name("theme")));
 - (instancetype)initWithId:(int64_t)id isAppLockEnabled:(BOOL)isAppLockEnabled theme:(CoreAuthenticatorTheme *)theme __attribute__((swift_name("init(id:isAppLockEnabled:theme:)"))) __attribute__((objc_designated_initializer));
-- (instancetype)initWithId:(int64_t)id theme__Skie_DefaultArguments__100:(CoreAuthenticatorTheme *)theme__Skie_DefaultArguments__100 __attribute__((swift_name("init(id:theme__Skie_DefaultArguments__100:)"))) __attribute__((objc_designated_initializer));
-- (instancetype)initWithIsAppLockEnabled:(BOOL)isAppLockEnabled theme__Skie_DefaultArguments__101:(CoreAuthenticatorTheme *)theme__Skie_DefaultArguments__101 __attribute__((swift_name("init(isAppLockEnabled:theme__Skie_DefaultArguments__101:)"))) __attribute__((objc_designated_initializer));
+- (instancetype)initWithIsAppLockEnabled__Skie_DefaultArguments__100:(BOOL)isAppLockEnabled__Skie_DefaultArguments__100 __attribute__((swift_name("init(isAppLockEnabled__Skie_DefaultArguments__100:)"))) __attribute__((objc_designated_initializer));
+- (instancetype)initWithId:(int64_t)id isAppLockEnabled__Skie_DefaultArguments__101:(BOOL)isAppLockEnabled__Skie_DefaultArguments__101 __attribute__((swift_name("init(id:isAppLockEnabled__Skie_DefaultArguments__101:)"))) __attribute__((objc_designated_initializer));
+- (instancetype)initWithTheme__Skie_DefaultArguments__102:(CoreAuthenticatorTheme *)theme__Skie_DefaultArguments__102 __attribute__((swift_name("init(theme__Skie_DefaultArguments__102:)"))) __attribute__((objc_designated_initializer));
+- (instancetype)initWithId:(int64_t)id theme__Skie_DefaultArguments__103:(CoreAuthenticatorTheme *)theme__Skie_DefaultArguments__103 __attribute__((swift_name("init(id:theme__Skie_DefaultArguments__103:)"))) __attribute__((objc_designated_initializer));
+- (instancetype)initWithIsAppLockEnabled:(BOOL)isAppLockEnabled theme__Skie_DefaultArguments__104:(CoreAuthenticatorTheme *)theme__Skie_DefaultArguments__104 __attribute__((swift_name("init(isAppLockEnabled:theme__Skie_DefaultArguments__104:)"))) __attribute__((objc_designated_initializer));
 - (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer));
 + (instancetype)new __attribute__((availability(swift, unavailable, message="use object initializers instead")));
-- (instancetype)initWithId__Skie_DefaultArguments__96:(int64_t)id__Skie_DefaultArguments__96 __attribute__((swift_name("init(id__Skie_DefaultArguments__96:)"))) __attribute__((objc_designated_initializer));
-- (instancetype)initWithIsAppLockEnabled__Skie_DefaultArguments__97:(BOOL)isAppLockEnabled__Skie_DefaultArguments__97 __attribute__((swift_name("init(isAppLockEnabled__Skie_DefaultArguments__97:)"))) __attribute__((objc_designated_initializer));
-- (instancetype)initWithId:(int64_t)id isAppLockEnabled__Skie_DefaultArguments__98:(BOOL)isAppLockEnabled__Skie_DefaultArguments__98 __attribute__((swift_name("init(id:isAppLockEnabled__Skie_DefaultArguments__98:)"))) __attribute__((objc_designated_initializer));
-- (instancetype)initWithTheme__Skie_DefaultArguments__99:(CoreAuthenticatorTheme *)theme__Skie_DefaultArguments__99 __attribute__((swift_name("init(theme__Skie_DefaultArguments__99:)"))) __attribute__((objc_designated_initializer));
+- (instancetype)initWithId__Skie_DefaultArguments__99:(int64_t)id__Skie_DefaultArguments__99 __attribute__((swift_name("init(id__Skie_DefaultArguments__99:)"))) __attribute__((objc_designated_initializer));
 - (CoreAuthenticatorAppSettingsEntity *)doCopyId:(int64_t)id isAppLockEnabled:(BOOL)isAppLockEnabled theme:(CoreAuthenticatorTheme *)theme __attribute__((swift_name("doCopy(id:isAppLockEnabled:theme:)")));
-- (CoreAuthenticatorAppSettingsEntity *)doCopy__Skie_DefaultArguments__85 __attribute__((swift_name("doCopy__Skie_DefaultArguments__85()")));
-- (CoreAuthenticatorAppSettingsEntity *)doCopy__Skie_DefaultArguments__86Id:(int64_t)id __attribute__((swift_name("doCopy__Skie_DefaultArguments__86(id:)")));
-- (CoreAuthenticatorAppSettingsEntity *)doCopy__Skie_DefaultArguments__87IsAppLockEnabled:(BOOL)isAppLockEnabled __attribute__((swift_name("doCopy__Skie_DefaultArguments__87(isAppLockEnabled:)")));
-- (CoreAuthenticatorAppSettingsEntity *)doCopy__Skie_DefaultArguments__88Id:(int64_t)id isAppLockEnabled:(BOOL)isAppLockEnabled __attribute__((swift_name("doCopy__Skie_DefaultArguments__88(id:isAppLockEnabled:)")));
-- (CoreAuthenticatorAppSettingsEntity *)doCopy__Skie_DefaultArguments__89Theme:(CoreAuthenticatorTheme *)theme __attribute__((swift_name("doCopy__Skie_DefaultArguments__89(theme:)")));
-- (CoreAuthenticatorAppSettingsEntity *)doCopy__Skie_DefaultArguments__90Id:(int64_t)id theme:(CoreAuthenticatorTheme *)theme __attribute__((swift_name("doCopy__Skie_DefaultArguments__90(id:theme:)")));
-- (CoreAuthenticatorAppSettingsEntity *)doCopy__Skie_DefaultArguments__91IsAppLockEnabled:(BOOL)isAppLockEnabled theme:(CoreAuthenticatorTheme *)theme __attribute__((swift_name("doCopy__Skie_DefaultArguments__91(isAppLockEnabled:theme:)")));
+- (CoreAuthenticatorAppSettingsEntity *)doCopy__Skie_DefaultArguments__86 __attribute__((swift_name("doCopy__Skie_DefaultArguments__86()")));
+- (CoreAuthenticatorAppSettingsEntity *)doCopy__Skie_DefaultArguments__87Id:(int64_t)id __attribute__((swift_name("doCopy__Skie_DefaultArguments__87(id:)")));
+- (CoreAuthenticatorAppSettingsEntity *)doCopy__Skie_DefaultArguments__88IsAppLockEnabled:(BOOL)isAppLockEnabled __attribute__((swift_name("doCopy__Skie_DefaultArguments__88(isAppLockEnabled:)")));
+- (CoreAuthenticatorAppSettingsEntity *)doCopy__Skie_DefaultArguments__89Id:(int64_t)id isAppLockEnabled:(BOOL)isAppLockEnabled __attribute__((swift_name("doCopy__Skie_DefaultArguments__89(id:isAppLockEnabled:)")));
+- (CoreAuthenticatorAppSettingsEntity *)doCopy__Skie_DefaultArguments__90Theme:(CoreAuthenticatorTheme *)theme __attribute__((swift_name("doCopy__Skie_DefaultArguments__90(theme:)")));
+- (CoreAuthenticatorAppSettingsEntity *)doCopy__Skie_DefaultArguments__91Id:(int64_t)id theme:(CoreAuthenticatorTheme *)theme __attribute__((swift_name("doCopy__Skie_DefaultArguments__91(id:theme:)")));
+- (CoreAuthenticatorAppSettingsEntity *)doCopy__Skie_DefaultArguments__92IsAppLockEnabled:(BOOL)isAppLockEnabled theme:(CoreAuthenticatorTheme *)theme __attribute__((swift_name("doCopy__Skie_DefaultArguments__92(isAppLockEnabled:theme:)")));
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
 - (NSString *)description __attribute__((swift_name("description()")));
@@ -1461,9 +1545,9 @@ __attribute__((swift_name("ApiException")))
  */
 __attribute__((swift_name("ApiException.ApiErrorException")))
 @interface CoreAuthenticatorApiExceptionApiErrorException : CoreAuthenticatorApiException
-@property (readonly) int32_t errorCode __attribute__((swift_name("errorCode")));
+@property (readonly) NSString *errorCode __attribute__((swift_name("errorCode")));
 @property (readonly) NSString *errorMessage __attribute__((swift_name("errorMessage")));
-- (instancetype)initWithErrorCode:(int32_t)errorCode errorMessage:(NSString *)errorMessage requestContextId:(NSString *)requestContextId __attribute__((swift_name("init(errorCode:errorMessage:requestContextId:)"))) __attribute__((objc_designated_initializer));
+- (instancetype)initWithErrorCode:(NSString *)errorCode errorMessage:(NSString *)errorMessage requestContextId:(NSString *)requestContextId __attribute__((swift_name("init(errorCode:errorMessage:requestContextId:)"))) __attribute__((objc_designated_initializer));
 @end
 
 
@@ -1512,7 +1596,7 @@ __attribute__((swift_name("ApiEnvironment.Custom")))
 @interface CoreAuthenticatorApiEnvironmentCustom : CoreAuthenticatorApiEnvironment
 - (instancetype)initWithUrl:(NSString *)url __attribute__((swift_name("init(url:)"))) __attribute__((objc_designated_initializer));
 - (CoreAuthenticatorApiEnvironmentCustom *)doCopyUrl:(NSString *)url __attribute__((swift_name("doCopy(url:)")));
-- (CoreAuthenticatorApiEnvironmentCustom *)doCopy__Skie_DefaultArguments__92 __attribute__((swift_name("doCopy__Skie_DefaultArguments__92()")));
+- (CoreAuthenticatorApiEnvironmentCustom *)doCopy__Skie_DefaultArguments__96 __attribute__((swift_name("doCopy__Skie_DefaultArguments__96()")));
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
 - (NSString *)description __attribute__((swift_name("description()")));
@@ -1589,6 +1673,12 @@ __attribute__((swift_name("__SkieSuspendWrappersKt")))
 + (void)Skie_Suspend__9__saveDispatchReceiver:(id<CoreAuthenticatorAppSettingsDao>)dispatchReceiver item:(CoreAuthenticatorAppSettingsEntity *)item suspendHandler:(CoreAuthenticatorSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__9__save(dispatchReceiver:item:suspendHandler:)")));
 @end
 
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("__SkieTypeExportsKt")))
+@interface CoreAuthenticator__SkieTypeExportsKt : CoreAuthenticatorBase
++ (void)skieTypeExports_0P0:(CoreAuthenticatorKotlinx_serialization_corePolymorphicKind *)p0 p1:(CoreAuthenticatorKotlinx_serialization_corePolymorphicKindOPEN *)p1 p2:(CoreAuthenticatorKotlinx_serialization_corePolymorphicKindSEALED *)p2 p3:(CoreAuthenticatorKotlinx_serialization_corePrimitiveKind *)p3 p4:(CoreAuthenticatorKotlinx_serialization_corePrimitiveKindBOOLEAN *)p4 p5:(CoreAuthenticatorKotlinx_serialization_corePrimitiveKindBYTE *)p5 p6:(CoreAuthenticatorKotlinx_serialization_corePrimitiveKindCHAR *)p6 p7:(CoreAuthenticatorKotlinx_serialization_corePrimitiveKindDOUBLE *)p7 p8:(CoreAuthenticatorKotlinx_serialization_corePrimitiveKindFLOAT *)p8 p9:(CoreAuthenticatorKotlinx_serialization_corePrimitiveKindINT *)p9 p10:(CoreAuthenticatorKotlinx_serialization_corePrimitiveKindLONG *)p10 p11:(CoreAuthenticatorKotlinx_serialization_corePrimitiveKindSHORT *)p11 p12:(CoreAuthenticatorKotlinx_serialization_corePrimitiveKindSTRING *)p12 p13:(CoreAuthenticatorKotlinx_serialization_coreSerialKindCONTEXTUAL *)p13 p14:(CoreAuthenticatorKotlinx_serialization_coreSerialKindENUM *)p14 p15:(CoreAuthenticatorKotlinx_serialization_coreStructureKind *)p15 p16:(CoreAuthenticatorKotlinx_serialization_coreStructureKindCLASS *)p16 p17:(CoreAuthenticatorKotlinx_serialization_coreStructureKindLIST *)p17 p18:(CoreAuthenticatorKotlinx_serialization_coreStructureKindMAP *)p18 p19:(CoreAuthenticatorKotlinx_serialization_coreStructureKindOBJECT *)p19 __attribute__((swift_name("skieTypeExports_0(p0:p1:p2:p3:p4:p5:p6:p7:p8:p9:p10:p11:p12:p13:p14:p15:p16:p17:p18:p19:)")));
+@end
+
 __attribute__((swift_name("KotlinRuntimeException")))
 @interface CoreAuthenticatorKotlinRuntimeException : CoreAuthenticatorKotlinException
 - (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer));
@@ -1652,6 +1742,25 @@ __attribute__((swift_name("KotlinArray")))
 - (T _Nullable)getIndex:(int32_t)index __attribute__((swift_name("get(index:)")));
 - (id<CoreAuthenticatorKotlinIterator>)iterator __attribute__((swift_name("iterator()")));
 - (void)setIndex:(int32_t)index value:(T _Nullable)value __attribute__((swift_name("set(index:value:)")));
+@end
+
+__attribute__((swift_name("Kotlinx_serialization_coreSerializationStrategy")))
+@protocol CoreAuthenticatorKotlinx_serialization_coreSerializationStrategy
+@required
+- (void)serializeEncoder:(id<CoreAuthenticatorKotlinx_serialization_coreEncoder>)encoder value:(id _Nullable)value __attribute__((swift_name("serialize(encoder:value:)")));
+@property (readonly) id<CoreAuthenticatorKotlinx_serialization_coreSerialDescriptor> descriptor __attribute__((swift_name("descriptor")));
+@end
+
+__attribute__((swift_name("Kotlinx_serialization_coreDeserializationStrategy")))
+@protocol CoreAuthenticatorKotlinx_serialization_coreDeserializationStrategy
+@required
+- (id _Nullable)deserializeDecoder:(id<CoreAuthenticatorKotlinx_serialization_coreDecoder>)decoder __attribute__((swift_name("deserialize(decoder:)")));
+@property (readonly) id<CoreAuthenticatorKotlinx_serialization_coreSerialDescriptor> descriptor __attribute__((swift_name("descriptor")));
+@end
+
+__attribute__((swift_name("Kotlinx_serialization_coreKSerializer")))
+@protocol CoreAuthenticatorKotlinx_serialization_coreKSerializer <CoreAuthenticatorKotlinx_serialization_coreSerializationStrategy, CoreAuthenticatorKotlinx_serialization_coreDeserializationStrategy>
+@required
 @end
 
 __attribute__((swift_name("KotlinKDeclarationContainer")))
@@ -1802,6 +1911,182 @@ __attribute__((swift_name("Room_runtimeRoomDatabaseBuilder")))
 - (CoreAuthenticatorRoom_runtimeRoomDatabaseBuilder<T> *)setQueryCoroutineContextContext:(id<CoreAuthenticatorKotlinCoroutineContext>)context __attribute__((swift_name("setQueryCoroutineContext(context:)")));
 @end
 
+__attribute__((swift_name("Kotlinx_serialization_coreSerialKind")))
+@interface CoreAuthenticatorKotlinx_serialization_coreSerialKind : CoreAuthenticatorBase
+- (NSUInteger)hash __attribute__((swift_name("hash()")));
+- (NSString *)description __attribute__((swift_name("description()")));
+@end
+
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.ExperimentalSerializationApi
+*/
+__attribute__((swift_name("Kotlinx_serialization_corePolymorphicKind")))
+@interface CoreAuthenticatorKotlinx_serialization_corePolymorphicKind : CoreAuthenticatorKotlinx_serialization_coreSerialKind
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Kotlinx_serialization_corePolymorphicKind.OPEN")))
+@interface CoreAuthenticatorKotlinx_serialization_corePolymorphicKindOPEN : CoreAuthenticatorKotlinx_serialization_corePolymorphicKind
+@property (class, readonly, getter=shared) CoreAuthenticatorKotlinx_serialization_corePolymorphicKindOPEN *shared __attribute__((swift_name("shared")));
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)oPEN __attribute__((swift_name("init()")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Kotlinx_serialization_corePolymorphicKind.SEALED")))
+@interface CoreAuthenticatorKotlinx_serialization_corePolymorphicKindSEALED : CoreAuthenticatorKotlinx_serialization_corePolymorphicKind
+@property (class, readonly, getter=shared) CoreAuthenticatorKotlinx_serialization_corePolymorphicKindSEALED *shared __attribute__((swift_name("shared")));
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)sEALED __attribute__((swift_name("init()")));
+@end
+
+__attribute__((swift_name("Kotlinx_serialization_corePrimitiveKind")))
+@interface CoreAuthenticatorKotlinx_serialization_corePrimitiveKind : CoreAuthenticatorKotlinx_serialization_coreSerialKind
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Kotlinx_serialization_corePrimitiveKind.BOOLEAN")))
+@interface CoreAuthenticatorKotlinx_serialization_corePrimitiveKindBOOLEAN : CoreAuthenticatorKotlinx_serialization_corePrimitiveKind
+@property (class, readonly, getter=shared) CoreAuthenticatorKotlinx_serialization_corePrimitiveKindBOOLEAN *shared __attribute__((swift_name("shared")));
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)bOOLEAN __attribute__((swift_name("init()")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Kotlinx_serialization_corePrimitiveKind.BYTE")))
+@interface CoreAuthenticatorKotlinx_serialization_corePrimitiveKindBYTE : CoreAuthenticatorKotlinx_serialization_corePrimitiveKind
+@property (class, readonly, getter=shared) CoreAuthenticatorKotlinx_serialization_corePrimitiveKindBYTE *shared __attribute__((swift_name("shared")));
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)bYTE __attribute__((swift_name("init()")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Kotlinx_serialization_corePrimitiveKind.CHAR")))
+@interface CoreAuthenticatorKotlinx_serialization_corePrimitiveKindCHAR : CoreAuthenticatorKotlinx_serialization_corePrimitiveKind
+@property (class, readonly, getter=shared) CoreAuthenticatorKotlinx_serialization_corePrimitiveKindCHAR *shared __attribute__((swift_name("shared")));
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)cHAR __attribute__((swift_name("init()")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Kotlinx_serialization_corePrimitiveKind.DOUBLE")))
+@interface CoreAuthenticatorKotlinx_serialization_corePrimitiveKindDOUBLE : CoreAuthenticatorKotlinx_serialization_corePrimitiveKind
+@property (class, readonly, getter=shared) CoreAuthenticatorKotlinx_serialization_corePrimitiveKindDOUBLE *shared __attribute__((swift_name("shared")));
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)dOUBLE __attribute__((swift_name("init()")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Kotlinx_serialization_corePrimitiveKind.FLOAT")))
+@interface CoreAuthenticatorKotlinx_serialization_corePrimitiveKindFLOAT : CoreAuthenticatorKotlinx_serialization_corePrimitiveKind
+@property (class, readonly, getter=shared) CoreAuthenticatorKotlinx_serialization_corePrimitiveKindFLOAT *shared __attribute__((swift_name("shared")));
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)fLOAT __attribute__((swift_name("init()")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Kotlinx_serialization_corePrimitiveKind.INT")))
+@interface CoreAuthenticatorKotlinx_serialization_corePrimitiveKindINT : CoreAuthenticatorKotlinx_serialization_corePrimitiveKind
+@property (class, readonly, getter=shared) CoreAuthenticatorKotlinx_serialization_corePrimitiveKindINT *shared __attribute__((swift_name("shared")));
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)iNT __attribute__((swift_name("init()")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Kotlinx_serialization_corePrimitiveKind.LONG")))
+@interface CoreAuthenticatorKotlinx_serialization_corePrimitiveKindLONG : CoreAuthenticatorKotlinx_serialization_corePrimitiveKind
+@property (class, readonly, getter=shared) CoreAuthenticatorKotlinx_serialization_corePrimitiveKindLONG *shared __attribute__((swift_name("shared")));
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)lONG __attribute__((swift_name("init()")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Kotlinx_serialization_corePrimitiveKind.SHORT")))
+@interface CoreAuthenticatorKotlinx_serialization_corePrimitiveKindSHORT : CoreAuthenticatorKotlinx_serialization_corePrimitiveKind
+@property (class, readonly, getter=shared) CoreAuthenticatorKotlinx_serialization_corePrimitiveKindSHORT *shared __attribute__((swift_name("shared")));
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)sHORT __attribute__((swift_name("init()")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Kotlinx_serialization_corePrimitiveKind.STRING")))
+@interface CoreAuthenticatorKotlinx_serialization_corePrimitiveKindSTRING : CoreAuthenticatorKotlinx_serialization_corePrimitiveKind
+@property (class, readonly, getter=shared) CoreAuthenticatorKotlinx_serialization_corePrimitiveKindSTRING *shared __attribute__((swift_name("shared")));
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)sTRING __attribute__((swift_name("init()")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Kotlinx_serialization_coreSerialKind.CONTEXTUAL")))
+@interface CoreAuthenticatorKotlinx_serialization_coreSerialKindCONTEXTUAL : CoreAuthenticatorKotlinx_serialization_coreSerialKind
+@property (class, readonly, getter=shared) CoreAuthenticatorKotlinx_serialization_coreSerialKindCONTEXTUAL *shared __attribute__((swift_name("shared")));
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)cONTEXTUAL __attribute__((swift_name("init()")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Kotlinx_serialization_coreSerialKind.ENUM")))
+@interface CoreAuthenticatorKotlinx_serialization_coreSerialKindENUM : CoreAuthenticatorKotlinx_serialization_coreSerialKind
+@property (class, readonly, getter=shared) CoreAuthenticatorKotlinx_serialization_coreSerialKindENUM *shared __attribute__((swift_name("shared")));
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)eNUM __attribute__((swift_name("init()")));
+@end
+
+__attribute__((swift_name("Kotlinx_serialization_coreStructureKind")))
+@interface CoreAuthenticatorKotlinx_serialization_coreStructureKind : CoreAuthenticatorKotlinx_serialization_coreSerialKind
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Kotlinx_serialization_coreStructureKind.CLASS")))
+@interface CoreAuthenticatorKotlinx_serialization_coreStructureKindCLASS : CoreAuthenticatorKotlinx_serialization_coreStructureKind
+@property (class, readonly, getter=shared) CoreAuthenticatorKotlinx_serialization_coreStructureKindCLASS *shared __attribute__((swift_name("shared")));
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)cLASS __attribute__((swift_name("init()")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Kotlinx_serialization_coreStructureKind.LIST")))
+@interface CoreAuthenticatorKotlinx_serialization_coreStructureKindLIST : CoreAuthenticatorKotlinx_serialization_coreStructureKind
+@property (class, readonly, getter=shared) CoreAuthenticatorKotlinx_serialization_coreStructureKindLIST *shared __attribute__((swift_name("shared")));
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)lIST __attribute__((swift_name("init()")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Kotlinx_serialization_coreStructureKind.MAP")))
+@interface CoreAuthenticatorKotlinx_serialization_coreStructureKindMAP : CoreAuthenticatorKotlinx_serialization_coreStructureKind
+@property (class, readonly, getter=shared) CoreAuthenticatorKotlinx_serialization_coreStructureKindMAP *shared __attribute__((swift_name("shared")));
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)mAP __attribute__((swift_name("init()")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Kotlinx_serialization_coreStructureKind.OBJECT")))
+@interface CoreAuthenticatorKotlinx_serialization_coreStructureKindOBJECT : CoreAuthenticatorKotlinx_serialization_coreStructureKind
+@property (class, readonly, getter=shared) CoreAuthenticatorKotlinx_serialization_coreStructureKindOBJECT *shared __attribute__((swift_name("shared")));
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)oBJECT __attribute__((swift_name("init()")));
+@end
+
 
 /**
  * @note annotations
@@ -1821,6 +2106,97 @@ __attribute__((swift_name("KotlinIterator")))
 @required
 - (BOOL)hasNext __attribute__((swift_name("hasNext()")));
 - (id _Nullable)next __attribute__((swift_name("next()")));
+@end
+
+__attribute__((swift_name("Kotlinx_serialization_coreEncoder")))
+@protocol CoreAuthenticatorKotlinx_serialization_coreEncoder
+@required
+- (id<CoreAuthenticatorKotlinx_serialization_coreCompositeEncoder>)beginCollectionDescriptor:(id<CoreAuthenticatorKotlinx_serialization_coreSerialDescriptor>)descriptor collectionSize:(int32_t)collectionSize __attribute__((swift_name("beginCollection(descriptor:collectionSize:)")));
+- (id<CoreAuthenticatorKotlinx_serialization_coreCompositeEncoder>)beginStructureDescriptor:(id<CoreAuthenticatorKotlinx_serialization_coreSerialDescriptor>)descriptor __attribute__((swift_name("beginStructure(descriptor:)")));
+- (void)encodeBooleanValue:(BOOL)value __attribute__((swift_name("encodeBoolean(value:)")));
+- (void)encodeByteValue:(int8_t)value __attribute__((swift_name("encodeByte(value:)")));
+- (void)encodeCharValue:(unichar)value __attribute__((swift_name("encodeChar(value:)")));
+- (void)encodeDoubleValue:(double)value __attribute__((swift_name("encodeDouble(value:)")));
+- (void)encodeEnumEnumDescriptor:(id<CoreAuthenticatorKotlinx_serialization_coreSerialDescriptor>)enumDescriptor index:(int32_t)index __attribute__((swift_name("encodeEnum(enumDescriptor:index:)")));
+- (void)encodeFloatValue:(float)value __attribute__((swift_name("encodeFloat(value:)")));
+- (id<CoreAuthenticatorKotlinx_serialization_coreEncoder>)encodeInlineDescriptor:(id<CoreAuthenticatorKotlinx_serialization_coreSerialDescriptor>)descriptor __attribute__((swift_name("encodeInline(descriptor:)")));
+- (void)encodeIntValue:(int32_t)value __attribute__((swift_name("encodeInt(value:)")));
+- (void)encodeLongValue:(int64_t)value __attribute__((swift_name("encodeLong(value:)")));
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.ExperimentalSerializationApi
+*/
+- (void)encodeNotNullMark __attribute__((swift_name("encodeNotNullMark()")));
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.ExperimentalSerializationApi
+*/
+- (void)encodeNull __attribute__((swift_name("encodeNull()")));
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.ExperimentalSerializationApi
+*/
+- (void)encodeNullableSerializableValueSerializer:(id<CoreAuthenticatorKotlinx_serialization_coreSerializationStrategy>)serializer value:(id _Nullable)value __attribute__((swift_name("encodeNullableSerializableValue(serializer:value:)")));
+- (void)encodeSerializableValueSerializer:(id<CoreAuthenticatorKotlinx_serialization_coreSerializationStrategy>)serializer value:(id _Nullable)value __attribute__((swift_name("encodeSerializableValue(serializer:value:)")));
+- (void)encodeShortValue:(int16_t)value __attribute__((swift_name("encodeShort(value:)")));
+- (void)encodeStringValue:(NSString *)value __attribute__((swift_name("encodeString(value:)")));
+@property (readonly) CoreAuthenticatorKotlinx_serialization_coreSerializersModule *serializersModule __attribute__((swift_name("serializersModule")));
+@end
+
+__attribute__((swift_name("Kotlinx_serialization_coreSerialDescriptor")))
+@protocol CoreAuthenticatorKotlinx_serialization_coreSerialDescriptor
+@required
+- (NSArray<id<CoreAuthenticatorKotlinAnnotation>> *)getElementAnnotationsIndex:(int32_t)index __attribute__((swift_name("getElementAnnotations(index:)")));
+- (id<CoreAuthenticatorKotlinx_serialization_coreSerialDescriptor>)getElementDescriptorIndex:(int32_t)index __attribute__((swift_name("getElementDescriptor(index:)")));
+- (int32_t)getElementIndexName:(NSString *)name __attribute__((swift_name("getElementIndex(name:)")));
+- (NSString *)getElementNameIndex:(int32_t)index __attribute__((swift_name("getElementName(index:)")));
+- (BOOL)isElementOptionalIndex:(int32_t)index __attribute__((swift_name("isElementOptional(index:)")));
+@property (readonly) NSArray<id<CoreAuthenticatorKotlinAnnotation>> *annotations __attribute__((swift_name("annotations")));
+@property (readonly) int32_t elementsCount __attribute__((swift_name("elementsCount")));
+@property (readonly) BOOL isInline __attribute__((swift_name("isInline")));
+@property (readonly) BOOL isNullable __attribute__((swift_name("isNullable")));
+@property (readonly) CoreAuthenticatorKotlinx_serialization_coreSerialKind *kind __attribute__((swift_name("kind")));
+@property (readonly) NSString *serialName __attribute__((swift_name("serialName")));
+@end
+
+__attribute__((swift_name("Kotlinx_serialization_coreDecoder")))
+@protocol CoreAuthenticatorKotlinx_serialization_coreDecoder
+@required
+- (id<CoreAuthenticatorKotlinx_serialization_coreCompositeDecoder>)beginStructureDescriptor:(id<CoreAuthenticatorKotlinx_serialization_coreSerialDescriptor>)descriptor __attribute__((swift_name("beginStructure(descriptor:)")));
+- (BOOL)decodeBoolean __attribute__((swift_name("decodeBoolean()")));
+- (int8_t)decodeByte __attribute__((swift_name("decodeByte()")));
+- (unichar)decodeChar __attribute__((swift_name("decodeChar()")));
+- (double)decodeDouble __attribute__((swift_name("decodeDouble()")));
+- (int32_t)decodeEnumEnumDescriptor:(id<CoreAuthenticatorKotlinx_serialization_coreSerialDescriptor>)enumDescriptor __attribute__((swift_name("decodeEnum(enumDescriptor:)")));
+- (float)decodeFloat __attribute__((swift_name("decodeFloat()")));
+- (id<CoreAuthenticatorKotlinx_serialization_coreDecoder>)decodeInlineDescriptor:(id<CoreAuthenticatorKotlinx_serialization_coreSerialDescriptor>)descriptor __attribute__((swift_name("decodeInline(descriptor:)")));
+- (int32_t)decodeInt __attribute__((swift_name("decodeInt()")));
+- (int64_t)decodeLong __attribute__((swift_name("decodeLong()")));
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.ExperimentalSerializationApi
+*/
+- (BOOL)decodeNotNullMark __attribute__((swift_name("decodeNotNullMark()")));
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.ExperimentalSerializationApi
+*/
+- (CoreAuthenticatorKotlinNothing * _Nullable)decodeNull __attribute__((swift_name("decodeNull()")));
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.ExperimentalSerializationApi
+*/
+- (id _Nullable)decodeNullableSerializableValueDeserializer:(id<CoreAuthenticatorKotlinx_serialization_coreDeserializationStrategy>)deserializer __attribute__((swift_name("decodeNullableSerializableValue(deserializer:)")));
+- (id _Nullable)decodeSerializableValueDeserializer:(id<CoreAuthenticatorKotlinx_serialization_coreDeserializationStrategy>)deserializer __attribute__((swift_name("decodeSerializableValue(deserializer:)")));
+- (int16_t)decodeShort __attribute__((swift_name("decodeShort()")));
+- (NSString *)decodeString __attribute__((swift_name("decodeString()")));
+@property (readonly) CoreAuthenticatorKotlinx_serialization_coreSerializersModule *serializersModule __attribute__((swift_name("serializersModule")));
 @end
 
 __attribute__((swift_name("SqliteSQLiteStatement")))
@@ -1988,6 +2364,106 @@ __attribute__((swift_name("KotlinCoroutineContextKey")))
 @required
 @end
 
+__attribute__((swift_name("Kotlinx_serialization_coreCompositeEncoder")))
+@protocol CoreAuthenticatorKotlinx_serialization_coreCompositeEncoder
+@required
+- (void)encodeBooleanElementDescriptor:(id<CoreAuthenticatorKotlinx_serialization_coreSerialDescriptor>)descriptor index:(int32_t)index value:(BOOL)value __attribute__((swift_name("encodeBooleanElement(descriptor:index:value:)")));
+- (void)encodeByteElementDescriptor:(id<CoreAuthenticatorKotlinx_serialization_coreSerialDescriptor>)descriptor index:(int32_t)index value:(int8_t)value __attribute__((swift_name("encodeByteElement(descriptor:index:value:)")));
+- (void)encodeCharElementDescriptor:(id<CoreAuthenticatorKotlinx_serialization_coreSerialDescriptor>)descriptor index:(int32_t)index value:(unichar)value __attribute__((swift_name("encodeCharElement(descriptor:index:value:)")));
+- (void)encodeDoubleElementDescriptor:(id<CoreAuthenticatorKotlinx_serialization_coreSerialDescriptor>)descriptor index:(int32_t)index value:(double)value __attribute__((swift_name("encodeDoubleElement(descriptor:index:value:)")));
+- (void)encodeFloatElementDescriptor:(id<CoreAuthenticatorKotlinx_serialization_coreSerialDescriptor>)descriptor index:(int32_t)index value:(float)value __attribute__((swift_name("encodeFloatElement(descriptor:index:value:)")));
+- (id<CoreAuthenticatorKotlinx_serialization_coreEncoder>)encodeInlineElementDescriptor:(id<CoreAuthenticatorKotlinx_serialization_coreSerialDescriptor>)descriptor index:(int32_t)index __attribute__((swift_name("encodeInlineElement(descriptor:index:)")));
+- (void)encodeIntElementDescriptor:(id<CoreAuthenticatorKotlinx_serialization_coreSerialDescriptor>)descriptor index:(int32_t)index value:(int32_t)value __attribute__((swift_name("encodeIntElement(descriptor:index:value:)")));
+- (void)encodeLongElementDescriptor:(id<CoreAuthenticatorKotlinx_serialization_coreSerialDescriptor>)descriptor index:(int32_t)index value:(int64_t)value __attribute__((swift_name("encodeLongElement(descriptor:index:value:)")));
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.ExperimentalSerializationApi
+*/
+- (void)encodeNullableSerializableElementDescriptor:(id<CoreAuthenticatorKotlinx_serialization_coreSerialDescriptor>)descriptor index:(int32_t)index serializer:(id<CoreAuthenticatorKotlinx_serialization_coreSerializationStrategy>)serializer value:(id _Nullable)value __attribute__((swift_name("encodeNullableSerializableElement(descriptor:index:serializer:value:)")));
+- (void)encodeSerializableElementDescriptor:(id<CoreAuthenticatorKotlinx_serialization_coreSerialDescriptor>)descriptor index:(int32_t)index serializer:(id<CoreAuthenticatorKotlinx_serialization_coreSerializationStrategy>)serializer value:(id _Nullable)value __attribute__((swift_name("encodeSerializableElement(descriptor:index:serializer:value:)")));
+- (void)encodeShortElementDescriptor:(id<CoreAuthenticatorKotlinx_serialization_coreSerialDescriptor>)descriptor index:(int32_t)index value:(int16_t)value __attribute__((swift_name("encodeShortElement(descriptor:index:value:)")));
+- (void)encodeStringElementDescriptor:(id<CoreAuthenticatorKotlinx_serialization_coreSerialDescriptor>)descriptor index:(int32_t)index value:(NSString *)value __attribute__((swift_name("encodeStringElement(descriptor:index:value:)")));
+- (void)endStructureDescriptor:(id<CoreAuthenticatorKotlinx_serialization_coreSerialDescriptor>)descriptor __attribute__((swift_name("endStructure(descriptor:)")));
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.ExperimentalSerializationApi
+*/
+- (BOOL)shouldEncodeElementDefaultDescriptor:(id<CoreAuthenticatorKotlinx_serialization_coreSerialDescriptor>)descriptor index:(int32_t)index __attribute__((swift_name("shouldEncodeElementDefault(descriptor:index:)")));
+@property (readonly) CoreAuthenticatorKotlinx_serialization_coreSerializersModule *serializersModule __attribute__((swift_name("serializersModule")));
+@end
+
+__attribute__((swift_name("Kotlinx_serialization_coreSerializersModule")))
+@interface CoreAuthenticatorKotlinx_serialization_coreSerializersModule : CoreAuthenticatorBase
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.ExperimentalSerializationApi
+*/
+- (void)dumpToCollector:(id<CoreAuthenticatorKotlinx_serialization_coreSerializersModuleCollector>)collector __attribute__((swift_name("dumpTo(collector:)")));
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.ExperimentalSerializationApi
+*/
+- (id<CoreAuthenticatorKotlinx_serialization_coreKSerializer> _Nullable)getContextualKClass:(id<CoreAuthenticatorKotlinKClass>)kClass typeArgumentsSerializers:(NSArray<id<CoreAuthenticatorKotlinx_serialization_coreKSerializer>> *)typeArgumentsSerializers __attribute__((swift_name("getContextual(kClass:typeArgumentsSerializers:)")));
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.ExperimentalSerializationApi
+*/
+- (id<CoreAuthenticatorKotlinx_serialization_coreSerializationStrategy> _Nullable)getPolymorphicBaseClass:(id<CoreAuthenticatorKotlinKClass>)baseClass value:(id)value __attribute__((swift_name("getPolymorphic(baseClass:value:)")));
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.ExperimentalSerializationApi
+*/
+- (id<CoreAuthenticatorKotlinx_serialization_coreDeserializationStrategy> _Nullable)getPolymorphicBaseClass:(id<CoreAuthenticatorKotlinKClass>)baseClass serializedClassName:(NSString * _Nullable)serializedClassName __attribute__((swift_name("getPolymorphic(baseClass:serializedClassName:)")));
+@end
+
+__attribute__((swift_name("KotlinAnnotation")))
+@protocol CoreAuthenticatorKotlinAnnotation
+@required
+@end
+
+__attribute__((swift_name("Kotlinx_serialization_coreCompositeDecoder")))
+@protocol CoreAuthenticatorKotlinx_serialization_coreCompositeDecoder
+@required
+- (BOOL)decodeBooleanElementDescriptor:(id<CoreAuthenticatorKotlinx_serialization_coreSerialDescriptor>)descriptor index:(int32_t)index __attribute__((swift_name("decodeBooleanElement(descriptor:index:)")));
+- (int8_t)decodeByteElementDescriptor:(id<CoreAuthenticatorKotlinx_serialization_coreSerialDescriptor>)descriptor index:(int32_t)index __attribute__((swift_name("decodeByteElement(descriptor:index:)")));
+- (unichar)decodeCharElementDescriptor:(id<CoreAuthenticatorKotlinx_serialization_coreSerialDescriptor>)descriptor index:(int32_t)index __attribute__((swift_name("decodeCharElement(descriptor:index:)")));
+- (int32_t)decodeCollectionSizeDescriptor:(id<CoreAuthenticatorKotlinx_serialization_coreSerialDescriptor>)descriptor __attribute__((swift_name("decodeCollectionSize(descriptor:)")));
+- (double)decodeDoubleElementDescriptor:(id<CoreAuthenticatorKotlinx_serialization_coreSerialDescriptor>)descriptor index:(int32_t)index __attribute__((swift_name("decodeDoubleElement(descriptor:index:)")));
+- (int32_t)decodeElementIndexDescriptor:(id<CoreAuthenticatorKotlinx_serialization_coreSerialDescriptor>)descriptor __attribute__((swift_name("decodeElementIndex(descriptor:)")));
+- (float)decodeFloatElementDescriptor:(id<CoreAuthenticatorKotlinx_serialization_coreSerialDescriptor>)descriptor index:(int32_t)index __attribute__((swift_name("decodeFloatElement(descriptor:index:)")));
+- (id<CoreAuthenticatorKotlinx_serialization_coreDecoder>)decodeInlineElementDescriptor:(id<CoreAuthenticatorKotlinx_serialization_coreSerialDescriptor>)descriptor index:(int32_t)index __attribute__((swift_name("decodeInlineElement(descriptor:index:)")));
+- (int32_t)decodeIntElementDescriptor:(id<CoreAuthenticatorKotlinx_serialization_coreSerialDescriptor>)descriptor index:(int32_t)index __attribute__((swift_name("decodeIntElement(descriptor:index:)")));
+- (int64_t)decodeLongElementDescriptor:(id<CoreAuthenticatorKotlinx_serialization_coreSerialDescriptor>)descriptor index:(int32_t)index __attribute__((swift_name("decodeLongElement(descriptor:index:)")));
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.ExperimentalSerializationApi
+*/
+- (id _Nullable)decodeNullableSerializableElementDescriptor:(id<CoreAuthenticatorKotlinx_serialization_coreSerialDescriptor>)descriptor index:(int32_t)index deserializer:(id<CoreAuthenticatorKotlinx_serialization_coreDeserializationStrategy>)deserializer previousValue:(id _Nullable)previousValue __attribute__((swift_name("decodeNullableSerializableElement(descriptor:index:deserializer:previousValue:)")));
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.ExperimentalSerializationApi
+*/
+- (BOOL)decodeSequentially __attribute__((swift_name("decodeSequentially()")));
+- (id _Nullable)decodeSerializableElementDescriptor:(id<CoreAuthenticatorKotlinx_serialization_coreSerialDescriptor>)descriptor index:(int32_t)index deserializer:(id<CoreAuthenticatorKotlinx_serialization_coreDeserializationStrategy>)deserializer previousValue:(id _Nullable)previousValue __attribute__((swift_name("decodeSerializableElement(descriptor:index:deserializer:previousValue:)")));
+- (int16_t)decodeShortElementDescriptor:(id<CoreAuthenticatorKotlinx_serialization_coreSerialDescriptor>)descriptor index:(int32_t)index __attribute__((swift_name("decodeShortElement(descriptor:index:)")));
+- (NSString *)decodeStringElementDescriptor:(id<CoreAuthenticatorKotlinx_serialization_coreSerialDescriptor>)descriptor index:(int32_t)index __attribute__((swift_name("decodeStringElement(descriptor:index:)")));
+- (void)endStructureDescriptor:(id<CoreAuthenticatorKotlinx_serialization_coreSerialDescriptor>)descriptor __attribute__((swift_name("endStructure(descriptor:)")));
+@property (readonly) CoreAuthenticatorKotlinx_serialization_coreSerializersModule *serializersModule __attribute__((swift_name("serializersModule")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("KotlinNothing")))
+@interface CoreAuthenticatorKotlinNothing : CoreAuthenticatorBase
+@end
+
 __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("KotlinByteArray")))
 @interface CoreAuthenticatorKotlinByteArray : CoreAuthenticatorBase
@@ -2007,6 +2483,22 @@ __attribute__((swift_name("KotlinIntIterator")))
 + (instancetype)new __attribute__((availability(swift, unavailable, message="use object initializers instead")));
 - (CoreAuthenticatorInt *)next __attribute__((swift_name("next()")));
 - (int32_t)nextInt __attribute__((swift_name("nextInt()")));
+@end
+
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.ExperimentalSerializationApi
+*/
+__attribute__((swift_name("Kotlinx_serialization_coreSerializersModuleCollector")))
+@protocol CoreAuthenticatorKotlinx_serialization_coreSerializersModuleCollector
+@required
+- (void)contextualKClass:(id<CoreAuthenticatorKotlinKClass>)kClass provider:(id<CoreAuthenticatorKotlinx_serialization_coreKSerializer> (^)(NSArray<id<CoreAuthenticatorKotlinx_serialization_coreKSerializer>> *typeArgumentsSerializers))provider __attribute__((swift_name("contextual(kClass:provider:)")));
+- (void)contextualKClass:(id<CoreAuthenticatorKotlinKClass>)kClass serializer:(id<CoreAuthenticatorKotlinx_serialization_coreKSerializer>)serializer __attribute__((swift_name("contextual(kClass:serializer:)")));
+- (void)polymorphicBaseClass:(id<CoreAuthenticatorKotlinKClass>)baseClass actualClass:(id<CoreAuthenticatorKotlinKClass>)actualClass actualSerializer:(id<CoreAuthenticatorKotlinx_serialization_coreKSerializer>)actualSerializer __attribute__((swift_name("polymorphic(baseClass:actualClass:actualSerializer:)")));
+- (void)polymorphicDefaultBaseClass:(id<CoreAuthenticatorKotlinKClass>)baseClass defaultDeserializerProvider:(id<CoreAuthenticatorKotlinx_serialization_coreDeserializationStrategy> _Nullable (^)(NSString * _Nullable className))defaultDeserializerProvider __attribute__((swift_name("polymorphicDefault(baseClass:defaultDeserializerProvider:)"))) __attribute__((deprecated("Deprecated in favor of function with more precise name: polymorphicDefaultDeserializer")));
+- (void)polymorphicDefaultDeserializerBaseClass:(id<CoreAuthenticatorKotlinKClass>)baseClass defaultDeserializerProvider:(id<CoreAuthenticatorKotlinx_serialization_coreDeserializationStrategy> _Nullable (^)(NSString * _Nullable className))defaultDeserializerProvider __attribute__((swift_name("polymorphicDefaultDeserializer(baseClass:defaultDeserializerProvider:)")));
+- (void)polymorphicDefaultSerializerBaseClass:(id<CoreAuthenticatorKotlinKClass>)baseClass defaultSerializerProvider:(id<CoreAuthenticatorKotlinx_serialization_coreSerializationStrategy> _Nullable (^)(id value))defaultSerializerProvider __attribute__((swift_name("polymorphicDefaultSerializer(baseClass:defaultSerializerProvider:)")));
 @end
 
 __attribute__((swift_name("KotlinByteIterator")))

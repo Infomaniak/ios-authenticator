@@ -106,6 +106,19 @@ public enum Skie {
     }
   }
   public typealias Authenticator__multiplatform_lib = CoreAuthenticator.Skie.MultiplatformLib
+  public enum KotlinxSerializationCore {
+    public enum SerialKind {
+    }
+    public enum SerializersModule {
+    }
+    public enum PolymorphicKind {
+    }
+    public enum PrimitiveKind {
+    }
+    public enum StructureKind {
+    }
+  }
+  public typealias org_jetbrains_kotlinx__kotlinx_serialization_core = CoreAuthenticator.Skie.KotlinxSerializationCore
 }
 @_hasMissingDesignatedInitializers public class SkieSwiftFlowIterator<T> : _Concurrency.AsyncIteratorProtocol {
   #if compiler(>=5.3) && $NonescapableTypes
@@ -967,6 +980,48 @@ extension CoreAuthenticator.KeyStorageLocation {
 extension CoreAuthenticator.__KeyStorageLocation {
   public func toSwiftEnum() -> CoreAuthenticator.KeyStorageLocation
 }
+@frozen public enum ApiResponseStatus : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {
+  case error
+  case success
+  case asynchronous
+  case unknown
+  public var name: Swift.String {
+    get
+  }
+  public var ordinal: Swift.Int32 {
+    get
+  }
+  public static var companion: CoreAuthenticator.__ApiResponseStatus.Companion {
+    get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _forceBridgeFromObjectiveC(_ source: CoreAuthenticator.__ApiResponseStatus, result: inout CoreAuthenticator.ApiResponseStatus?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _conditionallyBridgeFromObjectiveC(_ source: CoreAuthenticator.__ApiResponseStatus, result: inout CoreAuthenticator.ApiResponseStatus?) -> Swift.Bool
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: CoreAuthenticator.__ApiResponseStatus?) -> CoreAuthenticator.ApiResponseStatus
+  #endif
+  public func _bridgeToObjectiveC() -> CoreAuthenticator.__ApiResponseStatus
+  public typealias _ObjectiveCType = CoreAuthenticator.__ApiResponseStatus
+  public typealias Companion = CoreAuthenticator.__ApiResponseStatus.Companion
+  public static func == (a: CoreAuthenticator.ApiResponseStatus, b: CoreAuthenticator.ApiResponseStatus) -> Swift.Bool
+  public typealias AllCases = [CoreAuthenticator.ApiResponseStatus]
+  nonisolated public static var allCases: [CoreAuthenticator.ApiResponseStatus] {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension CoreAuthenticator.ApiResponseStatus {
+  public func toKotlinEnum() -> CoreAuthenticator.__ApiResponseStatus
+}
+extension CoreAuthenticator.__ApiResponseStatus {
+  public func toSwiftEnum() -> CoreAuthenticator.ApiResponseStatus
+}
 @frozen public enum MatomoCategory : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {
   case account
   case settingsGeneral
@@ -1180,9 +1235,10 @@ public func onEnum<__Sealed>(of sealed: __Sealed) -> CoreAuthenticator.Skie.Mult
 #endif
 extension CoreAuthenticator.Skie.MultiplatformLib.AppStatus {
   @frozen public enum __Sealed {
+    case addingAnAccount(CoreAuthenticator.AppStatusAddingAnAccount)
+    case everythingReady(CoreAuthenticator.AppStatusEverythingReady)
     case loggingIn(CoreAuthenticator.AppStatusLoggingIn)
     case loginRequired(any CoreAuthenticator.AppStatusLoginRequired)
-    case onboardingDone(CoreAuthenticator.AppStatusOnboardingDone)
     case setupComplete(CoreAuthenticator.AppStatusSetupComplete)
   }
 }
@@ -1237,6 +1293,92 @@ public func onEnum<__Sealed>(of sealed: __Sealed) -> CoreAuthenticator.Skie.Mult
 #if compiler(>=5.3) && $NonescapableTypes
 @_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> CoreAuthenticator.Skie.MultiplatformLib.ApiException.__Sealed? where __Sealed : CoreAuthenticator.ApiException
 #endif
+extension CoreAuthenticator.Skie.KotlinxSerializationCore.SerialKind {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case polymorphicKind(CoreAuthenticator.Kotlinx_serialization_corePolymorphicKind)
+    case primitiveKind(CoreAuthenticator.Kotlinx_serialization_corePrimitiveKind)
+    case cONTEXTUAL(CoreAuthenticator.Kotlinx_serialization_coreSerialKind.CONTEXTUAL)
+    case eNUM(CoreAuthenticator.Kotlinx_serialization_coreSerialKind.ENUM)
+    case structureKind(CoreAuthenticator.Kotlinx_serialization_coreStructureKind)
+    public static func == (a: CoreAuthenticator.Skie.KotlinxSerializationCore.SerialKind.__Sealed, b: CoreAuthenticator.Skie.KotlinxSerializationCore.SerialKind.__Sealed) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> CoreAuthenticator.Skie.KotlinxSerializationCore.SerialKind.__Sealed where __Sealed : CoreAuthenticator.Kotlinx_serialization_coreSerialKind
+#if compiler(>=5.3) && $NonescapableTypes
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> CoreAuthenticator.Skie.KotlinxSerializationCore.SerialKind.__Sealed? where __Sealed : CoreAuthenticator.Kotlinx_serialization_coreSerialKind
+#endif
+extension CoreAuthenticator.Skie.KotlinxSerializationCore.SerializersModule {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case `else`
+    public static func == (a: CoreAuthenticator.Skie.KotlinxSerializationCore.SerializersModule.__Sealed, b: CoreAuthenticator.Skie.KotlinxSerializationCore.SerializersModule.__Sealed) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> CoreAuthenticator.Skie.KotlinxSerializationCore.SerializersModule.__Sealed where __Sealed : CoreAuthenticator.Kotlinx_serialization_coreSerializersModule
+#if compiler(>=5.3) && $NonescapableTypes
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> CoreAuthenticator.Skie.KotlinxSerializationCore.SerializersModule.__Sealed? where __Sealed : CoreAuthenticator.Kotlinx_serialization_coreSerializersModule
+#endif
+extension CoreAuthenticator.Skie.KotlinxSerializationCore.PolymorphicKind {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case oPEN(CoreAuthenticator.Kotlinx_serialization_corePolymorphicKind.OPEN)
+    case sEALED(CoreAuthenticator.Kotlinx_serialization_corePolymorphicKind.SEALED)
+    public static func == (a: CoreAuthenticator.Skie.KotlinxSerializationCore.PolymorphicKind.__Sealed, b: CoreAuthenticator.Skie.KotlinxSerializationCore.PolymorphicKind.__Sealed) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> CoreAuthenticator.Skie.KotlinxSerializationCore.PolymorphicKind.__Sealed where __Sealed : CoreAuthenticator.Kotlinx_serialization_corePolymorphicKind
+#if compiler(>=5.3) && $NonescapableTypes
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> CoreAuthenticator.Skie.KotlinxSerializationCore.PolymorphicKind.__Sealed? where __Sealed : CoreAuthenticator.Kotlinx_serialization_corePolymorphicKind
+#endif
+extension CoreAuthenticator.Skie.KotlinxSerializationCore.PrimitiveKind {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case bOOLEAN(CoreAuthenticator.Kotlinx_serialization_corePrimitiveKind.BOOLEAN)
+    case bYTE(CoreAuthenticator.Kotlinx_serialization_corePrimitiveKind.BYTE)
+    case cHAR(CoreAuthenticator.Kotlinx_serialization_corePrimitiveKind.CHAR)
+    case dOUBLE(CoreAuthenticator.Kotlinx_serialization_corePrimitiveKind.DOUBLE)
+    case fLOAT(CoreAuthenticator.Kotlinx_serialization_corePrimitiveKind.FLOAT)
+    case iNT(CoreAuthenticator.Kotlinx_serialization_corePrimitiveKind.INT)
+    case lONG(CoreAuthenticator.Kotlinx_serialization_corePrimitiveKind.LONG)
+    case sHORT(CoreAuthenticator.Kotlinx_serialization_corePrimitiveKind.SHORT)
+    case sTRING(CoreAuthenticator.Kotlinx_serialization_corePrimitiveKind.STRING)
+    public static func == (a: CoreAuthenticator.Skie.KotlinxSerializationCore.PrimitiveKind.__Sealed, b: CoreAuthenticator.Skie.KotlinxSerializationCore.PrimitiveKind.__Sealed) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> CoreAuthenticator.Skie.KotlinxSerializationCore.PrimitiveKind.__Sealed where __Sealed : CoreAuthenticator.Kotlinx_serialization_corePrimitiveKind
+#if compiler(>=5.3) && $NonescapableTypes
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> CoreAuthenticator.Skie.KotlinxSerializationCore.PrimitiveKind.__Sealed? where __Sealed : CoreAuthenticator.Kotlinx_serialization_corePrimitiveKind
+#endif
+extension CoreAuthenticator.Skie.KotlinxSerializationCore.StructureKind {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case cLASS(CoreAuthenticator.Kotlinx_serialization_coreStructureKind.CLASS)
+    case lIST(CoreAuthenticator.Kotlinx_serialization_coreStructureKind.LIST)
+    case mAP(CoreAuthenticator.Kotlinx_serialization_coreStructureKind.MAP)
+    case oBJECT(CoreAuthenticator.Kotlinx_serialization_coreStructureKind.OBJECT)
+    public static func == (a: CoreAuthenticator.Skie.KotlinxSerializationCore.StructureKind.__Sealed, b: CoreAuthenticator.Skie.KotlinxSerializationCore.StructureKind.__Sealed) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> CoreAuthenticator.Skie.KotlinxSerializationCore.StructureKind.__Sealed where __Sealed : CoreAuthenticator.Kotlinx_serialization_coreStructureKind
+#if compiler(>=5.3) && $NonescapableTypes
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> CoreAuthenticator.Skie.KotlinxSerializationCore.StructureKind.__Sealed? where __Sealed : CoreAuthenticator.Kotlinx_serialization_coreStructureKind
+#endif
 public func getAppSettingsDatabaseBuilder() -> CoreAuthenticator.Room_runtimeRoomDatabaseBuilder<CoreAuthenticator.AppSettingsDatabase>
 public func getAppSettingsRoomDatabase() -> CoreAuthenticator.AppSettingsDatabase
 public func getAppSettingsRoomDatabase(builder: CoreAuthenticator.Room_runtimeRoomDatabaseBuilder<CoreAuthenticator.AppSettingsDatabase>) -> CoreAuthenticator.AppSettingsDatabase
@@ -1248,6 +1390,8 @@ extension CoreAuthenticator.Theme : Swift.Sendable {}
 extension CoreAuthenticator.Theme : Swift.BitwiseCopyable {}
 extension CoreAuthenticator.KeyStorageLocation : Swift.Sendable {}
 extension CoreAuthenticator.KeyStorageLocation : Swift.BitwiseCopyable {}
+extension CoreAuthenticator.ApiResponseStatus : Swift.Sendable {}
+extension CoreAuthenticator.ApiResponseStatus : Swift.BitwiseCopyable {}
 extension CoreAuthenticator.MatomoCategory : Swift.Sendable {}
 extension CoreAuthenticator.MatomoCategory : Swift.BitwiseCopyable {}
 extension CoreAuthenticator.MatomoName : Swift.Sendable {}
@@ -1256,3 +1400,5 @@ extension CoreAuthenticator.MatomoScreen : Swift.Sendable {}
 extension CoreAuthenticator.MatomoScreen : Swift.BitwiseCopyable {}
 extension CoreAuthenticator.__Bridge__Room_runtimeRoomDatabase_JournalMode : Swift.Sendable {}
 extension CoreAuthenticator.__Bridge__Room_runtimeRoomDatabase_JournalMode : Swift.BitwiseCopyable {}
+extension CoreAuthenticator.Skie.KotlinxSerializationCore.SerializersModule.__Sealed : Swift.Sendable {}
+extension CoreAuthenticator.Skie.KotlinxSerializationCore.SerializersModule.__Sealed : Swift.BitwiseCopyable {}
