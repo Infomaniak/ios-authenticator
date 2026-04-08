@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import AuthenticatorCore
 
 struct ChangeThemeSettingsCard: View {
     let theme: Theme

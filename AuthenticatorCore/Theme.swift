@@ -7,11 +7,11 @@
 
 import Foundation
 
-enum Theme {
+public enum Theme {
     case light
     case dark
     case system
-    var localizedName: String {
+    public var localizedName: String {
         switch self {
         case .dark:
             return "Sombre"
@@ -22,7 +22,7 @@ enum Theme {
         }
     }
 
-    var rawValue: String {
+    public var rawValue: String {
         switch self {
         case .dark:
             return "dark"
