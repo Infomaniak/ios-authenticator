@@ -29,7 +29,9 @@ struct ChangeThemeSettingsCard: View {
             currentTheme = theme
         } label: {
             HStack {
-                ChangeThemeSettingsIndicator(theme: theme)
+                theme.image?
+                    .resizable()
+                    .frame(width: 24, height: 24)
                 Text(theme.localizedName)
                     .foregroundStyle(.foreground)
                     .frame(maxWidth: .infinity, alignment: .leading)
