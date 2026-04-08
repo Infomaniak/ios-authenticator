@@ -58,7 +58,7 @@ public enum Theme: String, Sendable, CaseIterable, Identifiable {
         case .dark:
             return AuthenticatorResourcesAsset.Images.circleDark.swiftUIImage
         case .system:
-            return AuthenticatorResourcesAsset.Images.circleLightDark.swiftUIImage
+            return AuthenticatorResourcesAsset.Images.circleLightAndDark.swiftUIImage
         }
     }
 }
