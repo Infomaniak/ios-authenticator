@@ -17,6 +17,7 @@
  */
 
 import AuthenticatorCore
+import DesignSystem
 import SwiftUI
 
 struct ChangeThemeSettingsCard: View {
@@ -28,8 +29,8 @@ struct ChangeThemeSettingsCard: View {
         Button {
             currentTheme = theme
         } label: {
-            HStack {
-                theme.image?
+            HStack(spacing: IKPadding.mini) {
+                theme.image
                     .resizable()
                     .frame(width: 24, height: 24)
                 Text(theme.localizedName)

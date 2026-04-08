@@ -25,6 +25,10 @@ public enum Theme: String, Sendable, CaseIterable, Identifiable {
     case dark
     case system
 
+    public var id: String {
+        return rawValue
+    }
+
     public var asColorScheme: ColorScheme? {
         switch self {
         case .light:
@@ -34,10 +38,6 @@ public enum Theme: String, Sendable, CaseIterable, Identifiable {
         case .system:
             return nil
         }
-    }
-
-    public var id: String {
-        return rawValue
     }
 
     public var localizedName: String {
@@ -51,7 +51,7 @@ public enum Theme: String, Sendable, CaseIterable, Identifiable {
         }
     }
 
-    public var image: Image? {
+    public var image: Image {
         switch self {
         case .light:
             return AuthenticatorResourcesAsset.Images.circleLight.swiftUIImage
