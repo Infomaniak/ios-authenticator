@@ -17,10 +17,12 @@
  */
 
 import AuthenticatorCore
+import AuthenticatorCoreUI
+import AuthenticatorResources
 import DesignSystem
 import SwiftUI
 
-struct ChangeThemeSettingsCard: View {
+struct ChangeThemeSettingsCell: View {
     @AppStorage(UserDefaults.shared.key(.theme), store: .shared) private var currentTheme = DefaultPreferences.theme
 
     let theme: Theme
@@ -33,19 +35,22 @@ struct ChangeThemeSettingsCard: View {
                 theme.image
                     .resizable()
                     .frame(width: 24, height: 24)
+                    .accessibilityHidden(true)
+
                 Text(theme.localizedName)
-                    .foregroundStyle(.foreground)
                     .frame(maxWidth: .infinity, alignment: .leading)
 
                 if currentTheme == theme {
                     Image(systemName: "checkmark")
                         .foregroundStyle(.foreground)
+                        .accessibilityLabel(AuthenticatorResourcesStrings.accessibilityHintCurrentTheme)
                 }
             }
+            .foregroundStyle(Color.Token.Text.primary)
         }
     }
 }
 
 #Preview {
-    ChangeThemeSettingsCard(theme: .light)
+    ChangeThemeSettingsCell(theme: .light)
 }

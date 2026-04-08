@@ -24,7 +24,7 @@ struct ChangeThemeSettingsView: View {
     var body: some View {
         Form {
             ForEach(Theme.allCases) { theme in
-                ChangeThemeSettingsCard(theme: theme)
+                ChangeThemeSettingsCell(theme: theme)
             }
         }
         .navigationTitle(AuthenticatorResourcesStrings.themeTitle)
