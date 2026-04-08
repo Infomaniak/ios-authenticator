@@ -16,9 +16,21 @@
  along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-public enum DefaultPreferences {
-    public static let notificationsEnabled = true
-    public static let appLock = false
-    public static let sentryAuthorized = true
-    public static let theme = Theme.system
+import AuthenticatorCore
+import AuthenticatorResources
+import SwiftUI
+
+struct ChangeThemeSettingsView: View {
+    var body: some View {
+        Form {
+            ForEach(Theme.allCases) { theme in
+                ChangeThemeSettingsCell(theme: theme)
+            }
+        }
+        .navigationTitle(AuthenticatorResourcesStrings.themeTitle)
+    }
+}
+
+#Preview {
+    ChangeThemeSettingsView()
 }
