@@ -16,31 +16,49 @@
  along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
+import AuthenticatorResources
 import Foundation
+import SwiftUI
 
-public enum Theme {
+public enum Theme: String, Sendable, CaseIterable, Identifiable {
     case light
     case dark
     case system
-    public var localizedName: String {
+
+    public var asColorScheme: ColorScheme? {
         switch self {
-        case .dark:
-            return "Sombre"
         case .light:
-            return "Clair"
+            return .light
+        case .dark:
+            return .dark
         case .system:
-            return "Système"
+            return nil
         }
     }
 
-    public var rawValue: String {
+    public var id: String {
+        return rawValue
+    }
+
+    public var localizedName: String {
         switch self {
         case .dark:
-            return "dark"
+            return AuthenticatorResourcesStrings.themeDark
         case .light:
-            return "light"
+            return AuthenticatorResourcesStrings.themeLight
         case .system:
-            return "system"
+            return AuthenticatorResourcesStrings.themeSystem
+        }
+    }
+
+    public var image: Image? {
+        switch self {
+        case .light:
+            return AuthenticatorResourcesAsset.Images.circleLight.swiftUIImage
+        case .dark:
+            return AuthenticatorResourcesAsset.Images.circleDark.swiftUIImage
+        case .system:
+            return AuthenticatorResourcesAsset.Images.circleLightDark.swiftUIImage
         }
     }
 }

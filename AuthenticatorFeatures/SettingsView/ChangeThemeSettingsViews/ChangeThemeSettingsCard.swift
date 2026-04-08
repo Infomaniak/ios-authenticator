@@ -16,23 +16,25 @@
  along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-import SwiftUI
 import AuthenticatorCore
+import SwiftUI
 
 struct ChangeThemeSettingsCard: View {
+    @AppStorage(UserDefaults.shared.key(.theme), store: .shared) private var currentTheme = DefaultPreferences.theme
+
     let theme: Theme
-    @Binding var currentTheme: String
+
     var body: some View {
         Button {
-            UserDefaults.standard.set(theme.rawValue, forKey: "theme")
-            currentTheme = theme.rawValue
+            currentTheme = theme
         } label: {
             HStack {
                 ChangeThemeSettingsIndicator(theme: theme)
                 Text(theme.localizedName)
                     .foregroundStyle(.foreground)
-                Spacer()
-                if currentTheme == theme.rawValue {
+                    .frame(maxWidth: .infinity, alignment: .leading)
+
+                if currentTheme == theme {
                     Image(systemName: "checkmark")
                         .foregroundStyle(.foreground)
                 }
@@ -42,5 +44,5 @@ struct ChangeThemeSettingsCard: View {
 }
 
 #Preview {
-    ChangeThemeSettingsCard(theme: .light, currentTheme: .constant("light"))
+    ChangeThemeSettingsCard(theme: .light)
 }

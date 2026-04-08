@@ -17,17 +17,17 @@
  */
 
 import AuthenticatorCore
+import AuthenticatorResources
 import SwiftUI
 
 struct ChangeThemeSettingsView: View {
-    @State private var currentTheme = UserDefaults.standard.value(forKeyPath: "theme") as! String
     var body: some View {
         Form {
-            ChangeThemeSettingsCard(theme: .light, currentTheme: $currentTheme)
-            ChangeThemeSettingsCard(theme: .dark, currentTheme: $currentTheme)
-            ChangeThemeSettingsCard(theme: .system, currentTheme: $currentTheme)
+            ForEach(Theme.allCases) { theme in
+                ChangeThemeSettingsCard(theme: theme)
+            }
         }
-        .navigationTitle("Thème")
+        .navigationTitle(AuthenticatorResourcesStrings.themeTitle)
     }
 }
 

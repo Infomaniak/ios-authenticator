@@ -3,8 +3,8 @@
  * Project: Authenticator
  * Locale: en, English
  * Tagged: ios
- * Exported by: Jordan Chapelle
- * Exported at: Tue, 24 Feb 2026 11:05:16 +0100
+ * Exported by: Killian Mathias
+ * Exported at: Wed, 08 Apr 2026 09:13:37 +0200
  */
 
 /* loco:695e825042bb2b44f30a2bc3 */
@@ -327,6 +327,18 @@
 
 /* loco:695e97c480cab9ddd40df272 */
 "supportResponseDelay" = "We will respond within the next 24 business hours.";
+
+/* loco:6984aaf72ee9e539cc034522 */
+"themeDark" = "Dark";
+
+/* loco:6984aaea096886f05104ebd2 */
+"themeLight" = "Light";
+
+/* loco:6984ab07a677e4296f00a552 */
+"themeSystem" = "System";
+
+/* loco:6984a5b068e4c318150d2475 */
+"themeTitle" = "Theme";
 
 /* loco:695e981795a53b5f09055eb2 */
 "ticketSentSuccessDescription" = "We are doing our best to ensure an agent responds to you as soon as possible.";
