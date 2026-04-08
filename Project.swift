@@ -183,5 +183,6 @@ let project = Project(
                     "\(Constants.projectName)Resources/**/*.json"
                 ],
                 settings: .settings(base: Constants.baseSettings))
-    ]
+    ],
+    fileHeaderTemplate: .file("file-header-template.txt")
 )
