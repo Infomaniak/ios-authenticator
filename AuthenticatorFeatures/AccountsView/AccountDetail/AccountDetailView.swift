@@ -19,12 +19,12 @@
 import AuthenticatorCore
 import AuthenticatorCoreUI
 import AuthenticatorResources
+import CoreAuthenticator
 import DesignSystem
 import InAppTwoFactorAuthentication
-import InfomaniakCore
+@preconcurrency import InfomaniakCore
 import InfomaniakDI
 import SwiftUI
-import CoreAuthenticator
 
 struct AccountDetailView: View {
     @State private var isShowingDisconnectConfirmationAlert = false
@@ -76,16 +76,14 @@ struct AccountDetailView: View {
         .autoLoginWebView(protectedURL: $presentedWebViewURL, userId: Int(account.id))
         .alert(AuthenticatorResourcesStrings.disconnectAccountWarningTitle, isPresented: $isShowingDisconnectWarningAlert) {
             Button(AuthenticatorResourcesStrings.checkMyMethodsButton) {
-//                CoreAuthenticator.UrlConstants.shared.managerUrl(host: ApiEnvironment.current.host, path: UrlConstants.shared.SETTINGS_MANAGER_URL)
-                let host = "staging-authenticator.dev.infomaniak.ch"
-                let SETTINGS_2FA_MANAGER_URL = "ng/profile/user/security-and-recovery-parameters/dashboard?global-settings=user-account-security-2fa"
-                let urlString = UrlConstants.shared.managerUrl(host: host, path: SETTINGS_2FA_MANAGER_URL)
-                guard let url = URL(string: urlString) else {
-                    fatalError("Invalid URL")
-                }
-                presentedWebViewURL = url
+                let urlPath = CoreAuthenticator.UrlConstants.shared.managerUrl(
+                    host: ApiEnvironment.current.host,
+                    path: UrlConstants.shared.SETTINGS_2FA_MANAGER_URL
+                )
+
+                presentedWebViewURL = URL(string: urlPath)
             }
-                .keyboardShortcut(.defaultAction)
+            .keyboardShortcut(.defaultAction)
 
             Button(AuthenticatorResourcesStrings.disconnectAccountTitle, role: .destructive) {
                 isShowingDisconnectConfirmationAlert = true
