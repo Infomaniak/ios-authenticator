@@ -114,15 +114,15 @@ public final class RootViewState: ObservableObject {
         Task {
             for try await status in authenticatorFacade.appStatus {
                 lastKnownAppStatus = status
-                if let loginRequired = status as? AppStatusLoginRequiredMigratingFromLegacyKAuth {
+                if status is AppStatusLoginRequiredMigratingFromLegacyKAuth {
                     state = .migration(.migration)
-                } else if let loginRequired = status as? AppStatusLoginRequiredNotMigrating {
+                } else if status is AppStatusLoginRequiredNotMigrating {
                     state = .newAccount(.login)
-                } else if let loggingIn = status as? AppStatusLoggingIn {
+                } else if status is AppStatusLoggingIn {
                     state = .newAccount(.loginInProgress)
-                } else if let setupComplete = status as? AppStatusEverythingReady {
+                } else if status is AppStatusEverythingReady {
                     state = .newAccount(.success)
-                } else if let loggedIn = status as? AppStatusSetupComplete {
+                } else if status is AppStatusSetupComplete {
                     state = .mainView(MainViewState())
                 } else if status is AppStatusAddingAnAccount {
                     state = .newAccount(.addAccount)
