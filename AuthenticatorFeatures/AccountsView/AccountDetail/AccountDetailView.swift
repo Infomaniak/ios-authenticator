@@ -19,9 +19,10 @@
 import AuthenticatorCore
 import AuthenticatorCoreUI
 import AuthenticatorResources
+import CoreAuthenticator
 import DesignSystem
 import InAppTwoFactorAuthentication
-import InfomaniakCore
+@preconcurrency import InfomaniakCore
 import InfomaniakDI
 import SwiftUI
 
@@ -74,8 +75,15 @@ struct AccountDetailView: View {
         .scrollBounceBehavior(.basedOnSize)
         .autoLoginWebView(protectedURL: $presentedWebViewURL, userId: Int(account.id))
         .alert(AuthenticatorResourcesStrings.disconnectAccountWarningTitle, isPresented: $isShowingDisconnectWarningAlert) {
-            Button(AuthenticatorResourcesStrings.checkMyMethodsButton) {}
-                .keyboardShortcut(.defaultAction)
+            Button(AuthenticatorResourcesStrings.checkMyMethodsButton) {
+                let urlPath = CoreAuthenticator.UrlConstants.shared.managerUrl(
+                    host: ApiEnvironment.current.host,
+                    path: UrlConstants.shared.SETTINGS_2FA_MANAGER_URL
+                )
+
+                presentedWebViewURL = URL(string: urlPath)
+            }
+            .keyboardShortcut(.defaultAction)
 
             Button(AuthenticatorResourcesStrings.disconnectAccountTitle, role: .destructive) {
                 isShowingDisconnectConfirmationAlert = true
