@@ -24,6 +24,7 @@ import SwiftUI
 @MainActor
 public enum OnboardingStep: Equatable {
     case login
+    case addAccount
     case migration
     case loginInProgress
     case migrationInProgress
@@ -31,6 +32,7 @@ public enum OnboardingStep: Equatable {
     case biometry
 
     public static let loginSteps: [OnboardingStep] = [.login, .loginInProgress, .success]
+    public static let addAccountSteps: [OnboardingStep] = [.addAccount, .loginInProgress, .success]
     public static let migrationSteps: [OnboardingStep] = [.migration, .migrationInProgress, .success]
 }
 
@@ -57,6 +59,7 @@ public enum RootViewType: @MainActor Equatable {
     case preloading
     case migration(OnboardingStep)
     case newAccount(OnboardingStep)
+    case addAccount(OnboardingStep)
     case updateRequired
 }
 
@@ -91,6 +94,22 @@ public final class RootViewState: ObservableObject {
         onboardingDone.proceed()
     }
 
+    public func addAccount() {
+        guard let appStatusSetupComplete = lastKnownAppStatus as? AppStatusSetupComplete else {
+            return
+        }
+
+        appStatusSetupComplete.addAnAccount()
+    }
+
+    public func cancelAddAccount() {
+        guard let appStatusAddingAnAccount = lastKnownAppStatus as? AppStatusAddingAnAccount else {
+            return
+        }
+
+        appStatusAddingAnAccount.cancel()
+    }
+
     func observeAppStatus() {
         Task {
             for try await status in authenticatorFacade.appStatus {
@@ -105,6 +124,8 @@ public final class RootViewState: ObservableObject {
                     state = .newAccount(.success)
                 } else if let loggedIn = status as? AppStatusSetupComplete {
                     state = .mainView(MainViewState())
+                } else if status is AppStatusAddingAnAccount {
+                    state = .newAccount(.addAccount)
                 }
             }
         }

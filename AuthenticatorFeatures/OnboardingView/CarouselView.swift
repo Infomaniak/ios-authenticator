@@ -25,11 +25,18 @@ struct CarouselView<BottomView: View>: UIViewControllerRepresentable {
     @Binding var selectedSlide: Int
 
     let slides: [Slide]
+    let dismissHandler: (@Sendable () -> Void)?
 
     @ViewBuilder var bottomView: (Int) -> BottomView
 
-    init(slides: [Slide], selectedSlide: Binding<Int>, @ViewBuilder bottomView: @escaping (Int) -> BottomView) {
+    init(
+        slides: [Slide],
+        selectedSlide: Binding<Int>,
+        dismissHandler: (@Sendable () -> Void)?,
+        @ViewBuilder bottomView: @escaping (Int) -> BottomView
+    ) {
         self.slides = slides
+        self.dismissHandler = dismissHandler
         _selectedSlide = selectedSlide
         self.bottomView = bottomView
     }
@@ -40,7 +47,7 @@ struct CarouselView<BottomView: View>: UIViewControllerRepresentable {
             slides: slides,
             pageIndicatorColor: UIColor(Color.Token.primary),
             isScrollEnabled: false,
-            dismissHandler: nil,
+            dismissHandler: dismissHandler,
             isPageIndicatorHidden: true
         )
 

@@ -28,6 +28,7 @@ import SwiftUI
 
 public struct AccountsView: View {
     @EnvironmentObject private var mainViewState: MainViewState
+    @EnvironmentObject private var rootViewState: RootViewState
 
     @ScaledMetric(relativeTo: .largeTitle) private var scaledLargeTitle: CGFloat = UIFont.preferredFont(forTextStyle: .largeTitle)
         .pointSize // ⚠️ Reading ScaledMetric at app level breaks app tinting - FB22435372
@@ -58,9 +59,7 @@ public struct AccountsView: View {
             .refreshable(action: refreshAccountsList)
             .toolbar {
                 ToolbarItem(placement: .primaryAction) {
-                    Button {
-                        // TODO: Add an account
-                    } label: {
+                    Button(action: rootViewState.addAccount) {
                         AuthenticatorLabel(\.addAccountButton, iconKey: \.plus)
                     }
                     .primaryActionToolbarButtonStyle()
