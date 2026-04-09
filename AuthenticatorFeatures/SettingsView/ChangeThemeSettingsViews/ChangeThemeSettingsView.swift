@@ -17,6 +17,7 @@
  */
 
 import AuthenticatorCore
+import AuthenticatorCoreUI
 import AuthenticatorResources
 import SwiftUI
 
@@ -27,7 +28,9 @@ struct ChangeThemeSettingsView: View {
                 ChangeThemeSettingsCell(theme: theme)
             }
         }
+        .authScrollViewStyle()
         .navigationTitle(AuthenticatorResourcesStrings.themeTitle)
+        .navigationBarTitleDisplayMode(.inline)
     }
 }
 

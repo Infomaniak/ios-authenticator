@@ -37,7 +37,6 @@ public struct SettingsView: View {
             List {
                 Section {
                     Toggle(AuthenticatorResourcesStrings.enableNotifications, isOn: $isNotificationsEnabled)
-
                     ToggleAppLockSettingsView()
                     NavigationLink(AuthenticatorResourcesStrings.themeTitle) {
                         ChangeThemeSettingsView()
