@@ -3,8 +3,8 @@
  * Project: Authenticator
  * Locale: es, Spanish
  * Tagged: ios
- * Exported by: Killian Mathias
- * Exported at: Wed, 08 Apr 2026 09:13:37 +0200
+ * Exported by: Valentin Perignon
+ * Exported at: Fri, 10 Apr 2026 09:12:23 +0200
  */
 
 /* loco:69d6617d0ee9dd38d50c99e2 */
@@ -357,6 +357,9 @@
 
 /* loco:695ea1be1f7c9c75e20e56d4 */
 "unlockingWithFaceId" = "Desbloquear con Face ID";
+
+/* loco:69d8a25da2ee7be81d08e504 */
+"urlUserReport" = "https://feedback.userreport.com/55f0cfb4-9f53-431f-aae5-413925a4aaad/";
 
 /* loco:695ea02fac23a6f91c072a74 */
 "verifySecurityButton" = "Verificar mi seguridad";

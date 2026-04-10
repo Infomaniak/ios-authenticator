@@ -56,10 +56,8 @@ public struct SettingsView: View {
                             matomo: matomo
                         )
                     }
-                    if let feedbackUrl = URL(string: "https://www.infomaniak.ch") { // TODO: Replace with localized feedback url
-                        Link(destination: feedbackUrl) {
-                            AuthenticatorTrailingLabel(\.feedbackTitle, iconKey: \.squareArrowDiagonalUp)
-                        }
+                    Link(destination: URL(string: AuthenticatorResourcesStrings.urlUserReport)!) {
+                        AuthenticatorTrailingLabel(\.feedbackTitle, iconKey: \.squareArrowDiagonalUp)
                     }
                     Link(destination: URLConstants.support.url) {
                         AuthenticatorTrailingLabel(\.contactSupportTitle, iconKey: \.squareArrowDiagonalUp)
