@@ -65,7 +65,7 @@ public struct SettingsView: View {
                 }
             }
             .authListStyle()
-            .navigationTitle(Constants.appName)
+            .navigationTitle(AuthenticatorResourcesStrings.settingsTitle)
         }
     }
 }
