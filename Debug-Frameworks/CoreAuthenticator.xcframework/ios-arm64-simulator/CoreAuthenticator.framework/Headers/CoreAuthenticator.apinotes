@@ -2898,6 +2898,10 @@ Classes:
     PropertyKind: "Class"
     SwiftName: "openLoginWebview"
     Type: "CoreAuthenticatorMatomoName * _Nonnull"
+  - Name: "opencreationwebview"
+    PropertyKind: "Class"
+    SwiftName: "openCreationWebview"
+    Type: "CoreAuthenticatorMatomoName * _Nonnull"
   Methods:
   - Selector: "initWithName:ordinal:"
     MethodKind: "Instance"
@@ -2941,6 +2945,27 @@ Classes:
     - Position: 0
       Type: "NSString * _Nonnull"
     - Position: 1
+      Type: "NSString * _Nonnull"
+  - Selector: "createAccountCancelUrlHost:"
+    MethodKind: "Instance"
+    SwiftName: "createAccountCancelUrl(host:)"
+    ResultType: "NSString * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+  - Selector: "createAccountSuccessUrlHost:"
+    MethodKind: "Instance"
+    SwiftName: "createAccountSuccessUrl(host:)"
+    ResultType: "NSString * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+  - Selector: "createAccountUrlHost:"
+    MethodKind: "Instance"
+    SwiftName: "createAccountUrl(host:)"
+    ResultType: "NSString * _Nonnull"
+    Parameters:
+    - Position: 0
       Type: "NSString * _Nonnull"
   - Selector: "managerUrlHost:path:"
     MethodKind: "Instance"

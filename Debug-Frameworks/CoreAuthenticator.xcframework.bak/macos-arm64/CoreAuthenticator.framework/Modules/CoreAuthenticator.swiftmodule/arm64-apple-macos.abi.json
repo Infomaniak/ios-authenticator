@@ -2277,6 +2277,108 @@
                     "children": [
                       {
                         "kind": "Var",
+                        "name": "addingAnAccount",
+                        "printedName": "addingAnAccount",
+                        "children": [
+                          {
+                            "kind": "TypeFunc",
+                            "name": "Function",
+                            "printedName": "(CoreAuthenticator.Skie.MultiplatformLib.AppStatus.__Sealed.Type) -> (CoreAuthenticator.AppStatusAddingAnAccount) -> CoreAuthenticator.Skie.MultiplatformLib.AppStatus.__Sealed",
+                            "children": [
+                              {
+                                "kind": "TypeFunc",
+                                "name": "Function",
+                                "printedName": "(CoreAuthenticator.AppStatusAddingAnAccount) -> CoreAuthenticator.Skie.MultiplatformLib.AppStatus.__Sealed",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "__Sealed",
+                                    "printedName": "CoreAuthenticator.Skie.MultiplatformLib.AppStatus.__Sealed",
+                                    "usr": "s:17CoreAuthenticator4SkieO16MultiplatformLibO9AppStatusO8__SealedO"
+                                  },
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "AppStatusAddingAnAccount",
+                                    "printedName": "CoreAuthenticator.AppStatusAddingAnAccount",
+                                    "usr": "c:objc(cs)CoreAuthenticatorAppStatusAddingAnAccount"
+                                  }
+                                ]
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Metatype",
+                                "printedName": "CoreAuthenticator.Skie.MultiplatformLib.AppStatus.__Sealed.Type",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "__Sealed",
+                                    "printedName": "CoreAuthenticator.Skie.MultiplatformLib.AppStatus.__Sealed",
+                                    "usr": "s:17CoreAuthenticator4SkieO16MultiplatformLibO9AppStatusO8__SealedO"
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ],
+                        "declKind": "EnumElement",
+                        "usr": "s:17CoreAuthenticator4SkieO16MultiplatformLibO9AppStatusO8__SealedO15addingAnAccountyAISo0abfg6AddingjK0CcAImF",
+                        "mangledName": "$s17CoreAuthenticator4SkieO16MultiplatformLibO9AppStatusO8__SealedO15addingAnAccountyAISo0abfg6AddingjK0CcAImF",
+                        "moduleName": "CoreAuthenticator",
+                        "fixedbinaryorder": 0
+                      },
+                      {
+                        "kind": "Var",
+                        "name": "everythingReady",
+                        "printedName": "everythingReady",
+                        "children": [
+                          {
+                            "kind": "TypeFunc",
+                            "name": "Function",
+                            "printedName": "(CoreAuthenticator.Skie.MultiplatformLib.AppStatus.__Sealed.Type) -> (CoreAuthenticator.AppStatusEverythingReady) -> CoreAuthenticator.Skie.MultiplatformLib.AppStatus.__Sealed",
+                            "children": [
+                              {
+                                "kind": "TypeFunc",
+                                "name": "Function",
+                                "printedName": "(CoreAuthenticator.AppStatusEverythingReady) -> CoreAuthenticator.Skie.MultiplatformLib.AppStatus.__Sealed",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "__Sealed",
+                                    "printedName": "CoreAuthenticator.Skie.MultiplatformLib.AppStatus.__Sealed",
+                                    "usr": "s:17CoreAuthenticator4SkieO16MultiplatformLibO9AppStatusO8__SealedO"
+                                  },
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "AppStatusEverythingReady",
+                                    "printedName": "CoreAuthenticator.AppStatusEverythingReady",
+                                    "usr": "c:objc(cs)CoreAuthenticatorAppStatusEverythingReady"
+                                  }
+                                ]
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Metatype",
+                                "printedName": "CoreAuthenticator.Skie.MultiplatformLib.AppStatus.__Sealed.Type",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "__Sealed",
+                                    "printedName": "CoreAuthenticator.Skie.MultiplatformLib.AppStatus.__Sealed",
+                                    "usr": "s:17CoreAuthenticator4SkieO16MultiplatformLibO9AppStatusO8__SealedO"
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ],
+                        "declKind": "EnumElement",
+                        "usr": "s:17CoreAuthenticator4SkieO16MultiplatformLibO9AppStatusO8__SealedO15everythingReadyyAISo0abfg10EverythingJ0CcAImF",
+                        "mangledName": "$s17CoreAuthenticator4SkieO16MultiplatformLibO9AppStatusO8__SealedO15everythingReadyyAISo0abfg10EverythingJ0CcAImF",
+                        "moduleName": "CoreAuthenticator",
+                        "fixedbinaryorder": 1
+                      },
+                      {
+                        "kind": "Var",
                         "name": "loggingIn",
                         "printedName": "loggingIn",
                         "children": [
@@ -2324,7 +2426,7 @@
                         "usr": "s:17CoreAuthenticator4SkieO16MultiplatformLibO9AppStatusO8__SealedO9loggingInyAISo0abfg7LoggingJ0CcAImF",
                         "mangledName": "$s17CoreAuthenticator4SkieO16MultiplatformLibO9AppStatusO8__SealedO9loggingInyAISo0abfg7LoggingJ0CcAImF",
                         "moduleName": "CoreAuthenticator",
-                        "fixedbinaryorder": 0
+                        "fixedbinaryorder": 2
                       },
                       {
                         "kind": "Var",
@@ -2375,58 +2477,7 @@
                         "usr": "s:17CoreAuthenticator4SkieO16MultiplatformLibO9AppStatusO8__SealedO13loginRequiredyAISo0abfg5LoginJ0_pcAImF",
                         "mangledName": "$s17CoreAuthenticator4SkieO16MultiplatformLibO9AppStatusO8__SealedO13loginRequiredyAISo0abfg5LoginJ0_pcAImF",
                         "moduleName": "CoreAuthenticator",
-                        "fixedbinaryorder": 1
-                      },
-                      {
-                        "kind": "Var",
-                        "name": "onboardingDone",
-                        "printedName": "onboardingDone",
-                        "children": [
-                          {
-                            "kind": "TypeFunc",
-                            "name": "Function",
-                            "printedName": "(CoreAuthenticator.Skie.MultiplatformLib.AppStatus.__Sealed.Type) -> (CoreAuthenticator.AppStatusOnboardingDone) -> CoreAuthenticator.Skie.MultiplatformLib.AppStatus.__Sealed",
-                            "children": [
-                              {
-                                "kind": "TypeFunc",
-                                "name": "Function",
-                                "printedName": "(CoreAuthenticator.AppStatusOnboardingDone) -> CoreAuthenticator.Skie.MultiplatformLib.AppStatus.__Sealed",
-                                "children": [
-                                  {
-                                    "kind": "TypeNominal",
-                                    "name": "__Sealed",
-                                    "printedName": "CoreAuthenticator.Skie.MultiplatformLib.AppStatus.__Sealed",
-                                    "usr": "s:17CoreAuthenticator4SkieO16MultiplatformLibO9AppStatusO8__SealedO"
-                                  },
-                                  {
-                                    "kind": "TypeNominal",
-                                    "name": "AppStatusOnboardingDone",
-                                    "printedName": "CoreAuthenticator.AppStatusOnboardingDone",
-                                    "usr": "c:objc(cs)CoreAuthenticatorAppStatusOnboardingDone"
-                                  }
-                                ]
-                              },
-                              {
-                                "kind": "TypeNominal",
-                                "name": "Metatype",
-                                "printedName": "CoreAuthenticator.Skie.MultiplatformLib.AppStatus.__Sealed.Type",
-                                "children": [
-                                  {
-                                    "kind": "TypeNominal",
-                                    "name": "__Sealed",
-                                    "printedName": "CoreAuthenticator.Skie.MultiplatformLib.AppStatus.__Sealed",
-                                    "usr": "s:17CoreAuthenticator4SkieO16MultiplatformLibO9AppStatusO8__SealedO"
-                                  }
-                                ]
-                              }
-                            ]
-                          }
-                        ],
-                        "declKind": "EnumElement",
-                        "usr": "s:17CoreAuthenticator4SkieO16MultiplatformLibO9AppStatusO8__SealedO14onboardingDoneyAISo0abfg10OnboardingJ0CcAImF",
-                        "mangledName": "$s17CoreAuthenticator4SkieO16MultiplatformLibO9AppStatusO8__SealedO14onboardingDoneyAISo0abfg10OnboardingJ0CcAImF",
-                        "moduleName": "CoreAuthenticator",
-                        "fixedbinaryorder": 2
+                        "fixedbinaryorder": 3
                       },
                       {
                         "kind": "Var",
@@ -2477,7 +2528,7 @@
                         "usr": "s:17CoreAuthenticator4SkieO16MultiplatformLibO9AppStatusO8__SealedO13setupCompleteyAISo0abfg5SetupJ0CcAImF",
                         "mangledName": "$s17CoreAuthenticator4SkieO16MultiplatformLibO9AppStatusO8__SealedO13setupCompleteyAISo0abfg5SetupJ0CcAImF",
                         "moduleName": "CoreAuthenticator",
-                        "fixedbinaryorder": 3
+                        "fixedbinaryorder": 4
                       }
                     ],
                     "declKind": "Enum",
@@ -3188,6 +3239,1973 @@
             "declKind": "Enum",
             "usr": "s:17CoreAuthenticator4SkieO16MultiplatformLibO",
             "mangledName": "$s17CoreAuthenticator4SkieO16MultiplatformLibO",
+            "moduleName": "CoreAuthenticator",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              }
+            ]
+          },
+          {
+            "kind": "TypeDecl",
+            "name": "KotlinxSerializationCore",
+            "printedName": "KotlinxSerializationCore",
+            "children": [
+              {
+                "kind": "TypeDecl",
+                "name": "SerialKind",
+                "printedName": "SerialKind",
+                "children": [
+                  {
+                    "kind": "TypeDecl",
+                    "name": "__Sealed",
+                    "printedName": "__Sealed",
+                    "children": [
+                      {
+                        "kind": "Var",
+                        "name": "polymorphicKind",
+                        "printedName": "polymorphicKind",
+                        "children": [
+                          {
+                            "kind": "TypeFunc",
+                            "name": "Function",
+                            "printedName": "(CoreAuthenticator.Skie.KotlinxSerializationCore.SerialKind.__Sealed.Type) -> (CoreAuthenticator.Kotlinx_serialization_corePolymorphicKind) -> CoreAuthenticator.Skie.KotlinxSerializationCore.SerialKind.__Sealed",
+                            "children": [
+                              {
+                                "kind": "TypeFunc",
+                                "name": "Function",
+                                "printedName": "(CoreAuthenticator.Kotlinx_serialization_corePolymorphicKind) -> CoreAuthenticator.Skie.KotlinxSerializationCore.SerialKind.__Sealed",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "__Sealed",
+                                    "printedName": "CoreAuthenticator.Skie.KotlinxSerializationCore.SerialKind.__Sealed",
+                                    "usr": "s:17CoreAuthenticator4SkieO020KotlinxSerializationA0O10SerialKindO8__SealedO"
+                                  },
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "Kotlinx_serialization_corePolymorphicKind",
+                                    "printedName": "CoreAuthenticator.Kotlinx_serialization_corePolymorphicKind",
+                                    "usr": "c:objc(cs)CoreAuthenticatorKotlinx_serialization_corePolymorphicKind"
+                                  }
+                                ]
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Metatype",
+                                "printedName": "CoreAuthenticator.Skie.KotlinxSerializationCore.SerialKind.__Sealed.Type",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "__Sealed",
+                                    "printedName": "CoreAuthenticator.Skie.KotlinxSerializationCore.SerialKind.__Sealed",
+                                    "usr": "s:17CoreAuthenticator4SkieO020KotlinxSerializationA0O10SerialKindO8__SealedO"
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ],
+                        "declKind": "EnumElement",
+                        "usr": "s:17CoreAuthenticator4SkieO020KotlinxSerializationA0O10SerialKindO8__SealedO011polymorphicG0yAISo0abd30_serialization_corePolymorphicG0CcAImF",
+                        "mangledName": "$s17CoreAuthenticator4SkieO020KotlinxSerializationA0O10SerialKindO8__SealedO011polymorphicG0yAISo0abd30_serialization_corePolymorphicG0CcAImF",
+                        "moduleName": "CoreAuthenticator",
+                        "fixedbinaryorder": 0
+                      },
+                      {
+                        "kind": "Var",
+                        "name": "primitiveKind",
+                        "printedName": "primitiveKind",
+                        "children": [
+                          {
+                            "kind": "TypeFunc",
+                            "name": "Function",
+                            "printedName": "(CoreAuthenticator.Skie.KotlinxSerializationCore.SerialKind.__Sealed.Type) -> (CoreAuthenticator.Kotlinx_serialization_corePrimitiveKind) -> CoreAuthenticator.Skie.KotlinxSerializationCore.SerialKind.__Sealed",
+                            "children": [
+                              {
+                                "kind": "TypeFunc",
+                                "name": "Function",
+                                "printedName": "(CoreAuthenticator.Kotlinx_serialization_corePrimitiveKind) -> CoreAuthenticator.Skie.KotlinxSerializationCore.SerialKind.__Sealed",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "__Sealed",
+                                    "printedName": "CoreAuthenticator.Skie.KotlinxSerializationCore.SerialKind.__Sealed",
+                                    "usr": "s:17CoreAuthenticator4SkieO020KotlinxSerializationA0O10SerialKindO8__SealedO"
+                                  },
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "Kotlinx_serialization_corePrimitiveKind",
+                                    "printedName": "CoreAuthenticator.Kotlinx_serialization_corePrimitiveKind",
+                                    "usr": "c:objc(cs)CoreAuthenticatorKotlinx_serialization_corePrimitiveKind"
+                                  }
+                                ]
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Metatype",
+                                "printedName": "CoreAuthenticator.Skie.KotlinxSerializationCore.SerialKind.__Sealed.Type",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "__Sealed",
+                                    "printedName": "CoreAuthenticator.Skie.KotlinxSerializationCore.SerialKind.__Sealed",
+                                    "usr": "s:17CoreAuthenticator4SkieO020KotlinxSerializationA0O10SerialKindO8__SealedO"
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ],
+                        "declKind": "EnumElement",
+                        "usr": "s:17CoreAuthenticator4SkieO020KotlinxSerializationA0O10SerialKindO8__SealedO09primitiveG0yAISo0abd28_serialization_corePrimitiveG0CcAImF",
+                        "mangledName": "$s17CoreAuthenticator4SkieO020KotlinxSerializationA0O10SerialKindO8__SealedO09primitiveG0yAISo0abd28_serialization_corePrimitiveG0CcAImF",
+                        "moduleName": "CoreAuthenticator",
+                        "fixedbinaryorder": 1
+                      },
+                      {
+                        "kind": "Var",
+                        "name": "cONTEXTUAL",
+                        "printedName": "cONTEXTUAL",
+                        "children": [
+                          {
+                            "kind": "TypeFunc",
+                            "name": "Function",
+                            "printedName": "(CoreAuthenticator.Skie.KotlinxSerializationCore.SerialKind.__Sealed.Type) -> (CoreAuthenticator.Kotlinx_serialization_coreSerialKind.CONTEXTUAL) -> CoreAuthenticator.Skie.KotlinxSerializationCore.SerialKind.__Sealed",
+                            "children": [
+                              {
+                                "kind": "TypeFunc",
+                                "name": "Function",
+                                "printedName": "(CoreAuthenticator.Kotlinx_serialization_coreSerialKind.CONTEXTUAL) -> CoreAuthenticator.Skie.KotlinxSerializationCore.SerialKind.__Sealed",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "__Sealed",
+                                    "printedName": "CoreAuthenticator.Skie.KotlinxSerializationCore.SerialKind.__Sealed",
+                                    "usr": "s:17CoreAuthenticator4SkieO020KotlinxSerializationA0O10SerialKindO8__SealedO"
+                                  },
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "CONTEXTUAL",
+                                    "printedName": "CoreAuthenticator.Kotlinx_serialization_coreSerialKind.CONTEXTUAL",
+                                    "usr": "c:objc(cs)CoreAuthenticatorKotlinx_serialization_coreSerialKindCONTEXTUAL"
+                                  }
+                                ]
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Metatype",
+                                "printedName": "CoreAuthenticator.Skie.KotlinxSerializationCore.SerialKind.__Sealed.Type",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "__Sealed",
+                                    "printedName": "CoreAuthenticator.Skie.KotlinxSerializationCore.SerialKind.__Sealed",
+                                    "usr": "s:17CoreAuthenticator4SkieO020KotlinxSerializationA0O10SerialKindO8__SealedO"
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ],
+                        "declKind": "EnumElement",
+                        "usr": "s:17CoreAuthenticator4SkieO020KotlinxSerializationA0O10SerialKindO8__SealedO10cONTEXTUALyAISo0abd19_serialization_corefG10CONTEXTUALCcAImF",
+                        "mangledName": "$s17CoreAuthenticator4SkieO020KotlinxSerializationA0O10SerialKindO8__SealedO10cONTEXTUALyAISo0abd19_serialization_corefG10CONTEXTUALCcAImF",
+                        "moduleName": "CoreAuthenticator",
+                        "fixedbinaryorder": 2
+                      },
+                      {
+                        "kind": "Var",
+                        "name": "eNUM",
+                        "printedName": "eNUM",
+                        "children": [
+                          {
+                            "kind": "TypeFunc",
+                            "name": "Function",
+                            "printedName": "(CoreAuthenticator.Skie.KotlinxSerializationCore.SerialKind.__Sealed.Type) -> (CoreAuthenticator.Kotlinx_serialization_coreSerialKind.ENUM) -> CoreAuthenticator.Skie.KotlinxSerializationCore.SerialKind.__Sealed",
+                            "children": [
+                              {
+                                "kind": "TypeFunc",
+                                "name": "Function",
+                                "printedName": "(CoreAuthenticator.Kotlinx_serialization_coreSerialKind.ENUM) -> CoreAuthenticator.Skie.KotlinxSerializationCore.SerialKind.__Sealed",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "__Sealed",
+                                    "printedName": "CoreAuthenticator.Skie.KotlinxSerializationCore.SerialKind.__Sealed",
+                                    "usr": "s:17CoreAuthenticator4SkieO020KotlinxSerializationA0O10SerialKindO8__SealedO"
+                                  },
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "ENUM",
+                                    "printedName": "CoreAuthenticator.Kotlinx_serialization_coreSerialKind.ENUM",
+                                    "usr": "c:objc(cs)CoreAuthenticatorKotlinx_serialization_coreSerialKindENUM"
+                                  }
+                                ]
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Metatype",
+                                "printedName": "CoreAuthenticator.Skie.KotlinxSerializationCore.SerialKind.__Sealed.Type",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "__Sealed",
+                                    "printedName": "CoreAuthenticator.Skie.KotlinxSerializationCore.SerialKind.__Sealed",
+                                    "usr": "s:17CoreAuthenticator4SkieO020KotlinxSerializationA0O10SerialKindO8__SealedO"
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ],
+                        "declKind": "EnumElement",
+                        "usr": "s:17CoreAuthenticator4SkieO020KotlinxSerializationA0O10SerialKindO8__SealedO4eNUMyAISo0abd19_serialization_corefG4ENUMCcAImF",
+                        "mangledName": "$s17CoreAuthenticator4SkieO020KotlinxSerializationA0O10SerialKindO8__SealedO4eNUMyAISo0abd19_serialization_corefG4ENUMCcAImF",
+                        "moduleName": "CoreAuthenticator",
+                        "fixedbinaryorder": 3
+                      },
+                      {
+                        "kind": "Var",
+                        "name": "structureKind",
+                        "printedName": "structureKind",
+                        "children": [
+                          {
+                            "kind": "TypeFunc",
+                            "name": "Function",
+                            "printedName": "(CoreAuthenticator.Skie.KotlinxSerializationCore.SerialKind.__Sealed.Type) -> (CoreAuthenticator.Kotlinx_serialization_coreStructureKind) -> CoreAuthenticator.Skie.KotlinxSerializationCore.SerialKind.__Sealed",
+                            "children": [
+                              {
+                                "kind": "TypeFunc",
+                                "name": "Function",
+                                "printedName": "(CoreAuthenticator.Kotlinx_serialization_coreStructureKind) -> CoreAuthenticator.Skie.KotlinxSerializationCore.SerialKind.__Sealed",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "__Sealed",
+                                    "printedName": "CoreAuthenticator.Skie.KotlinxSerializationCore.SerialKind.__Sealed",
+                                    "usr": "s:17CoreAuthenticator4SkieO020KotlinxSerializationA0O10SerialKindO8__SealedO"
+                                  },
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "Kotlinx_serialization_coreStructureKind",
+                                    "printedName": "CoreAuthenticator.Kotlinx_serialization_coreStructureKind",
+                                    "usr": "c:objc(cs)CoreAuthenticatorKotlinx_serialization_coreStructureKind"
+                                  }
+                                ]
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Metatype",
+                                "printedName": "CoreAuthenticator.Skie.KotlinxSerializationCore.SerialKind.__Sealed.Type",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "__Sealed",
+                                    "printedName": "CoreAuthenticator.Skie.KotlinxSerializationCore.SerialKind.__Sealed",
+                                    "usr": "s:17CoreAuthenticator4SkieO020KotlinxSerializationA0O10SerialKindO8__SealedO"
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ],
+                        "declKind": "EnumElement",
+                        "usr": "s:17CoreAuthenticator4SkieO020KotlinxSerializationA0O10SerialKindO8__SealedO09structureG0yAISo0abd28_serialization_coreStructureG0CcAImF",
+                        "mangledName": "$s17CoreAuthenticator4SkieO020KotlinxSerializationA0O10SerialKindO8__SealedO09structureG0yAISo0abd28_serialization_coreStructureG0CcAImF",
+                        "moduleName": "CoreAuthenticator",
+                        "fixedbinaryorder": 4
+                      },
+                      {
+                        "kind": "Var",
+                        "name": "hashValue",
+                        "printedName": "hashValue",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int",
+                            "printedName": "Swift.Int",
+                            "usr": "s:Si"
+                          }
+                        ],
+                        "declKind": "Var",
+                        "usr": "s:17CoreAuthenticator4SkieO020KotlinxSerializationA0O10SerialKindO8__SealedO9hashValueSivp",
+                        "mangledName": "$s17CoreAuthenticator4SkieO020KotlinxSerializationA0O10SerialKindO8__SealedO9hashValueSivp",
+                        "moduleName": "CoreAuthenticator",
+                        "implicit": true,
+                        "accessors": [
+                          {
+                            "kind": "Accessor",
+                            "name": "Get",
+                            "printedName": "Get()",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Int",
+                                "printedName": "Swift.Int",
+                                "usr": "s:Si"
+                              }
+                            ],
+                            "declKind": "Accessor",
+                            "usr": "s:17CoreAuthenticator4SkieO020KotlinxSerializationA0O10SerialKindO8__SealedO9hashValueSivg",
+                            "mangledName": "$s17CoreAuthenticator4SkieO020KotlinxSerializationA0O10SerialKindO8__SealedO9hashValueSivg",
+                            "moduleName": "CoreAuthenticator",
+                            "implicit": true,
+                            "accessorKind": "get"
+                          }
+                        ]
+                      },
+                      {
+                        "kind": "Function",
+                        "name": "hash",
+                        "printedName": "hash(into:)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Hasher",
+                            "printedName": "Swift.Hasher",
+                            "paramValueOwnership": "InOut",
+                            "usr": "s:s6HasherV"
+                          }
+                        ],
+                        "declKind": "Func",
+                        "usr": "s:17CoreAuthenticator4SkieO020KotlinxSerializationA0O10SerialKindO8__SealedO4hash4intoys6HasherVz_tF",
+                        "mangledName": "$s17CoreAuthenticator4SkieO020KotlinxSerializationA0O10SerialKindO8__SealedO4hash4intoys6HasherVz_tF",
+                        "moduleName": "CoreAuthenticator",
+                        "implicit": true,
+                        "funcSelfKind": "NonMutating"
+                      },
+                      {
+                        "kind": "Function",
+                        "name": "==",
+                        "printedName": "==(_:_:)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Bool",
+                            "printedName": "Swift.Bool",
+                            "usr": "s:Sb"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "__Sealed",
+                            "printedName": "CoreAuthenticator.Skie.KotlinxSerializationCore.SerialKind.__Sealed",
+                            "usr": "s:17CoreAuthenticator4SkieO020KotlinxSerializationA0O10SerialKindO8__SealedO"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "__Sealed",
+                            "printedName": "CoreAuthenticator.Skie.KotlinxSerializationCore.SerialKind.__Sealed",
+                            "usr": "s:17CoreAuthenticator4SkieO020KotlinxSerializationA0O10SerialKindO8__SealedO"
+                          }
+                        ],
+                        "declKind": "Func",
+                        "usr": "s:17CoreAuthenticator4SkieO020KotlinxSerializationA0O10SerialKindO8__SealedO2eeoiySbAI_AItFZ",
+                        "mangledName": "$s17CoreAuthenticator4SkieO020KotlinxSerializationA0O10SerialKindO8__SealedO2eeoiySbAI_AItFZ",
+                        "moduleName": "CoreAuthenticator",
+                        "static": true,
+                        "implicit": true,
+                        "funcSelfKind": "NonMutating"
+                      }
+                    ],
+                    "declKind": "Enum",
+                    "usr": "s:17CoreAuthenticator4SkieO020KotlinxSerializationA0O10SerialKindO8__SealedO",
+                    "mangledName": "$s17CoreAuthenticator4SkieO020KotlinxSerializationA0O10SerialKindO8__SealedO",
+                    "moduleName": "CoreAuthenticator",
+                    "declAttributes": [
+                      "AccessControl",
+                      "Frozen"
+                    ],
+                    "isFromExtension": true,
+                    "isEnumExhaustive": true,
+                    "conformances": [
+                      {
+                        "kind": "Conformance",
+                        "name": "Copyable",
+                        "printedName": "Copyable",
+                        "usr": "s:s8CopyableP",
+                        "mangledName": "$ss8CopyableP"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "Escapable",
+                        "printedName": "Escapable",
+                        "usr": "s:s9EscapableP",
+                        "mangledName": "$ss9EscapableP"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "Hashable",
+                        "printedName": "Hashable",
+                        "usr": "s:SH",
+                        "mangledName": "$sSH"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "Equatable",
+                        "printedName": "Equatable",
+                        "usr": "s:SQ",
+                        "mangledName": "$sSQ"
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "Enum",
+                "usr": "s:17CoreAuthenticator4SkieO020KotlinxSerializationA0O10SerialKindO",
+                "mangledName": "$s17CoreAuthenticator4SkieO020KotlinxSerializationA0O10SerialKindO",
+                "moduleName": "CoreAuthenticator",
+                "declAttributes": [
+                  "AccessControl"
+                ],
+                "conformances": [
+                  {
+                    "kind": "Conformance",
+                    "name": "Copyable",
+                    "printedName": "Copyable",
+                    "usr": "s:s8CopyableP",
+                    "mangledName": "$ss8CopyableP"
+                  },
+                  {
+                    "kind": "Conformance",
+                    "name": "Escapable",
+                    "printedName": "Escapable",
+                    "usr": "s:s9EscapableP",
+                    "mangledName": "$ss9EscapableP"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeDecl",
+                "name": "SerializersModule",
+                "printedName": "SerializersModule",
+                "children": [
+                  {
+                    "kind": "TypeDecl",
+                    "name": "__Sealed",
+                    "printedName": "__Sealed",
+                    "children": [
+                      {
+                        "kind": "Var",
+                        "name": "else",
+                        "printedName": "else",
+                        "children": [
+                          {
+                            "kind": "TypeFunc",
+                            "name": "Function",
+                            "printedName": "(CoreAuthenticator.Skie.KotlinxSerializationCore.SerializersModule.__Sealed.Type) -> CoreAuthenticator.Skie.KotlinxSerializationCore.SerializersModule.__Sealed",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "__Sealed",
+                                "printedName": "CoreAuthenticator.Skie.KotlinxSerializationCore.SerializersModule.__Sealed",
+                                "usr": "s:17CoreAuthenticator4SkieO020KotlinxSerializationA0O17SerializersModuleO8__SealedO"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Metatype",
+                                "printedName": "CoreAuthenticator.Skie.KotlinxSerializationCore.SerializersModule.__Sealed.Type",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "__Sealed",
+                                    "printedName": "CoreAuthenticator.Skie.KotlinxSerializationCore.SerializersModule.__Sealed",
+                                    "usr": "s:17CoreAuthenticator4SkieO020KotlinxSerializationA0O17SerializersModuleO8__SealedO"
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ],
+                        "declKind": "EnumElement",
+                        "usr": "s:17CoreAuthenticator4SkieO020KotlinxSerializationA0O17SerializersModuleO8__SealedO4elseyA2ImF",
+                        "mangledName": "$s17CoreAuthenticator4SkieO020KotlinxSerializationA0O17SerializersModuleO8__SealedO4elseyA2ImF",
+                        "moduleName": "CoreAuthenticator",
+                        "fixedbinaryorder": 0
+                      },
+                      {
+                        "kind": "Function",
+                        "name": "==",
+                        "printedName": "==(_:_:)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Bool",
+                            "printedName": "Swift.Bool",
+                            "usr": "s:Sb"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "__Sealed",
+                            "printedName": "CoreAuthenticator.Skie.KotlinxSerializationCore.SerializersModule.__Sealed",
+                            "usr": "s:17CoreAuthenticator4SkieO020KotlinxSerializationA0O17SerializersModuleO8__SealedO"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "__Sealed",
+                            "printedName": "CoreAuthenticator.Skie.KotlinxSerializationCore.SerializersModule.__Sealed",
+                            "usr": "s:17CoreAuthenticator4SkieO020KotlinxSerializationA0O17SerializersModuleO8__SealedO"
+                          }
+                        ],
+                        "declKind": "Func",
+                        "usr": "s:17CoreAuthenticator4SkieO020KotlinxSerializationA0O17SerializersModuleO8__SealedO2eeoiySbAI_AItFZ",
+                        "mangledName": "$s17CoreAuthenticator4SkieO020KotlinxSerializationA0O17SerializersModuleO8__SealedO2eeoiySbAI_AItFZ",
+                        "moduleName": "CoreAuthenticator",
+                        "static": true,
+                        "implicit": true,
+                        "funcSelfKind": "NonMutating"
+                      },
+                      {
+                        "kind": "Var",
+                        "name": "hashValue",
+                        "printedName": "hashValue",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int",
+                            "printedName": "Swift.Int",
+                            "usr": "s:Si"
+                          }
+                        ],
+                        "declKind": "Var",
+                        "usr": "s:17CoreAuthenticator4SkieO020KotlinxSerializationA0O17SerializersModuleO8__SealedO9hashValueSivp",
+                        "mangledName": "$s17CoreAuthenticator4SkieO020KotlinxSerializationA0O17SerializersModuleO8__SealedO9hashValueSivp",
+                        "moduleName": "CoreAuthenticator",
+                        "implicit": true,
+                        "accessors": [
+                          {
+                            "kind": "Accessor",
+                            "name": "Get",
+                            "printedName": "Get()",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Int",
+                                "printedName": "Swift.Int",
+                                "usr": "s:Si"
+                              }
+                            ],
+                            "declKind": "Accessor",
+                            "usr": "s:17CoreAuthenticator4SkieO020KotlinxSerializationA0O17SerializersModuleO8__SealedO9hashValueSivg",
+                            "mangledName": "$s17CoreAuthenticator4SkieO020KotlinxSerializationA0O17SerializersModuleO8__SealedO9hashValueSivg",
+                            "moduleName": "CoreAuthenticator",
+                            "implicit": true,
+                            "accessorKind": "get"
+                          }
+                        ]
+                      },
+                      {
+                        "kind": "Function",
+                        "name": "hash",
+                        "printedName": "hash(into:)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Hasher",
+                            "printedName": "Swift.Hasher",
+                            "paramValueOwnership": "InOut",
+                            "usr": "s:s6HasherV"
+                          }
+                        ],
+                        "declKind": "Func",
+                        "usr": "s:17CoreAuthenticator4SkieO020KotlinxSerializationA0O17SerializersModuleO8__SealedO4hash4intoys6HasherVz_tF",
+                        "mangledName": "$s17CoreAuthenticator4SkieO020KotlinxSerializationA0O17SerializersModuleO8__SealedO4hash4intoys6HasherVz_tF",
+                        "moduleName": "CoreAuthenticator",
+                        "implicit": true,
+                        "funcSelfKind": "NonMutating"
+                      }
+                    ],
+                    "declKind": "Enum",
+                    "usr": "s:17CoreAuthenticator4SkieO020KotlinxSerializationA0O17SerializersModuleO8__SealedO",
+                    "mangledName": "$s17CoreAuthenticator4SkieO020KotlinxSerializationA0O17SerializersModuleO8__SealedO",
+                    "moduleName": "CoreAuthenticator",
+                    "declAttributes": [
+                      "AccessControl",
+                      "Frozen"
+                    ],
+                    "isFromExtension": true,
+                    "isEnumExhaustive": true,
+                    "conformances": [
+                      {
+                        "kind": "Conformance",
+                        "name": "Copyable",
+                        "printedName": "Copyable",
+                        "usr": "s:s8CopyableP",
+                        "mangledName": "$ss8CopyableP"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "Escapable",
+                        "printedName": "Escapable",
+                        "usr": "s:s9EscapableP",
+                        "mangledName": "$ss9EscapableP"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "Equatable",
+                        "printedName": "Equatable",
+                        "usr": "s:SQ",
+                        "mangledName": "$sSQ"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "Hashable",
+                        "printedName": "Hashable",
+                        "usr": "s:SH",
+                        "mangledName": "$sSH"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "Sendable",
+                        "printedName": "Sendable",
+                        "usr": "s:s8SendableP",
+                        "mangledName": "$ss8SendableP"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "BitwiseCopyable",
+                        "printedName": "BitwiseCopyable",
+                        "usr": "s:s15BitwiseCopyableP",
+                        "mangledName": "$ss15BitwiseCopyableP"
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "Enum",
+                "usr": "s:17CoreAuthenticator4SkieO020KotlinxSerializationA0O17SerializersModuleO",
+                "mangledName": "$s17CoreAuthenticator4SkieO020KotlinxSerializationA0O17SerializersModuleO",
+                "moduleName": "CoreAuthenticator",
+                "declAttributes": [
+                  "AccessControl"
+                ],
+                "conformances": [
+                  {
+                    "kind": "Conformance",
+                    "name": "Copyable",
+                    "printedName": "Copyable",
+                    "usr": "s:s8CopyableP",
+                    "mangledName": "$ss8CopyableP"
+                  },
+                  {
+                    "kind": "Conformance",
+                    "name": "Escapable",
+                    "printedName": "Escapable",
+                    "usr": "s:s9EscapableP",
+                    "mangledName": "$ss9EscapableP"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeDecl",
+                "name": "PolymorphicKind",
+                "printedName": "PolymorphicKind",
+                "children": [
+                  {
+                    "kind": "TypeDecl",
+                    "name": "__Sealed",
+                    "printedName": "__Sealed",
+                    "children": [
+                      {
+                        "kind": "Var",
+                        "name": "oPEN",
+                        "printedName": "oPEN",
+                        "children": [
+                          {
+                            "kind": "TypeFunc",
+                            "name": "Function",
+                            "printedName": "(CoreAuthenticator.Skie.KotlinxSerializationCore.PolymorphicKind.__Sealed.Type) -> (CoreAuthenticator.Kotlinx_serialization_corePolymorphicKind.OPEN) -> CoreAuthenticator.Skie.KotlinxSerializationCore.PolymorphicKind.__Sealed",
+                            "children": [
+                              {
+                                "kind": "TypeFunc",
+                                "name": "Function",
+                                "printedName": "(CoreAuthenticator.Kotlinx_serialization_corePolymorphicKind.OPEN) -> CoreAuthenticator.Skie.KotlinxSerializationCore.PolymorphicKind.__Sealed",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "__Sealed",
+                                    "printedName": "CoreAuthenticator.Skie.KotlinxSerializationCore.PolymorphicKind.__Sealed",
+                                    "usr": "s:17CoreAuthenticator4SkieO020KotlinxSerializationA0O15PolymorphicKindO8__SealedO"
+                                  },
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "OPEN",
+                                    "printedName": "CoreAuthenticator.Kotlinx_serialization_corePolymorphicKind.OPEN",
+                                    "usr": "c:objc(cs)CoreAuthenticatorKotlinx_serialization_corePolymorphicKindOPEN"
+                                  }
+                                ]
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Metatype",
+                                "printedName": "CoreAuthenticator.Skie.KotlinxSerializationCore.PolymorphicKind.__Sealed.Type",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "__Sealed",
+                                    "printedName": "CoreAuthenticator.Skie.KotlinxSerializationCore.PolymorphicKind.__Sealed",
+                                    "usr": "s:17CoreAuthenticator4SkieO020KotlinxSerializationA0O15PolymorphicKindO8__SealedO"
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ],
+                        "declKind": "EnumElement",
+                        "usr": "s:17CoreAuthenticator4SkieO020KotlinxSerializationA0O15PolymorphicKindO8__SealedO4oPENyAISo0abd19_serialization_corefG4OPENCcAImF",
+                        "mangledName": "$s17CoreAuthenticator4SkieO020KotlinxSerializationA0O15PolymorphicKindO8__SealedO4oPENyAISo0abd19_serialization_corefG4OPENCcAImF",
+                        "moduleName": "CoreAuthenticator",
+                        "fixedbinaryorder": 0
+                      },
+                      {
+                        "kind": "Var",
+                        "name": "sEALED",
+                        "printedName": "sEALED",
+                        "children": [
+                          {
+                            "kind": "TypeFunc",
+                            "name": "Function",
+                            "printedName": "(CoreAuthenticator.Skie.KotlinxSerializationCore.PolymorphicKind.__Sealed.Type) -> (CoreAuthenticator.Kotlinx_serialization_corePolymorphicKind.SEALED) -> CoreAuthenticator.Skie.KotlinxSerializationCore.PolymorphicKind.__Sealed",
+                            "children": [
+                              {
+                                "kind": "TypeFunc",
+                                "name": "Function",
+                                "printedName": "(CoreAuthenticator.Kotlinx_serialization_corePolymorphicKind.SEALED) -> CoreAuthenticator.Skie.KotlinxSerializationCore.PolymorphicKind.__Sealed",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "__Sealed",
+                                    "printedName": "CoreAuthenticator.Skie.KotlinxSerializationCore.PolymorphicKind.__Sealed",
+                                    "usr": "s:17CoreAuthenticator4SkieO020KotlinxSerializationA0O15PolymorphicKindO8__SealedO"
+                                  },
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "SEALED",
+                                    "printedName": "CoreAuthenticator.Kotlinx_serialization_corePolymorphicKind.SEALED",
+                                    "usr": "c:objc(cs)CoreAuthenticatorKotlinx_serialization_corePolymorphicKindSEALED"
+                                  }
+                                ]
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Metatype",
+                                "printedName": "CoreAuthenticator.Skie.KotlinxSerializationCore.PolymorphicKind.__Sealed.Type",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "__Sealed",
+                                    "printedName": "CoreAuthenticator.Skie.KotlinxSerializationCore.PolymorphicKind.__Sealed",
+                                    "usr": "s:17CoreAuthenticator4SkieO020KotlinxSerializationA0O15PolymorphicKindO8__SealedO"
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ],
+                        "declKind": "EnumElement",
+                        "usr": "s:17CoreAuthenticator4SkieO020KotlinxSerializationA0O15PolymorphicKindO8__SealedO6sEALEDyAISo0abd19_serialization_corefG6SEALEDCcAImF",
+                        "mangledName": "$s17CoreAuthenticator4SkieO020KotlinxSerializationA0O15PolymorphicKindO8__SealedO6sEALEDyAISo0abd19_serialization_corefG6SEALEDCcAImF",
+                        "moduleName": "CoreAuthenticator",
+                        "fixedbinaryorder": 1
+                      },
+                      {
+                        "kind": "Var",
+                        "name": "hashValue",
+                        "printedName": "hashValue",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int",
+                            "printedName": "Swift.Int",
+                            "usr": "s:Si"
+                          }
+                        ],
+                        "declKind": "Var",
+                        "usr": "s:17CoreAuthenticator4SkieO020KotlinxSerializationA0O15PolymorphicKindO8__SealedO9hashValueSivp",
+                        "mangledName": "$s17CoreAuthenticator4SkieO020KotlinxSerializationA0O15PolymorphicKindO8__SealedO9hashValueSivp",
+                        "moduleName": "CoreAuthenticator",
+                        "implicit": true,
+                        "accessors": [
+                          {
+                            "kind": "Accessor",
+                            "name": "Get",
+                            "printedName": "Get()",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Int",
+                                "printedName": "Swift.Int",
+                                "usr": "s:Si"
+                              }
+                            ],
+                            "declKind": "Accessor",
+                            "usr": "s:17CoreAuthenticator4SkieO020KotlinxSerializationA0O15PolymorphicKindO8__SealedO9hashValueSivg",
+                            "mangledName": "$s17CoreAuthenticator4SkieO020KotlinxSerializationA0O15PolymorphicKindO8__SealedO9hashValueSivg",
+                            "moduleName": "CoreAuthenticator",
+                            "implicit": true,
+                            "accessorKind": "get"
+                          }
+                        ]
+                      },
+                      {
+                        "kind": "Function",
+                        "name": "hash",
+                        "printedName": "hash(into:)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Hasher",
+                            "printedName": "Swift.Hasher",
+                            "paramValueOwnership": "InOut",
+                            "usr": "s:s6HasherV"
+                          }
+                        ],
+                        "declKind": "Func",
+                        "usr": "s:17CoreAuthenticator4SkieO020KotlinxSerializationA0O15PolymorphicKindO8__SealedO4hash4intoys6HasherVz_tF",
+                        "mangledName": "$s17CoreAuthenticator4SkieO020KotlinxSerializationA0O15PolymorphicKindO8__SealedO4hash4intoys6HasherVz_tF",
+                        "moduleName": "CoreAuthenticator",
+                        "implicit": true,
+                        "funcSelfKind": "NonMutating"
+                      },
+                      {
+                        "kind": "Function",
+                        "name": "==",
+                        "printedName": "==(_:_:)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Bool",
+                            "printedName": "Swift.Bool",
+                            "usr": "s:Sb"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "__Sealed",
+                            "printedName": "CoreAuthenticator.Skie.KotlinxSerializationCore.PolymorphicKind.__Sealed",
+                            "usr": "s:17CoreAuthenticator4SkieO020KotlinxSerializationA0O15PolymorphicKindO8__SealedO"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "__Sealed",
+                            "printedName": "CoreAuthenticator.Skie.KotlinxSerializationCore.PolymorphicKind.__Sealed",
+                            "usr": "s:17CoreAuthenticator4SkieO020KotlinxSerializationA0O15PolymorphicKindO8__SealedO"
+                          }
+                        ],
+                        "declKind": "Func",
+                        "usr": "s:17CoreAuthenticator4SkieO020KotlinxSerializationA0O15PolymorphicKindO8__SealedO2eeoiySbAI_AItFZ",
+                        "mangledName": "$s17CoreAuthenticator4SkieO020KotlinxSerializationA0O15PolymorphicKindO8__SealedO2eeoiySbAI_AItFZ",
+                        "moduleName": "CoreAuthenticator",
+                        "static": true,
+                        "implicit": true,
+                        "funcSelfKind": "NonMutating"
+                      }
+                    ],
+                    "declKind": "Enum",
+                    "usr": "s:17CoreAuthenticator4SkieO020KotlinxSerializationA0O15PolymorphicKindO8__SealedO",
+                    "mangledName": "$s17CoreAuthenticator4SkieO020KotlinxSerializationA0O15PolymorphicKindO8__SealedO",
+                    "moduleName": "CoreAuthenticator",
+                    "declAttributes": [
+                      "AccessControl",
+                      "Frozen"
+                    ],
+                    "isFromExtension": true,
+                    "isEnumExhaustive": true,
+                    "conformances": [
+                      {
+                        "kind": "Conformance",
+                        "name": "Copyable",
+                        "printedName": "Copyable",
+                        "usr": "s:s8CopyableP",
+                        "mangledName": "$ss8CopyableP"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "Escapable",
+                        "printedName": "Escapable",
+                        "usr": "s:s9EscapableP",
+                        "mangledName": "$ss9EscapableP"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "Hashable",
+                        "printedName": "Hashable",
+                        "usr": "s:SH",
+                        "mangledName": "$sSH"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "Equatable",
+                        "printedName": "Equatable",
+                        "usr": "s:SQ",
+                        "mangledName": "$sSQ"
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "Enum",
+                "usr": "s:17CoreAuthenticator4SkieO020KotlinxSerializationA0O15PolymorphicKindO",
+                "mangledName": "$s17CoreAuthenticator4SkieO020KotlinxSerializationA0O15PolymorphicKindO",
+                "moduleName": "CoreAuthenticator",
+                "declAttributes": [
+                  "AccessControl"
+                ],
+                "conformances": [
+                  {
+                    "kind": "Conformance",
+                    "name": "Copyable",
+                    "printedName": "Copyable",
+                    "usr": "s:s8CopyableP",
+                    "mangledName": "$ss8CopyableP"
+                  },
+                  {
+                    "kind": "Conformance",
+                    "name": "Escapable",
+                    "printedName": "Escapable",
+                    "usr": "s:s9EscapableP",
+                    "mangledName": "$ss9EscapableP"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeDecl",
+                "name": "PrimitiveKind",
+                "printedName": "PrimitiveKind",
+                "children": [
+                  {
+                    "kind": "TypeDecl",
+                    "name": "__Sealed",
+                    "printedName": "__Sealed",
+                    "children": [
+                      {
+                        "kind": "Var",
+                        "name": "bOOLEAN",
+                        "printedName": "bOOLEAN",
+                        "children": [
+                          {
+                            "kind": "TypeFunc",
+                            "name": "Function",
+                            "printedName": "(CoreAuthenticator.Skie.KotlinxSerializationCore.PrimitiveKind.__Sealed.Type) -> (CoreAuthenticator.Kotlinx_serialization_corePrimitiveKind.BOOLEAN) -> CoreAuthenticator.Skie.KotlinxSerializationCore.PrimitiveKind.__Sealed",
+                            "children": [
+                              {
+                                "kind": "TypeFunc",
+                                "name": "Function",
+                                "printedName": "(CoreAuthenticator.Kotlinx_serialization_corePrimitiveKind.BOOLEAN) -> CoreAuthenticator.Skie.KotlinxSerializationCore.PrimitiveKind.__Sealed",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "__Sealed",
+                                    "printedName": "CoreAuthenticator.Skie.KotlinxSerializationCore.PrimitiveKind.__Sealed",
+                                    "usr": "s:17CoreAuthenticator4SkieO020KotlinxSerializationA0O13PrimitiveKindO8__SealedO"
+                                  },
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "BOOLEAN",
+                                    "printedName": "CoreAuthenticator.Kotlinx_serialization_corePrimitiveKind.BOOLEAN",
+                                    "usr": "c:objc(cs)CoreAuthenticatorKotlinx_serialization_corePrimitiveKindBOOLEAN"
+                                  }
+                                ]
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Metatype",
+                                "printedName": "CoreAuthenticator.Skie.KotlinxSerializationCore.PrimitiveKind.__Sealed.Type",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "__Sealed",
+                                    "printedName": "CoreAuthenticator.Skie.KotlinxSerializationCore.PrimitiveKind.__Sealed",
+                                    "usr": "s:17CoreAuthenticator4SkieO020KotlinxSerializationA0O13PrimitiveKindO8__SealedO"
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ],
+                        "declKind": "EnumElement",
+                        "usr": "s:17CoreAuthenticator4SkieO020KotlinxSerializationA0O13PrimitiveKindO8__SealedO7bOOLEANyAISo0abd19_serialization_corefG7BOOLEANCcAImF",
+                        "mangledName": "$s17CoreAuthenticator4SkieO020KotlinxSerializationA0O13PrimitiveKindO8__SealedO7bOOLEANyAISo0abd19_serialization_corefG7BOOLEANCcAImF",
+                        "moduleName": "CoreAuthenticator",
+                        "fixedbinaryorder": 0
+                      },
+                      {
+                        "kind": "Var",
+                        "name": "bYTE",
+                        "printedName": "bYTE",
+                        "children": [
+                          {
+                            "kind": "TypeFunc",
+                            "name": "Function",
+                            "printedName": "(CoreAuthenticator.Skie.KotlinxSerializationCore.PrimitiveKind.__Sealed.Type) -> (CoreAuthenticator.Kotlinx_serialization_corePrimitiveKind.BYTE) -> CoreAuthenticator.Skie.KotlinxSerializationCore.PrimitiveKind.__Sealed",
+                            "children": [
+                              {
+                                "kind": "TypeFunc",
+                                "name": "Function",
+                                "printedName": "(CoreAuthenticator.Kotlinx_serialization_corePrimitiveKind.BYTE) -> CoreAuthenticator.Skie.KotlinxSerializationCore.PrimitiveKind.__Sealed",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "__Sealed",
+                                    "printedName": "CoreAuthenticator.Skie.KotlinxSerializationCore.PrimitiveKind.__Sealed",
+                                    "usr": "s:17CoreAuthenticator4SkieO020KotlinxSerializationA0O13PrimitiveKindO8__SealedO"
+                                  },
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "BYTE",
+                                    "printedName": "CoreAuthenticator.Kotlinx_serialization_corePrimitiveKind.BYTE",
+                                    "usr": "c:objc(cs)CoreAuthenticatorKotlinx_serialization_corePrimitiveKindBYTE"
+                                  }
+                                ]
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Metatype",
+                                "printedName": "CoreAuthenticator.Skie.KotlinxSerializationCore.PrimitiveKind.__Sealed.Type",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "__Sealed",
+                                    "printedName": "CoreAuthenticator.Skie.KotlinxSerializationCore.PrimitiveKind.__Sealed",
+                                    "usr": "s:17CoreAuthenticator4SkieO020KotlinxSerializationA0O13PrimitiveKindO8__SealedO"
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ],
+                        "declKind": "EnumElement",
+                        "usr": "s:17CoreAuthenticator4SkieO020KotlinxSerializationA0O13PrimitiveKindO8__SealedO4bYTEyAISo0abd19_serialization_corefG4BYTECcAImF",
+                        "mangledName": "$s17CoreAuthenticator4SkieO020KotlinxSerializationA0O13PrimitiveKindO8__SealedO4bYTEyAISo0abd19_serialization_corefG4BYTECcAImF",
+                        "moduleName": "CoreAuthenticator",
+                        "fixedbinaryorder": 1
+                      },
+                      {
+                        "kind": "Var",
+                        "name": "cHAR",
+                        "printedName": "cHAR",
+                        "children": [
+                          {
+                            "kind": "TypeFunc",
+                            "name": "Function",
+                            "printedName": "(CoreAuthenticator.Skie.KotlinxSerializationCore.PrimitiveKind.__Sealed.Type) -> (CoreAuthenticator.Kotlinx_serialization_corePrimitiveKind.CHAR) -> CoreAuthenticator.Skie.KotlinxSerializationCore.PrimitiveKind.__Sealed",
+                            "children": [
+                              {
+                                "kind": "TypeFunc",
+                                "name": "Function",
+                                "printedName": "(CoreAuthenticator.Kotlinx_serialization_corePrimitiveKind.CHAR) -> CoreAuthenticator.Skie.KotlinxSerializationCore.PrimitiveKind.__Sealed",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "__Sealed",
+                                    "printedName": "CoreAuthenticator.Skie.KotlinxSerializationCore.PrimitiveKind.__Sealed",
+                                    "usr": "s:17CoreAuthenticator4SkieO020KotlinxSerializationA0O13PrimitiveKindO8__SealedO"
+                                  },
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "CHAR",
+                                    "printedName": "CoreAuthenticator.Kotlinx_serialization_corePrimitiveKind.CHAR",
+                                    "usr": "c:objc(cs)CoreAuthenticatorKotlinx_serialization_corePrimitiveKindCHAR"
+                                  }
+                                ]
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Metatype",
+                                "printedName": "CoreAuthenticator.Skie.KotlinxSerializationCore.PrimitiveKind.__Sealed.Type",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "__Sealed",
+                                    "printedName": "CoreAuthenticator.Skie.KotlinxSerializationCore.PrimitiveKind.__Sealed",
+                                    "usr": "s:17CoreAuthenticator4SkieO020KotlinxSerializationA0O13PrimitiveKindO8__SealedO"
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ],
+                        "declKind": "EnumElement",
+                        "usr": "s:17CoreAuthenticator4SkieO020KotlinxSerializationA0O13PrimitiveKindO8__SealedO4cHARyAISo0abd19_serialization_corefG4CHARCcAImF",
+                        "mangledName": "$s17CoreAuthenticator4SkieO020KotlinxSerializationA0O13PrimitiveKindO8__SealedO4cHARyAISo0abd19_serialization_corefG4CHARCcAImF",
+                        "moduleName": "CoreAuthenticator",
+                        "fixedbinaryorder": 2
+                      },
+                      {
+                        "kind": "Var",
+                        "name": "dOUBLE",
+                        "printedName": "dOUBLE",
+                        "children": [
+                          {
+                            "kind": "TypeFunc",
+                            "name": "Function",
+                            "printedName": "(CoreAuthenticator.Skie.KotlinxSerializationCore.PrimitiveKind.__Sealed.Type) -> (CoreAuthenticator.Kotlinx_serialization_corePrimitiveKind.DOUBLE) -> CoreAuthenticator.Skie.KotlinxSerializationCore.PrimitiveKind.__Sealed",
+                            "children": [
+                              {
+                                "kind": "TypeFunc",
+                                "name": "Function",
+                                "printedName": "(CoreAuthenticator.Kotlinx_serialization_corePrimitiveKind.DOUBLE) -> CoreAuthenticator.Skie.KotlinxSerializationCore.PrimitiveKind.__Sealed",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "__Sealed",
+                                    "printedName": "CoreAuthenticator.Skie.KotlinxSerializationCore.PrimitiveKind.__Sealed",
+                                    "usr": "s:17CoreAuthenticator4SkieO020KotlinxSerializationA0O13PrimitiveKindO8__SealedO"
+                                  },
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "DOUBLE",
+                                    "printedName": "CoreAuthenticator.Kotlinx_serialization_corePrimitiveKind.DOUBLE",
+                                    "usr": "c:objc(cs)CoreAuthenticatorKotlinx_serialization_corePrimitiveKindDOUBLE"
+                                  }
+                                ]
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Metatype",
+                                "printedName": "CoreAuthenticator.Skie.KotlinxSerializationCore.PrimitiveKind.__Sealed.Type",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "__Sealed",
+                                    "printedName": "CoreAuthenticator.Skie.KotlinxSerializationCore.PrimitiveKind.__Sealed",
+                                    "usr": "s:17CoreAuthenticator4SkieO020KotlinxSerializationA0O13PrimitiveKindO8__SealedO"
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ],
+                        "declKind": "EnumElement",
+                        "usr": "s:17CoreAuthenticator4SkieO020KotlinxSerializationA0O13PrimitiveKindO8__SealedO6dOUBLEyAISo0abd19_serialization_corefG6DOUBLECcAImF",
+                        "mangledName": "$s17CoreAuthenticator4SkieO020KotlinxSerializationA0O13PrimitiveKindO8__SealedO6dOUBLEyAISo0abd19_serialization_corefG6DOUBLECcAImF",
+                        "moduleName": "CoreAuthenticator",
+                        "fixedbinaryorder": 3
+                      },
+                      {
+                        "kind": "Var",
+                        "name": "fLOAT",
+                        "printedName": "fLOAT",
+                        "children": [
+                          {
+                            "kind": "TypeFunc",
+                            "name": "Function",
+                            "printedName": "(CoreAuthenticator.Skie.KotlinxSerializationCore.PrimitiveKind.__Sealed.Type) -> (CoreAuthenticator.Kotlinx_serialization_corePrimitiveKind.FLOAT) -> CoreAuthenticator.Skie.KotlinxSerializationCore.PrimitiveKind.__Sealed",
+                            "children": [
+                              {
+                                "kind": "TypeFunc",
+                                "name": "Function",
+                                "printedName": "(CoreAuthenticator.Kotlinx_serialization_corePrimitiveKind.FLOAT) -> CoreAuthenticator.Skie.KotlinxSerializationCore.PrimitiveKind.__Sealed",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "__Sealed",
+                                    "printedName": "CoreAuthenticator.Skie.KotlinxSerializationCore.PrimitiveKind.__Sealed",
+                                    "usr": "s:17CoreAuthenticator4SkieO020KotlinxSerializationA0O13PrimitiveKindO8__SealedO"
+                                  },
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "FLOAT",
+                                    "printedName": "CoreAuthenticator.Kotlinx_serialization_corePrimitiveKind.FLOAT",
+                                    "usr": "c:objc(cs)CoreAuthenticatorKotlinx_serialization_corePrimitiveKindFLOAT"
+                                  }
+                                ]
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Metatype",
+                                "printedName": "CoreAuthenticator.Skie.KotlinxSerializationCore.PrimitiveKind.__Sealed.Type",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "__Sealed",
+                                    "printedName": "CoreAuthenticator.Skie.KotlinxSerializationCore.PrimitiveKind.__Sealed",
+                                    "usr": "s:17CoreAuthenticator4SkieO020KotlinxSerializationA0O13PrimitiveKindO8__SealedO"
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ],
+                        "declKind": "EnumElement",
+                        "usr": "s:17CoreAuthenticator4SkieO020KotlinxSerializationA0O13PrimitiveKindO8__SealedO5fLOATyAISo0abd19_serialization_corefG5FLOATCcAImF",
+                        "mangledName": "$s17CoreAuthenticator4SkieO020KotlinxSerializationA0O13PrimitiveKindO8__SealedO5fLOATyAISo0abd19_serialization_corefG5FLOATCcAImF",
+                        "moduleName": "CoreAuthenticator",
+                        "fixedbinaryorder": 4
+                      },
+                      {
+                        "kind": "Var",
+                        "name": "iNT",
+                        "printedName": "iNT",
+                        "children": [
+                          {
+                            "kind": "TypeFunc",
+                            "name": "Function",
+                            "printedName": "(CoreAuthenticator.Skie.KotlinxSerializationCore.PrimitiveKind.__Sealed.Type) -> (CoreAuthenticator.Kotlinx_serialization_corePrimitiveKind.INT) -> CoreAuthenticator.Skie.KotlinxSerializationCore.PrimitiveKind.__Sealed",
+                            "children": [
+                              {
+                                "kind": "TypeFunc",
+                                "name": "Function",
+                                "printedName": "(CoreAuthenticator.Kotlinx_serialization_corePrimitiveKind.INT) -> CoreAuthenticator.Skie.KotlinxSerializationCore.PrimitiveKind.__Sealed",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "__Sealed",
+                                    "printedName": "CoreAuthenticator.Skie.KotlinxSerializationCore.PrimitiveKind.__Sealed",
+                                    "usr": "s:17CoreAuthenticator4SkieO020KotlinxSerializationA0O13PrimitiveKindO8__SealedO"
+                                  },
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "INT",
+                                    "printedName": "CoreAuthenticator.Kotlinx_serialization_corePrimitiveKind.INT",
+                                    "usr": "c:objc(cs)CoreAuthenticatorKotlinx_serialization_corePrimitiveKindINT"
+                                  }
+                                ]
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Metatype",
+                                "printedName": "CoreAuthenticator.Skie.KotlinxSerializationCore.PrimitiveKind.__Sealed.Type",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "__Sealed",
+                                    "printedName": "CoreAuthenticator.Skie.KotlinxSerializationCore.PrimitiveKind.__Sealed",
+                                    "usr": "s:17CoreAuthenticator4SkieO020KotlinxSerializationA0O13PrimitiveKindO8__SealedO"
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ],
+                        "declKind": "EnumElement",
+                        "usr": "s:17CoreAuthenticator4SkieO020KotlinxSerializationA0O13PrimitiveKindO8__SealedO3iNTyAISo0abd19_serialization_corefG3INTCcAImF",
+                        "mangledName": "$s17CoreAuthenticator4SkieO020KotlinxSerializationA0O13PrimitiveKindO8__SealedO3iNTyAISo0abd19_serialization_corefG3INTCcAImF",
+                        "moduleName": "CoreAuthenticator",
+                        "fixedbinaryorder": 5
+                      },
+                      {
+                        "kind": "Var",
+                        "name": "lONG",
+                        "printedName": "lONG",
+                        "children": [
+                          {
+                            "kind": "TypeFunc",
+                            "name": "Function",
+                            "printedName": "(CoreAuthenticator.Skie.KotlinxSerializationCore.PrimitiveKind.__Sealed.Type) -> (CoreAuthenticator.Kotlinx_serialization_corePrimitiveKind.LONG) -> CoreAuthenticator.Skie.KotlinxSerializationCore.PrimitiveKind.__Sealed",
+                            "children": [
+                              {
+                                "kind": "TypeFunc",
+                                "name": "Function",
+                                "printedName": "(CoreAuthenticator.Kotlinx_serialization_corePrimitiveKind.LONG) -> CoreAuthenticator.Skie.KotlinxSerializationCore.PrimitiveKind.__Sealed",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "__Sealed",
+                                    "printedName": "CoreAuthenticator.Skie.KotlinxSerializationCore.PrimitiveKind.__Sealed",
+                                    "usr": "s:17CoreAuthenticator4SkieO020KotlinxSerializationA0O13PrimitiveKindO8__SealedO"
+                                  },
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "LONG",
+                                    "printedName": "CoreAuthenticator.Kotlinx_serialization_corePrimitiveKind.LONG",
+                                    "usr": "c:objc(cs)CoreAuthenticatorKotlinx_serialization_corePrimitiveKindLONG"
+                                  }
+                                ]
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Metatype",
+                                "printedName": "CoreAuthenticator.Skie.KotlinxSerializationCore.PrimitiveKind.__Sealed.Type",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "__Sealed",
+                                    "printedName": "CoreAuthenticator.Skie.KotlinxSerializationCore.PrimitiveKind.__Sealed",
+                                    "usr": "s:17CoreAuthenticator4SkieO020KotlinxSerializationA0O13PrimitiveKindO8__SealedO"
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ],
+                        "declKind": "EnumElement",
+                        "usr": "s:17CoreAuthenticator4SkieO020KotlinxSerializationA0O13PrimitiveKindO8__SealedO4lONGyAISo0abd19_serialization_corefG4LONGCcAImF",
+                        "mangledName": "$s17CoreAuthenticator4SkieO020KotlinxSerializationA0O13PrimitiveKindO8__SealedO4lONGyAISo0abd19_serialization_corefG4LONGCcAImF",
+                        "moduleName": "CoreAuthenticator",
+                        "fixedbinaryorder": 6
+                      },
+                      {
+                        "kind": "Var",
+                        "name": "sHORT",
+                        "printedName": "sHORT",
+                        "children": [
+                          {
+                            "kind": "TypeFunc",
+                            "name": "Function",
+                            "printedName": "(CoreAuthenticator.Skie.KotlinxSerializationCore.PrimitiveKind.__Sealed.Type) -> (CoreAuthenticator.Kotlinx_serialization_corePrimitiveKind.SHORT) -> CoreAuthenticator.Skie.KotlinxSerializationCore.PrimitiveKind.__Sealed",
+                            "children": [
+                              {
+                                "kind": "TypeFunc",
+                                "name": "Function",
+                                "printedName": "(CoreAuthenticator.Kotlinx_serialization_corePrimitiveKind.SHORT) -> CoreAuthenticator.Skie.KotlinxSerializationCore.PrimitiveKind.__Sealed",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "__Sealed",
+                                    "printedName": "CoreAuthenticator.Skie.KotlinxSerializationCore.PrimitiveKind.__Sealed",
+                                    "usr": "s:17CoreAuthenticator4SkieO020KotlinxSerializationA0O13PrimitiveKindO8__SealedO"
+                                  },
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "SHORT",
+                                    "printedName": "CoreAuthenticator.Kotlinx_serialization_corePrimitiveKind.SHORT",
+                                    "usr": "c:objc(cs)CoreAuthenticatorKotlinx_serialization_corePrimitiveKindSHORT"
+                                  }
+                                ]
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Metatype",
+                                "printedName": "CoreAuthenticator.Skie.KotlinxSerializationCore.PrimitiveKind.__Sealed.Type",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "__Sealed",
+                                    "printedName": "CoreAuthenticator.Skie.KotlinxSerializationCore.PrimitiveKind.__Sealed",
+                                    "usr": "s:17CoreAuthenticator4SkieO020KotlinxSerializationA0O13PrimitiveKindO8__SealedO"
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ],
+                        "declKind": "EnumElement",
+                        "usr": "s:17CoreAuthenticator4SkieO020KotlinxSerializationA0O13PrimitiveKindO8__SealedO5sHORTyAISo0abd19_serialization_corefG5SHORTCcAImF",
+                        "mangledName": "$s17CoreAuthenticator4SkieO020KotlinxSerializationA0O13PrimitiveKindO8__SealedO5sHORTyAISo0abd19_serialization_corefG5SHORTCcAImF",
+                        "moduleName": "CoreAuthenticator",
+                        "fixedbinaryorder": 7
+                      },
+                      {
+                        "kind": "Var",
+                        "name": "sTRING",
+                        "printedName": "sTRING",
+                        "children": [
+                          {
+                            "kind": "TypeFunc",
+                            "name": "Function",
+                            "printedName": "(CoreAuthenticator.Skie.KotlinxSerializationCore.PrimitiveKind.__Sealed.Type) -> (CoreAuthenticator.Kotlinx_serialization_corePrimitiveKind.STRING) -> CoreAuthenticator.Skie.KotlinxSerializationCore.PrimitiveKind.__Sealed",
+                            "children": [
+                              {
+                                "kind": "TypeFunc",
+                                "name": "Function",
+                                "printedName": "(CoreAuthenticator.Kotlinx_serialization_corePrimitiveKind.STRING) -> CoreAuthenticator.Skie.KotlinxSerializationCore.PrimitiveKind.__Sealed",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "__Sealed",
+                                    "printedName": "CoreAuthenticator.Skie.KotlinxSerializationCore.PrimitiveKind.__Sealed",
+                                    "usr": "s:17CoreAuthenticator4SkieO020KotlinxSerializationA0O13PrimitiveKindO8__SealedO"
+                                  },
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "STRING",
+                                    "printedName": "CoreAuthenticator.Kotlinx_serialization_corePrimitiveKind.STRING",
+                                    "usr": "c:objc(cs)CoreAuthenticatorKotlinx_serialization_corePrimitiveKindSTRING"
+                                  }
+                                ]
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Metatype",
+                                "printedName": "CoreAuthenticator.Skie.KotlinxSerializationCore.PrimitiveKind.__Sealed.Type",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "__Sealed",
+                                    "printedName": "CoreAuthenticator.Skie.KotlinxSerializationCore.PrimitiveKind.__Sealed",
+                                    "usr": "s:17CoreAuthenticator4SkieO020KotlinxSerializationA0O13PrimitiveKindO8__SealedO"
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ],
+                        "declKind": "EnumElement",
+                        "usr": "s:17CoreAuthenticator4SkieO020KotlinxSerializationA0O13PrimitiveKindO8__SealedO6sTRINGyAISo0abd19_serialization_corefG6STRINGCcAImF",
+                        "mangledName": "$s17CoreAuthenticator4SkieO020KotlinxSerializationA0O13PrimitiveKindO8__SealedO6sTRINGyAISo0abd19_serialization_corefG6STRINGCcAImF",
+                        "moduleName": "CoreAuthenticator",
+                        "fixedbinaryorder": 8
+                      },
+                      {
+                        "kind": "Var",
+                        "name": "hashValue",
+                        "printedName": "hashValue",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int",
+                            "printedName": "Swift.Int",
+                            "usr": "s:Si"
+                          }
+                        ],
+                        "declKind": "Var",
+                        "usr": "s:17CoreAuthenticator4SkieO020KotlinxSerializationA0O13PrimitiveKindO8__SealedO9hashValueSivp",
+                        "mangledName": "$s17CoreAuthenticator4SkieO020KotlinxSerializationA0O13PrimitiveKindO8__SealedO9hashValueSivp",
+                        "moduleName": "CoreAuthenticator",
+                        "implicit": true,
+                        "accessors": [
+                          {
+                            "kind": "Accessor",
+                            "name": "Get",
+                            "printedName": "Get()",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Int",
+                                "printedName": "Swift.Int",
+                                "usr": "s:Si"
+                              }
+                            ],
+                            "declKind": "Accessor",
+                            "usr": "s:17CoreAuthenticator4SkieO020KotlinxSerializationA0O13PrimitiveKindO8__SealedO9hashValueSivg",
+                            "mangledName": "$s17CoreAuthenticator4SkieO020KotlinxSerializationA0O13PrimitiveKindO8__SealedO9hashValueSivg",
+                            "moduleName": "CoreAuthenticator",
+                            "implicit": true,
+                            "accessorKind": "get"
+                          }
+                        ]
+                      },
+                      {
+                        "kind": "Function",
+                        "name": "hash",
+                        "printedName": "hash(into:)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Hasher",
+                            "printedName": "Swift.Hasher",
+                            "paramValueOwnership": "InOut",
+                            "usr": "s:s6HasherV"
+                          }
+                        ],
+                        "declKind": "Func",
+                        "usr": "s:17CoreAuthenticator4SkieO020KotlinxSerializationA0O13PrimitiveKindO8__SealedO4hash4intoys6HasherVz_tF",
+                        "mangledName": "$s17CoreAuthenticator4SkieO020KotlinxSerializationA0O13PrimitiveKindO8__SealedO4hash4intoys6HasherVz_tF",
+                        "moduleName": "CoreAuthenticator",
+                        "implicit": true,
+                        "funcSelfKind": "NonMutating"
+                      },
+                      {
+                        "kind": "Function",
+                        "name": "==",
+                        "printedName": "==(_:_:)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Bool",
+                            "printedName": "Swift.Bool",
+                            "usr": "s:Sb"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "__Sealed",
+                            "printedName": "CoreAuthenticator.Skie.KotlinxSerializationCore.PrimitiveKind.__Sealed",
+                            "usr": "s:17CoreAuthenticator4SkieO020KotlinxSerializationA0O13PrimitiveKindO8__SealedO"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "__Sealed",
+                            "printedName": "CoreAuthenticator.Skie.KotlinxSerializationCore.PrimitiveKind.__Sealed",
+                            "usr": "s:17CoreAuthenticator4SkieO020KotlinxSerializationA0O13PrimitiveKindO8__SealedO"
+                          }
+                        ],
+                        "declKind": "Func",
+                        "usr": "s:17CoreAuthenticator4SkieO020KotlinxSerializationA0O13PrimitiveKindO8__SealedO2eeoiySbAI_AItFZ",
+                        "mangledName": "$s17CoreAuthenticator4SkieO020KotlinxSerializationA0O13PrimitiveKindO8__SealedO2eeoiySbAI_AItFZ",
+                        "moduleName": "CoreAuthenticator",
+                        "static": true,
+                        "implicit": true,
+                        "funcSelfKind": "NonMutating"
+                      }
+                    ],
+                    "declKind": "Enum",
+                    "usr": "s:17CoreAuthenticator4SkieO020KotlinxSerializationA0O13PrimitiveKindO8__SealedO",
+                    "mangledName": "$s17CoreAuthenticator4SkieO020KotlinxSerializationA0O13PrimitiveKindO8__SealedO",
+                    "moduleName": "CoreAuthenticator",
+                    "declAttributes": [
+                      "AccessControl",
+                      "Frozen"
+                    ],
+                    "isFromExtension": true,
+                    "isEnumExhaustive": true,
+                    "conformances": [
+                      {
+                        "kind": "Conformance",
+                        "name": "Copyable",
+                        "printedName": "Copyable",
+                        "usr": "s:s8CopyableP",
+                        "mangledName": "$ss8CopyableP"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "Escapable",
+                        "printedName": "Escapable",
+                        "usr": "s:s9EscapableP",
+                        "mangledName": "$ss9EscapableP"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "Hashable",
+                        "printedName": "Hashable",
+                        "usr": "s:SH",
+                        "mangledName": "$sSH"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "Equatable",
+                        "printedName": "Equatable",
+                        "usr": "s:SQ",
+                        "mangledName": "$sSQ"
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "Enum",
+                "usr": "s:17CoreAuthenticator4SkieO020KotlinxSerializationA0O13PrimitiveKindO",
+                "mangledName": "$s17CoreAuthenticator4SkieO020KotlinxSerializationA0O13PrimitiveKindO",
+                "moduleName": "CoreAuthenticator",
+                "declAttributes": [
+                  "AccessControl"
+                ],
+                "conformances": [
+                  {
+                    "kind": "Conformance",
+                    "name": "Copyable",
+                    "printedName": "Copyable",
+                    "usr": "s:s8CopyableP",
+                    "mangledName": "$ss8CopyableP"
+                  },
+                  {
+                    "kind": "Conformance",
+                    "name": "Escapable",
+                    "printedName": "Escapable",
+                    "usr": "s:s9EscapableP",
+                    "mangledName": "$ss9EscapableP"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeDecl",
+                "name": "StructureKind",
+                "printedName": "StructureKind",
+                "children": [
+                  {
+                    "kind": "TypeDecl",
+                    "name": "__Sealed",
+                    "printedName": "__Sealed",
+                    "children": [
+                      {
+                        "kind": "Var",
+                        "name": "cLASS",
+                        "printedName": "cLASS",
+                        "children": [
+                          {
+                            "kind": "TypeFunc",
+                            "name": "Function",
+                            "printedName": "(CoreAuthenticator.Skie.KotlinxSerializationCore.StructureKind.__Sealed.Type) -> (CoreAuthenticator.Kotlinx_serialization_coreStructureKind.CLASS) -> CoreAuthenticator.Skie.KotlinxSerializationCore.StructureKind.__Sealed",
+                            "children": [
+                              {
+                                "kind": "TypeFunc",
+                                "name": "Function",
+                                "printedName": "(CoreAuthenticator.Kotlinx_serialization_coreStructureKind.CLASS) -> CoreAuthenticator.Skie.KotlinxSerializationCore.StructureKind.__Sealed",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "__Sealed",
+                                    "printedName": "CoreAuthenticator.Skie.KotlinxSerializationCore.StructureKind.__Sealed",
+                                    "usr": "s:17CoreAuthenticator4SkieO020KotlinxSerializationA0O13StructureKindO8__SealedO"
+                                  },
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "CLASS",
+                                    "printedName": "CoreAuthenticator.Kotlinx_serialization_coreStructureKind.CLASS",
+                                    "usr": "c:objc(cs)CoreAuthenticatorKotlinx_serialization_coreStructureKindCLASS"
+                                  }
+                                ]
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Metatype",
+                                "printedName": "CoreAuthenticator.Skie.KotlinxSerializationCore.StructureKind.__Sealed.Type",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "__Sealed",
+                                    "printedName": "CoreAuthenticator.Skie.KotlinxSerializationCore.StructureKind.__Sealed",
+                                    "usr": "s:17CoreAuthenticator4SkieO020KotlinxSerializationA0O13StructureKindO8__SealedO"
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ],
+                        "declKind": "EnumElement",
+                        "usr": "s:17CoreAuthenticator4SkieO020KotlinxSerializationA0O13StructureKindO8__SealedO5cLASSyAISo0abd19_serialization_corefG5CLASSCcAImF",
+                        "mangledName": "$s17CoreAuthenticator4SkieO020KotlinxSerializationA0O13StructureKindO8__SealedO5cLASSyAISo0abd19_serialization_corefG5CLASSCcAImF",
+                        "moduleName": "CoreAuthenticator",
+                        "fixedbinaryorder": 0
+                      },
+                      {
+                        "kind": "Var",
+                        "name": "lIST",
+                        "printedName": "lIST",
+                        "children": [
+                          {
+                            "kind": "TypeFunc",
+                            "name": "Function",
+                            "printedName": "(CoreAuthenticator.Skie.KotlinxSerializationCore.StructureKind.__Sealed.Type) -> (CoreAuthenticator.Kotlinx_serialization_coreStructureKind.LIST) -> CoreAuthenticator.Skie.KotlinxSerializationCore.StructureKind.__Sealed",
+                            "children": [
+                              {
+                                "kind": "TypeFunc",
+                                "name": "Function",
+                                "printedName": "(CoreAuthenticator.Kotlinx_serialization_coreStructureKind.LIST) -> CoreAuthenticator.Skie.KotlinxSerializationCore.StructureKind.__Sealed",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "__Sealed",
+                                    "printedName": "CoreAuthenticator.Skie.KotlinxSerializationCore.StructureKind.__Sealed",
+                                    "usr": "s:17CoreAuthenticator4SkieO020KotlinxSerializationA0O13StructureKindO8__SealedO"
+                                  },
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "LIST",
+                                    "printedName": "CoreAuthenticator.Kotlinx_serialization_coreStructureKind.LIST",
+                                    "usr": "c:objc(cs)CoreAuthenticatorKotlinx_serialization_coreStructureKindLIST"
+                                  }
+                                ]
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Metatype",
+                                "printedName": "CoreAuthenticator.Skie.KotlinxSerializationCore.StructureKind.__Sealed.Type",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "__Sealed",
+                                    "printedName": "CoreAuthenticator.Skie.KotlinxSerializationCore.StructureKind.__Sealed",
+                                    "usr": "s:17CoreAuthenticator4SkieO020KotlinxSerializationA0O13StructureKindO8__SealedO"
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ],
+                        "declKind": "EnumElement",
+                        "usr": "s:17CoreAuthenticator4SkieO020KotlinxSerializationA0O13StructureKindO8__SealedO4lISTyAISo0abd19_serialization_corefG4LISTCcAImF",
+                        "mangledName": "$s17CoreAuthenticator4SkieO020KotlinxSerializationA0O13StructureKindO8__SealedO4lISTyAISo0abd19_serialization_corefG4LISTCcAImF",
+                        "moduleName": "CoreAuthenticator",
+                        "fixedbinaryorder": 1
+                      },
+                      {
+                        "kind": "Var",
+                        "name": "mAP",
+                        "printedName": "mAP",
+                        "children": [
+                          {
+                            "kind": "TypeFunc",
+                            "name": "Function",
+                            "printedName": "(CoreAuthenticator.Skie.KotlinxSerializationCore.StructureKind.__Sealed.Type) -> (CoreAuthenticator.Kotlinx_serialization_coreStructureKind.MAP) -> CoreAuthenticator.Skie.KotlinxSerializationCore.StructureKind.__Sealed",
+                            "children": [
+                              {
+                                "kind": "TypeFunc",
+                                "name": "Function",
+                                "printedName": "(CoreAuthenticator.Kotlinx_serialization_coreStructureKind.MAP) -> CoreAuthenticator.Skie.KotlinxSerializationCore.StructureKind.__Sealed",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "__Sealed",
+                                    "printedName": "CoreAuthenticator.Skie.KotlinxSerializationCore.StructureKind.__Sealed",
+                                    "usr": "s:17CoreAuthenticator4SkieO020KotlinxSerializationA0O13StructureKindO8__SealedO"
+                                  },
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "MAP",
+                                    "printedName": "CoreAuthenticator.Kotlinx_serialization_coreStructureKind.MAP",
+                                    "usr": "c:objc(cs)CoreAuthenticatorKotlinx_serialization_coreStructureKindMAP"
+                                  }
+                                ]
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Metatype",
+                                "printedName": "CoreAuthenticator.Skie.KotlinxSerializationCore.StructureKind.__Sealed.Type",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "__Sealed",
+                                    "printedName": "CoreAuthenticator.Skie.KotlinxSerializationCore.StructureKind.__Sealed",
+                                    "usr": "s:17CoreAuthenticator4SkieO020KotlinxSerializationA0O13StructureKindO8__SealedO"
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ],
+                        "declKind": "EnumElement",
+                        "usr": "s:17CoreAuthenticator4SkieO020KotlinxSerializationA0O13StructureKindO8__SealedO3mAPyAISo0abd19_serialization_corefG3MAPCcAImF",
+                        "mangledName": "$s17CoreAuthenticator4SkieO020KotlinxSerializationA0O13StructureKindO8__SealedO3mAPyAISo0abd19_serialization_corefG3MAPCcAImF",
+                        "moduleName": "CoreAuthenticator",
+                        "fixedbinaryorder": 2
+                      },
+                      {
+                        "kind": "Var",
+                        "name": "oBJECT",
+                        "printedName": "oBJECT",
+                        "children": [
+                          {
+                            "kind": "TypeFunc",
+                            "name": "Function",
+                            "printedName": "(CoreAuthenticator.Skie.KotlinxSerializationCore.StructureKind.__Sealed.Type) -> (CoreAuthenticator.Kotlinx_serialization_coreStructureKind.OBJECT) -> CoreAuthenticator.Skie.KotlinxSerializationCore.StructureKind.__Sealed",
+                            "children": [
+                              {
+                                "kind": "TypeFunc",
+                                "name": "Function",
+                                "printedName": "(CoreAuthenticator.Kotlinx_serialization_coreStructureKind.OBJECT) -> CoreAuthenticator.Skie.KotlinxSerializationCore.StructureKind.__Sealed",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "__Sealed",
+                                    "printedName": "CoreAuthenticator.Skie.KotlinxSerializationCore.StructureKind.__Sealed",
+                                    "usr": "s:17CoreAuthenticator4SkieO020KotlinxSerializationA0O13StructureKindO8__SealedO"
+                                  },
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "OBJECT",
+                                    "printedName": "CoreAuthenticator.Kotlinx_serialization_coreStructureKind.OBJECT",
+                                    "usr": "c:objc(cs)CoreAuthenticatorKotlinx_serialization_coreStructureKindOBJECT"
+                                  }
+                                ]
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Metatype",
+                                "printedName": "CoreAuthenticator.Skie.KotlinxSerializationCore.StructureKind.__Sealed.Type",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "__Sealed",
+                                    "printedName": "CoreAuthenticator.Skie.KotlinxSerializationCore.StructureKind.__Sealed",
+                                    "usr": "s:17CoreAuthenticator4SkieO020KotlinxSerializationA0O13StructureKindO8__SealedO"
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ],
+                        "declKind": "EnumElement",
+                        "usr": "s:17CoreAuthenticator4SkieO020KotlinxSerializationA0O13StructureKindO8__SealedO6oBJECTyAISo0abd19_serialization_corefG6OBJECTCcAImF",
+                        "mangledName": "$s17CoreAuthenticator4SkieO020KotlinxSerializationA0O13StructureKindO8__SealedO6oBJECTyAISo0abd19_serialization_corefG6OBJECTCcAImF",
+                        "moduleName": "CoreAuthenticator",
+                        "fixedbinaryorder": 3
+                      },
+                      {
+                        "kind": "Var",
+                        "name": "hashValue",
+                        "printedName": "hashValue",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int",
+                            "printedName": "Swift.Int",
+                            "usr": "s:Si"
+                          }
+                        ],
+                        "declKind": "Var",
+                        "usr": "s:17CoreAuthenticator4SkieO020KotlinxSerializationA0O13StructureKindO8__SealedO9hashValueSivp",
+                        "mangledName": "$s17CoreAuthenticator4SkieO020KotlinxSerializationA0O13StructureKindO8__SealedO9hashValueSivp",
+                        "moduleName": "CoreAuthenticator",
+                        "implicit": true,
+                        "accessors": [
+                          {
+                            "kind": "Accessor",
+                            "name": "Get",
+                            "printedName": "Get()",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Int",
+                                "printedName": "Swift.Int",
+                                "usr": "s:Si"
+                              }
+                            ],
+                            "declKind": "Accessor",
+                            "usr": "s:17CoreAuthenticator4SkieO020KotlinxSerializationA0O13StructureKindO8__SealedO9hashValueSivg",
+                            "mangledName": "$s17CoreAuthenticator4SkieO020KotlinxSerializationA0O13StructureKindO8__SealedO9hashValueSivg",
+                            "moduleName": "CoreAuthenticator",
+                            "implicit": true,
+                            "accessorKind": "get"
+                          }
+                        ]
+                      },
+                      {
+                        "kind": "Function",
+                        "name": "hash",
+                        "printedName": "hash(into:)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Hasher",
+                            "printedName": "Swift.Hasher",
+                            "paramValueOwnership": "InOut",
+                            "usr": "s:s6HasherV"
+                          }
+                        ],
+                        "declKind": "Func",
+                        "usr": "s:17CoreAuthenticator4SkieO020KotlinxSerializationA0O13StructureKindO8__SealedO4hash4intoys6HasherVz_tF",
+                        "mangledName": "$s17CoreAuthenticator4SkieO020KotlinxSerializationA0O13StructureKindO8__SealedO4hash4intoys6HasherVz_tF",
+                        "moduleName": "CoreAuthenticator",
+                        "implicit": true,
+                        "funcSelfKind": "NonMutating"
+                      },
+                      {
+                        "kind": "Function",
+                        "name": "==",
+                        "printedName": "==(_:_:)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Bool",
+                            "printedName": "Swift.Bool",
+                            "usr": "s:Sb"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "__Sealed",
+                            "printedName": "CoreAuthenticator.Skie.KotlinxSerializationCore.StructureKind.__Sealed",
+                            "usr": "s:17CoreAuthenticator4SkieO020KotlinxSerializationA0O13StructureKindO8__SealedO"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "__Sealed",
+                            "printedName": "CoreAuthenticator.Skie.KotlinxSerializationCore.StructureKind.__Sealed",
+                            "usr": "s:17CoreAuthenticator4SkieO020KotlinxSerializationA0O13StructureKindO8__SealedO"
+                          }
+                        ],
+                        "declKind": "Func",
+                        "usr": "s:17CoreAuthenticator4SkieO020KotlinxSerializationA0O13StructureKindO8__SealedO2eeoiySbAI_AItFZ",
+                        "mangledName": "$s17CoreAuthenticator4SkieO020KotlinxSerializationA0O13StructureKindO8__SealedO2eeoiySbAI_AItFZ",
+                        "moduleName": "CoreAuthenticator",
+                        "static": true,
+                        "implicit": true,
+                        "funcSelfKind": "NonMutating"
+                      }
+                    ],
+                    "declKind": "Enum",
+                    "usr": "s:17CoreAuthenticator4SkieO020KotlinxSerializationA0O13StructureKindO8__SealedO",
+                    "mangledName": "$s17CoreAuthenticator4SkieO020KotlinxSerializationA0O13StructureKindO8__SealedO",
+                    "moduleName": "CoreAuthenticator",
+                    "declAttributes": [
+                      "AccessControl",
+                      "Frozen"
+                    ],
+                    "isFromExtension": true,
+                    "isEnumExhaustive": true,
+                    "conformances": [
+                      {
+                        "kind": "Conformance",
+                        "name": "Copyable",
+                        "printedName": "Copyable",
+                        "usr": "s:s8CopyableP",
+                        "mangledName": "$ss8CopyableP"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "Escapable",
+                        "printedName": "Escapable",
+                        "usr": "s:s9EscapableP",
+                        "mangledName": "$ss9EscapableP"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "Hashable",
+                        "printedName": "Hashable",
+                        "usr": "s:SH",
+                        "mangledName": "$sSH"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "Equatable",
+                        "printedName": "Equatable",
+                        "usr": "s:SQ",
+                        "mangledName": "$sSQ"
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "Enum",
+                "usr": "s:17CoreAuthenticator4SkieO020KotlinxSerializationA0O13StructureKindO",
+                "mangledName": "$s17CoreAuthenticator4SkieO020KotlinxSerializationA0O13StructureKindO",
+                "moduleName": "CoreAuthenticator",
+                "declAttributes": [
+                  "AccessControl"
+                ],
+                "conformances": [
+                  {
+                    "kind": "Conformance",
+                    "name": "Copyable",
+                    "printedName": "Copyable",
+                    "usr": "s:s8CopyableP",
+                    "mangledName": "$ss8CopyableP"
+                  },
+                  {
+                    "kind": "Conformance",
+                    "name": "Escapable",
+                    "printedName": "Escapable",
+                    "usr": "s:s9EscapableP",
+                    "mangledName": "$ss9EscapableP"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Enum",
+            "usr": "s:17CoreAuthenticator4SkieO020KotlinxSerializationA0O",
+            "mangledName": "$s17CoreAuthenticator4SkieO020KotlinxSerializationA0O",
             "moduleName": "CoreAuthenticator",
             "declAttributes": [
               "AccessControl"
@@ -24550,6 +26568,722 @@
       },
       {
         "kind": "TypeDecl",
+        "name": "ApiResponseStatus",
+        "printedName": "ApiResponseStatus",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "error",
+            "printedName": "error",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CoreAuthenticator.ApiResponseStatus.Type) -> CoreAuthenticator.ApiResponseStatus",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ApiResponseStatus",
+                    "printedName": "CoreAuthenticator.ApiResponseStatus",
+                    "usr": "s:17CoreAuthenticator17ApiResponseStatusO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CoreAuthenticator.ApiResponseStatus.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ApiResponseStatus",
+                        "printedName": "CoreAuthenticator.ApiResponseStatus",
+                        "usr": "s:17CoreAuthenticator17ApiResponseStatusO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:17CoreAuthenticator17ApiResponseStatusO5erroryA2CmF",
+            "mangledName": "$s17CoreAuthenticator17ApiResponseStatusO5erroryA2CmF",
+            "moduleName": "CoreAuthenticator",
+            "fixedbinaryorder": 0
+          },
+          {
+            "kind": "Var",
+            "name": "success",
+            "printedName": "success",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CoreAuthenticator.ApiResponseStatus.Type) -> CoreAuthenticator.ApiResponseStatus",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ApiResponseStatus",
+                    "printedName": "CoreAuthenticator.ApiResponseStatus",
+                    "usr": "s:17CoreAuthenticator17ApiResponseStatusO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CoreAuthenticator.ApiResponseStatus.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ApiResponseStatus",
+                        "printedName": "CoreAuthenticator.ApiResponseStatus",
+                        "usr": "s:17CoreAuthenticator17ApiResponseStatusO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:17CoreAuthenticator17ApiResponseStatusO7successyA2CmF",
+            "mangledName": "$s17CoreAuthenticator17ApiResponseStatusO7successyA2CmF",
+            "moduleName": "CoreAuthenticator",
+            "fixedbinaryorder": 1
+          },
+          {
+            "kind": "Var",
+            "name": "asynchronous",
+            "printedName": "asynchronous",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CoreAuthenticator.ApiResponseStatus.Type) -> CoreAuthenticator.ApiResponseStatus",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ApiResponseStatus",
+                    "printedName": "CoreAuthenticator.ApiResponseStatus",
+                    "usr": "s:17CoreAuthenticator17ApiResponseStatusO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CoreAuthenticator.ApiResponseStatus.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ApiResponseStatus",
+                        "printedName": "CoreAuthenticator.ApiResponseStatus",
+                        "usr": "s:17CoreAuthenticator17ApiResponseStatusO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:17CoreAuthenticator17ApiResponseStatusO12asynchronousyA2CmF",
+            "mangledName": "$s17CoreAuthenticator17ApiResponseStatusO12asynchronousyA2CmF",
+            "moduleName": "CoreAuthenticator",
+            "fixedbinaryorder": 2
+          },
+          {
+            "kind": "Var",
+            "name": "unknown",
+            "printedName": "unknown",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CoreAuthenticator.ApiResponseStatus.Type) -> CoreAuthenticator.ApiResponseStatus",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ApiResponseStatus",
+                    "printedName": "CoreAuthenticator.ApiResponseStatus",
+                    "usr": "s:17CoreAuthenticator17ApiResponseStatusO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CoreAuthenticator.ApiResponseStatus.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ApiResponseStatus",
+                        "printedName": "CoreAuthenticator.ApiResponseStatus",
+                        "usr": "s:17CoreAuthenticator17ApiResponseStatusO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:17CoreAuthenticator17ApiResponseStatusO7unknownyA2CmF",
+            "mangledName": "$s17CoreAuthenticator17ApiResponseStatusO7unknownyA2CmF",
+            "moduleName": "CoreAuthenticator",
+            "fixedbinaryorder": 3
+          },
+          {
+            "kind": "Var",
+            "name": "name",
+            "printedName": "name",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17CoreAuthenticator17ApiResponseStatusO4nameSSvp",
+            "mangledName": "$s17CoreAuthenticator17ApiResponseStatusO4nameSSvp",
+            "moduleName": "CoreAuthenticator",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17CoreAuthenticator17ApiResponseStatusO4nameSSvg",
+                "mangledName": "$s17CoreAuthenticator17ApiResponseStatusO4nameSSvg",
+                "moduleName": "CoreAuthenticator",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "ordinal",
+            "printedName": "ordinal",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int32",
+                "printedName": "Swift.Int32",
+                "usr": "s:s5Int32V"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17CoreAuthenticator17ApiResponseStatusO7ordinals5Int32Vvp",
+            "mangledName": "$s17CoreAuthenticator17ApiResponseStatusO7ordinals5Int32Vvp",
+            "moduleName": "CoreAuthenticator",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int32",
+                    "printedName": "Swift.Int32",
+                    "usr": "s:s5Int32V"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17CoreAuthenticator17ApiResponseStatusO7ordinals5Int32Vvg",
+                "mangledName": "$s17CoreAuthenticator17ApiResponseStatusO7ordinals5Int32Vvg",
+                "moduleName": "CoreAuthenticator",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "companion",
+            "printedName": "companion",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Companion",
+                "printedName": "CoreAuthenticator.__ApiResponseStatus.Companion",
+                "usr": "c:objc(cs)CoreAuthenticatorApiResponseStatusCompanion"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17CoreAuthenticator17ApiResponseStatusO9companionSo0abcdE9CompanionCvpZ",
+            "mangledName": "$s17CoreAuthenticator17ApiResponseStatusO9companionSo0abcdE9CompanionCvpZ",
+            "moduleName": "CoreAuthenticator",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Companion",
+                    "printedName": "CoreAuthenticator.__ApiResponseStatus.Companion",
+                    "usr": "c:objc(cs)CoreAuthenticatorApiResponseStatusCompanion"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17CoreAuthenticator17ApiResponseStatusO9companionSo0abcdE9CompanionCvgZ",
+                "mangledName": "$s17CoreAuthenticator17ApiResponseStatusO9companionSo0abcdE9CompanionCvgZ",
+                "moduleName": "CoreAuthenticator",
+                "static": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "_forceBridgeFromObjectiveC",
+            "printedName": "_forceBridgeFromObjectiveC(_:result:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "__ApiResponseStatus",
+                "printedName": "CoreAuthenticator.__ApiResponseStatus",
+                "usr": "c:objc(cs)CoreAuthenticatorApiResponseStatus"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "CoreAuthenticator.ApiResponseStatus?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ApiResponseStatus",
+                    "printedName": "CoreAuthenticator.ApiResponseStatus",
+                    "usr": "s:17CoreAuthenticator17ApiResponseStatusO"
+                  }
+                ],
+                "paramValueOwnership": "InOut",
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17CoreAuthenticator17ApiResponseStatusO26_forceBridgeFromObjectiveC_6resultySo0abcdE0C_ACSgztFZ",
+            "mangledName": "$s17CoreAuthenticator17ApiResponseStatusO26_forceBridgeFromObjectiveC_6resultySo0abcdE0C_ACSgztFZ",
+            "moduleName": "CoreAuthenticator",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "_conditionallyBridgeFromObjectiveC",
+            "printedName": "_conditionallyBridgeFromObjectiveC(_:result:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "__ApiResponseStatus",
+                "printedName": "CoreAuthenticator.__ApiResponseStatus",
+                "usr": "c:objc(cs)CoreAuthenticatorApiResponseStatus"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "CoreAuthenticator.ApiResponseStatus?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ApiResponseStatus",
+                    "printedName": "CoreAuthenticator.ApiResponseStatus",
+                    "usr": "s:17CoreAuthenticator17ApiResponseStatusO"
+                  }
+                ],
+                "paramValueOwnership": "InOut",
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17CoreAuthenticator17ApiResponseStatusO34_conditionallyBridgeFromObjectiveC_6resultSbSo0abcdE0C_ACSgztFZ",
+            "mangledName": "$s17CoreAuthenticator17ApiResponseStatusO34_conditionallyBridgeFromObjectiveC_6resultSbSo0abcdE0C_ACSgztFZ",
+            "moduleName": "CoreAuthenticator",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "_unconditionallyBridgeFromObjectiveC",
+            "printedName": "_unconditionallyBridgeFromObjectiveC(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ApiResponseStatus",
+                "printedName": "CoreAuthenticator.ApiResponseStatus",
+                "usr": "s:17CoreAuthenticator17ApiResponseStatusO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "CoreAuthenticator.__ApiResponseStatus?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "__ApiResponseStatus",
+                    "printedName": "CoreAuthenticator.__ApiResponseStatus",
+                    "usr": "c:objc(cs)CoreAuthenticatorApiResponseStatus"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17CoreAuthenticator17ApiResponseStatusO36_unconditionallyBridgeFromObjectiveCyACSo0abcdE0CSgFZ",
+            "mangledName": "$s17CoreAuthenticator17ApiResponseStatusO36_unconditionallyBridgeFromObjectiveCyACSo0abcdE0CSgFZ",
+            "moduleName": "CoreAuthenticator",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "_bridgeToObjectiveC",
+            "printedName": "_bridgeToObjectiveC()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "__ApiResponseStatus",
+                "printedName": "CoreAuthenticator.__ApiResponseStatus",
+                "usr": "c:objc(cs)CoreAuthenticatorApiResponseStatus"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17CoreAuthenticator17ApiResponseStatusO19_bridgeToObjectiveCSo0abcdE0CyF",
+            "mangledName": "$s17CoreAuthenticator17ApiResponseStatusO19_bridgeToObjectiveCSo0abcdE0CyF",
+            "moduleName": "CoreAuthenticator",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ApiResponseStatus",
+                "printedName": "CoreAuthenticator.ApiResponseStatus",
+                "usr": "s:17CoreAuthenticator17ApiResponseStatusO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ApiResponseStatus",
+                "printedName": "CoreAuthenticator.ApiResponseStatus",
+                "usr": "s:17CoreAuthenticator17ApiResponseStatusO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17CoreAuthenticator17ApiResponseStatusO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s17CoreAuthenticator17ApiResponseStatusO2eeoiySbAC_ACtFZ",
+            "moduleName": "CoreAuthenticator",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17CoreAuthenticator17ApiResponseStatusO9hashValueSivp",
+            "mangledName": "$s17CoreAuthenticator17ApiResponseStatusO9hashValueSivp",
+            "moduleName": "CoreAuthenticator",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17CoreAuthenticator17ApiResponseStatusO9hashValueSivg",
+                "mangledName": "$s17CoreAuthenticator17ApiResponseStatusO9hashValueSivg",
+                "moduleName": "CoreAuthenticator",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17CoreAuthenticator17ApiResponseStatusO4hash4intoys6HasherVz_tF",
+            "mangledName": "$s17CoreAuthenticator17ApiResponseStatusO4hash4intoys6HasherVz_tF",
+            "moduleName": "CoreAuthenticator",
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "allCases",
+            "printedName": "allCases",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[CoreAuthenticator.ApiResponseStatus]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ApiResponseStatus",
+                    "printedName": "CoreAuthenticator.ApiResponseStatus",
+                    "usr": "s:17CoreAuthenticator17ApiResponseStatusO"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17CoreAuthenticator17ApiResponseStatusO8allCasesSayACGvpZ",
+            "mangledName": "$s17CoreAuthenticator17ApiResponseStatusO8allCasesSayACGvpZ",
+            "moduleName": "CoreAuthenticator",
+            "static": true,
+            "implicit": true,
+            "declAttributes": [
+              "Nonisolated"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[CoreAuthenticator.ApiResponseStatus]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ApiResponseStatus",
+                        "printedName": "CoreAuthenticator.ApiResponseStatus",
+                        "usr": "s:17CoreAuthenticator17ApiResponseStatusO"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17CoreAuthenticator17ApiResponseStatusO8allCasesSayACGvgZ",
+                "mangledName": "$s17CoreAuthenticator17ApiResponseStatusO8allCasesSayACGvgZ",
+                "moduleName": "CoreAuthenticator",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "toKotlinEnum",
+            "printedName": "toKotlinEnum()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "__ApiResponseStatus",
+                "printedName": "CoreAuthenticator.__ApiResponseStatus",
+                "usr": "c:objc(cs)CoreAuthenticatorApiResponseStatus"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17CoreAuthenticator17ApiResponseStatusO12toKotlinEnumSo0abcdE0CyF",
+            "mangledName": "$s17CoreAuthenticator17ApiResponseStatusO12toKotlinEnumSo0abcdE0CyF",
+            "moduleName": "CoreAuthenticator",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:17CoreAuthenticator17ApiResponseStatusO",
+        "mangledName": "$s17CoreAuthenticator17ApiResponseStatusO",
+        "moduleName": "CoreAuthenticator",
+        "declAttributes": [
+          "AccessControl",
+          "Frozen"
+        ],
+        "isEnumExhaustive": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CaseIterable",
+            "printedName": "CaseIterable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "AllCases",
+                "printedName": "AllCases",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[CoreAuthenticator.ApiResponseStatus]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ApiResponseStatus",
+                        "printedName": "CoreAuthenticator.ApiResponseStatus",
+                        "usr": "s:17CoreAuthenticator17ApiResponseStatusO"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s12CaseIterableP",
+            "mangledName": "$ss12CaseIterableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_ObjectiveCBridgeable",
+            "printedName": "_ObjectiveCBridgeable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "_ObjectiveCType",
+                "printedName": "_ObjectiveCType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "__ApiResponseStatus",
+                    "printedName": "CoreAuthenticator.__ApiResponseStatus",
+                    "usr": "c:objc(cs)CoreAuthenticatorApiResponseStatus"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s21_ObjectiveCBridgeableP",
+            "mangledName": "$ss21_ObjectiveCBridgeableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "BitwiseCopyable",
+            "printedName": "BitwiseCopyable",
+            "usr": "s:s15BitwiseCopyableP",
+            "mangledName": "$ss15BitwiseCopyableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "CoreAuthenticator",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
         "name": "MatomoCategory",
         "printedName": "MatomoCategory",
         "children": [
@@ -27688,6 +30422,421 @@
       },
       {
         "kind": "Function",
+        "name": "onEnum",
+        "printedName": "onEnum(of:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "__Sealed",
+            "printedName": "CoreAuthenticator.Skie.KotlinxSerializationCore.SerialKind.__Sealed",
+            "usr": "s:17CoreAuthenticator4SkieO020KotlinxSerializationA0O10SerialKindO8__SealedO"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "GenericTypeParam",
+            "printedName": "τ_0_0"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "s:17CoreAuthenticator6onEnum2ofAA4SkieO020KotlinxSerializationA0O10SerialKindO8__SealedOx_tSo0abg19_serialization_coreiJ0CRbzlF",
+        "mangledName": "$s17CoreAuthenticator6onEnum2ofAA4SkieO020KotlinxSerializationA0O10SerialKindO8__SealedOx_tSo0abg19_serialization_coreiJ0CRbzlF",
+        "moduleName": "CoreAuthenticator",
+        "genericSig": "<τ_0_0 where τ_0_0 : CoreAuthenticator.Kotlinx_serialization_coreSerialKind>",
+        "sugared_genericSig": "<__Sealed where __Sealed : CoreAuthenticator.Kotlinx_serialization_coreSerialKind>",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Function",
+        "name": "onEnum",
+        "printedName": "onEnum(of:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Optional",
+            "printedName": "CoreAuthenticator.Skie.KotlinxSerializationCore.SerialKind.__Sealed?",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "__Sealed",
+                "printedName": "CoreAuthenticator.Skie.KotlinxSerializationCore.SerialKind.__Sealed",
+                "usr": "s:17CoreAuthenticator4SkieO020KotlinxSerializationA0O10SerialKindO8__SealedO"
+              }
+            ],
+            "usr": "s:Sq"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "Optional",
+            "printedName": "τ_0_0?",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_0"
+              }
+            ],
+            "usr": "s:Sq"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "s:17CoreAuthenticator6onEnum2ofAA4SkieO020KotlinxSerializationA0O10SerialKindO8__SealedOSgxSg_tSo0abg19_serialization_coreiJ0CRbzlF",
+        "mangledName": "$s17CoreAuthenticator6onEnum2ofAA4SkieO020KotlinxSerializationA0O10SerialKindO8__SealedOSgxSg_tSo0abg19_serialization_coreiJ0CRbzlF",
+        "moduleName": "CoreAuthenticator",
+        "genericSig": "<τ_0_0 where τ_0_0 : CoreAuthenticator.Kotlinx_serialization_coreSerialKind>",
+        "sugared_genericSig": "<__Sealed where __Sealed : CoreAuthenticator.Kotlinx_serialization_coreSerialKind>",
+        "declAttributes": [
+          "AccessControl",
+          "DisfavoredOverload"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "CoreAuthenticator",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Function",
+        "name": "onEnum",
+        "printedName": "onEnum(of:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "__Sealed",
+            "printedName": "CoreAuthenticator.Skie.KotlinxSerializationCore.SerializersModule.__Sealed",
+            "usr": "s:17CoreAuthenticator4SkieO020KotlinxSerializationA0O17SerializersModuleO8__SealedO"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "GenericTypeParam",
+            "printedName": "τ_0_0"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "s:17CoreAuthenticator6onEnum2ofAA4SkieO020KotlinxSerializationA0O17SerializersModuleO8__SealedOx_tSo0abg19_serialization_coreiJ0CRbzlF",
+        "mangledName": "$s17CoreAuthenticator6onEnum2ofAA4SkieO020KotlinxSerializationA0O17SerializersModuleO8__SealedOx_tSo0abg19_serialization_coreiJ0CRbzlF",
+        "moduleName": "CoreAuthenticator",
+        "genericSig": "<τ_0_0 where τ_0_0 : CoreAuthenticator.Kotlinx_serialization_coreSerializersModule>",
+        "sugared_genericSig": "<__Sealed where __Sealed : CoreAuthenticator.Kotlinx_serialization_coreSerializersModule>",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Function",
+        "name": "onEnum",
+        "printedName": "onEnum(of:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Optional",
+            "printedName": "CoreAuthenticator.Skie.KotlinxSerializationCore.SerializersModule.__Sealed?",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "__Sealed",
+                "printedName": "CoreAuthenticator.Skie.KotlinxSerializationCore.SerializersModule.__Sealed",
+                "usr": "s:17CoreAuthenticator4SkieO020KotlinxSerializationA0O17SerializersModuleO8__SealedO"
+              }
+            ],
+            "usr": "s:Sq"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "Optional",
+            "printedName": "τ_0_0?",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_0"
+              }
+            ],
+            "usr": "s:Sq"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "s:17CoreAuthenticator6onEnum2ofAA4SkieO020KotlinxSerializationA0O17SerializersModuleO8__SealedOSgxSg_tSo0abg19_serialization_coreiJ0CRbzlF",
+        "mangledName": "$s17CoreAuthenticator6onEnum2ofAA4SkieO020KotlinxSerializationA0O17SerializersModuleO8__SealedOSgxSg_tSo0abg19_serialization_coreiJ0CRbzlF",
+        "moduleName": "CoreAuthenticator",
+        "genericSig": "<τ_0_0 where τ_0_0 : CoreAuthenticator.Kotlinx_serialization_coreSerializersModule>",
+        "sugared_genericSig": "<__Sealed where __Sealed : CoreAuthenticator.Kotlinx_serialization_coreSerializersModule>",
+        "declAttributes": [
+          "AccessControl",
+          "DisfavoredOverload"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "CoreAuthenticator",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Function",
+        "name": "onEnum",
+        "printedName": "onEnum(of:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "__Sealed",
+            "printedName": "CoreAuthenticator.Skie.KotlinxSerializationCore.PolymorphicKind.__Sealed",
+            "usr": "s:17CoreAuthenticator4SkieO020KotlinxSerializationA0O15PolymorphicKindO8__SealedO"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "GenericTypeParam",
+            "printedName": "τ_0_0"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "s:17CoreAuthenticator6onEnum2ofAA4SkieO020KotlinxSerializationA0O15PolymorphicKindO8__SealedOx_tSo0abg19_serialization_coreiJ0CRbzlF",
+        "mangledName": "$s17CoreAuthenticator6onEnum2ofAA4SkieO020KotlinxSerializationA0O15PolymorphicKindO8__SealedOx_tSo0abg19_serialization_coreiJ0CRbzlF",
+        "moduleName": "CoreAuthenticator",
+        "genericSig": "<τ_0_0 where τ_0_0 : CoreAuthenticator.Kotlinx_serialization_corePolymorphicKind>",
+        "sugared_genericSig": "<__Sealed where __Sealed : CoreAuthenticator.Kotlinx_serialization_corePolymorphicKind>",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Function",
+        "name": "onEnum",
+        "printedName": "onEnum(of:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Optional",
+            "printedName": "CoreAuthenticator.Skie.KotlinxSerializationCore.PolymorphicKind.__Sealed?",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "__Sealed",
+                "printedName": "CoreAuthenticator.Skie.KotlinxSerializationCore.PolymorphicKind.__Sealed",
+                "usr": "s:17CoreAuthenticator4SkieO020KotlinxSerializationA0O15PolymorphicKindO8__SealedO"
+              }
+            ],
+            "usr": "s:Sq"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "Optional",
+            "printedName": "τ_0_0?",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_0"
+              }
+            ],
+            "usr": "s:Sq"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "s:17CoreAuthenticator6onEnum2ofAA4SkieO020KotlinxSerializationA0O15PolymorphicKindO8__SealedOSgxSg_tSo0abg19_serialization_coreiJ0CRbzlF",
+        "mangledName": "$s17CoreAuthenticator6onEnum2ofAA4SkieO020KotlinxSerializationA0O15PolymorphicKindO8__SealedOSgxSg_tSo0abg19_serialization_coreiJ0CRbzlF",
+        "moduleName": "CoreAuthenticator",
+        "genericSig": "<τ_0_0 where τ_0_0 : CoreAuthenticator.Kotlinx_serialization_corePolymorphicKind>",
+        "sugared_genericSig": "<__Sealed where __Sealed : CoreAuthenticator.Kotlinx_serialization_corePolymorphicKind>",
+        "declAttributes": [
+          "AccessControl",
+          "DisfavoredOverload"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "CoreAuthenticator",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Function",
+        "name": "onEnum",
+        "printedName": "onEnum(of:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "__Sealed",
+            "printedName": "CoreAuthenticator.Skie.KotlinxSerializationCore.PrimitiveKind.__Sealed",
+            "usr": "s:17CoreAuthenticator4SkieO020KotlinxSerializationA0O13PrimitiveKindO8__SealedO"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "GenericTypeParam",
+            "printedName": "τ_0_0"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "s:17CoreAuthenticator6onEnum2ofAA4SkieO020KotlinxSerializationA0O13PrimitiveKindO8__SealedOx_tSo0abg19_serialization_coreiJ0CRbzlF",
+        "mangledName": "$s17CoreAuthenticator6onEnum2ofAA4SkieO020KotlinxSerializationA0O13PrimitiveKindO8__SealedOx_tSo0abg19_serialization_coreiJ0CRbzlF",
+        "moduleName": "CoreAuthenticator",
+        "genericSig": "<τ_0_0 where τ_0_0 : CoreAuthenticator.Kotlinx_serialization_corePrimitiveKind>",
+        "sugared_genericSig": "<__Sealed where __Sealed : CoreAuthenticator.Kotlinx_serialization_corePrimitiveKind>",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Function",
+        "name": "onEnum",
+        "printedName": "onEnum(of:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Optional",
+            "printedName": "CoreAuthenticator.Skie.KotlinxSerializationCore.PrimitiveKind.__Sealed?",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "__Sealed",
+                "printedName": "CoreAuthenticator.Skie.KotlinxSerializationCore.PrimitiveKind.__Sealed",
+                "usr": "s:17CoreAuthenticator4SkieO020KotlinxSerializationA0O13PrimitiveKindO8__SealedO"
+              }
+            ],
+            "usr": "s:Sq"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "Optional",
+            "printedName": "τ_0_0?",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_0"
+              }
+            ],
+            "usr": "s:Sq"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "s:17CoreAuthenticator6onEnum2ofAA4SkieO020KotlinxSerializationA0O13PrimitiveKindO8__SealedOSgxSg_tSo0abg19_serialization_coreiJ0CRbzlF",
+        "mangledName": "$s17CoreAuthenticator6onEnum2ofAA4SkieO020KotlinxSerializationA0O13PrimitiveKindO8__SealedOSgxSg_tSo0abg19_serialization_coreiJ0CRbzlF",
+        "moduleName": "CoreAuthenticator",
+        "genericSig": "<τ_0_0 where τ_0_0 : CoreAuthenticator.Kotlinx_serialization_corePrimitiveKind>",
+        "sugared_genericSig": "<__Sealed where __Sealed : CoreAuthenticator.Kotlinx_serialization_corePrimitiveKind>",
+        "declAttributes": [
+          "AccessControl",
+          "DisfavoredOverload"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "CoreAuthenticator",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Function",
+        "name": "onEnum",
+        "printedName": "onEnum(of:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "__Sealed",
+            "printedName": "CoreAuthenticator.Skie.KotlinxSerializationCore.StructureKind.__Sealed",
+            "usr": "s:17CoreAuthenticator4SkieO020KotlinxSerializationA0O13StructureKindO8__SealedO"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "GenericTypeParam",
+            "printedName": "τ_0_0"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "s:17CoreAuthenticator6onEnum2ofAA4SkieO020KotlinxSerializationA0O13StructureKindO8__SealedOx_tSo0abg19_serialization_coreiJ0CRbzlF",
+        "mangledName": "$s17CoreAuthenticator6onEnum2ofAA4SkieO020KotlinxSerializationA0O13StructureKindO8__SealedOx_tSo0abg19_serialization_coreiJ0CRbzlF",
+        "moduleName": "CoreAuthenticator",
+        "genericSig": "<τ_0_0 where τ_0_0 : CoreAuthenticator.Kotlinx_serialization_coreStructureKind>",
+        "sugared_genericSig": "<__Sealed where __Sealed : CoreAuthenticator.Kotlinx_serialization_coreStructureKind>",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Function",
+        "name": "onEnum",
+        "printedName": "onEnum(of:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Optional",
+            "printedName": "CoreAuthenticator.Skie.KotlinxSerializationCore.StructureKind.__Sealed?",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "__Sealed",
+                "printedName": "CoreAuthenticator.Skie.KotlinxSerializationCore.StructureKind.__Sealed",
+                "usr": "s:17CoreAuthenticator4SkieO020KotlinxSerializationA0O13StructureKindO8__SealedO"
+              }
+            ],
+            "usr": "s:Sq"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "Optional",
+            "printedName": "τ_0_0?",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_0"
+              }
+            ],
+            "usr": "s:Sq"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "s:17CoreAuthenticator6onEnum2ofAA4SkieO020KotlinxSerializationA0O13StructureKindO8__SealedOSgxSg_tSo0abg19_serialization_coreiJ0CRbzlF",
+        "mangledName": "$s17CoreAuthenticator6onEnum2ofAA4SkieO020KotlinxSerializationA0O13StructureKindO8__SealedOSgxSg_tSo0abg19_serialization_coreiJ0CRbzlF",
+        "moduleName": "CoreAuthenticator",
+        "genericSig": "<τ_0_0 where τ_0_0 : CoreAuthenticator.Kotlinx_serialization_coreStructureKind>",
+        "sugared_genericSig": "<__Sealed where __Sealed : CoreAuthenticator.Kotlinx_serialization_coreStructureKind>",
+        "declAttributes": [
+          "AccessControl",
+          "DisfavoredOverload"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "CoreAuthenticator",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Function",
         "name": "getAppSettingsDatabaseBuilder",
         "printedName": "getAppSettingsDatabaseBuilder()",
         "children": [
@@ -29349,6 +32498,116 @@
         "inheritsConvenienceInitializers": true,
         "superclassNames": [
           "CoreAuthenticator.KotlinEnum<CoreAuthenticator.__KeyStorageLocation>",
+          "CoreAuthenticator.KotlinBase",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "__ApiResponseStatus",
+        "printedName": "__ApiResponseStatus",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "toSwiftEnum",
+            "printedName": "toSwiftEnum()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ApiResponseStatus",
+                "printedName": "CoreAuthenticator.ApiResponseStatus",
+                "usr": "s:17CoreAuthenticator17ApiResponseStatusO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:So34CoreAuthenticatorApiResponseStatusC0aB0E11toSwiftEnumAC0cdE0OyF",
+            "mangledName": "$sSo34CoreAuthenticatorApiResponseStatusC0aB0E11toSwiftEnumAC0cdE0OyF",
+            "moduleName": "CoreAuthenticator",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:objc(cs)CoreAuthenticatorApiResponseStatus",
+        "moduleName": "CoreAuthenticator",
+        "objc_name": "CoreAuthenticatorApiResponseStatus",
+        "declAttributes": [
+          "ObjC",
+          "Dynamic"
+        ],
+        "superclassUsr": "c:objc(cs)CoreAuthenticatorKotlinEnum",
+        "isExternal": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "CoreAuthenticator.KotlinEnum<CoreAuthenticator.__ApiResponseStatus>",
           "CoreAuthenticator.KotlinBase",
           "ObjectiveC.NSObject"
         ],
