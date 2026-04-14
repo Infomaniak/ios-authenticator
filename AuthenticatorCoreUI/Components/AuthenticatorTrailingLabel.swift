@@ -60,7 +60,7 @@ public struct AuthenticatorTrailingLabel: View {
             Text(title)
                 .lineLimit(1)
                 .foregroundStyle(Color.Token.Text.primary)
-                .font(.Token.body)
+                .font(.Token.bodyBold)
                 .frame(maxWidth: .infinity, alignment: .leading)
 
             if let icon {
