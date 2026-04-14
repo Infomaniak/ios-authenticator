@@ -58,7 +58,7 @@ open class TargetAssembly: @unchecked Sendable {
     private static let logger = Logger(category: "TargetAssembly")
     private static let realmRootPath = "authenticator"
 
-    private static let apiEnvironment: InfomaniakCore.ApiEnvironment = .customHost("staging-authenticator.dev.infomaniak.ch")
+    private static let apiEnvironment: InfomaniakCore.ApiEnvironment = .prod
     public static let loginConfig = InfomaniakLogin.Config(
         clientId: "A7B265CD-C9DB-4E6B-8236-2DFF60F146FC",
         loginURL: URL(string: "https://login.\(apiEnvironment.host)/")!,
