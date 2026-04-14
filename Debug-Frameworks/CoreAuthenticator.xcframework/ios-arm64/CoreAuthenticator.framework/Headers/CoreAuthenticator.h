@@ -1079,6 +1079,7 @@ __attribute__((swift_name("MatomoName")))
 @property (class, readonly) CoreAuthenticatorMatomoName *togglebiometry __attribute__((swift_name("togglebiometry")));
 @property (class, readonly) CoreAuthenticatorMatomoName *loggedin __attribute__((swift_name("loggedin")));
 @property (class, readonly) CoreAuthenticatorMatomoName *openloginwebview __attribute__((swift_name("openloginwebview")));
+@property (class, readonly) CoreAuthenticatorMatomoName *opencreationwebview __attribute__((swift_name("opencreationwebview")));
 @property (class, readonly) NSArray<CoreAuthenticatorMatomoName *> *entries __attribute__((swift_name("entries")));
 @property (readonly) NSString *value __attribute__((swift_name("value")));
 + (instancetype)alloc __attribute__((unavailable));
@@ -1109,6 +1110,9 @@ __attribute__((swift_name("UrlConstants")))
 + (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
 + (instancetype)urlConstants __attribute__((swift_name("init()")));
 - (NSString *)autologUrlHost:(NSString *)host url:(NSString *)url __attribute__((swift_name("autologUrl(host:url:)")));
+- (NSString *)createAccountCancelUrlHost:(NSString *)host __attribute__((swift_name("createAccountCancelUrl(host:)")));
+- (NSString *)createAccountSuccessUrlHost:(NSString *)host __attribute__((swift_name("createAccountSuccessUrl(host:)")));
+- (NSString *)createAccountUrlHost:(NSString *)host __attribute__((swift_name("createAccountUrl(host:)")));
 - (NSString *)managerUrlHost:(NSString *)host path:(NSString *)path __attribute__((swift_name("managerUrl(host:path:)")));
 @end
 

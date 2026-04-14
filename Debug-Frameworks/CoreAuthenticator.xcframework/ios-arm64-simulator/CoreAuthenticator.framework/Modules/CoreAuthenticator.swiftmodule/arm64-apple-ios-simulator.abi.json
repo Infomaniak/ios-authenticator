@@ -28041,6 +28041,44 @@
           },
           {
             "kind": "Var",
+            "name": "openCreationWebview",
+            "printedName": "openCreationWebview",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CoreAuthenticator.MatomoName.Type) -> CoreAuthenticator.MatomoName",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MatomoName",
+                    "printedName": "CoreAuthenticator.MatomoName",
+                    "usr": "s:17CoreAuthenticator10MatomoNameO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CoreAuthenticator.MatomoName.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MatomoName",
+                        "printedName": "CoreAuthenticator.MatomoName",
+                        "usr": "s:17CoreAuthenticator10MatomoNameO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:17CoreAuthenticator10MatomoNameO19openCreationWebviewyA2CmF",
+            "mangledName": "$s17CoreAuthenticator10MatomoNameO19openCreationWebviewyA2CmF",
+            "moduleName": "CoreAuthenticator",
+            "fixedbinaryorder": 3
+          },
+          {
+            "kind": "Var",
             "name": "name",
             "printedName": "name",
             "children": [

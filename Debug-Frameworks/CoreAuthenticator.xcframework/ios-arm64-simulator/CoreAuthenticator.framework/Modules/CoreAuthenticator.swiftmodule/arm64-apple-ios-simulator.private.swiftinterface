@@ -1065,6 +1065,7 @@ extension CoreAuthenticator.__MatomoCategory {
   case toggleBiometry
   case loggedIn
   case openLoginWebview
+  case openCreationWebview
   public var name: Swift.String {
     get
   }
