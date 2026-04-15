@@ -35,6 +35,8 @@ extension OnboardingStep {
             return .onboardingSuccessSlide
         case .biometry:
             return .onboardingFaceIdSlide
+        case .notifications:
+            return .onboardingNotificationsSlide
         }
     }
 }

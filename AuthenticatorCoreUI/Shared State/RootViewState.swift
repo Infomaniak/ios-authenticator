@@ -30,6 +30,7 @@ public enum OnboardingStep: Equatable {
     case migrationInProgress
     case success
     case biometry
+    case notifications
 
     public static let loginSteps: [OnboardingStep] = [.login, .loginInProgress, .success]
     public static let addAccountSteps: [OnboardingStep] = [.addAccount, .loginInProgress, .success]
@@ -84,6 +85,10 @@ public final class RootViewState: ObservableObject {
 
     public func configureBiometry() {
         state = .newAccount(.biometry)
+    }
+
+    public func configureNotifications() {
+        state = .newAccount(.notifications)
     }
 
     public func completeOnboarding() {
