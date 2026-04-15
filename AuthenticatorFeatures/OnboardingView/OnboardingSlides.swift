@@ -81,4 +81,11 @@ extension Slide {
         content: .illustration(AuthenticatorResourcesAsset.Images.faceId.image),
         bottomView: OnboardingTextBottomView(\.onBoardingFaceIdTitle, descriptionKey: \.onBoardingFaceIdDescription)
     )
+
+    static let onboardingNotificationsSlide = Slide(
+        backgroundImage: AuthenticatorResourcesAsset.Images.onboardingBlur.image,
+        backgroundImageTintColor: nil,
+        content: .illustration(AuthenticatorResourcesAsset.Images.onboardingNotifications.image),
+        bottomView: OnboardingTextBottomView(\.onboardingNotificationsTitle, descriptionKey: \.onboardingNotificationsDescription)
+    )
 }
