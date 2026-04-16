@@ -30,7 +30,10 @@ public struct SettingsView: View {
 
     @AppStorage(UserDefaults.shared.key(.notificationsEnabled)) private var isNotificationsEnabled = DefaultPreferences
         .notificationsEnabled
+
     @State private var isNotificationsAuthorized = false
+
+    private let roundedRectangle = RoundedRectangle(cornerRadius: 24.0)
 
     public init() {}
 
@@ -103,10 +106,8 @@ public struct SettingsView: View {
             }
             .authListStyle()
             .animation(.smooth, value: isNotificationsEnabled)
+            .animation(.smooth, value: isNotificationsAuthorized)
             .navigationTitle(AuthenticatorResourcesStrings.settingsTitle)
-            .task {
-                await checkNotificationAuthorization()
-            }
             .sceneLifecycle(willEnterForeground: willEnterForeground)
         }
     }
@@ -120,11 +121,12 @@ public struct SettingsView: View {
     private func checkNotificationAuthorization() async {
         let center = UNUserNotificationCenter.current()
         let settings = await center.notificationSettings()
-        isNotificationsAuthorized = settings.authorizationStatus == .authorized
-    }
-
-    private var roundedRectangle: some Shape {
-        RoundedRectangle(cornerRadius: 24.0)
+        switch settings.authorizationStatus {
+        case .authorized, .provisional, .ephemeral:
+            isNotificationsAuthorized = true
+        default:
+            isNotificationsAuthorized = false
+        }
     }
 }
 
