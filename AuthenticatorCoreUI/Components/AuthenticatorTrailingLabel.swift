@@ -25,34 +25,39 @@ public struct AuthenticatorTrailingLabel: View {
     let title: String
     let icon: Image?
     let iconColor: Color?
+    let font: Font
 
-    private init(title: String, icon: Image, iconColor: Color? = nil) {
+    private init(title: String, icon: Image, iconColor: Color? = nil, font: Font = .Token.body) {
         self.title = title
         self.icon = icon
         self.iconColor = iconColor
+        self.font = font
     }
 
     public init(
         _ title: String,
         iconKey: KeyPath<AuthenticatorResourcesAsset.Images.Type, AuthenticatorResourcesImages>,
-        iconColor: Color? = nil
+        iconColor: Color? = nil,
+        font: Font = .Token.body
     ) {
         let icon = AuthenticatorResourcesAsset.Images.self[keyPath: iconKey].swiftUIImage
-        self.init(title: title, icon: icon, iconColor: iconColor)
+        self.init(title: title, icon: icon, iconColor: iconColor, font: font)
     }
 
     public init(
         _ titleKey: KeyPath<AuthenticatorResourcesStrings.Type, String>,
         iconKey: KeyPath<AuthenticatorResourcesAsset.Images.Type, AuthenticatorResourcesImages>,
-        iconColor: Color? = nil
+        iconColor: Color? = nil,
+        font: Font = .Token.body
     ) {
         let title = AuthenticatorResourcesStrings.self[keyPath: titleKey]
         let icon = AuthenticatorResourcesAsset.Images.self[keyPath: iconKey].swiftUIImage
-        self.init(title: title, icon: icon, iconColor: iconColor)
+        self.init(title: title, icon: icon, iconColor: iconColor, font: font)
     }
 
-    public init(accountStatus: UIAccount.Status) {
-        self.init(title: accountStatus.title, icon: accountStatus.icon, iconColor: accountStatus.color.foreground)
+    public init(accountStatus: UIAccount.Status, font: Font = .Token.bodyBold) {
+        self.init(title: accountStatus.title, icon: accountStatus.icon,
+                  iconColor: accountStatus.color.foreground, font: font)
     }
 
     public var body: some View {
@@ -60,7 +65,7 @@ public struct AuthenticatorTrailingLabel: View {
             Text(title)
                 .lineLimit(1)
                 .foregroundStyle(Color.Token.Text.primary)
-                .font(.Token.bodyBold)
+                .font(font)
                 .frame(maxWidth: .infinity, alignment: .leading)
 
             if let icon {
