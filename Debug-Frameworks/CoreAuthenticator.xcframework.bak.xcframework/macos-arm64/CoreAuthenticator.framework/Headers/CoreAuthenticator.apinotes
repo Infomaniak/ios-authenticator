@@ -1,0 +1,5288 @@
+Name: "CoreAuthenticator"
+Classes:
+- Name: "CoreAuthenticatorBase"
+  SwiftName: "KotlinBase"
+- Name: "CoreAuthenticatorMutableSet"
+  SwiftName: "KotlinMutableSet"
+- Name: "CoreAuthenticatorMutableDictionary"
+  SwiftName: "KotlinMutableDictionary"
+- Name: "CoreAuthenticatorNumber"
+  SwiftName: "KotlinNumber"
+- Name: "CoreAuthenticatorByte"
+  SwiftName: "KotlinByte"
+- Name: "CoreAuthenticatorUByte"
+  SwiftName: "KotlinUByte"
+- Name: "CoreAuthenticatorShort"
+  SwiftName: "KotlinShort"
+- Name: "CoreAuthenticatorUShort"
+  SwiftName: "KotlinUShort"
+- Name: "CoreAuthenticatorInt"
+  SwiftName: "KotlinInt"
+- Name: "CoreAuthenticatorUInt"
+  SwiftName: "KotlinUInt"
+- Name: "CoreAuthenticatorLong"
+  SwiftName: "KotlinLong"
+- Name: "CoreAuthenticatorULong"
+  SwiftName: "KotlinULong"
+- Name: "CoreAuthenticatorFloat"
+  SwiftName: "KotlinFloat"
+- Name: "CoreAuthenticatorDouble"
+  SwiftName: "KotlinDouble"
+- Name: "CoreAuthenticatorBoolean"
+  SwiftName: "KotlinBoolean"
+- Name: "CoreAuthenticatorKotlinCancellationException"
+  SwiftName: "KotlinCancellationException"
+  Methods:
+  - Selector: "init"
+    MethodKind: "Instance"
+    SwiftName: "init()"
+  - Selector: "initWithMessage:"
+    MethodKind: "Instance"
+    SwiftName: "init(message:)"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nullable"
+  - Selector: "initWithMessage:cause:"
+    MethodKind: "Instance"
+    SwiftName: "init(message:cause:)"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nullable"
+    - Position: 1
+      Type: "CoreAuthenticatorKotlinThrowable * _Nullable"
+  - Selector: "initWithCause:"
+    MethodKind: "Instance"
+    SwiftName: "init(cause:)"
+    Parameters:
+    - Position: 0
+      Type: "CoreAuthenticatorKotlinThrowable * _Nullable"
+- Name: "CoreAuthenticatorKotlinThrowable"
+  SwiftName: "KotlinThrowable"
+  Properties:
+  - Name: "cause"
+    PropertyKind: "Instance"
+    SwiftName: "cause"
+    Type: "CoreAuthenticatorKotlinThrowable * _Nullable"
+  - Name: "message"
+    PropertyKind: "Instance"
+    SwiftName: "message"
+    Type: "NSString * _Nullable"
+  Methods:
+  - Selector: "initWithMessage:"
+    MethodKind: "Instance"
+    SwiftName: "init(message:)"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nullable"
+  - Selector: "initWithCause:"
+    MethodKind: "Instance"
+    SwiftName: "init(cause:)"
+    Parameters:
+    - Position: 0
+      Type: "CoreAuthenticatorKotlinThrowable * _Nullable"
+  - Selector: "init"
+    MethodKind: "Instance"
+    SwiftName: "init()"
+  - Selector: "initWithMessage:cause:"
+    MethodKind: "Instance"
+    SwiftName: "init(message:cause:)"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nullable"
+    - Position: 1
+      Type: "CoreAuthenticatorKotlinThrowable * _Nullable"
+  - Selector: "getStackTrace"
+    MethodKind: "Instance"
+    SwiftName: "getStackTrace()"
+    ResultType: "CoreAuthenticatorKotlinArray<NSString *> * _Nonnull"
+  - Selector: "printStackTrace"
+    MethodKind: "Instance"
+    SwiftName: "printStackTrace()"
+    ResultType: "void"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "CoreAuthenticatorKotlinArray"
+  SwiftName: "KotlinArray"
+  Properties:
+  - Name: "size"
+    PropertyKind: "Instance"
+    SwiftName: "size"
+    Type: "int32_t"
+  Methods:
+  - Selector: "arrayWithSize:init:"
+    MethodKind: "Instance"
+    SwiftName: "init(size:init:)"
+    Parameters:
+    - Position: 0
+      Type: "int32_t"
+    - Position: 1
+      Type: "T _Nullable (^ _Nonnull)(CoreAuthenticatorInt * _Nonnull)"
+  - Selector: "getIndex:"
+    MethodKind: "Instance"
+    SwiftName: "get(index:)"
+    ResultType: "T _Nullable"
+    Parameters:
+    - Position: 0
+      Type: "int32_t"
+  - Selector: "iterator"
+    MethodKind: "Instance"
+    SwiftName: "iterator()"
+    ResultType: "id<CoreAuthenticatorKotlinIterator> _Nonnull"
+  - Selector: "setIndex:value:"
+    MethodKind: "Instance"
+    SwiftName: "set(index:value:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "int32_t"
+    - Position: 1
+      Type: "T _Nullable"
+- Name: "CoreAuthenticatorKotlinIllegalStateException"
+  SwiftName: "KotlinIllegalStateException"
+  Methods:
+  - Selector: "init"
+    MethodKind: "Instance"
+    SwiftName: "init()"
+  - Selector: "initWithMessage:"
+    MethodKind: "Instance"
+    SwiftName: "init(message:)"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nullable"
+  - Selector: "initWithMessage:cause:"
+    MethodKind: "Instance"
+    SwiftName: "init(message:cause:)"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nullable"
+    - Position: 1
+      Type: "CoreAuthenticatorKotlinThrowable * _Nullable"
+  - Selector: "initWithCause:"
+    MethodKind: "Instance"
+    SwiftName: "init(cause:)"
+    Parameters:
+    - Position: 0
+      Type: "CoreAuthenticatorKotlinThrowable * _Nullable"
+- Name: "CoreAuthenticatorKotlinRuntimeException"
+  SwiftName: "KotlinRuntimeException"
+  Methods:
+  - Selector: "init"
+    MethodKind: "Instance"
+    SwiftName: "init()"
+  - Selector: "initWithMessage:"
+    MethodKind: "Instance"
+    SwiftName: "init(message:)"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nullable"
+  - Selector: "initWithMessage:cause:"
+    MethodKind: "Instance"
+    SwiftName: "init(message:cause:)"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nullable"
+    - Position: 1
+      Type: "CoreAuthenticatorKotlinThrowable * _Nullable"
+  - Selector: "initWithCause:"
+    MethodKind: "Instance"
+    SwiftName: "init(cause:)"
+    Parameters:
+    - Position: 0
+      Type: "CoreAuthenticatorKotlinThrowable * _Nullable"
+- Name: "CoreAuthenticatorKotlinException"
+  SwiftName: "KotlinException"
+  Methods:
+  - Selector: "init"
+    MethodKind: "Instance"
+    SwiftName: "init()"
+  - Selector: "initWithMessage:"
+    MethodKind: "Instance"
+    SwiftName: "init(message:)"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nullable"
+  - Selector: "initWithMessage:cause:"
+    MethodKind: "Instance"
+    SwiftName: "init(message:cause:)"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nullable"
+    - Position: 1
+      Type: "CoreAuthenticatorKotlinThrowable * _Nullable"
+  - Selector: "initWithCause:"
+    MethodKind: "Instance"
+    SwiftName: "init(cause:)"
+    Parameters:
+    - Position: 0
+      Type: "CoreAuthenticatorKotlinThrowable * _Nullable"
+- Name: "CoreAuthenticatorKotlinEnum"
+  SwiftName: "KotlinEnum"
+  Properties:
+  - Name: "name"
+    PropertyKind: "Instance"
+    SwiftName: "name"
+    Type: "NSString * _Nonnull"
+  - Name: "ordinal"
+    PropertyKind: "Instance"
+    SwiftName: "ordinal"
+    Type: "int32_t"
+  Methods:
+  - Selector: "initWithName:ordinal:"
+    MethodKind: "Instance"
+    SwiftName: "init(name:ordinal:)"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+    - Position: 1
+      Type: "int32_t"
+  - Selector: "compareToOther:"
+    MethodKind: "Instance"
+    SwiftName: "compareTo(other:)"
+    ResultType: "int32_t"
+    Parameters:
+    - Position: 0
+      Type: "E _Nonnull"
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "CoreAuthenticatorKotlinEnumCompanion"
+  SwiftName: "KotlinEnumCompanion"
+- Name: "CoreAuthenticatorKotlinByteArray"
+  SwiftName: "KotlinByteArray"
+  Properties:
+  - Name: "size"
+    PropertyKind: "Instance"
+    SwiftName: "size"
+    Type: "int32_t"
+  Methods:
+  - Selector: "arrayWithSize:init:"
+    MethodKind: "Instance"
+    SwiftName: "init(size:init:)"
+    Parameters:
+    - Position: 0
+      Type: "int32_t"
+    - Position: 1
+      Type: "CoreAuthenticatorByte * _Nonnull (^ _Nonnull)(CoreAuthenticatorInt * _Nonnull)"
+  - Selector: "arrayWithSize:"
+    MethodKind: "Instance"
+    SwiftName: "init(size:)"
+    Parameters:
+    - Position: 0
+      Type: "int32_t"
+  - Selector: "getIndex:"
+    MethodKind: "Instance"
+    SwiftName: "get(index:)"
+    ResultType: "int8_t"
+    Parameters:
+    - Position: 0
+      Type: "int32_t"
+  - Selector: "iterator"
+    MethodKind: "Instance"
+    SwiftName: "iterator()"
+    ResultType: "CoreAuthenticatorKotlinByteIterator * _Nonnull"
+  - Selector: "setIndex:value:"
+    MethodKind: "Instance"
+    SwiftName: "set(index:value:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "int32_t"
+    - Position: 1
+      Type: "int8_t"
+- Name: "CoreAuthenticatorKotlinByteIterator"
+  SwiftName: "KotlinByteIterator"
+  Methods:
+  - Selector: "init"
+    MethodKind: "Instance"
+    SwiftName: "init()"
+  - Selector: "next"
+    MethodKind: "Instance"
+    SwiftName: "next()"
+    ResultType: "CoreAuthenticatorByte * _Nonnull"
+  - Selector: "nextByte"
+    MethodKind: "Instance"
+    SwiftName: "nextByte()"
+    ResultType: "int8_t"
+- Name: "CoreAuthenticatorKotlinIntArray"
+  SwiftName: "KotlinIntArray"
+  Properties:
+  - Name: "size"
+    PropertyKind: "Instance"
+    SwiftName: "size"
+    Type: "int32_t"
+  Methods:
+  - Selector: "arrayWithSize:init:"
+    MethodKind: "Instance"
+    SwiftName: "init(size:init:)"
+    Parameters:
+    - Position: 0
+      Type: "int32_t"
+    - Position: 1
+      Type: "CoreAuthenticatorInt * _Nonnull (^ _Nonnull)(CoreAuthenticatorInt * _Nonnull)"
+  - Selector: "arrayWithSize:"
+    MethodKind: "Instance"
+    SwiftName: "init(size:)"
+    Parameters:
+    - Position: 0
+      Type: "int32_t"
+  - Selector: "getIndex:"
+    MethodKind: "Instance"
+    SwiftName: "get(index:)"
+    ResultType: "int32_t"
+    Parameters:
+    - Position: 0
+      Type: "int32_t"
+  - Selector: "iterator"
+    MethodKind: "Instance"
+    SwiftName: "iterator()"
+    ResultType: "CoreAuthenticatorKotlinIntIterator * _Nonnull"
+  - Selector: "setIndex:value:"
+    MethodKind: "Instance"
+    SwiftName: "set(index:value:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "int32_t"
+    - Position: 1
+      Type: "int32_t"
+- Name: "CoreAuthenticatorKotlinIntIterator"
+  SwiftName: "KotlinIntIterator"
+  Methods:
+  - Selector: "init"
+    MethodKind: "Instance"
+    SwiftName: "init()"
+  - Selector: "next"
+    MethodKind: "Instance"
+    SwiftName: "next()"
+    ResultType: "CoreAuthenticatorInt * _Nonnull"
+  - Selector: "nextInt"
+    MethodKind: "Instance"
+    SwiftName: "nextInt()"
+    ResultType: "int32_t"
+- Name: "CoreAuthenticatorKotlinNothing"
+  SwiftName: "KotlinNothing"
+- Name: "CoreAuthenticatorSkieColdFlowIterator"
+  SwiftName: "SkieColdFlowIterator"
+  SwiftPrivate: true
+  Methods:
+  - Selector: "initWithFlow:"
+    MethodKind: "Instance"
+    SwiftName: "init(flow:)"
+    Parameters:
+    - Position: 0
+      Type: "id<CoreAuthenticatorKotlinx_coroutines_coreFlow> _Nonnull"
+  - Selector: "cancel"
+    MethodKind: "Instance"
+    SwiftName: "cancel()"
+    ResultType: "void"
+  - Selector: "hasNextWithCompletionHandler:"
+    MethodKind: "Instance"
+    SwiftName: "__hasNext(completionHandler:)"
+    SwiftPrivate: true
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "void (^ _Nonnull)(CoreAuthenticatorBoolean * _Nullable, NSError * _Nullable)"
+  - Selector: "next"
+    MethodKind: "Instance"
+    SwiftName: "next()"
+    ResultType: "E _Nullable"
+- Name: "CoreAuthenticatorSkieKotlinFlow"
+  SwiftBridge: "SkieSwiftFlow"
+  SwiftName: "SkieKotlinFlow"
+  SwiftPrivate: true
+  Methods:
+  - Selector: "initWithDelegate:"
+    MethodKind: "Instance"
+    SwiftName: "init(_:)"
+    Parameters:
+    - Position: 0
+      Type: "id<CoreAuthenticatorKotlinx_coroutines_coreFlow> _Nonnull"
+  - Selector: "collectCollector:completionHandler:"
+    MethodKind: "Instance"
+    SwiftName: "__collect(collector:completionHandler:)"
+    SwiftPrivate: true
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "id<CoreAuthenticatorKotlinx_coroutines_coreFlowCollector> _Nonnull"
+    - Position: 1
+      Type: "void (^ _Nonnull)(NSError * _Nullable)"
+- Name: "CoreAuthenticatorSkieKotlinMutableSharedFlow"
+  SwiftBridge: "SkieSwiftMutableSharedFlow"
+  SwiftName: "SkieKotlinMutableSharedFlow"
+  SwiftPrivate: true
+  Properties:
+  - Name: "replayCache"
+    PropertyKind: "Instance"
+    SwiftName: "replayCache"
+    Type: "NSArray<T> * _Nonnull"
+  - Name: "subscriptionCount"
+    PropertyKind: "Instance"
+    SwiftName: "subscriptionCount"
+    Type: "CoreAuthenticatorSkieKotlinStateFlow<CoreAuthenticatorInt *> * _Nonnull"
+  Methods:
+  - Selector: "initWithDelegate:"
+    MethodKind: "Instance"
+    SwiftName: "init(_:)"
+    Parameters:
+    - Position: 0
+      Type: "id<CoreAuthenticatorKotlinx_coroutines_coreMutableSharedFlow> _Nonnull"
+  - Selector: "collectCollector:completionHandler:"
+    MethodKind: "Instance"
+    SwiftName: "__collect(collector:completionHandler:)"
+    SwiftPrivate: true
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "id<CoreAuthenticatorKotlinx_coroutines_coreFlowCollector> _Nonnull"
+    - Position: 1
+      Type: "void (^ _Nonnull)(NSError * _Nullable)"
+  - Selector: "emitValue:completionHandler:"
+    MethodKind: "Instance"
+    SwiftName: "__emit(value:completionHandler:)"
+    SwiftPrivate: true
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "T _Nonnull"
+    - Position: 1
+      Type: "void (^ _Nonnull)(NSError * _Nullable)"
+  - Selector: "resetReplayCache"
+    MethodKind: "Instance"
+    SwiftName: "resetReplayCache()"
+    ResultType: "void"
+  - Selector: "tryEmitValue:"
+    MethodKind: "Instance"
+    SwiftName: "tryEmit(value:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "T _Nonnull"
+- Name: "CoreAuthenticatorSkieKotlinMutableStateFlow"
+  SwiftBridge: "SkieSwiftMutableStateFlow"
+  SwiftName: "SkieKotlinMutableStateFlow"
+  SwiftPrivate: true
+  Properties:
+  - Name: "replayCache"
+    PropertyKind: "Instance"
+    SwiftName: "replayCache"
+    Type: "NSArray<T> * _Nonnull"
+  - Name: "subscriptionCount"
+    PropertyKind: "Instance"
+    SwiftName: "subscriptionCount"
+    Type: "CoreAuthenticatorSkieKotlinStateFlow<CoreAuthenticatorInt *> * _Nonnull"
+  - Name: "value"
+    PropertyKind: "Instance"
+    SwiftName: "value"
+    Type: "T _Nonnull"
+  Methods:
+  - Selector: "initWithDelegate:"
+    MethodKind: "Instance"
+    SwiftName: "init(_:)"
+    Parameters:
+    - Position: 0
+      Type: "id<CoreAuthenticatorKotlinx_coroutines_coreMutableStateFlow> _Nonnull"
+  - Selector: "collectCollector:completionHandler:"
+    MethodKind: "Instance"
+    SwiftName: "__collect(collector:completionHandler:)"
+    SwiftPrivate: true
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "id<CoreAuthenticatorKotlinx_coroutines_coreFlowCollector> _Nonnull"
+    - Position: 1
+      Type: "void (^ _Nonnull)(NSError * _Nullable)"
+  - Selector: "compareAndSetExpect:update:"
+    MethodKind: "Instance"
+    SwiftName: "compareAndSet(expect:update:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "T _Nonnull"
+    - Position: 1
+      Type: "T _Nonnull"
+  - Selector: "emitValue:completionHandler:"
+    MethodKind: "Instance"
+    SwiftName: "__emit(value:completionHandler:)"
+    SwiftPrivate: true
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "T _Nonnull"
+    - Position: 1
+      Type: "void (^ _Nonnull)(NSError * _Nullable)"
+  - Selector: "resetReplayCache"
+    MethodKind: "Instance"
+    SwiftName: "resetReplayCache()"
+    ResultType: "void"
+  - Selector: "tryEmitValue:"
+    MethodKind: "Instance"
+    SwiftName: "tryEmit(value:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "T _Nonnull"
+- Name: "CoreAuthenticatorSkieKotlinOptionalFlow"
+  SwiftBridge: "SkieSwiftOptionalFlow"
+  SwiftName: "SkieKotlinOptionalFlow"
+  SwiftPrivate: true
+  Methods:
+  - Selector: "initWithDelegate:"
+    MethodKind: "Instance"
+    SwiftName: "init(_:)"
+    Parameters:
+    - Position: 0
+      Type: "id<CoreAuthenticatorKotlinx_coroutines_coreFlow> _Nonnull"
+  - Selector: "collectCollector:completionHandler:"
+    MethodKind: "Instance"
+    SwiftName: "__collect(collector:completionHandler:)"
+    SwiftPrivate: true
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "id<CoreAuthenticatorKotlinx_coroutines_coreFlowCollector> _Nonnull"
+    - Position: 1
+      Type: "void (^ _Nonnull)(NSError * _Nullable)"
+- Name: "CoreAuthenticatorSkieKotlinOptionalMutableSharedFlow"
+  SwiftBridge: "SkieSwiftOptionalMutableSharedFlow"
+  SwiftName: "SkieKotlinOptionalMutableSharedFlow"
+  SwiftPrivate: true
+  Properties:
+  - Name: "replayCache"
+    PropertyKind: "Instance"
+    SwiftName: "replayCache"
+    Type: "NSArray<id> * _Nonnull"
+  - Name: "subscriptionCount"
+    PropertyKind: "Instance"
+    SwiftName: "subscriptionCount"
+    Type: "CoreAuthenticatorSkieKotlinStateFlow<CoreAuthenticatorInt *> * _Nonnull"
+  Methods:
+  - Selector: "initWithDelegate:"
+    MethodKind: "Instance"
+    SwiftName: "init(_:)"
+    Parameters:
+    - Position: 0
+      Type: "id<CoreAuthenticatorKotlinx_coroutines_coreMutableSharedFlow> _Nonnull"
+  - Selector: "collectCollector:completionHandler:"
+    MethodKind: "Instance"
+    SwiftName: "__collect(collector:completionHandler:)"
+    SwiftPrivate: true
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "id<CoreAuthenticatorKotlinx_coroutines_coreFlowCollector> _Nonnull"
+    - Position: 1
+      Type: "void (^ _Nonnull)(NSError * _Nullable)"
+  - Selector: "emitValue:completionHandler:"
+    MethodKind: "Instance"
+    SwiftName: "__emit(value:completionHandler:)"
+    SwiftPrivate: true
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "T _Nullable"
+    - Position: 1
+      Type: "void (^ _Nonnull)(NSError * _Nullable)"
+  - Selector: "resetReplayCache"
+    MethodKind: "Instance"
+    SwiftName: "resetReplayCache()"
+    ResultType: "void"
+  - Selector: "tryEmitValue:"
+    MethodKind: "Instance"
+    SwiftName: "tryEmit(value:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "T _Nullable"
+- Name: "CoreAuthenticatorSkieKotlinOptionalMutableStateFlow"
+  SwiftBridge: "SkieSwiftOptionalMutableStateFlow"
+  SwiftName: "SkieKotlinOptionalMutableStateFlow"
+  SwiftPrivate: true
+  Properties:
+  - Name: "replayCache"
+    PropertyKind: "Instance"
+    SwiftName: "replayCache"
+    Type: "NSArray<id> * _Nonnull"
+  - Name: "subscriptionCount"
+    PropertyKind: "Instance"
+    SwiftName: "subscriptionCount"
+    Type: "CoreAuthenticatorSkieKotlinStateFlow<CoreAuthenticatorInt *> * _Nonnull"
+  - Name: "value"
+    PropertyKind: "Instance"
+    SwiftName: "value"
+    Type: "T _Nullable"
+  Methods:
+  - Selector: "initWithDelegate:"
+    MethodKind: "Instance"
+    SwiftName: "init(_:)"
+    Parameters:
+    - Position: 0
+      Type: "id<CoreAuthenticatorKotlinx_coroutines_coreMutableStateFlow> _Nonnull"
+  - Selector: "collectCollector:completionHandler:"
+    MethodKind: "Instance"
+    SwiftName: "__collect(collector:completionHandler:)"
+    SwiftPrivate: true
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "id<CoreAuthenticatorKotlinx_coroutines_coreFlowCollector> _Nonnull"
+    - Position: 1
+      Type: "void (^ _Nonnull)(NSError * _Nullable)"
+  - Selector: "compareAndSetExpect:update:"
+    MethodKind: "Instance"
+    SwiftName: "compareAndSet(expect:update:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "T _Nullable"
+    - Position: 1
+      Type: "T _Nullable"
+  - Selector: "emitValue:completionHandler:"
+    MethodKind: "Instance"
+    SwiftName: "__emit(value:completionHandler:)"
+    SwiftPrivate: true
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "T _Nullable"
+    - Position: 1
+      Type: "void (^ _Nonnull)(NSError * _Nullable)"
+  - Selector: "resetReplayCache"
+    MethodKind: "Instance"
+    SwiftName: "resetReplayCache()"
+    ResultType: "void"
+  - Selector: "tryEmitValue:"
+    MethodKind: "Instance"
+    SwiftName: "tryEmit(value:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "T _Nullable"
+- Name: "CoreAuthenticatorSkieKotlinOptionalSharedFlow"
+  SwiftBridge: "SkieSwiftOptionalSharedFlow"
+  SwiftName: "SkieKotlinOptionalSharedFlow"
+  SwiftPrivate: true
+  Properties:
+  - Name: "replayCache"
+    PropertyKind: "Instance"
+    SwiftName: "replayCache"
+    Type: "NSArray<id> * _Nonnull"
+  Methods:
+  - Selector: "initWithDelegate:"
+    MethodKind: "Instance"
+    SwiftName: "init(_:)"
+    Parameters:
+    - Position: 0
+      Type: "id<CoreAuthenticatorKotlinx_coroutines_coreSharedFlow> _Nonnull"
+  - Selector: "collectCollector:completionHandler:"
+    MethodKind: "Instance"
+    SwiftName: "__collect(collector:completionHandler:)"
+    SwiftPrivate: true
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "id<CoreAuthenticatorKotlinx_coroutines_coreFlowCollector> _Nonnull"
+    - Position: 1
+      Type: "void (^ _Nonnull)(NSError * _Nullable)"
+- Name: "CoreAuthenticatorSkieKotlinOptionalStateFlow"
+  SwiftBridge: "SkieSwiftOptionalStateFlow"
+  SwiftName: "SkieKotlinOptionalStateFlow"
+  SwiftPrivate: true
+  Properties:
+  - Name: "replayCache"
+    PropertyKind: "Instance"
+    SwiftName: "replayCache"
+    Type: "NSArray<id> * _Nonnull"
+  - Name: "value"
+    PropertyKind: "Instance"
+    SwiftName: "value"
+    Type: "T _Nullable"
+  Methods:
+  - Selector: "initWithDelegate:"
+    MethodKind: "Instance"
+    SwiftName: "init(_:)"
+    Parameters:
+    - Position: 0
+      Type: "id<CoreAuthenticatorKotlinx_coroutines_coreStateFlow> _Nonnull"
+  - Selector: "collectCollector:completionHandler:"
+    MethodKind: "Instance"
+    SwiftName: "__collect(collector:completionHandler:)"
+    SwiftPrivate: true
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "id<CoreAuthenticatorKotlinx_coroutines_coreFlowCollector> _Nonnull"
+    - Position: 1
+      Type: "void (^ _Nonnull)(NSError * _Nullable)"
+- Name: "CoreAuthenticatorSkieKotlinSharedFlow"
+  SwiftBridge: "SkieSwiftSharedFlow"
+  SwiftName: "SkieKotlinSharedFlow"
+  SwiftPrivate: true
+  Properties:
+  - Name: "replayCache"
+    PropertyKind: "Instance"
+    SwiftName: "replayCache"
+    Type: "NSArray<T> * _Nonnull"
+  Methods:
+  - Selector: "initWithDelegate:"
+    MethodKind: "Instance"
+    SwiftName: "init(_:)"
+    Parameters:
+    - Position: 0
+      Type: "id<CoreAuthenticatorKotlinx_coroutines_coreSharedFlow> _Nonnull"
+  - Selector: "collectCollector:completionHandler:"
+    MethodKind: "Instance"
+    SwiftName: "__collect(collector:completionHandler:)"
+    SwiftPrivate: true
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "id<CoreAuthenticatorKotlinx_coroutines_coreFlowCollector> _Nonnull"
+    - Position: 1
+      Type: "void (^ _Nonnull)(NSError * _Nullable)"
+- Name: "CoreAuthenticatorSkieKotlinStateFlow"
+  SwiftBridge: "SkieSwiftStateFlow"
+  SwiftName: "SkieKotlinStateFlow"
+  SwiftPrivate: true
+  Properties:
+  - Name: "replayCache"
+    PropertyKind: "Instance"
+    SwiftName: "replayCache"
+    Type: "NSArray<T> * _Nonnull"
+  - Name: "value"
+    PropertyKind: "Instance"
+    SwiftName: "value"
+    Type: "T _Nonnull"
+  Methods:
+  - Selector: "initWithDelegate:"
+    MethodKind: "Instance"
+    SwiftName: "init(_:)"
+    Parameters:
+    - Position: 0
+      Type: "id<CoreAuthenticatorKotlinx_coroutines_coreStateFlow> _Nonnull"
+  - Selector: "collectCollector:completionHandler:"
+    MethodKind: "Instance"
+    SwiftName: "__collect(collector:completionHandler:)"
+    SwiftPrivate: true
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "id<CoreAuthenticatorKotlinx_coroutines_coreFlowCollector> _Nonnull"
+    - Position: 1
+      Type: "void (^ _Nonnull)(NSError * _Nullable)"
+- Name: "CoreAuthenticatorSkie_CancellationHandler"
+  SwiftName: "Skie_CancellationHandler"
+  SwiftPrivate: true
+  Methods:
+  - Selector: "init"
+    MethodKind: "Instance"
+    SwiftName: "init()"
+  - Selector: "cancel"
+    MethodKind: "Instance"
+    SwiftName: "cancel()"
+    ResultType: "void"
+- Name: "CoreAuthenticatorSkie_SuspendHandler"
+  SwiftName: "Skie_SuspendHandler"
+  SwiftPrivate: true
+  Methods:
+  - Selector: "initWithCancellationHandler:dispatcherDelegate:onResult:"
+    MethodKind: "Instance"
+    SwiftName: "init(cancellationHandler:dispatcherDelegate:onResult:)"
+    Parameters:
+    - Position: 0
+      Type: "CoreAuthenticatorSkie_CancellationHandler * _Nonnull"
+    - Position: 1
+      Type: "id<CoreAuthenticatorSkie_DispatcherDelegate> _Nonnull"
+    - Position: 2
+      Type: "void (^ _Nonnull)(CoreAuthenticatorSkie_SuspendResult * _Nonnull)"
+- Name: "CoreAuthenticatorSkie_SuspendResult"
+  SwiftName: "Skie_SuspendResult"
+  SwiftPrivate: true
+- Name: "CoreAuthenticatorSkie_SuspendResultSuccess"
+  SwiftName: "Skie_SuspendResult.Success"
+  SwiftPrivate: true
+  Properties:
+  - Name: "value"
+    PropertyKind: "Instance"
+    SwiftName: "value"
+    Type: "id _Nullable"
+  Methods:
+  - Selector: "initWithValue:"
+    MethodKind: "Instance"
+    SwiftName: "init(value:)"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "doCopyValue:"
+    MethodKind: "Instance"
+    SwiftName: "doCopy(value:)"
+    ResultType: "CoreAuthenticatorSkie_SuspendResultSuccess * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "CoreAuthenticatorSkie_SuspendResultError"
+  SwiftName: "Skie_SuspendResult.Error"
+  SwiftPrivate: true
+  Properties:
+  - Name: "error"
+    PropertyKind: "Instance"
+    SwiftName: "error"
+    Type: "NSError * _Nonnull"
+  Methods:
+  - Selector: "initWithError:"
+    MethodKind: "Instance"
+    SwiftName: "init(error:)"
+    Parameters:
+    - Position: 0
+      Type: "NSError * _Nonnull"
+  - Selector: "doCopyError:"
+    MethodKind: "Instance"
+    SwiftName: "doCopy(error:)"
+    ResultType: "CoreAuthenticatorSkie_SuspendResultError * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "NSError * _Nonnull"
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "CoreAuthenticatorSkie_SuspendResultCanceled"
+  SwiftName: "Skie_SuspendResult.Canceled"
+  SwiftPrivate: true
+- Name: "CoreAuthenticatorAccount"
+  SwiftName: "Account"
+  Properties:
+  - Name: "avatarUrl"
+    PropertyKind: "Instance"
+    SwiftName: "avatarUrl"
+    Type: "NSString * _Nullable"
+  - Name: "email"
+    PropertyKind: "Instance"
+    SwiftName: "email"
+    Type: "NSString * _Nonnull"
+  - Name: "fullName"
+    PropertyKind: "Instance"
+    SwiftName: "fullName"
+    Type: "NSString * _Nonnull"
+  - Name: "id"
+    PropertyKind: "Instance"
+    SwiftName: "id"
+    Type: "int64_t"
+  - Name: "initials"
+    PropertyKind: "Instance"
+    SwiftName: "initials"
+    Type: "NSString * _Nonnull"
+  - Name: "status"
+    PropertyKind: "Instance"
+    SwiftName: "status"
+    Type: "id<CoreAuthenticatorAccountStatus> _Nonnull"
+  Methods:
+  - Selector: "initWithId:fullName:initials:email:avatarUrl:status:"
+    MethodKind: "Instance"
+    SwiftName: "init(id:fullName:initials:email:avatarUrl:status:)"
+    Parameters:
+    - Position: 0
+      Type: "int64_t"
+    - Position: 1
+      Type: "NSString * _Nonnull"
+    - Position: 2
+      Type: "NSString * _Nonnull"
+    - Position: 3
+      Type: "NSString * _Nonnull"
+    - Position: 4
+      Type: "NSString * _Nullable"
+    - Position: 5
+      Type: "Skie__TypeDef__0__id_CoreAuthenticatorAccountStatus_"
+  - Selector: "initWithId:fullName:initials:email:status__Skie_DefaultArguments__97:"
+    MethodKind: "Instance"
+    SwiftName: "init(id:fullName:initials:email:status:)"
+    Parameters:
+    - Position: 0
+      Type: "int64_t"
+    - Position: 1
+      Type: "NSString * _Nonnull"
+    - Position: 2
+      Type: "NSString * _Nonnull"
+    - Position: 3
+      Type: "NSString * _Nonnull"
+    - Position: 4
+      Type: "Skie__TypeDef__0__id_CoreAuthenticatorAccountStatus_"
+  - Selector: "doCopyId:fullName:initials:email:avatarUrl:status:"
+    MethodKind: "Instance"
+    SwiftName: "doCopy(id:fullName:initials:email:avatarUrl:status:)"
+    ResultType: "CoreAuthenticatorAccount * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "int64_t"
+    - Position: 1
+      Type: "NSString * _Nonnull"
+    - Position: 2
+      Type: "NSString * _Nonnull"
+    - Position: 3
+      Type: "NSString * _Nonnull"
+    - Position: 4
+      Type: "NSString * _Nullable"
+    - Position: 5
+      Type: "Skie__TypeDef__0__id_CoreAuthenticatorAccountStatus_"
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+  - Selector: "doCopy__Skie_DefaultArguments__0"
+    MethodKind: "Instance"
+    SwiftName: "doCopy()"
+    ResultType: "CoreAuthenticatorAccount * _Nonnull"
+  - Selector: "doCopy__Skie_DefaultArguments__1Id:"
+    MethodKind: "Instance"
+    SwiftName: "doCopy(id:)"
+    ResultType: "CoreAuthenticatorAccount * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "int64_t"
+  - Selector: "doCopy__Skie_DefaultArguments__2FullName:"
+    MethodKind: "Instance"
+    SwiftName: "doCopy(fullName:)"
+    ResultType: "CoreAuthenticatorAccount * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+  - Selector: "doCopy__Skie_DefaultArguments__3Id:fullName:"
+    MethodKind: "Instance"
+    SwiftName: "doCopy(id:fullName:)"
+    ResultType: "CoreAuthenticatorAccount * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "int64_t"
+    - Position: 1
+      Type: "NSString * _Nonnull"
+  - Selector: "doCopy__Skie_DefaultArguments__4Initials:"
+    MethodKind: "Instance"
+    SwiftName: "doCopy(initials:)"
+    ResultType: "CoreAuthenticatorAccount * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+  - Selector: "doCopy__Skie_DefaultArguments__5Id:initials:"
+    MethodKind: "Instance"
+    SwiftName: "doCopy(id:initials:)"
+    ResultType: "CoreAuthenticatorAccount * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "int64_t"
+    - Position: 1
+      Type: "NSString * _Nonnull"
+  - Selector: "doCopy__Skie_DefaultArguments__6FullName:initials:"
+    MethodKind: "Instance"
+    SwiftName: "doCopy(fullName:initials:)"
+    ResultType: "CoreAuthenticatorAccount * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+    - Position: 1
+      Type: "NSString * _Nonnull"
+  - Selector: "doCopy__Skie_DefaultArguments__7Id:fullName:initials:"
+    MethodKind: "Instance"
+    SwiftName: "doCopy(id:fullName:initials:)"
+    ResultType: "CoreAuthenticatorAccount * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "int64_t"
+    - Position: 1
+      Type: "NSString * _Nonnull"
+    - Position: 2
+      Type: "NSString * _Nonnull"
+  - Selector: "doCopy__Skie_DefaultArguments__8Email:"
+    MethodKind: "Instance"
+    SwiftName: "doCopy(email:)"
+    ResultType: "CoreAuthenticatorAccount * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+  - Selector: "doCopy__Skie_DefaultArguments__9Id:email:"
+    MethodKind: "Instance"
+    SwiftName: "doCopy(id:email:)"
+    ResultType: "CoreAuthenticatorAccount * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "int64_t"
+    - Position: 1
+      Type: "NSString * _Nonnull"
+  - Selector: "doCopy__Skie_DefaultArguments__10FullName:email:"
+    MethodKind: "Instance"
+    SwiftName: "doCopy(fullName:email:)"
+    ResultType: "CoreAuthenticatorAccount * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+    - Position: 1
+      Type: "NSString * _Nonnull"
+  - Selector: "doCopy__Skie_DefaultArguments__11Id:fullName:email:"
+    MethodKind: "Instance"
+    SwiftName: "doCopy(id:fullName:email:)"
+    ResultType: "CoreAuthenticatorAccount * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "int64_t"
+    - Position: 1
+      Type: "NSString * _Nonnull"
+    - Position: 2
+      Type: "NSString * _Nonnull"
+  - Selector: "doCopy__Skie_DefaultArguments__12Initials:email:"
+    MethodKind: "Instance"
+    SwiftName: "doCopy(initials:email:)"
+    ResultType: "CoreAuthenticatorAccount * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+    - Position: 1
+      Type: "NSString * _Nonnull"
+  - Selector: "doCopy__Skie_DefaultArguments__13Id:initials:email:"
+    MethodKind: "Instance"
+    SwiftName: "doCopy(id:initials:email:)"
+    ResultType: "CoreAuthenticatorAccount * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "int64_t"
+    - Position: 1
+      Type: "NSString * _Nonnull"
+    - Position: 2
+      Type: "NSString * _Nonnull"
+  - Selector: "doCopy__Skie_DefaultArguments__14FullName:initials:email:"
+    MethodKind: "Instance"
+    SwiftName: "doCopy(fullName:initials:email:)"
+    ResultType: "CoreAuthenticatorAccount * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+    - Position: 1
+      Type: "NSString * _Nonnull"
+    - Position: 2
+      Type: "NSString * _Nonnull"
+  - Selector: "doCopy__Skie_DefaultArguments__15Id:fullName:initials:email:"
+    MethodKind: "Instance"
+    SwiftName: "doCopy(id:fullName:initials:email:)"
+    ResultType: "CoreAuthenticatorAccount * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "int64_t"
+    - Position: 1
+      Type: "NSString * _Nonnull"
+    - Position: 2
+      Type: "NSString * _Nonnull"
+    - Position: 3
+      Type: "NSString * _Nonnull"
+  - Selector: "doCopy__Skie_DefaultArguments__16AvatarUrl:"
+    MethodKind: "Instance"
+    SwiftName: "doCopy(avatarUrl:)"
+    ResultType: "CoreAuthenticatorAccount * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nullable"
+  - Selector: "doCopy__Skie_DefaultArguments__17Id:avatarUrl:"
+    MethodKind: "Instance"
+    SwiftName: "doCopy(id:avatarUrl:)"
+    ResultType: "CoreAuthenticatorAccount * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "int64_t"
+    - Position: 1
+      Type: "NSString * _Nullable"
+  - Selector: "doCopy__Skie_DefaultArguments__18FullName:avatarUrl:"
+    MethodKind: "Instance"
+    SwiftName: "doCopy(fullName:avatarUrl:)"
+    ResultType: "CoreAuthenticatorAccount * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+    - Position: 1
+      Type: "NSString * _Nullable"
+  - Selector: "doCopy__Skie_DefaultArguments__19Id:fullName:avatarUrl:"
+    MethodKind: "Instance"
+    SwiftName: "doCopy(id:fullName:avatarUrl:)"
+    ResultType: "CoreAuthenticatorAccount * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "int64_t"
+    - Position: 1
+      Type: "NSString * _Nonnull"
+    - Position: 2
+      Type: "NSString * _Nullable"
+  - Selector: "doCopy__Skie_DefaultArguments__20Initials:avatarUrl:"
+    MethodKind: "Instance"
+    SwiftName: "doCopy(initials:avatarUrl:)"
+    ResultType: "CoreAuthenticatorAccount * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+    - Position: 1
+      Type: "NSString * _Nullable"
+  - Selector: "doCopy__Skie_DefaultArguments__21Id:initials:avatarUrl:"
+    MethodKind: "Instance"
+    SwiftName: "doCopy(id:initials:avatarUrl:)"
+    ResultType: "CoreAuthenticatorAccount * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "int64_t"
+    - Position: 1
+      Type: "NSString * _Nonnull"
+    - Position: 2
+      Type: "NSString * _Nullable"
+  - Selector: "doCopy__Skie_DefaultArguments__22FullName:initials:avatarUrl:"
+    MethodKind: "Instance"
+    SwiftName: "doCopy(fullName:initials:avatarUrl:)"
+    ResultType: "CoreAuthenticatorAccount * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+    - Position: 1
+      Type: "NSString * _Nonnull"
+    - Position: 2
+      Type: "NSString * _Nullable"
+  - Selector: "doCopy__Skie_DefaultArguments__23Id:fullName:initials:avatarUrl:"
+    MethodKind: "Instance"
+    SwiftName: "doCopy(id:fullName:initials:avatarUrl:)"
+    ResultType: "CoreAuthenticatorAccount * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "int64_t"
+    - Position: 1
+      Type: "NSString * _Nonnull"
+    - Position: 2
+      Type: "NSString * _Nonnull"
+    - Position: 3
+      Type: "NSString * _Nullable"
+  - Selector: "doCopy__Skie_DefaultArguments__24Email:avatarUrl:"
+    MethodKind: "Instance"
+    SwiftName: "doCopy(email:avatarUrl:)"
+    ResultType: "CoreAuthenticatorAccount * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+    - Position: 1
+      Type: "NSString * _Nullable"
+  - Selector: "doCopy__Skie_DefaultArguments__25Id:email:avatarUrl:"
+    MethodKind: "Instance"
+    SwiftName: "doCopy(id:email:avatarUrl:)"
+    ResultType: "CoreAuthenticatorAccount * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "int64_t"
+    - Position: 1
+      Type: "NSString * _Nonnull"
+    - Position: 2
+      Type: "NSString * _Nullable"
+  - Selector: "doCopy__Skie_DefaultArguments__26FullName:email:avatarUrl:"
+    MethodKind: "Instance"
+    SwiftName: "doCopy(fullName:email:avatarUrl:)"
+    ResultType: "CoreAuthenticatorAccount * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+    - Position: 1
+      Type: "NSString * _Nonnull"
+    - Position: 2
+      Type: "NSString * _Nullable"
+  - Selector: "doCopy__Skie_DefaultArguments__27Id:fullName:email:avatarUrl:"
+    MethodKind: "Instance"
+    SwiftName: "doCopy(id:fullName:email:avatarUrl:)"
+    ResultType: "CoreAuthenticatorAccount * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "int64_t"
+    - Position: 1
+      Type: "NSString * _Nonnull"
+    - Position: 2
+      Type: "NSString * _Nonnull"
+    - Position: 3
+      Type: "NSString * _Nullable"
+  - Selector: "doCopy__Skie_DefaultArguments__28Initials:email:avatarUrl:"
+    MethodKind: "Instance"
+    SwiftName: "doCopy(initials:email:avatarUrl:)"
+    ResultType: "CoreAuthenticatorAccount * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+    - Position: 1
+      Type: "NSString * _Nonnull"
+    - Position: 2
+      Type: "NSString * _Nullable"
+  - Selector: "doCopy__Skie_DefaultArguments__29Id:initials:email:avatarUrl:"
+    MethodKind: "Instance"
+    SwiftName: "doCopy(id:initials:email:avatarUrl:)"
+    ResultType: "CoreAuthenticatorAccount * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "int64_t"
+    - Position: 1
+      Type: "NSString * _Nonnull"
+    - Position: 2
+      Type: "NSString * _Nonnull"
+    - Position: 3
+      Type: "NSString * _Nullable"
+  - Selector: "doCopy__Skie_DefaultArguments__30FullName:initials:email:avatarUrl:"
+    MethodKind: "Instance"
+    SwiftName: "doCopy(fullName:initials:email:avatarUrl:)"
+    ResultType: "CoreAuthenticatorAccount * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+    - Position: 1
+      Type: "NSString * _Nonnull"
+    - Position: 2
+      Type: "NSString * _Nonnull"
+    - Position: 3
+      Type: "NSString * _Nullable"
+  - Selector: "doCopy__Skie_DefaultArguments__31Id:fullName:initials:email:avatarUrl:"
+    MethodKind: "Instance"
+    SwiftName: "doCopy(id:fullName:initials:email:avatarUrl:)"
+    ResultType: "CoreAuthenticatorAccount * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "int64_t"
+    - Position: 1
+      Type: "NSString * _Nonnull"
+    - Position: 2
+      Type: "NSString * _Nonnull"
+    - Position: 3
+      Type: "NSString * _Nonnull"
+    - Position: 4
+      Type: "NSString * _Nullable"
+  - Selector: "doCopy__Skie_DefaultArguments__32Status:"
+    MethodKind: "Instance"
+    SwiftName: "doCopy(status:)"
+    ResultType: "CoreAuthenticatorAccount * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "id<CoreAuthenticatorAccountStatus> _Nonnull"
+  - Selector: "doCopy__Skie_DefaultArguments__33Id:status:"
+    MethodKind: "Instance"
+    SwiftName: "doCopy(id:status:)"
+    ResultType: "CoreAuthenticatorAccount * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "int64_t"
+    - Position: 1
+      Type: "Skie__TypeDef__0__id_CoreAuthenticatorAccountStatus_"
+  - Selector: "doCopy__Skie_DefaultArguments__34FullName:status:"
+    MethodKind: "Instance"
+    SwiftName: "doCopy(fullName:status:)"
+    ResultType: "CoreAuthenticatorAccount * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+    - Position: 1
+      Type: "id<CoreAuthenticatorAccountStatus> _Nonnull"
+  - Selector: "doCopy__Skie_DefaultArguments__35Id:fullName:status:"
+    MethodKind: "Instance"
+    SwiftName: "doCopy(id:fullName:status:)"
+    ResultType: "CoreAuthenticatorAccount * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "int64_t"
+    - Position: 1
+      Type: "NSString * _Nonnull"
+    - Position: 2
+      Type: "Skie__TypeDef__0__id_CoreAuthenticatorAccountStatus_"
+  - Selector: "doCopy__Skie_DefaultArguments__36Initials:status:"
+    MethodKind: "Instance"
+    SwiftName: "doCopy(initials:status:)"
+    ResultType: "CoreAuthenticatorAccount * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+    - Position: 1
+      Type: "id<CoreAuthenticatorAccountStatus> _Nonnull"
+  - Selector: "doCopy__Skie_DefaultArguments__37Id:initials:status:"
+    MethodKind: "Instance"
+    SwiftName: "doCopy(id:initials:status:)"
+    ResultType: "CoreAuthenticatorAccount * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "int64_t"
+    - Position: 1
+      Type: "NSString * _Nonnull"
+    - Position: 2
+      Type: "Skie__TypeDef__0__id_CoreAuthenticatorAccountStatus_"
+  - Selector: "doCopy__Skie_DefaultArguments__38FullName:initials:status:"
+    MethodKind: "Instance"
+    SwiftName: "doCopy(fullName:initials:status:)"
+    ResultType: "CoreAuthenticatorAccount * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+    - Position: 1
+      Type: "NSString * _Nonnull"
+    - Position: 2
+      Type: "id<CoreAuthenticatorAccountStatus> _Nonnull"
+  - Selector: "doCopy__Skie_DefaultArguments__39Id:fullName:initials:status:"
+    MethodKind: "Instance"
+    SwiftName: "doCopy(id:fullName:initials:status:)"
+    ResultType: "CoreAuthenticatorAccount * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "int64_t"
+    - Position: 1
+      Type: "NSString * _Nonnull"
+    - Position: 2
+      Type: "NSString * _Nonnull"
+    - Position: 3
+      Type: "Skie__TypeDef__0__id_CoreAuthenticatorAccountStatus_"
+  - Selector: "doCopy__Skie_DefaultArguments__40Email:status:"
+    MethodKind: "Instance"
+    SwiftName: "doCopy(email:status:)"
+    ResultType: "CoreAuthenticatorAccount * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+    - Position: 1
+      Type: "id<CoreAuthenticatorAccountStatus> _Nonnull"
+  - Selector: "doCopy__Skie_DefaultArguments__41Id:email:status:"
+    MethodKind: "Instance"
+    SwiftName: "doCopy(id:email:status:)"
+    ResultType: "CoreAuthenticatorAccount * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "int64_t"
+    - Position: 1
+      Type: "NSString * _Nonnull"
+    - Position: 2
+      Type: "Skie__TypeDef__0__id_CoreAuthenticatorAccountStatus_"
+  - Selector: "doCopy__Skie_DefaultArguments__42FullName:email:status:"
+    MethodKind: "Instance"
+    SwiftName: "doCopy(fullName:email:status:)"
+    ResultType: "CoreAuthenticatorAccount * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+    - Position: 1
+      Type: "NSString * _Nonnull"
+    - Position: 2
+      Type: "id<CoreAuthenticatorAccountStatus> _Nonnull"
+  - Selector: "doCopy__Skie_DefaultArguments__43Id:fullName:email:status:"
+    MethodKind: "Instance"
+    SwiftName: "doCopy(id:fullName:email:status:)"
+    ResultType: "CoreAuthenticatorAccount * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "int64_t"
+    - Position: 1
+      Type: "NSString * _Nonnull"
+    - Position: 2
+      Type: "NSString * _Nonnull"
+    - Position: 3
+      Type: "Skie__TypeDef__0__id_CoreAuthenticatorAccountStatus_"
+  - Selector: "doCopy__Skie_DefaultArguments__44Initials:email:status:"
+    MethodKind: "Instance"
+    SwiftName: "doCopy(initials:email:status:)"
+    ResultType: "CoreAuthenticatorAccount * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+    - Position: 1
+      Type: "NSString * _Nonnull"
+    - Position: 2
+      Type: "id<CoreAuthenticatorAccountStatus> _Nonnull"
+  - Selector: "doCopy__Skie_DefaultArguments__45Id:initials:email:status:"
+    MethodKind: "Instance"
+    SwiftName: "doCopy(id:initials:email:status:)"
+    ResultType: "CoreAuthenticatorAccount * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "int64_t"
+    - Position: 1
+      Type: "NSString * _Nonnull"
+    - Position: 2
+      Type: "NSString * _Nonnull"
+    - Position: 3
+      Type: "Skie__TypeDef__0__id_CoreAuthenticatorAccountStatus_"
+  - Selector: "doCopy__Skie_DefaultArguments__46FullName:initials:email:status:"
+    MethodKind: "Instance"
+    SwiftName: "doCopy(fullName:initials:email:status:)"
+    ResultType: "CoreAuthenticatorAccount * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+    - Position: 1
+      Type: "NSString * _Nonnull"
+    - Position: 2
+      Type: "NSString * _Nonnull"
+    - Position: 3
+      Type: "id<CoreAuthenticatorAccountStatus> _Nonnull"
+  - Selector: "doCopy__Skie_DefaultArguments__47Id:fullName:initials:email:status:"
+    MethodKind: "Instance"
+    SwiftName: "doCopy(id:fullName:initials:email:status:)"
+    ResultType: "CoreAuthenticatorAccount * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "int64_t"
+    - Position: 1
+      Type: "NSString * _Nonnull"
+    - Position: 2
+      Type: "NSString * _Nonnull"
+    - Position: 3
+      Type: "NSString * _Nonnull"
+    - Position: 4
+      Type: "Skie__TypeDef__0__id_CoreAuthenticatorAccountStatus_"
+  - Selector: "doCopy__Skie_DefaultArguments__48AvatarUrl:status:"
+    MethodKind: "Instance"
+    SwiftName: "doCopy(avatarUrl:status:)"
+    ResultType: "CoreAuthenticatorAccount * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nullable"
+    - Position: 1
+      Type: "id<CoreAuthenticatorAccountStatus> _Nonnull"
+  - Selector: "doCopy__Skie_DefaultArguments__49Id:avatarUrl:status:"
+    MethodKind: "Instance"
+    SwiftName: "doCopy(id:avatarUrl:status:)"
+    ResultType: "CoreAuthenticatorAccount * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "int64_t"
+    - Position: 1
+      Type: "NSString * _Nullable"
+    - Position: 2
+      Type: "Skie__TypeDef__0__id_CoreAuthenticatorAccountStatus_"
+  - Selector: "doCopy__Skie_DefaultArguments__50FullName:avatarUrl:status:"
+    MethodKind: "Instance"
+    SwiftName: "doCopy(fullName:avatarUrl:status:)"
+    ResultType: "CoreAuthenticatorAccount * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+    - Position: 1
+      Type: "NSString * _Nullable"
+    - Position: 2
+      Type: "id<CoreAuthenticatorAccountStatus> _Nonnull"
+  - Selector: "doCopy__Skie_DefaultArguments__51Id:fullName:avatarUrl:status:"
+    MethodKind: "Instance"
+    SwiftName: "doCopy(id:fullName:avatarUrl:status:)"
+    ResultType: "CoreAuthenticatorAccount * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "int64_t"
+    - Position: 1
+      Type: "NSString * _Nonnull"
+    - Position: 2
+      Type: "NSString * _Nullable"
+    - Position: 3
+      Type: "Skie__TypeDef__0__id_CoreAuthenticatorAccountStatus_"
+  - Selector: "doCopy__Skie_DefaultArguments__52Initials:avatarUrl:status:"
+    MethodKind: "Instance"
+    SwiftName: "doCopy(initials:avatarUrl:status:)"
+    ResultType: "CoreAuthenticatorAccount * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+    - Position: 1
+      Type: "NSString * _Nullable"
+    - Position: 2
+      Type: "id<CoreAuthenticatorAccountStatus> _Nonnull"
+  - Selector: "doCopy__Skie_DefaultArguments__53Id:initials:avatarUrl:status:"
+    MethodKind: "Instance"
+    SwiftName: "doCopy(id:initials:avatarUrl:status:)"
+    ResultType: "CoreAuthenticatorAccount * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "int64_t"
+    - Position: 1
+      Type: "NSString * _Nonnull"
+    - Position: 2
+      Type: "NSString * _Nullable"
+    - Position: 3
+      Type: "Skie__TypeDef__0__id_CoreAuthenticatorAccountStatus_"
+  - Selector: "doCopy__Skie_DefaultArguments__54FullName:initials:avatarUrl:status:"
+    MethodKind: "Instance"
+    SwiftName: "doCopy(fullName:initials:avatarUrl:status:)"
+    ResultType: "CoreAuthenticatorAccount * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+    - Position: 1
+      Type: "NSString * _Nonnull"
+    - Position: 2
+      Type: "NSString * _Nullable"
+    - Position: 3
+      Type: "id<CoreAuthenticatorAccountStatus> _Nonnull"
+  - Selector: "doCopy__Skie_DefaultArguments__55Id:fullName:initials:avatarUrl:status:"
+    MethodKind: "Instance"
+    SwiftName: "doCopy(id:fullName:initials:avatarUrl:status:)"
+    ResultType: "CoreAuthenticatorAccount * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "int64_t"
+    - Position: 1
+      Type: "NSString * _Nonnull"
+    - Position: 2
+      Type: "NSString * _Nonnull"
+    - Position: 3
+      Type: "NSString * _Nullable"
+    - Position: 4
+      Type: "Skie__TypeDef__0__id_CoreAuthenticatorAccountStatus_"
+  - Selector: "doCopy__Skie_DefaultArguments__56Email:avatarUrl:status:"
+    MethodKind: "Instance"
+    SwiftName: "doCopy(email:avatarUrl:status:)"
+    ResultType: "CoreAuthenticatorAccount * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+    - Position: 1
+      Type: "NSString * _Nullable"
+    - Position: 2
+      Type: "id<CoreAuthenticatorAccountStatus> _Nonnull"
+  - Selector: "doCopy__Skie_DefaultArguments__57Id:email:avatarUrl:status:"
+    MethodKind: "Instance"
+    SwiftName: "doCopy(id:email:avatarUrl:status:)"
+    ResultType: "CoreAuthenticatorAccount * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "int64_t"
+    - Position: 1
+      Type: "NSString * _Nonnull"
+    - Position: 2
+      Type: "NSString * _Nullable"
+    - Position: 3
+      Type: "Skie__TypeDef__0__id_CoreAuthenticatorAccountStatus_"
+  - Selector: "doCopy__Skie_DefaultArguments__58FullName:email:avatarUrl:status:"
+    MethodKind: "Instance"
+    SwiftName: "doCopy(fullName:email:avatarUrl:status:)"
+    ResultType: "CoreAuthenticatorAccount * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+    - Position: 1
+      Type: "NSString * _Nonnull"
+    - Position: 2
+      Type: "NSString * _Nullable"
+    - Position: 3
+      Type: "id<CoreAuthenticatorAccountStatus> _Nonnull"
+  - Selector: "doCopy__Skie_DefaultArguments__59Id:fullName:email:avatarUrl:status:"
+    MethodKind: "Instance"
+    SwiftName: "doCopy(id:fullName:email:avatarUrl:status:)"
+    ResultType: "CoreAuthenticatorAccount * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "int64_t"
+    - Position: 1
+      Type: "NSString * _Nonnull"
+    - Position: 2
+      Type: "NSString * _Nonnull"
+    - Position: 3
+      Type: "NSString * _Nullable"
+    - Position: 4
+      Type: "Skie__TypeDef__0__id_CoreAuthenticatorAccountStatus_"
+  - Selector: "doCopy__Skie_DefaultArguments__60Initials:email:avatarUrl:status:"
+    MethodKind: "Instance"
+    SwiftName: "doCopy(initials:email:avatarUrl:status:)"
+    ResultType: "CoreAuthenticatorAccount * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+    - Position: 1
+      Type: "NSString * _Nonnull"
+    - Position: 2
+      Type: "NSString * _Nullable"
+    - Position: 3
+      Type: "id<CoreAuthenticatorAccountStatus> _Nonnull"
+  - Selector: "doCopy__Skie_DefaultArguments__61Id:initials:email:avatarUrl:status:"
+    MethodKind: "Instance"
+    SwiftName: "doCopy(id:initials:email:avatarUrl:status:)"
+    ResultType: "CoreAuthenticatorAccount * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "int64_t"
+    - Position: 1
+      Type: "NSString * _Nonnull"
+    - Position: 2
+      Type: "NSString * _Nonnull"
+    - Position: 3
+      Type: "NSString * _Nullable"
+    - Position: 4
+      Type: "Skie__TypeDef__0__id_CoreAuthenticatorAccountStatus_"
+  - Selector: "doCopy__Skie_DefaultArguments__62FullName:initials:email:avatarUrl:status:"
+    MethodKind: "Instance"
+    SwiftName: "doCopy(fullName:initials:email:avatarUrl:status:)"
+    ResultType: "CoreAuthenticatorAccount * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+    - Position: 1
+      Type: "NSString * _Nonnull"
+    - Position: 2
+      Type: "NSString * _Nonnull"
+    - Position: 3
+      Type: "NSString * _Nullable"
+    - Position: 4
+      Type: "id<CoreAuthenticatorAccountStatus> _Nonnull"
+- Name: "CoreAuthenticatorAccountStatusNotConnected"
+  SwiftName: "AccountStatusNotConnected"
+  Properties:
+  - Name: "action"
+    PropertyKind: "Instance"
+    SwiftName: "action"
+    Type: "id<CoreAuthenticatorNotConnectedAction> _Nullable"
+  Methods:
+  - Selector: "initWithAction:"
+    MethodKind: "Instance"
+    SwiftName: "init(action:)"
+    Parameters:
+    - Position: 0
+      Type: "id<CoreAuthenticatorNotConnectedAction> _Nullable"
+  - Selector: "doCopyAction:"
+    MethodKind: "Instance"
+    SwiftName: "doCopy(action:)"
+    ResultType: "CoreAuthenticatorAccountStatusNotConnected * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "id<CoreAuthenticatorNotConnectedAction> _Nullable"
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+  - Selector: "doCopy__Skie_DefaultArguments__63"
+    MethodKind: "Instance"
+    SwiftName: "doCopy()"
+    ResultType: "CoreAuthenticatorAccountStatusNotConnected * _Nonnull"
+- Name: "CoreAuthenticatorAccountStatusLoggedIn"
+  SwiftName: "AccountStatusLoggedIn"
+  Methods:
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "CoreAuthenticatorNotConnectedActionReLogin"
+  SwiftName: "NotConnectedActionReLogin"
+  Properties:
+  - Name: "legacyAccount"
+    PropertyKind: "Instance"
+    SwiftName: "legacyAccount"
+    Type: "CoreAuthenticatorAccount * _Nonnull"
+  - Name: "sendCredentials"
+    PropertyKind: "Instance"
+    SwiftName: "sendCredentials"
+    Type: "void (^ _Nonnull)(CoreAuthenticatorCredentialsForMigration * _Nonnull)"
+  Methods:
+  - Selector: "initWithLegacyAccount:sendCredentials:"
+    MethodKind: "Instance"
+    SwiftName: "init(legacyAccount:sendCredentials:)"
+    Parameters:
+    - Position: 0
+      Type: "CoreAuthenticatorAccount * _Nonnull"
+    - Position: 1
+      Type: "void (^ _Nonnull)(CoreAuthenticatorCredentialsForMigration * _Nonnull)"
+  - Selector: "doCopyLegacyAccount:sendCredentials:"
+    MethodKind: "Instance"
+    SwiftName: "doCopy(legacyAccount:sendCredentials:)"
+    ResultType: "CoreAuthenticatorNotConnectedActionReLogin * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "CoreAuthenticatorAccount * _Nonnull"
+    - Position: 1
+      Type: "void (^ _Nonnull)(CoreAuthenticatorCredentialsForMigration * _Nonnull)"
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+  - Selector: "doCopy__Skie_DefaultArguments__81"
+    MethodKind: "Instance"
+    SwiftName: "doCopy()"
+    ResultType: "CoreAuthenticatorNotConnectedActionReLogin * _Nonnull"
+  - Selector: "doCopy__Skie_DefaultArguments__82LegacyAccount:"
+    MethodKind: "Instance"
+    SwiftName: "doCopy(legacyAccount:)"
+    ResultType: "CoreAuthenticatorNotConnectedActionReLogin * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "CoreAuthenticatorAccount * _Nonnull"
+  - Selector: "doCopy__Skie_DefaultArguments__83SendCredentials:"
+    MethodKind: "Instance"
+    SwiftName: "doCopy(sendCredentials:)"
+    ResultType: "CoreAuthenticatorNotConnectedActionReLogin * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "void (^ _Nonnull)(CoreAuthenticatorCredentialsForMigration * _Nonnull)"
+- Name: "CoreAuthenticatorNotConnectedActionIssueRetriable"
+  SwiftName: "NotConnectedActionIssueRetriable"
+  Properties:
+  - Name: "proceed"
+    PropertyKind: "Instance"
+    SwiftName: "proceed"
+    Type: "void (^ _Nonnull)(CoreAuthenticatorBoolean * _Nonnull)"
+  Methods:
+  - Selector: "initWithProceed:"
+    MethodKind: "Instance"
+    SwiftName: "init(proceed:)"
+    Parameters:
+    - Position: 0
+      Type: "void (^ _Nonnull)(CoreAuthenticatorBoolean * _Nonnull)"
+  - Selector: "doCopyProceed:"
+    MethodKind: "Instance"
+    SwiftName: "doCopy(proceed:)"
+    ResultType: "CoreAuthenticatorNotConnectedActionIssueRetriable * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "void (^ _Nonnull)(CoreAuthenticatorBoolean * _Nonnull)"
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+  - Selector: "doCopy__Skie_DefaultArguments__84"
+    MethodKind: "Instance"
+    SwiftName: "doCopy()"
+    ResultType: "CoreAuthenticatorNotConnectedActionIssueRetriable * _Nonnull"
+- Name: "CoreAuthenticatorNotConnectedActionIssueNonRetriable"
+  SwiftName: "NotConnectedActionIssueNonRetriable"
+  Properties:
+  - Name: "message"
+    PropertyKind: "Instance"
+    SwiftName: "message"
+    Type: "NSString * _Nonnull"
+  Methods:
+  - Selector: "initWithMessage:"
+    MethodKind: "Instance"
+    SwiftName: "init(message:)"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+  - Selector: "doCopyMessage:"
+    MethodKind: "Instance"
+    SwiftName: "doCopy(message:)"
+    ResultType: "CoreAuthenticatorNotConnectedActionIssueNonRetriable * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+  - Selector: "doCopy__Skie_DefaultArguments__85"
+    MethodKind: "Instance"
+    SwiftName: "doCopy()"
+    ResultType: "CoreAuthenticatorNotConnectedActionIssueNonRetriable * _Nonnull"
+- Name: "CoreAuthenticatorAppStatusLoginRequiredMigratingFromLegacyKAuth"
+  SwiftName: "AppStatusLoginRequiredMigratingFromLegacyKAuth"
+  Properties:
+  - Name: "proceed"
+    PropertyKind: "Instance"
+    SwiftName: "proceed"
+    Type: "void (^ _Nonnull)(void)"
+  Methods:
+  - Selector: "initWithProceed:"
+    MethodKind: "Instance"
+    SwiftName: "init(proceed:)"
+    Parameters:
+    - Position: 0
+      Type: "void (^ _Nonnull)(void)"
+  - Selector: "doCopyProceed:"
+    MethodKind: "Instance"
+    SwiftName: "doCopy(proceed:)"
+    ResultType: "CoreAuthenticatorAppStatusLoginRequiredMigratingFromLegacyKAuth * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "void (^ _Nonnull)(void)"
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+  - Selector: "doCopy__Skie_DefaultArguments__64"
+    MethodKind: "Instance"
+    SwiftName: "doCopy()"
+    ResultType: "CoreAuthenticatorAppStatusLoginRequiredMigratingFromLegacyKAuth * _Nonnull"
+- Name: "CoreAuthenticatorAppStatusLoginRequiredNotMigrating"
+  SwiftName: "AppStatusLoginRequiredNotMigrating"
+  Methods:
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "CoreAuthenticatorAppStatusLoggingIn"
+  SwiftName: "AppStatusLoggingIn"
+  Methods:
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "CoreAuthenticatorAppStatusEverythingReady"
+  SwiftName: "AppStatusEverythingReady"
+  Properties:
+  - Name: "proceed"
+    PropertyKind: "Instance"
+    SwiftName: "proceed"
+    Type: "void (^ _Nonnull)(void)"
+  Methods:
+  - Selector: "initWithProceed:"
+    MethodKind: "Instance"
+    SwiftName: "init(proceed:)"
+    Parameters:
+    - Position: 0
+      Type: "void (^ _Nonnull)(void)"
+  - Selector: "doCopyProceed:"
+    MethodKind: "Instance"
+    SwiftName: "doCopy(proceed:)"
+    ResultType: "CoreAuthenticatorAppStatusEverythingReady * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "void (^ _Nonnull)(void)"
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+  - Selector: "doCopy__Skie_DefaultArguments__65"
+    MethodKind: "Instance"
+    SwiftName: "doCopy()"
+    ResultType: "CoreAuthenticatorAppStatusEverythingReady * _Nonnull"
+- Name: "CoreAuthenticatorAppStatusSetupComplete"
+  SwiftName: "AppStatusSetupComplete"
+  Properties:
+  - Name: "addAnAccount"
+    PropertyKind: "Instance"
+    SwiftName: "addAnAccount"
+    Type: "void (^ _Nonnull)(void)"
+  Methods:
+  - Selector: "initWithAddAnAccount:"
+    MethodKind: "Instance"
+    SwiftName: "init(addAnAccount:)"
+    Parameters:
+    - Position: 0
+      Type: "void (^ _Nonnull)(void)"
+  - Selector: "doCopyAddAnAccount:"
+    MethodKind: "Instance"
+    SwiftName: "doCopy(addAnAccount:)"
+    ResultType: "CoreAuthenticatorAppStatusSetupComplete * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "void (^ _Nonnull)(void)"
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+  - Selector: "doCopy__Skie_DefaultArguments__66"
+    MethodKind: "Instance"
+    SwiftName: "doCopy()"
+    ResultType: "CoreAuthenticatorAppStatusSetupComplete * _Nonnull"
+- Name: "CoreAuthenticatorAppStatusAddingAnAccount"
+  SwiftName: "AppStatusAddingAnAccount"
+  Properties:
+  - Name: "cancel"
+    PropertyKind: "Instance"
+    SwiftName: "cancel"
+    Type: "void (^ _Nonnull)(void)"
+  Methods:
+  - Selector: "initWithCancel:"
+    MethodKind: "Instance"
+    SwiftName: "init(cancel:)"
+    Parameters:
+    - Position: 0
+      Type: "void (^ _Nonnull)(void)"
+  - Selector: "doCopyCancel:"
+    MethodKind: "Instance"
+    SwiftName: "doCopy(cancel:)"
+    ResultType: "CoreAuthenticatorAppStatusAddingAnAccount * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "void (^ _Nonnull)(void)"
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+  - Selector: "doCopy__Skie_DefaultArguments__67"
+    MethodKind: "Instance"
+    SwiftName: "doCopy()"
+    ResultType: "CoreAuthenticatorAppStatusAddingAnAccount * _Nonnull"
+- Name: "CoreAuthenticatorAuthenticatorFacade"
+  SwiftName: "AuthenticatorFacade"
+  Properties:
+  - Name: "accounts"
+    PropertyKind: "Instance"
+    SwiftName: "accounts"
+    Type: "CoreAuthenticatorSkieKotlinFlow<NSArray<CoreAuthenticatorAccount *> *> * _Nonnull"
+  - Name: "appStatus"
+    PropertyKind: "Instance"
+    SwiftName: "appStatus"
+    Type: "CoreAuthenticatorSkieKotlinSharedFlow<id<CoreAuthenticatorAppStatus>> * _Nonnull"
+  Methods:
+  - Selector: "addAccountsConnectedAccounts:completionHandler:"
+    MethodKind: "Instance"
+    SwiftName: "__addAccounts(connectedAccounts:completionHandler:)"
+    SwiftPrivate: true
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "NSArray<CoreAuthenticatorAccount *> * _Nonnull"
+    - Position: 1
+      Type: "void (^ _Nonnull)(NSError * _Nullable)"
+  - Selector: "appStatusOrNull"
+    MethodKind: "Instance"
+    SwiftName: "appStatusOrNull()"
+    ResultType: "id<CoreAuthenticatorAppStatus> _Nullable"
+  - Selector: "refreshTokenForUserId:completionHandler:"
+    MethodKind: "Instance"
+    SwiftName: "__refreshTokenFor(userId:completionHandler:)"
+    SwiftPrivate: true
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "int64_t"
+    - Position: 1
+      Type: "void (^ _Nonnull)(NSError * _Nullable)"
+  - Selector: "removeAccountToken:id:completionHandler:"
+    MethodKind: "Instance"
+    SwiftName: "__removeAccount(token:id:completionHandler:)"
+    SwiftPrivate: true
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+    - Position: 1
+      Type: "int64_t"
+    - Position: 2
+      Type: "void (^ _Nonnull)(NSError * _Nullable)"
+- Name: "CoreAuthenticatorAuthenticatorFacadeCompanion"
+  SwiftName: "AuthenticatorFacade.Companion"
+  Methods:
+  - Selector: "createEnvironment:userAgent:clientId:databaseNameOrPath:crashReport:tokenBridge:scope:"
+    MethodKind: "Instance"
+    SwiftName: "create(environment:userAgent:clientId:databaseNameOrPath:crashReport:tokenBridge:scope:)"
+    ResultType: "CoreAuthenticatorAuthenticatorFacade * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "CoreAuthenticatorApiEnvironment * _Nonnull"
+    - Position: 1
+      Type: "NSString * _Nonnull"
+    - Position: 2
+      Type: "NSString * _Nonnull"
+    - Position: 3
+      Type: "NSString * _Nullable"
+    - Position: 4
+      Type: "id<CoreAuthenticatorCrashReportInterface> _Nonnull"
+    - Position: 5
+      Type: "id<CoreAuthenticatorTokenBridge> _Nonnull"
+    - Position: 6
+      Type: "id<CoreAuthenticatorKotlinx_coroutines_coreCoroutineScope> _Nonnull"
+  - Selector: "dummyInstanceUserAgent:environment:crashReport:scope:loadingDurationMillis:resetAfterMillis:"
+    MethodKind: "Instance"
+    SwiftName: "dummyInstance(userAgent:environment:crashReport:scope:loadingDurationMillis:resetAfterMillis:)"
+    ResultType: "CoreAuthenticatorAuthenticatorFacade * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+    - Position: 1
+      Type: "CoreAuthenticatorApiEnvironment * _Nonnull"
+    - Position: 2
+      Type: "id<CoreAuthenticatorCrashReportInterface> _Nullable"
+    - Position: 3
+      Type: "id<CoreAuthenticatorKotlinx_coroutines_coreCoroutineScope> _Nonnull"
+    - Position: 4
+      Type: "int64_t"
+    - Position: 5
+      Type: "int64_t"
+  - Selector: "create__Skie_DefaultArguments__68Environment:userAgent:clientId:crashReport:tokenBridge:"
+    MethodKind: "Instance"
+    SwiftName: "create(environment:userAgent:clientId:crashReport:tokenBridge:)"
+    ResultType: "CoreAuthenticatorAuthenticatorFacade * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "CoreAuthenticatorApiEnvironment * _Nonnull"
+    - Position: 1
+      Type: "NSString * _Nonnull"
+    - Position: 2
+      Type: "NSString * _Nonnull"
+    - Position: 3
+      Type: "id<CoreAuthenticatorCrashReportInterface> _Nonnull"
+    - Position: 4
+      Type: "id<CoreAuthenticatorTokenBridge> _Nonnull"
+  - Selector: "create__Skie_DefaultArguments__69Environment:userAgent:clientId:databaseNameOrPath:crashReport:tokenBridge:"
+    MethodKind: "Instance"
+    SwiftName: "create(environment:userAgent:clientId:databaseNameOrPath:crashReport:tokenBridge:)"
+    ResultType: "CoreAuthenticatorAuthenticatorFacade * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "CoreAuthenticatorApiEnvironment * _Nonnull"
+    - Position: 1
+      Type: "NSString * _Nonnull"
+    - Position: 2
+      Type: "NSString * _Nonnull"
+    - Position: 3
+      Type: "NSString * _Nullable"
+    - Position: 4
+      Type: "id<CoreAuthenticatorCrashReportInterface> _Nonnull"
+    - Position: 5
+      Type: "id<CoreAuthenticatorTokenBridge> _Nonnull"
+  - Selector: "create__Skie_DefaultArguments__70Environment:userAgent:clientId:crashReport:tokenBridge:scope:"
+    MethodKind: "Instance"
+    SwiftName: "create(environment:userAgent:clientId:crashReport:tokenBridge:scope:)"
+    ResultType: "CoreAuthenticatorAuthenticatorFacade * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "CoreAuthenticatorApiEnvironment * _Nonnull"
+    - Position: 1
+      Type: "NSString * _Nonnull"
+    - Position: 2
+      Type: "NSString * _Nonnull"
+    - Position: 3
+      Type: "id<CoreAuthenticatorCrashReportInterface> _Nonnull"
+    - Position: 4
+      Type: "id<CoreAuthenticatorTokenBridge> _Nonnull"
+    - Position: 5
+      Type: "id<CoreAuthenticatorKotlinx_coroutines_coreCoroutineScope> _Nonnull"
+  - Selector: "dummyInstance__Skie_DefaultArguments__71UserAgent:environment:crashReport:"
+    MethodKind: "Instance"
+    SwiftName: "dummyInstance(userAgent:environment:crashReport:)"
+    ResultType: "CoreAuthenticatorAuthenticatorFacade * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+    - Position: 1
+      Type: "CoreAuthenticatorApiEnvironment * _Nonnull"
+    - Position: 2
+      Type: "id<CoreAuthenticatorCrashReportInterface> _Nullable"
+  - Selector: "dummyInstance__Skie_DefaultArguments__72UserAgent:environment:crashReport:scope:"
+    MethodKind: "Instance"
+    SwiftName: "dummyInstance(userAgent:environment:crashReport:scope:)"
+    ResultType: "CoreAuthenticatorAuthenticatorFacade * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+    - Position: 1
+      Type: "CoreAuthenticatorApiEnvironment * _Nonnull"
+    - Position: 2
+      Type: "id<CoreAuthenticatorCrashReportInterface> _Nullable"
+    - Position: 3
+      Type: "id<CoreAuthenticatorKotlinx_coroutines_coreCoroutineScope> _Nonnull"
+  - Selector: "dummyInstance__Skie_DefaultArguments__73UserAgent:environment:crashReport:loadingDurationMillis:"
+    MethodKind: "Instance"
+    SwiftName: "dummyInstance(userAgent:environment:crashReport:loadingDurationMillis:)"
+    ResultType: "CoreAuthenticatorAuthenticatorFacade * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+    - Position: 1
+      Type: "CoreAuthenticatorApiEnvironment * _Nonnull"
+    - Position: 2
+      Type: "id<CoreAuthenticatorCrashReportInterface> _Nullable"
+    - Position: 3
+      Type: "int64_t"
+  - Selector: "dummyInstance__Skie_DefaultArguments__74UserAgent:environment:crashReport:scope:loadingDurationMillis:"
+    MethodKind: "Instance"
+    SwiftName: "dummyInstance(userAgent:environment:crashReport:scope:loadingDurationMillis:)"
+    ResultType: "CoreAuthenticatorAuthenticatorFacade * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+    - Position: 1
+      Type: "CoreAuthenticatorApiEnvironment * _Nonnull"
+    - Position: 2
+      Type: "id<CoreAuthenticatorCrashReportInterface> _Nullable"
+    - Position: 3
+      Type: "id<CoreAuthenticatorKotlinx_coroutines_coreCoroutineScope> _Nonnull"
+    - Position: 4
+      Type: "int64_t"
+  - Selector: "dummyInstance__Skie_DefaultArguments__75UserAgent:environment:crashReport:resetAfterMillis:"
+    MethodKind: "Instance"
+    SwiftName: "dummyInstance(userAgent:environment:crashReport:resetAfterMillis:)"
+    ResultType: "CoreAuthenticatorAuthenticatorFacade * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+    - Position: 1
+      Type: "CoreAuthenticatorApiEnvironment * _Nonnull"
+    - Position: 2
+      Type: "id<CoreAuthenticatorCrashReportInterface> _Nullable"
+    - Position: 3
+      Type: "int64_t"
+  - Selector: "dummyInstance__Skie_DefaultArguments__76UserAgent:environment:crashReport:scope:resetAfterMillis:"
+    MethodKind: "Instance"
+    SwiftName: "dummyInstance(userAgent:environment:crashReport:scope:resetAfterMillis:)"
+    ResultType: "CoreAuthenticatorAuthenticatorFacade * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+    - Position: 1
+      Type: "CoreAuthenticatorApiEnvironment * _Nonnull"
+    - Position: 2
+      Type: "id<CoreAuthenticatorCrashReportInterface> _Nullable"
+    - Position: 3
+      Type: "id<CoreAuthenticatorKotlinx_coroutines_coreCoroutineScope> _Nonnull"
+    - Position: 4
+      Type: "int64_t"
+  - Selector: "dummyInstance__Skie_DefaultArguments__77UserAgent:environment:crashReport:loadingDurationMillis:resetAfterMillis:"
+    MethodKind: "Instance"
+    SwiftName: "dummyInstance(userAgent:environment:crashReport:loadingDurationMillis:resetAfterMillis:)"
+    ResultType: "CoreAuthenticatorAuthenticatorFacade * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+    - Position: 1
+      Type: "CoreAuthenticatorApiEnvironment * _Nonnull"
+    - Position: 2
+      Type: "id<CoreAuthenticatorCrashReportInterface> _Nullable"
+    - Position: 3
+      Type: "int64_t"
+    - Position: 4
+      Type: "int64_t"
+- Name: "CoreAuthenticatorCrashReportLevel"
+  SwiftBridge: "CrashReportLevel"
+  SwiftName: "__CrashReportLevel"
+  SwiftPrivate: true
+  Properties:
+  - Name: "debug"
+    PropertyKind: "Class"
+    SwiftName: "debug"
+    Type: "CoreAuthenticatorCrashReportLevel * _Nonnull"
+  - Name: "info"
+    PropertyKind: "Class"
+    SwiftName: "info"
+    Type: "CoreAuthenticatorCrashReportLevel * _Nonnull"
+  - Name: "warning"
+    PropertyKind: "Class"
+    SwiftName: "warning"
+    Type: "CoreAuthenticatorCrashReportLevel * _Nonnull"
+  - Name: "error"
+    PropertyKind: "Class"
+    SwiftName: "error"
+    Type: "CoreAuthenticatorCrashReportLevel * _Nonnull"
+  - Name: "fatal"
+    PropertyKind: "Class"
+    SwiftName: "fatal"
+    Type: "CoreAuthenticatorCrashReportLevel * _Nonnull"
+  Methods:
+  - Selector: "initWithName:ordinal:"
+    MethodKind: "Instance"
+    SwiftName: "init(name:ordinal:)"
+    Availability: "nonswift"
+- Name: "CoreAuthenticatorBreadcrumbType"
+  SwiftBridge: "BreadcrumbType"
+  SwiftName: "__BreadcrumbType"
+  SwiftPrivate: true
+  Properties:
+  - Name: "value"
+    PropertyKind: "Instance"
+    SwiftName: "value"
+    Type: "NSString * _Nonnull"
+  - Name: "default_"
+    PropertyKind: "Class"
+    SwiftName: "default"
+    Type: "CoreAuthenticatorBreadcrumbType * _Nonnull"
+  - Name: "http"
+    PropertyKind: "Class"
+    SwiftName: "http"
+    Type: "CoreAuthenticatorBreadcrumbType * _Nonnull"
+  Methods:
+  - Selector: "initWithName:ordinal:"
+    MethodKind: "Instance"
+    SwiftName: "init(name:ordinal:)"
+    Availability: "nonswift"
+- Name: "CoreAuthenticatorApiEnvironment"
+  SwiftName: "ApiEnvironment"
+  Properties:
+  - Name: "baseUrl"
+    PropertyKind: "Instance"
+    SwiftName: "baseUrl"
+    Type: "NSString * _Nonnull"
+- Name: "CoreAuthenticatorApiEnvironmentStaging"
+  SwiftName: "ApiEnvironment.Staging"
+  Methods:
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "CoreAuthenticatorApiEnvironmentPreprod"
+  SwiftName: "ApiEnvironment.Preprod"
+  Methods:
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "CoreAuthenticatorApiEnvironmentProd"
+  SwiftName: "ApiEnvironment.Prod"
+  Methods:
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "CoreAuthenticatorApiEnvironmentCustom"
+  SwiftName: "ApiEnvironment.Custom"
+  Methods:
+  - Selector: "initWithUrl:"
+    MethodKind: "Instance"
+    SwiftName: "init(url:)"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+  - Selector: "doCopyUrl:"
+    MethodKind: "Instance"
+    SwiftName: "doCopy(url:)"
+    ResultType: "CoreAuthenticatorApiEnvironmentCustom * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+  - Selector: "doCopy__Skie_DefaultArguments__96"
+    MethodKind: "Instance"
+    SwiftName: "doCopy()"
+    ResultType: "CoreAuthenticatorApiEnvironmentCustom * _Nonnull"
+- Name: "CoreAuthenticatorCredentialsForMigration"
+  SwiftName: "CredentialsForMigration"
+  Properties:
+  - Name: "confirmedEmail"
+    PropertyKind: "Instance"
+    SwiftName: "confirmedEmail"
+    Type: "NSString * _Nonnull"
+  - Name: "password"
+    PropertyKind: "Instance"
+    SwiftName: "password"
+    Type: "NSString * _Nonnull"
+  Methods:
+  - Selector: "initWithConfirmedEmail:password:"
+    MethodKind: "Instance"
+    SwiftName: "init(confirmedEmail:password:)"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+    - Position: 1
+      Type: "NSString * _Nonnull"
+  - Selector: "doCopyConfirmedEmail:password:"
+    MethodKind: "Instance"
+    SwiftName: "doCopy(confirmedEmail:password:)"
+    ResultType: "CoreAuthenticatorCredentialsForMigration * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+    - Position: 1
+      Type: "NSString * _Nonnull"
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+  - Selector: "doCopy__Skie_DefaultArguments__78"
+    MethodKind: "Instance"
+    SwiftName: "doCopy()"
+    ResultType: "CoreAuthenticatorCredentialsForMigration * _Nonnull"
+  - Selector: "doCopy__Skie_DefaultArguments__79ConfirmedEmail:"
+    MethodKind: "Instance"
+    SwiftName: "doCopy(confirmedEmail:)"
+    ResultType: "CoreAuthenticatorCredentialsForMigration * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+  - Selector: "doCopy__Skie_DefaultArguments__80Password:"
+    MethodKind: "Instance"
+    SwiftName: "doCopy(password:)"
+    ResultType: "CoreAuthenticatorCredentialsForMigration * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+- Name: "CoreAuthenticatorDummyAuthenticatorFacade"
+  SwiftName: "DummyAuthenticatorFacade"
+  Properties:
+  - Name: "accounts"
+    PropertyKind: "Instance"
+    SwiftName: "accounts"
+    Type: "CoreAuthenticatorSkieKotlinFlow<NSArray<CoreAuthenticatorAccount *> *> * _Nonnull"
+  - Name: "appStatus"
+    PropertyKind: "Instance"
+    SwiftName: "appStatus"
+    Type: "CoreAuthenticatorSkieKotlinSharedFlow<id<CoreAuthenticatorAppStatus>> * _Nonnull"
+  Methods:
+  - Selector: "addAccountsConnectedAccounts:completionHandler:"
+    MethodKind: "Instance"
+    SwiftName: "__addAccounts(connectedAccounts:completionHandler:)"
+    SwiftPrivate: true
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "NSArray<CoreAuthenticatorAccount *> * _Nonnull"
+    - Position: 1
+      Type: "void (^ _Nonnull)(NSError * _Nullable)"
+  - Selector: "refreshTokenForUserId:completionHandler:"
+    MethodKind: "Instance"
+    SwiftName: "__refreshTokenFor(userId:completionHandler:)"
+    SwiftPrivate: true
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "int64_t"
+    - Position: 1
+      Type: "void (^ _Nonnull)(NSError * _Nullable)"
+  - Selector: "removeAccountToken:id:completionHandler:"
+    MethodKind: "Instance"
+    SwiftName: "__removeAccount(token:id:completionHandler:)"
+    SwiftPrivate: true
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+    - Position: 1
+      Type: "int64_t"
+    - Position: 2
+      Type: "void (^ _Nonnull)(NSError * _Nullable)"
+- Name: "CoreAuthenticatorAppSettingsDatabase"
+  SwiftName: "AppSettingsDatabase"
+  Methods:
+  - Selector: "init"
+    MethodKind: "Instance"
+    SwiftName: "init()"
+  - Selector: "getDao"
+    MethodKind: "Instance"
+    SwiftName: "getDao()"
+    ResultType: "id<CoreAuthenticatorAppSettingsDao> _Nonnull"
+- Name: "CoreAuthenticatorTheme"
+  SwiftBridge: "Theme"
+  SwiftName: "__Theme"
+  SwiftPrivate: true
+  Properties:
+  - Name: "light"
+    PropertyKind: "Class"
+    SwiftName: "light"
+    Type: "CoreAuthenticatorTheme * _Nonnull"
+  - Name: "dark"
+    PropertyKind: "Class"
+    SwiftName: "dark"
+    Type: "CoreAuthenticatorTheme * _Nonnull"
+  - Name: "system"
+    PropertyKind: "Class"
+    SwiftName: "system"
+    Type: "CoreAuthenticatorTheme * _Nonnull"
+  Methods:
+  - Selector: "initWithName:ordinal:"
+    MethodKind: "Instance"
+    SwiftName: "init(name:ordinal:)"
+    Availability: "nonswift"
+- Name: "CoreAuthenticatorAppSettingsEntity"
+  SwiftName: "AppSettingsEntity"
+  Properties:
+  - Name: "id"
+    PropertyKind: "Instance"
+    SwiftName: "id"
+    Type: "int64_t"
+  - Name: "isAppLockEnabled"
+    PropertyKind: "Instance"
+    SwiftName: "isAppLockEnabled"
+    Type: "BOOL"
+  - Name: "theme"
+    PropertyKind: "Instance"
+    SwiftName: "theme"
+    Type: "CoreAuthenticatorTheme * _Nonnull"
+  Methods:
+  - Selector: "initWithId:isAppLockEnabled:theme:"
+    MethodKind: "Instance"
+    SwiftName: "init(id:isAppLockEnabled:theme:)"
+    Parameters:
+    - Position: 0
+      Type: "int64_t"
+    - Position: 1
+      Type: "BOOL"
+    - Position: 2
+      Type: "CoreAuthenticatorTheme * _Nonnull"
+  - Selector: "init"
+    MethodKind: "Instance"
+    SwiftName: "init()"
+  - Selector: "initWithId__Skie_DefaultArguments__99:"
+    MethodKind: "Instance"
+    SwiftName: "init(id:)"
+    Parameters:
+    - Position: 0
+      Type: "int64_t"
+  - Selector: "initWithIsAppLockEnabled__Skie_DefaultArguments__100:"
+    MethodKind: "Instance"
+    SwiftName: "init(isAppLockEnabled:)"
+    Parameters:
+    - Position: 0
+      Type: "BOOL"
+  - Selector: "initWithId:isAppLockEnabled__Skie_DefaultArguments__101:"
+    MethodKind: "Instance"
+    SwiftName: "init(id:isAppLockEnabled:)"
+    Parameters:
+    - Position: 0
+      Type: "int64_t"
+    - Position: 1
+      Type: "BOOL"
+  - Selector: "initWithTheme__Skie_DefaultArguments__102:"
+    MethodKind: "Instance"
+    SwiftName: "init(theme:)"
+    Parameters:
+    - Position: 0
+      Type: "CoreAuthenticatorTheme * _Nonnull"
+  - Selector: "initWithId:theme__Skie_DefaultArguments__103:"
+    MethodKind: "Instance"
+    SwiftName: "init(id:theme:)"
+    Parameters:
+    - Position: 0
+      Type: "int64_t"
+    - Position: 1
+      Type: "CoreAuthenticatorTheme * _Nonnull"
+  - Selector: "initWithIsAppLockEnabled:theme__Skie_DefaultArguments__104:"
+    MethodKind: "Instance"
+    SwiftName: "init(isAppLockEnabled:theme:)"
+    Parameters:
+    - Position: 0
+      Type: "BOOL"
+    - Position: 1
+      Type: "CoreAuthenticatorTheme * _Nonnull"
+  - Selector: "doCopyId:isAppLockEnabled:theme:"
+    MethodKind: "Instance"
+    SwiftName: "doCopy(id:isAppLockEnabled:theme:)"
+    ResultType: "CoreAuthenticatorAppSettingsEntity * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "int64_t"
+    - Position: 1
+      Type: "BOOL"
+    - Position: 2
+      Type: "CoreAuthenticatorTheme * _Nonnull"
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+  - Selector: "doCopy__Skie_DefaultArguments__86"
+    MethodKind: "Instance"
+    SwiftName: "doCopy()"
+    ResultType: "CoreAuthenticatorAppSettingsEntity * _Nonnull"
+  - Selector: "doCopy__Skie_DefaultArguments__87Id:"
+    MethodKind: "Instance"
+    SwiftName: "doCopy(id:)"
+    ResultType: "CoreAuthenticatorAppSettingsEntity * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "int64_t"
+  - Selector: "doCopy__Skie_DefaultArguments__88IsAppLockEnabled:"
+    MethodKind: "Instance"
+    SwiftName: "doCopy(isAppLockEnabled:)"
+    ResultType: "CoreAuthenticatorAppSettingsEntity * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "BOOL"
+  - Selector: "doCopy__Skie_DefaultArguments__89Id:isAppLockEnabled:"
+    MethodKind: "Instance"
+    SwiftName: "doCopy(id:isAppLockEnabled:)"
+    ResultType: "CoreAuthenticatorAppSettingsEntity * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "int64_t"
+    - Position: 1
+      Type: "BOOL"
+  - Selector: "doCopy__Skie_DefaultArguments__90Theme:"
+    MethodKind: "Instance"
+    SwiftName: "doCopy(theme:)"
+    ResultType: "CoreAuthenticatorAppSettingsEntity * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "CoreAuthenticatorTheme * _Nonnull"
+  - Selector: "doCopy__Skie_DefaultArguments__91Id:theme:"
+    MethodKind: "Instance"
+    SwiftName: "doCopy(id:theme:)"
+    ResultType: "CoreAuthenticatorAppSettingsEntity * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "int64_t"
+    - Position: 1
+      Type: "CoreAuthenticatorTheme * _Nonnull"
+  - Selector: "doCopy__Skie_DefaultArguments__92IsAppLockEnabled:theme:"
+    MethodKind: "Instance"
+    SwiftName: "doCopy(isAppLockEnabled:theme:)"
+    ResultType: "CoreAuthenticatorAppSettingsEntity * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "BOOL"
+    - Position: 1
+      Type: "CoreAuthenticatorTheme * _Nonnull"
+- Name: "CoreAuthenticatorKeyStorageLocation"
+  SwiftBridge: "KeyStorageLocation"
+  SwiftName: "__KeyStorageLocation"
+  SwiftPrivate: true
+  Properties:
+  - Name: "secureenclave"
+    PropertyKind: "Class"
+    SwiftName: "secureEnclave"
+    Type: "CoreAuthenticatorKeyStorageLocation * _Nonnull"
+  - Name: "keychain"
+    PropertyKind: "Class"
+    SwiftName: "keyChain"
+    Type: "CoreAuthenticatorKeyStorageLocation * _Nonnull"
+  Methods:
+  - Selector: "initWithName:ordinal:"
+    MethodKind: "Instance"
+    SwiftName: "init(name:ordinal:)"
+    Availability: "nonswift"
+- Name: "CoreAuthenticatorApiErrorV2"
+  SwiftName: "ApiErrorV2"
+  Properties:
+  - Name: "code"
+    PropertyKind: "Instance"
+    SwiftName: "code"
+    Type: "NSString * _Nonnull"
+  - Name: "description_"
+    PropertyKind: "Instance"
+    SwiftName: "description_"
+    Type: "NSString * _Nonnull"
+  Methods:
+  - Selector: "initWithCode:description:"
+    MethodKind: "Instance"
+    SwiftName: "init(code:description:)"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+    - Position: 1
+      Type: "NSString * _Nonnull"
+  - Selector: "doCopyCode:description:"
+    MethodKind: "Instance"
+    SwiftName: "doCopy(code:description:)"
+    ResultType: "CoreAuthenticatorApiErrorV2 * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+    - Position: 1
+      Type: "NSString * _Nonnull"
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+  - Selector: "doCopy__Skie_DefaultArguments__93"
+    MethodKind: "Instance"
+    SwiftName: "doCopy()"
+    ResultType: "CoreAuthenticatorApiErrorV2 * _Nonnull"
+  - Selector: "doCopy__Skie_DefaultArguments__94Code:"
+    MethodKind: "Instance"
+    SwiftName: "doCopy(code:)"
+    ResultType: "CoreAuthenticatorApiErrorV2 * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+  - Selector: "doCopy__Skie_DefaultArguments__95Description:"
+    MethodKind: "Instance"
+    SwiftName: "doCopy(description:)"
+    ResultType: "CoreAuthenticatorApiErrorV2 * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+- Name: "CoreAuthenticatorApiErrorV2Companion"
+  SwiftName: "ApiErrorV2.Companion"
+  Methods:
+  - Selector: "serializer"
+    MethodKind: "Instance"
+    SwiftName: "serializer()"
+    ResultType: "id<CoreAuthenticatorKotlinx_serialization_coreKSerializer> _Nonnull"
+- Name: "CoreAuthenticatorApiResponseStatus"
+  SwiftBridge: "ApiResponseStatus"
+  SwiftName: "__ApiResponseStatus"
+  SwiftPrivate: true
+  Properties:
+  - Name: "error"
+    PropertyKind: "Class"
+    SwiftName: "error"
+    Type: "CoreAuthenticatorApiResponseStatus * _Nonnull"
+  - Name: "success"
+    PropertyKind: "Class"
+    SwiftName: "success"
+    Type: "CoreAuthenticatorApiResponseStatus * _Nonnull"
+  - Name: "asynchronous"
+    PropertyKind: "Class"
+    SwiftName: "asynchronous"
+    Type: "CoreAuthenticatorApiResponseStatus * _Nonnull"
+  - Name: "unknown"
+    PropertyKind: "Class"
+    SwiftName: "unknown"
+    Type: "CoreAuthenticatorApiResponseStatus * _Nonnull"
+  Methods:
+  - Selector: "initWithName:ordinal:"
+    MethodKind: "Instance"
+    SwiftName: "init(name:ordinal:)"
+    Availability: "nonswift"
+- Name: "CoreAuthenticatorApiResponseStatusCompanion"
+  SwiftName: "__ApiResponseStatus.Companion"
+  Methods:
+  - Selector: "serializerTypeParamsSerializers:"
+    MethodKind: "Instance"
+    SwiftName: "serializer(typeParamsSerializers:)"
+    ResultType: "id<CoreAuthenticatorKotlinx_serialization_coreKSerializer> _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "CoreAuthenticatorKotlinArray<id<CoreAuthenticatorKotlinx_serialization_coreKSerializer>> * _Nonnull"
+  - Selector: "serializer"
+    MethodKind: "Instance"
+    SwiftName: "serializer()"
+    ResultType: "id<CoreAuthenticatorKotlinx_serialization_coreKSerializer> _Nonnull"
+- Name: "CoreAuthenticatorMatomoCategory"
+  SwiftBridge: "MatomoCategory"
+  SwiftName: "__MatomoCategory"
+  SwiftPrivate: true
+  Properties:
+  - Name: "value"
+    PropertyKind: "Instance"
+    SwiftName: "value"
+    Type: "NSString * _Nonnull"
+  - Name: "account"
+    PropertyKind: "Class"
+    SwiftName: "account"
+    Type: "CoreAuthenticatorMatomoCategory * _Nonnull"
+  - Name: "settingsgeneral"
+    PropertyKind: "Class"
+    SwiftName: "settingsGeneral"
+    Type: "CoreAuthenticatorMatomoCategory * _Nonnull"
+  Methods:
+  - Selector: "initWithName:ordinal:"
+    MethodKind: "Instance"
+    SwiftName: "init(name:ordinal:)"
+    Availability: "nonswift"
+- Name: "CoreAuthenticatorMatomoName"
+  SwiftBridge: "MatomoName"
+  SwiftName: "__MatomoName"
+  SwiftPrivate: true
+  Properties:
+  - Name: "value"
+    PropertyKind: "Instance"
+    SwiftName: "value"
+    Type: "NSString * _Nonnull"
+  - Name: "togglebiometry"
+    PropertyKind: "Class"
+    SwiftName: "toggleBiometry"
+    Type: "CoreAuthenticatorMatomoName * _Nonnull"
+  - Name: "loggedin"
+    PropertyKind: "Class"
+    SwiftName: "loggedIn"
+    Type: "CoreAuthenticatorMatomoName * _Nonnull"
+  - Name: "openloginwebview"
+    PropertyKind: "Class"
+    SwiftName: "openLoginWebview"
+    Type: "CoreAuthenticatorMatomoName * _Nonnull"
+  - Name: "opencreationwebview"
+    PropertyKind: "Class"
+    SwiftName: "openCreationWebview"
+    Type: "CoreAuthenticatorMatomoName * _Nonnull"
+  Methods:
+  - Selector: "initWithName:ordinal:"
+    MethodKind: "Instance"
+    SwiftName: "init(name:ordinal:)"
+    Availability: "nonswift"
+- Name: "CoreAuthenticatorMatomoScreen"
+  SwiftBridge: "MatomoScreen"
+  SwiftName: "__MatomoScreen"
+  SwiftPrivate: true
+  Properties:
+  - Name: "value"
+    PropertyKind: "Instance"
+    SwiftName: "value"
+    Type: "NSString * _Nonnull"
+  Methods:
+  - Selector: "initWithName:ordinal:"
+    MethodKind: "Instance"
+    SwiftName: "init(name:ordinal:)"
+    Availability: "nonswift"
+- Name: "CoreAuthenticatorUrlConstants"
+  SwiftName: "UrlConstants"
+  Properties:
+  - Name: "ACTIVITY_MANAGER_URL"
+    PropertyKind: "Instance"
+    SwiftName: "ACTIVITY_MANAGER_URL"
+    Type: "NSString * _Nonnull"
+  - Name: "SETTINGS_2FA_MANAGER_URL"
+    PropertyKind: "Instance"
+    SwiftName: "SETTINGS_2FA_MANAGER_URL"
+    Type: "NSString * _Nonnull"
+  - Name: "SETTINGS_MANAGER_URL"
+    PropertyKind: "Instance"
+    SwiftName: "SETTINGS_MANAGER_URL"
+    Type: "NSString * _Nonnull"
+  Methods:
+  - Selector: "autologUrlHost:url:"
+    MethodKind: "Instance"
+    SwiftName: "autologUrl(host:url:)"
+    ResultType: "NSString * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+    - Position: 1
+      Type: "NSString * _Nonnull"
+  - Selector: "createAccountCancelUrlHost:"
+    MethodKind: "Instance"
+    SwiftName: "createAccountCancelUrl(host:)"
+    ResultType: "NSString * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+  - Selector: "createAccountSuccessUrlHost:"
+    MethodKind: "Instance"
+    SwiftName: "createAccountSuccessUrl(host:)"
+    ResultType: "NSString * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+  - Selector: "createAccountUrlHost:"
+    MethodKind: "Instance"
+    SwiftName: "createAccountUrl(host:)"
+    ResultType: "NSString * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+  - Selector: "managerUrlHost:path:"
+    MethodKind: "Instance"
+    SwiftName: "managerUrl(host:path:)"
+    ResultType: "NSString * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+    - Position: 1
+      Type: "NSString * _Nonnull"
+- Name: "CoreAuthenticatorAppSettingsRepository"
+  SwiftName: "AppSettingsRepository"
+  Methods:
+  - Selector: "initWithDatabase:"
+    MethodKind: "Instance"
+    SwiftName: "init(database:)"
+    Parameters:
+    - Position: 0
+      Type: "CoreAuthenticatorAppSettingsDatabase * _Nonnull"
+  - Selector: "getSettings"
+    MethodKind: "Instance"
+    SwiftName: "getSettings()"
+    ResultType: "CoreAuthenticatorSkieKotlinOptionalFlow<CoreAuthenticatorAppSettingsEntity *> * _Nonnull"
+  - Selector: "setIsAppLockEnabledIsAppLockEnabled:completionHandler:"
+    MethodKind: "Instance"
+    SwiftName: "__setIsAppLockEnabled(isAppLockEnabled:completionHandler:)"
+    SwiftPrivate: true
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "BOOL"
+    - Position: 1
+      Type: "void (^ _Nonnull)(NSError * _Nullable)"
+  - Selector: "setThemeTheme:completionHandler:"
+    MethodKind: "Instance"
+    SwiftName: "__setTheme(theme:completionHandler:)"
+    SwiftPrivate: true
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "CoreAuthenticatorTheme * _Nonnull"
+    - Position: 1
+      Type: "void (^ _Nonnull)(NSError * _Nullable)"
+- Name: "CoreAuthenticatorUnknownException"
+  SwiftName: "UnknownException"
+  Properties:
+  - Name: "message"
+    PropertyKind: "Instance"
+    SwiftName: "message"
+    Type: "NSString * _Nonnull"
+  Methods:
+  - Selector: "initWithCause:"
+    MethodKind: "Instance"
+    SwiftName: "init(cause:)"
+    Parameters:
+    - Position: 0
+      Type: "CoreAuthenticatorKotlinThrowable * _Nonnull"
+  - Selector: "init"
+    MethodKind: "Instance"
+    SwiftName: "init()"
+    Availability: "nonswift"
+  - Selector: "initWithMessage:"
+    MethodKind: "Instance"
+    SwiftName: "init(message:)"
+    Availability: "nonswift"
+  - Selector: "initWithMessage:cause:"
+    MethodKind: "Instance"
+    SwiftName: "init(message:cause:)"
+    Availability: "nonswift"
+- Name: "CoreAuthenticatorAppSettingsDao_Impl"
+  SwiftName: "AppSettingsDao_Impl"
+  Methods:
+  - Selector: "initWith__db:"
+    MethodKind: "Instance"
+    SwiftName: "init(__db:)"
+    Parameters:
+    - Position: 0
+      Type: "CoreAuthenticatorRoom_runtimeRoomDatabase * _Nonnull"
+  - Selector: "getAsFlow"
+    MethodKind: "Instance"
+    SwiftName: "getAsFlow()"
+    ResultType: "CoreAuthenticatorSkieKotlinOptionalFlow<CoreAuthenticatorAppSettingsEntity *> * _Nonnull"
+  - Selector: "saveItem:completionHandler:"
+    MethodKind: "Instance"
+    SwiftName: "__save(item:completionHandler:)"
+    SwiftPrivate: true
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "CoreAuthenticatorAppSettingsEntity * _Nonnull"
+    - Position: 1
+      Type: "void (^ _Nonnull)(NSError * _Nullable)"
+  - Selector: "setIsAppLockEnabledIsAppLockEnabled:completionHandler:"
+    MethodKind: "Instance"
+    SwiftName: "__setIsAppLockEnabled(isAppLockEnabled:completionHandler:)"
+    SwiftPrivate: true
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "BOOL"
+    - Position: 1
+      Type: "void (^ _Nonnull)(NSError * _Nullable)"
+  - Selector: "setThemeTheme:completionHandler:"
+    MethodKind: "Instance"
+    SwiftName: "__setTheme(theme:completionHandler:)"
+    SwiftPrivate: true
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "CoreAuthenticatorTheme * _Nonnull"
+    - Position: 1
+      Type: "void (^ _Nonnull)(NSError * _Nullable)"
+- Name: "CoreAuthenticatorAppSettingsDao_ImplCompanion"
+  SwiftName: "AppSettingsDao_Impl.Companion"
+  Methods:
+  - Selector: "getRequiredConverters"
+    MethodKind: "Instance"
+    SwiftName: "getRequiredConverters()"
+    ResultType: "NSArray<id<CoreAuthenticatorKotlinKClass>> * _Nonnull"
+- Name: "CoreAuthenticatorAppSettingsDatabaseConstructor"
+  SwiftName: "AppSettingsDatabaseConstructor"
+  Methods:
+  - Selector: "initialize"
+    MethodKind: "Instance"
+    SwiftName: "initialize()"
+    ResultType: "CoreAuthenticatorAppSettingsDatabase * _Nonnull"
+- Name: "CoreAuthenticatorAppSettingsDatabase_Impl"
+  SwiftName: "AppSettingsDatabase_Impl"
+  Methods:
+  - Selector: "init"
+    MethodKind: "Instance"
+    SwiftName: "init()"
+  - Selector: "createAutoMigrationsAutoMigrationSpecs:"
+    MethodKind: "Instance"
+    SwiftName: "createAutoMigrations(autoMigrationSpecs:)"
+    ResultType: "NSArray<CoreAuthenticatorRoom_runtimeMigration *> * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "NSDictionary<id<CoreAuthenticatorKotlinKClass>, id<CoreAuthenticatorRoom_runtimeAutoMigrationSpec>> * _Nonnull"
+  - Selector: "createInvalidationTracker"
+    MethodKind: "Instance"
+    SwiftName: "createInvalidationTracker()"
+    ResultType: "CoreAuthenticatorRoom_runtimeInvalidationTracker * _Nonnull"
+  - Selector: "createOpenDelegate"
+    MethodKind: "Instance"
+    SwiftName: "createOpenDelegate()"
+    ResultType: "CoreAuthenticatorRoom_runtimeRoomOpenDelegate * _Nonnull"
+  - Selector: "getDao"
+    MethodKind: "Instance"
+    SwiftName: "getDao()"
+    ResultType: "id<CoreAuthenticatorAppSettingsDao> _Nonnull"
+  - Selector: "getRequiredAutoMigrationSpecClasses"
+    MethodKind: "Instance"
+    SwiftName: "getRequiredAutoMigrationSpecClasses()"
+    ResultType: "NSSet<id<CoreAuthenticatorKotlinKClass>> * _Nonnull"
+  - Selector: "getRequiredTypeConverterClasses"
+    MethodKind: "Instance"
+    SwiftName: "getRequiredTypeConverterClasses()"
+    ResultType: "NSDictionary<id<CoreAuthenticatorKotlinKClass>, NSArray<id<CoreAuthenticatorKotlinKClass>> *> * _Nonnull"
+- Name: "CoreAuthenticatorThemeConverter"
+  SwiftName: "ThemeConverter"
+  Methods:
+  - Selector: "init"
+    MethodKind: "Instance"
+    SwiftName: "init()"
+  - Selector: "fromThemeTheme:"
+    MethodKind: "Instance"
+    SwiftName: "fromTheme(theme:)"
+    ResultType: "NSString * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "CoreAuthenticatorTheme * _Nonnull"
+  - Selector: "toThemeValue:"
+    MethodKind: "Instance"
+    SwiftName: "toTheme(value:)"
+    ResultType: "CoreAuthenticatorTheme * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+- Name: "CoreAuthenticatorApiException"
+  SwiftName: "ApiException"
+  Properties:
+  - Name: "requestContextId"
+    PropertyKind: "Instance"
+    SwiftName: "requestContextId"
+    Type: "NSString * _Nonnull"
+  Methods:
+  - Selector: "init"
+    MethodKind: "Instance"
+    SwiftName: "init()"
+    Availability: "nonswift"
+  - Selector: "initWithMessage:"
+    MethodKind: "Instance"
+    SwiftName: "init(message:)"
+    Availability: "nonswift"
+  - Selector: "initWithMessage:cause:"
+    MethodKind: "Instance"
+    SwiftName: "init(message:cause:)"
+    Availability: "nonswift"
+  - Selector: "initWithCause:"
+    MethodKind: "Instance"
+    SwiftName: "init(cause:)"
+    Availability: "nonswift"
+- Name: "CoreAuthenticatorApiExceptionApiErrorException"
+  SwiftName: "ApiException.ApiErrorException"
+  Properties:
+  - Name: "errorCode"
+    PropertyKind: "Instance"
+    SwiftName: "errorCode"
+    Type: "NSString * _Nonnull"
+  - Name: "errorMessage"
+    PropertyKind: "Instance"
+    SwiftName: "errorMessage"
+    Type: "NSString * _Nonnull"
+  Methods:
+  - Selector: "initWithErrorCode:errorMessage:requestContextId:"
+    MethodKind: "Instance"
+    SwiftName: "init(errorCode:errorMessage:requestContextId:)"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+    - Position: 1
+      Type: "NSString * _Nonnull"
+    - Position: 2
+      Type: "NSString * _Nonnull"
+  - Selector: "init"
+    MethodKind: "Instance"
+    SwiftName: "init()"
+    Availability: "nonswift"
+  - Selector: "initWithMessage:"
+    MethodKind: "Instance"
+    SwiftName: "init(message:)"
+    Availability: "nonswift"
+  - Selector: "initWithMessage:cause:"
+    MethodKind: "Instance"
+    SwiftName: "init(message:cause:)"
+    Availability: "nonswift"
+  - Selector: "initWithCause:"
+    MethodKind: "Instance"
+    SwiftName: "init(cause:)"
+    Availability: "nonswift"
+- Name: "CoreAuthenticatorApiExceptionUnexpectedApiErrorFormatException"
+  SwiftName: "ApiException.UnexpectedApiErrorFormatException"
+  Properties:
+  - Name: "bodyResponse"
+    PropertyKind: "Instance"
+    SwiftName: "bodyResponse"
+    Type: "NSString * _Nonnull"
+  - Name: "statusCode"
+    PropertyKind: "Instance"
+    SwiftName: "statusCode"
+    Type: "int32_t"
+  Methods:
+  - Selector: "initWithStatusCode:bodyResponse:cause:requestContextId:"
+    MethodKind: "Instance"
+    SwiftName: "init(statusCode:bodyResponse:cause:requestContextId:)"
+    Parameters:
+    - Position: 0
+      Type: "int32_t"
+    - Position: 1
+      Type: "NSString * _Nonnull"
+    - Position: 2
+      Type: "CoreAuthenticatorKotlinThrowable * _Nullable"
+    - Position: 3
+      Type: "NSString * _Nonnull"
+  - Selector: "init"
+    MethodKind: "Instance"
+    SwiftName: "init()"
+    Availability: "nonswift"
+  - Selector: "initWithMessage:"
+    MethodKind: "Instance"
+    SwiftName: "init(message:)"
+    Availability: "nonswift"
+  - Selector: "initWithMessage:cause:"
+    MethodKind: "Instance"
+    SwiftName: "init(message:cause:)"
+    Availability: "nonswift"
+  - Selector: "initWithCause:"
+    MethodKind: "Instance"
+    SwiftName: "init(cause:)"
+    Availability: "nonswift"
+- Name: "CoreAuthenticatorNetworkException"
+  SwiftName: "NetworkException"
+  Methods:
+  - Selector: "initWithMessage:"
+    MethodKind: "Instance"
+    SwiftName: "init(message:)"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+  - Selector: "init"
+    MethodKind: "Instance"
+    SwiftName: "init()"
+    Availability: "nonswift"
+  - Selector: "initWithMessage:cause:"
+    MethodKind: "Instance"
+    SwiftName: "init(message:cause:)"
+    Availability: "nonswift"
+  - Selector: "initWithCause:"
+    MethodKind: "Instance"
+    SwiftName: "init(cause:)"
+    Availability: "nonswift"
+- Name: "CoreAuthenticatorAppSettingsDatabase_iosKt"
+  SwiftName: "AppSettingsDatabase_iosKt"
+  Methods:
+  - Selector: "getAppSettingsDatabaseBuilder"
+    MethodKind: "Class"
+    SwiftName: "getAppSettingsDatabaseBuilder()"
+    ResultType: "CoreAuthenticatorRoom_runtimeRoomDatabaseBuilder<CoreAuthenticatorAppSettingsDatabase *> * _Nonnull"
+  - Selector: "getAppSettingsRoomDatabase"
+    MethodKind: "Class"
+    SwiftName: "getAppSettingsRoomDatabase()"
+    ResultType: "CoreAuthenticatorAppSettingsDatabase * _Nonnull"
+- Name: "CoreAuthenticatorAppSettingsDatabaseKt"
+  SwiftName: "AppSettingsDatabaseKt"
+  Methods:
+  - Selector: "getAppSettingsRoomDatabaseBuilder:"
+    MethodKind: "Class"
+    SwiftName: "getAppSettingsRoomDatabase(builder:)"
+    ResultType: "CoreAuthenticatorAppSettingsDatabase * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "CoreAuthenticatorRoom_runtimeRoomDatabaseBuilder<CoreAuthenticatorAppSettingsDatabase *> * _Nonnull"
+- Name: "CoreAuthenticatorRoom_runtimeRoomDatabase"
+  SwiftName: "Room_runtimeRoomDatabase"
+  Properties:
+  - Name: "invalidationTracker"
+    PropertyKind: "Instance"
+    SwiftName: "invalidationTracker"
+    Type: "CoreAuthenticatorRoom_runtimeInvalidationTracker * _Nonnull"
+  Methods:
+  - Selector: "init"
+    MethodKind: "Instance"
+    SwiftName: "init()"
+  - Selector: "close"
+    MethodKind: "Instance"
+    SwiftName: "close()"
+    ResultType: "void"
+  - Selector: "createAutoMigrationsAutoMigrationSpecs:"
+    MethodKind: "Instance"
+    SwiftName: "createAutoMigrations(autoMigrationSpecs:)"
+    ResultType: "NSArray<CoreAuthenticatorRoom_runtimeMigration *> * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "NSDictionary<id<CoreAuthenticatorKotlinKClass>, id<CoreAuthenticatorRoom_runtimeAutoMigrationSpec>> * _Nonnull"
+  - Selector: "createInvalidationTracker"
+    MethodKind: "Instance"
+    SwiftName: "createInvalidationTracker()"
+    ResultType: "CoreAuthenticatorRoom_runtimeInvalidationTracker * _Nonnull"
+  - Selector: "createOpenDelegate"
+    MethodKind: "Instance"
+    SwiftName: "createOpenDelegate()"
+    ResultType: "id<CoreAuthenticatorRoom_runtimeRoomOpenDelegateMarker> _Nonnull"
+  - Selector: "getCoroutineScope"
+    MethodKind: "Instance"
+    SwiftName: "getCoroutineScope()"
+    ResultType: "id<CoreAuthenticatorKotlinx_coroutines_coreCoroutineScope> _Nonnull"
+  - Selector: "getRequiredAutoMigrationSpecClasses"
+    MethodKind: "Instance"
+    SwiftName: "getRequiredAutoMigrationSpecClasses()"
+    ResultType: "NSSet<id<CoreAuthenticatorKotlinKClass>> * _Nonnull"
+  - Selector: "getRequiredTypeConverterClasses"
+    MethodKind: "Instance"
+    SwiftName: "getRequiredTypeConverterClasses()"
+    ResultType: "NSDictionary<id<CoreAuthenticatorKotlinKClass>, NSArray<id<CoreAuthenticatorKotlinKClass>> *> * _Nonnull"
+  - Selector: "getTypeConverterKlass:"
+    MethodKind: "Instance"
+    SwiftName: "getTypeConverter(klass:)"
+    ResultType: "id _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "id<CoreAuthenticatorKotlinKClass> _Nonnull"
+  - Selector: "internalInitInvalidationTrackerConnection:"
+    MethodKind: "Instance"
+    SwiftName: "internalInitInvalidationTracker(connection:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "id<CoreAuthenticatorSqliteSQLiteConnection> _Nonnull"
+  - Selector: "useConnectionIsReadOnly:block:completionHandler:"
+    MethodKind: "Instance"
+    SwiftName: "__useConnection(isReadOnly:block:completionHandler:)"
+    SwiftPrivate: true
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "BOOL"
+    - Position: 1
+      Type: "id<CoreAuthenticatorKotlinSuspendFunction1> _Nonnull"
+    - Position: 2
+      Type: "void (^ _Nonnull)(id _Nullable_result, NSError * _Nullable)"
+- Name: "CoreAuthenticatorRoom_runtimeRoomDatabaseBuilder"
+  SwiftName: "Room_runtimeRoomDatabaseBuilder"
+  Methods:
+  - Selector: "addAutoMigrationSpecAutoMigrationSpec:"
+    MethodKind: "Instance"
+    SwiftName: "addAutoMigrationSpec(autoMigrationSpec:)"
+    ResultType: "CoreAuthenticatorRoom_runtimeRoomDatabaseBuilder<T> * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "id<CoreAuthenticatorRoom_runtimeAutoMigrationSpec> _Nonnull"
+  - Selector: "addCallbackCallback:"
+    MethodKind: "Instance"
+    SwiftName: "addCallback(callback:)"
+    ResultType: "CoreAuthenticatorRoom_runtimeRoomDatabaseBuilder<T> * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "CoreAuthenticatorRoom_runtimeRoomDatabaseCallback * _Nonnull"
+  - Selector: "addMigrationsMigrations:"
+    MethodKind: "Instance"
+    SwiftName: "addMigrations(migrations:)"
+    ResultType: "CoreAuthenticatorRoom_runtimeRoomDatabaseBuilder<T> * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "CoreAuthenticatorKotlinArray<CoreAuthenticatorRoom_runtimeMigration *> * _Nonnull"
+  - Selector: "addTypeConverterTypeConverter:"
+    MethodKind: "Instance"
+    SwiftName: "addTypeConverter(typeConverter:)"
+    ResultType: "CoreAuthenticatorRoom_runtimeRoomDatabaseBuilder<T> * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "id _Nonnull"
+  - Selector: "build"
+    MethodKind: "Instance"
+    SwiftName: "build()"
+    ResultType: "T _Nonnull"
+  - Selector: "fallbackToDestructiveMigrationDropAllTables:"
+    MethodKind: "Instance"
+    SwiftName: "fallbackToDestructiveMigration(dropAllTables:)"
+    ResultType: "CoreAuthenticatorRoom_runtimeRoomDatabaseBuilder<T> * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "BOOL"
+  - Selector: "fallbackToDestructiveMigrationFromDropAllTables:startVersions:"
+    MethodKind: "Instance"
+    SwiftName: "fallbackToDestructiveMigrationFrom(dropAllTables:startVersions:)"
+    ResultType: "CoreAuthenticatorRoom_runtimeRoomDatabaseBuilder<T> * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "BOOL"
+    - Position: 1
+      Type: "CoreAuthenticatorKotlinIntArray * _Nonnull"
+  - Selector: "fallbackToDestructiveMigrationOnDowngradeDropAllTables:"
+    MethodKind: "Instance"
+    SwiftName: "fallbackToDestructiveMigrationOnDowngrade(dropAllTables:)"
+    ResultType: "CoreAuthenticatorRoom_runtimeRoomDatabaseBuilder<T> * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "BOOL"
+  - Selector: "setDriverDriver:"
+    MethodKind: "Instance"
+    SwiftName: "setDriver(driver:)"
+    ResultType: "CoreAuthenticatorRoom_runtimeRoomDatabaseBuilder<T> * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "id<CoreAuthenticatorSqliteSQLiteDriver> _Nonnull"
+  - Selector: "setJournalModeJournalMode:"
+    MethodKind: "Instance"
+    SwiftName: "setJournalMode(journalMode:)"
+    ResultType: "CoreAuthenticatorRoom_runtimeRoomDatabaseBuilder<T> * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "CoreAuthenticatorRoom_runtimeRoomDatabaseJournalMode * _Nonnull"
+  - Selector: "setQueryCoroutineContextContext:"
+    MethodKind: "Instance"
+    SwiftName: "setQueryCoroutineContext(context:)"
+    ResultType: "CoreAuthenticatorRoom_runtimeRoomDatabaseBuilder<T> * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "id<CoreAuthenticatorKotlinCoroutineContext> _Nonnull"
+- Name: "CoreAuthenticatorRoom_runtimeRoomDatabaseJournalMode"
+  SwiftBridge: "__Bridge__Room_runtimeRoomDatabase_JournalMode"
+  SwiftName: "Room_runtimeRoomDatabase.__JournalMode"
+  SwiftPrivate: true
+  Properties:
+  - Name: "truncate"
+    PropertyKind: "Class"
+    SwiftName: "truncate"
+    Type: "CoreAuthenticatorRoom_runtimeRoomDatabaseJournalMode * _Nonnull"
+  - Name: "writeAheadLogging"
+    PropertyKind: "Class"
+    SwiftName: "writeAheadLogging"
+    Type: "CoreAuthenticatorRoom_runtimeRoomDatabaseJournalMode * _Nonnull"
+  Methods:
+  - Selector: "initWithName:ordinal:"
+    MethodKind: "Instance"
+    SwiftName: "init(name:ordinal:)"
+    Availability: "nonswift"
+- Name: "CoreAuthenticatorRoom_runtimeRoomDatabaseCallback"
+  SwiftName: "Room_runtimeRoomDatabase.Callback"
+  Methods:
+  - Selector: "init"
+    MethodKind: "Instance"
+    SwiftName: "init()"
+  - Selector: "onCreateConnection:"
+    MethodKind: "Instance"
+    SwiftName: "onCreate(connection:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "id<CoreAuthenticatorSqliteSQLiteConnection> _Nonnull"
+  - Selector: "onDestructiveMigrationConnection:"
+    MethodKind: "Instance"
+    SwiftName: "onDestructiveMigration(connection:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "id<CoreAuthenticatorSqliteSQLiteConnection> _Nonnull"
+  - Selector: "onOpenConnection:"
+    MethodKind: "Instance"
+    SwiftName: "onOpen(connection:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "id<CoreAuthenticatorSqliteSQLiteConnection> _Nonnull"
+- Name: "CoreAuthenticatorRoom_runtimeInvalidationTracker"
+  SwiftName: "Room_runtimeInvalidationTracker"
+  Methods:
+  - Selector: "initWithDatabase:shadowTablesMap:viewTables:tableNames:"
+    MethodKind: "Instance"
+    SwiftName: "init(database:shadowTablesMap:viewTables:tableNames:)"
+    Parameters:
+    - Position: 0
+      Type: "CoreAuthenticatorRoom_runtimeRoomDatabase * _Nonnull"
+    - Position: 1
+      Type: "NSDictionary<NSString *, NSString *> * _Nonnull"
+    - Position: 2
+      Type: "NSDictionary<NSString *, NSSet<NSString *> *> * _Nonnull"
+    - Position: 3
+      Type: "CoreAuthenticatorKotlinArray<NSString *> * _Nonnull"
+  - Selector: "createFlowTables:emitInitialState:"
+    MethodKind: "Instance"
+    SwiftName: "createFlow(tables:emitInitialState:)"
+    ResultType: "CoreAuthenticatorSkieKotlinFlow<NSSet<NSString *> *> * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "CoreAuthenticatorKotlinArray<NSString *> * _Nonnull"
+    - Position: 1
+      Type: "BOOL"
+  - Selector: "refreshTables:completionHandler:"
+    MethodKind: "Instance"
+    SwiftName: "__refresh(tables:completionHandler:)"
+    SwiftPrivate: true
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "CoreAuthenticatorKotlinArray<NSString *> * _Nonnull"
+    - Position: 1
+      Type: "void (^ _Nonnull)(CoreAuthenticatorBoolean * _Nullable, NSError * _Nullable)"
+  - Selector: "refreshAsync"
+    MethodKind: "Instance"
+    SwiftName: "refreshAsync()"
+    ResultType: "void"
+- Name: "CoreAuthenticatorRoom_runtimeMigration"
+  SwiftName: "Room_runtimeMigration"
+  Properties:
+  - Name: "endVersion"
+    PropertyKind: "Instance"
+    SwiftName: "endVersion"
+    Type: "int32_t"
+  - Name: "startVersion"
+    PropertyKind: "Instance"
+    SwiftName: "startVersion"
+    Type: "int32_t"
+  Methods:
+  - Selector: "initWithStartVersion:endVersion:"
+    MethodKind: "Instance"
+    SwiftName: "init(startVersion:endVersion:)"
+    Parameters:
+    - Position: 0
+      Type: "int32_t"
+    - Position: 1
+      Type: "int32_t"
+  - Selector: "migrateConnection:"
+    MethodKind: "Instance"
+    SwiftName: "migrate(connection:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "id<CoreAuthenticatorSqliteSQLiteConnection> _Nonnull"
+- Name: "CoreAuthenticatorRoom_runtimeRoomOpenDelegate"
+  SwiftName: "Room_runtimeRoomOpenDelegate"
+  Properties:
+  - Name: "identityHash"
+    PropertyKind: "Instance"
+    SwiftName: "identityHash"
+    Type: "NSString * _Nonnull"
+  - Name: "legacyIdentityHash"
+    PropertyKind: "Instance"
+    SwiftName: "legacyIdentityHash"
+    Type: "NSString * _Nonnull"
+  - Name: "version"
+    PropertyKind: "Instance"
+    SwiftName: "version"
+    Type: "int32_t"
+  Methods:
+  - Selector: "initWithVersion:identityHash:legacyIdentityHash:"
+    MethodKind: "Instance"
+    SwiftName: "init(version:identityHash:legacyIdentityHash:)"
+    Parameters:
+    - Position: 0
+      Type: "int32_t"
+    - Position: 1
+      Type: "NSString * _Nonnull"
+    - Position: 2
+      Type: "NSString * _Nonnull"
+  - Selector: "createAllTablesConnection:"
+    MethodKind: "Instance"
+    SwiftName: "createAllTables(connection:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "id<CoreAuthenticatorSqliteSQLiteConnection> _Nonnull"
+  - Selector: "dropAllTablesConnection:"
+    MethodKind: "Instance"
+    SwiftName: "dropAllTables(connection:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "id<CoreAuthenticatorSqliteSQLiteConnection> _Nonnull"
+  - Selector: "onCreateConnection:"
+    MethodKind: "Instance"
+    SwiftName: "onCreate(connection:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "id<CoreAuthenticatorSqliteSQLiteConnection> _Nonnull"
+  - Selector: "onOpenConnection:"
+    MethodKind: "Instance"
+    SwiftName: "onOpen(connection:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "id<CoreAuthenticatorSqliteSQLiteConnection> _Nonnull"
+  - Selector: "onPostMigrateConnection:"
+    MethodKind: "Instance"
+    SwiftName: "onPostMigrate(connection:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "id<CoreAuthenticatorSqliteSQLiteConnection> _Nonnull"
+  - Selector: "onPreMigrateConnection:"
+    MethodKind: "Instance"
+    SwiftName: "onPreMigrate(connection:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "id<CoreAuthenticatorSqliteSQLiteConnection> _Nonnull"
+  - Selector: "onValidateSchemaConnection:"
+    MethodKind: "Instance"
+    SwiftName: "onValidateSchema(connection:)"
+    ResultType: "CoreAuthenticatorRoom_runtimeRoomOpenDelegateValidationResult * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "id<CoreAuthenticatorSqliteSQLiteConnection> _Nonnull"
+- Name: "CoreAuthenticatorRoom_runtimeRoomOpenDelegateValidationResult"
+  SwiftName: "Room_runtimeRoomOpenDelegate.ValidationResult"
+  Properties:
+  - Name: "expectedFoundMsg"
+    PropertyKind: "Instance"
+    SwiftName: "expectedFoundMsg"
+    Type: "NSString * _Nullable"
+  - Name: "isValid"
+    PropertyKind: "Instance"
+    SwiftName: "isValid"
+    Type: "BOOL"
+  Methods:
+  - Selector: "initWithIsValid:expectedFoundMsg:"
+    MethodKind: "Instance"
+    SwiftName: "init(isValid:expectedFoundMsg:)"
+    Parameters:
+    - Position: 0
+      Type: "BOOL"
+    - Position: 1
+      Type: "NSString * _Nullable"
+- Name: "CoreAuthenticatorKotlinx_serialization_coreSerialKind"
+  SwiftName: "Kotlinx_serialization_coreSerialKind"
+  Methods:
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "CoreAuthenticatorKotlinx_serialization_coreSerialKindCONTEXTUAL"
+  SwiftName: "Kotlinx_serialization_coreSerialKind.CONTEXTUAL"
+- Name: "CoreAuthenticatorKotlinx_serialization_coreSerialKindENUM"
+  SwiftName: "Kotlinx_serialization_coreSerialKind.ENUM"
+- Name: "CoreAuthenticatorKotlinx_serialization_coreSerializersModule"
+  SwiftName: "Kotlinx_serialization_coreSerializersModule"
+  Methods:
+  - Selector: "dumpToCollector:"
+    MethodKind: "Instance"
+    SwiftName: "dumpTo(collector:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "id<CoreAuthenticatorKotlinx_serialization_coreSerializersModuleCollector> _Nonnull"
+  - Selector: "getContextualKClass:typeArgumentsSerializers:"
+    MethodKind: "Instance"
+    SwiftName: "getContextual(kClass:typeArgumentsSerializers:)"
+    ResultType: "id<CoreAuthenticatorKotlinx_serialization_coreKSerializer> _Nullable"
+    Parameters:
+    - Position: 0
+      Type: "id<CoreAuthenticatorKotlinKClass> _Nonnull"
+    - Position: 1
+      Type: "NSArray<id<CoreAuthenticatorKotlinx_serialization_coreKSerializer>> * _Nonnull"
+  - Selector: "getPolymorphicBaseClass:value:"
+    MethodKind: "Instance"
+    SwiftName: "getPolymorphic(baseClass:value:)"
+    ResultType: "id<CoreAuthenticatorKotlinx_serialization_coreSerializationStrategy> _Nullable"
+    Parameters:
+    - Position: 0
+      Type: "id<CoreAuthenticatorKotlinKClass> _Nonnull"
+    - Position: 1
+      Type: "id _Nonnull"
+  - Selector: "getPolymorphicBaseClass:serializedClassName:"
+    MethodKind: "Instance"
+    SwiftName: "getPolymorphic(baseClass:serializedClassName:)"
+    ResultType: "id<CoreAuthenticatorKotlinx_serialization_coreDeserializationStrategy> _Nullable"
+    Parameters:
+    - Position: 0
+      Type: "id<CoreAuthenticatorKotlinKClass> _Nonnull"
+    - Position: 1
+      Type: "NSString * _Nullable"
+- Name: "CoreAuthenticatorKotlinx_serialization_corePolymorphicKind"
+  SwiftName: "Kotlinx_serialization_corePolymorphicKind"
+- Name: "CoreAuthenticatorKotlinx_serialization_corePolymorphicKindOPEN"
+  SwiftName: "Kotlinx_serialization_corePolymorphicKind.OPEN"
+- Name: "CoreAuthenticatorKotlinx_serialization_corePolymorphicKindSEALED"
+  SwiftName: "Kotlinx_serialization_corePolymorphicKind.SEALED"
+- Name: "CoreAuthenticatorKotlinx_serialization_corePrimitiveKind"
+  SwiftName: "Kotlinx_serialization_corePrimitiveKind"
+- Name: "CoreAuthenticatorKotlinx_serialization_corePrimitiveKindBOOLEAN"
+  SwiftName: "Kotlinx_serialization_corePrimitiveKind.BOOLEAN"
+- Name: "CoreAuthenticatorKotlinx_serialization_corePrimitiveKindBYTE"
+  SwiftName: "Kotlinx_serialization_corePrimitiveKind.BYTE"
+- Name: "CoreAuthenticatorKotlinx_serialization_corePrimitiveKindCHAR"
+  SwiftName: "Kotlinx_serialization_corePrimitiveKind.CHAR"
+- Name: "CoreAuthenticatorKotlinx_serialization_corePrimitiveKindDOUBLE"
+  SwiftName: "Kotlinx_serialization_corePrimitiveKind.DOUBLE"
+- Name: "CoreAuthenticatorKotlinx_serialization_corePrimitiveKindFLOAT"
+  SwiftName: "Kotlinx_serialization_corePrimitiveKind.FLOAT"
+- Name: "CoreAuthenticatorKotlinx_serialization_corePrimitiveKindINT"
+  SwiftName: "Kotlinx_serialization_corePrimitiveKind.INT"
+- Name: "CoreAuthenticatorKotlinx_serialization_corePrimitiveKindLONG"
+  SwiftName: "Kotlinx_serialization_corePrimitiveKind.LONG"
+- Name: "CoreAuthenticatorKotlinx_serialization_corePrimitiveKindSHORT"
+  SwiftName: "Kotlinx_serialization_corePrimitiveKind.SHORT"
+- Name: "CoreAuthenticatorKotlinx_serialization_corePrimitiveKindSTRING"
+  SwiftName: "Kotlinx_serialization_corePrimitiveKind.STRING"
+- Name: "CoreAuthenticatorKotlinx_serialization_coreStructureKind"
+  SwiftName: "Kotlinx_serialization_coreStructureKind"
+- Name: "CoreAuthenticatorKotlinx_serialization_coreStructureKindCLASS"
+  SwiftName: "Kotlinx_serialization_coreStructureKind.CLASS"
+- Name: "CoreAuthenticatorKotlinx_serialization_coreStructureKindLIST"
+  SwiftName: "Kotlinx_serialization_coreStructureKind.LIST"
+- Name: "CoreAuthenticatorKotlinx_serialization_coreStructureKindMAP"
+  SwiftName: "Kotlinx_serialization_coreStructureKind.MAP"
+- Name: "CoreAuthenticatorKotlinx_serialization_coreStructureKindOBJECT"
+  SwiftName: "Kotlinx_serialization_coreStructureKind.OBJECT"
+- Name: "CoreAuthenticator__SkieTypeExportsKt"
+  SwiftName: "__SkieTypeExportsKt"
+  Availability: "nonswift"
+  Methods:
+  - Selector: "skieTypeExports_0P0:p1:p2:p3:p4:p5:p6:p7:p8:p9:p10:p11:p12:p13:p14:p15:p16:p17:p18:p19:"
+    MethodKind: "Class"
+    SwiftName: "skieTypeExports_0(p0:p1:p2:p3:p4:p5:p6:p7:p8:p9:p10:p11:p12:p13:p14:p15:p16:p17:p18:p19:)"
+    Availability: "nonswift"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "CoreAuthenticatorKotlinx_serialization_corePolymorphicKind * _Nonnull"
+    - Position: 1
+      Type: "CoreAuthenticatorKotlinx_serialization_corePolymorphicKindOPEN * _Nonnull"
+    - Position: 2
+      Type: "CoreAuthenticatorKotlinx_serialization_corePolymorphicKindSEALED * _Nonnull"
+    - Position: 3
+      Type: "CoreAuthenticatorKotlinx_serialization_corePrimitiveKind * _Nonnull"
+    - Position: 4
+      Type: "CoreAuthenticatorKotlinx_serialization_corePrimitiveKindBOOLEAN * _Nonnull"
+    - Position: 5
+      Type: "CoreAuthenticatorKotlinx_serialization_corePrimitiveKindBYTE * _Nonnull"
+    - Position: 6
+      Type: "CoreAuthenticatorKotlinx_serialization_corePrimitiveKindCHAR * _Nonnull"
+    - Position: 7
+      Type: "CoreAuthenticatorKotlinx_serialization_corePrimitiveKindDOUBLE * _Nonnull"
+    - Position: 8
+      Type: "CoreAuthenticatorKotlinx_serialization_corePrimitiveKindFLOAT * _Nonnull"
+    - Position: 9
+      Type: "CoreAuthenticatorKotlinx_serialization_corePrimitiveKindINT * _Nonnull"
+    - Position: 10
+      Type: "CoreAuthenticatorKotlinx_serialization_corePrimitiveKindLONG * _Nonnull"
+    - Position: 11
+      Type: "CoreAuthenticatorKotlinx_serialization_corePrimitiveKindSHORT * _Nonnull"
+    - Position: 12
+      Type: "CoreAuthenticatorKotlinx_serialization_corePrimitiveKindSTRING * _Nonnull"
+    - Position: 13
+      Type: "CoreAuthenticatorKotlinx_serialization_coreSerialKindCONTEXTUAL * _Nonnull"
+    - Position: 14
+      Type: "CoreAuthenticatorKotlinx_serialization_coreSerialKindENUM * _Nonnull"
+    - Position: 15
+      Type: "CoreAuthenticatorKotlinx_serialization_coreStructureKind * _Nonnull"
+    - Position: 16
+      Type: "CoreAuthenticatorKotlinx_serialization_coreStructureKindCLASS * _Nonnull"
+    - Position: 17
+      Type: "CoreAuthenticatorKotlinx_serialization_coreStructureKindLIST * _Nonnull"
+    - Position: 18
+      Type: "CoreAuthenticatorKotlinx_serialization_coreStructureKindMAP * _Nonnull"
+    - Position: 19
+      Type: "CoreAuthenticatorKotlinx_serialization_coreStructureKindOBJECT * _Nonnull"
+- Name: "CoreAuthenticator__SkieSuspendWrappersKt"
+  SwiftName: "__SkieSuspendWrappersKt"
+  Availability: "nonswift"
+  Methods:
+  - Selector: "Skie_Suspend__0__hasNextDispatchReceiver:suspendHandler:"
+    MethodKind: "Class"
+    SwiftName: "Skie_Suspend__0__hasNext(dispatchReceiver:suspendHandler:)"
+    Availability: "nonswift"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "CoreAuthenticatorSkieColdFlowIterator<id> * _Nonnull"
+    - Position: 1
+      Type: "CoreAuthenticatorSkie_SuspendHandler * _Nonnull"
+  - Selector: "Skie_Suspend__1__collectDispatchReceiver:collector:suspendHandler:"
+    MethodKind: "Class"
+    SwiftName: "Skie_Suspend__1__collect(dispatchReceiver:collector:suspendHandler:)"
+    Availability: "nonswift"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "id<CoreAuthenticatorKotlinx_coroutines_coreFlow> _Nonnull"
+    - Position: 1
+      Type: "id<CoreAuthenticatorKotlinx_coroutines_coreFlowCollector> _Nonnull"
+    - Position: 2
+      Type: "CoreAuthenticatorSkie_SuspendHandler * _Nonnull"
+  - Selector: "Skie_Suspend__2__emitDispatchReceiver:value:suspendHandler:"
+    MethodKind: "Class"
+    SwiftName: "Skie_Suspend__2__emit(dispatchReceiver:value:suspendHandler:)"
+    Availability: "nonswift"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "id<CoreAuthenticatorKotlinx_coroutines_coreFlowCollector> _Nonnull"
+    - Position: 1
+      Type: "id _Nullable"
+    - Position: 2
+      Type: "CoreAuthenticatorSkie_SuspendHandler * _Nonnull"
+  - Selector: "Skie_Suspend__3__addAccountsDispatchReceiver:connectedAccounts:suspendHandler:"
+    MethodKind: "Class"
+    SwiftName: "Skie_Suspend__3__addAccounts(dispatchReceiver:connectedAccounts:suspendHandler:)"
+    Availability: "nonswift"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "CoreAuthenticatorAuthenticatorFacade * _Nonnull"
+    - Position: 1
+      Type: "NSArray<CoreAuthenticatorAccount *> * _Nonnull"
+    - Position: 2
+      Type: "CoreAuthenticatorSkie_SuspendHandler * _Nonnull"
+  - Selector: "Skie_Suspend__4__refreshTokenForDispatchReceiver:userId:suspendHandler:"
+    MethodKind: "Class"
+    SwiftName: "Skie_Suspend__4__refreshTokenFor(dispatchReceiver:userId:suspendHandler:)"
+    Availability: "nonswift"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "CoreAuthenticatorAuthenticatorFacade * _Nonnull"
+    - Position: 1
+      Type: "int64_t"
+    - Position: 2
+      Type: "CoreAuthenticatorSkie_SuspendHandler * _Nonnull"
+  - Selector: "Skie_Suspend__5__removeAccountDispatchReceiver:token:id:suspendHandler:"
+    MethodKind: "Class"
+    SwiftName: "Skie_Suspend__5__removeAccount(dispatchReceiver:token:id:suspendHandler:)"
+    Availability: "nonswift"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "CoreAuthenticatorAuthenticatorFacade * _Nonnull"
+    - Position: 1
+      Type: "NSString * _Nonnull"
+    - Position: 2
+      Type: "int64_t"
+    - Position: 3
+      Type: "CoreAuthenticatorSkie_SuspendHandler * _Nonnull"
+  - Selector: "Skie_Suspend__6__getTokenFromCrossAppLoginDispatchReceiver:userId:suspendHandler:"
+    MethodKind: "Class"
+    SwiftName: "Skie_Suspend__6__getTokenFromCrossAppLogin(dispatchReceiver:userId:suspendHandler:)"
+    Availability: "nonswift"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "id<CoreAuthenticatorTokenBridge> _Nonnull"
+    - Position: 1
+      Type: "int64_t"
+    - Position: 2
+      Type: "CoreAuthenticatorSkie_SuspendHandler * _Nonnull"
+  - Selector: "Skie_Suspend__7__getTokenFromDatabaseDispatchReceiver:userId:suspendHandler:"
+    MethodKind: "Class"
+    SwiftName: "Skie_Suspend__7__getTokenFromDatabase(dispatchReceiver:userId:suspendHandler:)"
+    Availability: "nonswift"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "id<CoreAuthenticatorTokenBridge> _Nonnull"
+    - Position: 1
+      Type: "int64_t"
+    - Position: 2
+      Type: "CoreAuthenticatorSkie_SuspendHandler * _Nonnull"
+  - Selector: "Skie_Suspend__8__persistTokenForAccountDispatchReceiver:userId:token:suspendHandler:"
+    MethodKind: "Class"
+    SwiftName: "Skie_Suspend__8__persistTokenForAccount(dispatchReceiver:userId:token:suspendHandler:)"
+    Availability: "nonswift"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "id<CoreAuthenticatorTokenBridge> _Nonnull"
+    - Position: 1
+      Type: "int64_t"
+    - Position: 2
+      Type: "NSString * _Nonnull"
+    - Position: 3
+      Type: "CoreAuthenticatorSkie_SuspendHandler * _Nonnull"
+  - Selector: "Skie_Suspend__9__saveDispatchReceiver:item:suspendHandler:"
+    MethodKind: "Class"
+    SwiftName: "Skie_Suspend__9__save(dispatchReceiver:item:suspendHandler:)"
+    Availability: "nonswift"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "id<CoreAuthenticatorAppSettingsDao> _Nonnull"
+    - Position: 1
+      Type: "CoreAuthenticatorAppSettingsEntity * _Nonnull"
+    - Position: 2
+      Type: "CoreAuthenticatorSkie_SuspendHandler * _Nonnull"
+  - Selector: "Skie_Suspend__10__setIsAppLockEnabledDispatchReceiver:isAppLockEnabled:suspendHandler:"
+    MethodKind: "Class"
+    SwiftName: "Skie_Suspend__10__setIsAppLockEnabled(dispatchReceiver:isAppLockEnabled:suspendHandler:)"
+    Availability: "nonswift"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "id<CoreAuthenticatorAppSettingsDao> _Nonnull"
+    - Position: 1
+      Type: "BOOL"
+    - Position: 2
+      Type: "CoreAuthenticatorSkie_SuspendHandler * _Nonnull"
+  - Selector: "Skie_Suspend__11__setThemeDispatchReceiver:theme:suspendHandler:"
+    MethodKind: "Class"
+    SwiftName: "Skie_Suspend__11__setTheme(dispatchReceiver:theme:suspendHandler:)"
+    Availability: "nonswift"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "id<CoreAuthenticatorAppSettingsDao> _Nonnull"
+    - Position: 1
+      Type: "CoreAuthenticatorTheme * _Nonnull"
+    - Position: 2
+      Type: "CoreAuthenticatorSkie_SuspendHandler * _Nonnull"
+  - Selector: "Skie_Suspend__12__useConnectionDispatchReceiver:isReadOnly:block:suspendHandler:"
+    MethodKind: "Class"
+    SwiftName: "Skie_Suspend__12__useConnection(dispatchReceiver:isReadOnly:block:suspendHandler:)"
+    Availability: "nonswift"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "CoreAuthenticatorRoom_runtimeRoomDatabase * _Nonnull"
+    - Position: 1
+      Type: "BOOL"
+    - Position: 2
+      Type: "id<CoreAuthenticatorKotlinSuspendFunction1> _Nonnull"
+    - Position: 3
+      Type: "CoreAuthenticatorSkie_SuspendHandler * _Nonnull"
+  - Selector: "Skie_Suspend__13__invokeDispatchReceiver:p1:suspendHandler:"
+    MethodKind: "Class"
+    SwiftName: "Skie_Suspend__13__invoke(dispatchReceiver:p1:suspendHandler:)"
+    Availability: "nonswift"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "id<CoreAuthenticatorKotlinSuspendFunction1> _Nonnull"
+    - Position: 1
+      Type: "id _Nullable"
+    - Position: 2
+      Type: "CoreAuthenticatorSkie_SuspendHandler * _Nonnull"
+  - Selector: "Skie_Suspend__14__refreshDispatchReceiver:tables:suspendHandler:"
+    MethodKind: "Class"
+    SwiftName: "Skie_Suspend__14__refresh(dispatchReceiver:tables:suspendHandler:)"
+    Availability: "nonswift"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "CoreAuthenticatorRoom_runtimeInvalidationTracker * _Nonnull"
+    - Position: 1
+      Type: "CoreAuthenticatorKotlinArray<NSString *> * _Nonnull"
+    - Position: 2
+      Type: "CoreAuthenticatorSkie_SuspendHandler * _Nonnull"
+  - Selector: "Skie_Suspend__15__setIsAppLockEnabledDispatchReceiver:isAppLockEnabled:suspendHandler:"
+    MethodKind: "Class"
+    SwiftName: "Skie_Suspend__15__setIsAppLockEnabled(dispatchReceiver:isAppLockEnabled:suspendHandler:)"
+    Availability: "nonswift"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "CoreAuthenticatorAppSettingsRepository * _Nonnull"
+    - Position: 1
+      Type: "BOOL"
+    - Position: 2
+      Type: "CoreAuthenticatorSkie_SuspendHandler * _Nonnull"
+  - Selector: "Skie_Suspend__16__setThemeDispatchReceiver:theme:suspendHandler:"
+    MethodKind: "Class"
+    SwiftName: "Skie_Suspend__16__setTheme(dispatchReceiver:theme:suspendHandler:)"
+    Availability: "nonswift"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "CoreAuthenticatorAppSettingsRepository * _Nonnull"
+    - Position: 1
+      Type: "CoreAuthenticatorTheme * _Nonnull"
+    - Position: 2
+      Type: "CoreAuthenticatorSkie_SuspendHandler * _Nonnull"
+Protocols:
+- Name: "CoreAuthenticatorKotlinIterator"
+  SwiftName: "KotlinIterator"
+  Methods:
+  - Selector: "hasNext"
+    MethodKind: "Instance"
+    SwiftName: "hasNext()"
+    ResultType: "BOOL"
+  - Selector: "next"
+    MethodKind: "Instance"
+    SwiftName: "next()"
+    ResultType: "id _Nullable"
+- Name: "CoreAuthenticatorKotlinCoroutineContext"
+  SwiftName: "KotlinCoroutineContext"
+  Methods:
+  - Selector: "foldInitial:operation:"
+    MethodKind: "Instance"
+    SwiftName: "fold(initial:operation:)"
+    ResultType: "id _Nullable"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+    - Position: 1
+      Type: "id _Nullable (^ _Nonnull)(id _Nullable, id<CoreAuthenticatorKotlinCoroutineContextElement> _Nonnull)"
+  - Selector: "getKey:"
+    MethodKind: "Instance"
+    SwiftName: "get(key:)"
+    ResultType: "id<CoreAuthenticatorKotlinCoroutineContextElement> _Nullable"
+    Parameters:
+    - Position: 0
+      Type: "id<CoreAuthenticatorKotlinCoroutineContextKey> _Nonnull"
+  - Selector: "minusKeyKey:"
+    MethodKind: "Instance"
+    SwiftName: "minusKey(key:)"
+    ResultType: "id<CoreAuthenticatorKotlinCoroutineContext> _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "id<CoreAuthenticatorKotlinCoroutineContextKey> _Nonnull"
+  - Selector: "plusContext:"
+    MethodKind: "Instance"
+    SwiftName: "plus(context:)"
+    ResultType: "id<CoreAuthenticatorKotlinCoroutineContext> _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "id<CoreAuthenticatorKotlinCoroutineContext> _Nonnull"
+- Name: "CoreAuthenticatorKotlinCoroutineContextKey"
+  SwiftName: "KotlinCoroutineContextKey"
+- Name: "CoreAuthenticatorKotlinCoroutineContextElement"
+  SwiftName: "KotlinCoroutineContextElement"
+  Properties:
+  - Name: "key"
+    PropertyKind: "Instance"
+    SwiftName: "key"
+    Type: "id<CoreAuthenticatorKotlinCoroutineContextKey> _Nonnull"
+  Methods:
+  - Selector: "foldInitial:operation:"
+    MethodKind: "Instance"
+    SwiftName: "fold(initial:operation:)"
+    ResultType: "id _Nullable"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+    - Position: 1
+      Type: "id _Nullable (^ _Nonnull)(id _Nullable, id<CoreAuthenticatorKotlinCoroutineContextElement> _Nonnull)"
+  - Selector: "getKey:"
+    MethodKind: "Instance"
+    SwiftName: "get(key:)"
+    ResultType: "id<CoreAuthenticatorKotlinCoroutineContextElement> _Nullable"
+    Parameters:
+    - Position: 0
+      Type: "id<CoreAuthenticatorKotlinCoroutineContextKey> _Nonnull"
+  - Selector: "minusKeyKey:"
+    MethodKind: "Instance"
+    SwiftName: "minusKey(key:)"
+    ResultType: "id<CoreAuthenticatorKotlinCoroutineContext> _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "id<CoreAuthenticatorKotlinCoroutineContextKey> _Nonnull"
+- Name: "CoreAuthenticatorKotlinComparable"
+  SwiftName: "KotlinComparable"
+  Methods:
+  - Selector: "compareToOther:"
+    MethodKind: "Instance"
+    SwiftName: "compareTo(other:)"
+    ResultType: "int32_t"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+- Name: "CoreAuthenticatorKotlinSuspendFunction1"
+  SwiftName: "KotlinSuspendFunction1"
+  Methods:
+  - Selector: "invokeP1:completionHandler:"
+    MethodKind: "Instance"
+    SwiftName: "__invoke(p1:completionHandler:)"
+    SwiftPrivate: true
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+    - Position: 1
+      Type: "void (^ _Nonnull)(id _Nullable_result, NSError * _Nullable)"
+- Name: "CoreAuthenticatorKotlinFunction"
+  SwiftName: "KotlinFunction"
+- Name: "CoreAuthenticatorKotlinAutoCloseable"
+  SwiftName: "KotlinAutoCloseable"
+  Methods:
+  - Selector: "close"
+    MethodKind: "Instance"
+    SwiftName: "close()"
+    ResultType: "void"
+- Name: "CoreAuthenticatorKotlinKClass"
+  SwiftName: "KotlinKClass"
+  Properties:
+  - Name: "qualifiedName"
+    PropertyKind: "Instance"
+    SwiftName: "qualifiedName"
+    Type: "NSString * _Nullable"
+  - Name: "simpleName"
+    PropertyKind: "Instance"
+    SwiftName: "simpleName"
+    Type: "NSString * _Nullable"
+  Methods:
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "isInstanceValue:"
+    MethodKind: "Instance"
+    SwiftName: "isInstance(value:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+- Name: "CoreAuthenticatorKotlinKClassifier"
+  SwiftName: "KotlinKClassifier"
+- Name: "CoreAuthenticatorKotlinKAnnotatedElement"
+  SwiftName: "KotlinKAnnotatedElement"
+- Name: "CoreAuthenticatorKotlinKDeclarationContainer"
+  SwiftName: "KotlinKDeclarationContainer"
+- Name: "CoreAuthenticatorKotlinAnnotation"
+  SwiftName: "KotlinAnnotation"
+- Name: "CoreAuthenticatorSkie_DispatcherDelegate"
+  SwiftName: "Skie_DispatcherDelegate"
+  SwiftPrivate: true
+  Methods:
+  - Selector: "dispatchBlock:"
+    MethodKind: "Instance"
+    SwiftName: "dispatch(block:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "id<CoreAuthenticatorKotlinx_coroutines_coreRunnable> _Nonnull"
+- Name: "CoreAuthenticatorKotlinx_coroutines_coreFlow"
+  SwiftName: "Kotlinx_coroutines_coreFlow"
+  Methods:
+  - Selector: "collectCollector:completionHandler:"
+    MethodKind: "Instance"
+    SwiftName: "__collect(collector:completionHandler:)"
+    SwiftPrivate: true
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "id<CoreAuthenticatorKotlinx_coroutines_coreFlowCollector> _Nonnull"
+    - Position: 1
+      Type: "void (^ _Nonnull)(NSError * _Nullable)"
+- Name: "CoreAuthenticatorKotlinx_coroutines_coreFlowCollector"
+  SwiftName: "Kotlinx_coroutines_coreFlowCollector"
+  Methods:
+  - Selector: "emitValue:completionHandler:"
+    MethodKind: "Instance"
+    SwiftName: "__emit(value:completionHandler:)"
+    SwiftPrivate: true
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+    - Position: 1
+      Type: "void (^ _Nonnull)(NSError * _Nullable)"
+- Name: "CoreAuthenticatorKotlinx_coroutines_coreStateFlow"
+  SwiftName: "Kotlinx_coroutines_coreStateFlow"
+  Properties:
+  - Name: "value"
+    PropertyKind: "Instance"
+    SwiftName: "value"
+    Type: "id _Nullable"
+- Name: "CoreAuthenticatorKotlinx_coroutines_coreSharedFlow"
+  SwiftName: "Kotlinx_coroutines_coreSharedFlow"
+  Properties:
+  - Name: "replayCache"
+    PropertyKind: "Instance"
+    SwiftName: "replayCache"
+    Type: "NSArray<id> * _Nonnull"
+  Methods:
+  - Selector: "collectCollector:completionHandler:"
+    MethodKind: "Instance"
+    SwiftName: "__collect(collector:completionHandler:)"
+    SwiftPrivate: true
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "id<CoreAuthenticatorKotlinx_coroutines_coreFlowCollector> _Nonnull"
+    - Position: 1
+      Type: "void (^ _Nonnull)(NSError * _Nullable)"
+- Name: "CoreAuthenticatorKotlinx_coroutines_coreMutableSharedFlow"
+  SwiftName: "Kotlinx_coroutines_coreMutableSharedFlow"
+  Properties:
+  - Name: "subscriptionCount"
+    PropertyKind: "Instance"
+    SwiftName: "subscriptionCount"
+    Type: "CoreAuthenticatorSkieKotlinStateFlow<CoreAuthenticatorInt *> * _Nonnull"
+  Methods:
+  - Selector: "emitValue:completionHandler:"
+    MethodKind: "Instance"
+    SwiftName: "__emit(value:completionHandler:)"
+    SwiftPrivate: true
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+    - Position: 1
+      Type: "void (^ _Nonnull)(NSError * _Nullable)"
+  - Selector: "resetReplayCache"
+    MethodKind: "Instance"
+    SwiftName: "resetReplayCache()"
+    ResultType: "void"
+  - Selector: "tryEmitValue:"
+    MethodKind: "Instance"
+    SwiftName: "tryEmit(value:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+- Name: "CoreAuthenticatorKotlinx_coroutines_coreMutableStateFlow"
+  SwiftName: "Kotlinx_coroutines_coreMutableStateFlow"
+  Properties:
+  - Name: "value"
+    PropertyKind: "Instance"
+    SwiftName: "value"
+    Type: "id _Nullable"
+  Methods:
+  - Selector: "compareAndSetExpect:update:"
+    MethodKind: "Instance"
+    SwiftName: "compareAndSet(expect:update:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+    - Position: 1
+      Type: "id _Nullable"
+- Name: "CoreAuthenticatorKotlinx_coroutines_coreRunnable"
+  SwiftName: "Kotlinx_coroutines_coreRunnable"
+  Methods:
+  - Selector: "run"
+    MethodKind: "Instance"
+    SwiftName: "run()"
+    ResultType: "void"
+- Name: "CoreAuthenticatorKotlinx_coroutines_coreCoroutineScope"
+  SwiftName: "Kotlinx_coroutines_coreCoroutineScope"
+  Properties:
+  - Name: "coroutineContext"
+    PropertyKind: "Instance"
+    SwiftName: "coroutineContext"
+    Type: "id<CoreAuthenticatorKotlinCoroutineContext> _Nonnull"
+- Name: "CoreAuthenticatorAccountStatus"
+  SwiftName: "AccountStatus"
+- Name: "CoreAuthenticatorNotConnectedAction"
+  SwiftName: "NotConnectedAction"
+- Name: "CoreAuthenticatorNotConnectedActionIssue"
+  SwiftName: "NotConnectedActionIssue"
+- Name: "CoreAuthenticatorAppStatus"
+  SwiftName: "AppStatus"
+- Name: "CoreAuthenticatorAppStatusLoginRequired"
+  SwiftName: "AppStatusLoginRequired"
+- Name: "CoreAuthenticatorCrashReportInterface"
+  SwiftName: "CrashReportInterface"
+  Methods:
+  - Selector: "addBreadcrumbMessage:category:level:type:data:"
+    MethodKind: "Instance"
+    SwiftName: "addBreadcrumb(message:category:level:type:data:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+    - Position: 1
+      Type: "NSString * _Nonnull"
+    - Position: 2
+      Type: "CoreAuthenticatorCrashReportLevel * _Nonnull"
+    - Position: 3
+      Type: "CoreAuthenticatorBreadcrumbType * _Nonnull"
+    - Position: 4
+      Type: "NSDictionary<NSString *, NSString *> * _Nullable"
+  - Selector: "captureMessage:error:data:"
+    MethodKind: "Instance"
+    SwiftName: "capture(message:error:data:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+    - Position: 1
+      Type: "CoreAuthenticatorKotlinThrowable * _Nonnull"
+    - Position: 2
+      Type: "NSDictionary<NSString *, NSString *> * _Nullable"
+  - Selector: "captureMessage:data:level:"
+    MethodKind: "Instance"
+    SwiftName: "capture(message:data:level:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+    - Position: 1
+      Type: "NSDictionary<NSString *, NSString *> * _Nullable"
+    - Position: 2
+      Type: "CoreAuthenticatorCrashReportLevel * _Nullable"
+- Name: "CoreAuthenticatorTokenBridge"
+  SwiftName: "TokenBridge"
+  Methods:
+  - Selector: "getTokenFromCrossAppLoginUserId:completionHandler:"
+    MethodKind: "Instance"
+    SwiftName: "__getTokenFromCrossAppLogin(userId:completionHandler:)"
+    SwiftPrivate: true
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "int64_t"
+    - Position: 1
+      Type: "void (^ _Nonnull)(NSString * _Nullable_result, NSError * _Nullable)"
+  - Selector: "getTokenFromDatabaseUserId:completionHandler:"
+    MethodKind: "Instance"
+    SwiftName: "__getTokenFromDatabase(userId:completionHandler:)"
+    SwiftPrivate: true
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "int64_t"
+    - Position: 1
+      Type: "void (^ _Nonnull)(NSString * _Nullable_result, NSError * _Nullable)"
+  - Selector: "persistTokenForAccountUserId:token:completionHandler:"
+    MethodKind: "Instance"
+    SwiftName: "__persistTokenForAccount(userId:token:completionHandler:)"
+    SwiftPrivate: true
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "int64_t"
+    - Position: 1
+      Type: "NSString * _Nonnull"
+    - Position: 2
+      Type: "void (^ _Nonnull)(NSError * _Nullable)"
+- Name: "CoreAuthenticatorAppSettingsDao"
+  SwiftName: "AppSettingsDao"
+  Methods:
+  - Selector: "getAsFlow"
+    MethodKind: "Instance"
+    SwiftName: "getAsFlow()"
+    ResultType: "CoreAuthenticatorSkieKotlinOptionalFlow<CoreAuthenticatorAppSettingsEntity *> * _Nonnull"
+  - Selector: "saveItem:completionHandler:"
+    MethodKind: "Instance"
+    SwiftName: "__save(item:completionHandler:)"
+    SwiftPrivate: true
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "CoreAuthenticatorAppSettingsEntity * _Nonnull"
+    - Position: 1
+      Type: "void (^ _Nonnull)(NSError * _Nullable)"
+  - Selector: "setIsAppLockEnabledIsAppLockEnabled:completionHandler:"
+    MethodKind: "Instance"
+    SwiftName: "__setIsAppLockEnabled(isAppLockEnabled:completionHandler:)"
+    SwiftPrivate: true
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "BOOL"
+    - Position: 1
+      Type: "void (^ _Nonnull)(NSError * _Nullable)"
+  - Selector: "setThemeTheme:completionHandler:"
+    MethodKind: "Instance"
+    SwiftName: "__setTheme(theme:completionHandler:)"
+    SwiftPrivate: true
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "CoreAuthenticatorTheme * _Nonnull"
+    - Position: 1
+      Type: "void (^ _Nonnull)(NSError * _Nullable)"
+- Name: "CoreAuthenticatorRoom_runtimeRoomOpenDelegateMarker"
+  SwiftName: "Room_runtimeRoomOpenDelegateMarker"
+- Name: "CoreAuthenticatorRoom_runtimeAutoMigrationSpec"
+  SwiftName: "Room_runtimeAutoMigrationSpec"
+  Methods:
+  - Selector: "onPostMigrateConnection:"
+    MethodKind: "Instance"
+    SwiftName: "onPostMigrate(connection:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "id<CoreAuthenticatorSqliteSQLiteConnection> _Nonnull"
+- Name: "CoreAuthenticatorRoom_runtimeRoomDatabaseConstructor"
+  SwiftName: "Room_runtimeRoomDatabaseConstructor"
+  Methods:
+  - Selector: "initialize"
+    MethodKind: "Instance"
+    SwiftName: "initialize()"
+    ResultType: "CoreAuthenticatorRoom_runtimeRoomDatabase * _Nonnull"
+- Name: "CoreAuthenticatorSqliteSQLiteConnection"
+  SwiftName: "SqliteSQLiteConnection"
+  Methods:
+  - Selector: "close"
+    MethodKind: "Instance"
+    SwiftName: "close()"
+    ResultType: "void"
+  - Selector: "inTransaction"
+    MethodKind: "Instance"
+    SwiftName: "inTransaction()"
+    ResultType: "BOOL"
+  - Selector: "prepareSql:"
+    MethodKind: "Instance"
+    SwiftName: "prepare(sql:)"
+    ResultType: "id<CoreAuthenticatorSqliteSQLiteStatement> _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+- Name: "CoreAuthenticatorSqliteSQLiteStatement"
+  SwiftName: "SqliteSQLiteStatement"
+  Methods:
+  - Selector: "bindBlobIndex:value:"
+    MethodKind: "Instance"
+    SwiftName: "bindBlob(index:value:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "int32_t"
+    - Position: 1
+      Type: "CoreAuthenticatorKotlinByteArray * _Nonnull"
+  - Selector: "bindBooleanIndex:value:"
+    MethodKind: "Instance"
+    SwiftName: "bindBoolean(index:value:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "int32_t"
+    - Position: 1
+      Type: "BOOL"
+  - Selector: "bindDoubleIndex:value:"
+    MethodKind: "Instance"
+    SwiftName: "bindDouble(index:value:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "int32_t"
+    - Position: 1
+      Type: "double"
+  - Selector: "bindFloatIndex:value:"
+    MethodKind: "Instance"
+    SwiftName: "bindFloat(index:value:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "int32_t"
+    - Position: 1
+      Type: "float"
+  - Selector: "bindIntIndex:value:"
+    MethodKind: "Instance"
+    SwiftName: "bindInt(index:value:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "int32_t"
+    - Position: 1
+      Type: "int32_t"
+  - Selector: "bindLongIndex:value:"
+    MethodKind: "Instance"
+    SwiftName: "bindLong(index:value:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "int32_t"
+    - Position: 1
+      Type: "int64_t"
+  - Selector: "bindNullIndex:"
+    MethodKind: "Instance"
+    SwiftName: "bindNull(index:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "int32_t"
+  - Selector: "bindTextIndex:value:"
+    MethodKind: "Instance"
+    SwiftName: "bindText(index:value:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "int32_t"
+    - Position: 1
+      Type: "NSString * _Nonnull"
+  - Selector: "clearBindings"
+    MethodKind: "Instance"
+    SwiftName: "clearBindings()"
+    ResultType: "void"
+  - Selector: "close"
+    MethodKind: "Instance"
+    SwiftName: "close()"
+    ResultType: "void"
+  - Selector: "getBlobIndex:"
+    MethodKind: "Instance"
+    SwiftName: "getBlob(index:)"
+    ResultType: "CoreAuthenticatorKotlinByteArray * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "int32_t"
+  - Selector: "getBooleanIndex:"
+    MethodKind: "Instance"
+    SwiftName: "getBoolean(index:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "int32_t"
+  - Selector: "getColumnCount"
+    MethodKind: "Instance"
+    SwiftName: "getColumnCount()"
+    ResultType: "int32_t"
+  - Selector: "getColumnNameIndex:"
+    MethodKind: "Instance"
+    SwiftName: "getColumnName(index:)"
+    ResultType: "NSString * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "int32_t"
+  - Selector: "getColumnNames"
+    MethodKind: "Instance"
+    SwiftName: "getColumnNames()"
+    ResultType: "NSArray<NSString *> * _Nonnull"
+  - Selector: "getColumnTypeIndex:"
+    MethodKind: "Instance"
+    SwiftName: "getColumnType(index:)"
+    ResultType: "int32_t"
+    Parameters:
+    - Position: 0
+      Type: "int32_t"
+  - Selector: "getDoubleIndex:"
+    MethodKind: "Instance"
+    SwiftName: "getDouble(index:)"
+    ResultType: "double"
+    Parameters:
+    - Position: 0
+      Type: "int32_t"
+  - Selector: "getFloatIndex:"
+    MethodKind: "Instance"
+    SwiftName: "getFloat(index:)"
+    ResultType: "float"
+    Parameters:
+    - Position: 0
+      Type: "int32_t"
+  - Selector: "getIntIndex:"
+    MethodKind: "Instance"
+    SwiftName: "getInt(index:)"
+    ResultType: "int32_t"
+    Parameters:
+    - Position: 0
+      Type: "int32_t"
+  - Selector: "getLongIndex:"
+    MethodKind: "Instance"
+    SwiftName: "getLong(index:)"
+    ResultType: "int64_t"
+    Parameters:
+    - Position: 0
+      Type: "int32_t"
+  - Selector: "getTextIndex:"
+    MethodKind: "Instance"
+    SwiftName: "getText(index:)"
+    ResultType: "NSString * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "int32_t"
+  - Selector: "isNullIndex:"
+    MethodKind: "Instance"
+    SwiftName: "isNull(index:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "int32_t"
+  - Selector: "reset"
+    MethodKind: "Instance"
+    SwiftName: "reset()"
+    ResultType: "void"
+  - Selector: "step"
+    MethodKind: "Instance"
+    SwiftName: "step()"
+    ResultType: "BOOL"
+- Name: "CoreAuthenticatorSqliteSQLiteDriver"
+  SwiftName: "SqliteSQLiteDriver"
+  Properties:
+  - Name: "hasConnectionPool"
+    PropertyKind: "Instance"
+    SwiftName: "hasConnectionPool"
+    Type: "BOOL"
+  Methods:
+  - Selector: "openFileName:"
+    MethodKind: "Instance"
+    SwiftName: "open(fileName:)"
+    ResultType: "id<CoreAuthenticatorSqliteSQLiteConnection> _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+- Name: "CoreAuthenticatorKotlinx_serialization_coreKSerializer"
+  SwiftName: "Kotlinx_serialization_coreKSerializer"
+  Properties:
+  - Name: "descriptor"
+    PropertyKind: "Instance"
+    SwiftName: "descriptor"
+    Type: "id<CoreAuthenticatorKotlinx_serialization_coreSerialDescriptor> _Nonnull"
+- Name: "CoreAuthenticatorKotlinx_serialization_coreDeserializationStrategy"
+  SwiftName: "Kotlinx_serialization_coreDeserializationStrategy"
+  Properties:
+  - Name: "descriptor"
+    PropertyKind: "Instance"
+    SwiftName: "descriptor"
+    Type: "id<CoreAuthenticatorKotlinx_serialization_coreSerialDescriptor> _Nonnull"
+  Methods:
+  - Selector: "deserializeDecoder:"
+    MethodKind: "Instance"
+    SwiftName: "deserialize(decoder:)"
+    ResultType: "id _Nullable"
+    Parameters:
+    - Position: 0
+      Type: "id<CoreAuthenticatorKotlinx_serialization_coreDecoder> _Nonnull"
+- Name: "CoreAuthenticatorKotlinx_serialization_coreDecoder"
+  SwiftName: "Kotlinx_serialization_coreDecoder"
+  Properties:
+  - Name: "serializersModule"
+    PropertyKind: "Instance"
+    SwiftName: "serializersModule"
+    Type: "CoreAuthenticatorKotlinx_serialization_coreSerializersModule * _Nonnull"
+  Methods:
+  - Selector: "beginStructureDescriptor:"
+    MethodKind: "Instance"
+    SwiftName: "beginStructure(descriptor:)"
+    ResultType: "id<CoreAuthenticatorKotlinx_serialization_coreCompositeDecoder> _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "id<CoreAuthenticatorKotlinx_serialization_coreSerialDescriptor> _Nonnull"
+  - Selector: "decodeBoolean"
+    MethodKind: "Instance"
+    SwiftName: "decodeBoolean()"
+    ResultType: "BOOL"
+  - Selector: "decodeByte"
+    MethodKind: "Instance"
+    SwiftName: "decodeByte()"
+    ResultType: "int8_t"
+  - Selector: "decodeChar"
+    MethodKind: "Instance"
+    SwiftName: "decodeChar()"
+    ResultType: "unichar"
+  - Selector: "decodeDouble"
+    MethodKind: "Instance"
+    SwiftName: "decodeDouble()"
+    ResultType: "double"
+  - Selector: "decodeEnumEnumDescriptor:"
+    MethodKind: "Instance"
+    SwiftName: "decodeEnum(enumDescriptor:)"
+    ResultType: "int32_t"
+    Parameters:
+    - Position: 0
+      Type: "id<CoreAuthenticatorKotlinx_serialization_coreSerialDescriptor> _Nonnull"
+  - Selector: "decodeFloat"
+    MethodKind: "Instance"
+    SwiftName: "decodeFloat()"
+    ResultType: "float"
+  - Selector: "decodeInlineDescriptor:"
+    MethodKind: "Instance"
+    SwiftName: "decodeInline(descriptor:)"
+    ResultType: "id<CoreAuthenticatorKotlinx_serialization_coreDecoder> _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "id<CoreAuthenticatorKotlinx_serialization_coreSerialDescriptor> _Nonnull"
+  - Selector: "decodeInt"
+    MethodKind: "Instance"
+    SwiftName: "decodeInt()"
+    ResultType: "int32_t"
+  - Selector: "decodeLong"
+    MethodKind: "Instance"
+    SwiftName: "decodeLong()"
+    ResultType: "int64_t"
+  - Selector: "decodeNotNullMark"
+    MethodKind: "Instance"
+    SwiftName: "decodeNotNullMark()"
+    ResultType: "BOOL"
+  - Selector: "decodeNull"
+    MethodKind: "Instance"
+    SwiftName: "decodeNull()"
+    ResultType: "CoreAuthenticatorKotlinNothing * _Nullable"
+  - Selector: "decodeNullableSerializableValueDeserializer:"
+    MethodKind: "Instance"
+    SwiftName: "decodeNullableSerializableValue(deserializer:)"
+    ResultType: "id _Nullable"
+    Parameters:
+    - Position: 0
+      Type: "id<CoreAuthenticatorKotlinx_serialization_coreDeserializationStrategy> _Nonnull"
+  - Selector: "decodeSerializableValueDeserializer:"
+    MethodKind: "Instance"
+    SwiftName: "decodeSerializableValue(deserializer:)"
+    ResultType: "id _Nullable"
+    Parameters:
+    - Position: 0
+      Type: "id<CoreAuthenticatorKotlinx_serialization_coreDeserializationStrategy> _Nonnull"
+  - Selector: "decodeShort"
+    MethodKind: "Instance"
+    SwiftName: "decodeShort()"
+    ResultType: "int16_t"
+  - Selector: "decodeString"
+    MethodKind: "Instance"
+    SwiftName: "decodeString()"
+    ResultType: "NSString * _Nonnull"
+- Name: "CoreAuthenticatorKotlinx_serialization_coreSerialDescriptor"
+  SwiftName: "Kotlinx_serialization_coreSerialDescriptor"
+  Properties:
+  - Name: "annotations"
+    PropertyKind: "Instance"
+    SwiftName: "annotations"
+    Type: "NSArray<id<CoreAuthenticatorKotlinAnnotation>> * _Nonnull"
+  - Name: "elementsCount"
+    PropertyKind: "Instance"
+    SwiftName: "elementsCount"
+    Type: "int32_t"
+  - Name: "isInline"
+    PropertyKind: "Instance"
+    SwiftName: "isInline"
+    Type: "BOOL"
+  - Name: "isNullable"
+    PropertyKind: "Instance"
+    SwiftName: "isNullable"
+    Type: "BOOL"
+  - Name: "kind"
+    PropertyKind: "Instance"
+    SwiftName: "kind"
+    Type: "CoreAuthenticatorKotlinx_serialization_coreSerialKind * _Nonnull"
+  - Name: "serialName"
+    PropertyKind: "Instance"
+    SwiftName: "serialName"
+    Type: "NSString * _Nonnull"
+  Methods:
+  - Selector: "getElementAnnotationsIndex:"
+    MethodKind: "Instance"
+    SwiftName: "getElementAnnotations(index:)"
+    ResultType: "NSArray<id<CoreAuthenticatorKotlinAnnotation>> * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "int32_t"
+  - Selector: "getElementDescriptorIndex:"
+    MethodKind: "Instance"
+    SwiftName: "getElementDescriptor(index:)"
+    ResultType: "id<CoreAuthenticatorKotlinx_serialization_coreSerialDescriptor> _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "int32_t"
+  - Selector: "getElementIndexName:"
+    MethodKind: "Instance"
+    SwiftName: "getElementIndex(name:)"
+    ResultType: "int32_t"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+  - Selector: "getElementNameIndex:"
+    MethodKind: "Instance"
+    SwiftName: "getElementName(index:)"
+    ResultType: "NSString * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "int32_t"
+  - Selector: "isElementOptionalIndex:"
+    MethodKind: "Instance"
+    SwiftName: "isElementOptional(index:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "int32_t"
+- Name: "CoreAuthenticatorKotlinx_serialization_coreCompositeDecoder"
+  SwiftName: "Kotlinx_serialization_coreCompositeDecoder"
+  Properties:
+  - Name: "serializersModule"
+    PropertyKind: "Instance"
+    SwiftName: "serializersModule"
+    Type: "CoreAuthenticatorKotlinx_serialization_coreSerializersModule * _Nonnull"
+  Methods:
+  - Selector: "decodeBooleanElementDescriptor:index:"
+    MethodKind: "Instance"
+    SwiftName: "decodeBooleanElement(descriptor:index:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id<CoreAuthenticatorKotlinx_serialization_coreSerialDescriptor> _Nonnull"
+    - Position: 1
+      Type: "int32_t"
+  - Selector: "decodeByteElementDescriptor:index:"
+    MethodKind: "Instance"
+    SwiftName: "decodeByteElement(descriptor:index:)"
+    ResultType: "int8_t"
+    Parameters:
+    - Position: 0
+      Type: "id<CoreAuthenticatorKotlinx_serialization_coreSerialDescriptor> _Nonnull"
+    - Position: 1
+      Type: "int32_t"
+  - Selector: "decodeCharElementDescriptor:index:"
+    MethodKind: "Instance"
+    SwiftName: "decodeCharElement(descriptor:index:)"
+    ResultType: "unichar"
+    Parameters:
+    - Position: 0
+      Type: "id<CoreAuthenticatorKotlinx_serialization_coreSerialDescriptor> _Nonnull"
+    - Position: 1
+      Type: "int32_t"
+  - Selector: "decodeCollectionSizeDescriptor:"
+    MethodKind: "Instance"
+    SwiftName: "decodeCollectionSize(descriptor:)"
+    ResultType: "int32_t"
+    Parameters:
+    - Position: 0
+      Type: "id<CoreAuthenticatorKotlinx_serialization_coreSerialDescriptor> _Nonnull"
+  - Selector: "decodeDoubleElementDescriptor:index:"
+    MethodKind: "Instance"
+    SwiftName: "decodeDoubleElement(descriptor:index:)"
+    ResultType: "double"
+    Parameters:
+    - Position: 0
+      Type: "id<CoreAuthenticatorKotlinx_serialization_coreSerialDescriptor> _Nonnull"
+    - Position: 1
+      Type: "int32_t"
+  - Selector: "decodeElementIndexDescriptor:"
+    MethodKind: "Instance"
+    SwiftName: "decodeElementIndex(descriptor:)"
+    ResultType: "int32_t"
+    Parameters:
+    - Position: 0
+      Type: "id<CoreAuthenticatorKotlinx_serialization_coreSerialDescriptor> _Nonnull"
+  - Selector: "decodeFloatElementDescriptor:index:"
+    MethodKind: "Instance"
+    SwiftName: "decodeFloatElement(descriptor:index:)"
+    ResultType: "float"
+    Parameters:
+    - Position: 0
+      Type: "id<CoreAuthenticatorKotlinx_serialization_coreSerialDescriptor> _Nonnull"
+    - Position: 1
+      Type: "int32_t"
+  - Selector: "decodeInlineElementDescriptor:index:"
+    MethodKind: "Instance"
+    SwiftName: "decodeInlineElement(descriptor:index:)"
+    ResultType: "id<CoreAuthenticatorKotlinx_serialization_coreDecoder> _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "id<CoreAuthenticatorKotlinx_serialization_coreSerialDescriptor> _Nonnull"
+    - Position: 1
+      Type: "int32_t"
+  - Selector: "decodeIntElementDescriptor:index:"
+    MethodKind: "Instance"
+    SwiftName: "decodeIntElement(descriptor:index:)"
+    ResultType: "int32_t"
+    Parameters:
+    - Position: 0
+      Type: "id<CoreAuthenticatorKotlinx_serialization_coreSerialDescriptor> _Nonnull"
+    - Position: 1
+      Type: "int32_t"
+  - Selector: "decodeLongElementDescriptor:index:"
+    MethodKind: "Instance"
+    SwiftName: "decodeLongElement(descriptor:index:)"
+    ResultType: "int64_t"
+    Parameters:
+    - Position: 0
+      Type: "id<CoreAuthenticatorKotlinx_serialization_coreSerialDescriptor> _Nonnull"
+    - Position: 1
+      Type: "int32_t"
+  - Selector: "decodeNullableSerializableElementDescriptor:index:deserializer:previousValue:"
+    MethodKind: "Instance"
+    SwiftName: "decodeNullableSerializableElement(descriptor:index:deserializer:previousValue:)"
+    ResultType: "id _Nullable"
+    Parameters:
+    - Position: 0
+      Type: "id<CoreAuthenticatorKotlinx_serialization_coreSerialDescriptor> _Nonnull"
+    - Position: 1
+      Type: "int32_t"
+    - Position: 2
+      Type: "id<CoreAuthenticatorKotlinx_serialization_coreDeserializationStrategy> _Nonnull"
+    - Position: 3
+      Type: "id _Nullable"
+  - Selector: "decodeSequentially"
+    MethodKind: "Instance"
+    SwiftName: "decodeSequentially()"
+    ResultType: "BOOL"
+  - Selector: "decodeSerializableElementDescriptor:index:deserializer:previousValue:"
+    MethodKind: "Instance"
+    SwiftName: "decodeSerializableElement(descriptor:index:deserializer:previousValue:)"
+    ResultType: "id _Nullable"
+    Parameters:
+    - Position: 0
+      Type: "id<CoreAuthenticatorKotlinx_serialization_coreSerialDescriptor> _Nonnull"
+    - Position: 1
+      Type: "int32_t"
+    - Position: 2
+      Type: "id<CoreAuthenticatorKotlinx_serialization_coreDeserializationStrategy> _Nonnull"
+    - Position: 3
+      Type: "id _Nullable"
+  - Selector: "decodeShortElementDescriptor:index:"
+    MethodKind: "Instance"
+    SwiftName: "decodeShortElement(descriptor:index:)"
+    ResultType: "int16_t"
+    Parameters:
+    - Position: 0
+      Type: "id<CoreAuthenticatorKotlinx_serialization_coreSerialDescriptor> _Nonnull"
+    - Position: 1
+      Type: "int32_t"
+  - Selector: "decodeStringElementDescriptor:index:"
+    MethodKind: "Instance"
+    SwiftName: "decodeStringElement(descriptor:index:)"
+    ResultType: "NSString * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "id<CoreAuthenticatorKotlinx_serialization_coreSerialDescriptor> _Nonnull"
+    - Position: 1
+      Type: "int32_t"
+  - Selector: "endStructureDescriptor:"
+    MethodKind: "Instance"
+    SwiftName: "endStructure(descriptor:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "id<CoreAuthenticatorKotlinx_serialization_coreSerialDescriptor> _Nonnull"
+- Name: "CoreAuthenticatorKotlinx_serialization_coreSerializationStrategy"
+  SwiftName: "Kotlinx_serialization_coreSerializationStrategy"
+  Properties:
+  - Name: "descriptor"
+    PropertyKind: "Instance"
+    SwiftName: "descriptor"
+    Type: "id<CoreAuthenticatorKotlinx_serialization_coreSerialDescriptor> _Nonnull"
+  Methods:
+  - Selector: "serializeEncoder:value:"
+    MethodKind: "Instance"
+    SwiftName: "serialize(encoder:value:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "id<CoreAuthenticatorKotlinx_serialization_coreEncoder> _Nonnull"
+    - Position: 1
+      Type: "id _Nullable"
+- Name: "CoreAuthenticatorKotlinx_serialization_coreEncoder"
+  SwiftName: "Kotlinx_serialization_coreEncoder"
+  Properties:
+  - Name: "serializersModule"
+    PropertyKind: "Instance"
+    SwiftName: "serializersModule"
+    Type: "CoreAuthenticatorKotlinx_serialization_coreSerializersModule * _Nonnull"
+  Methods:
+  - Selector: "beginCollectionDescriptor:collectionSize:"
+    MethodKind: "Instance"
+    SwiftName: "beginCollection(descriptor:collectionSize:)"
+    ResultType: "id<CoreAuthenticatorKotlinx_serialization_coreCompositeEncoder> _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "id<CoreAuthenticatorKotlinx_serialization_coreSerialDescriptor> _Nonnull"
+    - Position: 1
+      Type: "int32_t"
+  - Selector: "beginStructureDescriptor:"
+    MethodKind: "Instance"
+    SwiftName: "beginStructure(descriptor:)"
+    ResultType: "id<CoreAuthenticatorKotlinx_serialization_coreCompositeEncoder> _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "id<CoreAuthenticatorKotlinx_serialization_coreSerialDescriptor> _Nonnull"
+  - Selector: "encodeBooleanValue:"
+    MethodKind: "Instance"
+    SwiftName: "encodeBoolean(value:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "BOOL"
+  - Selector: "encodeByteValue:"
+    MethodKind: "Instance"
+    SwiftName: "encodeByte(value:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "int8_t"
+  - Selector: "encodeCharValue:"
+    MethodKind: "Instance"
+    SwiftName: "encodeChar(value:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "unichar"
+  - Selector: "encodeDoubleValue:"
+    MethodKind: "Instance"
+    SwiftName: "encodeDouble(value:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "double"
+  - Selector: "encodeEnumEnumDescriptor:index:"
+    MethodKind: "Instance"
+    SwiftName: "encodeEnum(enumDescriptor:index:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "id<CoreAuthenticatorKotlinx_serialization_coreSerialDescriptor> _Nonnull"
+    - Position: 1
+      Type: "int32_t"
+  - Selector: "encodeFloatValue:"
+    MethodKind: "Instance"
+    SwiftName: "encodeFloat(value:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "float"
+  - Selector: "encodeInlineDescriptor:"
+    MethodKind: "Instance"
+    SwiftName: "encodeInline(descriptor:)"
+    ResultType: "id<CoreAuthenticatorKotlinx_serialization_coreEncoder> _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "id<CoreAuthenticatorKotlinx_serialization_coreSerialDescriptor> _Nonnull"
+  - Selector: "encodeIntValue:"
+    MethodKind: "Instance"
+    SwiftName: "encodeInt(value:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "int32_t"
+  - Selector: "encodeLongValue:"
+    MethodKind: "Instance"
+    SwiftName: "encodeLong(value:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "int64_t"
+  - Selector: "encodeNotNullMark"
+    MethodKind: "Instance"
+    SwiftName: "encodeNotNullMark()"
+    ResultType: "void"
+  - Selector: "encodeNull"
+    MethodKind: "Instance"
+    SwiftName: "encodeNull()"
+    ResultType: "void"
+  - Selector: "encodeNullableSerializableValueSerializer:value:"
+    MethodKind: "Instance"
+    SwiftName: "encodeNullableSerializableValue(serializer:value:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "id<CoreAuthenticatorKotlinx_serialization_coreSerializationStrategy> _Nonnull"
+    - Position: 1
+      Type: "id _Nullable"
+  - Selector: "encodeSerializableValueSerializer:value:"
+    MethodKind: "Instance"
+    SwiftName: "encodeSerializableValue(serializer:value:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "id<CoreAuthenticatorKotlinx_serialization_coreSerializationStrategy> _Nonnull"
+    - Position: 1
+      Type: "id _Nullable"
+  - Selector: "encodeShortValue:"
+    MethodKind: "Instance"
+    SwiftName: "encodeShort(value:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "int16_t"
+  - Selector: "encodeStringValue:"
+    MethodKind: "Instance"
+    SwiftName: "encodeString(value:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+- Name: "CoreAuthenticatorKotlinx_serialization_coreCompositeEncoder"
+  SwiftName: "Kotlinx_serialization_coreCompositeEncoder"
+  Properties:
+  - Name: "serializersModule"
+    PropertyKind: "Instance"
+    SwiftName: "serializersModule"
+    Type: "CoreAuthenticatorKotlinx_serialization_coreSerializersModule * _Nonnull"
+  Methods:
+  - Selector: "encodeBooleanElementDescriptor:index:value:"
+    MethodKind: "Instance"
+    SwiftName: "encodeBooleanElement(descriptor:index:value:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "id<CoreAuthenticatorKotlinx_serialization_coreSerialDescriptor> _Nonnull"
+    - Position: 1
+      Type: "int32_t"
+    - Position: 2
+      Type: "BOOL"
+  - Selector: "encodeByteElementDescriptor:index:value:"
+    MethodKind: "Instance"
+    SwiftName: "encodeByteElement(descriptor:index:value:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "id<CoreAuthenticatorKotlinx_serialization_coreSerialDescriptor> _Nonnull"
+    - Position: 1
+      Type: "int32_t"
+    - Position: 2
+      Type: "int8_t"
+  - Selector: "encodeCharElementDescriptor:index:value:"
+    MethodKind: "Instance"
+    SwiftName: "encodeCharElement(descriptor:index:value:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "id<CoreAuthenticatorKotlinx_serialization_coreSerialDescriptor> _Nonnull"
+    - Position: 1
+      Type: "int32_t"
+    - Position: 2
+      Type: "unichar"
+  - Selector: "encodeDoubleElementDescriptor:index:value:"
+    MethodKind: "Instance"
+    SwiftName: "encodeDoubleElement(descriptor:index:value:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "id<CoreAuthenticatorKotlinx_serialization_coreSerialDescriptor> _Nonnull"
+    - Position: 1
+      Type: "int32_t"
+    - Position: 2
+      Type: "double"
+  - Selector: "encodeFloatElementDescriptor:index:value:"
+    MethodKind: "Instance"
+    SwiftName: "encodeFloatElement(descriptor:index:value:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "id<CoreAuthenticatorKotlinx_serialization_coreSerialDescriptor> _Nonnull"
+    - Position: 1
+      Type: "int32_t"
+    - Position: 2
+      Type: "float"
+  - Selector: "encodeInlineElementDescriptor:index:"
+    MethodKind: "Instance"
+    SwiftName: "encodeInlineElement(descriptor:index:)"
+    ResultType: "id<CoreAuthenticatorKotlinx_serialization_coreEncoder> _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "id<CoreAuthenticatorKotlinx_serialization_coreSerialDescriptor> _Nonnull"
+    - Position: 1
+      Type: "int32_t"
+  - Selector: "encodeIntElementDescriptor:index:value:"
+    MethodKind: "Instance"
+    SwiftName: "encodeIntElement(descriptor:index:value:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "id<CoreAuthenticatorKotlinx_serialization_coreSerialDescriptor> _Nonnull"
+    - Position: 1
+      Type: "int32_t"
+    - Position: 2
+      Type: "int32_t"
+  - Selector: "encodeLongElementDescriptor:index:value:"
+    MethodKind: "Instance"
+    SwiftName: "encodeLongElement(descriptor:index:value:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "id<CoreAuthenticatorKotlinx_serialization_coreSerialDescriptor> _Nonnull"
+    - Position: 1
+      Type: "int32_t"
+    - Position: 2
+      Type: "int64_t"
+  - Selector: "encodeNullableSerializableElementDescriptor:index:serializer:value:"
+    MethodKind: "Instance"
+    SwiftName: "encodeNullableSerializableElement(descriptor:index:serializer:value:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "id<CoreAuthenticatorKotlinx_serialization_coreSerialDescriptor> _Nonnull"
+    - Position: 1
+      Type: "int32_t"
+    - Position: 2
+      Type: "id<CoreAuthenticatorKotlinx_serialization_coreSerializationStrategy> _Nonnull"
+    - Position: 3
+      Type: "id _Nullable"
+  - Selector: "encodeSerializableElementDescriptor:index:serializer:value:"
+    MethodKind: "Instance"
+    SwiftName: "encodeSerializableElement(descriptor:index:serializer:value:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "id<CoreAuthenticatorKotlinx_serialization_coreSerialDescriptor> _Nonnull"
+    - Position: 1
+      Type: "int32_t"
+    - Position: 2
+      Type: "id<CoreAuthenticatorKotlinx_serialization_coreSerializationStrategy> _Nonnull"
+    - Position: 3
+      Type: "id _Nullable"
+  - Selector: "encodeShortElementDescriptor:index:value:"
+    MethodKind: "Instance"
+    SwiftName: "encodeShortElement(descriptor:index:value:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "id<CoreAuthenticatorKotlinx_serialization_coreSerialDescriptor> _Nonnull"
+    - Position: 1
+      Type: "int32_t"
+    - Position: 2
+      Type: "int16_t"
+  - Selector: "encodeStringElementDescriptor:index:value:"
+    MethodKind: "Instance"
+    SwiftName: "encodeStringElement(descriptor:index:value:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "id<CoreAuthenticatorKotlinx_serialization_coreSerialDescriptor> _Nonnull"
+    - Position: 1
+      Type: "int32_t"
+    - Position: 2
+      Type: "NSString * _Nonnull"
+  - Selector: "endStructureDescriptor:"
+    MethodKind: "Instance"
+    SwiftName: "endStructure(descriptor:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "id<CoreAuthenticatorKotlinx_serialization_coreSerialDescriptor> _Nonnull"
+  - Selector: "shouldEncodeElementDefaultDescriptor:index:"
+    MethodKind: "Instance"
+    SwiftName: "shouldEncodeElementDefault(descriptor:index:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id<CoreAuthenticatorKotlinx_serialization_coreSerialDescriptor> _Nonnull"
+    - Position: 1
+      Type: "int32_t"
+- Name: "CoreAuthenticatorKotlinx_serialization_coreSerializersModuleCollector"
+  SwiftName: "Kotlinx_serialization_coreSerializersModuleCollector"
+  Methods:
+  - Selector: "contextualKClass:serializer:"
+    MethodKind: "Instance"
+    SwiftName: "contextual(kClass:serializer:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "id<CoreAuthenticatorKotlinKClass> _Nonnull"
+    - Position: 1
+      Type: "id<CoreAuthenticatorKotlinx_serialization_coreKSerializer> _Nonnull"
+  - Selector: "contextualKClass:provider:"
+    MethodKind: "Instance"
+    SwiftName: "contextual(kClass:provider:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "id<CoreAuthenticatorKotlinKClass> _Nonnull"
+    - Position: 1
+      Type: "id<CoreAuthenticatorKotlinx_serialization_coreKSerializer> _Nonnull (^ _Nonnull)(NSArray<id<CoreAuthenticatorKotlinx_serialization_coreKSerializer>> * _Nonnull)"
+  - Selector: "polymorphicBaseClass:actualClass:actualSerializer:"
+    MethodKind: "Instance"
+    SwiftName: "polymorphic(baseClass:actualClass:actualSerializer:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "id<CoreAuthenticatorKotlinKClass> _Nonnull"
+    - Position: 1
+      Type: "id<CoreAuthenticatorKotlinKClass> _Nonnull"
+    - Position: 2
+      Type: "id<CoreAuthenticatorKotlinx_serialization_coreKSerializer> _Nonnull"
+  - Selector: "polymorphicDefaultBaseClass:defaultDeserializerProvider:"
+    MethodKind: "Instance"
+    SwiftName: "polymorphicDefault(baseClass:defaultDeserializerProvider:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "id<CoreAuthenticatorKotlinKClass> _Nonnull"
+    - Position: 1
+      Type: "id<CoreAuthenticatorKotlinx_serialization_coreDeserializationStrategy> _Nullable (^ _Nonnull)(NSString * _Nullable)"
+  - Selector: "polymorphicDefaultDeserializerBaseClass:defaultDeserializerProvider:"
+    MethodKind: "Instance"
+    SwiftName: "polymorphicDefaultDeserializer(baseClass:defaultDeserializerProvider:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "id<CoreAuthenticatorKotlinKClass> _Nonnull"
+    - Position: 1
+      Type: "id<CoreAuthenticatorKotlinx_serialization_coreDeserializationStrategy> _Nullable (^ _Nonnull)(NSString * _Nullable)"
+  - Selector: "polymorphicDefaultSerializerBaseClass:defaultSerializerProvider:"
+    MethodKind: "Instance"
+    SwiftName: "polymorphicDefaultSerializer(baseClass:defaultSerializerProvider:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "id<CoreAuthenticatorKotlinKClass> _Nonnull"
+    - Position: 1
+      Type: "id<CoreAuthenticatorKotlinx_serialization_coreSerializationStrategy> _Nullable (^ _Nonnull)(id _Nonnull)"

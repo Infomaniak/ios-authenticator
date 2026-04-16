@@ -808,7 +808,7 @@ __attribute__((swift_name("AuthenticatorFacade")))
 /**
  * Remove account from the authenticator.
  *
- * @note This method converts instances of CancellationException to errors.
+ * @note This method converts instances of Exception to errors.
  * Other uncaught Kotlin exceptions are fatal.
 */
 - (void)removeAccountToken:(NSString *)token id:(int64_t)id completionHandler:(void (^)(NSError * _Nullable))completionHandler __attribute__((swift_name("removeAccount(token:id:completionHandler:)")));
@@ -869,7 +869,7 @@ __attribute__((swift_name("DummyAuthenticatorFacade")))
 - (void)refreshTokenForUserId:(int64_t)userId completionHandler:(void (^)(NSError * _Nullable))completionHandler __attribute__((swift_name("refreshTokenFor(userId:completionHandler:)")));
 
 /**
- * @note This method converts instances of CancellationException to errors.
+ * @note This method converts instances of Exception to errors.
  * Other uncaught Kotlin exceptions are fatal.
 */
 - (void)removeAccountToken:(NSString *)token id:(int64_t)id completionHandler:(void (^)(NSError * _Nullable))completionHandler __attribute__((swift_name("removeAccount(token:id:completionHandler:)")));
