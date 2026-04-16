@@ -64,9 +64,7 @@ public struct OnboardingView: View {
     }
 
     public init(steps: [OnboardingStep], currentStep: OnboardingStep) {
-        self.steps = steps +
-            (UserDefaults.shared.isAppLockEnabled ? [] : [.biometry]) +
-            (UserDefaults.shared.isNotificationsEnabled ? [] : [.notifications])
+        self.steps = steps + [.biometry] + [.notifications]
         self.currentStep = currentStep
     }
 
@@ -102,8 +100,7 @@ public struct OnboardingView: View {
             case .biometry:
                 VStack {
                     Button(AuthenticatorResourcesStrings.enableButton) {
-                        enableBiometry()
-                        goToNextStep(index: index)
+                        enableBiometry(index: index)
                     }
                     .buttonStyle(.ikBorderedProminent)
                     .ikButtonFullWidth(true)
@@ -121,8 +118,7 @@ public struct OnboardingView: View {
             case .notifications:
                 VStack {
                     Button(AuthenticatorResourcesStrings.enableButton) {
-                        enableNotifications()
-                        goToNextStep(index: index)
+                        enableNotifications(index: index)
                     }
                     .buttonStyle(.ikBorderedProminent)
                     .ikButtonFullWidth(true)
@@ -165,16 +161,17 @@ public struct OnboardingView: View {
         }
     }
 
-    private func enableBiometry() {
+    private func enableBiometry(index: Int) {
         Task {
             @InjectService var appLockHelper: AppLockHelper
             let enabled = await appLockHelper.canEnableAppLock()
 
             UserDefaults.shared.isAppLockEnabled = enabled
+            goToNextStep(index: index)
         }
     }
 
-    private func enableNotifications() {
+    private func enableNotifications(index: Int) {
         Task {
             let center = UNUserNotificationCenter.current()
             let settings = await center.notificationSettings()
@@ -182,6 +179,7 @@ public struct OnboardingView: View {
             guard settings.authorizationStatus == .notDetermined else { return }
             _ = try? await center.requestAuthorization(options: [.alert, .sound])
             UserDefaults.shared.isNotificationsEnabled = true
+            goToNextStep(index: index)
         }
     }
 
@@ -190,15 +188,15 @@ public struct OnboardingView: View {
         case .migration:
             rootViewState.startMigration()
         case .success:
-            if steps.contains(.biometry) {
+            if !UserDefaults.shared.isAppLockEnabled {
                 rootViewState.configureBiometry()
-            } else if steps.contains(.notifications) {
+            } else if !UserDefaults.shared.isNotificationsEnabled {
                 rootViewState.configureNotifications()
             } else {
                 rootViewState.completeOnboarding()
             }
         case .biometry:
-            if steps.contains(.notifications) {
+            if !UserDefaults.shared.isNotificationsEnabled {
                 rootViewState.configureNotifications()
             } else {
                 rootViewState.completeOnboarding()
