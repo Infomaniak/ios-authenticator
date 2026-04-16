@@ -19,6 +19,7 @@
 import AuthenticatorCore
 import AuthenticatorCoreUI
 import AuthenticatorResources
+import DesignSystem
 import InfomaniakCoreCommonUI
 import InfomaniakDI
 import InfomaniakPrivacyManagement
@@ -29,6 +30,7 @@ public struct SettingsView: View {
 
     @AppStorage(UserDefaults.shared.key(.notificationsEnabled)) private var isNotificationsEnabled = DefaultPreferences
         .notificationsEnabled
+    @State private var isNotificationsAuthorized = false
 
     public init() {}
 
@@ -40,6 +42,36 @@ public struct SettingsView: View {
                     ToggleAppLockSettingsView()
                     NavigationLink(AuthenticatorResourcesStrings.themeTitle) {
                         ChangeThemeSettingsView()
+                    }
+                } header: {
+                    if isNotificationsEnabled && !isNotificationsAuthorized {
+                        VStack(alignment: .leading) {
+                            HStack(spacing: IKPadding.small) {
+                                AuthenticatorResourcesAsset.Images.circleInformation.swiftUIImage
+                                Text(AuthenticatorResourcesStrings.allowDeviceNotificationsDescription)
+                                    .font(.Token.callout)
+                                    .foregroundStyle(Color.Token.Text.secondary)
+                                    .frame(maxWidth: .infinity, alignment: .leading)
+                            }
+
+                            Button {
+                                UIApplication.shared.open(URL(string: UIApplication.openSettingsURLString)!)
+                            } label: {
+                                Text(AuthenticatorResourcesStrings.openSettingsButton)
+                                    .foregroundStyle(Color.Token.Text.primary)
+                                    .font(.Token.bodyBold)
+                                    .frame(maxWidth: .infinity)
+                            }
+                            .buttonStyle(.ikBordered)
+                        }
+                        .padding(.vertical, value: .medium)
+                        .padding(.horizontal, value: .large)
+                        .background(Color.Token.Surface.secondary, in: roundedRectangle)
+                        .overlay {
+                            roundedRectangle
+                                .stroke(Color.Token.Surface.tertiary, lineWidth: 1)
+                        }
+                        .listRowInsets(EdgeInsets(top: IKPadding.medium, leading: 0, bottom: IKPadding.huge, trailing: 0))
                     }
                 }
                 .authSectionStyle()
@@ -70,8 +102,29 @@ public struct SettingsView: View {
                 .authSectionStyle()
             }
             .authListStyle()
+            .animation(.smooth, value: isNotificationsEnabled)
             .navigationTitle(AuthenticatorResourcesStrings.settingsTitle)
+            .task {
+                await checkNotificationAuthorization()
+            }
+            .sceneLifecycle(willEnterForeground: willEnterForeground)
         }
+    }
+
+    private func willEnterForeground() {
+        Task {
+            await checkNotificationAuthorization()
+        }
+    }
+
+    private func checkNotificationAuthorization() async {
+        let center = UNUserNotificationCenter.current()
+        let settings = await center.notificationSettings()
+        isNotificationsAuthorized = settings.authorizationStatus == .authorized
+    }
+
+    private var roundedRectangle: some Shape {
+        RoundedRectangle(cornerRadius: 24.0)
     }
 }
 
