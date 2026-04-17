@@ -52,9 +52,9 @@ struct AccountDetailHeaderView: View {
                         Text(AuthenticatorResources.AuthenticatorResourcesStrings.updateButton)
                             .foregroundStyle(Color.Token.Text.primary)
                             .font(.Token.bodyBold)
-                            .frame(maxWidth: .infinity)
                     }
                     .buttonStyle(.ikBordered)
+                    .ikButtonFullWidth(true)
                 }
             }
             .padding(.vertical, value: .medium)
