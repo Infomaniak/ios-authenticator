@@ -64,7 +64,7 @@ public struct OnboardingView: View {
     }
 
     public init(steps: [OnboardingStep], currentStep: OnboardingStep) {
-        self.steps = steps + [.biometry] + [.notifications]
+        self.steps = steps
         self.currentStep = currentStep
     }
 

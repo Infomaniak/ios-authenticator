@@ -71,6 +71,41 @@ public final class RootViewState: ObservableObject {
     @Published public var state: RootViewType = .preloading
     private var lastKnownAppStatus: AppStatus?
 
+    private var cachedOnboardingSteps: [OnboardingStep]?
+
+    public var onboardingSteps: [OnboardingStep] {
+        if let cached = cachedOnboardingSteps {
+            return cached
+        }
+
+        var steps: [OnboardingStep] = []
+
+        switch state {
+        case .newAccount:
+            steps = OnboardingStep.loginSteps
+        case .addAccount:
+            steps = OnboardingStep.addAccountSteps
+        case .migration:
+            return OnboardingStep.migrationSteps
+        default:
+            return []
+        }
+
+        if !UserDefaults.shared.isAppLockEnabled {
+            steps.append(.biometry)
+        }
+        if !UserDefaults.shared.isNotificationsEnabled {
+            steps.append(.notifications)
+        }
+
+        cachedOnboardingSteps = steps
+        return steps
+    }
+
+    public func resetOnboardingSteps() {
+        cachedOnboardingSteps = nil
+    }
+
     public init() {
         observeAppStatus()
     }
@@ -96,6 +131,7 @@ public final class RootViewState: ObservableObject {
             return
         }
 
+        resetOnboardingSteps()
         onboardingDone.proceed()
     }
 
