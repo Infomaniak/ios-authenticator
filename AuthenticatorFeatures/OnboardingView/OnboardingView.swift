@@ -174,9 +174,7 @@ public struct OnboardingView: View {
     private func enableNotifications(index: Int) {
         Task {
             let center = UNUserNotificationCenter.current()
-            let settings = await center.notificationSettings()
 
-            guard settings.authorizationStatus == .notDetermined else { return }
             guard let isNotificationsEnabled =
                 try? await center.requestAuthorization(options: [.alert, .sound]) else {
                 goToNextStep(index: index)
