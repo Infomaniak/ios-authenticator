@@ -63,9 +63,9 @@ public struct SettingsView: View {
                                 Text(AuthenticatorResourcesStrings.openSettingsButton)
                                     .foregroundStyle(Color.Token.Text.primary)
                                     .font(.Token.bodyBold)
-                                    .frame(maxWidth: .infinity)
                             }
                             .buttonStyle(.ikBordered)
+                            .ikButtonFullWidth(true)
                         }
                         .padding(.vertical, value: .medium)
                         .padding(.horizontal, value: .large)
@@ -106,7 +106,6 @@ public struct SettingsView: View {
             }
             .authListStyle()
             .animation(.smooth, value: isNotificationsEnabled)
-            .animation(.smooth, value: isNotificationsAuthorized)
             .navigationTitle(AuthenticatorResourcesStrings.settingsTitle)
             .sceneLifecycle(willEnterForeground: willEnterForeground)
         }
@@ -121,11 +120,13 @@ public struct SettingsView: View {
     private func checkNotificationAuthorization() async {
         let center = UNUserNotificationCenter.current()
         let settings = await center.notificationSettings()
-        switch settings.authorizationStatus {
-        case .authorized, .provisional, .ephemeral:
-            isNotificationsAuthorized = true
-        default:
-            isNotificationsAuthorized = false
+        withAnimation(.smooth) {
+            switch settings.authorizationStatus {
+            case .authorized, .provisional, .ephemeral:
+                isNotificationsAuthorized = true
+            default:
+                isNotificationsAuthorized = false
+            }
         }
     }
 }
