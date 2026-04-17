@@ -72,6 +72,7 @@ public final class RootViewState: ObservableObject {
     private var lastKnownAppStatus: AppStatus?
 
     private var cachedOnboardingSteps: [OnboardingStep]?
+    public var shouldShowNotificationsStep = false
 
     public var onboardingSteps: [OnboardingStep] {
         if let cached = cachedOnboardingSteps {
@@ -94,7 +95,8 @@ public final class RootViewState: ObservableObject {
         if !UserDefaults.shared.isAppLockEnabled {
             steps.append(.biometry)
         }
-        if !UserDefaults.shared.isNotificationsEnabled {
+
+        if shouldShowNotificationsStep {
             steps.append(.notifications)
         }
 
@@ -108,6 +110,17 @@ public final class RootViewState: ObservableObject {
 
     public init() {
         observeAppStatus()
+        checkNotificationAuthorizationStatus()
+    }
+
+    private func checkNotificationAuthorizationStatus() {
+        Task {
+            let center = UNUserNotificationCenter.current()
+            let settings = await center.notificationSettings()
+
+            shouldShowNotificationsStep = settings.authorizationStatus != .denied &&
+                !UserDefaults.shared.isNotificationsEnabled
+        }
     }
 
     public func startMigration() {

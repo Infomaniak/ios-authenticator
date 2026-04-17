@@ -192,13 +192,13 @@ public struct OnboardingView: View {
         case .success:
             if !UserDefaults.shared.isAppLockEnabled {
                 rootViewState.configureBiometry()
-            } else if !UserDefaults.shared.isNotificationsEnabled {
+            } else if rootViewState.shouldShowNotificationsStep {
                 rootViewState.configureNotifications()
             } else {
                 rootViewState.completeOnboarding()
             }
         case .biometry:
-            if !UserDefaults.shared.isNotificationsEnabled {
+            if rootViewState.shouldShowNotificationsStep {
                 rootViewState.configureNotifications()
             } else {
                 rootViewState.completeOnboarding()

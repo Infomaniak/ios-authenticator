@@ -26,7 +26,6 @@ import InfomaniakConcurrency
 @preconcurrency import InfomaniakCore
 import InfomaniakDI
 import SwiftUI
-import UserNotifications
 
 public struct MainView: View {
     public init() {}
