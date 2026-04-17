@@ -16,11 +16,15 @@
  along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
+import AuthenticatorCore
 import AuthenticatorCoreUI
+import AuthenticatorResources
 import DesignSystem
 import SwiftUI
 
 struct AccountDetailHeaderView: View {
+    @State private var presentedWebViewUrl: URL?
+
     let account: UIAccount
 
     var alertAccount: StatusHeaderView.StatusHeaderType? {
@@ -40,6 +44,18 @@ struct AccountDetailHeaderView: View {
                         .font(.Token.callout)
                         .foregroundStyle(Color.Token.Text.secondary)
                 }
+
+                if account.status == .partiallyProtected {
+                    Button {
+                        presentedWebViewUrl = URLConstants.accountParameters.url
+                    } label: {
+                        Text(AuthenticatorResources.AuthenticatorResourcesStrings.updateButton)
+                            .foregroundStyle(Color.Token.Text.primary)
+                            .font(.Token.bodyBold)
+                    }
+                    .buttonStyle(.ikBordered)
+                    .ikButtonFullWidth(true)
+                }
             }
             .padding(.vertical, value: .medium)
             .padding(.horizontal, value: .large)
@@ -48,6 +64,7 @@ struct AccountDetailHeaderView: View {
                 roundedRectangle
                     .stroke(Color.Token.Surface.tertiary, lineWidth: 1)
             }
+            .autoLoginWebView(protectedURL: $presentedWebViewUrl, userId: Int(account.id))
 
             if let alertAccount {
                 StatusHeaderView(type: alertAccount)
