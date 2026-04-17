@@ -177,8 +177,12 @@ public struct OnboardingView: View {
             let settings = await center.notificationSettings()
 
             guard settings.authorizationStatus == .notDetermined else { return }
-            _ = try? await center.requestAuthorization(options: [.alert, .sound])
-            UserDefaults.shared.isNotificationsEnabled = true
+            guard let isNotificationsEnabled =
+                try? await center.requestAuthorization(options: [.alert, .sound]) else {
+                goToNextStep(index: index)
+                return
+            }
+            UserDefaults.shared.isNotificationsEnabled = isNotificationsEnabled
             goToNextStep(index: index)
         }
     }
