@@ -1,0 +1,389 @@
+/*
+ * Loco ios export: Xcode Strings (legacy)
+ * Project: Authenticator
+ * Locale: nl, Dutch; Flemish
+ * Tagged: ios
+ * Exported by: Baptiste Griva
+ * Exported at: Fri, 17 Apr 2026 10:07:55 +0200
+ */
+
+/* loco:69d6617d0ee9dd38d50c99e2 */
+"accessibilityHintCurrentTheme" = "Huidig thema";
+
+/* loco:695e825042bb2b44f30a2bc3 */
+"accountLoggedOut" = "Account uitgelogd";
+
+/* loco:695e9973dcf32d81c903b462 */
+"accountLossRiskBackupVerificationDescription" = "Zorg ervoor dat een andere twee-stapsverificatiemethode is ingesteld en werkt.";
+
+/* loco:695e994ef4fe9f8bc30c6912 */
+"accountLossRiskLastDoubleAuthDescription" = "Als Authenticator uw laatste twee-stapsverificatiemethode is, kunt u de volgende keer dat u inlogt buitengesloten worden.";
+
+/* loco:695e990e6d0bdf05900b9af2 */
+"accountLossRiskTitle" = "U kunt de toegang tot dit account verliezen";
+
+/* loco:69835aa143cd06068f066b52 */
+"accountNotConnectedWarningTitle" = "Log opnieuw in om uw account te beveiligen.";
+
+/* loco:6971f70a9cc4bfa2380b3456 */
+"accountPartiallyProtectedDescription" = "Werk uw beveiligingsinstellingen bij om uw account te beschermen.";
+
+/* loco:6971f124ef49edbd82004c02 */
+"accountPartiallyProtectedTitle" = "Gedeeltelijk beschermd account";
+
+/* loco:695e9e1d78dc6afe20011632 */
+"accountPasswordTitle" = "Accountwachtwoord";
+
+/* loco:695e810c94da2a73e50c2492 */
+"accountProtected" = "Account beveiligd";
+
+/* loco:695ea133cd8f322c3a017e83 */
+"accountProtectionDisabledWarningDescription" = "Dit apparaat is het enige dat wordt gebruikt om in te loggen op uw Infomaniak account.\n\nWe raden aan om een ander apparaat of verificatiemethode toe te voegen voordat u doorgaat.";
+
+/* loco:695ea0f01f7c9c75e20e56d2 */
+"accountProtectionDisabledWarningTitle" = "Waarschuwing: uw account zal niet langer worden beschermd";
+
+/* loco:695ea44290fff826b9059d62 */
+"accountRemovedAuthenticatorDescription" = "U ontvangt geen inloggoedkeuringen meer op dit apparaat voor account %@";
+
+/* loco:695ea3ef386e597d05019742 */
+"accountRemovedAuthenticatorTitle" = "Account losgekoppeld van Authenticator";
+
+/* loco:6985be69b61359b21b015a52 */
+"accountSecurityLevelContentDescription" = "Accountbeveiligingsniveau";
+
+/* loco:695ea3ad79be1c39d80a6a63 */
+"accountSecurityVerificationDescription" = "Als u deze actie niet heeft uitgevoerd, raden we aan om uw wachtwoord te wijzigen en uw beveiligingsinstellingen te controleren.";
+
+/* loco:695ea3a3bb1684fadb060f95 */
+"accountSecurityVerificationTitle" = "Controleer de beveiliging van uw account";
+
+/* loco:695e819bcd0de60112063f13 */
+"accountSettingsButton" = "Accountinstellingen";
+
+/* loco:697b2cae81f566e0780ea873 */
+"accountTitle" = "Account";
+
+/* loco:697b2c8165f2b518e801e292 */
+"accountsTitle" = "Accounts";
+
+/* loco:695e8a847621dbcb890cd633 */
+"actionRequiredDescription" = "Actie vereist om een van uw accounts te beveiligen.";
+
+/* loco:695e816eb64a80c12b005d63 */
+"activityHistoryButton" = "Activiteitengeschiedenis";
+
+/* loco:69777a4068f29e950204eae4 */
+"addAccountButton" = "Een account toevoegen";
+
+/* loco:69849b6fd84e3f199e0455f2 */
+"addAccountContentDescription" = "Een account toevoegen";
+
+/* loco:69e09cb1f996ab9e220f8e82 */
+"allowDeviceNotificationsDescription" = "Sta meldingen toe in de instellingen van je apparaat om onze beveiligingswaarschuwingen te ontvangen.";
+
+/* loco:695e9a949d8b472044005a42 */
+"appAccessIsSecure" = "Toegang tot Authenticator is veilig";
+
+/* loco:696e4c9fa6eb6338a90e5f72 */
+"appSecurityDescription" = "Bescherm de toegang tot uw app door de telefoonvergrendeling in te schakelen.";
+
+/* loco:695e8b3ae290381a34091ec2 */
+"authorizationCodeTitle" = "Uw autorisatiecode";
+
+/* loco:695e9faf7c7344111d0a3d84 */
+"autoCloseTitle" = "Deze informatie sluit automatisch na 15 seconden.";
+
+/* loco:6984a2f068397af26e00c502 */
+"avatarContentDescription" = "Accountavatar";
+
+/* loco:695e8b5c59029a2c62047642 */
+"callButton" = "Bellen";
+
+/* loco:695e9f9104a9f05d81021c22 */
+"cancelButton" = "Annuleren";
+
+/* loco:695e9cac486dc755330119d2 */
+"changePasswordButton" = "Wachtwoord wijzigen";
+
+/* loco:695e9a051238ecd6bf060e82 */
+"checkMyMethodsButton" = "Mijn methoden controleren";
+
+/* loco:695e99e8456bc82f0204b2e2 */
+"closeButton" = "Sluiten";
+
+/* loco:695e9141f755e6a2a80eb5d2 */
+"closedSupportStatus" = "Gesloten";
+
+/* loco:695e9a4312611437ac0f7042 */
+"confirmActionCompleteButton" = "Ik heb het nodige gedaan";
+
+/* loco:695e9ae505e8ecd7cf0f5b22 */
+"confirmButton" = "Bevestigen";
+
+/* loco:695e9b2a9d8b472044005a44 */
+"confirmLoginNotificationTitle" = "Inloggen bevestigen";
+
+/* loco:695e8b0257b12526a4058922 */
+"contactSupportDescription" = "Neem contact op met onze teams via telefoon of e-mail voor hulp bij het oplossen van uw probleem.";
+
+/* loco:695e8ad99771c5be5c0070b2 */
+"contactSupportTitle" = "Contact opnemen met ondersteuning";
+
+/* loco:695e9f7b3b993ba71c01fbb5 */
+"continueButton" = "Doorgaan";
+
+/* loco:695e9fe4ffea9abfd80a1ae4 */
+"copyPassword" = "Wachtwoord kopiëren";
+
+/* loco:695ea1ebe68cb2e4f30e8532 */
+"dataManagementTitle" = "Gegevensbeheer";
+
+/* loco:695e92767f6aec3380096f72 */
+"daysSupportAvailability" = "%1$d d / %2$d";
+
+/* loco:695ea2cfbb1684fadb060f92 */
+"deletePreventionDescription" = "Het verwijderen van de app kan de beveiliging van uw account in gevaar brengen.";
+
+/* loco:695ea2b7776ee93221014822 */
+"deletePreventionTitle" = "Hulp nodig?";
+
+/* loco:695e9aff3c59258bef0431a3 */
+"denyButton" = "Weigeren";
+
+/* loco:695e978a96d09ec429013162 */
+"descriptionPlaceholder" = "Beschrijving";
+
+/* loco:695e9bdbee3a7d21340527d2 */
+"deviceLoginTitle" = "Apparaat";
+
+/* loco:695ea16b39ee5b4bb80bd342 */
+"disconnectAccountDescription" = "Uw account zal niet langer worden beschermd door twee-stapsverificatie en zal kwetsbaar worden voor ongeautoriseerde toegang.";
+
+/* loco:695ea05c8d0943c57704f5d3 */
+"disconnectAccountOnThisDeviceDescription" = "U kunt geen inloggen meer goedkeuren op dit apparaat met Authenticator.";
+
+/* loco:695ea0448d0943c57704f5d2 */
+"disconnectAccountTitle" = "Dit account loskoppelen";
+
+/* loco:695ea01fcd8f322c3a017e82 */
+"disconnectAccountWarningDescription" = "Zorg ervoor dat uw verificatie- en herstelmethoden nog steeds up-to-date zijn om de toegang tot uw account niet te verliezen.";
+
+/* loco:695ea0112b033801a6078ff3 */
+"disconnectAccountWarningTitle" = "Het loskoppelen van dit account kan de beveiliging ervan verzwakken";
+
+/* loco:695e81d0dcf344a547026d33 */
+"disconnectButton" = "Uitloggen";
+
+/* loco:695ea0798d0943c57704f5d4 */
+"disconnectSuccess" = "Account losgekoppeld";
+
+/* loco:695e7d009913b5c3930ed7a2 */
+"doneButton" = "Gereed";
+
+/* loco:695ea28bf0e7cc81470dd482 */
+"emailPlaceholder" = "E-mail";
+
+/* loco:695e76fb8f64df326a00c934 */
+"enableButton" = "Inschakelen";
+
+/* loco:695ea25e8ea9fc514a04e622 */
+"enableNotifications" = "Meldingen inschakelen";
+
+/* loco:695e8322b85b83d8780f97f2 */
+"errorLoginFailed" = "Inloggen op account mislukt. Probeer het opnieuw of neem contact op met ondersteuning. (foutcode: %d)";
+
+/* loco:695e9d72bc601c317401c9d4 */
+"errorOccuredTitle" = "Er is een fout opgetreden";
+
+/* loco:695e95bc3614499244057df2 */
+"estimatedWait" = "Geschatte wachttijd: %@";
+
+/* loco:695ea205e68cb2e4f30e8534 */
+"feedbackTitle" = "Feedback";
+
+/* loco:695e7a578a61f47e160981c2 */
+"laterButton" = "Later";
+
+/* loco:695e9bbb6734592dc60d0973 */
+"locationLoginTitle" = "Locatie";
+
+/* loco:695e87462daa8c005402c422 */
+"logInButton" = "Inloggen";
+
+/* loco:69ddda6163d7c97a9d075332 */
+"logInDescription" = "Voer je wachtwoord in.";
+
+/* loco:69ddda3d0c61e0063d045962 */
+"logInTitle" = "Inloggen";
+
+/* loco:695e9b60eb4a5e9ff3045a82 */
+"loginAttemptQuery" = "Probeert u in te loggen?";
+
+/* loco:695e9b86eb4a5e9ff3045a84 */
+"loginAuthorizationWarning" = "Het bevestigen van dit inloggen geeft dit apparaat toegang tot uw Infomaniak account.";
+
+/* loco:695e9c9194a0d83c6a006812 */
+"loginDeniedSuccessDescription" = "U heeft een inlogpoging geweigerd. Om uw account te beveiligen, wijzigt u uw wachtwoord.\n\nAls u dit verzoek heeft geïnitieerd, probeer dan opnieuw in te loggen.";
+
+/* loco:695e9c5e8e68db1c11095922 */
+"loginDeniedSuccessTitle" = "Inloggen succesvol geweigerd";
+
+/* loco:695e9d518d775ee8030366c2 */
+"loginRequestAlreadyProcessedDescription" = "Bent u niet degene die dit heeft gedaan? Controleer uw actieve apparaten en log uit van apparaten die u niet herkent.";
+
+/* loco:695e9d299fefb63d66099183 */
+"loginRequestAlreadyProcessedTitle" = "Dit verzoek is al verwerkt";
+
+/* loco:695e9ce7fb4842ffed0c4603 */
+"loginRequestExpiredTitle" = "Dit inlogverzoek is verlopen";
+
+/* loco:695e9dbf2e191d3ca00bfb15 */
+"noInternetTitle" = "Geen internetverbinding";
+
+/* loco:695ea387b5eb46654b038d54 */
+"notMeButton" = "Ik was het niet";
+
+/* loco:695ea2390a6bee6dc70a2f02 */
+"notificationsDescription" = "Schakel meldingen in om beveiligingsinformatie over uw Infomaniak accounts te ontvangen.";
+
+/* loco:695ea1d70c7a5aa3f90bdbe2 */
+"notificationsTitle" = "Meldingen";
+
+/* loco:695e75b2da2ea35ca2034864 */
+"onBoardingFaceIdDescription" = "Het inschakelen van Face ID beveiligt de toegang tot de app.";
+
+/* loco:695e6cf1c7935dac5607ef72 */
+"onBoardingFaceIdTitle" = "Wilt u Face ID inschakelen?";
+
+/* loco:695e66d7da70ee75420a0566 */
+"onBoardingLoginDescription" = "Log in om uw verbindingen veilig goed te keuren en uw toegang te beveiligen.";
+
+/* loco:695e667cda70ee75420a0562 */
+"onBoardingLoginTitle" = "Beveilig uw Infomaniak account met Authenticator";
+
+/* loco:695e8025b83bf418520281fc */
+"onBoardingMigrationDescription" = "Geniet van een nieuwe, gemoderniseerde interface, ontworpen voor uw veiligheid.";
+
+/* loco:695e7fc7532760eb490d7e13 */
+"onBoardingMigrationTitle" = "kAuth krijgt een nieuwe look en wordt Authenticator";
+
+/* loco:695e8078e4b913be7f089fa4 */
+"onBoardingSecuringAccount" = "Account wordt beveiligd…";
+
+/* loco:695e7c8684378769c70b7733 */
+"onBoardingSuccessDescription" = "U kunt nu uw inloggen valideren met Authenticator.";
+
+/* loco:695e7c6a812646fa430f8222 */
+"onBoardingSuccessTitle" = "Alles is klaar";
+
+/* loco:69de5110c45507362d0de3a2 */
+"onboardingNotificationsDescription" = "Schakel meldingen in om een waarschuwing te ontvangen wanneer er een inlogpoging wordt gedaan.";
+
+/* loco:69de50181f24c8beb40f6304 */
+"onboardingNotificationsTitle" = "Bevestig je aanmeldingen met één klik";
+
+/* loco:69e09c0911d4f5d91e0dcac2 */
+"openSettingsButton" = "Instellingen openen";
+
+/* loco:695e91208384843ef3052bb2 */
+"openSupportStatus" = "Open";
+
+/* loco:695e9ea5ffea9abfd80a1ae2 */
+"passwordAskingWarning" = "Infomaniak zal nooit onverwacht om uw wachtwoord vragen.\n\nZorg ervoor dat u deze actie heeft geïnitieerd voordat u doorgaat.";
+
+/* loco:695ea35f801b8bcab20b3bd2 */
+"passwordChangedDescription" = "Het inlogwachtwoord voor uw Infomaniak account %@ is bijgewerkt.";
+
+/* loco:695ea3dabb1684fadb060f96 */
+"passwordChangedNotification" = "Inlogwachtwoord gewijzigd";
+
+/* loco:695ea34f347ac04921054554 */
+"passwordChangedTitle" = "Inlogwachtwoord gewijzigd";
+
+/* loco:69df9e0ffa671edfb90e2c42 */
+"passwordForgottenButton" = "Wachtwoord vergeten?";
+
+/* loco:69d6668bb7a4e72cbe0eb172 */
+"passwordLabel" = "Wachtwoord";
+
+/* loco:695e8135925530d3a102c763 */
+"refreshPendingLoginsButton" = "In afwachting zijnde inloggen vernieuwen";
+
+/* loco:695e999acdb8bbf8ca077d52 */
+"removeAccountDescription" = "U kunt uw inloggen naar dit account niet langer verifiëren met Authenticator.";
+
+/* loco:695e99d414279d1eea090442 */
+"removeAccountSuccess" = "Account verwijderd";
+
+/* loco:695e878a4ff7a8c5a8050c53 */
+"removeAccountTitle" = "Account verwijderen";
+
+/* loco:695e99b261ee1c8c900db0e2 */
+"removeButton" = "Verwijderen";
+
+/* loco:695e7d2aaf61b386540bf272 */
+"settingsTitle" = "Instellingen";
+
+/* loco:695e8157925530d3a102c765 */
+"showAccountPasswordButton" = "Accountwachtwoord weergeven";
+
+/* loco:695ea2fd347ac04921054552 */
+"startButton" = "Starten";
+
+/* loco:695e97760f03fede890fbc42 */
+"subjectPlaceholder" = "Onderwerp";
+
+/* loco:697a3be9708976638d060702 */
+"submitMyTicketButton" = "Mijn ticket indienen";
+
+/* loco:695e973fa8c67b89040bbbc2 */
+"submitTicketDescription" = "Om u effectief te kunnen helpen, verstrekt u alstublieft zoveel mogelijk details over uw probleem.";
+
+/* loco:695e8b7f9264ac7b900409d2 */
+"submitTicketTitle" = "Een ticket indienen";
+
+/* loco:695e97c480cab9ddd40df272 */
+"supportResponseDelay" = "We reageren binnen de komende 24 kantooruren.";
+
+/* loco:6984aaf72ee9e539cc034522 */
+"themeDark" = "Donker";
+
+/* loco:6984aaea096886f05104ebd2 */
+"themeLight" = "Licht";
+
+/* loco:6984ab07a677e4296f00a552 */
+"themeSystem" = "Systeem";
+
+/* loco:6984a5b068e4c318150d2475 */
+"themeTitle" = "Thema";
+
+/* loco:695e981795a53b5f09055eb2 */
+"ticketSentSuccessDescription" = "We doen ons best om ervoor te zorgen dat een agent zo snel mogelijk op u reageert.";
+
+/* loco:695e97f63a155d22d007d2f4 */
+"ticketSentSuccessTitle" = "Uw ticket is verzonden naar onze teams!";
+
+/* loco:695e9548833bf5c3c1037d42 */
+"timeSupportAvailability" = "%1$@ tot %2$@";
+
+/* loco:695ea3342372447ed50ee242 */
+"understandConfirmButton" = "Ik begrijp het";
+
+/* loco:695ea1be1f7c9c75e20e56d4 */
+"unlockingWithFaceId" = "Ontgrendelen met Face ID";
+
+/* loco:69df7ad0d80ed14ab8080df2 */
+"updateButton" = "Bijwerken";
+
+/* loco:69d8a25da2ee7be81d08e504 */
+"urlUserReport" = "https://feedback.userreport.com/fa3ce592-86a2-4715-8536-5bf60234f52f/";
+
+/* loco:695ea02fac23a6f91c072a74 */
+"verifySecurityButton" = "Mijn beveiliging controleren";
+
+/* loco:695e8b943eee444fde041612 */
+"viewGuidesButton" = "Handleidingen bekijken";
+
+/* loco:695e9ba3ae7a65d0a10aba73 */
+"whenLoginTitle" = "Wanneer";

@@ -1,0 +1,389 @@
+/*
+ * Loco ios export: Xcode Strings (legacy)
+ * Project: Authenticator
+ * Locale: fi, Finnish
+ * Tagged: ios
+ * Exported by: Baptiste Griva
+ * Exported at: Fri, 17 Apr 2026 10:07:55 +0200
+ */
+
+/* loco:69d6617d0ee9dd38d50c99e2 */
+"accessibilityHintCurrentTheme" = "Nykyinen teema";
+
+/* loco:695e825042bb2b44f30a2bc3 */
+"accountLoggedOut" = "Tililtä kirjauduttu ulos";
+
+/* loco:695e9973dcf32d81c903b462 */
+"accountLossRiskBackupVerificationDescription" = "Varmista, että toinen kaksivaiheisen todennuksen menetelmä on määritetty ja toimii.";
+
+/* loco:695e994ef4fe9f8bc30c6912 */
+"accountLossRiskLastDoubleAuthDescription" = "Jos Authenticator on viimeinen kaksivaiheisen todennuksen menetelmäsi, saatat jäädä ulos seuraavalla kirjautumiskerralla.";
+
+/* loco:695e990e6d0bdf05900b9af2 */
+"accountLossRiskTitle" = "Saatat menettää pääsyn tähän tiliin";
+
+/* loco:69835aa143cd06068f066b52 */
+"accountNotConnectedWarningTitle" = "Kirjaudu uudelleen suojataksesi tilisi.";
+
+/* loco:6971f70a9cc4bfa2380b3456 */
+"accountPartiallyProtectedDescription" = "Päivitä turvallisuusasetuksesi suojataksesi tilisi.";
+
+/* loco:6971f124ef49edbd82004c02 */
+"accountPartiallyProtectedTitle" = "Osittain suojattu tili";
+
+/* loco:695e9e1d78dc6afe20011632 */
+"accountPasswordTitle" = "Tilin salasana";
+
+/* loco:695e810c94da2a73e50c2492 */
+"accountProtected" = "Tili suojattu";
+
+/* loco:695ea133cd8f322c3a017e83 */
+"accountProtectionDisabledWarningDescription" = "Tämä laite on ainoa, jota käytetään Infomaniak-tilisi kirjautumisten vahvistamiseen.\n\nSuosittelemme lisäämään toisen laitteen tai vahvistusmenetelmän ennen jatkamista.";
+
+/* loco:695ea0f01f7c9c75e20e56d2 */
+"accountProtectionDisabledWarningTitle" = "Varoitus: tilisi ei ole enää suojattu";
+
+/* loco:695ea44290fff826b9059d62 */
+"accountRemovedAuthenticatorDescription" = "Et enää vastaanota kirjautumishyväksyntöjä tällä laitteella tilille %@";
+
+/* loco:695ea3ef386e597d05019742 */
+"accountRemovedAuthenticatorTitle" = "Tili irrotettu Authenticatorista";
+
+/* loco:6985be69b61359b21b015a52 */
+"accountSecurityLevelContentDescription" = "Tilin turvallisuustaso";
+
+/* loco:695ea3ad79be1c39d80a6a63 */
+"accountSecurityVerificationDescription" = "Jos et suorittanut tätä toimintoa, suosittelemme salasanasi vaihtamista ja turvallisuusasetustesi tarkistamista.";
+
+/* loco:695ea3a3bb1684fadb060f95 */
+"accountSecurityVerificationTitle" = "Vahvista tilisi turvallisuus";
+
+/* loco:695e819bcd0de60112063f13 */
+"accountSettingsButton" = "Tilin asetukset";
+
+/* loco:697b2cae81f566e0780ea873 */
+"accountTitle" = "Tili";
+
+/* loco:697b2c8165f2b518e801e292 */
+"accountsTitle" = "Tilit";
+
+/* loco:695e8a847621dbcb890cd633 */
+"actionRequiredDescription" = "Toimenpide vaaditaan yhden tilisi suojaamiseksi.";
+
+/* loco:695e816eb64a80c12b005d63 */
+"activityHistoryButton" = "Toimintahistoria";
+
+/* loco:69777a4068f29e950204eae4 */
+"addAccountButton" = "Lisää tili";
+
+/* loco:69849b6fd84e3f199e0455f2 */
+"addAccountContentDescription" = "Lisää tili";
+
+/* loco:69e09cb1f996ab9e220f8e82 */
+"allowDeviceNotificationsDescription" = "Salli ilmoitukset laitteesi asetuksissa saadaksesi tietoturvahälytyksemme.";
+
+/* loco:695e9a949d8b472044005a42 */
+"appAccessIsSecure" = "Pääsy Authenticatoriin on suojattu";
+
+/* loco:696e4c9fa6eb6338a90e5f72 */
+"appSecurityDescription" = "Suojaa sovelluksen käyttöä ottamalla puhelimen lukitus käyttöön.";
+
+/* loco:695e8b3ae290381a34091ec2 */
+"authorizationCodeTitle" = "Vahvistuskoodisi";
+
+/* loco:695e9faf7c7344111d0a3d84 */
+"autoCloseTitle" = "Tämä tieto sulkeutuu automaattisesti 15 sekunnin kuluttua.";
+
+/* loco:6984a2f068397af26e00c502 */
+"avatarContentDescription" = "Tilin avatar";
+
+/* loco:695e8b5c59029a2c62047642 */
+"callButton" = "Soita";
+
+/* loco:695e9f9104a9f05d81021c22 */
+"cancelButton" = "Peruuta";
+
+/* loco:695e9cac486dc755330119d2 */
+"changePasswordButton" = "Vaihda salasana";
+
+/* loco:695e9a051238ecd6bf060e82 */
+"checkMyMethodsButton" = "Tarkista menetelmäni";
+
+/* loco:695e99e8456bc82f0204b2e2 */
+"closeButton" = "Sulje";
+
+/* loco:695e9141f755e6a2a80eb5d2 */
+"closedSupportStatus" = "Suljettu";
+
+/* loco:695e9a4312611437ac0f7042 */
+"confirmActionCompleteButton" = "Olen tehnyt tarvittavan";
+
+/* loco:695e9ae505e8ecd7cf0f5b22 */
+"confirmButton" = "Vahvista";
+
+/* loco:695e9b2a9d8b472044005a44 */
+"confirmLoginNotificationTitle" = "Vahvista kirjautuminen";
+
+/* loco:695e8b0257b12526a4058922 */
+"contactSupportDescription" = "Ota yhteyttä tiimeihimme puhelimitse tai sähköpostitse ongelman ratkaisemiseksi.";
+
+/* loco:695e8ad99771c5be5c0070b2 */
+"contactSupportTitle" = "Ota yhteyttä tukeen";
+
+/* loco:695e9f7b3b993ba71c01fbb5 */
+"continueButton" = "Jatka";
+
+/* loco:695e9fe4ffea9abfd80a1ae4 */
+"copyPassword" = "Kopioi salasana";
+
+/* loco:695ea1ebe68cb2e4f30e8532 */
+"dataManagementTitle" = "Tietojen hallinta";
+
+/* loco:695e92767f6aec3380096f72 */
+"daysSupportAvailability" = "%1$d pv / %2$d";
+
+/* loco:695ea2cfbb1684fadb060f92 */
+"deletePreventionDescription" = "Sovelluksen poistaminen voi vaarantaa tilisi turvallisuuden.";
+
+/* loco:695ea2b7776ee93221014822 */
+"deletePreventionTitle" = "Tarvitsetko apua?";
+
+/* loco:695e9aff3c59258bef0431a3 */
+"denyButton" = "Hylkää";
+
+/* loco:695e978a96d09ec429013162 */
+"descriptionPlaceholder" = "Kuvaus";
+
+/* loco:695e9bdbee3a7d21340527d2 */
+"deviceLoginTitle" = "Laite";
+
+/* loco:695ea16b39ee5b4bb80bd342 */
+"disconnectAccountDescription" = "Tilisi ei ole enää suojattu kaksivaiheisella todennuksella ja se on altis luvattomalle käytölle.";
+
+/* loco:695ea05c8d0943c57704f5d3 */
+"disconnectAccountOnThisDeviceDescription" = "Et voi enää hyväksyä kirjautumisia tällä laitteella Authenticatorilla.";
+
+/* loco:695ea0448d0943c57704f5d2 */
+"disconnectAccountTitle" = "Katkaise tämän tilin yhteys";
+
+/* loco:695ea01fcd8f322c3a017e82 */
+"disconnectAccountWarningDescription" = "Varmista että vahvistus- ja palautusmenetelmäsi ovat edelleen ajan tasalla, jotta et menetä pääsyä tiliisi.";
+
+/* loco:695ea0112b033801a6078ff3 */
+"disconnectAccountWarningTitle" = "Tämän tilin yhteyden katkaiseminen voi heikentää sen turvallisuutta";
+
+/* loco:695e81d0dcf344a547026d33 */
+"disconnectButton" = "Kirjaudu ulos";
+
+/* loco:695ea0798d0943c57704f5d4 */
+"disconnectSuccess" = "Tilin yhteys katkaistu";
+
+/* loco:695e7d009913b5c3930ed7a2 */
+"doneButton" = "Valmis";
+
+/* loco:695ea28bf0e7cc81470dd482 */
+"emailPlaceholder" = "Sähköposti";
+
+/* loco:695e76fb8f64df326a00c934 */
+"enableButton" = "Ota käyttöön";
+
+/* loco:695ea25e8ea9fc514a04e622 */
+"enableNotifications" = "Ota ilmoitukset käyttöön";
+
+/* loco:695e8322b85b83d8780f97f2 */
+"errorLoginFailed" = "Tilille kirjautuminen epäonnistui. Yritä uudelleen tai ota yhteyttä tukeen. (virhekoodi: %d)";
+
+/* loco:695e9d72bc601c317401c9d4 */
+"errorOccuredTitle" = "Tapahtui virhe";
+
+/* loco:695e95bc3614499244057df2 */
+"estimatedWait" = "Arvioitu odotusaika: %@";
+
+/* loco:695ea205e68cb2e4f30e8534 */
+"feedbackTitle" = "Palaute";
+
+/* loco:695e7a578a61f47e160981c2 */
+"laterButton" = "Myöhemmin";
+
+/* loco:695e9bbb6734592dc60d0973 */
+"locationLoginTitle" = "Sijainti";
+
+/* loco:695e87462daa8c005402c422 */
+"logInButton" = "Kirjaudu sisään";
+
+/* loco:69ddda6163d7c97a9d075332 */
+"logInDescription" = "Anna salasanasi.";
+
+/* loco:69ddda3d0c61e0063d045962 */
+"logInTitle" = "Kirjaudu sisään";
+
+/* loco:695e9b60eb4a5e9ff3045a82 */
+"loginAttemptQuery" = "Yritätkö kirjautua?";
+
+/* loco:695e9b86eb4a5e9ff3045a84 */
+"loginAuthorizationWarning" = "Tämän kirjautumisen vahvistaminen antaa tälle laitteelle pääsyn Infomaniak-tiliisi.";
+
+/* loco:695e9c9194a0d83c6a006812 */
+"loginDeniedSuccessDescription" = "Hylkäsit kirjautumisyrityksen. Suojataksesi tilisi, vaihda salasanasi.\n\nJos aloitit tämän pyynnön, yritä kirjautua uudelleen.";
+
+/* loco:695e9c5e8e68db1c11095922 */
+"loginDeniedSuccessTitle" = "Kirjautuminen hylätty onnistuneesti";
+
+/* loco:695e9d518d775ee8030366c2 */
+"loginRequestAlreadyProcessedDescription" = "Et tehnyt tätä? Tarkista aktiiviset laitteesi ja kirjaudu ulos niistä, joita et tunnista.";
+
+/* loco:695e9d299fefb63d66099183 */
+"loginRequestAlreadyProcessedTitle" = "Tämä pyyntö on jo käsitelty";
+
+/* loco:695e9ce7fb4842ffed0c4603 */
+"loginRequestExpiredTitle" = "Tämä kirjautumispyyntö on vanhentunut";
+
+/* loco:695e9dbf2e191d3ca00bfb15 */
+"noInternetTitle" = "Ei Internet-yhteyttä";
+
+/* loco:695ea387b5eb46654b038d54 */
+"notMeButton" = "En ollut minä";
+
+/* loco:695ea2390a6bee6dc70a2f02 */
+"notificationsDescription" = "Ota ilmoitukset käyttöön saadaksesi turvallisuustietoja Infomaniak-tileistäsi.";
+
+/* loco:695ea1d70c7a5aa3f90bdbe2 */
+"notificationsTitle" = "Ilmoitukset";
+
+/* loco:695e75b2da2ea35ca2034864 */
+"onBoardingFaceIdDescription" = "Face ID:n käyttöönotto suojaa sovelluksen käyttöä.";
+
+/* loco:695e6cf1c7935dac5607ef72 */
+"onBoardingFaceIdTitle" = "Haluatko ottaa Face ID:n käyttöön?";
+
+/* loco:695e66d7da70ee75420a0566 */
+"onBoardingLoginDescription" = "Kirjaudu sisään hyväksyäksesi yhteydet turvallisesti ja suojataksesi pääsysi.";
+
+/* loco:695e667cda70ee75420a0562 */
+"onBoardingLoginTitle" = "Suojaa Infomaniak-tilisi Authenticatorilla";
+
+/* loco:695e8025b83bf418520281fc */
+"onBoardingMigrationDescription" = "Nauti uudesta modernisoidusta käyttöliittymästä, joka on suunniteltu turvallisuuttasi varten.";
+
+/* loco:695e7fc7532760eb490d7e13 */
+"onBoardingMigrationTitle" = "kAuth saa uuden ilmeen ja muuttuu Authenticatoriksi";
+
+/* loco:695e8078e4b913be7f089fa4 */
+"onBoardingSecuringAccount" = "Turvataan tiliä…";
+
+/* loco:695e7c8684378769c70b7733 */
+"onBoardingSuccessDescription" = "Voit nyt vahvistaa kirjautumisesi Authenticatorilla.";
+
+/* loco:695e7c6a812646fa430f8222 */
+"onBoardingSuccessTitle" = "Kaikki on valmista";
+
+/* loco:69de5110c45507362d0de3a2 */
+"onboardingNotificationsDescription" = "Ota ilmoitukset käyttöön saadaksesi hälytyksen aina, kun kirjautumisyritys tehdään.";
+
+/* loco:69de50181f24c8beb40f6304 */
+"onboardingNotificationsTitle" = "Vahvista kirjautumisesi yhdellä napautuksella";
+
+/* loco:69e09c0911d4f5d91e0dcac2 */
+"openSettingsButton" = "Avaa asetukset";
+
+/* loco:695e91208384843ef3052bb2 */
+"openSupportStatus" = "Avoinna";
+
+/* loco:695e9ea5ffea9abfd80a1ae2 */
+"passwordAskingWarning" = "Infomaniak ei koskaan pyydä salasanaasi odottamatta.\n\nVarmista, että aloitit tämän toiminnon ennen jatkamista.";
+
+/* loco:695ea35f801b8bcab20b3bd2 */
+"passwordChangedDescription" = "Infomaniak-tilisi %@ kirjautumissalasana on päivitetty.";
+
+/* loco:695ea3dabb1684fadb060f96 */
+"passwordChangedNotification" = "Kirjautumissalasana vaihdettu";
+
+/* loco:695ea34f347ac04921054554 */
+"passwordChangedTitle" = "Kirjautumissalasana vaihdettu";
+
+/* loco:69df9e0ffa671edfb90e2c42 */
+"passwordForgottenButton" = "Unohditko salasanan?";
+
+/* loco:69d6668bb7a4e72cbe0eb172 */
+"passwordLabel" = "Salasana";
+
+/* loco:695e8135925530d3a102c763 */
+"refreshPendingLoginsButton" = "Päivitä odottavat kirjautumiset";
+
+/* loco:695e999acdb8bbf8ca077d52 */
+"removeAccountDescription" = "Et voi enää vahvistaa kirjautumistasi tälle tilille Authenticatorilla.";
+
+/* loco:695e99d414279d1eea090442 */
+"removeAccountSuccess" = "Tili poistettu";
+
+/* loco:695e878a4ff7a8c5a8050c53 */
+"removeAccountTitle" = "Poista tili";
+
+/* loco:695e99b261ee1c8c900db0e2 */
+"removeButton" = "Poista";
+
+/* loco:695e7d2aaf61b386540bf272 */
+"settingsTitle" = "Asetukset";
+
+/* loco:695e8157925530d3a102c765 */
+"showAccountPasswordButton" = "Näytä tilin salasana";
+
+/* loco:695ea2fd347ac04921054552 */
+"startButton" = "Aloita";
+
+/* loco:695e97760f03fede890fbc42 */
+"subjectPlaceholder" = "Aihe";
+
+/* loco:697a3be9708976638d060702 */
+"submitMyTicketButton" = "Lähetä tukipyyntöni";
+
+/* loco:695e973fa8c67b89040bbbc2 */
+"submitTicketDescription" = "Auttaaksemme sinua tehokkaasti, toimita mahdollisimman monta yksityiskohtaa ongelmastasi.";
+
+/* loco:695e8b7f9264ac7b900409d2 */
+"submitTicketTitle" = "Lähetä tukipyyntö";
+
+/* loco:695e97c480cab9ddd40df272 */
+"supportResponseDelay" = "Vastaamme seuraavien 24 työtunnin sisällä.";
+
+/* loco:6984aaf72ee9e539cc034522 */
+"themeDark" = "Tumma";
+
+/* loco:6984aaea096886f05104ebd2 */
+"themeLight" = "Vaalea";
+
+/* loco:6984ab07a677e4296f00a552 */
+"themeSystem" = "Järjestelmä";
+
+/* loco:6984a5b068e4c318150d2475 */
+"themeTitle" = "Teema";
+
+/* loco:695e981795a53b5f09055eb2 */
+"ticketSentSuccessDescription" = "Teemme parhaamme varmistaaksemme, että agentti vastaa sinulle mahdollisimman pian.";
+
+/* loco:695e97f63a155d22d007d2f4 */
+"ticketSentSuccessTitle" = "Tukipyyntösi on lähetetty tiimeillemme!";
+
+/* loco:695e9548833bf5c3c1037d42 */
+"timeSupportAvailability" = "%1$@ - %2$@";
+
+/* loco:695ea3342372447ed50ee242 */
+"understandConfirmButton" = "Ymmärsin";
+
+/* loco:695ea1be1f7c9c75e20e56d4 */
+"unlockingWithFaceId" = "Avaa Face ID:llä";
+
+/* loco:69df7ad0d80ed14ab8080df2 */
+"updateButton" = "Päivitä";
+
+/* loco:69d8a25da2ee7be81d08e504 */
+"urlUserReport" = "https://feedback.userreport.com/fa3ce592-86a2-4715-8536-5bf60234f52f/";
+
+/* loco:695ea02fac23a6f91c072a74 */
+"verifySecurityButton" = "Vahvista turvallisuuteni";
+
+/* loco:695e8b943eee444fde041612 */
+"viewGuidesButton" = "Selaa oppaita";
+
+/* loco:695e9ba3ae7a65d0a10aba73 */
+"whenLoginTitle" = "Milloin";

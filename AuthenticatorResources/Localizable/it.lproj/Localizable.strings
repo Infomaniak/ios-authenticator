@@ -4,7 +4,7 @@
  * Locale: it, Italian
  * Tagged: ios
  * Exported by: Baptiste Griva
- * Exported at: Wed, 15 Apr 2026 13:49:42 +0200
+ * Exported at: Fri, 17 Apr 2026 10:07:55 +0200
  */
 
 /* loco:69d6617d0ee9dd38d50c99e2 */
@@ -78,6 +78,9 @@
 
 /* loco:69849b6fd84e3f199e0455f2 */
 "addAccountContentDescription" = "Aggiungere un account";
+
+/* loco:69e09cb1f996ab9e220f8e82 */
+"allowDeviceNotificationsDescription" = "Attiva le notifiche nelle impostazioni del tuo dispositivo per ricevere i nostri avvisi di sicurezza.";
 
 /* loco:695e9a949d8b472044005a42 */
 "appAccessIsSecure" = "L’accesso ad Authenticator è sicuro";
@@ -190,9 +193,6 @@
 /* loco:695e8322b85b83d8780f97f2 */
 "errorLoginFailed" = "Accesso all’account fallito. Riprova o contatta l’assistenza. (codice errore: %d)";
 
-/* loco:695e9d93cae4b614fd0d5a23 */
-"errorOccuredDescription" = "Impossibile completare l’operazione. Riprova.";
-
 /* loco:695e9d72bc601c317401c9d4 */
 "errorOccuredTitle" = "Si è verificato un errore";
 
@@ -210,6 +210,12 @@
 
 /* loco:695e87462daa8c005402c422 */
 "logInButton" = "Accedi";
+
+/* loco:69ddda6163d7c97a9d075332 */
+"logInDescription" = "Inserire la password.";
+
+/* loco:69ddda3d0c61e0063d045962 */
+"logInTitle" = "Accedi";
 
 /* loco:695e9b60eb4a5e9ff3045a82 */
 "loginAttemptQuery" = "Stai cercando di accedere?";
@@ -229,14 +235,8 @@
 /* loco:695e9d299fefb63d66099183 */
 "loginRequestAlreadyProcessedTitle" = "Questa richiesta è già stata elaborata";
 
-/* loco:695e9d0626db6838400a8f43 */
-"loginRequestExpiredDescription" = "Il tempo di verifica è scaduto. Riprova.";
-
 /* loco:695e9ce7fb4842ffed0c4603 */
 "loginRequestExpiredTitle" = "Questa richiesta di accesso è scaduta";
-
-/* loco:695e9ddb3b993ba71c01fbb2 */
-"noInternetDescription" = "Impossibile completare l’operazione. Controlla le impostazioni e riprova.";
 
 /* loco:695e9dbf2e191d3ca00bfb15 */
 "noInternetTitle" = "Nessuna connessione Internet";
@@ -277,6 +277,15 @@
 /* loco:695e7c6a812646fa430f8222 */
 "onBoardingSuccessTitle" = "Tutto è pronto";
 
+/* loco:69de5110c45507362d0de3a2 */
+"onboardingNotificationsDescription" = "Attivare le notifiche per ricevere un avviso ogni volta che viene effettuato un tentativo di accesso.";
+
+/* loco:69de50181f24c8beb40f6304 */
+"onboardingNotificationsTitle" = "Conferma le tue connessioni con un solo clic";
+
+/* loco:69e09c0911d4f5d91e0dcac2 */
+"openSettingsButton" = "Apri le impostazioni";
+
 /* loco:695e91208384843ef3052bb2 */
 "openSupportStatus" = "Aperto";
 
@@ -291,6 +300,12 @@
 
 /* loco:695ea34f347ac04921054554 */
 "passwordChangedTitle" = "Password di accesso modificata";
+
+/* loco:69df9e0ffa671edfb90e2c42 */
+"passwordForgottenButton" = "Hai dimenticato la password?";
+
+/* loco:69d6668bb7a4e72cbe0eb172 */
+"passwordLabel" = "Password";
 
 /* loco:695e8135925530d3a102c763 */
 "refreshPendingLoginsButton" = "Aggiorna accessi in sospeso";

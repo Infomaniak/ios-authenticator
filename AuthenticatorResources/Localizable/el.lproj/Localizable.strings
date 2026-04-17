@@ -1,0 +1,389 @@
+/*
+ * Loco ios export: Xcode Strings (legacy)
+ * Project: Authenticator
+ * Locale: el, Greek
+ * Tagged: ios
+ * Exported by: Baptiste Griva
+ * Exported at: Fri, 17 Apr 2026 10:07:55 +0200
+ */
+
+/* loco:69d6617d0ee9dd38d50c99e2 */
+"accessibilityHintCurrentTheme" = "Τρέχον θέμα";
+
+/* loco:695e825042bb2b44f30a2bc3 */
+"accountLoggedOut" = "Ο λογαριασμός αποσυνδέθηκε";
+
+/* loco:695e9973dcf32d81c903b462 */
+"accountLossRiskBackupVerificationDescription" = "Βεβαιωθείτε ότι έχει ρυθμιστεί και λειτουργεί μια άλλη μέθοδος επαλήθευσης σε δύο βήματα.";
+
+/* loco:695e994ef4fe9f8bc30c6912 */
+"accountLossRiskLastDoubleAuthDescription" = "Αν το Authenticator είναι η τελευταία σας μέθοδος επαλήθευσης σε δύο βήματα, μπορεί να κλειδωθείτε την επόμενη φορά που θα συνδεθείτε.";
+
+/* loco:695e990e6d0bdf05900b9af2 */
+"accountLossRiskTitle" = "Μπορεί να χάσετε την πρόσβαση σε αυτόν τον λογαριασμό";
+
+/* loco:69835aa143cd06068f066b52 */
+"accountNotConnectedWarningTitle" = "Συνδεθείτε ξανά για να ασφαλίσετε τον λογαριασμό σας.";
+
+/* loco:6971f70a9cc4bfa2380b3456 */
+"accountPartiallyProtectedDescription" = "Ενημερώστε τις ρυθμίσεις ασφαλείας για να προστατεύσετε τον λογαριασμό σας.";
+
+/* loco:6971f124ef49edbd82004c02 */
+"accountPartiallyProtectedTitle" = "Μερικώς προστατευμένος λογαριασμός";
+
+/* loco:695e9e1d78dc6afe20011632 */
+"accountPasswordTitle" = "Κωδικός πρόσβασης λογαριασμού";
+
+/* loco:695e810c94da2a73e50c2492 */
+"accountProtected" = "Προστατευμένος λογαριασμός";
+
+/* loco:695ea133cd8f322c3a017e83 */
+"accountProtectionDisabledWarningDescription" = "Αυτή η συσκευή είναι η μόνη που χρησιμοποιείται για την επικύρωση των συνδέσεών σας στον λογαριασμό Infomaniak.\n\nΣας συνιστούμε να προσθέσετε μια άλλη συσκευή ή μέθοδο επαλήθευσης πριν συνεχίσετε.";
+
+/* loco:695ea0f01f7c9c75e20e56d2 */
+"accountProtectionDisabledWarningTitle" = "Προσοχή: ο λογαριασμός σας δεν θα προστατεύεται πλέον";
+
+/* loco:695ea44290fff826b9059d62 */
+"accountRemovedAuthenticatorDescription" = "Δεν θα λαμβάνετε πλέον εγκρίσεις σύνδεσης σε αυτή τη συσκευή για τον λογαριασμό %@";
+
+/* loco:695ea3ef386e597d05019742 */
+"accountRemovedAuthenticatorTitle" = "Ο λογαριασμός αποσυνδέθηκε από το Authenticator";
+
+/* loco:6985be69b61359b21b015a52 */
+"accountSecurityLevelContentDescription" = "Επίπεδο ασφαλείας λογαριασμού";
+
+/* loco:695ea3ad79be1c39d80a6a63 */
+"accountSecurityVerificationDescription" = "Αν δεν πραγματοποιήσατε αυτήν την ενέργεια, σας συνιστούμε να αλλάξετε τον κωδικό πρόσβασής σας και να ελέγξετε τις ρυθμίσεις ασφαλείας σας.";
+
+/* loco:695ea3a3bb1684fadb060f95 */
+"accountSecurityVerificationTitle" = "Επαληθεύστε την ασφάλεια του λογαριασμού σας";
+
+/* loco:695e819bcd0de60112063f13 */
+"accountSettingsButton" = "Ρυθμίσεις λογαριασμού";
+
+/* loco:697b2cae81f566e0780ea873 */
+"accountTitle" = "Λογαριασμός";
+
+/* loco:697b2c8165f2b518e801e292 */
+"accountsTitle" = "Λογαριασμοί";
+
+/* loco:695e8a847621dbcb890cd633 */
+"actionRequiredDescription" = "Απαιτείται ενέργεια για την ασφάλεια ενός από τους λογαριασμούς σας.";
+
+/* loco:695e816eb64a80c12b005d63 */
+"activityHistoryButton" = "Ιστορικό δραστηριοτήτων";
+
+/* loco:69777a4068f29e950204eae4 */
+"addAccountButton" = "Προσθήκη λογαριασμού";
+
+/* loco:69849b6fd84e3f199e0455f2 */
+"addAccountContentDescription" = "Προσθήκη λογαριασμού";
+
+/* loco:69e09cb1f996ab9e220f8e82 */
+"allowDeviceNotificationsDescription" = "Επιτρέψτε τις ειδοποιήσεις στις ρυθμίσεις της συσκευής σας για να λαμβάνετε τις ειδοποιήσεις ασφαλείας μας.";
+
+/* loco:695e9a949d8b472044005a42 */
+"appAccessIsSecure" = "Η πρόσβαση στο Authenticator\nείναι ασφαλής";
+
+/* loco:696e4c9fa6eb6338a90e5f72 */
+"appSecurityDescription" = "Προστατεύστε την πρόσβαση στην εφαρμογή σας ενεργοποιώντας το κλείδωμα του τηλεφώνου σας.";
+
+/* loco:695e8b3ae290381a34091ec2 */
+"authorizationCodeTitle" = "Ο κωδικός εξουσιοδότησής σας";
+
+/* loco:695e9faf7c7344111d0a3d84 */
+"autoCloseTitle" = "Αυτή η πληροφορία κλείνει αυτόματα σε 15 δευτερόλεπτα.";
+
+/* loco:6984a2f068397af26e00c502 */
+"avatarContentDescription" = "Avatar λογαριασμού";
+
+/* loco:695e8b5c59029a2c62047642 */
+"callButton" = "Κλήση";
+
+/* loco:695e9f9104a9f05d81021c22 */
+"cancelButton" = "Ακύρωση";
+
+/* loco:695e9cac486dc755330119d2 */
+"changePasswordButton" = "Αλλαγή κωδικού πρόσβασης";
+
+/* loco:695e9a051238ecd6bf060e82 */
+"checkMyMethodsButton" = "Έλεγχος των μεθόδων μου";
+
+/* loco:695e99e8456bc82f0204b2e2 */
+"closeButton" = "Κλείσιμο";
+
+/* loco:695e9141f755e6a2a80eb5d2 */
+"closedSupportStatus" = "Κλειστό";
+
+/* loco:695e9a4312611437ac0f7042 */
+"confirmActionCompleteButton" = "Το έκανα το απαραίτητο";
+
+/* loco:695e9ae505e8ecd7cf0f5b22 */
+"confirmButton" = "Επιβεβαίωση";
+
+/* loco:695e9b2a9d8b472044005a44 */
+"confirmLoginNotificationTitle" = "Επιβεβαίωση σύνδεσης";
+
+/* loco:695e8b0257b12526a4058922 */
+"contactSupportDescription" = "Επικοινωνήστε με τις ομάδες μας τηλεφωνικά ή μέσω email για βοήθεια στην επίλυση του προβλήματός σας.";
+
+/* loco:695e8ad99771c5be5c0070b2 */
+"contactSupportTitle" = "Επικοινωνία με την υποστήριξη";
+
+/* loco:695e9f7b3b993ba71c01fbb5 */
+"continueButton" = "Συνέχεια";
+
+/* loco:695e9fe4ffea9abfd80a1ae4 */
+"copyPassword" = "Αντιγραφή κωδικού πρόσβασης";
+
+/* loco:695ea1ebe68cb2e4f30e8532 */
+"dataManagementTitle" = "Διαχείριση δεδομένων";
+
+/* loco:695e92767f6aec3380096f72 */
+"daysSupportAvailability" = "%1$d ημ. / %2$d";
+
+/* loco:695ea2cfbb1684fadb060f92 */
+"deletePreventionDescription" = "Η διαγραφή της εφαρμογής μπορεί να θέσει σε κίνδυνο την ασφάλεια του λογαριασμού σας.";
+
+/* loco:695ea2b7776ee93221014822 */
+"deletePreventionTitle" = "Χρειάζεστε βοήθεια;";
+
+/* loco:695e9aff3c59258bef0431a3 */
+"denyButton" = "Άρνηση";
+
+/* loco:695e978a96d09ec429013162 */
+"descriptionPlaceholder" = "Περιγραφή";
+
+/* loco:695e9bdbee3a7d21340527d2 */
+"deviceLoginTitle" = "Συσκευή";
+
+/* loco:695ea16b39ee5b4bb80bd342 */
+"disconnectAccountDescription" = "Ο λογαριασμός σας δεν θα προστατεύεται πλέον από επαλήθευση σε δύο βήματα και θα γίνει ευάλωτος σε μη εξουσιοδοτημένη πρόσβαση.";
+
+/* loco:695ea05c8d0943c57704f5d3 */
+"disconnectAccountOnThisDeviceDescription" = "Δεν θα μπορείτε πλέον να εγκρίνετε συνδέσεις σε αυτή τη συσκευή με το Authenticator.";
+
+/* loco:695ea0448d0943c57704f5d2 */
+"disconnectAccountTitle" = "Αποσύνδεση αυτού του λογαριασμού";
+
+/* loco:695ea01fcd8f322c3a017e82 */
+"disconnectAccountWarningDescription" = "Βεβαιωθείτε ότι οι μέθοδοι επαλήθευσης και ανάκτησής σας είναι ενημερωμένοι για να αποφύγετε την απώλεια πρόσβασης στον λογαριασμό σας.";
+
+/* loco:695ea0112b033801a6078ff3 */
+"disconnectAccountWarningTitle" = "Η αποσύνδεση αυτού του λογαριασμού μπορεί να εξασθενήσει την ασφάλειά του";
+
+/* loco:695e81d0dcf344a547026d33 */
+"disconnectButton" = "Αποσύνδεση";
+
+/* loco:695ea0798d0943c57704f5d4 */
+"disconnectSuccess" = "Ο λογαριασμός αποσυνδέθηκε";
+
+/* loco:695e7d009913b5c3930ed7a2 */
+"doneButton" = "Τέλος";
+
+/* loco:695ea28bf0e7cc81470dd482 */
+"emailPlaceholder" = "Email";
+
+/* loco:695e76fb8f64df326a00c934 */
+"enableButton" = "Ενεργοποίηση";
+
+/* loco:695ea25e8ea9fc514a04e622 */
+"enableNotifications" = "Ενεργοποίηση ειδοποιήσεων";
+
+/* loco:695e8322b85b83d8780f97f2 */
+"errorLoginFailed" = "Η σύνδεση στον λογαριασμό απέτυχε. Παρακαλώ δοκιμάστε ξανά ή επικοινωνήστε με την υποστήριξη. (κωδικός σφάλματος: %d)";
+
+/* loco:695e9d72bc601c317401c9d4 */
+"errorOccuredTitle" = "Παρουσιάστηκε σφάλμα";
+
+/* loco:695e95bc3614499244057df2 */
+"estimatedWait" = "Εκτιμώμενη αναμονή: %@";
+
+/* loco:695ea205e68cb2e4f30e8534 */
+"feedbackTitle" = "Σχόλια";
+
+/* loco:695e7a578a61f47e160981c2 */
+"laterButton" = "Αργότερα";
+
+/* loco:695e9bbb6734592dc60d0973 */
+"locationLoginTitle" = "Τοποθεσία";
+
+/* loco:695e87462daa8c005402c422 */
+"logInButton" = "Σύνδεση";
+
+/* loco:69ddda6163d7c97a9d075332 */
+"logInDescription" = "Εισαγάγετε τον κωδικό πρόσβασής σας.";
+
+/* loco:69ddda3d0c61e0063d045962 */
+"logInTitle" = "Σύνδεση";
+
+/* loco:695e9b60eb4a5e9ff3045a82 */
+"loginAttemptQuery" = "Προσπαθείτε να\nσυνδεθείτε;";
+
+/* loco:695e9b86eb4a5e9ff3045a84 */
+"loginAuthorizationWarning" = "Η επιβεβαίωση αυτής της σύνδεσης θα εξουσιοδοτήσει αυτή τη συσκευή να έχει πρόσβαση στον λογαριασμό σας Infomaniak";
+
+/* loco:695e9c9194a0d83c6a006812 */
+"loginDeniedSuccessDescription" = "Αρνηθήκατε μια προσπάθεια σύνδεσης. Για την ασφάλεια του λογαριασμού σας, αλλάξτε τον κωδικό πρόσβασής σας.\n\nΑν ξεκινήσατε αυτό το αίτημα, δοκιμάστε να συνδεθείτε ξανά.";
+
+/* loco:695e9c5e8e68db1c11095922 */
+"loginDeniedSuccessTitle" = "Η σύνδεση απορρίφθηκε επιτυχώς";
+
+/* loco:695e9d518d775ee8030366c2 */
+"loginRequestAlreadyProcessedDescription" = "Δεν είστε εσείς που το κάνατε αυτό; Ελέγξτε τις ενεργές συσκευές σας και αποσυνδεθείτε από αυτές που δεν αναγνωρίζετε.";
+
+/* loco:695e9d299fefb63d66099183 */
+"loginRequestAlreadyProcessedTitle" = "Αυτό το αίτημα έχει ήδη υποβληθεί σε επεξεργασία";
+
+/* loco:695e9ce7fb4842ffed0c4603 */
+"loginRequestExpiredTitle" = "Αυτό το αίτημα σύνδεσης έχει λήξει";
+
+/* loco:695e9dbf2e191d3ca00bfb15 */
+"noInternetTitle" = "Χωρίς σύνδεση στο διαδίκτυο";
+
+/* loco:695ea387b5eb46654b038d54 */
+"notMeButton" = "Δεν ήμουν εγώ";
+
+/* loco:695ea2390a6bee6dc70a2f02 */
+"notificationsDescription" = "Ενεργοποιήστε τις ειδοποιήσεις για να λαμβάνετε πληροφορίες ασφαλείας σχετικά με τους λογαριασμούς σας Infomaniak.";
+
+/* loco:695ea1d70c7a5aa3f90bdbe2 */
+"notificationsTitle" = "Ειδοποιήσεις";
+
+/* loco:695e75b2da2ea35ca2034864 */
+"onBoardingFaceIdDescription" = "Η ενεργοποίηση του Face ID εξασφαλίζει την πρόσβαση στην εφαρμογή.";
+
+/* loco:695e6cf1c7935dac5607ef72 */
+"onBoardingFaceIdTitle" = "Θέλετε να ενεργοποιήσετε το Face ID;";
+
+/* loco:695e66d7da70ee75420a0566 */
+"onBoardingLoginDescription" = "Συνδεθείτε για να εγκρίνετε με ασφάλεια τις συνδέσεις σας και να προστατεύσετε την πρόσβασή σας.";
+
+/* loco:695e667cda70ee75420a0562 */
+"onBoardingLoginTitle" = "Ασφαλίστε τον λογαριασμό σας Infomaniak με το Authenticator";
+
+/* loco:695e8025b83bf418520281fc */
+"onBoardingMigrationDescription" = "Απολαύστε ένα νέο εκσυγχρονισμένο περιβάλλον, σχεδιασμένο για την ασφάλειά σας.";
+
+/* loco:695e7fc7532760eb490d7e13 */
+"onBoardingMigrationTitle" = "Το kAuth ανανεώνεται και γίνεται Authenticator";
+
+/* loco:695e8078e4b913be7f089fa4 */
+"onBoardingSecuringAccount" = "Ασφάλιση λογαριασμού…";
+
+/* loco:695e7c8684378769c70b7733 */
+"onBoardingSuccessDescription" = "Μπορείτε πλέον να επαληθεύετε τις συνδέσεις σας με το Authenticator.";
+
+/* loco:695e7c6a812646fa430f8222 */
+"onBoardingSuccessTitle" = "Όλα είναι έτοιμα";
+
+/* loco:69de5110c45507362d0de3a2 */
+"onboardingNotificationsDescription" = "Ενεργοποιήστε τις ειδοποιήσεις για να λαμβάνετε ειδοποίηση κάθε φορά που γίνεται προσπάθεια σύνδεσης.";
+
+/* loco:69de50181f24c8beb40f6304 */
+"onboardingNotificationsTitle" = "Επιβεβαιώστε τις συνδέσεις σας με ένα μόνο κλικ";
+
+/* loco:69e09c0911d4f5d91e0dcac2 */
+"openSettingsButton" = "Άνοιγμα ρυθμίσεων";
+
+/* loco:695e91208384843ef3052bb2 */
+"openSupportStatus" = "Ανοικτό";
+
+/* loco:695e9ea5ffea9abfd80a1ae2 */
+"passwordAskingWarning" = "Η Infomaniak ποτέ δεν θα ζητήσει τον κωδικό πρόσβασής σας απροσδόκητα.\n\nΒεβαιωθείτε ότι ξεκινήσατε αυτήν την ενέργεια πριν συνεχίσετε.";
+
+/* loco:695ea35f801b8bcab20b3bd2 */
+"passwordChangedDescription" = "Ο κωδικός πρόσβασης σύνδεσης για τον λογαριασμό Infomaniak %@ έχει ενημερωθεί.";
+
+/* loco:695ea3dabb1684fadb060f96 */
+"passwordChangedNotification" = "Ο κωδικός πρόσβασης σύνδεσης άλλαξε";
+
+/* loco:695ea34f347ac04921054554 */
+"passwordChangedTitle" = "Ο κωδικός πρόσβασης σύνδεσης άλλαξε";
+
+/* loco:69df9e0ffa671edfb90e2c42 */
+"passwordForgottenButton" = "Ξεχάσατε τον κωδικό πρόσβασης;";
+
+/* loco:69d6668bb7a4e72cbe0eb172 */
+"passwordLabel" = "Κωδικός πρόσβασης";
+
+/* loco:695e8135925530d3a102c763 */
+"refreshPendingLoginsButton" = "Ανανέωση εκκρεμών συνδέσεων";
+
+/* loco:695e999acdb8bbf8ca077d52 */
+"removeAccountDescription" = "Δεν θα μπορείτε πλέον να επαληθεύετε τη σύνδεσή σας σε αυτόν τον λογαριασμό με το Authenticator.";
+
+/* loco:695e99d414279d1eea090442 */
+"removeAccountSuccess" = "Ο λογαριασμός αφαιρέθηκε";
+
+/* loco:695e878a4ff7a8c5a8050c53 */
+"removeAccountTitle" = "Αφαίρεση λογαριασμού";
+
+/* loco:695e99b261ee1c8c900db0e2 */
+"removeButton" = "Αφαίρεση";
+
+/* loco:695e7d2aaf61b386540bf272 */
+"settingsTitle" = "Ρυθμίσεις";
+
+/* loco:695e8157925530d3a102c765 */
+"showAccountPasswordButton" = "Εμφάνιση κωδικού πρόσβασης λογαριασμού";
+
+/* loco:695ea2fd347ac04921054552 */
+"startButton" = "Έναρξη";
+
+/* loco:695e97760f03fede890fbc42 */
+"subjectPlaceholder" = "Θέμα";
+
+/* loco:697a3be9708976638d060702 */
+"submitMyTicketButton" = "Υποβολή του αιτήματός μου";
+
+/* loco:695e973fa8c67b89040bbbc2 */
+"submitTicketDescription" = "Για να σας βοηθήσουμε αποτελεσματικά, παρακαλούμε δώστε μας όσο το δυνατόν περισσότερες λεπτομέρειες σχετικά με το πρόβλημά σας.";
+
+/* loco:695e8b7f9264ac7b900409d2 */
+"submitTicketTitle" = "Υποβολή αιτήματος";
+
+/* loco:695e97c480cab9ddd40df272 */
+"supportResponseDelay" = "Θα απαντήσουμε εντός των επόμενων 24 ωρών εργασίας.";
+
+/* loco:6984aaf72ee9e539cc034522 */
+"themeDark" = "Σκοτεινό";
+
+/* loco:6984aaea096886f05104ebd2 */
+"themeLight" = "Φωτεινό";
+
+/* loco:6984ab07a677e4296f00a552 */
+"themeSystem" = "Σύστημα";
+
+/* loco:6984a5b068e4c318150d2475 */
+"themeTitle" = "Θέμα";
+
+/* loco:695e981795a53b5f09055eb2 */
+"ticketSentSuccessDescription" = "Κάνουμε το καλύτερο δυνατό για να διασφαλίσουμε ότι ένας πράκτορας θα σας απαντήσει το συντομότερο δυνατόν.";
+
+/* loco:695e97f63a155d22d007d2f4 */
+"ticketSentSuccessTitle" = "Το αίτημά σας στάλθηκε στις ομάδες μας!";
+
+/* loco:695e9548833bf5c3c1037d42 */
+"timeSupportAvailability" = "%1$@ έως %2$@";
+
+/* loco:695ea3342372447ed50ee242 */
+"understandConfirmButton" = "Κατάλαβα";
+
+/* loco:695ea1be1f7c9c75e20e56d4 */
+"unlockingWithFaceId" = "Ξεκλείδωμα με Face ID";
+
+/* loco:69df7ad0d80ed14ab8080df2 */
+"updateButton" = "Ενημέρωση";
+
+/* loco:69d8a25da2ee7be81d08e504 */
+"urlUserReport" = "https://feedback.userreport.com/fa3ce592-86a2-4715-8536-5bf60234f52f/";
+
+/* loco:695ea02fac23a6f91c072a74 */
+"verifySecurityButton" = "Επαλήθευση της ασφάλειάς μου";
+
+/* loco:695e8b943eee444fde041612 */
+"viewGuidesButton" = "Περιήγηση στους οδηγούς";
+
+/* loco:695e9ba3ae7a65d0a10aba73 */
+"whenLoginTitle" = "Πότε";
