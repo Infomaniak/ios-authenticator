@@ -4,7 +4,7 @@
  * Locale: de, German
  * Tagged: ios
  * Exported by: Baptiste Griva
- * Exported at: Wed, 15 Apr 2026 13:49:42 +0200
+ * Exported at: Fri, 17 Apr 2026 10:07:55 +0200
  */
 
 /* loco:69d6617d0ee9dd38d50c99e2 */
@@ -78,6 +78,9 @@
 
 /* loco:69849b6fd84e3f199e0455f2 */
 "addAccountContentDescription" = "Hinzufügen eines Kontos";
+
+/* loco:69e09cb1f996ab9e220f8e82 */
+"allowDeviceNotificationsDescription" = "Lassen Sie in den Einstellungen Ihres Geräts Benachrichtigungen zu, um unsere Sicherheitswarnungen zu erhalten.";
 
 /* loco:695e9a949d8b472044005a42 */
 "appAccessIsSecure" = "Der Zugriff auf Authenticator ist sicher";
@@ -190,9 +193,6 @@
 /* loco:695e8322b85b83d8780f97f2 */
 "errorLoginFailed" = "Anmeldung fehlgeschlagen. Bitte versuchen Sie es erneut oder kontaktieren Sie den Support. (Fehlercode: %d)";
 
-/* loco:695e9d93cae4b614fd0d5a23 */
-"errorOccuredDescription" = "Der Vorgang konnte nicht abgeschlossen werden. Bitte versuchen Sie es erneut.";
-
 /* loco:695e9d72bc601c317401c9d4 */
 "errorOccuredTitle" = "Ein Fehler ist aufgetreten";
 
@@ -210,6 +210,12 @@
 
 /* loco:695e87462daa8c005402c422 */
 "logInButton" = "Anmelden";
+
+/* loco:69ddda6163d7c97a9d075332 */
+"logInDescription" = "Geben Sie Ihr Passwort ein.";
+
+/* loco:69ddda3d0c61e0063d045962 */
+"logInTitle" = "Anmelden";
 
 /* loco:695e9b60eb4a5e9ff3045a82 */
 "loginAttemptQuery" = "Versuchen Sie sich anzumelden?";
@@ -229,14 +235,8 @@
 /* loco:695e9d299fefb63d66099183 */
 "loginRequestAlreadyProcessedTitle" = "Diese Anfrage wurde bereits verarbeitet";
 
-/* loco:695e9d0626db6838400a8f43 */
-"loginRequestExpiredDescription" = "Die Verifizierungszeit ist abgelaufen. Bitte versuchen Sie es erneut.";
-
 /* loco:695e9ce7fb4842ffed0c4603 */
 "loginRequestExpiredTitle" = "Diese Anmeldeanfrage ist abgelaufen";
-
-/* loco:695e9ddb3b993ba71c01fbb2 */
-"noInternetDescription" = "Der Vorgang konnte nicht abgeschlossen werden. Überprüfen Sie Ihre Einstellungen und versuchen Sie es erneut.";
 
 /* loco:695e9dbf2e191d3ca00bfb15 */
 "noInternetTitle" = "Keine Internetverbindung";
@@ -277,6 +277,15 @@
 /* loco:695e7c6a812646fa430f8222 */
 "onBoardingSuccessTitle" = "Alles ist bereit";
 
+/* loco:69de5110c45507362d0de3a2 */
+"onboardingNotificationsDescription" = "Aktivieren Sie Benachrichtigungen, um bei jedem Anmeldeversuch eine Warnung zu erhalten.";
+
+/* loco:69de50181f24c8beb40f6304 */
+"onboardingNotificationsTitle" = "Validieren Sie Ihre Verbindungen mit einem einzigen Klick";
+
+/* loco:69e09c0911d4f5d91e0dcac2 */
+"openSettingsButton" = "Einstellungen öffnen";
+
 /* loco:695e91208384843ef3052bb2 */
 "openSupportStatus" = "Offen";
 
@@ -291,6 +300,12 @@
 
 /* loco:695ea34f347ac04921054554 */
 "passwordChangedTitle" = "Anmeldekennwort geändert";
+
+/* loco:69df9e0ffa671edfb90e2c42 */
+"passwordForgottenButton" = "Passwort vergessen?";
+
+/* loco:69d6668bb7a4e72cbe0eb172 */
+"passwordLabel" = "Passwort";
 
 /* loco:695e8135925530d3a102c763 */
 "refreshPendingLoginsButton" = "Ausstehende Anmeldungen aktualisieren";

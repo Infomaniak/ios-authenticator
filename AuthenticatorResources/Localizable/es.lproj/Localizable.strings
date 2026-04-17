@@ -4,7 +4,7 @@
  * Locale: es, Spanish
  * Tagged: ios
  * Exported by: Baptiste Griva
- * Exported at: Wed, 15 Apr 2026 13:49:42 +0200
+ * Exported at: Fri, 17 Apr 2026 10:07:55 +0200
  */
 
 /* loco:69d6617d0ee9dd38d50c99e2 */
@@ -78,6 +78,9 @@
 
 /* loco:69849b6fd84e3f199e0455f2 */
 "addAccountContentDescription" = "Añadir una cuenta";
+
+/* loco:69e09cb1f996ab9e220f8e82 */
+"allowDeviceNotificationsDescription" = "Permita las notificaciones en la configuración de su dispositivo para recibir nuestras alertas de seguridad.";
 
 /* loco:695e9a949d8b472044005a42 */
 "appAccessIsSecure" = "El acceso a Authenticator está seguro";
@@ -190,9 +193,6 @@
 /* loco:695e8322b85b83d8780f97f2 */
 "errorLoginFailed" = "Inicio de sesión fallido. Por favor, inténtelo de nuevo o contacte con soporte. (código de error: %d)";
 
-/* loco:695e9d93cae4b614fd0d5a23 */
-"errorOccuredDescription" = "No se pudo completar la operación. Por favor, inténtelo de nuevo.";
-
 /* loco:695e9d72bc601c317401c9d4 */
 "errorOccuredTitle" = "Se produjo un error";
 
@@ -210,6 +210,12 @@
 
 /* loco:695e87462daa8c005402c422 */
 "logInButton" = "Iniciar sesión";
+
+/* loco:69ddda6163d7c97a9d075332 */
+"logInDescription" = "Introduce tu contraseña.";
+
+/* loco:69ddda3d0c61e0063d045962 */
+"logInTitle" = "Iniciar sesión";
 
 /* loco:695e9b60eb4a5e9ff3045a82 */
 "loginAttemptQuery" = "¿Está intentando iniciar sesión?";
@@ -229,14 +235,8 @@
 /* loco:695e9d299fefb63d66099183 */
 "loginRequestAlreadyProcessedTitle" = "Esta solicitud ya ha sido procesada";
 
-/* loco:695e9d0626db6838400a8f43 */
-"loginRequestExpiredDescription" = "El tiempo de verificación ha expirado. Por favor, inténtelo de nuevo.";
-
 /* loco:695e9ce7fb4842ffed0c4603 */
 "loginRequestExpiredTitle" = "Esta solicitud de inicio de sesión ha expirado";
-
-/* loco:695e9ddb3b993ba71c01fbb2 */
-"noInternetDescription" = "No se pudo completar la operación. Verifique su configuración e inténtelo de nuevo.";
 
 /* loco:695e9dbf2e191d3ca00bfb15 */
 "noInternetTitle" = "Sin conexión a internet";
@@ -277,6 +277,15 @@
 /* loco:695e7c6a812646fa430f8222 */
 "onBoardingSuccessTitle" = "Todo está listo";
 
+/* loco:69de5110c45507362d0de3a2 */
+"onboardingNotificationsDescription" = "Active las notificaciones para recibir una alerta cada vez que se produzca un intento de inicio de sesión.";
+
+/* loco:69de50181f24c8beb40f6304 */
+"onboardingNotificationsTitle" = "Valide sus conexiones con un solo clic";
+
+/* loco:69e09c0911d4f5d91e0dcac2 */
+"openSettingsButton" = "Abrir ajustes";
+
 /* loco:695e91208384843ef3052bb2 */
 "openSupportStatus" = "Abierto";
 
@@ -291,6 +300,12 @@
 
 /* loco:695ea34f347ac04921054554 */
 "passwordChangedTitle" = "Contraseña de inicio de sesión modificada";
+
+/* loco:69df9e0ffa671edfb90e2c42 */
+"passwordForgottenButton" = "¿Olvidaste tu contraseña?";
+
+/* loco:69d6668bb7a4e72cbe0eb172 */
+"passwordLabel" = "Contraseña";
 
 /* loco:695e8135925530d3a102c763 */
 "refreshPendingLoginsButton" = "Actualizar inicios de sesión pendientes";
