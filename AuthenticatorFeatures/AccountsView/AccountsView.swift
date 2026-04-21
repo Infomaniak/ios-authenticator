@@ -18,6 +18,7 @@
 
 import AuthenticatorCore
 import AuthenticatorCoreUI
+import AuthenticatorResources
 import DesignSystem
 @preconcurrency import InAppTwoFactorAuthentication
 import InfomaniakConcurrency
@@ -48,8 +49,11 @@ public struct AccountsView: View {
                     }
                 } header: {
                     if shouldDisplayWarning {
-                        StatusHeaderView(type: .warningList)
-                            .listRowInsets(EdgeInsets(top: IKPadding.medium, leading: 0, bottom: IKPadding.large, trailing: 0))
+                        StatusHeaderView(
+                            type: .warning,
+                            description: AuthenticatorResourcesStrings.actionRequiredDescription,
+                        )
+                        .listRowInsets(EdgeInsets(top: IKPadding.medium, leading: 0, bottom: IKPadding.large, trailing: 0))
                     }
                 }
                 .authSectionStyle()
