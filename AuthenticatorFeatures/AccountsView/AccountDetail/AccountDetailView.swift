@@ -51,6 +51,7 @@ struct AccountDetailView: View {
             } header: {
                 AccountDetailHeaderView(account: account)
             }
+            .authSectionStyle()
             .headerProminence(.increased)
 
             Section {
@@ -72,6 +73,7 @@ struct AccountDetailView: View {
                     isShowingDisconnectWarningAlert = true
                 }
             }
+            .authSectionStyle()
         }
         .authListStyle()
         .scrollBounceBehavior(.basedOnSize)

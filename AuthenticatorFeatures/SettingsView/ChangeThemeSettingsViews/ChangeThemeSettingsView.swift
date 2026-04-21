@@ -27,6 +27,7 @@ struct ChangeThemeSettingsView: View {
             ForEach(Theme.allCases) { theme in
                 ChangeThemeSettingsCell(theme: theme)
             }
+            .authSectionStyle()
         }
         .authScrollViewStyle()
         .navigationTitle(AuthenticatorResourcesStrings.themeTitle)

@@ -42,6 +42,7 @@ public struct SettingsView: View {
                         ChangeThemeSettingsView()
                     }
                 }
+                .authSectionStyle()
 
                 Section {
                     NavigationLink(AuthenticatorResourcesStrings.dataManagementTitle) {
@@ -66,6 +67,7 @@ public struct SettingsView: View {
                     }
                     .accessibilityHint(AuthenticatorResourcesStrings.contentDescriptionButtonExternalLink)
                 }
+                .authSectionStyle()
             }
             .authListStyle()
             .navigationTitle(AuthenticatorResourcesStrings.settingsTitle)
