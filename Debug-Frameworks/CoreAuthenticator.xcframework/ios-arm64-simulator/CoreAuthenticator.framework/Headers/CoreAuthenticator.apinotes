@@ -934,7 +934,7 @@ Classes:
       Type: "NSString * _Nullable"
     - Position: 5
       Type: "Skie__TypeDef__0__id_CoreAuthenticatorAccountStatus_"
-  - Selector: "initWithId:fullName:initials:email:status__Skie_DefaultArguments__97:"
+  - Selector: "initWithId:fullName:initials:email:status__Skie_DefaultArguments__96:"
     MethodKind: "Instance"
     SwiftName: "init(id:fullName:initials:email:status:)"
     Parameters:
@@ -2113,13 +2113,13 @@ Classes:
 - Name: "CoreAuthenticatorAuthenticatorFacadeCompanion"
   SwiftName: "AuthenticatorFacade.Companion"
   Methods:
-  - Selector: "createEnvironment:userAgent:clientId:databaseNameOrPath:crashReport:tokenBridge:scope:"
+  - Selector: "createApiHost:userAgent:clientId:databaseNameOrPath:crashReport:tokenBridge:scope:"
     MethodKind: "Instance"
-    SwiftName: "create(environment:userAgent:clientId:databaseNameOrPath:crashReport:tokenBridge:scope:)"
+    SwiftName: "create(apiHost:userAgent:clientId:databaseNameOrPath:crashReport:tokenBridge:scope:)"
     ResultType: "CoreAuthenticatorAuthenticatorFacade * _Nonnull"
     Parameters:
     - Position: 0
-      Type: "CoreAuthenticatorApiEnvironment * _Nonnull"
+      Type: "NSString * _Nonnull"
     - Position: 1
       Type: "NSString * _Nonnull"
     - Position: 2
@@ -2132,15 +2132,15 @@ Classes:
       Type: "id<CoreAuthenticatorTokenBridge> _Nonnull"
     - Position: 6
       Type: "id<CoreAuthenticatorKotlinx_coroutines_coreCoroutineScope> _Nonnull"
-  - Selector: "dummyInstanceUserAgent:environment:crashReport:scope:loadingDurationMillis:resetAfterMillis:"
+  - Selector: "dummyInstanceUserAgent:apiHost:crashReport:scope:loadingDurationMillis:resetAfterMillis:"
     MethodKind: "Instance"
-    SwiftName: "dummyInstance(userAgent:environment:crashReport:scope:loadingDurationMillis:resetAfterMillis:)"
+    SwiftName: "dummyInstance(userAgent:apiHost:crashReport:scope:loadingDurationMillis:resetAfterMillis:)"
     ResultType: "CoreAuthenticatorAuthenticatorFacade * _Nonnull"
     Parameters:
     - Position: 0
       Type: "NSString * _Nonnull"
     - Position: 1
-      Type: "CoreAuthenticatorApiEnvironment * _Nonnull"
+      Type: "NSString * _Nonnull"
     - Position: 2
       Type: "id<CoreAuthenticatorCrashReportInterface> _Nullable"
     - Position: 3
@@ -2149,13 +2149,13 @@ Classes:
       Type: "int64_t"
     - Position: 5
       Type: "int64_t"
-  - Selector: "create__Skie_DefaultArguments__68Environment:userAgent:clientId:crashReport:tokenBridge:"
+  - Selector: "create__Skie_DefaultArguments__68ApiHost:userAgent:clientId:crashReport:tokenBridge:"
     MethodKind: "Instance"
-    SwiftName: "create(environment:userAgent:clientId:crashReport:tokenBridge:)"
+    SwiftName: "create(apiHost:userAgent:clientId:crashReport:tokenBridge:)"
     ResultType: "CoreAuthenticatorAuthenticatorFacade * _Nonnull"
     Parameters:
     - Position: 0
-      Type: "CoreAuthenticatorApiEnvironment * _Nonnull"
+      Type: "NSString * _Nonnull"
     - Position: 1
       Type: "NSString * _Nonnull"
     - Position: 2
@@ -2164,13 +2164,13 @@ Classes:
       Type: "id<CoreAuthenticatorCrashReportInterface> _Nonnull"
     - Position: 4
       Type: "id<CoreAuthenticatorTokenBridge> _Nonnull"
-  - Selector: "create__Skie_DefaultArguments__69Environment:userAgent:clientId:databaseNameOrPath:crashReport:tokenBridge:"
+  - Selector: "create__Skie_DefaultArguments__69ApiHost:userAgent:clientId:databaseNameOrPath:crashReport:tokenBridge:"
     MethodKind: "Instance"
-    SwiftName: "create(environment:userAgent:clientId:databaseNameOrPath:crashReport:tokenBridge:)"
+    SwiftName: "create(apiHost:userAgent:clientId:databaseNameOrPath:crashReport:tokenBridge:)"
     ResultType: "CoreAuthenticatorAuthenticatorFacade * _Nonnull"
     Parameters:
     - Position: 0
-      Type: "CoreAuthenticatorApiEnvironment * _Nonnull"
+      Type: "NSString * _Nonnull"
     - Position: 1
       Type: "NSString * _Nonnull"
     - Position: 2
@@ -2181,13 +2181,13 @@ Classes:
       Type: "id<CoreAuthenticatorCrashReportInterface> _Nonnull"
     - Position: 5
       Type: "id<CoreAuthenticatorTokenBridge> _Nonnull"
-  - Selector: "create__Skie_DefaultArguments__70Environment:userAgent:clientId:crashReport:tokenBridge:scope:"
+  - Selector: "create__Skie_DefaultArguments__70ApiHost:userAgent:clientId:crashReport:tokenBridge:scope:"
     MethodKind: "Instance"
-    SwiftName: "create(environment:userAgent:clientId:crashReport:tokenBridge:scope:)"
+    SwiftName: "create(apiHost:userAgent:clientId:crashReport:tokenBridge:scope:)"
     ResultType: "CoreAuthenticatorAuthenticatorFacade * _Nonnull"
     Parameters:
     - Position: 0
-      Type: "CoreAuthenticatorApiEnvironment * _Nonnull"
+      Type: "NSString * _Nonnull"
     - Position: 1
       Type: "NSString * _Nonnull"
     - Position: 2
@@ -2198,95 +2198,95 @@ Classes:
       Type: "id<CoreAuthenticatorTokenBridge> _Nonnull"
     - Position: 5
       Type: "id<CoreAuthenticatorKotlinx_coroutines_coreCoroutineScope> _Nonnull"
-  - Selector: "dummyInstance__Skie_DefaultArguments__71UserAgent:environment:crashReport:"
+  - Selector: "dummyInstance__Skie_DefaultArguments__71UserAgent:apiHost:crashReport:"
     MethodKind: "Instance"
-    SwiftName: "dummyInstance(userAgent:environment:crashReport:)"
+    SwiftName: "dummyInstance(userAgent:apiHost:crashReport:)"
     ResultType: "CoreAuthenticatorAuthenticatorFacade * _Nonnull"
     Parameters:
     - Position: 0
       Type: "NSString * _Nonnull"
     - Position: 1
-      Type: "CoreAuthenticatorApiEnvironment * _Nonnull"
+      Type: "NSString * _Nonnull"
     - Position: 2
       Type: "id<CoreAuthenticatorCrashReportInterface> _Nullable"
-  - Selector: "dummyInstance__Skie_DefaultArguments__72UserAgent:environment:crashReport:scope:"
+  - Selector: "dummyInstance__Skie_DefaultArguments__72UserAgent:apiHost:crashReport:scope:"
     MethodKind: "Instance"
-    SwiftName: "dummyInstance(userAgent:environment:crashReport:scope:)"
+    SwiftName: "dummyInstance(userAgent:apiHost:crashReport:scope:)"
     ResultType: "CoreAuthenticatorAuthenticatorFacade * _Nonnull"
     Parameters:
     - Position: 0
       Type: "NSString * _Nonnull"
     - Position: 1
-      Type: "CoreAuthenticatorApiEnvironment * _Nonnull"
-    - Position: 2
-      Type: "id<CoreAuthenticatorCrashReportInterface> _Nullable"
-    - Position: 3
-      Type: "id<CoreAuthenticatorKotlinx_coroutines_coreCoroutineScope> _Nonnull"
-  - Selector: "dummyInstance__Skie_DefaultArguments__73UserAgent:environment:crashReport:loadingDurationMillis:"
-    MethodKind: "Instance"
-    SwiftName: "dummyInstance(userAgent:environment:crashReport:loadingDurationMillis:)"
-    ResultType: "CoreAuthenticatorAuthenticatorFacade * _Nonnull"
-    Parameters:
-    - Position: 0
       Type: "NSString * _Nonnull"
-    - Position: 1
-      Type: "CoreAuthenticatorApiEnvironment * _Nonnull"
-    - Position: 2
-      Type: "id<CoreAuthenticatorCrashReportInterface> _Nullable"
-    - Position: 3
-      Type: "int64_t"
-  - Selector: "dummyInstance__Skie_DefaultArguments__74UserAgent:environment:crashReport:scope:loadingDurationMillis:"
-    MethodKind: "Instance"
-    SwiftName: "dummyInstance(userAgent:environment:crashReport:scope:loadingDurationMillis:)"
-    ResultType: "CoreAuthenticatorAuthenticatorFacade * _Nonnull"
-    Parameters:
-    - Position: 0
-      Type: "NSString * _Nonnull"
-    - Position: 1
-      Type: "CoreAuthenticatorApiEnvironment * _Nonnull"
     - Position: 2
       Type: "id<CoreAuthenticatorCrashReportInterface> _Nullable"
     - Position: 3
       Type: "id<CoreAuthenticatorKotlinx_coroutines_coreCoroutineScope> _Nonnull"
-    - Position: 4
-      Type: "int64_t"
-  - Selector: "dummyInstance__Skie_DefaultArguments__75UserAgent:environment:crashReport:resetAfterMillis:"
+  - Selector: "dummyInstance__Skie_DefaultArguments__73UserAgent:apiHost:crashReport:loadingDurationMillis:"
     MethodKind: "Instance"
-    SwiftName: "dummyInstance(userAgent:environment:crashReport:resetAfterMillis:)"
+    SwiftName: "dummyInstance(userAgent:apiHost:crashReport:loadingDurationMillis:)"
     ResultType: "CoreAuthenticatorAuthenticatorFacade * _Nonnull"
     Parameters:
     - Position: 0
       Type: "NSString * _Nonnull"
     - Position: 1
-      Type: "CoreAuthenticatorApiEnvironment * _Nonnull"
+      Type: "NSString * _Nonnull"
     - Position: 2
       Type: "id<CoreAuthenticatorCrashReportInterface> _Nullable"
     - Position: 3
       Type: "int64_t"
-  - Selector: "dummyInstance__Skie_DefaultArguments__76UserAgent:environment:crashReport:scope:resetAfterMillis:"
+  - Selector: "dummyInstance__Skie_DefaultArguments__74UserAgent:apiHost:crashReport:scope:loadingDurationMillis:"
     MethodKind: "Instance"
-    SwiftName: "dummyInstance(userAgent:environment:crashReport:scope:resetAfterMillis:)"
+    SwiftName: "dummyInstance(userAgent:apiHost:crashReport:scope:loadingDurationMillis:)"
     ResultType: "CoreAuthenticatorAuthenticatorFacade * _Nonnull"
     Parameters:
     - Position: 0
       Type: "NSString * _Nonnull"
     - Position: 1
-      Type: "CoreAuthenticatorApiEnvironment * _Nonnull"
+      Type: "NSString * _Nonnull"
     - Position: 2
       Type: "id<CoreAuthenticatorCrashReportInterface> _Nullable"
     - Position: 3
       Type: "id<CoreAuthenticatorKotlinx_coroutines_coreCoroutineScope> _Nonnull"
     - Position: 4
       Type: "int64_t"
-  - Selector: "dummyInstance__Skie_DefaultArguments__77UserAgent:environment:crashReport:loadingDurationMillis:resetAfterMillis:"
+  - Selector: "dummyInstance__Skie_DefaultArguments__75UserAgent:apiHost:crashReport:resetAfterMillis:"
     MethodKind: "Instance"
-    SwiftName: "dummyInstance(userAgent:environment:crashReport:loadingDurationMillis:resetAfterMillis:)"
+    SwiftName: "dummyInstance(userAgent:apiHost:crashReport:resetAfterMillis:)"
     ResultType: "CoreAuthenticatorAuthenticatorFacade * _Nonnull"
     Parameters:
     - Position: 0
       Type: "NSString * _Nonnull"
     - Position: 1
-      Type: "CoreAuthenticatorApiEnvironment * _Nonnull"
+      Type: "NSString * _Nonnull"
+    - Position: 2
+      Type: "id<CoreAuthenticatorCrashReportInterface> _Nullable"
+    - Position: 3
+      Type: "int64_t"
+  - Selector: "dummyInstance__Skie_DefaultArguments__76UserAgent:apiHost:crashReport:scope:resetAfterMillis:"
+    MethodKind: "Instance"
+    SwiftName: "dummyInstance(userAgent:apiHost:crashReport:scope:resetAfterMillis:)"
+    ResultType: "CoreAuthenticatorAuthenticatorFacade * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+    - Position: 1
+      Type: "NSString * _Nonnull"
+    - Position: 2
+      Type: "id<CoreAuthenticatorCrashReportInterface> _Nullable"
+    - Position: 3
+      Type: "id<CoreAuthenticatorKotlinx_coroutines_coreCoroutineScope> _Nonnull"
+    - Position: 4
+      Type: "int64_t"
+  - Selector: "dummyInstance__Skie_DefaultArguments__77UserAgent:apiHost:crashReport:loadingDurationMillis:resetAfterMillis:"
+    MethodKind: "Instance"
+    SwiftName: "dummyInstance(userAgent:apiHost:crashReport:loadingDurationMillis:resetAfterMillis:)"
+    ResultType: "CoreAuthenticatorAuthenticatorFacade * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+    - Position: 1
+      Type: "NSString * _Nonnull"
     - Position: 2
       Type: "id<CoreAuthenticatorCrashReportInterface> _Nullable"
     - Position: 3
@@ -2345,102 +2345,6 @@ Classes:
     MethodKind: "Instance"
     SwiftName: "init(name:ordinal:)"
     Availability: "nonswift"
-- Name: "CoreAuthenticatorApiEnvironment"
-  SwiftName: "ApiEnvironment"
-  Properties:
-  - Name: "baseUrl"
-    PropertyKind: "Instance"
-    SwiftName: "baseUrl"
-    Type: "NSString * _Nonnull"
-- Name: "CoreAuthenticatorApiEnvironmentStaging"
-  SwiftName: "ApiEnvironment.Staging"
-  Methods:
-  - Selector: "isEqual:"
-    MethodKind: "Instance"
-    SwiftName: "isEqual(_:)"
-    ResultType: "BOOL"
-    Parameters:
-    - Position: 0
-      Type: "id _Nullable"
-  - Selector: "hash"
-    MethodKind: "Instance"
-    SwiftName: "hash()"
-    ResultType: "NSUInteger"
-  - Selector: "description"
-    MethodKind: "Instance"
-    SwiftName: "description()"
-    ResultType: "NSString * _Nonnull"
-- Name: "CoreAuthenticatorApiEnvironmentPreprod"
-  SwiftName: "ApiEnvironment.Preprod"
-  Methods:
-  - Selector: "isEqual:"
-    MethodKind: "Instance"
-    SwiftName: "isEqual(_:)"
-    ResultType: "BOOL"
-    Parameters:
-    - Position: 0
-      Type: "id _Nullable"
-  - Selector: "hash"
-    MethodKind: "Instance"
-    SwiftName: "hash()"
-    ResultType: "NSUInteger"
-  - Selector: "description"
-    MethodKind: "Instance"
-    SwiftName: "description()"
-    ResultType: "NSString * _Nonnull"
-- Name: "CoreAuthenticatorApiEnvironmentProd"
-  SwiftName: "ApiEnvironment.Prod"
-  Methods:
-  - Selector: "isEqual:"
-    MethodKind: "Instance"
-    SwiftName: "isEqual(_:)"
-    ResultType: "BOOL"
-    Parameters:
-    - Position: 0
-      Type: "id _Nullable"
-  - Selector: "hash"
-    MethodKind: "Instance"
-    SwiftName: "hash()"
-    ResultType: "NSUInteger"
-  - Selector: "description"
-    MethodKind: "Instance"
-    SwiftName: "description()"
-    ResultType: "NSString * _Nonnull"
-- Name: "CoreAuthenticatorApiEnvironmentCustom"
-  SwiftName: "ApiEnvironment.Custom"
-  Methods:
-  - Selector: "initWithUrl:"
-    MethodKind: "Instance"
-    SwiftName: "init(url:)"
-    Parameters:
-    - Position: 0
-      Type: "NSString * _Nonnull"
-  - Selector: "doCopyUrl:"
-    MethodKind: "Instance"
-    SwiftName: "doCopy(url:)"
-    ResultType: "CoreAuthenticatorApiEnvironmentCustom * _Nonnull"
-    Parameters:
-    - Position: 0
-      Type: "NSString * _Nonnull"
-  - Selector: "isEqual:"
-    MethodKind: "Instance"
-    SwiftName: "isEqual(_:)"
-    ResultType: "BOOL"
-    Parameters:
-    - Position: 0
-      Type: "id _Nullable"
-  - Selector: "hash"
-    MethodKind: "Instance"
-    SwiftName: "hash()"
-    ResultType: "NSUInteger"
-  - Selector: "description"
-    MethodKind: "Instance"
-    SwiftName: "description()"
-    ResultType: "NSString * _Nonnull"
-  - Selector: "doCopy__Skie_DefaultArguments__96"
-    MethodKind: "Instance"
-    SwiftName: "doCopy()"
-    ResultType: "CoreAuthenticatorApiEnvironmentCustom * _Nonnull"
 - Name: "CoreAuthenticatorCredentialsForMigration"
   SwiftName: "CredentialsForMigration"
   Properties:
@@ -2608,19 +2512,19 @@ Classes:
   - Selector: "init"
     MethodKind: "Instance"
     SwiftName: "init()"
-  - Selector: "initWithId__Skie_DefaultArguments__99:"
+  - Selector: "initWithId__Skie_DefaultArguments__98:"
     MethodKind: "Instance"
     SwiftName: "init(id:)"
     Parameters:
     - Position: 0
       Type: "int64_t"
-  - Selector: "initWithIsAppLockEnabled__Skie_DefaultArguments__100:"
+  - Selector: "initWithIsAppLockEnabled__Skie_DefaultArguments__99:"
     MethodKind: "Instance"
     SwiftName: "init(isAppLockEnabled:)"
     Parameters:
     - Position: 0
       Type: "BOOL"
-  - Selector: "initWithId:isAppLockEnabled__Skie_DefaultArguments__101:"
+  - Selector: "initWithId:isAppLockEnabled__Skie_DefaultArguments__100:"
     MethodKind: "Instance"
     SwiftName: "init(id:isAppLockEnabled:)"
     Parameters:
@@ -2628,13 +2532,13 @@ Classes:
       Type: "int64_t"
     - Position: 1
       Type: "BOOL"
-  - Selector: "initWithTheme__Skie_DefaultArguments__102:"
+  - Selector: "initWithTheme__Skie_DefaultArguments__101:"
     MethodKind: "Instance"
     SwiftName: "init(theme:)"
     Parameters:
     - Position: 0
       Type: "CoreAuthenticatorTheme * _Nonnull"
-  - Selector: "initWithId:theme__Skie_DefaultArguments__103:"
+  - Selector: "initWithId:theme__Skie_DefaultArguments__102:"
     MethodKind: "Instance"
     SwiftName: "init(id:theme:)"
     Parameters:
@@ -2642,7 +2546,7 @@ Classes:
       Type: "int64_t"
     - Position: 1
       Type: "CoreAuthenticatorTheme * _Nonnull"
-  - Selector: "initWithIsAppLockEnabled:theme__Skie_DefaultArguments__104:"
+  - Selector: "initWithIsAppLockEnabled:theme__Skie_DefaultArguments__103:"
     MethodKind: "Instance"
     SwiftName: "init(isAppLockEnabled:theme:)"
     Parameters:
@@ -2927,6 +2831,10 @@ Classes:
   - Name: "ACTIVITY_MANAGER_URL"
     PropertyKind: "Instance"
     SwiftName: "ACTIVITY_MANAGER_URL"
+    Type: "NSString * _Nonnull"
+  - Name: "RECOVER_PASSWORD_URL"
+    PropertyKind: "Instance"
+    SwiftName: "RECOVER_PASSWORD_URL"
     Type: "NSString * _Nonnull"
   - Name: "SETTINGS_2FA_MANAGER_URL"
     PropertyKind: "Instance"

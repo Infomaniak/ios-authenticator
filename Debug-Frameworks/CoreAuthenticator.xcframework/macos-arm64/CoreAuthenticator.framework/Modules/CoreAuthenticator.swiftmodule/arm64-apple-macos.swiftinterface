@@ -100,8 +100,6 @@ public enum Skie {
       public enum LoginRequired {
       }
     }
-    public enum ApiEnvironment {
-    }
     public enum ApiException {
     }
   }
@@ -1250,23 +1248,6 @@ extension CoreAuthenticator.Skie.MultiplatformLib.AppStatus.LoginRequired {
 public func onEnum<__Sealed>(of sealed: __Sealed) -> CoreAuthenticator.Skie.MultiplatformLib.AppStatus.LoginRequired.__Sealed where __Sealed : CoreAuthenticator.AppStatusLoginRequired
 #if compiler(>=5.3) && $NonescapableTypes
 @_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> CoreAuthenticator.Skie.MultiplatformLib.AppStatus.LoginRequired.__Sealed? where __Sealed : CoreAuthenticator.AppStatusLoginRequired
-#endif
-extension CoreAuthenticator.Skie.MultiplatformLib.ApiEnvironment {
-  @frozen public enum __Sealed : Swift.Hashable {
-    case custom(CoreAuthenticator.ApiEnvironment.Custom)
-    case preprod(CoreAuthenticator.ApiEnvironment.Preprod)
-    case prod(CoreAuthenticator.ApiEnvironment.Prod)
-    case staging(CoreAuthenticator.ApiEnvironment.Staging)
-    public static func == (a: CoreAuthenticator.Skie.MultiplatformLib.ApiEnvironment.__Sealed, b: CoreAuthenticator.Skie.MultiplatformLib.ApiEnvironment.__Sealed) -> Swift.Bool
-    public func hash(into hasher: inout Swift.Hasher)
-    public var hashValue: Swift.Int {
-      get
-    }
-  }
-}
-public func onEnum<__Sealed>(of sealed: __Sealed) -> CoreAuthenticator.Skie.MultiplatformLib.ApiEnvironment.__Sealed where __Sealed : CoreAuthenticator.ApiEnvironment
-#if compiler(>=5.3) && $NonescapableTypes
-@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> CoreAuthenticator.Skie.MultiplatformLib.ApiEnvironment.__Sealed? where __Sealed : CoreAuthenticator.ApiEnvironment
 #endif
 extension CoreAuthenticator.Skie.MultiplatformLib.ApiException {
   @frozen public enum __Sealed : Swift.Hashable {
