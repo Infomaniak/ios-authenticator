@@ -59,9 +59,12 @@ public struct SettingsView: View {
                     Link(destination: URL(string: AuthenticatorResourcesStrings.urlUserReport)!) {
                         AuthenticatorTrailingLabel(\.feedbackTitle, iconKey: \.squareArrowDiagonalUp)
                     }
+                    .accessibilityHint(AuthenticatorResourcesStrings.contentDescriptionButtonExternalLink)
+
                     Link(destination: URLConstants.support.url) {
                         AuthenticatorTrailingLabel(\.contactSupportTitle, iconKey: \.squareArrowDiagonalUp)
                     }
+                    .accessibilityHint(AuthenticatorResourcesStrings.contentDescriptionButtonExternalLink)
                 }
             }
             .authListStyle()

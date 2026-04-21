@@ -59,12 +59,14 @@ struct AccountDetailView: View {
                 } label: {
                     AuthenticatorTrailingLabel(\.activityHistoryButton, iconKey: \.squareArrowDiagonalUp)
                 }
+                .accessibilityHint(AuthenticatorResourcesStrings.contentDescriptionButtonExternalLink)
 
                 Button {
                     presentedWebViewURL = URLConstants.accountParameters.url
                 } label: {
                     AuthenticatorTrailingLabel(\.accountSettingsButton, iconKey: \.squareArrowDiagonalUp)
                 }
+                .accessibilityHint(AuthenticatorResourcesStrings.contentDescriptionButtonExternalLink)
 
                 Button(AuthenticatorResourcesStrings.disconnectButton, role: .destructive) {
                     isShowingDisconnectWarningAlert = true
