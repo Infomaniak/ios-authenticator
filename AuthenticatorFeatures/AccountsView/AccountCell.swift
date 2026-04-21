@@ -32,6 +32,7 @@ struct AccountCell: View {
 
             account.status.icon
                 .foregroundStyle(account.status.color.foreground)
+                .accessibilityLabel(account.status.title)
         }
     }
 }
