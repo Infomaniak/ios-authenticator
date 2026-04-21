@@ -34,19 +34,6 @@ public extension UserDefaults {
     nonisolated(unsafe) static let shared = UserDefaults(suiteName: appGroupIdentifier)!
 }
 
-extension InfomaniakCore.ApiEnvironment {
-    var kmpEnvironment: CoreAuthenticator.ApiEnvironment {
-        switch self {
-        case .prod:
-            return .Prod()
-        case .preprod:
-            return .Preprod()
-        case .customHost:
-            return .Staging()
-        }
-    }
-}
-
 extension [Factory] {
     func registerFactoriesInDI() {
         forEach { SimpleResolver.sharedResolver.store(factory: $0) }
@@ -98,7 +85,7 @@ open class TargetAssembly: @unchecked Sendable {
                 let tokenBridge = TokenBridgeImplementation()
 
                 return AuthenticatorFacade.companion.create(
-                    environment: apiEnvironment.kmpEnvironment,
+                    apiHost: apiEnvironment.host,
                     userAgent: UserAgentBuilder().userAgent,
                     clientId: Self.loginConfig.clientId,
                     databaseNameOrPath: appGroupPath.realmRootURL.appending(path: "accounts.db").path(),
