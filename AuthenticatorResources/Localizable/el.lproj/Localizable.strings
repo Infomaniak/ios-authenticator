@@ -130,6 +130,9 @@
 /* loco:695e8ad99771c5be5c0070b2 */
 "contactSupportTitle" = "Επικοινωνία με την υποστήριξη";
 
+/* loco:69e7743c9526ad3ca903b182 */
+"contentDescriptionButtonExternalLink" = "Ανοίγει έναν εξωτερικό σύνδεσμο στο πρόγραμμα περιήγησης";
+
 /* loco:695e9f7b3b993ba71c01fbb5 */
 "continueButton" = "Συνέχεια";
 
