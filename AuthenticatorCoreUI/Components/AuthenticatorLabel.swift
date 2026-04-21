@@ -57,6 +57,7 @@ public struct AuthenticatorLabel: View {
         } icon: {
             icon
                 .foregroundStyle(iconColor ?? .accentColor)
+                .accessibility(hidden: true)
         }
     }
 }

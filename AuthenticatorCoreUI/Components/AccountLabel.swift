@@ -45,6 +45,7 @@ public struct AccountLabel: View {
                 }
             }
             .frame(width: size.iconSize, height: size.iconSize)
+            .accessibility(hidden: true)
 
             VStack(alignment: .leading) {
                 Text(account.name)
