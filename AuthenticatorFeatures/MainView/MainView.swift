@@ -43,6 +43,7 @@ public struct MainView: View {
                     AuthenticatorLabel(\.settingsTitle, iconKey: \.gear)
                 }
         }
+        .ikButtonTheme(.statusAlert)
         .sceneLifecycle(willEnterForeground: willEnterForeground)
         .onAppear(perform: requestPermissionIfNeeded)
     }
