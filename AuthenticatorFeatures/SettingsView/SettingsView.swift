@@ -33,8 +33,6 @@ public struct SettingsView: View {
 
     @State private var isNotificationsAuthorized = false
 
-    private let roundedRectangle = RoundedRectangle(cornerRadius: 24.0)
-
     public init() {}
 
     public var body: some View {
@@ -48,33 +46,15 @@ public struct SettingsView: View {
                     }
                 } header: {
                     if isNotificationsEnabled && !isNotificationsAuthorized {
-                        VStack(alignment: .leading) {
-                            HStack(spacing: IKPadding.small) {
-                                AuthenticatorResourcesAsset.Images.circleInformation.swiftUIImage
-                                Text(AuthenticatorResourcesStrings.allowDeviceNotificationsDescription)
-                                    .font(.Token.callout)
-                                    .foregroundStyle(Color.Token.Text.secondary)
-                                    .frame(maxWidth: .infinity, alignment: .leading)
-                            }
-
-                            Button {
-                                UIApplication.shared.open(URL(string: UIApplication.openSettingsURLString)!)
-                            } label: {
-                                Text(AuthenticatorResourcesStrings.openSettingsButton)
-                                    .foregroundStyle(Color.Token.Text.primary)
-                                    .font(.Token.bodyBold)
-                            }
-                            .buttonStyle(.ikBordered)
-                            .ikButtonFullWidth(true)
-                        }
-                        .padding(.vertical, value: .medium)
-                        .padding(.horizontal, value: .large)
-                        .background(Color.Token.Surface.secondary, in: roundedRectangle)
-                        .overlay {
-                            roundedRectangle
-                                .stroke(Color.Token.Surface.tertiary, lineWidth: 1)
-                        }
-                        .listRowInsets(EdgeInsets(top: IKPadding.medium, leading: 0, bottom: IKPadding.huge, trailing: 0))
+                        StatusHeaderView(
+                            type: .suggestion,
+                            description: AuthenticatorResourcesStrings.allowDeviceNotificationsDescription,
+                            primaryButton: (
+                                title: AuthenticatorResourcesStrings.openSettingsButton,
+                                action: openPhoneSettings
+                            )
+                        )
+                        .listRowInsets(EdgeInsets(top: IKPadding.medium, leading: 0, bottom: IKPadding.large, trailing: 0))
                     }
                 }
                 .authSectionStyle()
@@ -128,6 +108,14 @@ public struct SettingsView: View {
                 isNotificationsAuthorized = false
             }
         }
+    }
+
+    private func openPhoneSettings() {
+        guard let settingsUrl = URL(string: UIApplication.openSettingsURLString) else {
+            return
+        }
+
+        UIApplication.shared.open(settingsUrl)
     }
 }
 
