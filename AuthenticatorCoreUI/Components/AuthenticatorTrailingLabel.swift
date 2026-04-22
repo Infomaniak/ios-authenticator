@@ -72,6 +72,7 @@ public struct AuthenticatorTrailingLabel: View {
                 icon
                     .iconSize(.large)
                     .foregroundStyle(iconColor ?? Color.accentColor)
+                    .accessibility(hidden: true)
             }
         }
     }
