@@ -130,6 +130,9 @@
 /* loco:695e8ad99771c5be5c0070b2 */
 "contactSupportTitle" = "Contacter le support";
 
+/* loco:69e7743c9526ad3ca903b182 */
+"contentDescriptionButtonExternalLink" = "Ouvre un lien externe dans le navigateur";
+
 /* loco:695e9f7b3b993ba71c01fbb5 */
 "continueButton" = "Continuer";
 
