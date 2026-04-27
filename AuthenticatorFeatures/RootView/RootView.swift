@@ -36,7 +36,7 @@ public struct RootView: View {
             case .preloading:
                 PreloadingView()
             case .newAccount(let step), .migration(let step), .addAccount(let step):
-                OnboardingView(steps: rootViewState.onboardingSteps, currentStep: step)
+                OnboardingView(currentStep: step)
             case .updateRequired:
                 Text("Updated required") // TODO: Implement update required screen
             }

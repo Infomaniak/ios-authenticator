@@ -42,7 +42,36 @@ public struct OnboardingView: View {
     @ModalState(context: ContextKeys.onboarding) private var isPresentingCreateAccount = false
 
     private let currentStep: OnboardingStep
-    private let steps: [OnboardingStep]
+    private var steps: [OnboardingStep] {
+        if let cached = rootViewState.cachedOnboardingSteps {
+            return cached
+        }
+
+        var steps: [OnboardingStep] = []
+
+        switch rootViewState.state {
+        case .newAccount:
+            steps = OnboardingStep.loginSteps
+        case .addAccount:
+            steps = OnboardingStep.addAccountSteps
+        case .migration:
+            return OnboardingStep.migrationSteps
+        default:
+            return []
+        }
+
+        if !UserDefaults.shared.isAppLockEnabled {
+            steps.append(.biometry)
+        }
+
+        if rootViewState.shouldShowNotificationsStep {
+            steps.append(.notifications)
+        }
+
+        rootViewState.cachedOnboardingSteps = steps
+        return steps
+    }
+
     private var slides: [Slide] {
         return steps.map { $0.slide }
     }
@@ -63,8 +92,7 @@ public struct OnboardingView: View {
         }
     }
 
-    public init(steps: [OnboardingStep], currentStep: OnboardingStep) {
-        self.steps = steps
+    public init(currentStep: OnboardingStep) {
         self.currentStep = currentStep
     }
 
@@ -213,13 +241,13 @@ public struct OnboardingView: View {
 }
 
 #Preview("Login") {
-    OnboardingView(steps: [.login], currentStep: .login)
+    OnboardingView(currentStep: .login)
 }
 
 #Preview("Progress") {
-    OnboardingView(steps: [.loginInProgress], currentStep: .loginInProgress)
+    OnboardingView(currentStep: .loginInProgress)
 }
 
 #Preview("Migration") {
-    OnboardingView(steps: [.migration], currentStep: .migration)
+    OnboardingView(currentStep: .migration)
 }
