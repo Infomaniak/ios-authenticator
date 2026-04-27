@@ -80,17 +80,14 @@ public final class RootViewState: ObservableObject {
 
     public init() {
         observeAppStatus()
-        checkNotificationAuthorizationStatus()
     }
 
-    private func checkNotificationAuthorizationStatus() {
-        Task {
-            let center = UNUserNotificationCenter.current()
-            let settings = await center.notificationSettings()
+    private func checkNotificationAuthorizationStatus() async {
+        let center = UNUserNotificationCenter.current()
+        let settings = await center.notificationSettings()
 
-            shouldShowNotificationsStep = settings.authorizationStatus != .denied &&
-                !UserDefaults.shared.isNotificationsEnabled
-        }
+        shouldShowNotificationsStep = settings.authorizationStatus != .denied &&
+            !UserDefaults.shared.isNotificationsEnabled
     }
 
     public func startMigration() {
@@ -138,6 +135,7 @@ public final class RootViewState: ObservableObject {
         Task {
             for try await status in authenticatorFacade.appStatus {
                 lastKnownAppStatus = status
+                await checkNotificationAuthorizationStatus()
                 if status is AppStatusLoginRequiredMigratingFromLegacyKAuth {
                     state = .migration(.migration)
                 } else if status is AppStatusLoginRequiredNotMigrating {
