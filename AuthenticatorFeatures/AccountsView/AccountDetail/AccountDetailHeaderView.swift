@@ -67,7 +67,7 @@ struct AccountDetailHeaderView: View {
             .autoLoginWebView(protectedURL: $presentedWebViewUrl, userId: Int(account.id))
 
             if let alertAccount {
-                StatusHeaderView(type: alertAccount)
+                StatusHeaderView(type: alertAccount, description: "")
             }
         }
         .listRowInsets(EdgeInsets(top: IKPadding.medium, leading: 0, bottom: IKPadding.huge, trailing: 0))

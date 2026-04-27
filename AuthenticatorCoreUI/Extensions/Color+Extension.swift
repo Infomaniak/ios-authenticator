@@ -74,6 +74,12 @@ public extension Color {
                 surface: Color(light: AuthColor.red50, dark: AuthColor.red950),
                 text: Color(light: AuthColor.red900, dark: AuthColor.red100)
             )
+
+            public static let suggestion = StatusColors(
+                foreground: Color(light: AuthColor.purple500, dark: AuthColor.purple300),
+                surface: Color(light: AuthColor.purple50, dark: AuthColor.purple950),
+                text: Color(light: AuthColor.purple900, dark: AuthColor.purple100)
+            )
         }
     }
 }

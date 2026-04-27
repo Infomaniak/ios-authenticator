@@ -19,6 +19,7 @@
 import AuthenticatorCore
 import AuthenticatorCoreUI
 import AuthenticatorResources
+import DesignSystem
 import InfomaniakCoreCommonUI
 import InfomaniakDI
 import InfomaniakPrivacyManagement
@@ -30,6 +31,8 @@ public struct SettingsView: View {
     @AppStorage(UserDefaults.shared.key(.notificationsEnabled)) private var isNotificationsEnabled = DefaultPreferences
         .notificationsEnabled
 
+    @State private var isNotificationsAuthorized = true
+
     public init() {}
 
     public var body: some View {
@@ -40,6 +43,18 @@ public struct SettingsView: View {
                     ToggleAppLockSettingsView()
                     NavigationLink(AuthenticatorResourcesStrings.themeTitle) {
                         ChangeThemeSettingsView()
+                    }
+                } header: {
+                    if isNotificationsEnabled && !isNotificationsAuthorized {
+                        StatusHeaderView(
+                            type: .suggestion,
+                            description: AuthenticatorResourcesStrings.allowDeviceNotificationsDescription,
+                            primaryButton: (
+                                title: AuthenticatorResourcesStrings.openSettingsButton,
+                                action: openPhoneSettings
+                            )
+                        )
+                        .listRowInsets(EdgeInsets(top: IKPadding.medium, leading: 0, bottom: IKPadding.large, trailing: 0))
                     }
                 }
                 .authSectionStyle()
@@ -71,7 +86,36 @@ public struct SettingsView: View {
             }
             .authListStyle()
             .navigationTitle(AuthenticatorResourcesStrings.settingsTitle)
+            .sceneLifecycle(willEnterForeground: willEnterForeground)
         }
+    }
+
+    private func willEnterForeground() {
+        Task {
+            await checkNotificationAuthorization()
+        }
+    }
+
+    private func checkNotificationAuthorization() async {
+        let center = UNUserNotificationCenter.current()
+        let settings = await center.notificationSettings()
+
+        withAnimation {
+            switch settings.authorizationStatus {
+            case .authorized, .provisional, .ephemeral:
+                isNotificationsAuthorized = true
+            default:
+                isNotificationsAuthorized = false
+            }
+        }
+    }
+
+    private func openPhoneSettings() {
+        guard let settingsUrl = URL(string: UIApplication.openSettingsURLString) else {
+            return
+        }
+
+        UIApplication.shared.open(settingsUrl)
     }
 }
 
