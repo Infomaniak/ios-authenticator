@@ -31,7 +31,7 @@ public struct SettingsView: View {
     @AppStorage(UserDefaults.shared.key(.notificationsEnabled)) private var isNotificationsEnabled = DefaultPreferences
         .notificationsEnabled
 
-    @State private var isNotificationsAuthorized = false
+    @State private var isNotificationsAuthorized = true
 
     public init() {}
 
@@ -85,7 +85,6 @@ public struct SettingsView: View {
                 .authSectionStyle()
             }
             .authListStyle()
-            .animation(.smooth, value: isNotificationsEnabled)
             .navigationTitle(AuthenticatorResourcesStrings.settingsTitle)
             .sceneLifecycle(willEnterForeground: willEnterForeground)
         }
@@ -100,7 +99,8 @@ public struct SettingsView: View {
     private func checkNotificationAuthorization() async {
         let center = UNUserNotificationCenter.current()
         let settings = await center.notificationSettings()
-        withAnimation(.smooth) {
+
+        withAnimation {
             switch settings.authorizationStatus {
             case .authorized, .provisional, .ephemeral:
                 isNotificationsAuthorized = true

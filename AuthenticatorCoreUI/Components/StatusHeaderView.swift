@@ -52,7 +52,6 @@ public struct StatusHeaderView: View {
                     if let primaryButton {
                         Button(primaryButton.title, action: primaryButton.action)
                             .buttonStyle(.ikBordered)
-                            .font(.Token.bodyBold)
                     }
 
                     if let secondaryButton {
