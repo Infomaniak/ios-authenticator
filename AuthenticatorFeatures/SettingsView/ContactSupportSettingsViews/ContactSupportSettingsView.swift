@@ -49,6 +49,7 @@ struct ContactSupportSettingsView: View {
                 ContactSupportSettingsHeaderView()
                     .listRowInsets(EdgeInsets(top: IKPadding.medium, leading: 0, bottom: IKPadding.huge, trailing: 0))
             }
+            .authSectionStyle()
             .headerProminence(.increased)
         }
         .authListStyle()

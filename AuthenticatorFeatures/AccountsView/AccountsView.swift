@@ -52,7 +52,7 @@ public struct AccountsView: View {
                             .listRowInsets(EdgeInsets(top: IKPadding.medium, leading: 0, bottom: IKPadding.large, trailing: 0))
                     }
                 }
-                .headerProminence(.increased)
+                .authSectionStyle()
             }
             .authListStyle()
             .navigationTitle(Constants.appName)

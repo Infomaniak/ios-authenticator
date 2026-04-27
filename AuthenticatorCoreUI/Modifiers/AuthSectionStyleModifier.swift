@@ -16,25 +16,10 @@
  along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-import AuthenticatorCore
-import AuthenticatorCoreUI
-import AuthenticatorResources
 import SwiftUI
 
-struct ChangeThemeSettingsView: View {
-    var body: some View {
-        Form {
-            ForEach(Theme.allCases) { theme in
-                ChangeThemeSettingsCell(theme: theme)
-            }
-            .authSectionStyle()
-        }
-        .authScrollViewStyle()
-        .navigationTitle(AuthenticatorResourcesStrings.themeTitle)
-        .navigationBarTitleDisplayMode(.inline)
+public extension View {
+    func authSectionStyle() -> some View {
+        listRowBackground(Color.Token.Surface.outlined)
     }
-}
-
-#Preview {
-    ChangeThemeSettingsView()
 }

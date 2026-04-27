@@ -63,6 +63,7 @@ struct SubmitTicketView: View {
                     .foregroundStyle(Color.Token.Text.secondary)
                     .listRowInsets(EdgeInsets(top: IKPadding.medium, leading: 0, bottom: IKPadding.huge, trailing: 0))
             }
+            .authSectionStyle()
         }
         .authListStyle()
         .navigationTitle(AuthenticatorResourcesStrings.submitTicketTitle)
