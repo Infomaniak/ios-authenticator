@@ -145,7 +145,7 @@ public struct OnboardingView: View {
                 }
             case .notifications:
                 VStack {
-                    Button(AuthenticatorResourcesStrings.enableButton) {
+                    Button(AuthenticatorResourcesStrings.onboardingNotificationsAuthorisationButton) {
                         enableNotifications(index: index)
                     }
                     .buttonStyle(.ikBorderedProminent)
