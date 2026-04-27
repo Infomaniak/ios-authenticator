@@ -45,6 +45,7 @@ public struct URLConstants: Sendable {
             urlString: "https://\(Constants.managerHost)/v3/ng/profile/user/security-and-recovery-parameters/dashboard?global-settings=user-account-security"
         )
     public static let support = URLConstants(urlString: "https://infomaniak.com/gtl/help")
+    public static let recoverPassword = URLConstants(urlString: "https://login.infomaniak.com/fr/recover/password")
 
     private var urlString: String
 
