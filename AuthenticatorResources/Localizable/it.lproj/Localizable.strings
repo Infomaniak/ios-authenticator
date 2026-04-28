@@ -328,6 +328,9 @@
 /* loco:695e99b261ee1c8c900db0e2 */
 "removeButton" = "Rimuovi";
 
+/* loco:69e71e371e556c460d0be734 */
+"requiredLabel" = "Richiesto";
+
 /* loco:695e7d2aaf61b386540bf272 */
 "settingsTitle" = "Impostazioni";
 
