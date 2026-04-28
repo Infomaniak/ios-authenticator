@@ -3,8 +3,8 @@
  * Project: Authenticator
  * Locale: es, Spanish
  * Tagged: ios
- * Exported by: Baptiste Griva
- * Exported at: Mon, 27 Apr 2026 14:07:51 +0200
+ * Exported by: Jordan Chapelle
+ * Exported at: Tue, 05 May 2026 16:24:49 +0200
  */
 
 /* loco:69d6617d0ee9dd38d50c99e2 */
@@ -124,6 +124,9 @@
 /* loco:695e9b2a9d8b472044005a44 */
 "confirmLoginNotificationTitle" = "Confirmar inicio de sesión";
 
+/* loco:69f9fcc742a35b678d0d3772 */
+"connectionFailedTitle" = "Error de conexión";
+
 /* loco:695e8b0257b12526a4058922 */
 "contactSupportDescription" = "Contacta a nuestros equipos por teléfono o correo electrónico para obtener ayuda para resolver tu problema.";
 
@@ -196,8 +199,14 @@
 /* loco:695e8322b85b83d8780f97f2 */
 "errorLoginFailed" = "Inicio de sesión fallido. Por favor, inténtelo de nuevo o contacte con soporte. (código de error: %d)";
 
+/* loco:69e8bd2f0c295d97f70480a2 */
+"errorMigrationFailed" = "La migración se ha interrumpido.\nPóngase en contacto con nuestro equipo de asistencia técnica.";
+
 /* loco:695e9d72bc601c317401c9d4 */
 "errorOccuredTitle" = "Se produjo un error";
+
+/* loco:69f201978a23057d8f09c362 */
+"errorWithRetryMessage" = "Se ha producido un error. Vuelva a intentarlo más tarde.";
 
 /* loco:695e95bc3614499244057df2 */
 "estimatedWait" = "Tiempo estimado de espera: %@";
@@ -222,9 +231,6 @@
 
 /* loco:695e9b60eb4a5e9ff3045a82 */
 "loginAttemptQuery" = "¿Está intentando iniciar sesión?";
-
-/* loco:695e9b86eb4a5e9ff3045a84 */
-"loginAuthorizationWarning" = "Confirmar este inicio de sesión autorizará a este dispositivo a acceder a su cuenta de Infomaniak.";
 
 /* loco:695e9c9194a0d83c6a006812 */
 "loginDeniedSuccessDescription" = "Ha rechazado un intento de inicio de sesión. Para proteger su cuenta, cambie su contraseña.\n\nSi usted inició esta solicitud, intente iniciar sesión nuevamente.";
@@ -295,6 +301,9 @@
 /* loco:695e91208384843ef3052bb2 */
 "openSupportStatus" = "Abierto";
 
+/* loco:69f9fd896bbdef154e008142 */
+"passTitle" = "Pase";
+
 /* loco:695e9ea5ffea9abfd80a1ae2 */
 "passwordAskingWarning" = "Infomaniak nunca le pedirá su contraseña inesperadamente.\n\nAsegúrese de haber iniciado esta acción antes de continuar.";
 
@@ -327,6 +336,12 @@
 
 /* loco:695e99b261ee1c8c900db0e2 */
 "removeButton" = "Eliminar";
+
+/* loco:69e71e371e556c460d0be734 */
+"requiredLabel" = "Requerido";
+
+/* loco:69f9fd5b9c704770ab0a1ea2 */
+"retryTitle" = "Reintentar";
 
 /* loco:695e7d2aaf61b386540bf272 */
 "settingsTitle" = "Configuración";
@@ -393,3 +408,6 @@
 
 /* loco:695e9ba3ae7a65d0a10aba73 */
 "whenLoginTitle" = "Cuándo";
+
+/* loco:69e720890dceaa5a5204d762 */
+"wrongPasswordLabel" = "La contraseña es incorrecta";

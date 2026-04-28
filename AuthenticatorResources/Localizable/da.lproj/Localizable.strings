@@ -3,8 +3,8 @@
  * Project: Authenticator
  * Locale: da, Danish
  * Tagged: ios
- * Exported by: Baptiste Griva
- * Exported at: Mon, 27 Apr 2026 14:07:51 +0200
+ * Exported by: Jordan Chapelle
+ * Exported at: Tue, 05 May 2026 16:24:49 +0200
  */
 
 /* loco:69d6617d0ee9dd38d50c99e2 */
@@ -124,6 +124,9 @@
 /* loco:695e9b2a9d8b472044005a44 */
 "confirmLoginNotificationTitle" = "Bekræft login";
 
+/* loco:69f9fcc742a35b678d0d3772 */
+"connectionFailedTitle" = "Forbindelse mislykkedes";
+
 /* loco:695e8b0257b12526a4058922 */
 "contactSupportDescription" = "Kontakt vores teams via telefon eller e-mail for at få hjælp til at løse dit problem.";
 
@@ -196,8 +199,14 @@
 /* loco:695e8322b85b83d8780f97f2 */
 "errorLoginFailed" = "Kontologin mislykkedes. Prøv igen, eller kontakt support. (fejlkode: %d)";
 
+/* loco:69e8bd2f0c295d97f70480a2 */
+"errorMigrationFailed" = "Migreringen er blevet afbrudt.\nKontakt venligst vores tekniske supportteam.";
+
 /* loco:695e9d72bc601c317401c9d4 */
 "errorOccuredTitle" = "Der opstod en fejl";
+
+/* loco:69f201978a23057d8f09c362 */
+"errorWithRetryMessage" = "Der er opstået en fejl. Prøv venligst igen senere.";
 
 /* loco:695e95bc3614499244057df2 */
 "estimatedWait" = "Anslået ventetid: %@";
@@ -222,9 +231,6 @@
 
 /* loco:695e9b60eb4a5e9ff3045a82 */
 "loginAttemptQuery" = "Forsøger du at logge ind?";
-
-/* loco:695e9b86eb4a5e9ff3045a84 */
-"loginAuthorizationWarning" = "Bekræftelse af dette login vil give denne enhed adgang til din Infomaniak konto.";
 
 /* loco:695e9c9194a0d83c6a006812 */
 "loginDeniedSuccessDescription" = "Du har afvist et loginforsøg. For at sikre din konto skal du ændre din adgangskode.\n\nHvis du har startet denne anmodning, skal du prøve at logge ind igen.";
@@ -295,6 +301,9 @@
 /* loco:695e91208384843ef3052bb2 */
 "openSupportStatus" = "Åben";
 
+/* loco:69f9fd896bbdef154e008142 */
+"passTitle" = "Passér";
+
 /* loco:695e9ea5ffea9abfd80a1ae2 */
 "passwordAskingWarning" = "Infomaniak vil aldrig spørge om din adgangskode uventet.\n\nSørg for, at du har startet denne handling, før du fortsætter.";
 
@@ -327,6 +336,12 @@
 
 /* loco:695e99b261ee1c8c900db0e2 */
 "removeButton" = "Fjern";
+
+/* loco:69e71e371e556c460d0be734 */
+"requiredLabel" = "Påkrævet";
+
+/* loco:69f9fd5b9c704770ab0a1ea2 */
+"retryTitle" = "Prøv igen";
 
 /* loco:695e7d2aaf61b386540bf272 */
 "settingsTitle" = "Indstillinger";
@@ -393,3 +408,6 @@
 
 /* loco:695e9ba3ae7a65d0a10aba73 */
 "whenLoginTitle" = "Hvornår";
+
+/* loco:69e720890dceaa5a5204d762 */
+"wrongPasswordLabel" = "Adgangskoden er forkert";

@@ -3,8 +3,8 @@
  * Project: Authenticator
  * Locale: sv, Swedish
  * Tagged: ios
- * Exported by: Baptiste Griva
- * Exported at: Mon, 27 Apr 2026 14:07:51 +0200
+ * Exported by: Jordan Chapelle
+ * Exported at: Tue, 05 May 2026 16:24:49 +0200
  */
 
 /* loco:69d6617d0ee9dd38d50c99e2 */
@@ -124,6 +124,9 @@
 /* loco:695e9b2a9d8b472044005a44 */
 "confirmLoginNotificationTitle" = "Bekräfta inloggning";
 
+/* loco:69f9fcc742a35b678d0d3772 */
+"connectionFailedTitle" = "Anslutningen misslyckades";
+
 /* loco:695e8b0257b12526a4058922 */
 "contactSupportDescription" = "Kontakta våra team via telefon eller e-post för hjälp med att lösa ditt problem.";
 
@@ -196,8 +199,14 @@
 /* loco:695e8322b85b83d8780f97f2 */
 "errorLoginFailed" = "Kontoinloggning misslyckades. Försök igen eller kontakta support. (felkod: %d)";
 
+/* loco:69e8bd2f0c295d97f70480a2 */
+"errorMigrationFailed" = "Migreringen har avbrutits.\nVänligen kontakta vårt tekniska supportteam.";
+
 /* loco:695e9d72bc601c317401c9d4 */
 "errorOccuredTitle" = "Ett fel uppstod";
+
+/* loco:69f201978a23057d8f09c362 */
+"errorWithRetryMessage" = "Ett fel har inträffat. Vänligen försök igen senare.";
 
 /* loco:695e95bc3614499244057df2 */
 "estimatedWait" = "Beräknad väntetid: %@";
@@ -222,9 +231,6 @@
 
 /* loco:695e9b60eb4a5e9ff3045a82 */
 "loginAttemptQuery" = "Försöker du\nlogga in?";
-
-/* loco:695e9b86eb4a5e9ff3045a84 */
-"loginAuthorizationWarning" = "Att bekräfta denna inloggning kommer att auktorisera denna enhet att komma åt ditt Infomaniak-konto";
 
 /* loco:695e9c9194a0d83c6a006812 */
 "loginDeniedSuccessDescription" = "Du avvisade ett inloggningsförsök. För att säkra ditt konto, byt ditt lösenord.\n\nOm du gjorde denna förfrågan, försök logga in igen.";
@@ -295,6 +301,9 @@
 /* loco:695e91208384843ef3052bb2 */
 "openSupportStatus" = "Öppet";
 
+/* loco:69f9fd896bbdef154e008142 */
+"passTitle" = "Passera";
+
 /* loco:695e9ea5ffea9abfd80a1ae2 */
 "passwordAskingWarning" = "Infomaniak kommer aldrig att fråga dig om ditt lösenord oväntat.\n\nSe till att du gjorde denna åtgärd innan du fortsätter.";
 
@@ -327,6 +336,12 @@
 
 /* loco:695e99b261ee1c8c900db0e2 */
 "removeButton" = "Ta bort";
+
+/* loco:69e71e371e556c460d0be734 */
+"requiredLabel" = "Krävs";
+
+/* loco:69f9fd5b9c704770ab0a1ea2 */
+"retryTitle" = "Försök igen";
 
 /* loco:695e7d2aaf61b386540bf272 */
 "settingsTitle" = "Inställningar";
@@ -393,3 +408,6 @@
 
 /* loco:695e9ba3ae7a65d0a10aba73 */
 "whenLoginTitle" = "När";
+
+/* loco:69e720890dceaa5a5204d762 */
+"wrongPasswordLabel" = "Lösenordet är felaktigt";

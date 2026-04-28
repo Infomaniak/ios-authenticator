@@ -3,8 +3,8 @@
  * Project: Authenticator
  * Locale: en, English
  * Tagged: ios
- * Exported by: Baptiste Griva
- * Exported at: Mon, 27 Apr 2026 14:07:51 +0200
+ * Exported by: Jordan Chapelle
+ * Exported at: Tue, 05 May 2026 16:24:49 +0200
  */
 
 /* loco:69d6617d0ee9dd38d50c99e2 */
@@ -124,6 +124,9 @@
 /* loco:695e9b2a9d8b472044005a44 */
 "confirmLoginNotificationTitle" = "Confirm login";
 
+/* loco:69f9fcc742a35b678d0d3772 */
+"connectionFailedTitle" = "Connection failed";
+
 /* loco:695e8b0257b12526a4058922 */
 "contactSupportDescription" = "Contact our teams by phone or email for help resolving your issue.";
 
@@ -196,8 +199,14 @@
 /* loco:695e8322b85b83d8780f97f2 */
 "errorLoginFailed" = "Account login failed. Please try again or contact support. (error code: %d)";
 
+/* loco:69e8bd2f0c295d97f70480a2 */
+"errorMigrationFailed" = "The migration has been interrupted.\nPlease contact our technical support team.";
+
 /* loco:695e9d72bc601c317401c9d4 */
 "errorOccuredTitle" = "An error occurred";
+
+/* loco:69f201978a23057d8f09c362 */
+"errorWithRetryMessage" = "An error has occurred. Please try again later.";
 
 /* loco:695e95bc3614499244057df2 */
 "estimatedWait" = "Estimated wait: %@";
@@ -222,9 +231,6 @@
 
 /* loco:695e9b60eb4a5e9ff3045a82 */
 "loginAttemptQuery" = "Are you trying to log in?";
-
-/* loco:695e9b86eb4a5e9ff3045a84 */
-"loginAuthorizationWarning" = "Confirming this login will authorize this device to access your Infomaniak account.";
 
 /* loco:695e9c9194a0d83c6a006812 */
 "loginDeniedSuccessDescription" = "You declined a login attempt. To secure your account, change your password.\n\nIf you initiated this request, try logging in again.";
@@ -295,6 +301,9 @@
 /* loco:695e91208384843ef3052bb2 */
 "openSupportStatus" = "Open";
 
+/* loco:69f9fd896bbdef154e008142 */
+"passTitle" = "Pass";
+
 /* loco:695e9ea5ffea9abfd80a1ae2 */
 "passwordAskingWarning" = "Infomaniak will never ask for your password unexpectedly.\n\nMake sure you initiated this action before continuing.";
 
@@ -327,6 +336,12 @@
 
 /* loco:695e99b261ee1c8c900db0e2 */
 "removeButton" = "Remove";
+
+/* loco:69e71e371e556c460d0be734 */
+"requiredLabel" = "Required";
+
+/* loco:69f9fd5b9c704770ab0a1ea2 */
+"retryTitle" = "Retry";
 
 /* loco:695e7d2aaf61b386540bf272 */
 "settingsTitle" = "Settings";
@@ -393,3 +408,6 @@
 
 /* loco:695e9ba3ae7a65d0a10aba73 */
 "whenLoginTitle" = "When";
+
+/* loco:69e720890dceaa5a5204d762 */
+"wrongPasswordLabel" = "The password is incorrect";

@@ -3,8 +3,8 @@
  * Project: Authenticator
  * Locale: pt, Portuguese
  * Tagged: ios
- * Exported by: Baptiste Griva
- * Exported at: Mon, 27 Apr 2026 14:07:51 +0200
+ * Exported by: Jordan Chapelle
+ * Exported at: Tue, 05 May 2026 16:24:49 +0200
  */
 
 /* loco:69d6617d0ee9dd38d50c99e2 */
@@ -124,6 +124,9 @@
 /* loco:695e9b2a9d8b472044005a44 */
 "confirmLoginNotificationTitle" = "Confirmar login";
 
+/* loco:69f9fcc742a35b678d0d3772 */
+"connectionFailedTitle" = "A ligação falhou";
+
 /* loco:695e8b0257b12526a4058922 */
 "contactSupportDescription" = "Entre em contato com nossas equipes por telefone ou e-mail para obter ajuda na resolução do seu problema.";
 
@@ -196,8 +199,14 @@
 /* loco:695e8322b85b83d8780f97f2 */
 "errorLoginFailed" = "Falha no login da conta. Tente novamente ou contate o suporte. (código de erro: %d)";
 
+/* loco:69e8bd2f0c295d97f70480a2 */
+"errorMigrationFailed" = "A migração foi interrompida.\nContacte a nossa equipa de apoio técnico.";
+
 /* loco:695e9d72bc601c317401c9d4 */
 "errorOccuredTitle" = "Ocorreu um erro";
+
+/* loco:69f201978a23057d8f09c362 */
+"errorWithRetryMessage" = "Ocorreu um erro. Por favor, tente novamente mais tarde.";
 
 /* loco:695e95bc3614499244057df2 */
 "estimatedWait" = "Tempo estimado de espera: %@";
@@ -222,9 +231,6 @@
 
 /* loco:695e9b60eb4a5e9ff3045a82 */
 "loginAttemptQuery" = "Você está tentando fazer login?";
-
-/* loco:695e9b86eb4a5e9ff3045a84 */
-"loginAuthorizationWarning" = "Confirmar este login autorizará este dispositivo a acessar sua conta Infomaniak.";
 
 /* loco:695e9c9194a0d83c6a006812 */
 "loginDeniedSuccessDescription" = "Recusou uma tentativa de início de sessão. Para proteger a sua conta, altere a sua palavra-passe.\n\nSe foi você que iniciou este pedido, tente iniciar sessão novamente.";
@@ -295,6 +301,9 @@
 /* loco:695e91208384843ef3052bb2 */
 "openSupportStatus" = "Aberto";
 
+/* loco:69f9fd896bbdef154e008142 */
+"passTitle" = "Passar";
+
 /* loco:695e9ea5ffea9abfd80a1ae2 */
 "passwordAskingWarning" = "A Infomaniak nunca lhe pedirá a sua palavra-passe de forma inesperada.\n\nCertifique-se de que foi você que iniciou esta ação antes de continuar.";
 
@@ -327,6 +336,12 @@
 
 /* loco:695e99b261ee1c8c900db0e2 */
 "removeButton" = "Remover";
+
+/* loco:69e71e371e556c460d0be734 */
+"requiredLabel" = "Necessário";
+
+/* loco:69f9fd5b9c704770ab0a1ea2 */
+"retryTitle" = "Repetir";
 
 /* loco:695e7d2aaf61b386540bf272 */
 "settingsTitle" = "Configurações";
@@ -393,3 +408,6 @@
 
 /* loco:695e9ba3ae7a65d0a10aba73 */
 "whenLoginTitle" = "Quando";
+
+/* loco:69e720890dceaa5a5204d762 */
+"wrongPasswordLabel" = "A palavra-passe está incorrecta";
