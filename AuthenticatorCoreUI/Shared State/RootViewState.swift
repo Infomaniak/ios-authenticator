@@ -72,7 +72,6 @@ public final class RootViewState: ObservableObject {
     private var lastKnownAppStatus: AppStatus?
 
     public var cachedOnboardingSteps: [OnboardingStep]?
-    public var shouldShowNotificationsStep = false
 
     public func resetOnboardingSteps() {
         cachedOnboardingSteps = nil
@@ -80,14 +79,6 @@ public final class RootViewState: ObservableObject {
 
     public init() {
         observeAppStatus()
-    }
-
-    private func checkNotificationAuthorizationStatus() async {
-        let center = UNUserNotificationCenter.current()
-        let settings = await center.notificationSettings()
-
-        shouldShowNotificationsStep = settings.authorizationStatus != .denied &&
-            !UserDefaults.shared.isNotificationsEnabled
     }
 
     public func startMigration() {
@@ -135,7 +126,6 @@ public final class RootViewState: ObservableObject {
         Task {
             for try await status in authenticatorFacade.appStatus {
                 lastKnownAppStatus = status
-                await checkNotificationAuthorizationStatus()
                 if status is AppStatusLoginRequiredMigratingFromLegacyKAuth {
                     state = .migration(.migration)
                 } else if status is AppStatusLoginRequiredNotMigrating {

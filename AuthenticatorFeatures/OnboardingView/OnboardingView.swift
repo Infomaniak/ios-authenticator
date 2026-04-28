@@ -38,6 +38,7 @@ public struct OnboardingView: View {
 
     @State private var loginHandler = LoginHandler()
     @State private var excludedUserIds: [Int] = []
+    @State private var shouldShowNotificationsStep = true
 
     @ModalState(context: ContextKeys.onboarding) private var isPresentingCreateAccount = false
 
@@ -64,7 +65,7 @@ public struct OnboardingView: View {
             steps.append(.biometry)
         }
 
-        if rootViewState.shouldShowNotificationsStep {
+        if shouldShowNotificationsStep {
             steps.append(.notifications)
         }
 
@@ -176,6 +177,7 @@ public struct OnboardingView: View {
             loginHandler.isLoading = true
             excludedUserIds = await accountManager.getAccountsIds()
             loginHandler.isLoading = false
+            await checkNotificationAuthorizationStatus()
         }
     }
 
@@ -220,13 +222,13 @@ public struct OnboardingView: View {
         case .success:
             if !UserDefaults.shared.isAppLockEnabled {
                 rootViewState.configureBiometry()
-            } else if rootViewState.shouldShowNotificationsStep {
+            } else if shouldShowNotificationsStep {
                 rootViewState.configureNotifications()
             } else {
                 rootViewState.completeOnboarding()
             }
         case .biometry:
-            if rootViewState.shouldShowNotificationsStep {
+            if shouldShowNotificationsStep {
                 rootViewState.configureNotifications()
             } else {
                 rootViewState.completeOnboarding()
@@ -237,6 +239,16 @@ public struct OnboardingView: View {
             // All other cases are handled by KMP
             break
         }
+    }
+
+    private func checkNotificationAuthorizationStatus() async {
+        let center = UNUserNotificationCenter.current()
+        let settings = await center.notificationSettings()
+
+        shouldShowNotificationsStep = settings.authorizationStatus != .denied &&
+            !UserDefaults.shared.isNotificationsEnabled
+
+        rootViewState.resetOnboardingSteps()
     }
 }
 
