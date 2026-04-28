@@ -254,10 +254,10 @@
 "notificationsTitle" = "Benachrichtigungen";
 
 /* loco:695e75b2da2ea35ca2034864 */
-"onBoardingFaceIdDescription" = "Durch die Aktivierung von Face ID wird der Zugriff auf die App gesichert.";
+"onBoardingBiometryDescription" = "Die Aktivierung von %@ sichert den Zugriff auf die App.";
 
 /* loco:695e6cf1c7935dac5607ef72 */
-"onBoardingFaceIdTitle" = "Möchten Sie Face ID aktivieren?";
+"onBoardingBiometryTitle" = "Möchten Sie %@ aktivieren?";
 
 /* loco:695e66d7da70ee75420a0566 */
 "onBoardingLoginDescription" = "Melden Sie sich an, um Ihre Verbindungen sicher zu genehmigen und Ihren Zugriff zu schützen.";
@@ -377,7 +377,7 @@
 "understandConfirmButton" = "Ich verstehe";
 
 /* loco:695ea1be1f7c9c75e20e56d4 */
-"unlockingWithFaceId" = "Mit Face ID entsperren";
+"unlockingWithBiometry" = "Entsperren mit %@";
 
 /* loco:69df7ad0d80ed14ab8080df2 */
 "updateButton" = "Aktualisieren";
