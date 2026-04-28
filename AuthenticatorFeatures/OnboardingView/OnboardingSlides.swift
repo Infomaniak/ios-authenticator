@@ -16,6 +16,7 @@
  along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
+import AuthenticatorCore
 import AuthenticatorCoreUI
 import AuthenticatorResources
 import InfomaniakOnboarding
@@ -34,7 +35,7 @@ extension OnboardingStep {
         case .success:
             return .onboardingSuccessSlide
         case .biometry:
-            return .onboardingFaceIdSlide
+            return Constants.biometryContext.biometryType == .faceID ? .onboardingFaceIdSlide : .onboardingTouchIdSlide
         case .notifications:
             return .onboardingNotificationsSlide
         }
@@ -81,7 +82,20 @@ extension Slide {
         backgroundImage: AuthenticatorResourcesAsset.Images.onboardingBlur.image,
         backgroundImageTintColor: nil,
         content: .illustration(AuthenticatorResourcesAsset.Images.faceId.image),
-        bottomView: OnboardingTextBottomView(\.onBoardingFaceIdTitle, descriptionKey: \.onBoardingFaceIdDescription)
+        bottomView: OnboardingTextBottomView(
+            title: AuthenticatorResourcesStrings.onBoardingBiometryTitle(Constants.biometryContext.localizedReason),
+            description: AuthenticatorResourcesStrings.onBoardingBiometryDescription(Constants.biometryContext.localizedReason)
+        )
+    )
+
+    static let onboardingTouchIdSlide = Slide(
+        backgroundImage: AuthenticatorResourcesAsset.Images.onboardingBlur.image,
+        backgroundImageTintColor: nil,
+        content: .illustration(AuthenticatorResourcesAsset.Images.touchId.image),
+        bottomView: OnboardingTextBottomView(
+            title: AuthenticatorResourcesStrings.onBoardingBiometryTitle(Constants.biometryContext.localizedReason),
+            description: AuthenticatorResourcesStrings.onBoardingBiometryDescription(Constants.biometryContext.localizedReason)
+        )
     )
 
     static let onboardingNotificationsSlide = Slide(

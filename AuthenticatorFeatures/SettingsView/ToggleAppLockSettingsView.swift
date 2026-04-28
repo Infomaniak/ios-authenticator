@@ -28,12 +28,15 @@ struct ToggleAppLockSettingsView: View {
     @State private var isProcessingUserAction = false
 
     var body: some View {
-        Toggle(AuthenticatorResourcesStrings.unlockingWithFaceId, isOn: $isAppLockEnabled)
-            .onChange(of: isAppLockEnabled) { newValue in
-                guard isProcessingUserAction != newValue else { return }
-                isProcessingUserAction = newValue
-                toggleAppLock()
-            }
+        Toggle(
+            AuthenticatorResourcesStrings.unlockingWithBiometry(Constants.biometryContext.localizedReason),
+            isOn: $isAppLockEnabled
+        )
+        .onChange(of: isAppLockEnabled) { newValue in
+            guard isProcessingUserAction != newValue else { return }
+            isProcessingUserAction = newValue
+            toggleAppLock()
+        }
     }
 
     private func toggleAppLock() {
