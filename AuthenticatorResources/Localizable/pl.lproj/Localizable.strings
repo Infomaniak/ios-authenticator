@@ -4,7 +4,7 @@
  * Locale: pl, Polish
  * Tagged: ios
  * Exported by: Baptiste Griva
- * Exported at: Fri, 17 Apr 2026 10:07:55 +0200
+ * Exported at: Mon, 27 Apr 2026 14:07:51 +0200
  */
 
 /* loco:69d6617d0ee9dd38d50c99e2 */
@@ -279,6 +279,9 @@
 
 /* loco:695e7c6a812646fa430f8222 */
 "onBoardingSuccessTitle" = "Wszystko gotowe";
+
+/* loco:69eb37097323783c150b4242 */
+"onboardingNotificationsAuthorisationButton" = "Zezwalaj na powiadomienia";
 
 /* loco:69de5110c45507362d0de3a2 */
 "onboardingNotificationsDescription" = "Włącz powiadomienia, aby otrzymywać alert przy każdej próbie logowania.";

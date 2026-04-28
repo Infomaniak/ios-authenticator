@@ -38,11 +38,37 @@ public struct OnboardingView: View {
 
     @State private var loginHandler = LoginHandler()
     @State private var excludedUserIds: [Int] = []
+    @State private var shouldShowBiometryStep = !UserDefaults.shared.isAppLockEnabled
+    @State private var shouldShowNotificationsStep = true
 
     @ModalState(context: ContextKeys.onboarding) private var isPresentingCreateAccount = false
 
     private let currentStep: OnboardingStep
-    private let steps: [OnboardingStep]
+    private var steps: [OnboardingStep] {
+        var steps: [OnboardingStep] = []
+
+        switch rootViewState.state {
+        case .newAccount:
+            steps = OnboardingStep.loginSteps
+        case .addAccount:
+            steps = OnboardingStep.addAccountSteps
+        case .migration:
+            return OnboardingStep.migrationSteps
+        default:
+            return []
+        }
+
+        if shouldShowBiometryStep {
+            steps.append(.biometry)
+        }
+
+        if shouldShowNotificationsStep {
+            steps.append(.notifications)
+        }
+
+        return steps
+    }
+
     private var slides: [Slide] {
         return steps.map { $0.slide }
     }
@@ -63,8 +89,7 @@ public struct OnboardingView: View {
         }
     }
 
-    public init(steps: [OnboardingStep], currentStep: OnboardingStep) {
-        self.steps = steps + (UserDefaults.shared.isAppLockEnabled ? [] : [.biometry])
+    public init(currentStep: OnboardingStep) {
         self.currentStep = currentStep
     }
 
@@ -100,7 +125,25 @@ public struct OnboardingView: View {
             case .biometry:
                 VStack {
                     Button(AuthenticatorResourcesStrings.enableButton) {
-                        enableBiometry()
+                        enableBiometry(index: index)
+                    }
+                    .buttonStyle(.ikBorderedProminent)
+                    .ikButtonFullWidth(true)
+                    .controlSize(.large)
+                    .padding(.horizontal, value: .large)
+
+                    Button(AuthenticatorResourcesStrings.laterButton) {
+                        goToNextStep(index: index)
+                    }
+                    .buttonStyle(.ikBorderless)
+                    .ikButtonFullWidth(true)
+                    .controlSize(.large)
+                    .padding(.horizontal, value: .large)
+                }
+            case .notifications:
+                VStack {
+                    Button(AuthenticatorResourcesStrings.onboardingNotificationsAuthorisationButton) {
+                        enableNotifications(index: index)
                     }
                     .buttonStyle(.ikBorderedProminent)
                     .ikButtonFullWidth(true)
@@ -130,6 +173,7 @@ public struct OnboardingView: View {
             loginHandler.isLoading = true
             excludedUserIds = await accountManager.getAccountsIds()
             loginHandler.isLoading = false
+            await checkNotificationAuthorizationStatus()
         }
     }
 
@@ -143,13 +187,27 @@ public struct OnboardingView: View {
         }
     }
 
-    private func enableBiometry() {
+    private func enableBiometry(index: Int) {
         Task {
             @InjectService var appLockHelper: AppLockHelper
             let enabled = await appLockHelper.canEnableAppLock()
 
             UserDefaults.shared.isAppLockEnabled = enabled
-            rootViewState.completeOnboarding()
+            goToNextStep(index: index)
+        }
+    }
+
+    private func enableNotifications(index: Int) {
+        Task {
+            let center = UNUserNotificationCenter.current()
+
+            guard let isNotificationsEnabled =
+                try? await center.requestAuthorization(options: [.alert, .sound]) else {
+                goToNextStep(index: index)
+                return
+            }
+            UserDefaults.shared.isNotificationsEnabled = isNotificationsEnabled
+            goToNextStep(index: index)
         }
     }
 
@@ -158,28 +216,44 @@ public struct OnboardingView: View {
         case .migration:
             rootViewState.startMigration()
         case .success:
-            if UserDefaults.shared.isAppLockEnabled {
-                rootViewState.completeOnboarding()
-            } else {
+            if shouldShowBiometryStep {
                 rootViewState.configureBiometry()
+            } else if shouldShowNotificationsStep {
+                rootViewState.configureNotifications()
+            } else {
+                rootViewState.completeOnboarding()
             }
         case .biometry:
+            if shouldShowNotificationsStep {
+                rootViewState.configureNotifications()
+            } else {
+                rootViewState.completeOnboarding()
+            }
+        case .notifications:
             rootViewState.completeOnboarding()
         default:
             // All other cases are handled by KMP
             break
         }
     }
+
+    private func checkNotificationAuthorizationStatus() async {
+        let center = UNUserNotificationCenter.current()
+        let settings = await center.notificationSettings()
+
+        shouldShowNotificationsStep = settings.authorizationStatus != .denied &&
+            !UserDefaults.shared.isNotificationsEnabled
+    }
 }
 
 #Preview("Login") {
-    OnboardingView(steps: [.login], currentStep: .login)
+    OnboardingView(currentStep: .login)
 }
 
 #Preview("Progress") {
-    OnboardingView(steps: [.loginInProgress], currentStep: .loginInProgress)
+    OnboardingView(currentStep: .loginInProgress)
 }
 
 #Preview("Migration") {
-    OnboardingView(steps: [.migration], currentStep: .migration)
+    OnboardingView(currentStep: .migration)
 }

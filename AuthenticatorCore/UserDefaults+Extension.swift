@@ -51,4 +51,16 @@ public extension UserDefaults {
             set(newValue, forKey: key(.sentryAuthorized))
         }
     }
+
+    var isNotificationsEnabled: Bool {
+        get {
+            if object(forKey: key(.notificationsEnabled)) == nil {
+                set(DefaultPreferences.notificationsEnabled, forKey: key(.notificationsEnabled))
+            }
+            return bool(forKey: key(.notificationsEnabled))
+        }
+        set {
+            set(newValue, forKey: key(.notificationsEnabled))
+        }
+    }
 }

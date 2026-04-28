@@ -35,12 +35,8 @@ public struct RootView: View {
                     .environmentObject(mainViewState)
             case .preloading:
                 PreloadingView()
-            case .newAccount(let step):
-                OnboardingView(steps: OnboardingStep.loginSteps, currentStep: step)
-            case .migration(let step):
-                OnboardingView(steps: OnboardingStep.migrationSteps, currentStep: step)
-            case .addAccount(let step):
-                OnboardingView(steps: OnboardingStep.addAccountSteps, currentStep: step)
+            case .newAccount(let step), .migration(let step), .addAccount(let step):
+                OnboardingView(currentStep: step)
             case .updateRequired:
                 Text("Updated required") // TODO: Implement update required screen
             }
