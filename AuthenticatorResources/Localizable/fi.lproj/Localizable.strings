@@ -254,10 +254,10 @@
 "notificationsTitle" = "Ilmoitukset";
 
 /* loco:695e75b2da2ea35ca2034864 */
-"onBoardingFaceIdDescription" = "Face ID:n käyttöönotto suojaa sovelluksen käyttöä.";
+"onBoardingBiometryDescription" = "%@:n ottaminen käyttöön turvaa sovelluksen käytön.";
 
 /* loco:695e6cf1c7935dac5607ef72 */
-"onBoardingFaceIdTitle" = "Haluatko ottaa Face ID:n käyttöön?";
+"onBoardingBiometryTitle" = "Haluatko ottaa käyttöön %@?";
 
 /* loco:695e66d7da70ee75420a0566 */
 "onBoardingLoginDescription" = "Kirjaudu sisään hyväksyäksesi yhteydet turvallisesti ja suojataksesi pääsysi.";
@@ -377,7 +377,7 @@
 "understandConfirmButton" = "Ymmärsin";
 
 /* loco:695ea1be1f7c9c75e20e56d4 */
-"unlockingWithFaceId" = "Avaa Face ID:llä";
+"unlockingWithBiometry" = "Avaa lukitus %@:llä";
 
 /* loco:69df7ad0d80ed14ab8080df2 */
 "updateButton" = "Päivitä";

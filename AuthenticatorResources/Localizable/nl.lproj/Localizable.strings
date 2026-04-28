@@ -254,10 +254,10 @@
 "notificationsTitle" = "Meldingen";
 
 /* loco:695e75b2da2ea35ca2034864 */
-"onBoardingFaceIdDescription" = "Het inschakelen van Face ID beveiligt de toegang tot de app.";
+"onBoardingBiometryDescription" = "Het inschakelen van %@ beveiligt de toegang tot de app.";
 
 /* loco:695e6cf1c7935dac5607ef72 */
-"onBoardingFaceIdTitle" = "Wilt u Face ID inschakelen?";
+"onBoardingBiometryTitle" = "Wilt u %@ inschakelen?";
 
 /* loco:695e66d7da70ee75420a0566 */
 "onBoardingLoginDescription" = "Log in om uw verbindingen veilig goed te keuren en uw toegang te beveiligen.";
@@ -377,7 +377,7 @@
 "understandConfirmButton" = "Ik begrijp het";
 
 /* loco:695ea1be1f7c9c75e20e56d4 */
-"unlockingWithFaceId" = "Ontgrendelen met Face ID";
+"unlockingWithBiometry" = "Ontgrendelen met %@";
 
 /* loco:69df7ad0d80ed14ab8080df2 */
 "updateButton" = "Bijwerken";
