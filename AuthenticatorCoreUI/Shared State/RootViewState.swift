@@ -71,12 +71,6 @@ public final class RootViewState: ObservableObject {
     @Published public var state: RootViewType = .preloading
     private var lastKnownAppStatus: AppStatus?
 
-    public var cachedOnboardingSteps: [OnboardingStep]?
-
-    public func resetOnboardingSteps() {
-        cachedOnboardingSteps = nil
-    }
-
     public init() {
         observeAppStatus()
     }
@@ -102,7 +96,6 @@ public final class RootViewState: ObservableObject {
             return
         }
 
-        resetOnboardingSteps()
         onboardingDone.proceed()
     }
 

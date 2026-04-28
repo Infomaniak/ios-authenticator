@@ -38,16 +38,13 @@ public struct OnboardingView: View {
 
     @State private var loginHandler = LoginHandler()
     @State private var excludedUserIds: [Int] = []
+    @State private var shouldShowBiometryStep = !UserDefaults.shared.isAppLockEnabled
     @State private var shouldShowNotificationsStep = true
 
     @ModalState(context: ContextKeys.onboarding) private var isPresentingCreateAccount = false
 
     private let currentStep: OnboardingStep
     private var steps: [OnboardingStep] {
-        if let cached = rootViewState.cachedOnboardingSteps {
-            return cached
-        }
-
         var steps: [OnboardingStep] = []
 
         switch rootViewState.state {
@@ -61,7 +58,7 @@ public struct OnboardingView: View {
             return []
         }
 
-        if !UserDefaults.shared.isAppLockEnabled {
+        if shouldShowBiometryStep {
             steps.append(.biometry)
         }
 
@@ -69,7 +66,6 @@ public struct OnboardingView: View {
             steps.append(.notifications)
         }
 
-        rootViewState.cachedOnboardingSteps = steps
         return steps
     }
 
@@ -220,7 +216,7 @@ public struct OnboardingView: View {
         case .migration:
             rootViewState.startMigration()
         case .success:
-            if !UserDefaults.shared.isAppLockEnabled {
+            if shouldShowBiometryStep {
                 rootViewState.configureBiometry()
             } else if shouldShowNotificationsStep {
                 rootViewState.configureNotifications()
@@ -247,8 +243,6 @@ public struct OnboardingView: View {
 
         shouldShowNotificationsStep = settings.authorizationStatus != .denied &&
             !UserDefaults.shared.isNotificationsEnabled
-
-        rootViewState.resetOnboardingSteps()
     }
 }
 
