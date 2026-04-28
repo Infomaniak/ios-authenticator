@@ -24,7 +24,7 @@ struct OnboardingTextBottomView: View {
     let title: String
     let description: String
 
-    private init(title: String, description: String) {
+    init(title: String, description: String) {
         self.title = title
         self.description = description
     }
