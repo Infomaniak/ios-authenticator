@@ -254,10 +254,10 @@
 "notificationsTitle" = "Notifikationer";
 
 /* loco:695e75b2da2ea35ca2034864 */
-"onBoardingFaceIdDescription" = "Aktivering af Face ID sikrer adgangen til app’en.";
+"onBoardingBiometryDescription" = "Aktivering af %@ sikrer adgang til appen.";
 
 /* loco:695e6cf1c7935dac5607ef72 */
-"onBoardingFaceIdTitle" = "Vil du aktivere Face ID?";
+"onBoardingBiometryTitle" = "Vil du aktivere %@?";
 
 /* loco:695e66d7da70ee75420a0566 */
 "onBoardingLoginDescription" = "Log ind for sikkert at godkende dine forbindelser og beskytte din adgang.";
@@ -377,7 +377,7 @@
 "understandConfirmButton" = "Forstået";
 
 /* loco:695ea1be1f7c9c75e20e56d4 */
-"unlockingWithFaceId" = "Lås op med Face ID";
+"unlockingWithBiometry" = "Lås op med %@";
 
 /* loco:69df7ad0d80ed14ab8080df2 */
 "updateButton" = "Opdater";

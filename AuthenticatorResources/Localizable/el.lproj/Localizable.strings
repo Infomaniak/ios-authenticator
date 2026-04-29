@@ -254,10 +254,10 @@
 "notificationsTitle" = "Ειδοποιήσεις";
 
 /* loco:695e75b2da2ea35ca2034864 */
-"onBoardingFaceIdDescription" = "Η ενεργοποίηση του Face ID εξασφαλίζει την πρόσβαση στην εφαρμογή.";
+"onBoardingBiometryDescription" = "Η ενεργοποίηση του %@ διασφαλίζει την πρόσβαση στην εφαρμογή.";
 
 /* loco:695e6cf1c7935dac5607ef72 */
-"onBoardingFaceIdTitle" = "Θέλετε να ενεργοποιήσετε το Face ID;";
+"onBoardingBiometryTitle" = "Θέλετε να ενεργοποιήσετε το %@;";
 
 /* loco:695e66d7da70ee75420a0566 */
 "onBoardingLoginDescription" = "Συνδεθείτε για να εγκρίνετε με ασφάλεια τις συνδέσεις σας και να προστατεύσετε την πρόσβασή σας.";
@@ -377,7 +377,7 @@
 "understandConfirmButton" = "Κατάλαβα";
 
 /* loco:695ea1be1f7c9c75e20e56d4 */
-"unlockingWithFaceId" = "Ξεκλείδωμα με Face ID";
+"unlockingWithBiometry" = "Ξεκλείδωμα με %@";
 
 /* loco:69df7ad0d80ed14ab8080df2 */
 "updateButton" = "Ενημέρωση";
