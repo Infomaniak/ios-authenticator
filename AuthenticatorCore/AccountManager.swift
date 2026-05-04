@@ -120,12 +120,10 @@ public actor AccountManager: AccountManagerable {
         try await createAccounts(accounts: [account])
     }
 
-    private func createAccounts(accounts: [CoreAuthenticator.Account]) async throws {
+    public func createAccounts(accounts: [CoreAuthenticator.Account]) async throws {
         guard !accounts.isEmpty else {
             throw DomainError.missingAccounts
         }
-
-        try await authenticatorFacade.addAccounts(connectedAccounts: accounts)
 
         var atLeastOneAccountAdded = false
         for account in accounts {
@@ -143,6 +141,8 @@ public actor AccountManager: AccountManagerable {
         if !atLeastOneAccountAdded {
             throw DomainError.tokenKeyExchangeFailed
         }
+
+        try await authenticatorFacade.addAccounts(connectedAccounts: accounts)
     }
 
     public func getApiFetcher(token: ApiToken) -> ApiFetcher {

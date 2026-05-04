@@ -90,7 +90,7 @@ open class TargetAssembly: @unchecked Sendable {
                     clientId: Self.loginConfig.clientId,
                     databaseNameOrPath: appGroupPath.realmRootURL.appending(path: "accounts.db").path(),
                     crashReport: sentryWrapper,
-                    tokenBridge: tokenBridge
+                    authenticatorBridge: tokenBridge
                 )
             },
             Factory(type: DeviceManagerable.self) { _, _ in
