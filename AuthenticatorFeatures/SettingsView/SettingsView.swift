@@ -54,6 +54,7 @@ public struct SettingsView: View {
                                 action: openPhoneSettings
                             )
                         )
+                        .textCase(nil)
                         .listRowInsets(EdgeInsets(top: IKPadding.medium, leading: 0, bottom: IKPadding.large, trailing: 0))
                     }
                 }

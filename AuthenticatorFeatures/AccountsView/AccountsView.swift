@@ -53,6 +53,7 @@ public struct AccountsView: View {
                             type: .warning,
                             description: AuthenticatorResourcesStrings.actionRequiredDescription,
                         )
+                        .textCase(nil)
                         .listRowInsets(EdgeInsets(top: IKPadding.medium, leading: 0, bottom: IKPadding.large, trailing: 0))
                     }
                 }
