@@ -35,20 +35,24 @@ public final class SentryKMPWrapper: CrashReportInterface {
         SentrySDK.addBreadcrumb(breadcrumb)
     }
 
-    public func capture(message: String, error: KotlinThrowable, data: [String: String]?) {
+    public func capture(userId: Int64, message: String, error: KotlinThrowable, data: [String: String]?) {
         let event = Event()
         event.message = SentryMessage(formatted: message)
         event.error = KotlinThrowableWrapper(kotlinThrowable: error)
 
         SentrySDK.capture(event: event) { scope in
+            scope.setUser(User(userId: String(userId)))
+
             if let data {
                 scope.setExtras(data)
             }
         }
     }
 
-    public func capture(message: String, data: [String: String]?, level: CrashReportLevel?) {
+    public func capture(userId: Int64, message: String, data: [String: String]?, level: CrashReportLevel?) {
         SentrySDK.capture(message: message) { scope in
+            scope.setUser(User(userId: String(userId)))
+
             if let data {
                 scope.setExtras(data)
             }

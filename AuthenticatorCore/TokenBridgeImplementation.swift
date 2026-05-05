@@ -24,24 +24,36 @@ import InfomaniakDI
 import InfomaniakLogin
 import InterAppLogin
 
-final class TokenBridgeImplementation: TokenBridge {
+final class TokenBridgeImplementation: AuthenticatorBridge {
     @LazyInjectService private var tokenStore: TokenStore
     @LazyInjectService private var connectedAccountManager: ConnectedAccountManagerable
     @LazyInjectService private var networkLogin: InfomaniakNetworkLoginable
+    @LazyInjectService private var accountManager: AccountManagerable
 
-    func __getTokenFromCrossAppLogin(userId: Int64) async throws -> String? {
+    func __getTokenFromCrossAppLogin(userId: Int64) async -> SharedApiToken? {
         let connectedAccounts = await connectedAccountManager.listAllLocalAccounts()
 
         guard let matchingConnectedAccount = connectedAccounts.first(where: { $0.userId == userId }) else {
             return nil
         }
 
-        let derivedToken = try await networkLogin.derivateApiToken(
-            for: matchingConnectedAccount,
-            appBundleId: Constants.bundleId
-        )
+        do {
+            let derivedToken = try await networkLogin.derivateApiToken(
+                for: matchingConnectedAccount,
+                appBundleId: Constants.bundleId
+            )
 
-        return derivedToken.accessToken
+            return SharedApiToken(from: derivedToken)
+        } catch {
+            SentryDebug.loginError(error: error, step: "createAndSetCurrentAccount")
+            return nil
+        }
+    }
+
+    func __persistUserProfile(userProfile: SharedUserProfile) async throws {
+        let localUserProfile = UserProfile(from: userProfile)
+
+        await accountManager.userProfileStore.addUserProfile(localUserProfile)
     }
 
     func __getTokenFromDatabase(userId: Int64) async throws -> String? {
