@@ -149,14 +149,6 @@ public struct OnboardingView: View {
                     .ikButtonFullWidth(true)
                     .controlSize(.large)
                     .padding(.horizontal, value: .large)
-
-                    Button(AuthenticatorResourcesStrings.laterButton) {
-                        goToNextStep(index: index)
-                    }
-                    .buttonStyle(.ikBorderless)
-                    .ikButtonFullWidth(true)
-                    .controlSize(.large)
-                    .padding(.horizontal, value: .large)
                 }
             }
         }
