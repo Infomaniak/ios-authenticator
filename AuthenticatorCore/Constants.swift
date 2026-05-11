@@ -18,6 +18,7 @@
 
 import Foundation
 @preconcurrency import InfomaniakCore
+import LocalAuthentication
 
 public enum Constants {
     public static let bundleId = "com.infomaniak.auth"
@@ -32,6 +33,12 @@ public enum Constants {
     }
 
     public static let managerHost = "manager.\(ApiEnvironment.current.host)"
+
+    public static var biometryContext: LAContext {
+        let context = LAContext()
+        context.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: nil)
+        return context
+    }
 }
 
 public struct URLConstants: Sendable {
