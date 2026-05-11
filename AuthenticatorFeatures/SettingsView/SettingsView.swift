@@ -56,6 +56,7 @@ public struct SettingsView: View {
                         )
                         .textCase(nil)
                         .listRowInsets(EdgeInsets(top: IKPadding.medium, leading: 0, bottom: IKPadding.large, trailing: 0))
+                        .transition(.opacity)
                     }
                 }
                 .authSectionStyle()
@@ -88,6 +89,7 @@ public struct SettingsView: View {
             .authListStyle()
             .navigationTitle(AuthenticatorResourcesStrings.settingsTitle)
             .sceneLifecycle(willEnterForeground: willEnterForeground)
+            .animation(.default, value: isNotificationsEnabled)
         }
     }
 
