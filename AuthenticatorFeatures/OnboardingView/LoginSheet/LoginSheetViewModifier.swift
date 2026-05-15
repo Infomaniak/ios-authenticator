@@ -18,28 +18,31 @@
 
 import AuthenticatorCoreUI
 import AuthenticatorResources
+import CoreAuthenticator
+import InfomaniakDI
 import SwiftUI
 
 public extension View {
-    func loginSheet(isPresented: Binding<Bool>, account: UIAccount) -> some View {
-        modifier(LoginSheetViewModifier(isPresented: isPresented, account: account))
+    func reLoginSheet(account: Binding<UIMustReLoginAccount?>) -> some View {
+        modifier(ReLoginSheetViewModifier(account: account))
     }
 }
 
-struct LoginSheetViewModifier: ViewModifier {
-    @Binding var isPresented: Bool
+struct ReLoginSheetViewModifier: ViewModifier {
+    @InjectService private var authenticatorFacade: AuthenticatorFacade
 
-    let account: UIAccount
+    @Binding var account: UIMustReLoginAccount?
 
     func body(content: Content) -> some View {
         content
-            .sheet(isPresented: $isPresented) {
+            .sheet(item: $account) { account in
                 NavigationStack {
                     LoginView(account: account)
                         .toolbar {
                             ToolbarItem(placement: .cancellationAction) {
                                 Button {
-                                    isPresented = false
+                                    account.skip()
+                                    self.account = nil
                                 } label: {
                                     AuthenticatorLabel(\.closeButton, iconKey: \.cross)
                                 }
@@ -48,5 +51,19 @@ struct LoginSheetViewModifier: ViewModifier {
                 }
                 .presentationDragIndicator(.visible)
             }
+            .task(id: account?.id) {
+                await observeAccountStatus()
+            }
+    }
+
+    func observeAccountStatus() async {
+        guard let accountId = account?.id else { return }
+
+        for await accounts in authenticatorFacade.accounts {
+            guard let account = accounts.first(where: { $0.id == accountId }),
+                  let accountStatus = account.status as? AccountStatusNotConnectedReLogin else { return }
+
+            self.account?.status = accountStatus
+        }
     }
 }

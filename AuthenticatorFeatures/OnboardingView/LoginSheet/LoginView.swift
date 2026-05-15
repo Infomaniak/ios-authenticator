@@ -19,26 +19,32 @@
 import AuthenticatorCore
 import AuthenticatorCoreUI
 import AuthenticatorResources
+import CoreAuthenticator
 import DesignSystem
 import SwiftUI
 
 public struct LoginView: View {
     @State private var password = ""
 
-    let account: UIAccount
+    let account: UIMustReLoginAccount
 
-    public init(account: UIAccount) {
+    private var shouldShowError: Bool {
+        account.status.hadIncorrectPassword || account.status.lastIssue != nil
+    }
+
+    public init(account: UIMustReLoginAccount) {
         self.account = account
     }
 
     public var body: some View {
         Form {
             Section {
-                AccountLabel(account: account, size: .small)
+                AccountLabel(account: account.account, size: .small)
 
                 LabeledContent(AuthenticatorResourcesStrings.passwordLabel) {
                     SecureField(AuthenticatorResourcesStrings.requiredLabel, text: $password)
                         .bold(false)
+                        .lineLimit(1)
                 }
                 .bold()
             } header: {
@@ -50,10 +56,11 @@ public struct LoginView: View {
                         .font(.Token.callout)
                 }
                 .frame(maxWidth: .infinity, alignment: .center)
-                .padding(.bottom, value: .huge)
+                .textCase(nil)
+                .listRowInsets(EdgeInsets(top: IKPadding.medium, leading: 0, bottom: IKPadding.huge, trailing: 0))
             } footer: {
                 VStack(alignment: .leading) {
-                    Link(destination: URLConstants.recoverPassword.url) { // TODO: use real URL
+                    Link(destination: URLConstants.recoverPassword.url) {
                         Label {
                             Text(AuthenticatorResourcesStrings.passwordForgottenButton)
                         } icon: {
@@ -63,13 +70,12 @@ public struct LoginView: View {
                     .padding(.top, value: .large)
                     .accessibilityHint(AuthenticatorResourcesStrings.contentDescriptionButtonExternalLink)
 
-                    Button(AuthenticatorResourcesStrings.continueButton) {
-                        // TODO: Migration login flow
-                    }
-                    .disabled(password.isEmpty)
-                    .buttonStyle(.ikBorderedProminent)
-                    .ikButtonFullWidth(true)
-                    .padding(.vertical, value: .small)
+                    Button(AuthenticatorResourcesStrings.continueButton, action: onContinueTapped)
+                        .disabled(password.isEmpty)
+                        .buttonStyle(.ikBorderedProminent)
+                        .ikButtonLoading(account.status.sendCredentials == nil)
+                        .ikButtonFullWidth(true)
+                        .padding(.vertical, value: .small)
                 }
                 .listRowInsets(EdgeInsets())
             }
@@ -77,12 +83,23 @@ public struct LoginView: View {
         }
         .authScrollViewStyle()
         .scrollBounceBehavior(.basedOnSize)
-    }
-}
+        .alert(AuthenticatorResourcesStrings.connectionFailedTitle, isPresented: .constant(shouldShowError)) {
+            Button(AuthenticatorResourcesStrings.retryTitle) {}
+                .keyboardShortcut(.defaultAction)
 
-#Preview {
-    Text("")
-        .sheet(isPresented: .constant(true)) {
-            LoginView(account: PreviewHelper.sampleUIAccount)
+            Link(AuthenticatorResourcesStrings.passwordForgottenButton, destination: URLConstants.recoverPassword.url)
+
+            Button(AuthenticatorResourcesStrings.passTitle, action: account.skip)
+        } message: {
+            Text(AuthenticatorResourcesStrings.wrongPasswordLabel)
         }
+    }
+
+    private func onContinueTapped() {
+        guard let sendCredentials = account.status.sendCredentials else { return }
+        sendCredentials(CredentialsForMigration(
+            confirmedEmail: account.account.email,
+            password: password
+        ))
+    }
 }
