@@ -113,6 +113,7 @@ public struct LoginView: View {
                     .accessibilityHint(AuthenticatorResourcesStrings.contentDescriptionButtonExternalLink)
 
                     Button(AuthenticatorResourcesStrings.continueButton, action: onContinueTapped)
+                        .controlSize(.large)
                         .disabled(password.isEmpty)
                         .buttonStyle(.ikBorderedProminent)
                         .ikButtonLoading(account.status.sendCredentials == nil)
