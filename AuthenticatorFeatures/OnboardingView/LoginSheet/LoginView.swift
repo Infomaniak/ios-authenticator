@@ -32,6 +32,25 @@ public struct LoginView: View {
         account.status.hadIncorrectPassword || account.status.lastIssue != nil
     }
 
+    private var errorText: String {
+        if account.status.hadIncorrectPassword {
+            return AuthenticatorResourcesStrings.wrongPasswordLabel
+        } else if let issue = account.status.lastIssue {
+            switch issue.cause {
+            case is IssueRetriableCauseServerUnavailable:
+                return AuthenticatorResourcesStrings.connectionFailedTitle
+            case is IssueRetriableCauseNetworkIssue:
+                return AuthenticatorResourcesStrings.noInternetTitle
+            case let cause as IssueRetriableCauseOther:
+                return AuthenticatorResourcesStrings.connectionFailedTitle + "\n(\(cause.errorCode) - \(cause.message))"
+            default:
+                return AuthenticatorResourcesStrings.connectionFailedTitle
+            }
+        } else {
+            return AuthenticatorResourcesStrings.connectionFailedTitle
+        }
+    }
+
     public init(account: UIMustReLoginAccount) {
         self.account = account
     }
@@ -41,12 +60,9 @@ public struct LoginView: View {
             Section {
                 AccountLabel(account: account.account, size: .small)
 
-                LabeledContent(AuthenticatorResourcesStrings.passwordLabel) {
-                    SecureField(AuthenticatorResourcesStrings.requiredLabel, text: $password)
-                        .bold(false)
-                        .lineLimit(1)
-                }
-                .bold()
+                SecureField(AuthenticatorResourcesStrings.passwordLabel, text: $password)
+                    .bold(false)
+                    .lineLimit(1)
             } header: {
                 VStack(alignment: .center, spacing: IKPadding.medium) {
                     Text(AuthenticatorResourcesStrings.logInTitle)
@@ -84,14 +100,12 @@ public struct LoginView: View {
         .authScrollViewStyle()
         .scrollBounceBehavior(.basedOnSize)
         .alert(AuthenticatorResourcesStrings.connectionFailedTitle, isPresented: .constant(shouldShowError)) {
+            Button(AuthenticatorResourcesStrings.passTitle, action: account.skip)
+
             Button(AuthenticatorResourcesStrings.retryTitle) {}
                 .keyboardShortcut(.defaultAction)
-
-            Link(AuthenticatorResourcesStrings.passwordForgottenButton, destination: URLConstants.recoverPassword.url)
-
-            Button(AuthenticatorResourcesStrings.passTitle, action: account.skip)
         } message: {
-            Text(AuthenticatorResourcesStrings.wrongPasswordLabel)
+            Text(errorText)
         }
     }
 
