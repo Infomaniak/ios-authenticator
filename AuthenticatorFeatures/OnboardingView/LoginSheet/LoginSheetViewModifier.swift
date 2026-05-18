@@ -40,11 +40,14 @@ struct ReLoginSheetViewModifier: ViewModifier {
                     LoginView(account: account)
                         .toolbar {
                             ToolbarItem(placement: .cancellationAction) {
-                                Button {
-                                    account.skip()
-                                    self.account = nil
-                                } label: {
-                                    AuthenticatorLabel(\.closeButton, iconKey: \.cross)
+                                if #available(iOS 26.0, *) {
+                                    Button(role: .cancel, action: onCloseButtonTapped)
+                                } else {
+                                    Button(
+                                        AuthenticatorResourcesStrings.closeButton,
+                                        systemImage: "xmark",
+                                        action: onCloseButtonTapped
+                                    )
                                 }
                             }
                         }
@@ -56,7 +59,12 @@ struct ReLoginSheetViewModifier: ViewModifier {
             }
     }
 
-    func observeAccountStatus() async {
+    private func onCloseButtonTapped() {
+        account?.skip()
+        account = nil
+    }
+
+    private func observeAccountStatus() async {
         guard let accountId = account?.id else { return }
 
         for await accounts in authenticatorFacade.accounts {
