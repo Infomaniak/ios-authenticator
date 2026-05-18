@@ -20,6 +20,6 @@ import SwiftUI
 
 public extension View {
     func appBackground() -> some View {
-        background(Color.Token.Surface.primary)
+        background(Color.Token.Surface.primary.ignoresSafeArea(edges: .all))
     }
 }

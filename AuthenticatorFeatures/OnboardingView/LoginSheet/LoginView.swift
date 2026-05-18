@@ -24,7 +24,14 @@ import DesignSystem
 import SwiftUI
 
 public struct LoginView: View {
+    private enum Field: Hashable {
+        case password
+        case clearPassword
+    }
+
     @State private var password = ""
+    @State private var isShowingClearPassword = false
+    @FocusState private var focusedField: Field?
 
     let account: UIMustReLoginAccount
 
@@ -60,9 +67,28 @@ public struct LoginView: View {
             Section {
                 AccountLabel(account: account.account, size: .small)
 
-                SecureField(AuthenticatorResourcesStrings.passwordLabel, text: $password)
-                    .bold(false)
-                    .lineLimit(1)
+                HStack {
+                    ZStack {
+                        SecureField(AuthenticatorResourcesStrings.passwordLabel, text: $password)
+                            .lineLimit(1)
+                            .opacity(isShowingClearPassword ? 0 : 1)
+                            .font(.Token.callout)
+                            .focused($focusedField, equals: .password)
+
+                        TextField(AuthenticatorResourcesStrings.passwordLabel, text: $password)
+                            .lineLimit(1)
+                            .autocorrectionDisabled(true)
+                            .textInputAutocapitalization(.never)
+                            .opacity(isShowingClearPassword ? 1 : 0)
+                            .font(.Token.callout)
+                            .focused($focusedField, equals: .clearPassword)
+                    }
+
+                    Button(action: onShowPasswordTapped) {
+                        Image(systemName: isShowingClearPassword ? "eye.slash" : "eye")
+                    }
+                }
+
             } header: {
                 VStack(alignment: .center, spacing: IKPadding.medium) {
                     Text(AuthenticatorResourcesStrings.logInTitle)
@@ -115,5 +141,12 @@ public struct LoginView: View {
             confirmedEmail: account.account.email,
             password: password
         ))
+    }
+
+    private func onShowPasswordTapped() {
+        isShowingClearPassword.toggle()
+        if let focusedField {
+            self.focusedField = focusedField == .password ? .clearPassword : .password
+        }
     }
 }
