@@ -140,7 +140,9 @@ public struct LoginView: View {
         .authScrollViewStyle()
         .scrollBounceBehavior(.basedOnSize)
         .alert(AuthenticatorResourcesStrings.connectionFailedTitle, isPresented: .constant(shouldShowError)) {
-            Button(AuthenticatorResourcesStrings.passTitle, action: account.skip)
+            if let skip = account.skip {
+                Button(AuthenticatorResourcesStrings.passTitle, action: skip)
+            }
 
             Button(AuthenticatorResourcesStrings.retryTitle) {}
                 .keyboardShortcut(.defaultAction)

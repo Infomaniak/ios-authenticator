@@ -68,9 +68,9 @@ public enum RootViewType: @MainActor Equatable {
 public struct UIMustReLoginAccount: Identifiable {
     public let account: UIAccount
     public var status: AccountStatusNotConnectedReLogin
-    public let skip: () -> Void
+    public let skip: (() -> Void)?
 
-    public init(account: UIAccount, status: AccountStatusNotConnectedReLogin, skip: @escaping () -> Void) {
+    public init(account: UIAccount, status: AccountStatusNotConnectedReLogin, skip: (() -> Void)?) {
         self.account = account
         self.status = status
         self.skip = skip

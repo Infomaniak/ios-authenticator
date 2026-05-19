@@ -59,7 +59,7 @@ struct ReLoginSheetViewModifier: ViewModifier {
     }
 
     private func onCloseButtonTapped() {
-        account?.skip()
+        account?.skip?()
         account = nil
     }
 

@@ -94,8 +94,9 @@ struct AccountDetailHeaderView: View {
 
             mustReloginAccount = UIMustReLoginAccount(
                 account: UIAccount(account: account),
-                status: accountStatus
-            ) {}
+                status: accountStatus,
+                skip: nil
+            )
         }
     }
 }
