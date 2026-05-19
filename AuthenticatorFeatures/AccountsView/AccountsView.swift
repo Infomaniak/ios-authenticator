@@ -19,6 +19,7 @@
 import AuthenticatorCore
 import AuthenticatorCoreUI
 import AuthenticatorResources
+import CoreAuthenticator
 import DesignSystem
 @preconcurrency import InAppTwoFactorAuthentication
 import InfomaniakConcurrency
@@ -28,6 +29,8 @@ import InfomaniakDI
 import SwiftUI
 
 public struct AccountsView: View {
+    @Environment(\.scenePhase) private var scenePhase
+
     @EnvironmentObject private var mainViewState: MainViewState
     @EnvironmentObject private var rootViewState: RootViewState
 
@@ -76,6 +79,10 @@ public struct AccountsView: View {
             .onAppear {
                 setCustomNavigationBarAppearance(fontSize: scaledLargeTitle)
             }
+            .onChange(of: scenePhase) { newValue in
+                guard newValue == .active else { return }
+                refreshUserProfiles()
+            }
         }
     }
 
@@ -96,6 +103,12 @@ public struct AccountsView: View {
 
             await inAppTwoFactorAuthenticationManager.checkConnectionAttemptsFor(session: session)
         }
+        refreshUserProfiles()
+    }
+
+    private func refreshUserProfiles() {
+        @InjectService var authenticatorFacade: AuthenticatorFacade
+        authenticatorFacade.refreshUserProfiles()
     }
 
     private func setCustomNavigationBarAppearance(fontSize: CGFloat) {

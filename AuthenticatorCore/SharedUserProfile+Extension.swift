@@ -31,3 +31,28 @@ extension UserProfile {
         )
     }
 }
+
+extension SharedUserProfile: @retroactive @unchecked Sendable {
+    convenience init(from userProfile: UserProfile, sharedApiToken: SharedApiToken) {
+        let lastChangedPasswordDate = userProfile.preferences?.security?.dateLastChangedPassword ?? Date.now
+        let sharedSecurity = SharedSecurity(
+            score: Int32(userProfile.preferences?.security?.score ?? 100),
+            dateLastChangedPassword: Int64(lastChangedPasswordDate.timeIntervalSince1970)
+        )
+        self.init(
+            id: Int32(userProfile.id),
+            displayName: userProfile.displayName,
+            firstname: userProfile.firstName,
+            lastname: userProfile.lastName,
+            email: userProfile.email,
+            avatar: userProfile.avatar,
+            login: userProfile.email,
+            isStaff: userProfile.isStaff ?? false,
+            preferences: Preferences(
+                security: sharedSecurity,
+                organizationPreference: SharedOrganizationPreference(currentOrganizationId: -1)
+            ),
+            apiToken: sharedApiToken
+        )
+    }
+}

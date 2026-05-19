@@ -90,43 +90,41 @@ public actor AccountManager: AccountManagerable {
     public func createAccounts(accountsToDerive: [ConnectedAccount]) async throws {
         let deviceId = try await deviceManager.getOrCreateCurrentDevice().uid
 
-        let accounts: [CoreAuthenticator.Account] = await accountsToDerive.asyncCompactMap { [self] accountToDerive in
+        let userProfiles: [SharedUserProfile] = await accountsToDerive.asyncCompactMap { [self] accountToDerive in
             do {
                 let derivedApiToken = try await networkLoginService.derivateApiToken(
                     for: accountToDerive,
                     appBundleId: Constants.bundleId
                 )
                 await tokenStore.addToken(newToken: derivedApiToken, associatedDeviceId: deviceId)
-                return Account(from: accountToDerive.userProfile)
+                return SharedUserProfile(from: accountToDerive.userProfile, sharedApiToken: SharedApiToken(from: derivedApiToken))
             } catch {
                 Logger.general.warning("Failed to derive token for \(accountToDerive.userId): \(error)")
                 return nil
             }
         }
 
-        try await createAccounts(accounts: accounts)
+        try await createAccounts(sharedUserProfiles: userProfiles)
     }
 
     public func createAccount(token: ApiToken) async throws {
         let deviceId = try await deviceManager.getOrCreateCurrentDevice().uid
 
         let temporaryApiFetcher = ApiFetcher(token: token, delegate: refreshTokenDelegate)
-        let user = try await userProfileStore.updateUserProfile(with: temporaryApiFetcher)
+        let user = try await userProfileStore.updateUserProfile(with: temporaryApiFetcher, options: [.security])
 
         tokenStore.addToken(newToken: token, associatedDeviceId: deviceId)
 
-        let account = Account(from: user)
-
-        try await createAccounts(accounts: [account])
+        try await createAccounts(sharedUserProfiles: [SharedUserProfile(from: user, sharedApiToken: SharedApiToken(from: token))])
     }
 
-    public func createAccounts(accounts: [CoreAuthenticator.Account]) async throws {
-        guard !accounts.isEmpty else {
+    public func createAccounts(sharedUserProfiles: [SharedUserProfile]) async throws {
+        guard !sharedUserProfiles.isEmpty else {
             throw DomainError.missingAccounts
         }
 
         var atLeastOneAccountAdded = false
-        for account in accounts {
+        for account in sharedUserProfiles {
             guard let newToken = tokenStore.tokenFor(userId: TokenStore.UserId(account.id))?.apiToken else {
                 continue
             }
@@ -142,7 +140,7 @@ public actor AccountManager: AccountManagerable {
             throw DomainError.tokenKeyExchangeFailed
         }
 
-        try await authenticatorFacade.addAccounts(connectedAccounts: accounts)
+        try await authenticatorFacade.addAccounts(connectedAccounts: sharedUserProfiles)
     }
 
     public func getApiFetcher(token: ApiToken) -> ApiFetcher {

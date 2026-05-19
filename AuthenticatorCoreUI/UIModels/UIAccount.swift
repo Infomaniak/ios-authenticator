@@ -106,8 +106,12 @@ public extension UIAccount {
 extension UIAccount.Status {
     init(accountStatus: AccountStatus) {
         switch accountStatus {
-        case is AccountStatusLoggedIn:
-            self = .protected
+        case let loggedIn as AccountStatusLoggedIn:
+            if loggedIn.isSecured {
+                self = .protected
+            } else {
+                self = .partiallyProtected
+            }
         case is AccountStatusNotConnectedReLogin:
             self = .loggedOut
         default:
