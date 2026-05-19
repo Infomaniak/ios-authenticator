@@ -65,22 +65,6 @@ public enum RootViewType: @MainActor Equatable {
     case updateRequired
 }
 
-public struct UIMustReLoginAccount: Identifiable {
-    public let account: UIAccount
-    public var status: AccountStatusNotConnectedReLogin
-    public let skip: (() -> Void)?
-
-    public init(account: UIAccount, status: AccountStatusNotConnectedReLogin, skip: (() -> Void)?) {
-        self.account = account
-        self.status = status
-        self.skip = skip
-    }
-
-    public var id: Int64 {
-        account.id
-    }
-}
-
 @MainActor
 public final class RootViewState: ObservableObject {
     @InjectService private var authenticatorFacade: AuthenticatorFacade
