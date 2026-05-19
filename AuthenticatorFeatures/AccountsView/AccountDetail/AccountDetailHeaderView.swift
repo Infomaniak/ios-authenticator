@@ -19,13 +19,16 @@
 import AuthenticatorCore
 import AuthenticatorCoreUI
 import AuthenticatorResources
+import CoreAuthenticator
 import DesignSystem
+import InfomaniakDI
 import SwiftUI
 
 struct AccountDetailHeaderView: View {
     @Environment(\.openURL) private var openURL
 
     @State private var presentedWebViewUrl: URL?
+    @State private var mustReloginAccount: UIMustReLoginAccount?
 
     let account: UIAccount
 
@@ -71,17 +74,29 @@ struct AccountDetailHeaderView: View {
                         title: AuthenticatorResourcesStrings.contactSupportTitle,
                         action: { openURL(URLConstants.support.url) }
                     ),
-                    secondaryButton: (title: AuthenticatorResourcesStrings.logInButton, action: {
-                        
-                    })
+                    secondaryButton: (title: AuthenticatorResourcesStrings.logInButton, action: loginAccountTapped)
                 )
             }
         }
         .listRowInsets(EdgeInsets(top: IKPadding.medium, leading: 0, bottom: IKPadding.huge, trailing: 0))
+        .reLoginSheet(account: $mustReloginAccount)
     }
 
     private var roundedRectangle: some Shape {
         RoundedRectangle(cornerRadius: 24.0)
+    }
+
+    private func loginAccountTapped() {
+        Task {
+            @InjectService var authenticatorFacade: AuthenticatorFacade
+            guard let account = await authenticatorFacade.account(id: account.id) else { return }
+            guard let accountStatus = account.status as? AccountStatusNotConnectedReLogin else { return }
+
+            mustReloginAccount = UIMustReLoginAccount(
+                account: UIAccount(account: account),
+                status: accountStatus
+            ) {}
+        }
     }
 }
 

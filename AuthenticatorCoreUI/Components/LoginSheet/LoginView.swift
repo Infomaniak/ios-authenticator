@@ -17,11 +17,24 @@
  */
 
 import AuthenticatorCore
-import AuthenticatorCoreUI
 import AuthenticatorResources
 import CoreAuthenticator
 import DesignSystem
+import InfomaniakCoreSwiftUI
 import SwiftUI
+
+public extension IKButtonTheme {
+    static let defaultTheme = IKButtonTheme(
+        primary: TintShapeStyle.tint,
+        secondary: Color.white,
+        tertiary: Color.gray.opacity(0.4),
+        disabledPrimary: Color.gray,
+        disabledSecondary: Color.white,
+        error: Color.red,
+        smallFont: .callout,
+        mediumFont: .body
+    )
+}
 
 public struct LoginView: View {
     private enum Field: Hashable {
@@ -134,6 +147,7 @@ public struct LoginView: View {
         } message: {
             Text(errorText)
         }
+        .ikButtonTheme(.defaultTheme)
     }
 
     private func onContinueTapped() {

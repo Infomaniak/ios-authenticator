@@ -16,7 +16,7 @@
  along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-import CoreAuthenticator
+@preconcurrency import CoreAuthenticator
 import Foundation
 import InfomaniakDI
 import OSLog
@@ -69,6 +69,12 @@ public struct UIMustReLoginAccount: Identifiable {
     public let account: UIAccount
     public var status: AccountStatusNotConnectedReLogin
     public let skip: () -> Void
+
+    public init(account: UIAccount, status: AccountStatusNotConnectedReLogin, skip: @escaping () -> Void) {
+        self.account = account
+        self.status = status
+        self.skip = skip
+    }
 
     public var id: Int64 {
         account.id
@@ -150,7 +156,7 @@ public final class RootViewState: ObservableObject {
                 } else if status is AppStatusAddingAnAccount {
                     state = .newAccount(.addAccount)
                 } else if let status = status as? AppStatusLoginRequiredMustReLogin {
-                    guard let account = await fetchAccount(id: status.accountId) else { return }
+                    guard let account = await authenticatorFacade.account(id: status.accountId) else { return }
                     guard let accountStatus = account.status as? AccountStatusNotConnectedReLogin else { return }
 
                     if mustReLoginAccount == nil {
@@ -163,13 +169,6 @@ public final class RootViewState: ObservableObject {
                 }
             }
         }
-    }
-
-    func fetchAccount(id: Int64) async -> Account? {
-        for await accounts in authenticatorFacade.accounts {
-            return accounts.first { $0.id == id }
-        }
-        return nil
     }
 
     func newOnboardingStepFromCurrentState(_ step: OnboardingStep) {
