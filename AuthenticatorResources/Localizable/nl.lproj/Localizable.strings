@@ -3,12 +3,18 @@
  * Project: Authenticator
  * Locale: nl, Dutch; Flemish
  * Tagged: ios
- * Exported by: Jordan Chapelle
- * Exported at: Tue, 05 May 2026 16:24:49 +0200
+ * Exported by: Philippe Weidmann
+ * Exported at: Tue, 19 May 2026 08:29:05 +0200
  */
 
 /* loco:69d6617d0ee9dd38d50c99e2 */
 "accessibilityHintCurrentTheme" = "Huidig thema";
+
+/* loco:6a04772e96bf3d346f08a092 */
+"accountDisconnectedDescription" = "U ontvangt geen verbindingsverzoeken meer om goed te keuren op dit apparaat voor de %s";
+
+/* loco:6a0476dbe991185cf509ecc2 */
+"accountDisconnectedTitle" = "Account losgekoppeld van Authenticator";
 
 /* loco:695e825042bb2b44f30a2bc3 */
 "accountLoggedOut" = "Account uitgelogd";
@@ -78,6 +84,30 @@
 
 /* loco:69849b6fd84e3f199e0455f2 */
 "addAccountContentDescription" = "Een account toevoegen";
+
+/* loco:69fc74d382878f1f6805c482 */
+"alertDialogChangePasswordButton" = "Wachtwoord wijzigen";
+
+/* loco:69fc75237b5d3b4a26022522 */
+"alertDialogContactSupportButton" = "Contact Ondersteuning";
+
+/* loco:69fc4efae5c700f10a09f922 */
+"alertDialogNeutralButton" = "Ik begrijp het";
+
+/* loco:69fc4d102f744a452c01ba42 */
+"alertDialogPasswordChangedText" = "Het inlogwachtwoord voor de Infomaniak account %s is bijgewerkt.";
+
+/* loco:69fc4d4830a4e3dd060d1122 */
+"alertDialogPasswordChangedTitle" = "Wachtwoord gewijzigd";
+
+/* loco:69fc4f9373a4dee438009df2 */
+"alertDialogReportButton" = "Ik was het niet";
+
+/* loco:69fc744faf769967380443a2 */
+"alertDialogVerifyAccountText" = "Als dit niet het geval was, raden we je aan je wachtwoord opnieuw in te stellen en je beveiligingsinstellingen te controleren.";
+
+/* loco:69fc583ff49996ca46087832 */
+"alertDialogVerifyAccountTitle" = "Accountbeveiliging controleren";
 
 /* loco:69e09cb1f996ab9e220f8e82 */
 "allowDeviceNotificationsDescription" = "Sta meldingen toe in de instellingen van je apparaat om onze beveiligingswaarschuwingen te ontvangen.";
@@ -163,11 +193,23 @@
 /* loco:695e9bdbee3a7d21340527d2 */
 "deviceLoginTitle" = "Apparaat";
 
+/* loco:6a043f82ce9fe6d6630ddeb2 */
+"disconnectAccountAdd2faButton" = "Nog een stap toevoegen";
+
+/* loco:6a0429c9add3c36b02057942 */
+"disconnectAccountCriticalButton" = "De account ontkoppelen";
+
 /* loco:695ea16b39ee5b4bb80bd342 */
 "disconnectAccountDescription" = "Uw account zal niet langer worden beschermd door twee-stapsverificatie en zal kwetsbaar worden voor ongeautoriseerde toegang.";
 
 /* loco:695ea05c8d0943c57704f5d3 */
 "disconnectAccountOnThisDeviceDescription" = "U kunt geen inloggen meer goedkeuren op dit apparaat met Authenticator.";
+
+/* loco:6a043dceffa0c696ed008bc2 */
+"disconnectAccountPartiallySecuredWarningDescription" = "Dit apparaat is het enige dat gemachtigd is om aan te melden.\n\nVoeg een ander apparaat of een andere aanmeldingsmethode toe voordat u doorgaat.";
+
+/* loco:6a043d5c7c15401d910014c2 */
+"disconnectAccountPartiallySecuredWarningTitle" = "Door de verbinding met de account te verbreken, wordt de beveiliging verwijderd";
 
 /* loco:695ea0448d0943c57704f5d2 */
 "disconnectAccountTitle" = "Dit account loskoppelen";
@@ -180,6 +222,9 @@
 
 /* loco:695e81d0dcf344a547026d33 */
 "disconnectButton" = "Uitloggen";
+
+/* loco:6a043f0d5bae40964408bc62 */
+"disconnectPartiallySecuredDescription" = "Je account wordt niet langer beschermd door verificatie in twee stappen en is kwetsbaar voor ongeautoriseerde toegang.";
 
 /* loco:695ea0798d0943c57704f5d4 */
 "disconnectSuccess" = "Account losgekoppeld";
@@ -197,7 +242,7 @@
 "enableNotifications" = "Meldingen inschakelen";
 
 /* loco:695e8322b85b83d8780f97f2 */
-"errorLoginFailed" = "Inloggen op account mislukt. Probeer het opnieuw of neem contact op met ondersteuning. (foutcode: %d)";
+"errorLoginFailed" = "Inloggen op account mislukt. Probeer het opnieuw of neem contact op met ondersteuning.";
 
 /* loco:69e8bd2f0c295d97f70480a2 */
 "errorMigrationFailed" = "De migratie is onderbroken.\nNeem contact op met onze technische ondersteuning.";
@@ -246,6 +291,9 @@
 
 /* loco:695e9ce7fb4842ffed0c4603 */
 "loginRequestExpiredTitle" = "Dit inlogverzoek is verlopen";
+
+/* loco:6a02ca13d3a7abc94b0e30e2 */
+"migrationWarningDescription" = "De overgang naar de nieuwe app kon voor een of meer van je accounts niet worden voltooid.";
 
 /* loco:695e9dbf2e191d3ca00bfb15 */
 "noInternetTitle" = "Geen internetverbinding";
@@ -325,6 +373,9 @@
 /* loco:695e8135925530d3a102c763 */
 "refreshPendingLoginsButton" = "In afwachting zijnde inloggen vernieuwen";
 
+/* loco:6a04662896beb8b6fb041222 */
+"removeAccountButton" = "Account verwijderen";
+
 /* loco:695e999acdb8bbf8ca077d52 */
 "removeAccountDescription" = "U kunt uw inloggen naar dit account niet langer verifiëren met Authenticator.";
 
@@ -334,6 +385,12 @@
 /* loco:695e878a4ff7a8c5a8050c53 */
 "removeAccountTitle" = "Account verwijderen";
 
+/* loco:6a0442b4538250329902ba62 */
+"removeAccountWarningDescription" = "Als Authenticator uw enige tweestapsverificatiemethode is, wordt u mogelijk uitgesloten wanneer u de volgende keer probeert in te loggen.";
+
+/* loco:6a04423b7fe135cdb00fb145 */
+"removeAccountWarningTitle" = "Account verwijderen";
+
 /* loco:695e99b261ee1c8c900db0e2 */
 "removeButton" = "Verwijderen";
 
@@ -342,6 +399,9 @@
 
 /* loco:69f9fd5b9c704770ab0a1ea2 */
 "retryTitle" = "Opnieuw proberen";
+
+/* loco:6a02e26f77c3fcf288059744 */
+"securedIconContentDescription" = "Pictogram voor beveiligde account";
 
 /* loco:695e7d2aaf61b386540bf272 */
 "settingsTitle" = "Instellingen";
@@ -405,6 +465,9 @@
 
 /* loco:695e8b943eee444fde041612 */
 "viewGuidesButton" = "Handleidingen bekijken";
+
+/* loco:6a02df7ec5db231940022aa2 */
+"warningIconContentDescription" = "Waarschuwingspictogram account";
 
 /* loco:695e9ba3ae7a65d0a10aba73 */
 "whenLoginTitle" = "Wanneer";

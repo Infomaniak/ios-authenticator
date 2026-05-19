@@ -3,12 +3,18 @@
  * Project: Authenticator
  * Locale: it, Italian
  * Tagged: ios
- * Exported by: Jordan Chapelle
- * Exported at: Tue, 05 May 2026 16:24:49 +0200
+ * Exported by: Philippe Weidmann
+ * Exported at: Tue, 19 May 2026 08:29:05 +0200
  */
 
 /* loco:69d6617d0ee9dd38d50c99e2 */
 "accessibilityHintCurrentTheme" = "Tema attuale";
+
+/* loco:6a04772e96bf3d346f08a092 */
+"accountDisconnectedDescription" = "Non si riceveranno più richieste di connessione da approvare su questo dispositivo per il %s";
+
+/* loco:6a0476dbe991185cf509ecc2 */
+"accountDisconnectedTitle" = "Account disconnesso da Authenticator";
 
 /* loco:695e825042bb2b44f30a2bc3 */
 "accountLoggedOut" = "Account disconnesso";
@@ -78,6 +84,30 @@
 
 /* loco:69849b6fd84e3f199e0455f2 */
 "addAccountContentDescription" = "Aggiungere un account";
+
+/* loco:69fc74d382878f1f6805c482 */
+"alertDialogChangePasswordButton" = "Cambia la password";
+
+/* loco:69fc75237b5d3b4a26022522 */
+"alertDialogContactSupportButton" = "Contatto con l’assistenza";
+
+/* loco:69fc4efae5c700f10a09f922 */
+"alertDialogNeutralButton" = "Capisco";
+
+/* loco:69fc4d102f744a452c01ba42 */
+"alertDialogPasswordChangedText" = "La password di accesso per l’account Infomaniak %s è stata aggiornata.";
+
+/* loco:69fc4d4830a4e3dd060d1122 */
+"alertDialogPasswordChangedTitle" = "Modifica della password di accesso";
+
+/* loco:69fc4f9373a4dee438009df2 */
+"alertDialogReportButton" = "Non sono stato io";
+
+/* loco:69fc744faf769967380443a2 */
+"alertDialogVerifyAccountText" = "Se non si tratta di voi, vi consigliamo di reimpostare la password e di rivedere le impostazioni di sicurezza.";
+
+/* loco:69fc583ff49996ca46087832 */
+"alertDialogVerifyAccountTitle" = "Controllare la sicurezza del conto";
 
 /* loco:69e09cb1f996ab9e220f8e82 */
 "allowDeviceNotificationsDescription" = "Attiva le notifiche nelle impostazioni del tuo dispositivo per ricevere i nostri avvisi di sicurezza.";
@@ -163,11 +193,23 @@
 /* loco:695e9bdbee3a7d21340527d2 */
 "deviceLoginTitle" = "Dispositivo";
 
+/* loco:6a043f82ce9fe6d6630ddeb2 */
+"disconnectAccountAdd2faButton" = "Aggiungi un altro passo";
+
+/* loco:6a0429c9add3c36b02057942 */
+"disconnectAccountCriticalButton" = "Disconnettere l’account";
+
 /* loco:695ea16b39ee5b4bb80bd342 */
 "disconnectAccountDescription" = "Il tuo account non sarà più protetto dalla verifica a due passaggi e diventerà vulnerabile ad accessi non autorizzati.";
 
 /* loco:695ea05c8d0943c57704f5d3 */
 "disconnectAccountOnThisDeviceDescription" = "Non potrai più verificare l’accesso su questo dispositivo con Authenticator.";
+
+/* loco:6a043dceffa0c696ed008bc2 */
+"disconnectAccountPartiallySecuredWarningDescription" = "Questo dispositivo è l’unico autorizzato ad accedere.\n\nAggiungere un altro dispositivo o metodo di accesso prima di continuare.";
+
+/* loco:6a043d5c7c15401d910014c2 */
+"disconnectAccountPartiallySecuredWarningTitle" = "La disconnessione dell’account ne rimuove la protezione";
 
 /* loco:695ea0448d0943c57704f5d2 */
 "disconnectAccountTitle" = "Disconnetti questo account";
@@ -180,6 +222,9 @@
 
 /* loco:695e81d0dcf344a547026d33 */
 "disconnectButton" = "Disconnettiti";
+
+/* loco:6a043f0d5bae40964408bc62 */
+"disconnectPartiallySecuredDescription" = "Il vostro account non sarà più protetto dalla verifica in due passaggi e sarà vulnerabile ad accessi non autorizzati.";
 
 /* loco:695ea0798d0943c57704f5d4 */
 "disconnectSuccess" = "Account disconnesso";
@@ -197,7 +242,7 @@
 "enableNotifications" = "Attiva le notifiche";
 
 /* loco:695e8322b85b83d8780f97f2 */
-"errorLoginFailed" = "Accesso all’account fallito. Riprova o contatta l’assistenza. (codice errore: %d)";
+"errorLoginFailed" = "Accesso all’account fallito. Riprova o contatta l’assistenza.";
 
 /* loco:69e8bd2f0c295d97f70480a2 */
 "errorMigrationFailed" = "La migrazione è stata interrotta.\nContattare il nostro team di assistenza tecnica.";
@@ -246,6 +291,9 @@
 
 /* loco:695e9ce7fb4842ffed0c4603 */
 "loginRequestExpiredTitle" = "Questa richiesta di accesso è scaduta";
+
+/* loco:6a02ca13d3a7abc94b0e30e2 */
+"migrationWarningDescription" = "Non è stato possibile completare la transizione alla nuova app per uno o più account.";
 
 /* loco:695e9dbf2e191d3ca00bfb15 */
 "noInternetTitle" = "Nessuna connessione Internet";
@@ -325,6 +373,9 @@
 /* loco:695e8135925530d3a102c763 */
 "refreshPendingLoginsButton" = "Aggiorna accessi in sospeso";
 
+/* loco:6a04662896beb8b6fb041222 */
+"removeAccountButton" = "Rimuovere l’account";
+
 /* loco:695e999acdb8bbf8ca077d52 */
 "removeAccountDescription" = "Non potrai più verificare l’accesso a questo account con Authenticator.";
 
@@ -334,6 +385,12 @@
 /* loco:695e878a4ff7a8c5a8050c53 */
 "removeAccountTitle" = "Rimuovi account";
 
+/* loco:6a0442b4538250329902ba62 */
+"removeAccountWarningDescription" = "Se Authenticator è l’unico metodo di verifica in due passaggi, è possibile che si venga bloccati al successivo tentativo di accesso.";
+
+/* loco:6a04423b7fe135cdb00fb145 */
+"removeAccountWarningTitle" = "Rimuovere l’account";
+
 /* loco:695e99b261ee1c8c900db0e2 */
 "removeButton" = "Rimuovi";
 
@@ -342,6 +399,9 @@
 
 /* loco:69f9fd5b9c704770ab0a1ea2 */
 "retryTitle" = "Riprova";
+
+/* loco:6a02e26f77c3fcf288059744 */
+"securedIconContentDescription" = "Icona del conto protetto";
 
 /* loco:695e7d2aaf61b386540bf272 */
 "settingsTitle" = "Impostazioni";
@@ -405,6 +465,9 @@
 
 /* loco:695e8b943eee444fde041612 */
 "viewGuidesButton" = "Sfoglia le guide";
+
+/* loco:6a02df7ec5db231940022aa2 */
+"warningIconContentDescription" = "Icona di avviso dell’account";
 
 /* loco:695e9ba3ae7a65d0a10aba73 */
 "whenLoginTitle" = "Quando";

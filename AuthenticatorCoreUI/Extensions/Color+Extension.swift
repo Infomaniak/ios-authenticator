@@ -49,11 +49,18 @@ public extension Color {
             public let foreground: Color
             public let surface: Color
             public let text: Color
+            public let button: Color
 
-            private init(foreground: Color, surface: Color = Surface.secondary, text: Color = Text.primary) {
+            private init(
+                foreground: Color,
+                surface: Color = Surface.secondary,
+                text: Color = Text.primary,
+                button: Color = Token.primary
+            ) {
                 self.foreground = foreground
                 self.surface = surface
                 self.text = text
+                self.button = button
             }
 
             /// Green
@@ -65,7 +72,8 @@ public extension Color {
             public static let warning = StatusColors(
                 foreground: Color(light: AuthColor.orange500, dark: AuthColor.orange300),
                 surface: Color(light: AuthColor.orange50, dark: AuthColor.orange950),
-                text: Color(light: AuthColor.orange900, dark: AuthColor.orange100)
+                text: Color(light: AuthColor.orange900, dark: AuthColor.orange100),
+                button: Text.primary
             )
 
             /// Red
@@ -75,10 +83,18 @@ public extension Color {
                 text: Color(light: AuthColor.red900, dark: AuthColor.red100)
             )
 
+            /// Blue
             public static let suggestion = StatusColors(
                 foreground: Color(light: AuthColor.purple500, dark: AuthColor.purple300),
                 surface: Color(light: AuthColor.purple50, dark: AuthColor.purple950),
                 text: Color(light: AuthColor.purple900, dark: AuthColor.purple100)
+            )
+
+            /// Gray
+            public static let disabled = StatusColors(
+                foreground: Color(light: AuthColor.neutralBlue500, dark: AuthColor.neutralBlue200),
+                surface: Color(light: AuthColor.red50, dark: AuthColor.red950),
+                text: Color(light: AuthColor.neutralBlue800, dark: AuthColor.neutralBlue50)
             )
         }
     }

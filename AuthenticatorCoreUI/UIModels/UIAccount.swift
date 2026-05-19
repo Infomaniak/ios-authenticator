@@ -47,7 +47,7 @@ public struct UIAccount: Identifiable, Hashable, Sendable {
             case .partiallyProtected:
                 .warning
             case .loggedOut:
-                .error
+                .disabled
             }
         }
 

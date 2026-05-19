@@ -23,14 +23,11 @@ import DesignSystem
 import SwiftUI
 
 struct AccountDetailHeaderView: View {
+    @Environment(\.openURL) private var openURL
+
     @State private var presentedWebViewUrl: URL?
 
     let account: UIAccount
-
-    var alertAccount: StatusHeaderView.StatusHeaderType? {
-        // TODO: Return appropriate status based on account.state, or nil if no alert needed
-        return nil
-    }
 
     var body: some View {
         VStack(alignment: .leading, spacing: IKPadding.large) {
@@ -66,8 +63,18 @@ struct AccountDetailHeaderView: View {
             }
             .autoLoginWebView(protectedURL: $presentedWebViewUrl, userId: Int(account.id))
 
-            if let alertAccount {
-                StatusHeaderView(type: alertAccount, description: "")
+            if account.status == .loggedOut {
+                StatusHeaderView(
+                    type: .warning,
+                    description: AuthenticatorResourcesStrings.errorLoginFailed,
+                    primaryButton: (
+                        title: AuthenticatorResourcesStrings.contactSupportTitle,
+                        action: { openURL(URLConstants.support.url) }
+                    ),
+                    secondaryButton: (title: AuthenticatorResourcesStrings.logInButton, action: {
+                        
+                    })
+                )
             }
         }
         .listRowInsets(EdgeInsets(top: IKPadding.medium, leading: 0, bottom: IKPadding.huge, trailing: 0))
@@ -80,4 +87,12 @@ struct AccountDetailHeaderView: View {
 
 #Preview {
     AccountDetailHeaderView(account: PreviewHelper.sampleUIAccount)
+}
+
+#Preview {
+    AccountDetailHeaderView(account: PreviewHelper.sampleUIAccount2)
+}
+
+#Preview {
+    AccountDetailHeaderView(account: PreviewHelper.sampleUIAccount3)
 }
