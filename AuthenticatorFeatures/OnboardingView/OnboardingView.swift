@@ -234,8 +234,7 @@ public struct OnboardingView: View {
         let center = UNUserNotificationCenter.current()
         let settings = await center.notificationSettings()
 
-        shouldShowNotificationsStep = settings.authorizationStatus != .denied &&
-            !UserDefaults.shared.isNotificationsEnabled
+        shouldShowNotificationsStep = settings.authorizationStatus == .notDetermined && UserDefaults.shared.isNotificationsEnabled
     }
 }
 
