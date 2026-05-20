@@ -4,14 +4,14 @@
  * Locale: sv, Swedish
  * Tagged: ios
  * Exported by: Philippe Weidmann
- * Exported at: Tue, 19 May 2026 08:29:05 +0200
+ * Exported at: Wed, 20 May 2026 08:50:17 +0200
  */
 
 /* loco:69d6617d0ee9dd38d50c99e2 */
 "accessibilityHintCurrentTheme" = "Nuvarande tema";
 
 /* loco:6a04772e96bf3d346f08a092 */
-"accountDisconnectedDescription" = "Du kommer inte längre att få anslutningsförfrågningar för att godkänna på den här enheten för %s";
+"accountDisconnectedDescription" = "Du kommer inte längre att få anslutningsförfrågningar för att godkänna på den här enheten för %@";
 
 /* loco:6a0476dbe991185cf509ecc2 */
 "accountDisconnectedTitle" = "Konto frånkopplat från Authenticator";
@@ -95,7 +95,7 @@
 "alertDialogNeutralButton" = "Jag förstår";
 
 /* loco:69fc4d102f744a452c01ba42 */
-"alertDialogPasswordChangedText" = "Inloggningslösenordet för Infomaniak-kontot %s har uppdaterats.";
+"alertDialogPasswordChangedText" = "Inloggningslösenordet för Infomaniak-kontot %@ har uppdaterats.";
 
 /* loco:69fc4d4830a4e3dd060d1122 */
 "alertDialogPasswordChangedTitle" = "Lösenord för inloggning ändrat";

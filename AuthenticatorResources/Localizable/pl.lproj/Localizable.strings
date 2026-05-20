@@ -4,14 +4,14 @@
  * Locale: pl, Polish
  * Tagged: ios
  * Exported by: Philippe Weidmann
- * Exported at: Tue, 19 May 2026 08:29:05 +0200
+ * Exported at: Wed, 20 May 2026 08:50:17 +0200
  */
 
 /* loco:69d6617d0ee9dd38d50c99e2 */
 "accessibilityHintCurrentTheme" = "Bieżący motyw";
 
 /* loco:6a04772e96bf3d346f08a092 */
-"accountDisconnectedDescription" = "Nie będziesz już otrzymywać żądań połączenia do zatwierdzenia na tym urządzeniu dla %s";
+"accountDisconnectedDescription" = "Nie będziesz już otrzymywać żądań połączenia do zatwierdzenia na tym urządzeniu dla %@";
 
 /* loco:6a0476dbe991185cf509ecc2 */
 "accountDisconnectedTitle" = "Konto odłączone od aplikacji Authenticator";
@@ -95,7 +95,7 @@
 "alertDialogNeutralButton" = "Rozumiem";
 
 /* loco:69fc4d102f744a452c01ba42 */
-"alertDialogPasswordChangedText" = "Hasło logowania do konta Infomaniak %s zostało zaktualizowane.";
+"alertDialogPasswordChangedText" = "Hasło logowania do konta Infomaniak %@ zostało zaktualizowane.";
 
 /* loco:69fc4d4830a4e3dd060d1122 */
 "alertDialogPasswordChangedTitle" = "Zmieniono hasło logowania";

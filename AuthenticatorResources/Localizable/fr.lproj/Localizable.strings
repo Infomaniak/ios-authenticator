@@ -4,14 +4,14 @@
  * Locale: fr, French
  * Tagged: ios
  * Exported by: Philippe Weidmann
- * Exported at: Tue, 19 May 2026 08:29:05 +0200
+ * Exported at: Wed, 20 May 2026 08:50:17 +0200
  */
 
 /* loco:69d6617d0ee9dd38d50c99e2 */
 "accessibilityHintCurrentTheme" = "Thème actuel";
 
 /* loco:6a04772e96bf3d346f08a092 */
-"accountDisconnectedDescription" = "Vous ne recevrez plus de demandes de connexion à approuver sur cet appareil pour le %s";
+"accountDisconnectedDescription" = "Vous ne recevrez plus de demandes de connexion à approuver sur cet appareil pour le %@";
 
 /* loco:6a0476dbe991185cf509ecc2 */
 "accountDisconnectedTitle" = "Compte déconnecté de l’Authenticator";
@@ -95,7 +95,7 @@
 "alertDialogNeutralButton" = "J’ai compris";
 
 /* loco:69fc4d102f744a452c01ba42 */
-"alertDialogPasswordChangedText" = "Le mot de passe du compte Infomaniak %s a été mis à jour.";
+"alertDialogPasswordChangedText" = "Le mot de passe du compte Infomaniak %@ a été mis à jour.";
 
 /* loco:69fc4d4830a4e3dd060d1122 */
 "alertDialogPasswordChangedTitle" = "Mot de passe de connexion modifié";
