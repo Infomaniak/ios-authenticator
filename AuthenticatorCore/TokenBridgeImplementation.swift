@@ -56,10 +56,6 @@ final class TokenBridgeImplementation: AuthenticatorBridge {
         await accountManager.userProfileStore.addUserProfile(localUserProfile)
     }
 
-    func __getTokenFromDatabase(userId: Int64) async throws -> String? {
-        return tokenStore.tokenFor(userId: TokenStore.UserId(userId))?.apiToken.accessToken
-    }
-
     func __getTokenFromDatabase(userId: Int64) async throws -> SharedApiToken? {
         guard let token = tokenStore.tokenFor(userId: TokenStore.UserId(userId)) else {
             return nil
