@@ -47,7 +47,7 @@ public struct UIAccount: Identifiable, Hashable, Sendable {
             case .partiallyProtected:
                 .warning
             case .loggedOut:
-                .error
+                .disabled
             }
         }
 
@@ -105,11 +105,12 @@ public extension UIAccount {
 
 extension UIAccount.Status {
     init(accountStatus: AccountStatus) {
-        if (accountStatus as? AccountStatusLoggedIn) != nil {
+        switch accountStatus {
+        case is AccountStatusLoggedIn:
             self = .protected
-        } else if let notConnectedStatus = accountStatus as? AccountStatusNotConnected {
-            self = .partiallyProtected
-        } else {
+        case is AccountStatusNotConnectedReLogin:
+            self = .loggedOut
+        default:
             self = .loggedOut
         }
     }

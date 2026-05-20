@@ -3,12 +3,18 @@
  * Project: Authenticator
  * Locale: sv, Swedish
  * Tagged: ios
- * Exported by: Baptiste Griva
- * Exported at: Mon, 27 Apr 2026 14:07:51 +0200
+ * Exported by: Philippe Weidmann
+ * Exported at: Wed, 20 May 2026 08:50:17 +0200
  */
 
 /* loco:69d6617d0ee9dd38d50c99e2 */
 "accessibilityHintCurrentTheme" = "Nuvarande tema";
+
+/* loco:6a04772e96bf3d346f08a092 */
+"accountDisconnectedDescription" = "Du kommer inte längre att få anslutningsförfrågningar för att godkänna på den här enheten för %@";
+
+/* loco:6a0476dbe991185cf509ecc2 */
+"accountDisconnectedTitle" = "Konto frånkopplat från Authenticator";
 
 /* loco:695e825042bb2b44f30a2bc3 */
 "accountLoggedOut" = "Konto utloggat";
@@ -79,6 +85,30 @@
 /* loco:69849b6fd84e3f199e0455f2 */
 "addAccountContentDescription" = "Lägg till konto";
 
+/* loco:69fc74d382878f1f6805c482 */
+"alertDialogChangePasswordButton" = "Ändra lösenord";
+
+/* loco:69fc75237b5d3b4a26022522 */
+"alertDialogContactSupportButton" = "Kontakta support";
+
+/* loco:69fc4efae5c700f10a09f922 */
+"alertDialogNeutralButton" = "Jag förstår";
+
+/* loco:69fc4d102f744a452c01ba42 */
+"alertDialogPasswordChangedText" = "Inloggningslösenordet för Infomaniak-kontot %@ har uppdaterats.";
+
+/* loco:69fc4d4830a4e3dd060d1122 */
+"alertDialogPasswordChangedTitle" = "Lösenord för inloggning ändrat";
+
+/* loco:69fc4f9373a4dee438009df2 */
+"alertDialogReportButton" = "Det var inte jag";
+
+/* loco:69fc744faf769967380443a2 */
+"alertDialogVerifyAccountText" = "Om så inte var fallet råder vi dig att återställa ditt lösenord och se över dina säkerhetsinställningar.";
+
+/* loco:69fc583ff49996ca46087832 */
+"alertDialogVerifyAccountTitle" = "Kontrollera kontosäkerhet";
+
 /* loco:69e09cb1f996ab9e220f8e82 */
 "allowDeviceNotificationsDescription" = "Tillåt notiser i enhetens inställningar för att få våra säkerhetsvarningar.";
 
@@ -124,6 +154,9 @@
 /* loco:695e9b2a9d8b472044005a44 */
 "confirmLoginNotificationTitle" = "Bekräfta inloggning";
 
+/* loco:69f9fcc742a35b678d0d3772 */
+"connectionFailedTitle" = "Anslutningen misslyckades";
+
 /* loco:695e8b0257b12526a4058922 */
 "contactSupportDescription" = "Kontakta våra team via telefon eller e-post för hjälp med att lösa ditt problem.";
 
@@ -160,11 +193,23 @@
 /* loco:695e9bdbee3a7d21340527d2 */
 "deviceLoginTitle" = "Enhet";
 
+/* loco:6a043f82ce9fe6d6630ddeb2 */
+"disconnectAccountAdd2faButton" = "Lägg till ytterligare ett steg";
+
+/* loco:6a0429c9add3c36b02057942 */
+"disconnectAccountCriticalButton" = "Koppla bort kontot";
+
 /* loco:695ea16b39ee5b4bb80bd342 */
 "disconnectAccountDescription" = "Ditt konto kommer inte längre att skyddas av tvåstegsverifiering och blir sårbart för obehörig åtkomst.";
 
 /* loco:695ea05c8d0943c57704f5d3 */
 "disconnectAccountOnThisDeviceDescription" = "Du kommer inte längre att kunna godkänna inloggningar på denna enhet med Authenticator.";
+
+/* loco:6a043dceffa0c696ed008bc2 */
+"disconnectAccountPartiallySecuredWarningDescription" = "Den här enheten är den enda som är behörig att logga in.\n\nLägg till en annan enhet eller inloggningsmetod innan du fortsätter.";
+
+/* loco:6a043d5c7c15401d910014c2 */
+"disconnectAccountPartiallySecuredWarningTitle" = "Om du kopplar bort kontot tas dess skydd bort";
 
 /* loco:695ea0448d0943c57704f5d2 */
 "disconnectAccountTitle" = "Koppla från detta konto";
@@ -177,6 +222,9 @@
 
 /* loco:695e81d0dcf344a547026d33 */
 "disconnectButton" = "Logga ut";
+
+/* loco:6a043f0d5bae40964408bc62 */
+"disconnectPartiallySecuredDescription" = "Ditt konto kommer inte längre att skyddas av tvåstegsverifiering och kommer att vara sårbart för obehörig åtkomst.";
 
 /* loco:695ea0798d0943c57704f5d4 */
 "disconnectSuccess" = "Konto frånkopplat";
@@ -194,10 +242,16 @@
 "enableNotifications" = "Aktivera notifikationer";
 
 /* loco:695e8322b85b83d8780f97f2 */
-"errorLoginFailed" = "Kontoinloggning misslyckades. Försök igen eller kontakta support. (felkod: %d)";
+"errorLoginFailed" = "Kontoinloggning misslyckades. Försök igen eller kontakta support.";
+
+/* loco:69e8bd2f0c295d97f70480a2 */
+"errorMigrationFailed" = "Migreringen har avbrutits.\nVänligen kontakta vårt tekniska supportteam.";
 
 /* loco:695e9d72bc601c317401c9d4 */
 "errorOccuredTitle" = "Ett fel uppstod";
+
+/* loco:69f201978a23057d8f09c362 */
+"errorWithRetryMessage" = "Ett fel har inträffat. Vänligen försök igen senare.";
 
 /* loco:695e95bc3614499244057df2 */
 "estimatedWait" = "Beräknad väntetid: %@";
@@ -223,9 +277,6 @@
 /* loco:695e9b60eb4a5e9ff3045a82 */
 "loginAttemptQuery" = "Försöker du\nlogga in?";
 
-/* loco:695e9b86eb4a5e9ff3045a84 */
-"loginAuthorizationWarning" = "Att bekräfta denna inloggning kommer att auktorisera denna enhet att komma åt ditt Infomaniak-konto";
-
 /* loco:695e9c9194a0d83c6a006812 */
 "loginDeniedSuccessDescription" = "Du avvisade ett inloggningsförsök. För att säkra ditt konto, byt ditt lösenord.\n\nOm du gjorde denna förfrågan, försök logga in igen.";
 
@@ -240,6 +291,9 @@
 
 /* loco:695e9ce7fb4842ffed0c4603 */
 "loginRequestExpiredTitle" = "Denna inloggningsförfrågan har löpt ut";
+
+/* loco:6a02ca13d3a7abc94b0e30e2 */
+"migrationWarningDescription" = "Övergången till den nya appen kunde inte slutföras för ett eller flera av dina konton.";
 
 /* loco:695e9dbf2e191d3ca00bfb15 */
 "noInternetTitle" = "Ingen internetanslutning";
@@ -295,6 +349,9 @@
 /* loco:695e91208384843ef3052bb2 */
 "openSupportStatus" = "Öppet";
 
+/* loco:69f9fd896bbdef154e008142 */
+"passTitle" = "Passera";
+
 /* loco:695e9ea5ffea9abfd80a1ae2 */
 "passwordAskingWarning" = "Infomaniak kommer aldrig att fråga dig om ditt lösenord oväntat.\n\nSe till att du gjorde denna åtgärd innan du fortsätter.";
 
@@ -316,6 +373,9 @@
 /* loco:695e8135925530d3a102c763 */
 "refreshPendingLoginsButton" = "Uppdatera väntande inloggningar";
 
+/* loco:6a04662896beb8b6fb041222 */
+"removeAccountButton" = "Ta bort konto";
+
 /* loco:695e999acdb8bbf8ca077d52 */
 "removeAccountDescription" = "Du kommer inte längre att kunna verifiera din inloggning till detta konto med Authenticator.";
 
@@ -325,8 +385,23 @@
 /* loco:695e878a4ff7a8c5a8050c53 */
 "removeAccountTitle" = "Ta bort konto";
 
+/* loco:6a0442b4538250329902ba62 */
+"removeAccountWarningDescription" = "Om Authenticator är din enda metod för tvåstegsverifiering kan du bli utelåst nästa gång du försöker logga in.";
+
+/* loco:6a04423b7fe135cdb00fb145 */
+"removeAccountWarningTitle" = "Ta bort konto";
+
 /* loco:695e99b261ee1c8c900db0e2 */
 "removeButton" = "Ta bort";
+
+/* loco:69e71e371e556c460d0be734 */
+"requiredLabel" = "Krävs";
+
+/* loco:69f9fd5b9c704770ab0a1ea2 */
+"retryTitle" = "Försök igen";
+
+/* loco:6a02e26f77c3fcf288059744 */
+"securedIconContentDescription" = "Ikon för säkrat konto";
 
 /* loco:695e7d2aaf61b386540bf272 */
 "settingsTitle" = "Inställningar";
@@ -391,5 +466,11 @@
 /* loco:695e8b943eee444fde041612 */
 "viewGuidesButton" = "Bläddra i guiderna";
 
+/* loco:6a02df7ec5db231940022aa2 */
+"warningIconContentDescription" = "Varningsikon för konto";
+
 /* loco:695e9ba3ae7a65d0a10aba73 */
 "whenLoginTitle" = "När";
+
+/* loco:69e720890dceaa5a5204d762 */
+"wrongPasswordLabel" = "Lösenordet är felaktigt";

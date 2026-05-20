@@ -61,6 +61,7 @@ public struct StatusHeaderView: View {
                 }
                 .font(.Token.bodyBold)
                 .ikButtonFullWidth(true)
+                .tint(type.statusColor.button)
             }
         }
         .padding(.vertical, value: .medium)

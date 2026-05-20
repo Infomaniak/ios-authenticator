@@ -19,18 +19,18 @@
 import AuthenticatorCore
 import AuthenticatorCoreUI
 import AuthenticatorResources
+import CoreAuthenticator
 import DesignSystem
+import InfomaniakDI
 import SwiftUI
 
 struct AccountDetailHeaderView: View {
+    @Environment(\.openURL) private var openURL
+
     @State private var presentedWebViewUrl: URL?
+    @State private var mustReloginAccount: UIMustReLoginAccount?
 
     let account: UIAccount
-
-    var alertAccount: StatusHeaderView.StatusHeaderType? {
-        // TODO: Return appropriate status based on account.state, or nil if no alert needed
-        return nil
-    }
 
     var body: some View {
         VStack(alignment: .leading, spacing: IKPadding.large) {
@@ -66,18 +66,49 @@ struct AccountDetailHeaderView: View {
             }
             .autoLoginWebView(protectedURL: $presentedWebViewUrl, userId: Int(account.id))
 
-            if let alertAccount {
-                StatusHeaderView(type: alertAccount, description: "")
+            if account.status == .loggedOut {
+                StatusHeaderView(
+                    type: .warning,
+                    description: AuthenticatorResourcesStrings.errorLoginFailed,
+                    primaryButton: (
+                        title: AuthenticatorResourcesStrings.contactSupportTitle,
+                        action: { openURL(URLConstants.support.url) }
+                    ),
+                    secondaryButton: (title: AuthenticatorResourcesStrings.logInButton, action: loginAccountTapped)
+                )
             }
         }
         .listRowInsets(EdgeInsets(top: IKPadding.medium, leading: 0, bottom: IKPadding.huge, trailing: 0))
+        .reLoginSheet(account: $mustReloginAccount)
     }
 
     private var roundedRectangle: some Shape {
         RoundedRectangle(cornerRadius: 24.0)
     }
+
+    private func loginAccountTapped() {
+        Task {
+            @InjectService var authenticatorFacade: AuthenticatorFacade
+            guard let account = await authenticatorFacade.account(id: account.id) else { return }
+            guard let accountStatus = account.status as? AccountStatusNotConnectedReLogin else { return }
+
+            mustReloginAccount = UIMustReLoginAccount(
+                account: UIAccount(account: account),
+                status: accountStatus,
+                skip: nil
+            )
+        }
+    }
 }
 
 #Preview {
     AccountDetailHeaderView(account: PreviewHelper.sampleUIAccount)
+}
+
+#Preview {
+    AccountDetailHeaderView(account: PreviewHelper.sampleUIAccount2)
+}
+
+#Preview {
+    AccountDetailHeaderView(account: PreviewHelper.sampleUIAccount3)
 }

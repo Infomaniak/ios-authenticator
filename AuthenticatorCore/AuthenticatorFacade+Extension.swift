@@ -16,10 +16,14 @@
  along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-import SwiftUI
+import CoreAuthenticator
+import Foundation
 
-public extension View {
-    func appBackground() -> some View {
-        background(Color.Token.Surface.primary.ignoresSafeArea(edges: .all))
+public extension AuthenticatorFacade {
+    func account(id: Int64) async -> Account? {
+        for await accounts in accounts {
+            return accounts.first { $0.id == id }
+        }
+        return nil
     }
 }

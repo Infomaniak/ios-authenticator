@@ -16,10 +16,21 @@
  along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-import SwiftUI
+import CoreAuthenticator
+import Foundation
 
-public extension View {
-    func appBackground() -> some View {
-        background(Color.Token.Surface.primary.ignoresSafeArea(edges: .all))
+public struct UIMustReLoginAccount: Identifiable {
+    public let account: UIAccount
+    public var status: AccountStatusNotConnectedReLogin
+    public let skip: (() -> Void)?
+
+    public init(account: UIAccount, status: AccountStatusNotConnectedReLogin, skip: (() -> Void)?) {
+        self.account = account
+        self.status = status
+        self.skip = skip
+    }
+
+    public var id: Int64 {
+        account.id
     }
 }

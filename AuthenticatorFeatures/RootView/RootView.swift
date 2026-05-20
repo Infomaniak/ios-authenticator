@@ -20,7 +20,21 @@ import AuthenticatorCoreUI
 import AuthenticatorMainView
 import AuthenticatorOnboardingView
 import AuthenticatorPreloadingView
+import InfomaniakCoreSwiftUI
 import SwiftUI
+
+public extension IKButtonTheme {
+    static let mainTheme = IKButtonTheme(
+        primary: TintShapeStyle.tint,
+        secondary: Color.white,
+        tertiary: Color.gray.opacity(0.4),
+        disabledPrimary: Color.gray,
+        disabledSecondary: Color.white,
+        error: Color.red,
+        smallFont: .callout,
+        mediumFont: .body
+    )
+}
 
 public struct RootView: View {
     @EnvironmentObject private var rootViewState: RootViewState
@@ -41,6 +55,7 @@ public struct RootView: View {
                 Text("Updated required") // TODO: Implement update required screen
             }
         }
+        .ikButtonTheme(.mainTheme)
     }
 }
 

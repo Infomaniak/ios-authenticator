@@ -16,9 +16,10 @@
  along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-import CoreAuthenticator
+@preconcurrency import CoreAuthenticator
 import Foundation
 import InfomaniakDI
+import OSLog
 import SwiftUI
 
 @MainActor
@@ -68,7 +69,10 @@ public enum RootViewType: @MainActor Equatable {
 public final class RootViewState: ObservableObject {
     @InjectService private var authenticatorFacade: AuthenticatorFacade
 
+    private static let logger = Logger(category: "RootViewState")
+
     @Published public var state: RootViewType = .preloading
+    @Published public var mustReLoginAccount: UIMustReLoginAccount?
     private var lastKnownAppStatus: AppStatus?
 
     public init() {
@@ -84,11 +88,11 @@ public final class RootViewState: ObservableObject {
     }
 
     public func configureBiometry() {
-        state = .newAccount(.biometry)
+        newOnboardingStepFromCurrentState(.biometry)
     }
 
     public func configureNotifications() {
-        state = .newAccount(.notifications)
+        newOnboardingStepFromCurrentState(.notifications)
     }
 
     public func completeOnboarding() {
@@ -118,21 +122,53 @@ public final class RootViewState: ObservableObject {
     func observeAppStatus() {
         Task {
             for try await status in authenticatorFacade.appStatus {
+                Self.logger.info("Received new app status: \(String(describing: status))")
                 lastKnownAppStatus = status
+
+                mustReLoginAccount = nil
+
                 if status is AppStatusLoginRequiredMigratingFromLegacyKAuth {
                     state = .migration(.migration)
                 } else if status is AppStatusLoginRequiredNotMigrating {
                     state = .newAccount(.login)
                 } else if status is AppStatusLoggingIn {
-                    state = .newAccount(.loginInProgress)
+                    newOnboardingStepFromCurrentState(.loginInProgress)
                 } else if status is AppStatusEverythingReady {
-                    state = .newAccount(.success)
+                    newOnboardingStepFromCurrentState(.success)
                 } else if status is AppStatusSetupComplete {
                     state = .mainView(MainViewState())
                 } else if status is AppStatusAddingAnAccount {
                     state = .newAccount(.addAccount)
+                } else if let status = status as? AppStatusLoginRequiredMustReLogin {
+                    guard let account = await authenticatorFacade.account(id: status.accountId) else { return }
+                    guard let accountStatus = account.status as? AccountStatusNotConnectedReLogin else { return }
+
+                    if mustReLoginAccount == nil {
+                        mustReLoginAccount = UIMustReLoginAccount(
+                            account: UIAccount(account: account),
+                            status: accountStatus,
+                            skip: status.skip
+                        )
+                    }
                 }
             }
+        }
+    }
+
+    func newOnboardingStepFromCurrentState(_ step: OnboardingStep) {
+        switch state {
+        case .migration:
+            state = .migration(step)
+        case .newAccount:
+            state = .newAccount(step)
+        case .addAccount:
+            state = .addAccount(step)
+        default:
+            let currentStateMessage = "Current state: \(String(describing: state))"
+            Self.logger
+                .warning(
+                    "Trying to set \(String(describing: step)) step while not in an onboarding flow. \(currentStateMessage)"
+                )
         }
     }
 }

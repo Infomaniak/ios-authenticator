@@ -23,7 +23,7 @@ public extension Logger {
     static let view = Logger(category: "View")
     static let general = Logger(category: "General")
 
-    internal init(category: String) {
+    init(category: String) {
         self.init(subsystem: Bundle.main.bundleIdentifier ?? "Authenticator", category: category)
     }
 }

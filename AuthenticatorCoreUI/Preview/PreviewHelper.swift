@@ -27,30 +27,26 @@ public enum PreviewHelper {
         status: .protected
     )
 
+    public static let sampleUIAccount2 = UIAccount(
+        id: 2,
+        name: "John Appleseed",
+        email: "john.apple@etik.com",
+        profilePictureURL: nil,
+        status: .partiallyProtected
+    )
+
+    public static let sampleUIAccount3 = UIAccount(
+        id: 3,
+        name: "Paul Anderson",
+        email: "paul.anderson@infomaniak.com",
+        profilePictureURL: nil,
+        status: .loggedOut
+    )
+
     public static let sampleUIAccounts = [
-        UIAccount(
-            id: 1,
-            name: "Laura Snow",
-            email: "laura.snow@ik.me",
-            profilePictureURL: URL(
-                string: "https://thispersondoesnotexist.com/"
-            ),
-            status: .protected
-        ),
-        UIAccount(
-            id: 2,
-            name: "John Appleseed",
-            email: "john.apple@etik.com",
-            profilePictureURL: nil,
-            status: .partiallyProtected
-        ),
-        UIAccount(
-            id: 3,
-            name: "Paul Anderson",
-            email: "paul.anderson@infomaniak.com",
-            profilePictureURL: nil,
-            status: .protected
-        )
+        Self.sampleUIAccount,
+        Self.sampleUIAccount2,
+        Self.sampleUIAccount3
     ]
 
     @MainActor

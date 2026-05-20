@@ -53,7 +53,7 @@ public struct OnboardingView: View {
         case .addAccount:
             steps = OnboardingStep.addAccountSteps
         case .migration:
-            return OnboardingStep.migrationSteps
+            steps = OnboardingStep.migrationSteps
         default:
             return []
         }
@@ -155,6 +155,7 @@ public struct OnboardingView: View {
         .id(excludedUserIds)
         .appBackground()
         .ignoresSafeArea()
+        .reLoginSheet(account: $rootViewState.mustReLoginAccount)
         .sheet(isPresented: $isPresentingCreateAccount) {
             RegisterView(registrationProcess: .mail) { viewController in // TODO: Change with his own registration process
                 guard let viewController else { return }

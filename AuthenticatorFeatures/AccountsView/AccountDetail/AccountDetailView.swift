@@ -143,3 +143,11 @@ struct AccountDetailView: View {
 #Preview {
     AccountDetailView(account: PreviewHelper.sampleUIAccount)
 }
+
+#Preview {
+    AccountDetailView(account: PreviewHelper.sampleUIAccount2)
+}
+
+#Preview {
+    AccountDetailView(account: PreviewHelper.sampleUIAccount3)
+}

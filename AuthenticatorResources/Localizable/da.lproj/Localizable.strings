@@ -3,12 +3,18 @@
  * Project: Authenticator
  * Locale: da, Danish
  * Tagged: ios
- * Exported by: Baptiste Griva
- * Exported at: Mon, 27 Apr 2026 14:07:51 +0200
+ * Exported by: Philippe Weidmann
+ * Exported at: Wed, 20 May 2026 08:50:17 +0200
  */
 
 /* loco:69d6617d0ee9dd38d50c99e2 */
 "accessibilityHintCurrentTheme" = "Aktuelt tema";
+
+/* loco:6a04772e96bf3d346f08a092 */
+"accountDisconnectedDescription" = "Du vil ikke længere modtage forbindelsesanmodninger om at godkende på denne enhed for %@";
+
+/* loco:6a0476dbe991185cf509ecc2 */
+"accountDisconnectedTitle" = "Konto afbrudt fra Authenticator";
 
 /* loco:695e825042bb2b44f30a2bc3 */
 "accountLoggedOut" = "Konto logget ud";
@@ -79,6 +85,30 @@
 /* loco:69849b6fd84e3f199e0455f2 */
 "addAccountContentDescription" = "Tilføj en konto";
 
+/* loco:69fc74d382878f1f6805c482 */
+"alertDialogChangePasswordButton" = "Skift adgangskode";
+
+/* loco:69fc75237b5d3b4a26022522 */
+"alertDialogContactSupportButton" = "Kontakt support";
+
+/* loco:69fc4efae5c700f10a09f922 */
+"alertDialogNeutralButton" = "Jeg forstår";
+
+/* loco:69fc4d102f744a452c01ba42 */
+"alertDialogPasswordChangedText" = "Login-adgangskoden til Infomaniak-kontoen %@ er blevet opdateret.";
+
+/* loco:69fc4d4830a4e3dd060d1122 */
+"alertDialogPasswordChangedTitle" = "Ændret adgangskode til login";
+
+/* loco:69fc4f9373a4dee438009df2 */
+"alertDialogReportButton" = "Det var ikke mig";
+
+/* loco:69fc744faf769967380443a2 */
+"alertDialogVerifyAccountText" = "Hvis det ikke var dig, råder vi dig til at nulstille din adgangskode og gennemgå dine sikkerhedsindstillinger.";
+
+/* loco:69fc583ff49996ca46087832 */
+"alertDialogVerifyAccountTitle" = "Tjek kontoens sikkerhed";
+
 /* loco:69e09cb1f996ab9e220f8e82 */
 "allowDeviceNotificationsDescription" = "Tillad notifikationer i enhedens indstillinger for at modtage vores sikkerhedsadvarsler.";
 
@@ -124,6 +154,9 @@
 /* loco:695e9b2a9d8b472044005a44 */
 "confirmLoginNotificationTitle" = "Bekræft login";
 
+/* loco:69f9fcc742a35b678d0d3772 */
+"connectionFailedTitle" = "Forbindelse mislykkedes";
+
 /* loco:695e8b0257b12526a4058922 */
 "contactSupportDescription" = "Kontakt vores teams via telefon eller e-mail for at få hjælp til at løse dit problem.";
 
@@ -160,11 +193,23 @@
 /* loco:695e9bdbee3a7d21340527d2 */
 "deviceLoginTitle" = "Enhed";
 
+/* loco:6a043f82ce9fe6d6630ddeb2 */
+"disconnectAccountAdd2faButton" = "Tilføj endnu et trin";
+
+/* loco:6a0429c9add3c36b02057942 */
+"disconnectAccountCriticalButton" = "Afbryd forbindelsen til kontoen";
+
 /* loco:695ea16b39ee5b4bb80bd342 */
 "disconnectAccountDescription" = "Din konto vil ikke længere være beskyttet af totrinsbekræftelse og vil blive sårbar over for uautoriseret adgang.";
 
 /* loco:695ea05c8d0943c57704f5d3 */
 "disconnectAccountOnThisDeviceDescription" = "Du vil ikke længere kunne godkende login på denne enhed med Authenticator.";
+
+/* loco:6a043dceffa0c696ed008bc2 */
+"disconnectAccountPartiallySecuredWarningDescription" = "Denne enhed er den eneste, der er autoriseret til at logge ind.\n\nTilføj en anden enhed eller login-metode, før du fortsætter.";
+
+/* loco:6a043d5c7c15401d910014c2 */
+"disconnectAccountPartiallySecuredWarningTitle" = "Hvis du afbryder forbindelsen til kontoen, fjernes dens beskyttelse";
 
 /* loco:695ea0448d0943c57704f5d2 */
 "disconnectAccountTitle" = "Afbryd denne konto";
@@ -177,6 +222,9 @@
 
 /* loco:695e81d0dcf344a547026d33 */
 "disconnectButton" = "Log ud";
+
+/* loco:6a043f0d5bae40964408bc62 */
+"disconnectPartiallySecuredDescription" = "Din konto vil ikke længere være beskyttet af totrinsbekræftelse og vil være sårbar over for uautoriseret adgang.";
 
 /* loco:695ea0798d0943c57704f5d4 */
 "disconnectSuccess" = "Konto afbrudt";
@@ -194,10 +242,16 @@
 "enableNotifications" = "Aktivér notifikationer";
 
 /* loco:695e8322b85b83d8780f97f2 */
-"errorLoginFailed" = "Kontologin mislykkedes. Prøv igen, eller kontakt support. (fejlkode: %d)";
+"errorLoginFailed" = "Kontologin mislykkedes. Prøv igen, eller kontakt support.";
+
+/* loco:69e8bd2f0c295d97f70480a2 */
+"errorMigrationFailed" = "Migreringen er blevet afbrudt.\nKontakt venligst vores tekniske supportteam.";
 
 /* loco:695e9d72bc601c317401c9d4 */
 "errorOccuredTitle" = "Der opstod en fejl";
+
+/* loco:69f201978a23057d8f09c362 */
+"errorWithRetryMessage" = "Der er opstået en fejl. Prøv venligst igen senere.";
 
 /* loco:695e95bc3614499244057df2 */
 "estimatedWait" = "Anslået ventetid: %@";
@@ -223,9 +277,6 @@
 /* loco:695e9b60eb4a5e9ff3045a82 */
 "loginAttemptQuery" = "Forsøger du at logge ind?";
 
-/* loco:695e9b86eb4a5e9ff3045a84 */
-"loginAuthorizationWarning" = "Bekræftelse af dette login vil give denne enhed adgang til din Infomaniak konto.";
-
 /* loco:695e9c9194a0d83c6a006812 */
 "loginDeniedSuccessDescription" = "Du har afvist et loginforsøg. For at sikre din konto skal du ændre din adgangskode.\n\nHvis du har startet denne anmodning, skal du prøve at logge ind igen.";
 
@@ -240,6 +291,9 @@
 
 /* loco:695e9ce7fb4842ffed0c4603 */
 "loginRequestExpiredTitle" = "Denne loginanmodning er udløbet";
+
+/* loco:6a02ca13d3a7abc94b0e30e2 */
+"migrationWarningDescription" = "Overgangen til den nye app kunne ikke gennemføres for en eller flere af dine konti.";
 
 /* loco:695e9dbf2e191d3ca00bfb15 */
 "noInternetTitle" = "Ingen internetforbindelse";
@@ -295,6 +349,9 @@
 /* loco:695e91208384843ef3052bb2 */
 "openSupportStatus" = "Åben";
 
+/* loco:69f9fd896bbdef154e008142 */
+"passTitle" = "Passér";
+
 /* loco:695e9ea5ffea9abfd80a1ae2 */
 "passwordAskingWarning" = "Infomaniak vil aldrig spørge om din adgangskode uventet.\n\nSørg for, at du har startet denne handling, før du fortsætter.";
 
@@ -316,6 +373,9 @@
 /* loco:695e8135925530d3a102c763 */
 "refreshPendingLoginsButton" = "Opdater afventende login";
 
+/* loco:6a04662896beb8b6fb041222 */
+"removeAccountButton" = "Fjern konto";
+
 /* loco:695e999acdb8bbf8ca077d52 */
 "removeAccountDescription" = "Du vil ikke længere kunne bekræfte dit login til denne konto med Authenticator.";
 
@@ -325,8 +385,23 @@
 /* loco:695e878a4ff7a8c5a8050c53 */
 "removeAccountTitle" = "Fjern konto";
 
+/* loco:6a0442b4538250329902ba62 */
+"removeAccountWarningDescription" = "Hvis Authenticator er din eneste totrinsbekræftelse, kan du blive låst ude, næste gang du prøver at logge ind.";
+
+/* loco:6a04423b7fe135cdb00fb145 */
+"removeAccountWarningTitle" = "Fjern konto";
+
 /* loco:695e99b261ee1c8c900db0e2 */
 "removeButton" = "Fjern";
+
+/* loco:69e71e371e556c460d0be734 */
+"requiredLabel" = "Påkrævet";
+
+/* loco:69f9fd5b9c704770ab0a1ea2 */
+"retryTitle" = "Prøv igen";
+
+/* loco:6a02e26f77c3fcf288059744 */
+"securedIconContentDescription" = "Ikon for sikret konto";
 
 /* loco:695e7d2aaf61b386540bf272 */
 "settingsTitle" = "Indstillinger";
@@ -391,5 +466,11 @@
 /* loco:695e8b943eee444fde041612 */
 "viewGuidesButton" = "Gennemse vejledningerne";
 
+/* loco:6a02df7ec5db231940022aa2 */
+"warningIconContentDescription" = "Advarselsikon for konto";
+
 /* loco:695e9ba3ae7a65d0a10aba73 */
 "whenLoginTitle" = "Hvornår";
+
+/* loco:69e720890dceaa5a5204d762 */
+"wrongPasswordLabel" = "Adgangskoden er forkert";
