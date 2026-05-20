@@ -17,26 +17,61 @@
  */
 
 import AuthenticatorCoreUI
+import DesignSystem
 import InfomaniakCore
 import InfomaniakDI
 import SwiftUI
 
+extension VerticalAlignment {
+    enum SplashScreenIconAlignment: AlignmentID {
+        static func defaultValue(in context: ViewDimensions) -> CGFloat {
+            return context[VerticalAlignment.center]
+        }
+    }
+
+    static let splashScreenIconAlignment = VerticalAlignment(SplashScreenIconAlignment.self)
+}
+
 public struct PreloadingView: View {
+    private let backgroundImage = Image("splashscreen-background", bundle: .main)
+    private let logoImage = Image("splashscreen-authenticator", bundle: .main)
+    private let infomaniakLogoImage = Image("splashscreen-infomaniak", bundle: .main)
+
     public init() {}
 
     public var body: some View {
-        ProgressView()
-            .progressViewStyle(.circular)
-            .task {
-                @InjectService var appLaunchCounter: AppLaunchCounter
-                @InjectService var tokenStore: TokenStore
+        ZStack(alignment: Alignment(horizontal: .center, vertical: .splashScreenIconAlignment)) {
+            backgroundImage
+                .resizable()
+                .frame(maxWidth: .infinity, maxHeight: .infinity)
+                .ignoresSafeArea()
 
-                guard !appLaunchCounter.isFirstLaunch else {
-                    tokenStore.removeAllTokens()
-                    appLaunchCounter.increase()
-                    return
-                }
+            VStack(spacing: IKPadding.large) {
+                logoImage
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: 96)
+                    .alignmentGuide(.splashScreenIconAlignment) { d in d[VerticalAlignment.center] }
+
+                ProgressView()
+                    .progressViewStyle(.circular)
+                    .tint(.white)
             }
+        }
+        .safeAreaInset(edge: .bottom, spacing: 0) {
+            infomaniakLogoImage
+                .padding(.bottom, value: .medium)
+        }
+        .task {
+            @InjectService var appLaunchCounter: AppLaunchCounter
+            @InjectService var tokenStore: TokenStore
+
+            guard !appLaunchCounter.isFirstLaunch else {
+                tokenStore.removeAllTokens()
+                appLaunchCounter.increase()
+                return
+            }
+        }
     }
 }
 
