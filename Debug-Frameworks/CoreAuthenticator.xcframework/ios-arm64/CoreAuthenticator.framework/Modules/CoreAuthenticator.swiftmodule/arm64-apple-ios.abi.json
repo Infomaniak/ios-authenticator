@@ -1318,6 +1318,57 @@
                               },
                               {
                                 "kind": "Var",
+                                "name": "disconnected",
+                                "printedName": "disconnected",
+                                "children": [
+                                  {
+                                    "kind": "TypeFunc",
+                                    "name": "Function",
+                                    "printedName": "(CoreAuthenticator.Skie.MultiplatformLib.Account.Status.NotConnected.__Sealed.Type) -> (CoreAuthenticator.AccountStatusNotConnectedDisconnected) -> CoreAuthenticator.Skie.MultiplatformLib.Account.Status.NotConnected.__Sealed",
+                                    "children": [
+                                      {
+                                        "kind": "TypeFunc",
+                                        "name": "Function",
+                                        "printedName": "(CoreAuthenticator.AccountStatusNotConnectedDisconnected) -> CoreAuthenticator.Skie.MultiplatformLib.Account.Status.NotConnected.__Sealed",
+                                        "children": [
+                                          {
+                                            "kind": "TypeNominal",
+                                            "name": "__Sealed",
+                                            "printedName": "CoreAuthenticator.Skie.MultiplatformLib.Account.Status.NotConnected.__Sealed",
+                                            "usr": "s:17CoreAuthenticator4SkieO16MultiplatformLibO7AccountO6StatusO12NotConnectedO8__SealedO"
+                                          },
+                                          {
+                                            "kind": "TypeNominal",
+                                            "name": "AccountStatusNotConnectedDisconnected",
+                                            "printedName": "CoreAuthenticator.AccountStatusNotConnectedDisconnected",
+                                            "usr": "c:objc(cs)CoreAuthenticatorAccountStatusNotConnectedDisconnected"
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "kind": "TypeNominal",
+                                        "name": "Metatype",
+                                        "printedName": "CoreAuthenticator.Skie.MultiplatformLib.Account.Status.NotConnected.__Sealed.Type",
+                                        "children": [
+                                          {
+                                            "kind": "TypeNominal",
+                                            "name": "__Sealed",
+                                            "printedName": "CoreAuthenticator.Skie.MultiplatformLib.Account.Status.NotConnected.__Sealed",
+                                            "usr": "s:17CoreAuthenticator4SkieO16MultiplatformLibO7AccountO6StatusO12NotConnectedO8__SealedO"
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ],
+                                "declKind": "EnumElement",
+                                "usr": "s:17CoreAuthenticator4SkieO16MultiplatformLibO7AccountO6StatusO12NotConnectedO8__SealedO12disconnectedyAMSo0abfghI12DisconnectedCcAMmF",
+                                "mangledName": "$s17CoreAuthenticator4SkieO16MultiplatformLibO7AccountO6StatusO12NotConnectedO8__SealedO12disconnectedyAMSo0abfghI12DisconnectedCcAMmF",
+                                "moduleName": "CoreAuthenticator",
+                                "fixedbinaryorder": 1
+                              },
+                              {
+                                "kind": "Var",
                                 "name": "loginFailed",
                                 "printedName": "loginFailed",
                                 "children": [
@@ -1365,7 +1416,7 @@
                                 "usr": "s:17CoreAuthenticator4SkieO16MultiplatformLibO7AccountO6StatusO12NotConnectedO8__SealedO11loginFailedyAMSo0abfghi5LoginL0CcAMmF",
                                 "mangledName": "$s17CoreAuthenticator4SkieO16MultiplatformLibO7AccountO6StatusO12NotConnectedO8__SealedO11loginFailedyAMSo0abfghi5LoginL0CcAMmF",
                                 "moduleName": "CoreAuthenticator",
-                                "fixedbinaryorder": 1
+                                "fixedbinaryorder": 2
                               },
                               {
                                 "kind": "Var",
@@ -1416,7 +1467,7 @@
                                 "usr": "s:17CoreAuthenticator4SkieO16MultiplatformLibO7AccountO6StatusO12NotConnectedO8__SealedO7reLoginyAMSo0abfghi2ReL0CcAMmF",
                                 "mangledName": "$s17CoreAuthenticator4SkieO16MultiplatformLibO7AccountO6StatusO12NotConnectedO8__SealedO7reLoginyAMSo0abfghi2ReL0CcAMmF",
                                 "moduleName": "CoreAuthenticator",
-                                "fixedbinaryorder": 2
+                                "fixedbinaryorder": 3
                               },
                               {
                                 "kind": "Var",
@@ -31218,21 +31269,21 @@
               {
                 "kind": "TypeNominal",
                 "name": "Array",
-                "printedName": "[CoreAuthenticator.Account]",
+                "printedName": "[CoreAuthenticator.SharedUserProfile]",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "Account",
-                    "printedName": "CoreAuthenticator.Account",
-                    "usr": "c:objc(cs)CoreAuthenticatorAccount"
+                    "name": "SharedUserProfile",
+                    "printedName": "CoreAuthenticator.SharedUserProfile",
+                    "usr": "c:objc(cs)CoreAuthenticatorSharedUserProfile"
                   }
                 ],
                 "usr": "s:Sa"
               }
             ],
             "declKind": "Func",
-            "usr": "s:So017CoreAuthenticatorB6FacadeC0aB0E11addAccounts09connectedE0ySaySo0aB7AccountCG_tYaKF",
-            "mangledName": "$sSo017CoreAuthenticatorB6FacadeC0aB0E11addAccounts09connectedE0ySaySo0aB7AccountCG_tYaKF",
+            "usr": "s:So017CoreAuthenticatorB6FacadeC0aB0E11addAccounts09connectedE0ySaySo0aB17SharedUserProfileCG_tYaKF",
+            "mangledName": "$sSo017CoreAuthenticatorB6FacadeC0aB0E11addAccounts09connectedE0ySaySo0aB17SharedUserProfileCG_tYaKF",
             "moduleName": "CoreAuthenticator",
             "intro_Macosx": "10.15",
             "intro_iOS": "13",
@@ -31297,9 +31348,17 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
               },
               {
                 "kind": "TypeNominal",
@@ -31309,8 +31368,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:So017CoreAuthenticatorB6FacadeC0aB0E13removeAccount5token2idySS_s5Int64VtYaKF",
-            "mangledName": "$sSo017CoreAuthenticatorB6FacadeC0aB0E13removeAccount5token2idySS_s5Int64VtYaKF",
+            "usr": "s:So017CoreAuthenticatorB6FacadeC0aB0E13removeAccount5token2idySSSg_s5Int64VtYaKF",
+            "mangledName": "$sSo017CoreAuthenticatorB6FacadeC0aB0E13removeAccount5token2idySSSg_s5Int64VtYaKF",
             "moduleName": "CoreAuthenticator",
             "intro_Macosx": "10.15",
             "intro_iOS": "13",
@@ -31470,13 +31529,13 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "Swift.String?",
+                "printedName": "CoreAuthenticator.SharedApiToken?",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
+                    "name": "SharedApiToken",
+                    "printedName": "CoreAuthenticator.SharedApiToken",
+                    "usr": "c:objc(cs)CoreAuthenticatorSharedApiToken"
                   }
                 ],
                 "usr": "s:Sq"
@@ -31489,8 +31548,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:So017CoreAuthenticatorB6BridgeP0aB0E20getTokenFromDatabase6userIdSSSgs5Int64V_tYaKF",
-            "mangledName": "$sSo017CoreAuthenticatorB6BridgeP0aB0E20getTokenFromDatabase6userIdSSSgs5Int64V_tYaKF",
+            "usr": "s:So017CoreAuthenticatorB6BridgeP0aB0E20getTokenFromDatabase6userIdSo0ab9SharedApiE0CSgs5Int64V_tYaKF",
+            "mangledName": "$sSo017CoreAuthenticatorB6BridgeP0aB0E20getTokenFromDatabase6userIdSo0ab9SharedApiE0CSgs5Int64V_tYaKF",
             "moduleName": "CoreAuthenticator",
             "genericSig": "<τ_0_0 where τ_0_0 : CoreAuthenticator.AuthenticatorBridge>",
             "sugared_genericSig": "<Self where Self : CoreAuthenticator.AuthenticatorBridge>",
@@ -31527,14 +31586,14 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
+                "name": "SharedApiToken",
+                "printedName": "CoreAuthenticator.SharedApiToken",
+                "usr": "c:objc(cs)CoreAuthenticatorSharedApiToken"
               }
             ],
             "declKind": "Func",
-            "usr": "s:So017CoreAuthenticatorB6BridgeP0aB0E22persistTokenForAccount6userId5tokenys5Int64V_SStYaKF",
-            "mangledName": "$sSo017CoreAuthenticatorB6BridgeP0aB0E22persistTokenForAccount6userId5tokenys5Int64V_SStYaKF",
+            "usr": "s:So017CoreAuthenticatorB6BridgeP0aB0E22persistTokenForAccount6userId5tokenys5Int64V_So0ab9SharedApiE0CtYaKF",
+            "mangledName": "$sSo017CoreAuthenticatorB6BridgeP0aB0E22persistTokenForAccount6userId5tokenys5Int64V_So0ab9SharedApiE0CtYaKF",
             "moduleName": "CoreAuthenticator",
             "genericSig": "<τ_0_0 where τ_0_0 : CoreAuthenticator.AuthenticatorBridge>",
             "sugared_genericSig": "<Self where Self : CoreAuthenticator.AuthenticatorBridge>",

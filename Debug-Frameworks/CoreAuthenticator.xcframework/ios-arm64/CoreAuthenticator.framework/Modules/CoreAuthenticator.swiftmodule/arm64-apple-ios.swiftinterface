@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.3 effective-5.10 (swiftlang-6.3.0.123.5 clang-2100.0.123.102)
+// swift-compiler-version: Apple Swift version 6.3.2 effective-5.10 (swiftlang-6.3.2.1.108 clang-2100.1.1.101)
 // swift-module-flags: -target arm64-apple-ios14.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -O -module-name CoreAuthenticator
-// swift-module-flags-ignorable:  -formal-cxx-interoperability-mode=off -interface-compiler-version 6.3
+// swift-module-flags-ignorable:  -formal-cxx-interoperability-mode=off -interface-compiler-version 6.3.2
 @_exported import CoreAuthenticator
 import Foundation
 import Swift
@@ -363,19 +363,19 @@ extension CoreAuthenticator.Kotlinx_coroutines_coreFlowCollector {
 }
 extension CoreAuthenticator.AuthenticatorFacade {
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
-  public func addAccounts(connectedAccounts: [CoreAuthenticator.Account]) async throws
+  public func addAccounts(connectedAccounts: [CoreAuthenticator.SharedUserProfile]) async throws
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
   public func refreshTokenFor(userId: Swift.Int64) async throws
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
-  public func removeAccount(token: Swift.String, id: Swift.Int64) async throws
+  public func removeAccount(token: Swift.String?, id: Swift.Int64) async throws
 }
 extension CoreAuthenticator.AuthenticatorBridge {
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
   public func getTokenFromCrossAppLogin(userId: Swift.Int64) async throws -> CoreAuthenticator.SharedApiToken?
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
-  public func getTokenFromDatabase(userId: Swift.Int64) async throws -> Swift.String?
+  public func getTokenFromDatabase(userId: Swift.Int64) async throws -> CoreAuthenticator.SharedApiToken?
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
-  public func persistTokenForAccount(userId: Swift.Int64, token: Swift.String) async throws
+  public func persistTokenForAccount(userId: Swift.Int64, token: CoreAuthenticator.SharedApiToken) async throws
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
   public func persistUserProfile(userProfile: CoreAuthenticator.SharedUserProfile) async throws
 }
@@ -1038,6 +1038,7 @@ public func onEnum<__Sealed>(of sealed: __Sealed) -> CoreAuthenticator.Skie.Mult
 extension CoreAuthenticator.Skie.MultiplatformLib.Account.Status.NotConnected {
   @frozen public enum __Sealed : Swift.Hashable {
     case attemptingToConnect(CoreAuthenticator.AccountStatusNotConnectedAttemptingToConnect)
+    case disconnected(CoreAuthenticator.AccountStatusNotConnectedDisconnected)
     case loginFailed(CoreAuthenticator.AccountStatusNotConnectedLoginFailed)
     case reLogin(CoreAuthenticator.AccountStatusNotConnectedReLogin)
     public static func == (a: CoreAuthenticator.Skie.MultiplatformLib.Account.Status.NotConnected.__Sealed, b: CoreAuthenticator.Skie.MultiplatformLib.Account.Status.NotConnected.__Sealed) -> Swift.Bool

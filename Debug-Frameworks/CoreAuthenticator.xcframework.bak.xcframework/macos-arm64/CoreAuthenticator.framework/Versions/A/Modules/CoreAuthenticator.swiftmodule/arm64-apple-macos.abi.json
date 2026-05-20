@@ -1257,6 +1257,332 @@
                     "children": [
                       {
                         "kind": "TypeDecl",
+                        "name": "NotConnected",
+                        "printedName": "NotConnected",
+                        "children": [
+                          {
+                            "kind": "TypeDecl",
+                            "name": "__Sealed",
+                            "printedName": "__Sealed",
+                            "children": [
+                              {
+                                "kind": "Var",
+                                "name": "attemptingToConnect",
+                                "printedName": "attemptingToConnect",
+                                "children": [
+                                  {
+                                    "kind": "TypeFunc",
+                                    "name": "Function",
+                                    "printedName": "(CoreAuthenticator.Skie.MultiplatformLib.Account.Status.NotConnected.__Sealed.Type) -> (CoreAuthenticator.AccountStatusNotConnectedAttemptingToConnect) -> CoreAuthenticator.Skie.MultiplatformLib.Account.Status.NotConnected.__Sealed",
+                                    "children": [
+                                      {
+                                        "kind": "TypeFunc",
+                                        "name": "Function",
+                                        "printedName": "(CoreAuthenticator.AccountStatusNotConnectedAttemptingToConnect) -> CoreAuthenticator.Skie.MultiplatformLib.Account.Status.NotConnected.__Sealed",
+                                        "children": [
+                                          {
+                                            "kind": "TypeNominal",
+                                            "name": "__Sealed",
+                                            "printedName": "CoreAuthenticator.Skie.MultiplatformLib.Account.Status.NotConnected.__Sealed",
+                                            "usr": "s:17CoreAuthenticator4SkieO16MultiplatformLibO7AccountO6StatusO12NotConnectedO8__SealedO"
+                                          },
+                                          {
+                                            "kind": "TypeNominal",
+                                            "name": "AccountStatusNotConnectedAttemptingToConnect",
+                                            "printedName": "CoreAuthenticator.AccountStatusNotConnectedAttemptingToConnect",
+                                            "usr": "c:objc(cs)CoreAuthenticatorAccountStatusNotConnectedAttemptingToConnect"
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "kind": "TypeNominal",
+                                        "name": "Metatype",
+                                        "printedName": "CoreAuthenticator.Skie.MultiplatformLib.Account.Status.NotConnected.__Sealed.Type",
+                                        "children": [
+                                          {
+                                            "kind": "TypeNominal",
+                                            "name": "__Sealed",
+                                            "printedName": "CoreAuthenticator.Skie.MultiplatformLib.Account.Status.NotConnected.__Sealed",
+                                            "usr": "s:17CoreAuthenticator4SkieO16MultiplatformLibO7AccountO6StatusO12NotConnectedO8__SealedO"
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ],
+                                "declKind": "EnumElement",
+                                "usr": "s:17CoreAuthenticator4SkieO16MultiplatformLibO7AccountO6StatusO12NotConnectedO8__SealedO19attemptingToConnectyAMSo0abfghi10AttemptinglM0CcAMmF",
+                                "mangledName": "$s17CoreAuthenticator4SkieO16MultiplatformLibO7AccountO6StatusO12NotConnectedO8__SealedO19attemptingToConnectyAMSo0abfghi10AttemptinglM0CcAMmF",
+                                "moduleName": "CoreAuthenticator",
+                                "fixedbinaryorder": 0
+                              },
+                              {
+                                "kind": "Var",
+                                "name": "loginFailed",
+                                "printedName": "loginFailed",
+                                "children": [
+                                  {
+                                    "kind": "TypeFunc",
+                                    "name": "Function",
+                                    "printedName": "(CoreAuthenticator.Skie.MultiplatformLib.Account.Status.NotConnected.__Sealed.Type) -> (CoreAuthenticator.AccountStatusNotConnectedLoginFailed) -> CoreAuthenticator.Skie.MultiplatformLib.Account.Status.NotConnected.__Sealed",
+                                    "children": [
+                                      {
+                                        "kind": "TypeFunc",
+                                        "name": "Function",
+                                        "printedName": "(CoreAuthenticator.AccountStatusNotConnectedLoginFailed) -> CoreAuthenticator.Skie.MultiplatformLib.Account.Status.NotConnected.__Sealed",
+                                        "children": [
+                                          {
+                                            "kind": "TypeNominal",
+                                            "name": "__Sealed",
+                                            "printedName": "CoreAuthenticator.Skie.MultiplatformLib.Account.Status.NotConnected.__Sealed",
+                                            "usr": "s:17CoreAuthenticator4SkieO16MultiplatformLibO7AccountO6StatusO12NotConnectedO8__SealedO"
+                                          },
+                                          {
+                                            "kind": "TypeNominal",
+                                            "name": "AccountStatusNotConnectedLoginFailed",
+                                            "printedName": "CoreAuthenticator.AccountStatusNotConnectedLoginFailed",
+                                            "usr": "c:objc(cs)CoreAuthenticatorAccountStatusNotConnectedLoginFailed"
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "kind": "TypeNominal",
+                                        "name": "Metatype",
+                                        "printedName": "CoreAuthenticator.Skie.MultiplatformLib.Account.Status.NotConnected.__Sealed.Type",
+                                        "children": [
+                                          {
+                                            "kind": "TypeNominal",
+                                            "name": "__Sealed",
+                                            "printedName": "CoreAuthenticator.Skie.MultiplatformLib.Account.Status.NotConnected.__Sealed",
+                                            "usr": "s:17CoreAuthenticator4SkieO16MultiplatformLibO7AccountO6StatusO12NotConnectedO8__SealedO"
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ],
+                                "declKind": "EnumElement",
+                                "usr": "s:17CoreAuthenticator4SkieO16MultiplatformLibO7AccountO6StatusO12NotConnectedO8__SealedO11loginFailedyAMSo0abfghi5LoginL0CcAMmF",
+                                "mangledName": "$s17CoreAuthenticator4SkieO16MultiplatformLibO7AccountO6StatusO12NotConnectedO8__SealedO11loginFailedyAMSo0abfghi5LoginL0CcAMmF",
+                                "moduleName": "CoreAuthenticator",
+                                "fixedbinaryorder": 1
+                              },
+                              {
+                                "kind": "Var",
+                                "name": "reLogin",
+                                "printedName": "reLogin",
+                                "children": [
+                                  {
+                                    "kind": "TypeFunc",
+                                    "name": "Function",
+                                    "printedName": "(CoreAuthenticator.Skie.MultiplatformLib.Account.Status.NotConnected.__Sealed.Type) -> (CoreAuthenticator.AccountStatusNotConnectedReLogin) -> CoreAuthenticator.Skie.MultiplatformLib.Account.Status.NotConnected.__Sealed",
+                                    "children": [
+                                      {
+                                        "kind": "TypeFunc",
+                                        "name": "Function",
+                                        "printedName": "(CoreAuthenticator.AccountStatusNotConnectedReLogin) -> CoreAuthenticator.Skie.MultiplatformLib.Account.Status.NotConnected.__Sealed",
+                                        "children": [
+                                          {
+                                            "kind": "TypeNominal",
+                                            "name": "__Sealed",
+                                            "printedName": "CoreAuthenticator.Skie.MultiplatformLib.Account.Status.NotConnected.__Sealed",
+                                            "usr": "s:17CoreAuthenticator4SkieO16MultiplatformLibO7AccountO6StatusO12NotConnectedO8__SealedO"
+                                          },
+                                          {
+                                            "kind": "TypeNominal",
+                                            "name": "AccountStatusNotConnectedReLogin",
+                                            "printedName": "CoreAuthenticator.AccountStatusNotConnectedReLogin",
+                                            "usr": "c:objc(cs)CoreAuthenticatorAccountStatusNotConnectedReLogin"
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "kind": "TypeNominal",
+                                        "name": "Metatype",
+                                        "printedName": "CoreAuthenticator.Skie.MultiplatformLib.Account.Status.NotConnected.__Sealed.Type",
+                                        "children": [
+                                          {
+                                            "kind": "TypeNominal",
+                                            "name": "__Sealed",
+                                            "printedName": "CoreAuthenticator.Skie.MultiplatformLib.Account.Status.NotConnected.__Sealed",
+                                            "usr": "s:17CoreAuthenticator4SkieO16MultiplatformLibO7AccountO6StatusO12NotConnectedO8__SealedO"
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ],
+                                "declKind": "EnumElement",
+                                "usr": "s:17CoreAuthenticator4SkieO16MultiplatformLibO7AccountO6StatusO12NotConnectedO8__SealedO7reLoginyAMSo0abfghi2ReL0CcAMmF",
+                                "mangledName": "$s17CoreAuthenticator4SkieO16MultiplatformLibO7AccountO6StatusO12NotConnectedO8__SealedO7reLoginyAMSo0abfghi2ReL0CcAMmF",
+                                "moduleName": "CoreAuthenticator",
+                                "fixedbinaryorder": 2
+                              },
+                              {
+                                "kind": "Var",
+                                "name": "hashValue",
+                                "printedName": "hashValue",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "Int",
+                                    "printedName": "Swift.Int",
+                                    "usr": "s:Si"
+                                  }
+                                ],
+                                "declKind": "Var",
+                                "usr": "s:17CoreAuthenticator4SkieO16MultiplatformLibO7AccountO6StatusO12NotConnectedO8__SealedO9hashValueSivp",
+                                "mangledName": "$s17CoreAuthenticator4SkieO16MultiplatformLibO7AccountO6StatusO12NotConnectedO8__SealedO9hashValueSivp",
+                                "moduleName": "CoreAuthenticator",
+                                "implicit": true,
+                                "accessors": [
+                                  {
+                                    "kind": "Accessor",
+                                    "name": "Get",
+                                    "printedName": "Get()",
+                                    "children": [
+                                      {
+                                        "kind": "TypeNominal",
+                                        "name": "Int",
+                                        "printedName": "Swift.Int",
+                                        "usr": "s:Si"
+                                      }
+                                    ],
+                                    "declKind": "Accessor",
+                                    "usr": "s:17CoreAuthenticator4SkieO16MultiplatformLibO7AccountO6StatusO12NotConnectedO8__SealedO9hashValueSivg",
+                                    "mangledName": "$s17CoreAuthenticator4SkieO16MultiplatformLibO7AccountO6StatusO12NotConnectedO8__SealedO9hashValueSivg",
+                                    "moduleName": "CoreAuthenticator",
+                                    "implicit": true,
+                                    "accessorKind": "get"
+                                  }
+                                ]
+                              },
+                              {
+                                "kind": "Function",
+                                "name": "hash",
+                                "printedName": "hash(into:)",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "Void",
+                                    "printedName": "()"
+                                  },
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "Hasher",
+                                    "printedName": "Swift.Hasher",
+                                    "paramValueOwnership": "InOut",
+                                    "usr": "s:s6HasherV"
+                                  }
+                                ],
+                                "declKind": "Func",
+                                "usr": "s:17CoreAuthenticator4SkieO16MultiplatformLibO7AccountO6StatusO12NotConnectedO8__SealedO4hash4intoys6HasherVz_tF",
+                                "mangledName": "$s17CoreAuthenticator4SkieO16MultiplatformLibO7AccountO6StatusO12NotConnectedO8__SealedO4hash4intoys6HasherVz_tF",
+                                "moduleName": "CoreAuthenticator",
+                                "implicit": true,
+                                "funcSelfKind": "NonMutating"
+                              },
+                              {
+                                "kind": "Function",
+                                "name": "==",
+                                "printedName": "==(_:_:)",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "Bool",
+                                    "printedName": "Swift.Bool",
+                                    "usr": "s:Sb"
+                                  },
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "__Sealed",
+                                    "printedName": "CoreAuthenticator.Skie.MultiplatformLib.Account.Status.NotConnected.__Sealed",
+                                    "usr": "s:17CoreAuthenticator4SkieO16MultiplatformLibO7AccountO6StatusO12NotConnectedO8__SealedO"
+                                  },
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "__Sealed",
+                                    "printedName": "CoreAuthenticator.Skie.MultiplatformLib.Account.Status.NotConnected.__Sealed",
+                                    "usr": "s:17CoreAuthenticator4SkieO16MultiplatformLibO7AccountO6StatusO12NotConnectedO8__SealedO"
+                                  }
+                                ],
+                                "declKind": "Func",
+                                "usr": "s:17CoreAuthenticator4SkieO16MultiplatformLibO7AccountO6StatusO12NotConnectedO8__SealedO2eeoiySbAM_AMtFZ",
+                                "mangledName": "$s17CoreAuthenticator4SkieO16MultiplatformLibO7AccountO6StatusO12NotConnectedO8__SealedO2eeoiySbAM_AMtFZ",
+                                "moduleName": "CoreAuthenticator",
+                                "static": true,
+                                "implicit": true,
+                                "funcSelfKind": "NonMutating"
+                              }
+                            ],
+                            "declKind": "Enum",
+                            "usr": "s:17CoreAuthenticator4SkieO16MultiplatformLibO7AccountO6StatusO12NotConnectedO8__SealedO",
+                            "mangledName": "$s17CoreAuthenticator4SkieO16MultiplatformLibO7AccountO6StatusO12NotConnectedO8__SealedO",
+                            "moduleName": "CoreAuthenticator",
+                            "declAttributes": [
+                              "AccessControl",
+                              "Frozen"
+                            ],
+                            "isFromExtension": true,
+                            "isEnumExhaustive": true,
+                            "conformances": [
+                              {
+                                "kind": "Conformance",
+                                "name": "Copyable",
+                                "printedName": "Copyable",
+                                "usr": "s:s8CopyableP",
+                                "mangledName": "$ss8CopyableP"
+                              },
+                              {
+                                "kind": "Conformance",
+                                "name": "Escapable",
+                                "printedName": "Escapable",
+                                "usr": "s:s9EscapableP",
+                                "mangledName": "$ss9EscapableP"
+                              },
+                              {
+                                "kind": "Conformance",
+                                "name": "Hashable",
+                                "printedName": "Hashable",
+                                "usr": "s:SH",
+                                "mangledName": "$sSH"
+                              },
+                              {
+                                "kind": "Conformance",
+                                "name": "Equatable",
+                                "printedName": "Equatable",
+                                "usr": "s:SQ",
+                                "mangledName": "$sSQ"
+                              }
+                            ]
+                          }
+                        ],
+                        "declKind": "Enum",
+                        "usr": "s:17CoreAuthenticator4SkieO16MultiplatformLibO7AccountO6StatusO12NotConnectedO",
+                        "mangledName": "$s17CoreAuthenticator4SkieO16MultiplatformLibO7AccountO6StatusO12NotConnectedO",
+                        "moduleName": "CoreAuthenticator",
+                        "declAttributes": [
+                          "AccessControl"
+                        ],
+                        "conformances": [
+                          {
+                            "kind": "Conformance",
+                            "name": "Copyable",
+                            "printedName": "Copyable",
+                            "usr": "s:s8CopyableP",
+                            "mangledName": "$ss8CopyableP"
+                          },
+                          {
+                            "kind": "Conformance",
+                            "name": "Escapable",
+                            "printedName": "Escapable",
+                            "usr": "s:s9EscapableP",
+                            "mangledName": "$ss9EscapableP"
+                          }
+                        ]
+                      },
+                      {
+                        "kind": "TypeDecl",
                         "name": "__Sealed",
                         "printedName": "__Sealed",
                         "children": [
@@ -1319,12 +1645,12 @@
                               {
                                 "kind": "TypeFunc",
                                 "name": "Function",
-                                "printedName": "(CoreAuthenticator.Skie.MultiplatformLib.Account.Status.__Sealed.Type) -> (CoreAuthenticator.AccountStatusNotConnected) -> CoreAuthenticator.Skie.MultiplatformLib.Account.Status.__Sealed",
+                                "printedName": "(CoreAuthenticator.Skie.MultiplatformLib.Account.Status.__Sealed.Type) -> (any CoreAuthenticator.AccountStatusNotConnected) -> CoreAuthenticator.Skie.MultiplatformLib.Account.Status.__Sealed",
                                 "children": [
                                   {
                                     "kind": "TypeFunc",
                                     "name": "Function",
-                                    "printedName": "(CoreAuthenticator.AccountStatusNotConnected) -> CoreAuthenticator.Skie.MultiplatformLib.Account.Status.__Sealed",
+                                    "printedName": "(any CoreAuthenticator.AccountStatusNotConnected) -> CoreAuthenticator.Skie.MultiplatformLib.Account.Status.__Sealed",
                                     "children": [
                                       {
                                         "kind": "TypeNominal",
@@ -1335,8 +1661,8 @@
                                       {
                                         "kind": "TypeNominal",
                                         "name": "AccountStatusNotConnected",
-                                        "printedName": "CoreAuthenticator.AccountStatusNotConnected",
-                                        "usr": "c:objc(cs)CoreAuthenticatorAccountStatusNotConnected"
+                                        "printedName": "any CoreAuthenticator.AccountStatusNotConnected",
+                                        "usr": "c:objc(pl)CoreAuthenticatorAccountStatusNotConnected"
                                       }
                                     ]
                                   },
@@ -1357,106 +1683,10 @@
                               }
                             ],
                             "declKind": "EnumElement",
-                            "usr": "s:17CoreAuthenticator4SkieO16MultiplatformLibO7AccountO6StatusO8__SealedO12notConnectedyAKSo0abfg3NotJ0CcAKmF",
-                            "mangledName": "$s17CoreAuthenticator4SkieO16MultiplatformLibO7AccountO6StatusO8__SealedO12notConnectedyAKSo0abfg3NotJ0CcAKmF",
+                            "usr": "s:17CoreAuthenticator4SkieO16MultiplatformLibO7AccountO6StatusO8__SealedO12notConnectedyAKSo0abfg3NotJ0_pcAKmF",
+                            "mangledName": "$s17CoreAuthenticator4SkieO16MultiplatformLibO7AccountO6StatusO8__SealedO12notConnectedyAKSo0abfg3NotJ0_pcAKmF",
                             "moduleName": "CoreAuthenticator",
                             "fixedbinaryorder": 1
-                          },
-                          {
-                            "kind": "Var",
-                            "name": "hashValue",
-                            "printedName": "hashValue",
-                            "children": [
-                              {
-                                "kind": "TypeNominal",
-                                "name": "Int",
-                                "printedName": "Swift.Int",
-                                "usr": "s:Si"
-                              }
-                            ],
-                            "declKind": "Var",
-                            "usr": "s:17CoreAuthenticator4SkieO16MultiplatformLibO7AccountO6StatusO8__SealedO9hashValueSivp",
-                            "mangledName": "$s17CoreAuthenticator4SkieO16MultiplatformLibO7AccountO6StatusO8__SealedO9hashValueSivp",
-                            "moduleName": "CoreAuthenticator",
-                            "implicit": true,
-                            "accessors": [
-                              {
-                                "kind": "Accessor",
-                                "name": "Get",
-                                "printedName": "Get()",
-                                "children": [
-                                  {
-                                    "kind": "TypeNominal",
-                                    "name": "Int",
-                                    "printedName": "Swift.Int",
-                                    "usr": "s:Si"
-                                  }
-                                ],
-                                "declKind": "Accessor",
-                                "usr": "s:17CoreAuthenticator4SkieO16MultiplatformLibO7AccountO6StatusO8__SealedO9hashValueSivg",
-                                "mangledName": "$s17CoreAuthenticator4SkieO16MultiplatformLibO7AccountO6StatusO8__SealedO9hashValueSivg",
-                                "moduleName": "CoreAuthenticator",
-                                "implicit": true,
-                                "accessorKind": "get"
-                              }
-                            ]
-                          },
-                          {
-                            "kind": "Function",
-                            "name": "hash",
-                            "printedName": "hash(into:)",
-                            "children": [
-                              {
-                                "kind": "TypeNominal",
-                                "name": "Void",
-                                "printedName": "()"
-                              },
-                              {
-                                "kind": "TypeNominal",
-                                "name": "Hasher",
-                                "printedName": "Swift.Hasher",
-                                "paramValueOwnership": "InOut",
-                                "usr": "s:s6HasherV"
-                              }
-                            ],
-                            "declKind": "Func",
-                            "usr": "s:17CoreAuthenticator4SkieO16MultiplatformLibO7AccountO6StatusO8__SealedO4hash4intoys6HasherVz_tF",
-                            "mangledName": "$s17CoreAuthenticator4SkieO16MultiplatformLibO7AccountO6StatusO8__SealedO4hash4intoys6HasherVz_tF",
-                            "moduleName": "CoreAuthenticator",
-                            "implicit": true,
-                            "funcSelfKind": "NonMutating"
-                          },
-                          {
-                            "kind": "Function",
-                            "name": "==",
-                            "printedName": "==(_:_:)",
-                            "children": [
-                              {
-                                "kind": "TypeNominal",
-                                "name": "Bool",
-                                "printedName": "Swift.Bool",
-                                "usr": "s:Sb"
-                              },
-                              {
-                                "kind": "TypeNominal",
-                                "name": "__Sealed",
-                                "printedName": "CoreAuthenticator.Skie.MultiplatformLib.Account.Status.__Sealed",
-                                "usr": "s:17CoreAuthenticator4SkieO16MultiplatformLibO7AccountO6StatusO8__SealedO"
-                              },
-                              {
-                                "kind": "TypeNominal",
-                                "name": "__Sealed",
-                                "printedName": "CoreAuthenticator.Skie.MultiplatformLib.Account.Status.__Sealed",
-                                "usr": "s:17CoreAuthenticator4SkieO16MultiplatformLibO7AccountO6StatusO8__SealedO"
-                              }
-                            ],
-                            "declKind": "Func",
-                            "usr": "s:17CoreAuthenticator4SkieO16MultiplatformLibO7AccountO6StatusO8__SealedO2eeoiySbAK_AKtFZ",
-                            "mangledName": "$s17CoreAuthenticator4SkieO16MultiplatformLibO7AccountO6StatusO8__SealedO2eeoiySbAK_AKtFZ",
-                            "moduleName": "CoreAuthenticator",
-                            "static": true,
-                            "implicit": true,
-                            "funcSelfKind": "NonMutating"
                           }
                         ],
                         "declKind": "Enum",
@@ -1483,20 +1713,6 @@
                             "printedName": "Escapable",
                             "usr": "s:s9EscapableP",
                             "mangledName": "$ss9EscapableP"
-                          },
-                          {
-                            "kind": "Conformance",
-                            "name": "Hashable",
-                            "printedName": "Hashable",
-                            "usr": "s:SH",
-                            "mangledName": "$sSH"
-                          },
-                          {
-                            "kind": "Conformance",
-                            "name": "Equatable",
-                            "printedName": "Equatable",
-                            "usr": "s:SQ",
-                            "mangledName": "$sSQ"
                           }
                         ]
                       }
@@ -1552,143 +1768,181 @@
               },
               {
                 "kind": "TypeDecl",
-                "name": "NotConnectedAction",
-                "printedName": "NotConnectedAction",
+                "name": "Issue",
+                "printedName": "Issue",
                 "children": [
                   {
                     "kind": "TypeDecl",
-                    "name": "Issue",
-                    "printedName": "Issue",
+                    "name": "Retriable",
+                    "printedName": "Retriable",
                     "children": [
                       {
                         "kind": "TypeDecl",
-                        "name": "__Sealed",
-                        "printedName": "__Sealed",
+                        "name": "Cause",
+                        "printedName": "Cause",
                         "children": [
                           {
-                            "kind": "Var",
-                            "name": "nonRetriable",
-                            "printedName": "nonRetriable",
+                            "kind": "TypeDecl",
+                            "name": "__Sealed",
+                            "printedName": "__Sealed",
                             "children": [
                               {
-                                "kind": "TypeFunc",
-                                "name": "Function",
-                                "printedName": "(CoreAuthenticator.Skie.MultiplatformLib.NotConnectedAction.Issue.__Sealed.Type) -> (CoreAuthenticator.NotConnectedActionIssueNonRetriable) -> CoreAuthenticator.Skie.MultiplatformLib.NotConnectedAction.Issue.__Sealed",
+                                "kind": "Var",
+                                "name": "networkIssue",
+                                "printedName": "networkIssue",
                                 "children": [
                                   {
                                     "kind": "TypeFunc",
                                     "name": "Function",
-                                    "printedName": "(CoreAuthenticator.NotConnectedActionIssueNonRetriable) -> CoreAuthenticator.Skie.MultiplatformLib.NotConnectedAction.Issue.__Sealed",
+                                    "printedName": "(CoreAuthenticator.Skie.MultiplatformLib.Issue.Retriable.Cause.__Sealed.Type) -> (CoreAuthenticator.IssueRetriableCauseNetworkIssue) -> CoreAuthenticator.Skie.MultiplatformLib.Issue.Retriable.Cause.__Sealed",
                                     "children": [
                                       {
-                                        "kind": "TypeNominal",
-                                        "name": "__Sealed",
-                                        "printedName": "CoreAuthenticator.Skie.MultiplatformLib.NotConnectedAction.Issue.__Sealed",
-                                        "usr": "s:17CoreAuthenticator4SkieO16MultiplatformLibO18NotConnectedActionO5IssueO8__SealedO"
+                                        "kind": "TypeFunc",
+                                        "name": "Function",
+                                        "printedName": "(CoreAuthenticator.IssueRetriableCauseNetworkIssue) -> CoreAuthenticator.Skie.MultiplatformLib.Issue.Retriable.Cause.__Sealed",
+                                        "children": [
+                                          {
+                                            "kind": "TypeNominal",
+                                            "name": "__Sealed",
+                                            "printedName": "CoreAuthenticator.Skie.MultiplatformLib.Issue.Retriable.Cause.__Sealed",
+                                            "usr": "s:17CoreAuthenticator4SkieO16MultiplatformLibO5IssueO9RetriableO5CauseO8__SealedO"
+                                          },
+                                          {
+                                            "kind": "TypeNominal",
+                                            "name": "IssueRetriableCauseNetworkIssue",
+                                            "printedName": "CoreAuthenticator.IssueRetriableCauseNetworkIssue",
+                                            "usr": "c:objc(cs)CoreAuthenticatorIssueRetriableCauseNetworkIssue"
+                                          }
+                                        ]
                                       },
                                       {
                                         "kind": "TypeNominal",
-                                        "name": "NotConnectedActionIssueNonRetriable",
-                                        "printedName": "CoreAuthenticator.NotConnectedActionIssueNonRetriable",
-                                        "usr": "c:objc(cs)CoreAuthenticatorNotConnectedActionIssueNonRetriable"
-                                      }
-                                    ]
-                                  },
-                                  {
-                                    "kind": "TypeNominal",
-                                    "name": "Metatype",
-                                    "printedName": "CoreAuthenticator.Skie.MultiplatformLib.NotConnectedAction.Issue.__Sealed.Type",
-                                    "children": [
-                                      {
-                                        "kind": "TypeNominal",
-                                        "name": "__Sealed",
-                                        "printedName": "CoreAuthenticator.Skie.MultiplatformLib.NotConnectedAction.Issue.__Sealed",
-                                        "usr": "s:17CoreAuthenticator4SkieO16MultiplatformLibO18NotConnectedActionO5IssueO8__SealedO"
+                                        "name": "Metatype",
+                                        "printedName": "CoreAuthenticator.Skie.MultiplatformLib.Issue.Retriable.Cause.__Sealed.Type",
+                                        "children": [
+                                          {
+                                            "kind": "TypeNominal",
+                                            "name": "__Sealed",
+                                            "printedName": "CoreAuthenticator.Skie.MultiplatformLib.Issue.Retriable.Cause.__Sealed",
+                                            "usr": "s:17CoreAuthenticator4SkieO16MultiplatformLibO5IssueO9RetriableO5CauseO8__SealedO"
+                                          }
+                                        ]
                                       }
                                     ]
                                   }
-                                ]
-                              }
-                            ],
-                            "declKind": "EnumElement",
-                            "usr": "s:17CoreAuthenticator4SkieO16MultiplatformLibO18NotConnectedActionO5IssueO8__SealedO12nonRetriableyAKSo0abfghi3NonL0CcAKmF",
-                            "mangledName": "$s17CoreAuthenticator4SkieO16MultiplatformLibO18NotConnectedActionO5IssueO8__SealedO12nonRetriableyAKSo0abfghi3NonL0CcAKmF",
-                            "moduleName": "CoreAuthenticator",
-                            "fixedbinaryorder": 0
-                          },
-                          {
-                            "kind": "Var",
-                            "name": "retriable",
-                            "printedName": "retriable",
-                            "children": [
+                                ],
+                                "declKind": "EnumElement",
+                                "usr": "s:17CoreAuthenticator4SkieO16MultiplatformLibO5IssueO9RetriableO5CauseO8__SealedO07networkF0yAMSo0abfgh7NetworkF0CcAMmF",
+                                "mangledName": "$s17CoreAuthenticator4SkieO16MultiplatformLibO5IssueO9RetriableO5CauseO8__SealedO07networkF0yAMSo0abfgh7NetworkF0CcAMmF",
+                                "moduleName": "CoreAuthenticator",
+                                "fixedbinaryorder": 0
+                              },
                               {
-                                "kind": "TypeFunc",
-                                "name": "Function",
-                                "printedName": "(CoreAuthenticator.Skie.MultiplatformLib.NotConnectedAction.Issue.__Sealed.Type) -> (CoreAuthenticator.NotConnectedActionIssueRetriable) -> CoreAuthenticator.Skie.MultiplatformLib.NotConnectedAction.Issue.__Sealed",
+                                "kind": "Var",
+                                "name": "other",
+                                "printedName": "other",
                                 "children": [
                                   {
                                     "kind": "TypeFunc",
                                     "name": "Function",
-                                    "printedName": "(CoreAuthenticator.NotConnectedActionIssueRetriable) -> CoreAuthenticator.Skie.MultiplatformLib.NotConnectedAction.Issue.__Sealed",
+                                    "printedName": "(CoreAuthenticator.Skie.MultiplatformLib.Issue.Retriable.Cause.__Sealed.Type) -> (CoreAuthenticator.IssueRetriableCauseOther) -> CoreAuthenticator.Skie.MultiplatformLib.Issue.Retriable.Cause.__Sealed",
                                     "children": [
                                       {
-                                        "kind": "TypeNominal",
-                                        "name": "__Sealed",
-                                        "printedName": "CoreAuthenticator.Skie.MultiplatformLib.NotConnectedAction.Issue.__Sealed",
-                                        "usr": "s:17CoreAuthenticator4SkieO16MultiplatformLibO18NotConnectedActionO5IssueO8__SealedO"
+                                        "kind": "TypeFunc",
+                                        "name": "Function",
+                                        "printedName": "(CoreAuthenticator.IssueRetriableCauseOther) -> CoreAuthenticator.Skie.MultiplatformLib.Issue.Retriable.Cause.__Sealed",
+                                        "children": [
+                                          {
+                                            "kind": "TypeNominal",
+                                            "name": "__Sealed",
+                                            "printedName": "CoreAuthenticator.Skie.MultiplatformLib.Issue.Retriable.Cause.__Sealed",
+                                            "usr": "s:17CoreAuthenticator4SkieO16MultiplatformLibO5IssueO9RetriableO5CauseO8__SealedO"
+                                          },
+                                          {
+                                            "kind": "TypeNominal",
+                                            "name": "IssueRetriableCauseOther",
+                                            "printedName": "CoreAuthenticator.IssueRetriableCauseOther",
+                                            "usr": "c:objc(cs)CoreAuthenticatorIssueRetriableCauseOther"
+                                          }
+                                        ]
                                       },
                                       {
                                         "kind": "TypeNominal",
-                                        "name": "NotConnectedActionIssueRetriable",
-                                        "printedName": "CoreAuthenticator.NotConnectedActionIssueRetriable",
-                                        "usr": "c:objc(cs)CoreAuthenticatorNotConnectedActionIssueRetriable"
-                                      }
-                                    ]
-                                  },
-                                  {
-                                    "kind": "TypeNominal",
-                                    "name": "Metatype",
-                                    "printedName": "CoreAuthenticator.Skie.MultiplatformLib.NotConnectedAction.Issue.__Sealed.Type",
-                                    "children": [
-                                      {
-                                        "kind": "TypeNominal",
-                                        "name": "__Sealed",
-                                        "printedName": "CoreAuthenticator.Skie.MultiplatformLib.NotConnectedAction.Issue.__Sealed",
-                                        "usr": "s:17CoreAuthenticator4SkieO16MultiplatformLibO18NotConnectedActionO5IssueO8__SealedO"
+                                        "name": "Metatype",
+                                        "printedName": "CoreAuthenticator.Skie.MultiplatformLib.Issue.Retriable.Cause.__Sealed.Type",
+                                        "children": [
+                                          {
+                                            "kind": "TypeNominal",
+                                            "name": "__Sealed",
+                                            "printedName": "CoreAuthenticator.Skie.MultiplatformLib.Issue.Retriable.Cause.__Sealed",
+                                            "usr": "s:17CoreAuthenticator4SkieO16MultiplatformLibO5IssueO9RetriableO5CauseO8__SealedO"
+                                          }
+                                        ]
                                       }
                                     ]
                                   }
-                                ]
-                              }
-                            ],
-                            "declKind": "EnumElement",
-                            "usr": "s:17CoreAuthenticator4SkieO16MultiplatformLibO18NotConnectedActionO5IssueO8__SealedO9retriableyAKSo0abfghI9RetriableCcAKmF",
-                            "mangledName": "$s17CoreAuthenticator4SkieO16MultiplatformLibO18NotConnectedActionO5IssueO8__SealedO9retriableyAKSo0abfghI9RetriableCcAKmF",
-                            "moduleName": "CoreAuthenticator",
-                            "fixedbinaryorder": 1
-                          },
-                          {
-                            "kind": "Var",
-                            "name": "hashValue",
-                            "printedName": "hashValue",
-                            "children": [
+                                ],
+                                "declKind": "EnumElement",
+                                "usr": "s:17CoreAuthenticator4SkieO16MultiplatformLibO5IssueO9RetriableO5CauseO8__SealedO5otheryAMSo0abfgH5OtherCcAMmF",
+                                "mangledName": "$s17CoreAuthenticator4SkieO16MultiplatformLibO5IssueO9RetriableO5CauseO8__SealedO5otheryAMSo0abfgH5OtherCcAMmF",
+                                "moduleName": "CoreAuthenticator",
+                                "fixedbinaryorder": 1
+                              },
                               {
-                                "kind": "TypeNominal",
-                                "name": "Int",
-                                "printedName": "Swift.Int",
-                                "usr": "s:Si"
-                              }
-                            ],
-                            "declKind": "Var",
-                            "usr": "s:17CoreAuthenticator4SkieO16MultiplatformLibO18NotConnectedActionO5IssueO8__SealedO9hashValueSivp",
-                            "mangledName": "$s17CoreAuthenticator4SkieO16MultiplatformLibO18NotConnectedActionO5IssueO8__SealedO9hashValueSivp",
-                            "moduleName": "CoreAuthenticator",
-                            "implicit": true,
-                            "accessors": [
+                                "kind": "Var",
+                                "name": "serverUnavailable",
+                                "printedName": "serverUnavailable",
+                                "children": [
+                                  {
+                                    "kind": "TypeFunc",
+                                    "name": "Function",
+                                    "printedName": "(CoreAuthenticator.Skie.MultiplatformLib.Issue.Retriable.Cause.__Sealed.Type) -> (CoreAuthenticator.IssueRetriableCauseServerUnavailable) -> CoreAuthenticator.Skie.MultiplatformLib.Issue.Retriable.Cause.__Sealed",
+                                    "children": [
+                                      {
+                                        "kind": "TypeFunc",
+                                        "name": "Function",
+                                        "printedName": "(CoreAuthenticator.IssueRetriableCauseServerUnavailable) -> CoreAuthenticator.Skie.MultiplatformLib.Issue.Retriable.Cause.__Sealed",
+                                        "children": [
+                                          {
+                                            "kind": "TypeNominal",
+                                            "name": "__Sealed",
+                                            "printedName": "CoreAuthenticator.Skie.MultiplatformLib.Issue.Retriable.Cause.__Sealed",
+                                            "usr": "s:17CoreAuthenticator4SkieO16MultiplatformLibO5IssueO9RetriableO5CauseO8__SealedO"
+                                          },
+                                          {
+                                            "kind": "TypeNominal",
+                                            "name": "IssueRetriableCauseServerUnavailable",
+                                            "printedName": "CoreAuthenticator.IssueRetriableCauseServerUnavailable",
+                                            "usr": "c:objc(cs)CoreAuthenticatorIssueRetriableCauseServerUnavailable"
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "kind": "TypeNominal",
+                                        "name": "Metatype",
+                                        "printedName": "CoreAuthenticator.Skie.MultiplatformLib.Issue.Retriable.Cause.__Sealed.Type",
+                                        "children": [
+                                          {
+                                            "kind": "TypeNominal",
+                                            "name": "__Sealed",
+                                            "printedName": "CoreAuthenticator.Skie.MultiplatformLib.Issue.Retriable.Cause.__Sealed",
+                                            "usr": "s:17CoreAuthenticator4SkieO16MultiplatformLibO5IssueO9RetriableO5CauseO8__SealedO"
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ],
+                                "declKind": "EnumElement",
+                                "usr": "s:17CoreAuthenticator4SkieO16MultiplatformLibO5IssueO9RetriableO5CauseO8__SealedO17serverUnavailableyAMSo0abfgh6ServerK0CcAMmF",
+                                "mangledName": "$s17CoreAuthenticator4SkieO16MultiplatformLibO5IssueO9RetriableO5CauseO8__SealedO17serverUnavailableyAMSo0abfgh6ServerK0CcAMmF",
+                                "moduleName": "CoreAuthenticator",
+                                "fixedbinaryorder": 2
+                              },
                               {
-                                "kind": "Accessor",
-                                "name": "Get",
-                                "printedName": "Get()",
+                                "kind": "Var",
+                                "name": "hashValue",
+                                "printedName": "hashValue",
                                 "children": [
                                   {
                                     "kind": "TypeNominal",
@@ -1697,83 +1951,140 @@
                                     "usr": "s:Si"
                                   }
                                 ],
-                                "declKind": "Accessor",
-                                "usr": "s:17CoreAuthenticator4SkieO16MultiplatformLibO18NotConnectedActionO5IssueO8__SealedO9hashValueSivg",
-                                "mangledName": "$s17CoreAuthenticator4SkieO16MultiplatformLibO18NotConnectedActionO5IssueO8__SealedO9hashValueSivg",
+                                "declKind": "Var",
+                                "usr": "s:17CoreAuthenticator4SkieO16MultiplatformLibO5IssueO9RetriableO5CauseO8__SealedO9hashValueSivp",
+                                "mangledName": "$s17CoreAuthenticator4SkieO16MultiplatformLibO5IssueO9RetriableO5CauseO8__SealedO9hashValueSivp",
                                 "moduleName": "CoreAuthenticator",
                                 "implicit": true,
-                                "accessorKind": "get"
+                                "accessors": [
+                                  {
+                                    "kind": "Accessor",
+                                    "name": "Get",
+                                    "printedName": "Get()",
+                                    "children": [
+                                      {
+                                        "kind": "TypeNominal",
+                                        "name": "Int",
+                                        "printedName": "Swift.Int",
+                                        "usr": "s:Si"
+                                      }
+                                    ],
+                                    "declKind": "Accessor",
+                                    "usr": "s:17CoreAuthenticator4SkieO16MultiplatformLibO5IssueO9RetriableO5CauseO8__SealedO9hashValueSivg",
+                                    "mangledName": "$s17CoreAuthenticator4SkieO16MultiplatformLibO5IssueO9RetriableO5CauseO8__SealedO9hashValueSivg",
+                                    "moduleName": "CoreAuthenticator",
+                                    "implicit": true,
+                                    "accessorKind": "get"
+                                  }
+                                ]
+                              },
+                              {
+                                "kind": "Function",
+                                "name": "hash",
+                                "printedName": "hash(into:)",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "Void",
+                                    "printedName": "()"
+                                  },
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "Hasher",
+                                    "printedName": "Swift.Hasher",
+                                    "paramValueOwnership": "InOut",
+                                    "usr": "s:s6HasherV"
+                                  }
+                                ],
+                                "declKind": "Func",
+                                "usr": "s:17CoreAuthenticator4SkieO16MultiplatformLibO5IssueO9RetriableO5CauseO8__SealedO4hash4intoys6HasherVz_tF",
+                                "mangledName": "$s17CoreAuthenticator4SkieO16MultiplatformLibO5IssueO9RetriableO5CauseO8__SealedO4hash4intoys6HasherVz_tF",
+                                "moduleName": "CoreAuthenticator",
+                                "implicit": true,
+                                "funcSelfKind": "NonMutating"
+                              },
+                              {
+                                "kind": "Function",
+                                "name": "==",
+                                "printedName": "==(_:_:)",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "Bool",
+                                    "printedName": "Swift.Bool",
+                                    "usr": "s:Sb"
+                                  },
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "__Sealed",
+                                    "printedName": "CoreAuthenticator.Skie.MultiplatformLib.Issue.Retriable.Cause.__Sealed",
+                                    "usr": "s:17CoreAuthenticator4SkieO16MultiplatformLibO5IssueO9RetriableO5CauseO8__SealedO"
+                                  },
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "__Sealed",
+                                    "printedName": "CoreAuthenticator.Skie.MultiplatformLib.Issue.Retriable.Cause.__Sealed",
+                                    "usr": "s:17CoreAuthenticator4SkieO16MultiplatformLibO5IssueO9RetriableO5CauseO8__SealedO"
+                                  }
+                                ],
+                                "declKind": "Func",
+                                "usr": "s:17CoreAuthenticator4SkieO16MultiplatformLibO5IssueO9RetriableO5CauseO8__SealedO2eeoiySbAM_AMtFZ",
+                                "mangledName": "$s17CoreAuthenticator4SkieO16MultiplatformLibO5IssueO9RetriableO5CauseO8__SealedO2eeoiySbAM_AMtFZ",
+                                "moduleName": "CoreAuthenticator",
+                                "static": true,
+                                "implicit": true,
+                                "funcSelfKind": "NonMutating"
+                              }
+                            ],
+                            "declKind": "Enum",
+                            "usr": "s:17CoreAuthenticator4SkieO16MultiplatformLibO5IssueO9RetriableO5CauseO8__SealedO",
+                            "mangledName": "$s17CoreAuthenticator4SkieO16MultiplatformLibO5IssueO9RetriableO5CauseO8__SealedO",
+                            "moduleName": "CoreAuthenticator",
+                            "declAttributes": [
+                              "AccessControl",
+                              "Frozen"
+                            ],
+                            "isFromExtension": true,
+                            "isEnumExhaustive": true,
+                            "conformances": [
+                              {
+                                "kind": "Conformance",
+                                "name": "Copyable",
+                                "printedName": "Copyable",
+                                "usr": "s:s8CopyableP",
+                                "mangledName": "$ss8CopyableP"
+                              },
+                              {
+                                "kind": "Conformance",
+                                "name": "Escapable",
+                                "printedName": "Escapable",
+                                "usr": "s:s9EscapableP",
+                                "mangledName": "$ss9EscapableP"
+                              },
+                              {
+                                "kind": "Conformance",
+                                "name": "Hashable",
+                                "printedName": "Hashable",
+                                "usr": "s:SH",
+                                "mangledName": "$sSH"
+                              },
+                              {
+                                "kind": "Conformance",
+                                "name": "Equatable",
+                                "printedName": "Equatable",
+                                "usr": "s:SQ",
+                                "mangledName": "$sSQ"
                               }
                             ]
-                          },
-                          {
-                            "kind": "Function",
-                            "name": "hash",
-                            "printedName": "hash(into:)",
-                            "children": [
-                              {
-                                "kind": "TypeNominal",
-                                "name": "Void",
-                                "printedName": "()"
-                              },
-                              {
-                                "kind": "TypeNominal",
-                                "name": "Hasher",
-                                "printedName": "Swift.Hasher",
-                                "paramValueOwnership": "InOut",
-                                "usr": "s:s6HasherV"
-                              }
-                            ],
-                            "declKind": "Func",
-                            "usr": "s:17CoreAuthenticator4SkieO16MultiplatformLibO18NotConnectedActionO5IssueO8__SealedO4hash4intoys6HasherVz_tF",
-                            "mangledName": "$s17CoreAuthenticator4SkieO16MultiplatformLibO18NotConnectedActionO5IssueO8__SealedO4hash4intoys6HasherVz_tF",
-                            "moduleName": "CoreAuthenticator",
-                            "implicit": true,
-                            "funcSelfKind": "NonMutating"
-                          },
-                          {
-                            "kind": "Function",
-                            "name": "==",
-                            "printedName": "==(_:_:)",
-                            "children": [
-                              {
-                                "kind": "TypeNominal",
-                                "name": "Bool",
-                                "printedName": "Swift.Bool",
-                                "usr": "s:Sb"
-                              },
-                              {
-                                "kind": "TypeNominal",
-                                "name": "__Sealed",
-                                "printedName": "CoreAuthenticator.Skie.MultiplatformLib.NotConnectedAction.Issue.__Sealed",
-                                "usr": "s:17CoreAuthenticator4SkieO16MultiplatformLibO18NotConnectedActionO5IssueO8__SealedO"
-                              },
-                              {
-                                "kind": "TypeNominal",
-                                "name": "__Sealed",
-                                "printedName": "CoreAuthenticator.Skie.MultiplatformLib.NotConnectedAction.Issue.__Sealed",
-                                "usr": "s:17CoreAuthenticator4SkieO16MultiplatformLibO18NotConnectedActionO5IssueO8__SealedO"
-                              }
-                            ],
-                            "declKind": "Func",
-                            "usr": "s:17CoreAuthenticator4SkieO16MultiplatformLibO18NotConnectedActionO5IssueO8__SealedO2eeoiySbAK_AKtFZ",
-                            "mangledName": "$s17CoreAuthenticator4SkieO16MultiplatformLibO18NotConnectedActionO5IssueO8__SealedO2eeoiySbAK_AKtFZ",
-                            "moduleName": "CoreAuthenticator",
-                            "static": true,
-                            "implicit": true,
-                            "funcSelfKind": "NonMutating"
                           }
                         ],
                         "declKind": "Enum",
-                        "usr": "s:17CoreAuthenticator4SkieO16MultiplatformLibO18NotConnectedActionO5IssueO8__SealedO",
-                        "mangledName": "$s17CoreAuthenticator4SkieO16MultiplatformLibO18NotConnectedActionO5IssueO8__SealedO",
+                        "usr": "s:17CoreAuthenticator4SkieO16MultiplatformLibO5IssueO9RetriableO5CauseO",
+                        "mangledName": "$s17CoreAuthenticator4SkieO16MultiplatformLibO5IssueO9RetriableO5CauseO",
                         "moduleName": "CoreAuthenticator",
                         "declAttributes": [
-                          "AccessControl",
-                          "Frozen"
+                          "AccessControl"
                         ],
-                        "isFromExtension": true,
-                        "isEnumExhaustive": true,
                         "conformances": [
                           {
                             "kind": "Conformance",
@@ -1788,27 +2099,13 @@
                             "printedName": "Escapable",
                             "usr": "s:s9EscapableP",
                             "mangledName": "$ss9EscapableP"
-                          },
-                          {
-                            "kind": "Conformance",
-                            "name": "Hashable",
-                            "printedName": "Hashable",
-                            "usr": "s:SH",
-                            "mangledName": "$sSH"
-                          },
-                          {
-                            "kind": "Conformance",
-                            "name": "Equatable",
-                            "printedName": "Equatable",
-                            "usr": "s:SQ",
-                            "mangledName": "$sSQ"
                           }
                         ]
                       }
                     ],
                     "declKind": "Enum",
-                    "usr": "s:17CoreAuthenticator4SkieO16MultiplatformLibO18NotConnectedActionO5IssueO",
-                    "mangledName": "$s17CoreAuthenticator4SkieO16MultiplatformLibO18NotConnectedActionO5IssueO",
+                    "usr": "s:17CoreAuthenticator4SkieO16MultiplatformLibO5IssueO9RetriableO",
+                    "mangledName": "$s17CoreAuthenticator4SkieO16MultiplatformLibO5IssueO9RetriableO",
                     "moduleName": "CoreAuthenticator",
                     "declAttributes": [
                       "AccessControl"
@@ -1837,43 +2134,43 @@
                     "children": [
                       {
                         "kind": "Var",
-                        "name": "issue",
-                        "printedName": "issue",
+                        "name": "nonRetriable",
+                        "printedName": "nonRetriable",
                         "children": [
                           {
                             "kind": "TypeFunc",
                             "name": "Function",
-                            "printedName": "(CoreAuthenticator.Skie.MultiplatformLib.NotConnectedAction.__Sealed.Type) -> (any CoreAuthenticator.NotConnectedActionIssue) -> CoreAuthenticator.Skie.MultiplatformLib.NotConnectedAction.__Sealed",
+                            "printedName": "(CoreAuthenticator.Skie.MultiplatformLib.Issue.__Sealed.Type) -> (CoreAuthenticator.IssueNonRetriable) -> CoreAuthenticator.Skie.MultiplatformLib.Issue.__Sealed",
                             "children": [
                               {
                                 "kind": "TypeFunc",
                                 "name": "Function",
-                                "printedName": "(any CoreAuthenticator.NotConnectedActionIssue) -> CoreAuthenticator.Skie.MultiplatformLib.NotConnectedAction.__Sealed",
+                                "printedName": "(CoreAuthenticator.IssueNonRetriable) -> CoreAuthenticator.Skie.MultiplatformLib.Issue.__Sealed",
                                 "children": [
                                   {
                                     "kind": "TypeNominal",
                                     "name": "__Sealed",
-                                    "printedName": "CoreAuthenticator.Skie.MultiplatformLib.NotConnectedAction.__Sealed",
-                                    "usr": "s:17CoreAuthenticator4SkieO16MultiplatformLibO18NotConnectedActionO8__SealedO"
+                                    "printedName": "CoreAuthenticator.Skie.MultiplatformLib.Issue.__Sealed",
+                                    "usr": "s:17CoreAuthenticator4SkieO16MultiplatformLibO5IssueO8__SealedO"
                                   },
                                   {
                                     "kind": "TypeNominal",
-                                    "name": "NotConnectedActionIssue",
-                                    "printedName": "any CoreAuthenticator.NotConnectedActionIssue",
-                                    "usr": "c:objc(pl)CoreAuthenticatorNotConnectedActionIssue"
+                                    "name": "IssueNonRetriable",
+                                    "printedName": "CoreAuthenticator.IssueNonRetriable",
+                                    "usr": "c:objc(cs)CoreAuthenticatorIssueNonRetriable"
                                   }
                                 ]
                               },
                               {
                                 "kind": "TypeNominal",
                                 "name": "Metatype",
-                                "printedName": "CoreAuthenticator.Skie.MultiplatformLib.NotConnectedAction.__Sealed.Type",
+                                "printedName": "CoreAuthenticator.Skie.MultiplatformLib.Issue.__Sealed.Type",
                                 "children": [
                                   {
                                     "kind": "TypeNominal",
                                     "name": "__Sealed",
-                                    "printedName": "CoreAuthenticator.Skie.MultiplatformLib.NotConnectedAction.__Sealed",
-                                    "usr": "s:17CoreAuthenticator4SkieO16MultiplatformLibO18NotConnectedActionO8__SealedO"
+                                    "printedName": "CoreAuthenticator.Skie.MultiplatformLib.Issue.__Sealed",
+                                    "usr": "s:17CoreAuthenticator4SkieO16MultiplatformLibO5IssueO8__SealedO"
                                   }
                                 ]
                               }
@@ -1881,50 +2178,50 @@
                           }
                         ],
                         "declKind": "EnumElement",
-                        "usr": "s:17CoreAuthenticator4SkieO16MultiplatformLibO18NotConnectedActionO8__SealedO5issueyAISo0abfgH5Issue_pcAImF",
-                        "mangledName": "$s17CoreAuthenticator4SkieO16MultiplatformLibO18NotConnectedActionO8__SealedO5issueyAISo0abfgH5Issue_pcAImF",
+                        "usr": "s:17CoreAuthenticator4SkieO16MultiplatformLibO5IssueO8__SealedO12nonRetriableyAISo0abf3NonI0CcAImF",
+                        "mangledName": "$s17CoreAuthenticator4SkieO16MultiplatformLibO5IssueO8__SealedO12nonRetriableyAISo0abf3NonI0CcAImF",
                         "moduleName": "CoreAuthenticator",
                         "fixedbinaryorder": 0
                       },
                       {
                         "kind": "Var",
-                        "name": "reLogin",
-                        "printedName": "reLogin",
+                        "name": "retriable",
+                        "printedName": "retriable",
                         "children": [
                           {
                             "kind": "TypeFunc",
                             "name": "Function",
-                            "printedName": "(CoreAuthenticator.Skie.MultiplatformLib.NotConnectedAction.__Sealed.Type) -> (CoreAuthenticator.NotConnectedActionReLogin) -> CoreAuthenticator.Skie.MultiplatformLib.NotConnectedAction.__Sealed",
+                            "printedName": "(CoreAuthenticator.Skie.MultiplatformLib.Issue.__Sealed.Type) -> (CoreAuthenticator.IssueRetriable) -> CoreAuthenticator.Skie.MultiplatformLib.Issue.__Sealed",
                             "children": [
                               {
                                 "kind": "TypeFunc",
                                 "name": "Function",
-                                "printedName": "(CoreAuthenticator.NotConnectedActionReLogin) -> CoreAuthenticator.Skie.MultiplatformLib.NotConnectedAction.__Sealed",
+                                "printedName": "(CoreAuthenticator.IssueRetriable) -> CoreAuthenticator.Skie.MultiplatformLib.Issue.__Sealed",
                                 "children": [
                                   {
                                     "kind": "TypeNominal",
                                     "name": "__Sealed",
-                                    "printedName": "CoreAuthenticator.Skie.MultiplatformLib.NotConnectedAction.__Sealed",
-                                    "usr": "s:17CoreAuthenticator4SkieO16MultiplatformLibO18NotConnectedActionO8__SealedO"
+                                    "printedName": "CoreAuthenticator.Skie.MultiplatformLib.Issue.__Sealed",
+                                    "usr": "s:17CoreAuthenticator4SkieO16MultiplatformLibO5IssueO8__SealedO"
                                   },
                                   {
                                     "kind": "TypeNominal",
-                                    "name": "NotConnectedActionReLogin",
-                                    "printedName": "CoreAuthenticator.NotConnectedActionReLogin",
-                                    "usr": "c:objc(cs)CoreAuthenticatorNotConnectedActionReLogin"
+                                    "name": "IssueRetriable",
+                                    "printedName": "CoreAuthenticator.IssueRetriable",
+                                    "usr": "c:objc(cs)CoreAuthenticatorIssueRetriable"
                                   }
                                 ]
                               },
                               {
                                 "kind": "TypeNominal",
                                 "name": "Metatype",
-                                "printedName": "CoreAuthenticator.Skie.MultiplatformLib.NotConnectedAction.__Sealed.Type",
+                                "printedName": "CoreAuthenticator.Skie.MultiplatformLib.Issue.__Sealed.Type",
                                 "children": [
                                   {
                                     "kind": "TypeNominal",
                                     "name": "__Sealed",
-                                    "printedName": "CoreAuthenticator.Skie.MultiplatformLib.NotConnectedAction.__Sealed",
-                                    "usr": "s:17CoreAuthenticator4SkieO16MultiplatformLibO18NotConnectedActionO8__SealedO"
+                                    "printedName": "CoreAuthenticator.Skie.MultiplatformLib.Issue.__Sealed",
+                                    "usr": "s:17CoreAuthenticator4SkieO16MultiplatformLibO5IssueO8__SealedO"
                                   }
                                 ]
                               }
@@ -1932,15 +2229,111 @@
                           }
                         ],
                         "declKind": "EnumElement",
-                        "usr": "s:17CoreAuthenticator4SkieO16MultiplatformLibO18NotConnectedActionO8__SealedO7reLoginyAISo0abfgh2ReK0CcAImF",
-                        "mangledName": "$s17CoreAuthenticator4SkieO16MultiplatformLibO18NotConnectedActionO8__SealedO7reLoginyAISo0abfgh2ReK0CcAImF",
+                        "usr": "s:17CoreAuthenticator4SkieO16MultiplatformLibO5IssueO8__SealedO9retriableyAISo0abF9RetriableCcAImF",
+                        "mangledName": "$s17CoreAuthenticator4SkieO16MultiplatformLibO5IssueO8__SealedO9retriableyAISo0abF9RetriableCcAImF",
                         "moduleName": "CoreAuthenticator",
                         "fixedbinaryorder": 1
+                      },
+                      {
+                        "kind": "Var",
+                        "name": "hashValue",
+                        "printedName": "hashValue",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int",
+                            "printedName": "Swift.Int",
+                            "usr": "s:Si"
+                          }
+                        ],
+                        "declKind": "Var",
+                        "usr": "s:17CoreAuthenticator4SkieO16MultiplatformLibO5IssueO8__SealedO9hashValueSivp",
+                        "mangledName": "$s17CoreAuthenticator4SkieO16MultiplatformLibO5IssueO8__SealedO9hashValueSivp",
+                        "moduleName": "CoreAuthenticator",
+                        "implicit": true,
+                        "accessors": [
+                          {
+                            "kind": "Accessor",
+                            "name": "Get",
+                            "printedName": "Get()",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Int",
+                                "printedName": "Swift.Int",
+                                "usr": "s:Si"
+                              }
+                            ],
+                            "declKind": "Accessor",
+                            "usr": "s:17CoreAuthenticator4SkieO16MultiplatformLibO5IssueO8__SealedO9hashValueSivg",
+                            "mangledName": "$s17CoreAuthenticator4SkieO16MultiplatformLibO5IssueO8__SealedO9hashValueSivg",
+                            "moduleName": "CoreAuthenticator",
+                            "implicit": true,
+                            "accessorKind": "get"
+                          }
+                        ]
+                      },
+                      {
+                        "kind": "Function",
+                        "name": "hash",
+                        "printedName": "hash(into:)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Hasher",
+                            "printedName": "Swift.Hasher",
+                            "paramValueOwnership": "InOut",
+                            "usr": "s:s6HasherV"
+                          }
+                        ],
+                        "declKind": "Func",
+                        "usr": "s:17CoreAuthenticator4SkieO16MultiplatformLibO5IssueO8__SealedO4hash4intoys6HasherVz_tF",
+                        "mangledName": "$s17CoreAuthenticator4SkieO16MultiplatformLibO5IssueO8__SealedO4hash4intoys6HasherVz_tF",
+                        "moduleName": "CoreAuthenticator",
+                        "implicit": true,
+                        "funcSelfKind": "NonMutating"
+                      },
+                      {
+                        "kind": "Function",
+                        "name": "==",
+                        "printedName": "==(_:_:)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Bool",
+                            "printedName": "Swift.Bool",
+                            "usr": "s:Sb"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "__Sealed",
+                            "printedName": "CoreAuthenticator.Skie.MultiplatformLib.Issue.__Sealed",
+                            "usr": "s:17CoreAuthenticator4SkieO16MultiplatformLibO5IssueO8__SealedO"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "__Sealed",
+                            "printedName": "CoreAuthenticator.Skie.MultiplatformLib.Issue.__Sealed",
+                            "usr": "s:17CoreAuthenticator4SkieO16MultiplatformLibO5IssueO8__SealedO"
+                          }
+                        ],
+                        "declKind": "Func",
+                        "usr": "s:17CoreAuthenticator4SkieO16MultiplatformLibO5IssueO8__SealedO2eeoiySbAI_AItFZ",
+                        "mangledName": "$s17CoreAuthenticator4SkieO16MultiplatformLibO5IssueO8__SealedO2eeoiySbAI_AItFZ",
+                        "moduleName": "CoreAuthenticator",
+                        "static": true,
+                        "implicit": true,
+                        "funcSelfKind": "NonMutating"
                       }
                     ],
                     "declKind": "Enum",
-                    "usr": "s:17CoreAuthenticator4SkieO16MultiplatformLibO18NotConnectedActionO8__SealedO",
-                    "mangledName": "$s17CoreAuthenticator4SkieO16MultiplatformLibO18NotConnectedActionO8__SealedO",
+                    "usr": "s:17CoreAuthenticator4SkieO16MultiplatformLibO5IssueO8__SealedO",
+                    "mangledName": "$s17CoreAuthenticator4SkieO16MultiplatformLibO5IssueO8__SealedO",
                     "moduleName": "CoreAuthenticator",
                     "declAttributes": [
                       "AccessControl",
@@ -1962,13 +2355,27 @@
                         "printedName": "Escapable",
                         "usr": "s:s9EscapableP",
                         "mangledName": "$ss9EscapableP"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "Hashable",
+                        "printedName": "Hashable",
+                        "usr": "s:SH",
+                        "mangledName": "$sSH"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "Equatable",
+                        "printedName": "Equatable",
+                        "usr": "s:SQ",
+                        "mangledName": "$sSQ"
                       }
                     ]
                   }
                 ],
                 "declKind": "Enum",
-                "usr": "s:17CoreAuthenticator4SkieO16MultiplatformLibO18NotConnectedActionO",
-                "mangledName": "$s17CoreAuthenticator4SkieO16MultiplatformLibO18NotConnectedActionO",
+                "usr": "s:17CoreAuthenticator4SkieO16MultiplatformLibO5IssueO",
+                "mangledName": "$s17CoreAuthenticator4SkieO16MultiplatformLibO5IssueO",
                 "moduleName": "CoreAuthenticator",
                 "declAttributes": [
                   "AccessControl"
@@ -2058,6 +2465,57 @@
                           },
                           {
                             "kind": "Var",
+                            "name": "mustReLogin",
+                            "printedName": "mustReLogin",
+                            "children": [
+                              {
+                                "kind": "TypeFunc",
+                                "name": "Function",
+                                "printedName": "(CoreAuthenticator.Skie.MultiplatformLib.AppStatus.LoginRequired.__Sealed.Type) -> (CoreAuthenticator.AppStatusLoginRequiredMustReLogin) -> CoreAuthenticator.Skie.MultiplatformLib.AppStatus.LoginRequired.__Sealed",
+                                "children": [
+                                  {
+                                    "kind": "TypeFunc",
+                                    "name": "Function",
+                                    "printedName": "(CoreAuthenticator.AppStatusLoginRequiredMustReLogin) -> CoreAuthenticator.Skie.MultiplatformLib.AppStatus.LoginRequired.__Sealed",
+                                    "children": [
+                                      {
+                                        "kind": "TypeNominal",
+                                        "name": "__Sealed",
+                                        "printedName": "CoreAuthenticator.Skie.MultiplatformLib.AppStatus.LoginRequired.__Sealed",
+                                        "usr": "s:17CoreAuthenticator4SkieO16MultiplatformLibO9AppStatusO13LoginRequiredO8__SealedO"
+                                      },
+                                      {
+                                        "kind": "TypeNominal",
+                                        "name": "AppStatusLoginRequiredMustReLogin",
+                                        "printedName": "CoreAuthenticator.AppStatusLoginRequiredMustReLogin",
+                                        "usr": "c:objc(cs)CoreAuthenticatorAppStatusLoginRequiredMustReLogin"
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "Metatype",
+                                    "printedName": "CoreAuthenticator.Skie.MultiplatformLib.AppStatus.LoginRequired.__Sealed.Type",
+                                    "children": [
+                                      {
+                                        "kind": "TypeNominal",
+                                        "name": "__Sealed",
+                                        "printedName": "CoreAuthenticator.Skie.MultiplatformLib.AppStatus.LoginRequired.__Sealed",
+                                        "usr": "s:17CoreAuthenticator4SkieO16MultiplatformLibO9AppStatusO13LoginRequiredO8__SealedO"
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ],
+                            "declKind": "EnumElement",
+                            "usr": "s:17CoreAuthenticator4SkieO16MultiplatformLibO9AppStatusO13LoginRequiredO8__SealedO06mustReH0yAKSo0abfghi4MustlH0CcAKmF",
+                            "mangledName": "$s17CoreAuthenticator4SkieO16MultiplatformLibO9AppStatusO13LoginRequiredO8__SealedO06mustReH0yAKSo0abfghi4MustlH0CcAKmF",
+                            "moduleName": "CoreAuthenticator",
+                            "fixedbinaryorder": 1
+                          },
+                          {
+                            "kind": "Var",
                             "name": "notMigrating",
                             "printedName": "notMigrating",
                             "children": [
@@ -2105,7 +2563,7 @@
                             "usr": "s:17CoreAuthenticator4SkieO16MultiplatformLibO9AppStatusO13LoginRequiredO8__SealedO12notMigratingyAKSo0abfghi3NotL0CcAKmF",
                             "mangledName": "$s17CoreAuthenticator4SkieO16MultiplatformLibO9AppStatusO13LoginRequiredO8__SealedO12notMigratingyAKSo0abfghi3NotL0CcAKmF",
                             "moduleName": "CoreAuthenticator",
-                            "fixedbinaryorder": 1
+                            "fixedbinaryorder": 2
                           },
                           {
                             "kind": "Var",
@@ -3481,17 +3939,17 @@
                       },
                       {
                         "kind": "Conformance",
-                        "name": "Escapable",
-                        "printedName": "Escapable",
-                        "usr": "s:s9EscapableP",
-                        "mangledName": "$ss9EscapableP"
-                      },
-                      {
-                        "kind": "Conformance",
                         "name": "Equatable",
                         "printedName": "Equatable",
                         "usr": "s:SQ",
                         "mangledName": "$sSQ"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "Escapable",
+                        "printedName": "Escapable",
+                        "usr": "s:s9EscapableP",
+                        "mangledName": "$ss9EscapableP"
                       },
                       {
                         "kind": "Conformance",
@@ -6561,20 +7019,6 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
             "name": "SkieSwiftFlowProtocol",
             "printedName": "SkieSwiftFlowProtocol",
             "children": [
@@ -6606,6 +7050,20 @@
             ],
             "usr": "s:17CoreAuthenticator21SkieSwiftFlowProtocolP",
             "mangledName": "$s17CoreAuthenticator21SkieSwiftFlowProtocolP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           },
           {
             "kind": "Conformance",
@@ -9263,20 +9721,6 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
             "name": "SkieSwiftFlowProtocol",
             "printedName": "SkieSwiftFlowProtocol",
             "children": [
@@ -9316,6 +9760,20 @@
             ],
             "usr": "s:17CoreAuthenticator21SkieSwiftFlowProtocolP",
             "mangledName": "$s17CoreAuthenticator21SkieSwiftFlowProtocolP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           },
           {
             "kind": "Conformance",
@@ -10691,20 +11149,6 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
             "name": "SkieSwiftFlowProtocol",
             "printedName": "SkieSwiftFlowProtocol",
             "children": [
@@ -10736,6 +11180,20 @@
             ],
             "usr": "s:17CoreAuthenticator21SkieSwiftFlowProtocolP",
             "mangledName": "$s17CoreAuthenticator21SkieSwiftFlowProtocolP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           },
           {
             "kind": "Conformance",
@@ -13019,20 +13477,6 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
             "name": "SkieSwiftFlowProtocol",
             "printedName": "SkieSwiftFlowProtocol",
             "children": [
@@ -13072,6 +13516,20 @@
             ],
             "usr": "s:17CoreAuthenticator21SkieSwiftFlowProtocolP",
             "mangledName": "$s17CoreAuthenticator21SkieSwiftFlowProtocolP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           },
           {
             "kind": "Conformance",
@@ -13923,20 +14381,6 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
             "name": "SkieSwiftFlowProtocol",
             "printedName": "SkieSwiftFlowProtocol",
             "children": [
@@ -13968,6 +14412,20 @@
             ],
             "usr": "s:17CoreAuthenticator21SkieSwiftFlowProtocolP",
             "mangledName": "$s17CoreAuthenticator21SkieSwiftFlowProtocolP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           },
           {
             "kind": "Conformance",
@@ -15068,20 +15526,6 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
             "name": "SkieSwiftFlowProtocol",
             "printedName": "SkieSwiftFlowProtocol",
             "children": [
@@ -15121,6 +15565,20 @@
             ],
             "usr": "s:17CoreAuthenticator21SkieSwiftFlowProtocolP",
             "mangledName": "$s17CoreAuthenticator21SkieSwiftFlowProtocolP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           },
           {
             "kind": "Conformance",
@@ -16090,20 +16548,6 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
             "name": "SkieSwiftFlowProtocol",
             "printedName": "SkieSwiftFlowProtocol",
             "children": [
@@ -16135,6 +16579,20 @@
             ],
             "usr": "s:17CoreAuthenticator21SkieSwiftFlowProtocolP",
             "mangledName": "$s17CoreAuthenticator21SkieSwiftFlowProtocolP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           },
           {
             "kind": "Conformance",
@@ -17578,20 +18036,6 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
             "name": "SkieSwiftFlowProtocol",
             "printedName": "SkieSwiftFlowProtocol",
             "children": [
@@ -17631,6 +18075,20 @@
             ],
             "usr": "s:17CoreAuthenticator21SkieSwiftFlowProtocolP",
             "mangledName": "$s17CoreAuthenticator21SkieSwiftFlowProtocolP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           },
           {
             "kind": "Conformance",
@@ -18610,20 +19068,6 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
             "name": "SkieSwiftFlowProtocol",
             "printedName": "SkieSwiftFlowProtocol",
             "children": [
@@ -18655,6 +19099,20 @@
             ],
             "usr": "s:17CoreAuthenticator21SkieSwiftFlowProtocolP",
             "mangledName": "$s17CoreAuthenticator21SkieSwiftFlowProtocolP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           },
           {
             "kind": "Conformance",
@@ -19923,20 +20381,6 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
             "name": "SkieSwiftFlowProtocol",
             "printedName": "SkieSwiftFlowProtocol",
             "children": [
@@ -19976,6 +20420,20 @@
             ],
             "usr": "s:17CoreAuthenticator21SkieSwiftFlowProtocolP",
             "mangledName": "$s17CoreAuthenticator21SkieSwiftFlowProtocolP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           },
           {
             "kind": "Conformance",
@@ -24213,17 +24671,39 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
+            "name": "BitwiseCopyable",
+            "printedName": "BitwiseCopyable",
+            "usr": "s:s15BitwiseCopyableP",
+            "mangledName": "$ss15BitwiseCopyableP"
           },
           {
             "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
+            "name": "_ObjectiveCBridgeable",
+            "printedName": "_ObjectiveCBridgeable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "_ObjectiveCType",
+                "printedName": "_ObjectiveCType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "__CrashReportLevel",
+                    "printedName": "CoreAuthenticator.__CrashReportLevel",
+                    "usr": "c:objc(cs)CoreAuthenticatorCrashReportLevel"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s21_ObjectiveCBridgeableP",
+            "mangledName": "$ss21_ObjectiveCBridgeableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
           },
           {
             "kind": "Conformance",
@@ -24271,39 +24751,17 @@
           },
           {
             "kind": "Conformance",
-            "name": "_ObjectiveCBridgeable",
-            "printedName": "_ObjectiveCBridgeable",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "_ObjectiveCType",
-                "printedName": "_ObjectiveCType",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "__CrashReportLevel",
-                    "printedName": "CoreAuthenticator.__CrashReportLevel",
-                    "usr": "c:objc(cs)CoreAuthenticatorCrashReportLevel"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:s21_ObjectiveCBridgeableP",
-            "mangledName": "$ss21_ObjectiveCBridgeableP"
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
           },
           {
             "kind": "Conformance",
-            "name": "Sendable",
-            "printedName": "Sendable",
-            "usr": "s:s8SendableP",
-            "mangledName": "$ss8SendableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "BitwiseCopyable",
-            "printedName": "BitwiseCopyable",
-            "usr": "s:s15BitwiseCopyableP",
-            "mangledName": "$ss15BitwiseCopyableP"
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           }
         ]
       },
@@ -24851,17 +25309,39 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
+            "name": "BitwiseCopyable",
+            "printedName": "BitwiseCopyable",
+            "usr": "s:s15BitwiseCopyableP",
+            "mangledName": "$ss15BitwiseCopyableP"
           },
           {
             "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
+            "name": "_ObjectiveCBridgeable",
+            "printedName": "_ObjectiveCBridgeable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "_ObjectiveCType",
+                "printedName": "_ObjectiveCType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "__BreadcrumbType",
+                    "printedName": "CoreAuthenticator.__BreadcrumbType",
+                    "usr": "c:objc(cs)CoreAuthenticatorBreadcrumbType"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s21_ObjectiveCBridgeableP",
+            "mangledName": "$ss21_ObjectiveCBridgeableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
           },
           {
             "kind": "Conformance",
@@ -24909,39 +25389,17 @@
           },
           {
             "kind": "Conformance",
-            "name": "_ObjectiveCBridgeable",
-            "printedName": "_ObjectiveCBridgeable",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "_ObjectiveCType",
-                "printedName": "_ObjectiveCType",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "__BreadcrumbType",
-                    "printedName": "CoreAuthenticator.__BreadcrumbType",
-                    "usr": "c:objc(cs)CoreAuthenticatorBreadcrumbType"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:s21_ObjectiveCBridgeableP",
-            "mangledName": "$ss21_ObjectiveCBridgeableP"
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
           },
           {
             "kind": "Conformance",
-            "name": "Sendable",
-            "printedName": "Sendable",
-            "usr": "s:s8SendableP",
-            "mangledName": "$ss8SendableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "BitwiseCopyable",
-            "printedName": "BitwiseCopyable",
-            "usr": "s:s15BitwiseCopyableP",
-            "mangledName": "$ss15BitwiseCopyableP"
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           }
         ]
       },
@@ -25487,17 +25945,39 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
+            "name": "BitwiseCopyable",
+            "printedName": "BitwiseCopyable",
+            "usr": "s:s15BitwiseCopyableP",
+            "mangledName": "$ss15BitwiseCopyableP"
           },
           {
             "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
+            "name": "_ObjectiveCBridgeable",
+            "printedName": "_ObjectiveCBridgeable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "_ObjectiveCType",
+                "printedName": "_ObjectiveCType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "__Theme",
+                    "printedName": "CoreAuthenticator.__Theme",
+                    "usr": "c:objc(cs)CoreAuthenticatorTheme"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s21_ObjectiveCBridgeableP",
+            "mangledName": "$ss21_ObjectiveCBridgeableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
           },
           {
             "kind": "Conformance",
@@ -25545,39 +26025,17 @@
           },
           {
             "kind": "Conformance",
-            "name": "_ObjectiveCBridgeable",
-            "printedName": "_ObjectiveCBridgeable",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "_ObjectiveCType",
-                "printedName": "_ObjectiveCType",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "__Theme",
-                    "printedName": "CoreAuthenticator.__Theme",
-                    "usr": "c:objc(cs)CoreAuthenticatorTheme"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:s21_ObjectiveCBridgeableP",
-            "mangledName": "$ss21_ObjectiveCBridgeableP"
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
           },
           {
             "kind": "Conformance",
-            "name": "Sendable",
-            "printedName": "Sendable",
-            "usr": "s:s8SendableP",
-            "mangledName": "$ss8SendableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "BitwiseCopyable",
-            "printedName": "BitwiseCopyable",
-            "usr": "s:s15BitwiseCopyableP",
-            "mangledName": "$ss15BitwiseCopyableP"
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           }
         ]
       },
@@ -26085,17 +26543,39 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
+            "name": "BitwiseCopyable",
+            "printedName": "BitwiseCopyable",
+            "usr": "s:s15BitwiseCopyableP",
+            "mangledName": "$ss15BitwiseCopyableP"
           },
           {
             "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
+            "name": "_ObjectiveCBridgeable",
+            "printedName": "_ObjectiveCBridgeable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "_ObjectiveCType",
+                "printedName": "_ObjectiveCType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "__KeyStorageLocation",
+                    "printedName": "CoreAuthenticator.__KeyStorageLocation",
+                    "usr": "c:objc(cs)CoreAuthenticatorKeyStorageLocation"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s21_ObjectiveCBridgeableP",
+            "mangledName": "$ss21_ObjectiveCBridgeableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
           },
           {
             "kind": "Conformance",
@@ -26143,39 +26623,17 @@
           },
           {
             "kind": "Conformance",
-            "name": "_ObjectiveCBridgeable",
-            "printedName": "_ObjectiveCBridgeable",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "_ObjectiveCType",
-                "printedName": "_ObjectiveCType",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "__KeyStorageLocation",
-                    "printedName": "CoreAuthenticator.__KeyStorageLocation",
-                    "usr": "c:objc(cs)CoreAuthenticatorKeyStorageLocation"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:s21_ObjectiveCBridgeableP",
-            "mangledName": "$ss21_ObjectiveCBridgeableP"
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
           },
           {
             "kind": "Conformance",
-            "name": "Sendable",
-            "printedName": "Sendable",
-            "usr": "s:s8SendableP",
-            "mangledName": "$ss8SendableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "BitwiseCopyable",
-            "printedName": "BitwiseCopyable",
-            "usr": "s:s15BitwiseCopyableP",
-            "mangledName": "$ss15BitwiseCopyableP"
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           }
         ]
       },
@@ -26801,17 +27259,39 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
+            "name": "BitwiseCopyable",
+            "printedName": "BitwiseCopyable",
+            "usr": "s:s15BitwiseCopyableP",
+            "mangledName": "$ss15BitwiseCopyableP"
           },
           {
             "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
+            "name": "_ObjectiveCBridgeable",
+            "printedName": "_ObjectiveCBridgeable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "_ObjectiveCType",
+                "printedName": "_ObjectiveCType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "__ApiResponseStatus",
+                    "printedName": "CoreAuthenticator.__ApiResponseStatus",
+                    "usr": "c:objc(cs)CoreAuthenticatorApiResponseStatus"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s21_ObjectiveCBridgeableP",
+            "mangledName": "$ss21_ObjectiveCBridgeableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
           },
           {
             "kind": "Conformance",
@@ -26859,39 +27339,17 @@
           },
           {
             "kind": "Conformance",
-            "name": "_ObjectiveCBridgeable",
-            "printedName": "_ObjectiveCBridgeable",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "_ObjectiveCType",
-                "printedName": "_ObjectiveCType",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "__ApiResponseStatus",
-                    "printedName": "CoreAuthenticator.__ApiResponseStatus",
-                    "usr": "c:objc(cs)CoreAuthenticatorApiResponseStatus"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:s21_ObjectiveCBridgeableP",
-            "mangledName": "$ss21_ObjectiveCBridgeableP"
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
           },
           {
             "kind": "Conformance",
-            "name": "Sendable",
-            "printedName": "Sendable",
-            "usr": "s:s8SendableP",
-            "mangledName": "$ss8SendableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "BitwiseCopyable",
-            "printedName": "BitwiseCopyable",
-            "usr": "s:s15BitwiseCopyableP",
-            "mangledName": "$ss15BitwiseCopyableP"
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           }
         ]
       },
@@ -27439,17 +27897,39 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
+            "name": "BitwiseCopyable",
+            "printedName": "BitwiseCopyable",
+            "usr": "s:s15BitwiseCopyableP",
+            "mangledName": "$ss15BitwiseCopyableP"
           },
           {
             "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
+            "name": "_ObjectiveCBridgeable",
+            "printedName": "_ObjectiveCBridgeable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "_ObjectiveCType",
+                "printedName": "_ObjectiveCType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "__MatomoCategory",
+                    "printedName": "CoreAuthenticator.__MatomoCategory",
+                    "usr": "c:objc(cs)CoreAuthenticatorMatomoCategory"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s21_ObjectiveCBridgeableP",
+            "mangledName": "$ss21_ObjectiveCBridgeableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
           },
           {
             "kind": "Conformance",
@@ -27497,39 +27977,17 @@
           },
           {
             "kind": "Conformance",
-            "name": "_ObjectiveCBridgeable",
-            "printedName": "_ObjectiveCBridgeable",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "_ObjectiveCType",
-                "printedName": "_ObjectiveCType",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "__MatomoCategory",
-                    "printedName": "CoreAuthenticator.__MatomoCategory",
-                    "usr": "c:objc(cs)CoreAuthenticatorMatomoCategory"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:s21_ObjectiveCBridgeableP",
-            "mangledName": "$ss21_ObjectiveCBridgeableP"
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
           },
           {
             "kind": "Conformance",
-            "name": "Sendable",
-            "printedName": "Sendable",
-            "usr": "s:s8SendableP",
-            "mangledName": "$ss8SendableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "BitwiseCopyable",
-            "printedName": "BitwiseCopyable",
-            "usr": "s:s15BitwiseCopyableP",
-            "mangledName": "$ss15BitwiseCopyableP"
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           }
         ]
       },
@@ -28153,17 +28611,39 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
+            "name": "BitwiseCopyable",
+            "printedName": "BitwiseCopyable",
+            "usr": "s:s15BitwiseCopyableP",
+            "mangledName": "$ss15BitwiseCopyableP"
           },
           {
             "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
+            "name": "_ObjectiveCBridgeable",
+            "printedName": "_ObjectiveCBridgeable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "_ObjectiveCType",
+                "printedName": "_ObjectiveCType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "__MatomoName",
+                    "printedName": "CoreAuthenticator.__MatomoName",
+                    "usr": "c:objc(cs)CoreAuthenticatorMatomoName"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s21_ObjectiveCBridgeableP",
+            "mangledName": "$ss21_ObjectiveCBridgeableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
           },
           {
             "kind": "Conformance",
@@ -28211,39 +28691,17 @@
           },
           {
             "kind": "Conformance",
-            "name": "_ObjectiveCBridgeable",
-            "printedName": "_ObjectiveCBridgeable",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "_ObjectiveCType",
-                "printedName": "_ObjectiveCType",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "__MatomoName",
-                    "printedName": "CoreAuthenticator.__MatomoName",
-                    "usr": "c:objc(cs)CoreAuthenticatorMatomoName"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:s21_ObjectiveCBridgeableP",
-            "mangledName": "$ss21_ObjectiveCBridgeableP"
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
           },
           {
             "kind": "Conformance",
-            "name": "Sendable",
-            "printedName": "Sendable",
-            "usr": "s:s8SendableP",
-            "mangledName": "$ss8SendableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "BitwiseCopyable",
-            "printedName": "BitwiseCopyable",
-            "usr": "s:s15BitwiseCopyableP",
-            "mangledName": "$ss15BitwiseCopyableP"
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           }
         ]
       },
@@ -28715,27 +29173,6 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
             "name": "CaseIterable",
             "printedName": "CaseIterable",
             "children": [
@@ -28763,6 +29200,27 @@
             ],
             "usr": "s:s12CaseIterableP",
             "mangledName": "$ss12CaseIterableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "BitwiseCopyable",
+            "printedName": "BitwiseCopyable",
+            "usr": "s:s15BitwiseCopyableP",
+            "mangledName": "$ss15BitwiseCopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
           },
           {
             "kind": "Conformance",
@@ -28795,17 +29253,17 @@
           },
           {
             "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Sendable",
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "BitwiseCopyable",
-            "printedName": "BitwiseCopyable",
-            "usr": "s:s15BitwiseCopyableP",
-            "mangledName": "$ss15BitwiseCopyableP"
           }
         ]
       },
@@ -29313,17 +29771,39 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
+            "name": "BitwiseCopyable",
+            "printedName": "BitwiseCopyable",
+            "usr": "s:s15BitwiseCopyableP",
+            "mangledName": "$ss15BitwiseCopyableP"
           },
           {
             "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
+            "name": "_ObjectiveCBridgeable",
+            "printedName": "_ObjectiveCBridgeable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "_ObjectiveCType",
+                "printedName": "_ObjectiveCType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "__JournalMode",
+                    "printedName": "CoreAuthenticator.Room_runtimeRoomDatabase.__JournalMode",
+                    "usr": "c:objc(cs)CoreAuthenticatorRoom_runtimeRoomDatabaseJournalMode"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s21_ObjectiveCBridgeableP",
+            "mangledName": "$ss21_ObjectiveCBridgeableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
           },
           {
             "kind": "Conformance",
@@ -29371,39 +29851,17 @@
           },
           {
             "kind": "Conformance",
-            "name": "_ObjectiveCBridgeable",
-            "printedName": "_ObjectiveCBridgeable",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "_ObjectiveCType",
-                "printedName": "_ObjectiveCType",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "__JournalMode",
-                    "printedName": "CoreAuthenticator.Room_runtimeRoomDatabase.__JournalMode",
-                    "usr": "c:objc(cs)CoreAuthenticatorRoom_runtimeRoomDatabaseJournalMode"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:s21_ObjectiveCBridgeableP",
-            "mangledName": "$ss21_ObjectiveCBridgeableP"
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
           },
           {
             "kind": "Conformance",
-            "name": "Sendable",
-            "printedName": "Sendable",
-            "usr": "s:s8SendableP",
-            "mangledName": "$ss8SendableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "BitwiseCopyable",
-            "printedName": "BitwiseCopyable",
-            "usr": "s:s15BitwiseCopyableP",
-            "mangledName": "$ss15BitwiseCopyableP"
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           }
         ]
       },
@@ -29591,8 +30049,8 @@
           {
             "kind": "TypeNominal",
             "name": "__Sealed",
-            "printedName": "CoreAuthenticator.Skie.MultiplatformLib.NotConnectedAction.__Sealed",
-            "usr": "s:17CoreAuthenticator4SkieO16MultiplatformLibO18NotConnectedActionO8__SealedO"
+            "printedName": "CoreAuthenticator.Skie.MultiplatformLib.Account.Status.NotConnected.__Sealed",
+            "usr": "s:17CoreAuthenticator4SkieO16MultiplatformLibO7AccountO6StatusO12NotConnectedO8__SealedO"
           },
           {
             "kind": "TypeNominal",
@@ -29601,11 +30059,11 @@
           }
         ],
         "declKind": "Func",
-        "usr": "s:17CoreAuthenticator6onEnum2ofAA4SkieO16MultiplatformLibO18NotConnectedActionO8__SealedOx_tSo0abijK0RzlF",
-        "mangledName": "$s17CoreAuthenticator6onEnum2ofAA4SkieO16MultiplatformLibO18NotConnectedActionO8__SealedOx_tSo0abijK0RzlF",
+        "usr": "s:17CoreAuthenticator6onEnum2ofAA4SkieO16MultiplatformLibO7AccountO6StatusO12NotConnectedO8__SealedOx_tSo0abijkL0RzlF",
+        "mangledName": "$s17CoreAuthenticator6onEnum2ofAA4SkieO16MultiplatformLibO7AccountO6StatusO12NotConnectedO8__SealedOx_tSo0abijkL0RzlF",
         "moduleName": "CoreAuthenticator",
-        "genericSig": "<τ_0_0 where τ_0_0 : CoreAuthenticator.NotConnectedAction>",
-        "sugared_genericSig": "<__Sealed where __Sealed : CoreAuthenticator.NotConnectedAction>",
+        "genericSig": "<τ_0_0 where τ_0_0 : CoreAuthenticator.AccountStatusNotConnected>",
+        "sugared_genericSig": "<__Sealed where __Sealed : CoreAuthenticator.AccountStatusNotConnected>",
         "declAttributes": [
           "AccessControl"
         ],
@@ -29619,13 +30077,13 @@
           {
             "kind": "TypeNominal",
             "name": "Optional",
-            "printedName": "CoreAuthenticator.Skie.MultiplatformLib.NotConnectedAction.__Sealed?",
+            "printedName": "CoreAuthenticator.Skie.MultiplatformLib.Account.Status.NotConnected.__Sealed?",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "__Sealed",
-                "printedName": "CoreAuthenticator.Skie.MultiplatformLib.NotConnectedAction.__Sealed",
-                "usr": "s:17CoreAuthenticator4SkieO16MultiplatformLibO18NotConnectedActionO8__SealedO"
+                "printedName": "CoreAuthenticator.Skie.MultiplatformLib.Account.Status.NotConnected.__Sealed",
+                "usr": "s:17CoreAuthenticator4SkieO16MultiplatformLibO7AccountO6StatusO12NotConnectedO8__SealedO"
               }
             ],
             "usr": "s:Sq"
@@ -29645,11 +30103,11 @@
           }
         ],
         "declKind": "Func",
-        "usr": "s:17CoreAuthenticator6onEnum2ofAA4SkieO16MultiplatformLibO18NotConnectedActionO8__SealedOSgxSg_tSo0abijK0RzlF",
-        "mangledName": "$s17CoreAuthenticator6onEnum2ofAA4SkieO16MultiplatformLibO18NotConnectedActionO8__SealedOSgxSg_tSo0abijK0RzlF",
+        "usr": "s:17CoreAuthenticator6onEnum2ofAA4SkieO16MultiplatformLibO7AccountO6StatusO12NotConnectedO8__SealedOSgxSg_tSo0abijkL0RzlF",
+        "mangledName": "$s17CoreAuthenticator6onEnum2ofAA4SkieO16MultiplatformLibO7AccountO6StatusO12NotConnectedO8__SealedOSgxSg_tSo0abijkL0RzlF",
         "moduleName": "CoreAuthenticator",
-        "genericSig": "<τ_0_0 where τ_0_0 : CoreAuthenticator.NotConnectedAction>",
-        "sugared_genericSig": "<__Sealed where __Sealed : CoreAuthenticator.NotConnectedAction>",
+        "genericSig": "<τ_0_0 where τ_0_0 : CoreAuthenticator.AccountStatusNotConnected>",
+        "sugared_genericSig": "<__Sealed where __Sealed : CoreAuthenticator.AccountStatusNotConnected>",
         "declAttributes": [
           "AccessControl",
           "DisfavoredOverload"
@@ -29674,8 +30132,8 @@
           {
             "kind": "TypeNominal",
             "name": "__Sealed",
-            "printedName": "CoreAuthenticator.Skie.MultiplatformLib.NotConnectedAction.Issue.__Sealed",
-            "usr": "s:17CoreAuthenticator4SkieO16MultiplatformLibO18NotConnectedActionO5IssueO8__SealedO"
+            "printedName": "CoreAuthenticator.Skie.MultiplatformLib.Issue.__Sealed",
+            "usr": "s:17CoreAuthenticator4SkieO16MultiplatformLibO5IssueO8__SealedO"
           },
           {
             "kind": "TypeNominal",
@@ -29684,11 +30142,11 @@
           }
         ],
         "declKind": "Func",
-        "usr": "s:17CoreAuthenticator6onEnum2ofAA4SkieO16MultiplatformLibO18NotConnectedActionO5IssueO8__SealedOx_tSo0abijkL0RzlF",
-        "mangledName": "$s17CoreAuthenticator6onEnum2ofAA4SkieO16MultiplatformLibO18NotConnectedActionO5IssueO8__SealedOx_tSo0abijkL0RzlF",
+        "usr": "s:17CoreAuthenticator6onEnum2ofAA4SkieO16MultiplatformLibO5IssueO8__SealedOx_tSo0abI0RzlF",
+        "mangledName": "$s17CoreAuthenticator6onEnum2ofAA4SkieO16MultiplatformLibO5IssueO8__SealedOx_tSo0abI0RzlF",
         "moduleName": "CoreAuthenticator",
-        "genericSig": "<τ_0_0 where τ_0_0 : CoreAuthenticator.NotConnectedActionIssue>",
-        "sugared_genericSig": "<__Sealed where __Sealed : CoreAuthenticator.NotConnectedActionIssue>",
+        "genericSig": "<τ_0_0 where τ_0_0 : CoreAuthenticator.Issue>",
+        "sugared_genericSig": "<__Sealed where __Sealed : CoreAuthenticator.Issue>",
         "declAttributes": [
           "AccessControl"
         ],
@@ -29702,13 +30160,13 @@
           {
             "kind": "TypeNominal",
             "name": "Optional",
-            "printedName": "CoreAuthenticator.Skie.MultiplatformLib.NotConnectedAction.Issue.__Sealed?",
+            "printedName": "CoreAuthenticator.Skie.MultiplatformLib.Issue.__Sealed?",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "__Sealed",
-                "printedName": "CoreAuthenticator.Skie.MultiplatformLib.NotConnectedAction.Issue.__Sealed",
-                "usr": "s:17CoreAuthenticator4SkieO16MultiplatformLibO18NotConnectedActionO5IssueO8__SealedO"
+                "printedName": "CoreAuthenticator.Skie.MultiplatformLib.Issue.__Sealed",
+                "usr": "s:17CoreAuthenticator4SkieO16MultiplatformLibO5IssueO8__SealedO"
               }
             ],
             "usr": "s:Sq"
@@ -29728,11 +30186,94 @@
           }
         ],
         "declKind": "Func",
-        "usr": "s:17CoreAuthenticator6onEnum2ofAA4SkieO16MultiplatformLibO18NotConnectedActionO5IssueO8__SealedOSgxSg_tSo0abijkL0RzlF",
-        "mangledName": "$s17CoreAuthenticator6onEnum2ofAA4SkieO16MultiplatformLibO18NotConnectedActionO5IssueO8__SealedOSgxSg_tSo0abijkL0RzlF",
+        "usr": "s:17CoreAuthenticator6onEnum2ofAA4SkieO16MultiplatformLibO5IssueO8__SealedOSgxSg_tSo0abI0RzlF",
+        "mangledName": "$s17CoreAuthenticator6onEnum2ofAA4SkieO16MultiplatformLibO5IssueO8__SealedOSgxSg_tSo0abI0RzlF",
         "moduleName": "CoreAuthenticator",
-        "genericSig": "<τ_0_0 where τ_0_0 : CoreAuthenticator.NotConnectedActionIssue>",
-        "sugared_genericSig": "<__Sealed where __Sealed : CoreAuthenticator.NotConnectedActionIssue>",
+        "genericSig": "<τ_0_0 where τ_0_0 : CoreAuthenticator.Issue>",
+        "sugared_genericSig": "<__Sealed where __Sealed : CoreAuthenticator.Issue>",
+        "declAttributes": [
+          "AccessControl",
+          "DisfavoredOverload"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "CoreAuthenticator",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Function",
+        "name": "onEnum",
+        "printedName": "onEnum(of:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "__Sealed",
+            "printedName": "CoreAuthenticator.Skie.MultiplatformLib.Issue.Retriable.Cause.__Sealed",
+            "usr": "s:17CoreAuthenticator4SkieO16MultiplatformLibO5IssueO9RetriableO5CauseO8__SealedO"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "GenericTypeParam",
+            "printedName": "τ_0_0"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "s:17CoreAuthenticator6onEnum2ofAA4SkieO16MultiplatformLibO5IssueO9RetriableO5CauseO8__SealedOx_tSo0abijK0RzlF",
+        "mangledName": "$s17CoreAuthenticator6onEnum2ofAA4SkieO16MultiplatformLibO5IssueO9RetriableO5CauseO8__SealedOx_tSo0abijK0RzlF",
+        "moduleName": "CoreAuthenticator",
+        "genericSig": "<τ_0_0 where τ_0_0 : CoreAuthenticator.IssueRetriableCause>",
+        "sugared_genericSig": "<__Sealed where __Sealed : CoreAuthenticator.IssueRetriableCause>",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Function",
+        "name": "onEnum",
+        "printedName": "onEnum(of:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Optional",
+            "printedName": "CoreAuthenticator.Skie.MultiplatformLib.Issue.Retriable.Cause.__Sealed?",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "__Sealed",
+                "printedName": "CoreAuthenticator.Skie.MultiplatformLib.Issue.Retriable.Cause.__Sealed",
+                "usr": "s:17CoreAuthenticator4SkieO16MultiplatformLibO5IssueO9RetriableO5CauseO8__SealedO"
+              }
+            ],
+            "usr": "s:Sq"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "Optional",
+            "printedName": "τ_0_0?",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_0"
+              }
+            ],
+            "usr": "s:Sq"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "s:17CoreAuthenticator6onEnum2ofAA4SkieO16MultiplatformLibO5IssueO9RetriableO5CauseO8__SealedOSgxSg_tSo0abijK0RzlF",
+        "mangledName": "$s17CoreAuthenticator6onEnum2ofAA4SkieO16MultiplatformLibO5IssueO9RetriableO5CauseO8__SealedOSgxSg_tSo0abijK0RzlF",
+        "moduleName": "CoreAuthenticator",
+        "genericSig": "<τ_0_0 where τ_0_0 : CoreAuthenticator.IssueRetriableCause>",
+        "sugared_genericSig": "<__Sealed where __Sealed : CoreAuthenticator.IssueRetriableCause>",
         "declAttributes": [
           "AccessControl",
           "DisfavoredOverload"
@@ -30806,38 +31347,10 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
           },
           {
             "kind": "Conformance",
@@ -30848,10 +31361,24 @@
           },
           {
             "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
           },
           {
             "kind": "Conformance",
@@ -30862,17 +31389,31 @@
           },
           {
             "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
           }
         ]
       },
       {
         "kind": "TypeDecl",
-        "name": "TokenBridge",
-        "printedName": "TokenBridge",
+        "name": "AuthenticatorBridge",
+        "printedName": "AuthenticatorBridge",
         "children": [
           {
             "kind": "Function",
@@ -30882,13 +31423,13 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "Swift.String?",
+                "printedName": "CoreAuthenticator.SharedApiToken?",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
+                    "name": "SharedApiToken",
+                    "printedName": "CoreAuthenticator.SharedApiToken",
+                    "usr": "c:objc(cs)CoreAuthenticatorSharedApiToken"
                   }
                 ],
                 "usr": "s:Sq"
@@ -30901,11 +31442,11 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:So28CoreAuthenticatorTokenBridgeP0aB0E03getC17FromCrossAppLogin6userIdSSSgs5Int64V_tYaKF",
-            "mangledName": "$sSo28CoreAuthenticatorTokenBridgeP0aB0E03getC17FromCrossAppLogin6userIdSSSgs5Int64V_tYaKF",
+            "usr": "s:So017CoreAuthenticatorB6BridgeP0aB0E25getTokenFromCrossAppLogin6userIdSo0ab9SharedApiE0CSgs5Int64V_tYaKF",
+            "mangledName": "$sSo017CoreAuthenticatorB6BridgeP0aB0E25getTokenFromCrossAppLogin6userIdSo0ab9SharedApiE0CSgs5Int64V_tYaKF",
             "moduleName": "CoreAuthenticator",
-            "genericSig": "<τ_0_0 where τ_0_0 : CoreAuthenticator.TokenBridge>",
-            "sugared_genericSig": "<Self where Self : CoreAuthenticator.TokenBridge>",
+            "genericSig": "<τ_0_0 where τ_0_0 : CoreAuthenticator.AuthenticatorBridge>",
+            "sugared_genericSig": "<Self where Self : CoreAuthenticator.AuthenticatorBridge>",
             "intro_Macosx": "10.15",
             "intro_iOS": "13",
             "intro_tvOS": "13",
@@ -30948,11 +31489,11 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:So28CoreAuthenticatorTokenBridgeP0aB0E03getC12FromDatabase6userIdSSSgs5Int64V_tYaKF",
-            "mangledName": "$sSo28CoreAuthenticatorTokenBridgeP0aB0E03getC12FromDatabase6userIdSSSgs5Int64V_tYaKF",
+            "usr": "s:So017CoreAuthenticatorB6BridgeP0aB0E20getTokenFromDatabase6userIdSSSgs5Int64V_tYaKF",
+            "mangledName": "$sSo017CoreAuthenticatorB6BridgeP0aB0E20getTokenFromDatabase6userIdSSSgs5Int64V_tYaKF",
             "moduleName": "CoreAuthenticator",
-            "genericSig": "<τ_0_0 where τ_0_0 : CoreAuthenticator.TokenBridge>",
-            "sugared_genericSig": "<Self where Self : CoreAuthenticator.TokenBridge>",
+            "genericSig": "<τ_0_0 where τ_0_0 : CoreAuthenticator.AuthenticatorBridge>",
+            "sugared_genericSig": "<Self where Self : CoreAuthenticator.AuthenticatorBridge>",
             "intro_Macosx": "10.15",
             "intro_iOS": "13",
             "intro_tvOS": "13",
@@ -30992,11 +31533,49 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:So28CoreAuthenticatorTokenBridgeP0aB0E07persistC10ForAccount6userId5tokenys5Int64V_SStYaKF",
-            "mangledName": "$sSo28CoreAuthenticatorTokenBridgeP0aB0E07persistC10ForAccount6userId5tokenys5Int64V_SStYaKF",
+            "usr": "s:So017CoreAuthenticatorB6BridgeP0aB0E22persistTokenForAccount6userId5tokenys5Int64V_SStYaKF",
+            "mangledName": "$sSo017CoreAuthenticatorB6BridgeP0aB0E22persistTokenForAccount6userId5tokenys5Int64V_SStYaKF",
             "moduleName": "CoreAuthenticator",
-            "genericSig": "<τ_0_0 where τ_0_0 : CoreAuthenticator.TokenBridge>",
-            "sugared_genericSig": "<Self where Self : CoreAuthenticator.TokenBridge>",
+            "genericSig": "<τ_0_0 where τ_0_0 : CoreAuthenticator.AuthenticatorBridge>",
+            "sugared_genericSig": "<Self where Self : CoreAuthenticator.AuthenticatorBridge>",
+            "intro_Macosx": "10.15",
+            "intro_iOS": "13",
+            "intro_tvOS": "13",
+            "intro_watchOS": "6",
+            "declAttributes": [
+              "AccessControl",
+              "Available",
+              "Available",
+              "Available",
+              "Available"
+            ],
+            "isFromExtension": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "persistUserProfile",
+            "printedName": "persistUserProfile(userProfile:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "SharedUserProfile",
+                "printedName": "CoreAuthenticator.SharedUserProfile",
+                "usr": "c:objc(cs)CoreAuthenticatorSharedUserProfile"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:So017CoreAuthenticatorB6BridgeP0aB0E18persistUserProfile04userF0ySo0ab6SharedeF0C_tYaKF",
+            "mangledName": "$sSo017CoreAuthenticatorB6BridgeP0aB0E18persistUserProfile04userF0ySo0ab6SharedeF0C_tYaKF",
+            "moduleName": "CoreAuthenticator",
+            "genericSig": "<τ_0_0 where τ_0_0 : CoreAuthenticator.AuthenticatorBridge>",
+            "sugared_genericSig": "<Self where Self : CoreAuthenticator.AuthenticatorBridge>",
             "intro_Macosx": "10.15",
             "intro_iOS": "13",
             "intro_tvOS": "13",
@@ -31014,11 +31593,11 @@
           }
         ],
         "declKind": "Protocol",
-        "usr": "c:objc(pl)CoreAuthenticatorTokenBridge",
+        "usr": "c:objc(pl)CoreAuthenticatorAuthenticatorBridge",
         "moduleName": "CoreAuthenticator",
         "genericSig": "<τ_0_0 : AnyObject>",
         "sugared_genericSig": "<Self : AnyObject>",
-        "objc_name": "CoreAuthenticatorTokenBridge",
+        "objc_name": "CoreAuthenticatorAuthenticatorBridge",
         "declAttributes": [
           "ObjC",
           "Dynamic"
@@ -31264,38 +31843,10 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
           },
           {
             "kind": "Conformance",
@@ -31306,10 +31857,24 @@
           },
           {
             "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
           },
           {
             "kind": "Conformance",
@@ -31320,10 +31885,24 @@
           },
           {
             "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
           }
         ]
       },
@@ -31483,38 +32062,10 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
           },
           {
             "kind": "Conformance",
@@ -31525,10 +32076,24 @@
           },
           {
             "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
           },
           {
             "kind": "Conformance",
@@ -31539,10 +32104,24 @@
           },
           {
             "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
           }
         ]
       },
@@ -31642,38 +32221,10 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
           },
           {
             "kind": "Conformance",
@@ -31684,10 +32235,24 @@
           },
           {
             "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
           },
           {
             "kind": "Conformance",
@@ -31698,10 +32263,24 @@
           },
           {
             "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
           }
         ]
       },
@@ -31752,38 +32331,10 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
           },
           {
             "kind": "Conformance",
@@ -31794,10 +32345,24 @@
           },
           {
             "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
           },
           {
             "kind": "Conformance",
@@ -31808,10 +32373,24 @@
           },
           {
             "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
           }
         ]
       },
@@ -31862,38 +32441,10 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
           },
           {
             "kind": "Conformance",
@@ -31904,10 +32455,24 @@
           },
           {
             "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
           },
           {
             "kind": "Conformance",
@@ -31918,10 +32483,24 @@
           },
           {
             "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
           }
         ]
       },
@@ -31972,38 +32551,10 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
           },
           {
             "kind": "Conformance",
@@ -32014,10 +32565,24 @@
           },
           {
             "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
           },
           {
             "kind": "Conformance",
@@ -32028,10 +32593,24 @@
           },
           {
             "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
           }
         ]
       },
@@ -32082,38 +32661,10 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
           },
           {
             "kind": "Conformance",
@@ -32124,10 +32675,24 @@
           },
           {
             "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
           },
           {
             "kind": "Conformance",
@@ -32138,10 +32703,24 @@
           },
           {
             "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
           }
         ]
       },
@@ -32192,38 +32771,10 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
           },
           {
             "kind": "Conformance",
@@ -32234,10 +32785,24 @@
           },
           {
             "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
           },
           {
             "kind": "Conformance",
@@ -32248,10 +32813,24 @@
           },
           {
             "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
           }
         ]
       },
@@ -32302,38 +32881,10 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
           },
           {
             "kind": "Conformance",
@@ -32344,10 +32895,24 @@
           },
           {
             "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
           },
           {
             "kind": "Conformance",
@@ -32358,10 +32923,24 @@
           },
           {
             "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
           }
         ]
       },
@@ -32412,38 +32991,10 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
           },
           {
             "kind": "Conformance",
@@ -32454,10 +33005,24 @@
           },
           {
             "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
           },
           {
             "kind": "Conformance",
@@ -32468,10 +33033,24 @@
           },
           {
             "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
           }
         ]
       },
@@ -32522,38 +33101,10 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
           },
           {
             "kind": "Conformance",
@@ -32564,10 +33115,24 @@
           },
           {
             "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
           },
           {
             "kind": "Conformance",
@@ -32578,10 +33143,24 @@
           },
           {
             "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
           }
         ]
       },
@@ -32633,38 +33212,10 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
           },
           {
             "kind": "Conformance",
@@ -32675,10 +33226,24 @@
           },
           {
             "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
           },
           {
             "kind": "Conformance",
@@ -32689,10 +33254,24 @@
           },
           {
             "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
           }
         ]
       }

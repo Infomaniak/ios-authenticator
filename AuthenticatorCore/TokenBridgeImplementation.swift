@@ -56,22 +56,26 @@ final class TokenBridgeImplementation: AuthenticatorBridge {
         await accountManager.userProfileStore.addUserProfile(localUserProfile)
     }
 
-    func __getTokenFromDatabase(userId: Int64) async throws -> String? {
-        return tokenStore.tokenFor(userId: TokenStore.UserId(userId))?.apiToken.accessToken
+    func __getTokenFromDatabase(userId: Int64) async throws -> SharedApiToken? {
+        guard let token = tokenStore.tokenFor(userId: TokenStore.UserId(userId)) else {
+            return nil
+        }
+
+        return SharedApiToken(from: token.apiToken)
     }
 
-    func __persistTokenForAccount(userId: Int64, token: String) async throws {
+    func __persistTokenForAccount(userId: Int64, token: SharedApiToken) async throws {
         tokenStore.removeTokenFor(userId: TokenStore.UserId(userId))
 
         @InjectService var deviceManager: DeviceManagerable
         let deviceId = try await deviceManager.getOrCreateCurrentDevice().uid
 
         let apiToken = ApiToken(
-            accessToken: token,
-            expiresIn: 0,
-            refreshToken: nil,
-            scope: "",
-            tokenType: "",
+            accessToken: token.accessToken,
+            expiresIn: Int(token.expiresIn),
+            refreshToken: token.refreshToken,
+            scope: token.scope ?? "",
+            tokenType: token.tokenType,
             userId: Int(userId),
             expirationDate: Date.distantFuture
         )
