@@ -27,6 +27,30 @@ public final class MainViewState: ObservableObject, @MainActor Equatable {
 
     @Published public var selectedAccount: UIAccount?
     @Published public var accounts: [UIAccount]
+    @Published public var passwordChangedAccount: UIPasswordChangedAccount?
+    @Published public var passwordChangedAccountConfirmation: UIPasswordChangedAccount?
+
+    public var isShowingPasswordChangedAlert: Bool {
+        get {
+            passwordChangedAccount != nil
+        }
+        set {
+            if !newValue {
+                passwordChangedAccount = nil
+            }
+        }
+    }
+
+    public var isShowingPasswordChangedConfirmationAlert: Bool {
+        get {
+            passwordChangedAccountConfirmation != nil
+        }
+        set {
+            if !newValue {
+                passwordChangedAccountConfirmation = nil
+            }
+        }
+    }
 
     public init(accounts: [UIAccount] = []) {
         self.accounts = accounts
@@ -37,8 +61,23 @@ public final class MainViewState: ObservableObject, @MainActor Equatable {
         Task {
             for try await newAccounts in authenticatorFacade.accounts {
                 let newUIAccounts = newAccounts.map { UIAccount(account: $0) }
+                let accountsWithChangedPassword = newAccounts
+                    .compactMap {
+                        if let status = $0.status as? AccountStatusLoggedIn,
+                           let passwordChangedAck = status.passwordChangedAck {
+                            return UIPasswordChangedAccount(
+                                id: Int($0.id),
+                                email: $0.email,
+                                passwordChangedAck: passwordChangedAck
+                            )
+                        } else {
+                            return nil
+                        }
+                    }
+
                 withAnimation {
                     self.accounts = newUIAccounts
+                    passwordChangedAccount = accountsWithChangedPassword.first
                 }
             }
         }
