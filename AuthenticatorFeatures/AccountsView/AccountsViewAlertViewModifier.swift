@@ -16,10 +16,10 @@
  along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-import SwiftUI
+import AuthenticatorCore
 import AuthenticatorCoreUI
 import AuthenticatorResources
-import AuthenticatorCore
+import SwiftUI
 
 extension View {
     func accountsViewAlert() -> some View {
@@ -35,49 +35,47 @@ struct AccountsViewAlertViewModifier: ViewModifier {
     func body(content: Content) -> some View {
         content
             .alert(
-                AuthenticatorResourcesStrings.alertDialogPasswordChangedTitle,
-                isPresented: $mainViewState.isShowingPasswordChangedAlert
+                mainViewState.accountAlert?.type.title ?? "",
+                isPresented: $mainViewState.isShowingAccountAlert
             ) {
                 Button(AuthenticatorResourcesStrings.understandConfirmButton, role: .cancel) {
-                    mainViewState.passwordChangedAccount?.passwordChangedAck()
-                    mainViewState.isShowingPasswordChangedAlert = false
+                    mainViewState.accountAlert?.ack()
+                    mainViewState.isShowingAccountAlert = false
                 }
 
                 Button(AuthenticatorResourcesStrings.notMeButton, role: .destructive) {
-                    let passwordChangedAccount = mainViewState.passwordChangedAccount
-                    mainViewState.isShowingPasswordChangedAlert = false
-                    mainViewState.passwordChangedAccountConfirmation = passwordChangedAccount
+                    let currentAlert = mainViewState.accountAlert
+                    mainViewState.isShowingAccountAlert = false
+                    mainViewState.accountAlertConfirmation = currentAlert
                 }
             } message: {
-                Text(AuthenticatorResourcesStrings
-                    .alertDialogPasswordChangedText(mainViewState.passwordChangedAccount?.email ?? ""))
+                Text(mainViewState.accountAlert?.type.description(email: mainViewState.accountAlert?.email ?? "") ?? "")
             }
             .alert(
                 AuthenticatorResourcesStrings.alertDialogVerifyAccountTitle,
-                isPresented: $mainViewState.isShowingPasswordChangedConfirmationAlert
+                isPresented: $mainViewState.isShowingAccountAlertConfirmation
             ) {
                 Button(AuthenticatorResourcesStrings.alertDialogChangePasswordButton) {
-                    mainViewState.passwordChangedAccountConfirmation?.passwordChangedAck()
-                    mainViewState.isShowingPasswordChangedAlert = false
+                    closeConfirmationAlert()
                     openURL(URLConstants.recoverPassword.url)
                 }
                 .keyboardShortcut(.defaultAction)
 
                 Button(AuthenticatorResourcesStrings.alertDialogContactSupportButton) {
-                    mainViewState.passwordChangedAccountConfirmation?.passwordChangedAck()
-                    mainViewState.isShowingPasswordChangedAlert = false
+                    closeConfirmationAlert()
                     openURL(URLConstants.support.url)
                 }
 
-                Button(AuthenticatorResourcesStrings.closeButton) {
-                    mainViewState.passwordChangedAccountConfirmation?.passwordChangedAck()
-                    mainViewState.isShowingPasswordChangedConfirmationAlert = false
-                }
-                .keyboardShortcut(.cancelAction)
+                Button(AuthenticatorResourcesStrings.closeButton, action: closeConfirmationAlert)
+                    .keyboardShortcut(.cancelAction)
 
             } message: {
                 Text(AuthenticatorResourcesStrings.accountSecurityVerificationDescription)
             }
     }
 
+    private func closeConfirmationAlert() {
+        mainViewState.accountAlertConfirmation?.ack()
+        mainViewState.isShowingAccountAlertConfirmation = false
+    }
 }

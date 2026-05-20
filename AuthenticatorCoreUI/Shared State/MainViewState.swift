@@ -27,27 +27,27 @@ public final class MainViewState: ObservableObject, @MainActor Equatable {
 
     @Published public var selectedAccount: UIAccount?
     @Published public var accounts: [UIAccount]
-    @Published public var passwordChangedAccount: UIPasswordChangedAccount?
-    @Published public var passwordChangedAccountConfirmation: UIPasswordChangedAccount?
+    @Published public var accountAlert: UIAccountAlert?
+    @Published public var accountAlertConfirmation: UIAccountAlert?
 
-    public var isShowingPasswordChangedAlert: Bool {
+    public var isShowingAccountAlert: Bool {
         get {
-            passwordChangedAccount != nil
+            accountAlert != nil
         }
         set {
             if !newValue {
-                passwordChangedAccount = nil
+                accountAlert = nil
             }
         }
     }
 
-    public var isShowingPasswordChangedConfirmationAlert: Bool {
+    public var isShowingAccountAlertConfirmation: Bool {
         get {
-            passwordChangedAccountConfirmation != nil
+            accountAlertConfirmation != nil
         }
         set {
             if !newValue {
-                passwordChangedAccountConfirmation = nil
+                accountAlertConfirmation = nil
             }
         }
     }
@@ -61,26 +61,52 @@ public final class MainViewState: ObservableObject, @MainActor Equatable {
         Task {
             for try await newAccounts in authenticatorFacade.accounts {
                 let newUIAccounts = newAccounts.map { UIAccount(account: $0) }
-                let accountsWithChangedPassword = newAccounts
-                    .compactMap {
-                        if let status = $0.status as? AccountStatusLoggedIn,
-                           let passwordChangedAck = status.passwordChangedAck {
-                            return UIPasswordChangedAccount(
-                                id: Int($0.id),
-                                email: $0.email,
-                                passwordChangedAck: passwordChangedAck
-                            )
-                        } else {
-                            return nil
-                        }
-                    }
+                let accountWithChangedPassword = firstAccountWithChangedPassword(accounts: newAccounts)
+                let disconnectedAccount = firstAccountDisconnected(accounts: newAccounts)
 
                 withAnimation {
                     self.accounts = newUIAccounts
-                    passwordChangedAccount = accountsWithChangedPassword.first
+                    accountAlert = accountWithChangedPassword ?? disconnectedAccount
                 }
             }
         }
+    }
+
+    private func firstAccountWithChangedPassword(accounts: [Account]) -> UIAccountAlert? {
+        let accountsWithChangedPassword = accounts
+            .compactMap {
+                if let status = $0.status as? AccountStatusLoggedIn,
+                   let passwordChangedAck = status.passwordChangedAck {
+                    return UIAccountAlert(
+                        id: Int($0.id),
+                        email: $0.email,
+                        type: .passwordChanged,
+                        ack: passwordChangedAck
+                    )
+                } else {
+                    return nil
+                }
+            }
+
+        return accountsWithChangedPassword.first
+    }
+
+    private func firstAccountDisconnected(accounts: [Account]) -> UIAccountAlert? {
+        let accountsDisconnected = accounts
+            .compactMap {
+                if let status = $0.status as? AccountStatusNotConnectedDisconnected {
+                    return UIAccountAlert(
+                        id: Int($0.id),
+                        email: $0.email,
+                        type: .disconnected,
+                        ack: status.removeAccount
+                    )
+                } else {
+                    return nil
+                }
+            }
+
+        return accountsDisconnected.first
     }
 
     public static func == (lhs: MainViewState, rhs: MainViewState) -> Bool {
