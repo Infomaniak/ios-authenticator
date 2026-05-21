@@ -1208,6 +1208,7 @@ __attribute__((swift_name("MatomoCategory")))
 @interface CoreAuthenticatorMatomoCategory : CoreAuthenticatorKotlinEnum<CoreAuthenticatorMatomoCategory *>
 @property (class, readonly) CoreAuthenticatorMatomoCategory *account __attribute__((swift_name("account")));
 @property (class, readonly) CoreAuthenticatorMatomoCategory *settingsgeneral __attribute__((swift_name("settingsgeneral")));
+@property (class, readonly) CoreAuthenticatorMatomoCategory *migration __attribute__((swift_name("migration")));
 @property (class, readonly) NSArray<CoreAuthenticatorMatomoCategory *> *entries __attribute__((swift_name("entries")));
 @property (readonly) NSString *value __attribute__((swift_name("value")));
 + (instancetype)alloc __attribute__((unavailable));
@@ -1219,10 +1220,21 @@ __attribute__((swift_name("MatomoCategory")))
 __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("MatomoName")))
 @interface CoreAuthenticatorMatomoName : CoreAuthenticatorKotlinEnum<CoreAuthenticatorMatomoName *>
+@property (class, readonly) CoreAuthenticatorMatomoName *askaddaccount __attribute__((swift_name("askaddaccount")));
+@property (class, readonly) CoreAuthenticatorMatomoName *askrefreshchallenge __attribute__((swift_name("askrefreshchallenge")));
 @property (class, readonly) CoreAuthenticatorMatomoName *togglebiometry __attribute__((swift_name("togglebiometry")));
 @property (class, readonly) CoreAuthenticatorMatomoName *loggedin __attribute__((swift_name("loggedin")));
 @property (class, readonly) CoreAuthenticatorMatomoName *openloginwebview __attribute__((swift_name("openloginwebview")));
 @property (class, readonly) CoreAuthenticatorMatomoName *opencreationwebview __attribute__((swift_name("opencreationwebview")));
+@property (class, readonly) CoreAuthenticatorMatomoName *openhistorywebview __attribute__((swift_name("openhistorywebview")));
+@property (class, readonly) CoreAuthenticatorMatomoName *opensettingswebview __attribute__((swift_name("opensettingswebview")));
+@property (class, readonly) CoreAuthenticatorMatomoName *opennotificationsettings __attribute__((swift_name("opennotificationsettings")));
+@property (class, readonly) CoreAuthenticatorMatomoName *openfeedbackwebview __attribute__((swift_name("openfeedbackwebview")));
+@property (class, readonly) CoreAuthenticatorMatomoName *opensupportwebview __attribute__((swift_name("opensupportwebview")));
+@property (class, readonly) CoreAuthenticatorMatomoName *disconnect __attribute__((swift_name("disconnect")));
+@property (class, readonly) CoreAuthenticatorMatomoName *migrationstart __attribute__((swift_name("migrationstart")));
+@property (class, readonly) CoreAuthenticatorMatomoName *showrecoverableaccounts __attribute__((swift_name("showrecoverableaccounts")));
+@property (class, readonly) CoreAuthenticatorMatomoName *openforgotpasswordwebview __attribute__((swift_name("openforgotpasswordwebview")));
 @property (class, readonly) NSArray<CoreAuthenticatorMatomoName *> *entries __attribute__((swift_name("entries")));
 @property (readonly) NSString *value __attribute__((swift_name("value")));
 + (instancetype)alloc __attribute__((unavailable));
@@ -1234,6 +1246,16 @@ __attribute__((swift_name("MatomoName")))
 __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("MatomoScreen")))
 @interface CoreAuthenticatorMatomoScreen : CoreAuthenticatorKotlinEnum<CoreAuthenticatorMatomoScreen *>
+@property (class, readonly) CoreAuthenticatorMatomoScreen *migrationscreen __attribute__((swift_name("migrationscreen")));
+@property (class, readonly) CoreAuthenticatorMatomoScreen *accountlistscreen __attribute__((swift_name("accountlistscreen")));
+@property (class, readonly) CoreAuthenticatorMatomoScreen *accountdetailsscreen __attribute__((swift_name("accountdetailsscreen")));
+@property (class, readonly) CoreAuthenticatorMatomoScreen *securingaccountscreen __attribute__((swift_name("securingaccountscreen")));
+@property (class, readonly) CoreAuthenticatorMatomoScreen *settingsscreen __attribute__((swift_name("settingsscreen")));
+@property (class, readonly) CoreAuthenticatorMatomoScreen *onboardingstartscreen __attribute__((swift_name("onboardingstartscreen")));
+@property (class, readonly) CoreAuthenticatorMatomoScreen *onboardingcompletescreen __attribute__((swift_name("onboardingcompletescreen")));
+@property (class, readonly) CoreAuthenticatorMatomoScreen *notificationpermissionscreen __attribute__((swift_name("notificationpermissionscreen")));
+@property (class, readonly) CoreAuthenticatorMatomoScreen *themesettingsscreen __attribute__((swift_name("themesettingsscreen")));
+@property (class, readonly) CoreAuthenticatorMatomoScreen *privacymanagementscreen __attribute__((swift_name("privacymanagementscreen")));
 @property (class, readonly) NSArray<CoreAuthenticatorMatomoScreen *> *entries __attribute__((swift_name("entries")));
 @property (readonly) NSString *value __attribute__((swift_name("value")));
 + (instancetype)alloc __attribute__((unavailable));
