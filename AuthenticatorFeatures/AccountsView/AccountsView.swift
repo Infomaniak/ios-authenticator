@@ -84,6 +84,7 @@ public struct AccountsView: View {
                 refreshUserProfiles()
             }
         }
+        .accountsViewAlert()
     }
 
     private func refreshAccountsList() async {

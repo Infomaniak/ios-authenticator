@@ -27,6 +27,30 @@ public final class MainViewState: ObservableObject, @MainActor Equatable {
 
     @Published public var selectedAccount: UIAccount?
     @Published public var accounts: [UIAccount]
+    @Published public var accountAlert: UIAccountAlert?
+    @Published public var accountAlertConfirmation: UIAccountAlert?
+
+    public var isShowingAccountAlert: Bool {
+        get {
+            accountAlert != nil
+        }
+        set {
+            if !newValue {
+                accountAlert = nil
+            }
+        }
+    }
+
+    public var isShowingAccountAlertConfirmation: Bool {
+        get {
+            accountAlertConfirmation != nil
+        }
+        set {
+            if !newValue {
+                accountAlertConfirmation = nil
+            }
+        }
+    }
 
     public init(accounts: [UIAccount] = []) {
         self.accounts = accounts
@@ -37,11 +61,52 @@ public final class MainViewState: ObservableObject, @MainActor Equatable {
         Task {
             for try await newAccounts in authenticatorFacade.accounts {
                 let newUIAccounts = newAccounts.map { UIAccount(account: $0) }
+                let accountWithChangedPassword = firstAccountWithChangedPassword(accounts: newAccounts)
+                let disconnectedAccount = firstAccountDisconnected(accounts: newAccounts)
+
                 withAnimation {
                     self.accounts = newUIAccounts
+                    accountAlert = accountWithChangedPassword ?? disconnectedAccount
                 }
             }
         }
+    }
+
+    private func firstAccountWithChangedPassword(accounts: [Account]) -> UIAccountAlert? {
+        let accountsWithChangedPassword = accounts
+            .compactMap {
+                if let status = $0.status as? AccountStatusLoggedIn,
+                   let passwordChangedAck = status.passwordChangedAck {
+                    return UIAccountAlert(
+                        id: Int($0.id),
+                        email: $0.email,
+                        type: .passwordChanged,
+                        ack: passwordChangedAck
+                    )
+                } else {
+                    return nil
+                }
+            }
+
+        return accountsWithChangedPassword.first
+    }
+
+    private func firstAccountDisconnected(accounts: [Account]) -> UIAccountAlert? {
+        let accountsDisconnected = accounts
+            .compactMap {
+                if let status = $0.status as? AccountStatusNotConnectedDisconnected {
+                    return UIAccountAlert(
+                        id: Int($0.id),
+                        email: $0.email,
+                        type: .disconnected,
+                        ack: status.removeAccount
+                    )
+                } else {
+                    return nil
+                }
+            }
+
+        return accountsDisconnected.first
     }
 
     public static func == (lhs: MainViewState, rhs: MainViewState) -> Bool {
