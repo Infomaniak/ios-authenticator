@@ -66,10 +66,9 @@ public struct PreloadingView: View {
             @InjectService var appLaunchCounter: AppLaunchCounter
             @InjectService var tokenStore: TokenStore
 
-            guard !appLaunchCounter.isFirstLaunch else {
+            if appLaunchCounter.isFirstLaunch {
                 tokenStore.removeAllTokens()
                 appLaunchCounter.increase()
-                return
             }
         }
     }
