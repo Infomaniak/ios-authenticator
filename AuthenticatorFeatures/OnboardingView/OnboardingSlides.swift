@@ -35,7 +35,7 @@ extension OnboardingStep {
         case .success:
             return .onboardingSuccessSlide
         case .biometry:
-            return Constants.biometryContext.biometryType == .faceID ? .onboardingFaceIdSlide : .onboardingTouchIdSlide
+            return Constants.biometryType == .faceID ? .onboardingFaceIdSlide : .onboardingTouchIdSlide
         case .notifications:
             return .onboardingNotificationsSlide
         }
@@ -83,8 +83,8 @@ extension Slide {
         backgroundImageTintColor: nil,
         content: .illustration(AuthenticatorResourcesAsset.Images.faceId.image),
         bottomView: OnboardingTextBottomView(
-            title: AuthenticatorResourcesStrings.onBoardingBiometryTitle(Constants.biometryContext.localizedReason),
-            description: AuthenticatorResourcesStrings.onBoardingBiometryDescription(Constants.biometryContext.localizedReason)
+            title: AuthenticatorResourcesStrings.onBoardingBiometryTitle("Face ID"),
+            description: AuthenticatorResourcesStrings.onBoardingBiometryDescription("Face ID")
         )
     )
 
@@ -93,8 +93,8 @@ extension Slide {
         backgroundImageTintColor: nil,
         content: .illustration(AuthenticatorResourcesAsset.Images.touchId.image),
         bottomView: OnboardingTextBottomView(
-            title: AuthenticatorResourcesStrings.onBoardingBiometryTitle(Constants.biometryContext.localizedReason),
-            description: AuthenticatorResourcesStrings.onBoardingBiometryDescription(Constants.biometryContext.localizedReason)
+            title: AuthenticatorResourcesStrings.onBoardingBiometryTitle("Touch ID"),
+            description: AuthenticatorResourcesStrings.onBoardingBiometryDescription("Touch ID")
         )
     )
 
