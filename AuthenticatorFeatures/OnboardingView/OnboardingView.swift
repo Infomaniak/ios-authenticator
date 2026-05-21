@@ -32,16 +32,11 @@ import SwiftModalPresentation
 import SwiftUI
 
 public struct OnboardingView: View {
-    @InjectService private var accountManager: AccountManagerable
-
     @EnvironmentObject private var rootViewState: RootViewState
 
-    @State private var loginHandler = LoginHandler()
-    @State private var excludedUserIds: [Int] = []
     @State private var shouldShowBiometryStep = !UserDefaults.shared.isAppLockEnabled
     @State private var shouldShowNotificationsStep = true
-
-    @ModalState(context: ContextKeys.onboarding) private var isPresentingCreateAccount = false
+    @State private var loginHandler = LoginHandler()
 
     private let currentStep: OnboardingStep
     private var steps: [OnboardingStep] {
@@ -97,17 +92,7 @@ public struct OnboardingView: View {
         CarouselView(slides: slides, selectedSlide: .constant(selectedSlideIndex), dismissHandler: dismissHandler) { index in
             switch steps[index] {
             case .login, .addAccount:
-                ContinueWithAccountView(isLoading: loginHandler.isLoading, excludingUserIds: excludedUserIds) {
-                    login()
-                } onLoginWithAccountsPressed: { accounts in
-                    login(with: accounts)
-                } onCreateAccountPressed: {
-                    isPresentingCreateAccount = true
-                }
-                .ikButtonFullWidth(true)
-                .environment(\.outlinedButtonBackgroundColor, Color.Token.Surface.outlined)
-                .controlSize(.large)
-                .padding(.horizontal, value: .large)
+                OnboardingButtonsView(loginHandler: loginHandler)
             case .loginInProgress, .migrationInProgress:
                 EmptyView()
             case .migration:
@@ -152,31 +137,11 @@ public struct OnboardingView: View {
                 }
             }
         }
-        .id(excludedUserIds)
         .appBackground()
         .ignoresSafeArea()
         .reLoginSheet(account: $rootViewState.mustReLoginAccount)
-        .sheet(isPresented: $isPresentingCreateAccount) {
-            RegisterView(registrationProcess: .mail) { viewController in // TODO: Change with his own registration process
-                guard let viewController else { return }
-                loginHandler.loginAfterAccountCreation(from: viewController)
-            }
-        }
         .task {
-            loginHandler.isLoading = true
-            excludedUserIds = await accountManager.getAccountsIds()
-            loginHandler.isLoading = false
             await checkNotificationAuthorizationStatus()
-        }
-    }
-
-    private func login(with accounts: [ConnectedAccount] = []) {
-        Task {
-            if accounts.isEmpty {
-                await loginHandler.login()
-            } else {
-                await loginHandler.login(with: accounts)
-            }
         }
     }
 
