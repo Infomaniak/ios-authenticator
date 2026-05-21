@@ -21,6 +21,7 @@ import CoreAuthenticator
 import InfomaniakCore
 import InfomaniakDI
 import InfomaniakLogin
+import InfomaniakNotifications
 import OSLog
 
 final class KeyBasedRefreshAuthenticator: OAuthAuthenticator {
@@ -57,6 +58,7 @@ final class KeyBasedRefreshAuthenticator: OAuthAuthenticator {
                 throw DomainError.tokenNotFoundAfterRefresh(userId: userId)
             }
 
+            register(newToken: token.apiToken)
             return token.apiToken
         } catch {
             Logger.general.error("Failed to refresh token retry left \(retryLeft): \(error)")
@@ -67,6 +69,16 @@ final class KeyBasedRefreshAuthenticator: OAuthAuthenticator {
 
             try await Task.sleep(for: .seconds(1))
             return try await refreshToken(for: userId, retryLeft: retryLeft - 1)
+        }
+    }
+
+    private func register(newToken: ApiToken) {
+        Task {
+            @InjectService var notificationService: InfomaniakNotifications
+            @InjectService var accountManager: AccountManagerable
+            let apiFetcher = await accountManager.getApiFetcher(token: newToken)
+            await accountManager.attachDeviceToApiToken(newToken, apiFetcher: apiFetcher)
+            await notificationService.updateTopicsIfNeeded([Topic.twoFAPushChallenge], userApiFetcher: apiFetcher)
         }
     }
 }
