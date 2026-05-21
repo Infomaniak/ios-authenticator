@@ -22,6 +22,7 @@ import ProjectDescriptionHelpers
 
 let preloadingView = Feature(name: "PreloadingView",
                              additionalDependencies: [
+                                 TargetDependency.external(name: "DesignSystem"),
                                  TargetDependency.external(name: "InfomaniakDI"),
                                  TargetDependency.external(name: "InfomaniakCore")
                              ])
