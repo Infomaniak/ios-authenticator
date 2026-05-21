@@ -36,7 +36,7 @@ class AppDelegate: NSObject, UIApplicationDelegate {
     func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
         Task {
             @InjectService var notificationService: InfomaniakNotifications
-            @InjectService var accountManager: AccountManager
+            @InjectService var accountManager: AccountManagerable
             @InjectService var tokenStore: TokenStore
 
             let tokens = tokenStore.getAllTokens()

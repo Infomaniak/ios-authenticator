@@ -34,7 +34,7 @@ struct ReLoginSheetViewModifier: ViewModifier {
 
     func body(content: Content) -> some View {
         content
-            .sheet(item: $account) { account in
+            .sheet(item: $account, onDismiss: onCloseButtonTapped) { account in
                 NavigationStack {
                     LoginView(account: account)
                         .toolbar {
@@ -51,7 +51,6 @@ struct ReLoginSheetViewModifier: ViewModifier {
                             }
                         }
                 }
-                .presentationDragIndicator(.visible)
             }
             .task(id: account?.id) {
                 await observeAccountStatus()

@@ -48,6 +48,7 @@ struct AccountDetailView: View {
                         }
                     }
                 }
+                .disabled(account.isDisabled)
             } header: {
                 AccountDetailHeaderView(account: account)
             }
@@ -61,6 +62,7 @@ struct AccountDetailView: View {
                     AuthenticatorTrailingLabel(\.activityHistoryButton, iconKey: \.squareArrowDiagonalUp)
                 }
                 .accessibilityHint(AuthenticatorResourcesStrings.contentDescriptionButtonExternalLink)
+                .disabled(account.isDisabled)
 
                 Button {
                     presentedWebViewURL = URLConstants.accountParameters.url
@@ -68,6 +70,7 @@ struct AccountDetailView: View {
                     AuthenticatorTrailingLabel(\.accountSettingsButton, iconKey: \.squareArrowDiagonalUp)
                 }
                 .accessibilityHint(AuthenticatorResourcesStrings.contentDescriptionButtonExternalLink)
+                .disabled(account.isDisabled)
 
                 Button(AuthenticatorResourcesStrings.disconnectButton, role: .destructive) {
                     isShowingDisconnectWarningAlert = true

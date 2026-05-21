@@ -27,6 +27,10 @@ public struct UIAccount: Identifiable, Hashable, Sendable {
     public let profilePictureURL: URL?
     public let status: Status
 
+    public var isDisabled: Bool {
+        status == .loggedOut
+    }
+
     public init(id: Int64, name: String, email: String, profilePictureURL: URL?, status: Status) {
         self.id = id
         self.name = name
