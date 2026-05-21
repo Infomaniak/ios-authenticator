@@ -1020,6 +1020,7 @@ extension CoreAuthenticator.__ApiResponseStatus {
 @frozen public enum MatomoCategory : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {
   case account
   case settingsGeneral
+  case migration
   public var name: Swift.String {
     get
   }
@@ -1057,10 +1058,21 @@ extension CoreAuthenticator.__MatomoCategory {
   public func toSwiftEnum() -> CoreAuthenticator.MatomoCategory
 }
 @frozen public enum MatomoName : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {
+  case askAddAccount
+  case askRefreshChallenge
   case toggleBiometry
   case loggedIn
   case openLoginWebview
   case openCreationWebview
+  case openHistoryWebview
+  case openSettingsWebview
+  case openNotificationSettings
+  case openFeedbackWebview
+  case openSupportWebview
+  case disconnect
+  case migrationStart
+  case showRecoverableAccounts
+  case openForgotPasswordWebview
   public var name: Swift.String {
     get
   }
@@ -1098,6 +1110,16 @@ extension CoreAuthenticator.__MatomoName {
   public func toSwiftEnum() -> CoreAuthenticator.MatomoName
 }
 @frozen public enum MatomoScreen : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {
+  case migrationScreen
+  case accountListScreen
+  case accountDetailsScreen
+  case securingAccountScreen
+  case settingsScreen
+  case onboardingStartScreen
+  case onboardingCompleteScreen
+  case notificationPermissionScreen
+  case themeSettingsScreen
+  case privacyManagementScreen
   public var name: Swift.String {
     get
   }

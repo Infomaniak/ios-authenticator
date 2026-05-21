@@ -27497,6 +27497,44 @@
           },
           {
             "kind": "Var",
+            "name": "migration",
+            "printedName": "migration",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CoreAuthenticator.MatomoCategory.Type) -> CoreAuthenticator.MatomoCategory",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MatomoCategory",
+                    "printedName": "CoreAuthenticator.MatomoCategory",
+                    "usr": "s:17CoreAuthenticator14MatomoCategoryO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CoreAuthenticator.MatomoCategory.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MatomoCategory",
+                        "printedName": "CoreAuthenticator.MatomoCategory",
+                        "usr": "s:17CoreAuthenticator14MatomoCategoryO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:17CoreAuthenticator14MatomoCategoryO9migrationyA2CmF",
+            "mangledName": "$s17CoreAuthenticator14MatomoCategoryO9migrationyA2CmF",
+            "moduleName": "CoreAuthenticator",
+            "fixedbinaryorder": 2
+          },
+          {
+            "kind": "Var",
             "name": "name",
             "printedName": "name",
             "children": [
@@ -28059,6 +28097,82 @@
         "children": [
           {
             "kind": "Var",
+            "name": "askAddAccount",
+            "printedName": "askAddAccount",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CoreAuthenticator.MatomoName.Type) -> CoreAuthenticator.MatomoName",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MatomoName",
+                    "printedName": "CoreAuthenticator.MatomoName",
+                    "usr": "s:17CoreAuthenticator10MatomoNameO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CoreAuthenticator.MatomoName.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MatomoName",
+                        "printedName": "CoreAuthenticator.MatomoName",
+                        "usr": "s:17CoreAuthenticator10MatomoNameO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:17CoreAuthenticator10MatomoNameO13askAddAccountyA2CmF",
+            "mangledName": "$s17CoreAuthenticator10MatomoNameO13askAddAccountyA2CmF",
+            "moduleName": "CoreAuthenticator",
+            "fixedbinaryorder": 0
+          },
+          {
+            "kind": "Var",
+            "name": "askRefreshChallenge",
+            "printedName": "askRefreshChallenge",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CoreAuthenticator.MatomoName.Type) -> CoreAuthenticator.MatomoName",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MatomoName",
+                    "printedName": "CoreAuthenticator.MatomoName",
+                    "usr": "s:17CoreAuthenticator10MatomoNameO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CoreAuthenticator.MatomoName.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MatomoName",
+                        "printedName": "CoreAuthenticator.MatomoName",
+                        "usr": "s:17CoreAuthenticator10MatomoNameO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:17CoreAuthenticator10MatomoNameO19askRefreshChallengeyA2CmF",
+            "mangledName": "$s17CoreAuthenticator10MatomoNameO19askRefreshChallengeyA2CmF",
+            "moduleName": "CoreAuthenticator",
+            "fixedbinaryorder": 1
+          },
+          {
+            "kind": "Var",
             "name": "toggleBiometry",
             "printedName": "toggleBiometry",
             "children": [
@@ -28093,7 +28207,7 @@
             "usr": "s:17CoreAuthenticator10MatomoNameO14toggleBiometryyA2CmF",
             "mangledName": "$s17CoreAuthenticator10MatomoNameO14toggleBiometryyA2CmF",
             "moduleName": "CoreAuthenticator",
-            "fixedbinaryorder": 0
+            "fixedbinaryorder": 2
           },
           {
             "kind": "Var",
@@ -28131,7 +28245,7 @@
             "usr": "s:17CoreAuthenticator10MatomoNameO8loggedInyA2CmF",
             "mangledName": "$s17CoreAuthenticator10MatomoNameO8loggedInyA2CmF",
             "moduleName": "CoreAuthenticator",
-            "fixedbinaryorder": 1
+            "fixedbinaryorder": 3
           },
           {
             "kind": "Var",
@@ -28169,7 +28283,7 @@
             "usr": "s:17CoreAuthenticator10MatomoNameO16openLoginWebviewyA2CmF",
             "mangledName": "$s17CoreAuthenticator10MatomoNameO16openLoginWebviewyA2CmF",
             "moduleName": "CoreAuthenticator",
-            "fixedbinaryorder": 2
+            "fixedbinaryorder": 4
           },
           {
             "kind": "Var",
@@ -28207,7 +28321,349 @@
             "usr": "s:17CoreAuthenticator10MatomoNameO19openCreationWebviewyA2CmF",
             "mangledName": "$s17CoreAuthenticator10MatomoNameO19openCreationWebviewyA2CmF",
             "moduleName": "CoreAuthenticator",
-            "fixedbinaryorder": 3
+            "fixedbinaryorder": 5
+          },
+          {
+            "kind": "Var",
+            "name": "openHistoryWebview",
+            "printedName": "openHistoryWebview",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CoreAuthenticator.MatomoName.Type) -> CoreAuthenticator.MatomoName",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MatomoName",
+                    "printedName": "CoreAuthenticator.MatomoName",
+                    "usr": "s:17CoreAuthenticator10MatomoNameO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CoreAuthenticator.MatomoName.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MatomoName",
+                        "printedName": "CoreAuthenticator.MatomoName",
+                        "usr": "s:17CoreAuthenticator10MatomoNameO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:17CoreAuthenticator10MatomoNameO18openHistoryWebviewyA2CmF",
+            "mangledName": "$s17CoreAuthenticator10MatomoNameO18openHistoryWebviewyA2CmF",
+            "moduleName": "CoreAuthenticator",
+            "fixedbinaryorder": 6
+          },
+          {
+            "kind": "Var",
+            "name": "openSettingsWebview",
+            "printedName": "openSettingsWebview",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CoreAuthenticator.MatomoName.Type) -> CoreAuthenticator.MatomoName",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MatomoName",
+                    "printedName": "CoreAuthenticator.MatomoName",
+                    "usr": "s:17CoreAuthenticator10MatomoNameO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CoreAuthenticator.MatomoName.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MatomoName",
+                        "printedName": "CoreAuthenticator.MatomoName",
+                        "usr": "s:17CoreAuthenticator10MatomoNameO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:17CoreAuthenticator10MatomoNameO19openSettingsWebviewyA2CmF",
+            "mangledName": "$s17CoreAuthenticator10MatomoNameO19openSettingsWebviewyA2CmF",
+            "moduleName": "CoreAuthenticator",
+            "fixedbinaryorder": 7
+          },
+          {
+            "kind": "Var",
+            "name": "openNotificationSettings",
+            "printedName": "openNotificationSettings",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CoreAuthenticator.MatomoName.Type) -> CoreAuthenticator.MatomoName",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MatomoName",
+                    "printedName": "CoreAuthenticator.MatomoName",
+                    "usr": "s:17CoreAuthenticator10MatomoNameO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CoreAuthenticator.MatomoName.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MatomoName",
+                        "printedName": "CoreAuthenticator.MatomoName",
+                        "usr": "s:17CoreAuthenticator10MatomoNameO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:17CoreAuthenticator10MatomoNameO24openNotificationSettingsyA2CmF",
+            "mangledName": "$s17CoreAuthenticator10MatomoNameO24openNotificationSettingsyA2CmF",
+            "moduleName": "CoreAuthenticator",
+            "fixedbinaryorder": 8
+          },
+          {
+            "kind": "Var",
+            "name": "openFeedbackWebview",
+            "printedName": "openFeedbackWebview",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CoreAuthenticator.MatomoName.Type) -> CoreAuthenticator.MatomoName",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MatomoName",
+                    "printedName": "CoreAuthenticator.MatomoName",
+                    "usr": "s:17CoreAuthenticator10MatomoNameO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CoreAuthenticator.MatomoName.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MatomoName",
+                        "printedName": "CoreAuthenticator.MatomoName",
+                        "usr": "s:17CoreAuthenticator10MatomoNameO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:17CoreAuthenticator10MatomoNameO19openFeedbackWebviewyA2CmF",
+            "mangledName": "$s17CoreAuthenticator10MatomoNameO19openFeedbackWebviewyA2CmF",
+            "moduleName": "CoreAuthenticator",
+            "fixedbinaryorder": 9
+          },
+          {
+            "kind": "Var",
+            "name": "openSupportWebview",
+            "printedName": "openSupportWebview",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CoreAuthenticator.MatomoName.Type) -> CoreAuthenticator.MatomoName",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MatomoName",
+                    "printedName": "CoreAuthenticator.MatomoName",
+                    "usr": "s:17CoreAuthenticator10MatomoNameO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CoreAuthenticator.MatomoName.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MatomoName",
+                        "printedName": "CoreAuthenticator.MatomoName",
+                        "usr": "s:17CoreAuthenticator10MatomoNameO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:17CoreAuthenticator10MatomoNameO18openSupportWebviewyA2CmF",
+            "mangledName": "$s17CoreAuthenticator10MatomoNameO18openSupportWebviewyA2CmF",
+            "moduleName": "CoreAuthenticator",
+            "fixedbinaryorder": 10
+          },
+          {
+            "kind": "Var",
+            "name": "disconnect",
+            "printedName": "disconnect",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CoreAuthenticator.MatomoName.Type) -> CoreAuthenticator.MatomoName",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MatomoName",
+                    "printedName": "CoreAuthenticator.MatomoName",
+                    "usr": "s:17CoreAuthenticator10MatomoNameO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CoreAuthenticator.MatomoName.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MatomoName",
+                        "printedName": "CoreAuthenticator.MatomoName",
+                        "usr": "s:17CoreAuthenticator10MatomoNameO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:17CoreAuthenticator10MatomoNameO10disconnectyA2CmF",
+            "mangledName": "$s17CoreAuthenticator10MatomoNameO10disconnectyA2CmF",
+            "moduleName": "CoreAuthenticator",
+            "fixedbinaryorder": 11
+          },
+          {
+            "kind": "Var",
+            "name": "migrationStart",
+            "printedName": "migrationStart",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CoreAuthenticator.MatomoName.Type) -> CoreAuthenticator.MatomoName",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MatomoName",
+                    "printedName": "CoreAuthenticator.MatomoName",
+                    "usr": "s:17CoreAuthenticator10MatomoNameO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CoreAuthenticator.MatomoName.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MatomoName",
+                        "printedName": "CoreAuthenticator.MatomoName",
+                        "usr": "s:17CoreAuthenticator10MatomoNameO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:17CoreAuthenticator10MatomoNameO14migrationStartyA2CmF",
+            "mangledName": "$s17CoreAuthenticator10MatomoNameO14migrationStartyA2CmF",
+            "moduleName": "CoreAuthenticator",
+            "fixedbinaryorder": 12
+          },
+          {
+            "kind": "Var",
+            "name": "showRecoverableAccounts",
+            "printedName": "showRecoverableAccounts",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CoreAuthenticator.MatomoName.Type) -> CoreAuthenticator.MatomoName",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MatomoName",
+                    "printedName": "CoreAuthenticator.MatomoName",
+                    "usr": "s:17CoreAuthenticator10MatomoNameO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CoreAuthenticator.MatomoName.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MatomoName",
+                        "printedName": "CoreAuthenticator.MatomoName",
+                        "usr": "s:17CoreAuthenticator10MatomoNameO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:17CoreAuthenticator10MatomoNameO23showRecoverableAccountsyA2CmF",
+            "mangledName": "$s17CoreAuthenticator10MatomoNameO23showRecoverableAccountsyA2CmF",
+            "moduleName": "CoreAuthenticator",
+            "fixedbinaryorder": 13
+          },
+          {
+            "kind": "Var",
+            "name": "openForgotPasswordWebview",
+            "printedName": "openForgotPasswordWebview",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CoreAuthenticator.MatomoName.Type) -> CoreAuthenticator.MatomoName",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MatomoName",
+                    "printedName": "CoreAuthenticator.MatomoName",
+                    "usr": "s:17CoreAuthenticator10MatomoNameO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CoreAuthenticator.MatomoName.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MatomoName",
+                        "printedName": "CoreAuthenticator.MatomoName",
+                        "usr": "s:17CoreAuthenticator10MatomoNameO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:17CoreAuthenticator10MatomoNameO25openForgotPasswordWebviewyA2CmF",
+            "mangledName": "$s17CoreAuthenticator10MatomoNameO25openForgotPasswordWebviewyA2CmF",
+            "moduleName": "CoreAuthenticator",
+            "fixedbinaryorder": 14
           },
           {
             "kind": "Var",
@@ -28773,6 +29229,386 @@
         "children": [
           {
             "kind": "Var",
+            "name": "migrationScreen",
+            "printedName": "migrationScreen",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CoreAuthenticator.MatomoScreen.Type) -> CoreAuthenticator.MatomoScreen",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MatomoScreen",
+                    "printedName": "CoreAuthenticator.MatomoScreen",
+                    "usr": "s:17CoreAuthenticator12MatomoScreenO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CoreAuthenticator.MatomoScreen.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MatomoScreen",
+                        "printedName": "CoreAuthenticator.MatomoScreen",
+                        "usr": "s:17CoreAuthenticator12MatomoScreenO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:17CoreAuthenticator12MatomoScreenO09migrationD0yA2CmF",
+            "mangledName": "$s17CoreAuthenticator12MatomoScreenO09migrationD0yA2CmF",
+            "moduleName": "CoreAuthenticator",
+            "fixedbinaryorder": 0
+          },
+          {
+            "kind": "Var",
+            "name": "accountListScreen",
+            "printedName": "accountListScreen",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CoreAuthenticator.MatomoScreen.Type) -> CoreAuthenticator.MatomoScreen",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MatomoScreen",
+                    "printedName": "CoreAuthenticator.MatomoScreen",
+                    "usr": "s:17CoreAuthenticator12MatomoScreenO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CoreAuthenticator.MatomoScreen.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MatomoScreen",
+                        "printedName": "CoreAuthenticator.MatomoScreen",
+                        "usr": "s:17CoreAuthenticator12MatomoScreenO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:17CoreAuthenticator12MatomoScreenO011accountListD0yA2CmF",
+            "mangledName": "$s17CoreAuthenticator12MatomoScreenO011accountListD0yA2CmF",
+            "moduleName": "CoreAuthenticator",
+            "fixedbinaryorder": 1
+          },
+          {
+            "kind": "Var",
+            "name": "accountDetailsScreen",
+            "printedName": "accountDetailsScreen",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CoreAuthenticator.MatomoScreen.Type) -> CoreAuthenticator.MatomoScreen",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MatomoScreen",
+                    "printedName": "CoreAuthenticator.MatomoScreen",
+                    "usr": "s:17CoreAuthenticator12MatomoScreenO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CoreAuthenticator.MatomoScreen.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MatomoScreen",
+                        "printedName": "CoreAuthenticator.MatomoScreen",
+                        "usr": "s:17CoreAuthenticator12MatomoScreenO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:17CoreAuthenticator12MatomoScreenO014accountDetailsD0yA2CmF",
+            "mangledName": "$s17CoreAuthenticator12MatomoScreenO014accountDetailsD0yA2CmF",
+            "moduleName": "CoreAuthenticator",
+            "fixedbinaryorder": 2
+          },
+          {
+            "kind": "Var",
+            "name": "securingAccountScreen",
+            "printedName": "securingAccountScreen",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CoreAuthenticator.MatomoScreen.Type) -> CoreAuthenticator.MatomoScreen",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MatomoScreen",
+                    "printedName": "CoreAuthenticator.MatomoScreen",
+                    "usr": "s:17CoreAuthenticator12MatomoScreenO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CoreAuthenticator.MatomoScreen.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MatomoScreen",
+                        "printedName": "CoreAuthenticator.MatomoScreen",
+                        "usr": "s:17CoreAuthenticator12MatomoScreenO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:17CoreAuthenticator12MatomoScreenO015securingAccountD0yA2CmF",
+            "mangledName": "$s17CoreAuthenticator12MatomoScreenO015securingAccountD0yA2CmF",
+            "moduleName": "CoreAuthenticator",
+            "fixedbinaryorder": 3
+          },
+          {
+            "kind": "Var",
+            "name": "settingsScreen",
+            "printedName": "settingsScreen",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CoreAuthenticator.MatomoScreen.Type) -> CoreAuthenticator.MatomoScreen",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MatomoScreen",
+                    "printedName": "CoreAuthenticator.MatomoScreen",
+                    "usr": "s:17CoreAuthenticator12MatomoScreenO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CoreAuthenticator.MatomoScreen.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MatomoScreen",
+                        "printedName": "CoreAuthenticator.MatomoScreen",
+                        "usr": "s:17CoreAuthenticator12MatomoScreenO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:17CoreAuthenticator12MatomoScreenO08settingsD0yA2CmF",
+            "mangledName": "$s17CoreAuthenticator12MatomoScreenO08settingsD0yA2CmF",
+            "moduleName": "CoreAuthenticator",
+            "fixedbinaryorder": 4
+          },
+          {
+            "kind": "Var",
+            "name": "onboardingStartScreen",
+            "printedName": "onboardingStartScreen",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CoreAuthenticator.MatomoScreen.Type) -> CoreAuthenticator.MatomoScreen",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MatomoScreen",
+                    "printedName": "CoreAuthenticator.MatomoScreen",
+                    "usr": "s:17CoreAuthenticator12MatomoScreenO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CoreAuthenticator.MatomoScreen.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MatomoScreen",
+                        "printedName": "CoreAuthenticator.MatomoScreen",
+                        "usr": "s:17CoreAuthenticator12MatomoScreenO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:17CoreAuthenticator12MatomoScreenO015onboardingStartD0yA2CmF",
+            "mangledName": "$s17CoreAuthenticator12MatomoScreenO015onboardingStartD0yA2CmF",
+            "moduleName": "CoreAuthenticator",
+            "fixedbinaryorder": 5
+          },
+          {
+            "kind": "Var",
+            "name": "onboardingCompleteScreen",
+            "printedName": "onboardingCompleteScreen",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CoreAuthenticator.MatomoScreen.Type) -> CoreAuthenticator.MatomoScreen",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MatomoScreen",
+                    "printedName": "CoreAuthenticator.MatomoScreen",
+                    "usr": "s:17CoreAuthenticator12MatomoScreenO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CoreAuthenticator.MatomoScreen.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MatomoScreen",
+                        "printedName": "CoreAuthenticator.MatomoScreen",
+                        "usr": "s:17CoreAuthenticator12MatomoScreenO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:17CoreAuthenticator12MatomoScreenO018onboardingCompleteD0yA2CmF",
+            "mangledName": "$s17CoreAuthenticator12MatomoScreenO018onboardingCompleteD0yA2CmF",
+            "moduleName": "CoreAuthenticator",
+            "fixedbinaryorder": 6
+          },
+          {
+            "kind": "Var",
+            "name": "notificationPermissionScreen",
+            "printedName": "notificationPermissionScreen",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CoreAuthenticator.MatomoScreen.Type) -> CoreAuthenticator.MatomoScreen",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MatomoScreen",
+                    "printedName": "CoreAuthenticator.MatomoScreen",
+                    "usr": "s:17CoreAuthenticator12MatomoScreenO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CoreAuthenticator.MatomoScreen.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MatomoScreen",
+                        "printedName": "CoreAuthenticator.MatomoScreen",
+                        "usr": "s:17CoreAuthenticator12MatomoScreenO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:17CoreAuthenticator12MatomoScreenO022notificationPermissionD0yA2CmF",
+            "mangledName": "$s17CoreAuthenticator12MatomoScreenO022notificationPermissionD0yA2CmF",
+            "moduleName": "CoreAuthenticator",
+            "fixedbinaryorder": 7
+          },
+          {
+            "kind": "Var",
+            "name": "themeSettingsScreen",
+            "printedName": "themeSettingsScreen",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CoreAuthenticator.MatomoScreen.Type) -> CoreAuthenticator.MatomoScreen",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MatomoScreen",
+                    "printedName": "CoreAuthenticator.MatomoScreen",
+                    "usr": "s:17CoreAuthenticator12MatomoScreenO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CoreAuthenticator.MatomoScreen.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MatomoScreen",
+                        "printedName": "CoreAuthenticator.MatomoScreen",
+                        "usr": "s:17CoreAuthenticator12MatomoScreenO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:17CoreAuthenticator12MatomoScreenO013themeSettingsD0yA2CmF",
+            "mangledName": "$s17CoreAuthenticator12MatomoScreenO013themeSettingsD0yA2CmF",
+            "moduleName": "CoreAuthenticator",
+            "fixedbinaryorder": 8
+          },
+          {
+            "kind": "Var",
+            "name": "privacyManagementScreen",
+            "printedName": "privacyManagementScreen",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CoreAuthenticator.MatomoScreen.Type) -> CoreAuthenticator.MatomoScreen",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MatomoScreen",
+                    "printedName": "CoreAuthenticator.MatomoScreen",
+                    "usr": "s:17CoreAuthenticator12MatomoScreenO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CoreAuthenticator.MatomoScreen.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MatomoScreen",
+                        "printedName": "CoreAuthenticator.MatomoScreen",
+                        "usr": "s:17CoreAuthenticator12MatomoScreenO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:17CoreAuthenticator12MatomoScreenO017privacyManagementD0yA2CmF",
+            "mangledName": "$s17CoreAuthenticator12MatomoScreenO017privacyManagementD0yA2CmF",
+            "moduleName": "CoreAuthenticator",
+            "fixedbinaryorder": 9
+          },
+          {
+            "kind": "Var",
             "name": "name",
             "printedName": "name",
             "children": [
@@ -29034,6 +29870,38 @@
             "funcSelfKind": "NonMutating"
           },
           {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MatomoScreen",
+                "printedName": "CoreAuthenticator.MatomoScreen",
+                "usr": "s:17CoreAuthenticator12MatomoScreenO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MatomoScreen",
+                "printedName": "CoreAuthenticator.MatomoScreen",
+                "usr": "s:17CoreAuthenticator12MatomoScreenO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17CoreAuthenticator12MatomoScreenO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s17CoreAuthenticator12MatomoScreenO2eeoiySbAC_ACtFZ",
+            "moduleName": "CoreAuthenticator",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
             "kind": "Var",
             "name": "hashValue",
             "printedName": "hashValue",
@@ -29159,38 +30027,6 @@
           },
           {
             "kind": "Function",
-            "name": "==",
-            "printedName": "==(_:_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "MatomoScreen",
-                "printedName": "CoreAuthenticator.MatomoScreen",
-                "usr": "s:17CoreAuthenticator12MatomoScreenO"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "MatomoScreen",
-                "printedName": "CoreAuthenticator.MatomoScreen",
-                "usr": "s:17CoreAuthenticator12MatomoScreenO"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:17CoreAuthenticator12MatomoScreenO2eeoiySbAC_ACtFZ",
-            "mangledName": "$s17CoreAuthenticator12MatomoScreenO2eeoiySbAC_ACtFZ",
-            "moduleName": "CoreAuthenticator",
-            "static": true,
-            "implicit": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
             "name": "toKotlinEnum",
             "printedName": "toKotlinEnum()",
             "children": [
@@ -29235,6 +30071,13 @@
             "printedName": "Escapable",
             "usr": "s:s9EscapableP",
             "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
           },
           {
             "kind": "Conformance",
@@ -29294,13 +30137,6 @@
             ],
             "usr": "s:s21_ObjectiveCBridgeableP",
             "mangledName": "$ss21_ObjectiveCBridgeableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
           },
           {
             "kind": "Conformance",
