@@ -2,7 +2,10 @@
  * Loco ios export: Xcode Strings (legacy)
  * Project: Authenticator
  * Locale: en, English
- * Tagged: Tag not found
- * Exported by: Jordan Chapelle
- * Exported at: Thu, 22 Jan 2026 11:09:45 +0100
+ * Tagged: ios-info-plist
+ * Exported by: Philippe Weidmann
+ * Exported at: Thu, 21 May 2026 16:13:58 +0200
  */
+
+/* loco:6a0f12a5f87b21cffd0475b2 */
+"NSFaceIDUsageDescription" = "Face ID will be used to unlock the application.";
