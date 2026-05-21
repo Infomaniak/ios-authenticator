@@ -57,6 +57,8 @@ public protocol AccountManagerable: Sendable {
     func createAccount(token: ApiToken) async throws
     func getApiFetcher(token: ApiToken) async -> ApiFetcher
     func removeAccount(userId: Int64) async
+
+    func attachDeviceToApiToken(_ token: ApiToken, apiFetcher: ApiFetcher) async
 }
 
 public extension AccountManager {
@@ -132,7 +134,7 @@ public actor AccountManager: AccountManagerable {
             atLeastOneAccountAdded = true
 
             let apiFetcher = getApiFetcher(token: newToken)
-            attachDeviceToApiToken(newToken, apiFetcher: apiFetcher)
+            async let _ = attachDeviceToApiToken(newToken, apiFetcher: apiFetcher)
             async let _ = notificationService.updateTopicsIfNeeded([Topic.twoFAPushChallenge], userApiFetcher: apiFetcher)
         }
 
@@ -153,14 +155,12 @@ public actor AccountManager: AccountManagerable {
         return newApiFetcher
     }
 
-    private func attachDeviceToApiToken(_ token: ApiToken, apiFetcher: ApiFetcher) {
-        Task {
-            do {
-                let device = try await deviceManager.getOrCreateCurrentDevice()
-                try await deviceManager.attachDeviceIfNeeded(device, to: token, apiFetcher: apiFetcher)
-            } catch {
-                Logger.general.error("Failed to attach device to token: \(error.localizedDescription)")
-            }
+    public func attachDeviceToApiToken(_ token: ApiToken, apiFetcher: ApiFetcher) async {
+        do {
+            let device = try await deviceManager.getOrCreateCurrentDevice()
+            try await deviceManager.attachDeviceIfNeeded(device, to: token, apiFetcher: apiFetcher)
+        } catch {
+            Logger.general.error("Failed to attach device to token: \(error.localizedDescription)")
         }
     }
 
