@@ -22,6 +22,8 @@ import InfomaniakCoreSwiftUI
 import SwiftUI
 
 public struct AuthenticatorTrailingLabel: View {
+    @Environment(\.isEnabled) private var isEnabled
+
     let title: String
     let icon: Image?
     let iconColor: Color?
@@ -75,5 +77,6 @@ public struct AuthenticatorTrailingLabel: View {
                     .accessibility(hidden: true)
             }
         }
+        .opacity(isEnabled ? 1 : 0.25)
     }
 }
