@@ -164,8 +164,6 @@ public struct OnboardingView: View {
                 return
             }
 
-            UIApplication.shared.registerForRemoteNotifications()
-
             UserDefaults.shared.isNotificationsEnabled = isNotificationsEnabled
             goToNextStep(index: index)
         }
