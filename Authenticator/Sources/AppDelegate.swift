@@ -43,8 +43,8 @@ class AppDelegate: NSObject, UIApplicationDelegate {
             for (_, token) in tokens {
                 Task {
                     /* Because of a backend issue we can't register the notification token directly after the creation or refresh of
-                     an API token. We wait at least 15 seconds before trying to register. */
-                    try? await Task.sleep(nanoseconds: 15_000_000_000)
+                     an API token. We wait at least 5 seconds before trying to register. */
+                    try? await Task.sleep(nanoseconds: 5_000_000_000)
 
                     let userApiFetcher = await accountManager.getApiFetcher(token: token.apiToken)
                     await notificationService.updateRemoteNotificationsToken(tokenData: deviceToken,
