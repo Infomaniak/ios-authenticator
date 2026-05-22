@@ -100,6 +100,7 @@ public final class RootViewState: ObservableObject {
             return
         }
 
+        UIApplication.shared.registerForRemoteNotifications()
         onboardingDone.proceed()
     }
 

@@ -164,10 +164,6 @@ public struct OnboardingView: View {
                 return
             }
 
-            UIApplication.shared.registerForRemoteNotifications()
-            @InjectService var accountManager: AccountManagerable
-            accountManager.registerAllAccountsForNotifications()
-
             UserDefaults.shared.isNotificationsEnabled = isNotificationsEnabled
             goToNextStep(index: index)
         }
