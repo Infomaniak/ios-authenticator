@@ -18,6 +18,7 @@
 
 import Alamofire
 import CoreAuthenticator
+import DeviceAssociation
 import InfomaniakCore
 import InfomaniakDI
 import InfomaniakLogin
@@ -50,14 +51,16 @@ final class KeyBasedRefreshAuthenticator: OAuthAuthenticator {
     private func refreshToken(for userId: Int, retryLeft: Int = 3) async throws -> ApiToken {
         @InjectService var authenticatorFacade: AuthenticatorFacade
         @InjectService var tokenStore: TokenStore
+        @InjectService var deviceManager: DeviceManagerable
 
         do {
+            deviceManager.forgetLocalDeviceHash(forUserId: userId)
+
             try await authenticatorFacade.refreshTokenFor(userId: Int64(userId))
             guard let token = tokenStore.tokenFor(userId: userId) else {
                 throw DomainError.tokenNotFoundAfterRefresh(userId: userId)
             }
 
-            register(newToken: token.apiToken)
             return token.apiToken
         } catch {
             Logger.general.error("Failed to refresh token retry left \(retryLeft): \(error)")
@@ -68,15 +71,6 @@ final class KeyBasedRefreshAuthenticator: OAuthAuthenticator {
 
             try await Task.sleep(for: .seconds(1))
             return try await refreshToken(for: userId, retryLeft: retryLeft - 1)
-        }
-    }
-
-    private func register(newToken: ApiToken) {
-        Task {
-            @InjectService var accountManager: AccountManagerable
-            let apiFetcher = await accountManager.getApiFetcher(token: newToken)
-            accountManager.attachDeviceToApiToken(newToken, apiFetcher: apiFetcher)
-            accountManager.registerForNotifications(apiFetcher: apiFetcher)
         }
     }
 }

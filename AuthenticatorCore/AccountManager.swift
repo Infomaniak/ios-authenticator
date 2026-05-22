@@ -57,10 +57,6 @@ public protocol AccountManagerable: Sendable {
     func createAccount(token: ApiToken) async throws
     func getApiFetcher(token: ApiToken) async -> ApiFetcher
     func removeAccount(userId: Int64) async
-
-    nonisolated func attachDeviceToApiToken(_ token: ApiToken, apiFetcher: ApiFetcher)
-    nonisolated func registerAllAccountsForNotifications()
-    nonisolated func registerForNotifications(apiFetcher: ApiFetcher)
 }
 
 public extension AccountManager {
@@ -84,6 +80,22 @@ public actor AccountManager: AccountManagerable {
 
     private var apiFetchers: [UserId: ApiFetcher] = [:]
     private let refreshTokenDelegate = AuthenticatorRefreshTokenDelegate()
+
+    public init() {
+        Task {
+            await observeAccountChanges()
+        }
+    }
+
+    private func observeAccountChanges() async {
+        for await accounts in authenticatorFacade.accounts {
+            let updatedLoggedInAccounts = accounts.filter { $0.status is AccountStatusLoggedIn }
+            await updatedLoggedInAccounts.asyncForEach { account in
+                await self.attachDeviceTokenToApiTokenFor(userId: AccountManager.UserId(account.id))
+                await self.registerAccountForNotificationsFor(userId: AccountManager.UserId(account.id))
+            }
+        }
+    }
 
     public func createAndSetCurrentAccount(code: String, codeVerifier: String) async throws {
         let token = try await networkLoginService.apiTokenUsing(code: code, codeVerifier: codeVerifier)
@@ -126,23 +138,6 @@ public actor AccountManager: AccountManagerable {
             throw DomainError.missingAccounts
         }
 
-        var atLeastOneAccountAdded = false
-        for account in sharedUserProfiles {
-            guard let newToken = tokenStore.tokenFor(userId: TokenStore.UserId(account.id))?.apiToken else {
-                continue
-            }
-
-            atLeastOneAccountAdded = true
-            let apiFetcher = getApiFetcher(token: newToken)
-
-            attachDeviceToApiToken(newToken, apiFetcher: apiFetcher)
-            registerForNotifications(apiFetcher: apiFetcher)
-        }
-
-        if !atLeastOneAccountAdded {
-            throw DomainError.tokenKeyExchangeFailed
-        }
-
         try await authenticatorFacade.addAccounts(connectedAccounts: sharedUserProfiles)
     }
 
@@ -156,32 +151,24 @@ public actor AccountManager: AccountManagerable {
         return newApiFetcher
     }
 
-    public nonisolated func attachDeviceToApiToken(_ token: ApiToken, apiFetcher: ApiFetcher) {
-        Task {
-            do {
-                let device = try await self.deviceManager.getOrCreateCurrentDevice()
-                try await self.deviceManager.attachDeviceIfNeeded(device, to: token, apiFetcher: apiFetcher)
-            } catch {
-                Logger.general.error("Failed to attach device to token: \(error.localizedDescription)")
-            }
+    private func attachDeviceTokenToApiTokenFor(userId: UserId) async {
+        guard let token = tokenStore.tokenFor(userId: userId)?.apiToken else { return }
+
+        do {
+            let apiFetcher = getApiFetcher(token: token)
+            let device = try await deviceManager.getOrCreateCurrentDevice()
+            try await deviceManager.attachDeviceIfNeeded(device, to: token, apiFetcher: apiFetcher)
+        } catch {
+            Logger.general.error("Failed to attach device to token: \(error.localizedDescription)")
         }
     }
 
-    public nonisolated func registerAllAccountsForNotifications() {
-        Task {
-            @InjectService var notificationService: InfomaniakNotifications
-            await tokenStore.getAllTokens().asyncForEach { _, token in
-                let apiFetcher = await self.getApiFetcher(token: token.apiToken)
-                await notificationService.updateTopicsIfNeeded([Topic.twoFAPushChallenge], userApiFetcher: apiFetcher)
-            }
-        }
-    }
+    private func registerAccountForNotificationsFor(userId: UserId) async {
+        guard let token = tokenStore.tokenFor(userId: userId)?.apiToken else { return }
 
-    public nonisolated func registerForNotifications(apiFetcher: ApiFetcher) {
-        Task {
-            @InjectService var notificationService: InfomaniakNotifications
-            await notificationService.updateTopicsIfNeeded([Topic.twoFAPushChallenge], userApiFetcher: apiFetcher)
-        }
+        @InjectService var notificationService: InfomaniakNotifications
+        let apiFetcher = getApiFetcher(token: token)
+        await notificationService.updateTopicsIfNeeded([Topic.twoFAPushChallenge], userApiFetcher: apiFetcher)
     }
 
     public func getAccountsIds() async -> [Int] {
@@ -189,6 +176,8 @@ public actor AccountManager: AccountManagerable {
     }
 
     public func removeAccount(userId: Int64) async {
+        deviceManager.forgetLocalDeviceHash(forUserId: Int(userId))
+
         guard let token = tokenStore.removeTokenFor(userId: TokenStore.UserId(userId)) else {
             return
         }
