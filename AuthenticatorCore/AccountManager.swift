@@ -58,7 +58,9 @@ public protocol AccountManagerable: Sendable {
     func getApiFetcher(token: ApiToken) async -> ApiFetcher
     func removeAccount(userId: Int64) async
 
-    func attachDeviceToApiToken(_ token: ApiToken, apiFetcher: ApiFetcher) async
+    nonisolated func attachDeviceToApiToken(_ token: ApiToken, apiFetcher: ApiFetcher)
+    nonisolated func registerAllAccountsForNotifications()
+    nonisolated func registerForNotifications(apiFetcher: ApiFetcher)
 }
 
 public extension AccountManager {
@@ -73,7 +75,6 @@ public actor AccountManager: AccountManagerable {
     @LazyInjectService private var networkLoginService: InfomaniakNetworkLoginable
     @LazyInjectService private var deviceManager: DeviceManagerable
     @LazyInjectService private var authenticatorFacade: AuthenticatorFacade
-    @LazyInjectService private var notificationService: InfomaniakNotifications
 
     public var accounts: [ApiToken] {
         return tokenStore.getAllTokens().values.map { $0.apiToken }
@@ -132,10 +133,10 @@ public actor AccountManager: AccountManagerable {
             }
 
             atLeastOneAccountAdded = true
-
             let apiFetcher = getApiFetcher(token: newToken)
-            async let _ = attachDeviceToApiToken(newToken, apiFetcher: apiFetcher)
-            async let _ = notificationService.updateTopicsIfNeeded([Topic.twoFAPushChallenge], userApiFetcher: apiFetcher)
+
+            attachDeviceToApiToken(newToken, apiFetcher: apiFetcher)
+            registerForNotifications(apiFetcher: apiFetcher)
         }
 
         if !atLeastOneAccountAdded {
@@ -155,12 +156,31 @@ public actor AccountManager: AccountManagerable {
         return newApiFetcher
     }
 
-    public func attachDeviceToApiToken(_ token: ApiToken, apiFetcher: ApiFetcher) async {
-        do {
-            let device = try await deviceManager.getOrCreateCurrentDevice()
-            try await deviceManager.attachDeviceIfNeeded(device, to: token, apiFetcher: apiFetcher)
-        } catch {
-            Logger.general.error("Failed to attach device to token: \(error.localizedDescription)")
+    public nonisolated func attachDeviceToApiToken(_ token: ApiToken, apiFetcher: ApiFetcher) {
+        Task {
+            do {
+                let device = try await self.deviceManager.getOrCreateCurrentDevice()
+                try await self.deviceManager.attachDeviceIfNeeded(device, to: token, apiFetcher: apiFetcher)
+            } catch {
+                Logger.general.error("Failed to attach device to token: \(error.localizedDescription)")
+            }
+        }
+    }
+
+    public nonisolated func registerAllAccountsForNotifications() {
+        Task {
+            @InjectService var notificationService: InfomaniakNotifications
+            await tokenStore.getAllTokens().asyncForEach { _, token in
+                let apiFetcher = await self.getApiFetcher(token: token.apiToken)
+                await notificationService.updateTopicsIfNeeded([Topic.twoFAPushChallenge], userApiFetcher: apiFetcher)
+            }
+        }
+    }
+
+    public nonisolated func registerForNotifications(apiFetcher: ApiFetcher) {
+        Task {
+            @InjectService var notificationService: InfomaniakNotifications
+            await notificationService.updateTopicsIfNeeded([Topic.twoFAPushChallenge], userApiFetcher: apiFetcher)
         }
     }
 

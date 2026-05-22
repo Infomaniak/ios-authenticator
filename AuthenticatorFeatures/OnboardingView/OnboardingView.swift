@@ -159,11 +159,15 @@ public struct OnboardingView: View {
         Task {
             let center = UNUserNotificationCenter.current()
 
-            guard let isNotificationsEnabled =
-                try? await center.requestAuthorization(options: [.alert, .sound]) else {
+            guard let isNotificationsEnabled = try? await center.requestAuthorization(options: [.alert, .sound]) else {
                 goToNextStep(index: index)
                 return
             }
+
+            UIApplication.shared.registerForRemoteNotifications()
+            @InjectService var accountManager: AccountManagerable
+            accountManager.registerAllAccountsForNotifications()
+
             UserDefaults.shared.isNotificationsEnabled = isNotificationsEnabled
             goToNextStep(index: index)
         }

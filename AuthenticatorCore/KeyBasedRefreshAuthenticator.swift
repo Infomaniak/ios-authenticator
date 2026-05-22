@@ -21,7 +21,6 @@ import CoreAuthenticator
 import InfomaniakCore
 import InfomaniakDI
 import InfomaniakLogin
-import InfomaniakNotifications
 import OSLog
 
 final class KeyBasedRefreshAuthenticator: OAuthAuthenticator {
@@ -74,11 +73,10 @@ final class KeyBasedRefreshAuthenticator: OAuthAuthenticator {
 
     private func register(newToken: ApiToken) {
         Task {
-            @InjectService var notificationService: InfomaniakNotifications
             @InjectService var accountManager: AccountManagerable
             let apiFetcher = await accountManager.getApiFetcher(token: newToken)
-            await accountManager.attachDeviceToApiToken(newToken, apiFetcher: apiFetcher)
-            await notificationService.updateTopicsIfNeeded([Topic.twoFAPushChallenge], userApiFetcher: apiFetcher)
+            accountManager.attachDeviceToApiToken(newToken, apiFetcher: apiFetcher)
+            accountManager.registerForNotifications(apiFetcher: apiFetcher)
         }
     }
 }
