@@ -2,7 +2,13 @@
  * Loco ios export: Xcode Strings (legacy)
  * Project: Authenticator
  * Locale: pl, Polish
- * Tagged: Tag not found
- * Exported by: Baptiste Griva
- * Exported at: Fri, 17 Apr 2026 10:11:53 +0200
+ * Tagged: ios-main-target
+ * Exported by: Philippe Weidmann
+ * Exported at: Fri, 22 May 2026 14:23:00 +0200
  */
+
+/* loco:6a1049a9d0667225850e7d72 */
+"notification2faApproval" = "Potwierdź logowanie";
+
+/* loco:6a104a4e8a27ec591b0381f2 */
+"notificationTitle2faApproval" = "Infomaniak Authenticator";
