@@ -39,6 +39,8 @@ public struct LockedAppView: View {
         ZStack {
             VStack(spacing: IKPadding.large) {
                 AuthenticatorResourcesAsset.Images.lock.swiftUIImage
+                    .resizable()
+                    .scaledToFit()
                     .frame(width: 187, height: 187)
 
                 Text(AuthenticatorResourcesStrings.lockAppTitle)
@@ -74,11 +76,11 @@ public struct LockedAppView: View {
     private func unlockApp() {
         guard !isEvaluatingPolicy else { return }
 
-        Task {
+        Task { @MainActor in
             isEvaluatingPolicy = true
             if await (try? appLockHelper.evaluatePolicy(reason: AuthenticatorResourcesStrings.lockAppTitle)) == true {
                 appLockHelper.setTime()
-                navigationState.transitionToMainViewIfPossible()
+                await navigationState.transitionToMainViewIfPossible()
             } else {
                 isEvaluatingPolicy = false
             }

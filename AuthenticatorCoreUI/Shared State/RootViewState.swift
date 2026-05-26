@@ -126,12 +126,10 @@ public final class RootViewState: ObservableObject {
         appStatusAddingAnAccount.cancel()
     }
 
-    public func transitionToMainViewIfPossible() {
+    public func transitionToMainViewIfPossible() async {
         @InjectService var accountManager: AccountManagerable
-        var accountsEmpty = true
-        Task { @MainActor in
-            accountsEmpty = await accountManager.accounts.isEmpty
-        }
+        let accountsEmpty = await accountManager.accounts.isEmpty
+
         if UserDefaults.shared.isAppLockEnabled && appLockHelper.isAppLocked && !accountsEmpty {
             state = .appLocked
         } else {
@@ -156,7 +154,7 @@ public final class RootViewState: ObservableObject {
                 } else if status is AppStatusEverythingReady {
                     newOnboardingStepFromCurrentState(.success)
                 } else if status is AppStatusSetupComplete {
-                    transitionToMainViewIfPossible()
+                    await transitionToMainViewIfPossible()
                 } else if status is AppStatusAddingAnAccount {
                     state = .newAccount(.addAccount)
                 } else if let status = status as? AppStatusLoginRequiredMustReLogin {

@@ -187,5 +187,9 @@ public actor AccountManager: AccountManagerable {
         } catch {
             SentryDebug.capture(error: error)
         }
+
+        if accounts.isEmpty {
+            UserDefaults.shared.isAppLockEnabled = false
+        }
     }
 }

@@ -20,11 +20,16 @@ import Foundation
 import ProjectDescription
 import ProjectDescriptionHelpers
 
-let appLockView = Feature(name: "AppLockView", additionalDependencies: [
-    TargetDependency.external(name: "DesignSystem"),
-    TargetDependency.external(name: "InfomaniakDI"),
-    TargetDependency.external(name: "InfomaniakCoreCommonUI")
-])
+let appLockView = Feature(
+    name: "AppLockView",
+    additionalDependencies: [
+        TargetDependency.target(name: "\(Constants.projectName)Resources"),
+        TargetDependency.external(name: "DesignSystem"),
+        TargetDependency.external(name: "InfomaniakDI"),
+        TargetDependency.external(name: "InfomaniakCoreCommonUI"),
+        TargetDependency.external(name: "InfomaniakCoreSwiftUI")
+    ]
+)
 
 let preloadingView = Feature(name: "PreloadingView",
                              additionalDependencies: [
