@@ -70,11 +70,11 @@ struct AccountDetailHeaderView: View {
                 StatusHeaderView(
                     type: .warning,
                     description: AuthenticatorResourcesStrings.errorLoginFailed,
-                    primaryButton: (
+                    primaryButton: (title: AuthenticatorResourcesStrings.logInButton, action: loginAccountTapped),
+                    secondaryButton: (
                         title: AuthenticatorResourcesStrings.contactSupportTitle,
                         action: { openURL(URLConstants.support.url) }
-                    ),
-                    secondaryButton: (title: AuthenticatorResourcesStrings.logInButton, action: loginAccountTapped)
+                    )
                 )
             }
         }
