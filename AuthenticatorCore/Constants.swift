@@ -35,9 +35,7 @@ public enum Constants {
 
     public static let managerHost = "manager.\(ApiEnvironment.current.host)"
 
-    public static let biometryType: LABiometryType = {
-        return LAContext().biometryType
-    }()
+    public static let biometryType: LABiometryType = LAContext().biometryType
 }
 
 public struct URLConstants: Sendable {

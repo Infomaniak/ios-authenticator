@@ -16,8 +16,10 @@
  along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
+import AuthenticatorCore
 @preconcurrency import CoreAuthenticator
 import Foundation
+import InfomaniakCoreCommonUI
 import InfomaniakDI
 import OSLog
 import SwiftUI
@@ -52,11 +54,14 @@ public enum RootViewType: @MainActor Equatable {
             return lhsMainViewState == rhsMainViewState
         case (.updateRequired, .updateRequired):
             return true
+        case (.appLocked, .appLocked):
+            return true
         default:
             return false
         }
     }
 
+    case appLocked
     case mainView(MainViewState)
     case preloading
     case migration(OnboardingStep)
@@ -67,6 +72,7 @@ public enum RootViewType: @MainActor Equatable {
 
 @MainActor
 public final class RootViewState: ObservableObject {
+    @LazyInjectService private var appLockHelper: AppLockHelper
     @InjectService private var authenticatorFacade: AuthenticatorFacade
 
     private static let logger = Logger(category: "RootViewState")
@@ -120,6 +126,19 @@ public final class RootViewState: ObservableObject {
         appStatusAddingAnAccount.cancel()
     }
 
+    public func transitionToMainViewIfPossible() {
+        @InjectService var accountManager: AccountManagerable
+        var accountsEmpty = true
+        Task { @MainActor in
+            accountsEmpty = await accountManager.accounts.isEmpty
+        }
+        if UserDefaults.shared.isAppLockEnabled && appLockHelper.isAppLocked && !accountsEmpty {
+            state = .appLocked
+        } else {
+            state = .mainView(MainViewState())
+        }
+    }
+
     func observeAppStatus() {
         Task {
             for try await status in authenticatorFacade.appStatus {
@@ -137,7 +156,7 @@ public final class RootViewState: ObservableObject {
                 } else if status is AppStatusEverythingReady {
                     newOnboardingStepFromCurrentState(.success)
                 } else if status is AppStatusSetupComplete {
-                    state = .mainView(MainViewState())
+                    transitionToMainViewIfPossible()
                 } else if status is AppStatusAddingAnAccount {
                     state = .newAccount(.addAccount)
                 } else if let status = status as? AppStatusLoginRequiredMustReLogin {

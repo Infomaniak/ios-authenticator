@@ -20,6 +20,12 @@ import Foundation
 import ProjectDescription
 import ProjectDescriptionHelpers
 
+let appLockView = Feature(name: "AppLockView", additionalDependencies: [
+    TargetDependency.external(name: "DesignSystem"),
+    TargetDependency.external(name: "InfomaniakDI"),
+    TargetDependency.external(name: "InfomaniakCoreCommonUI")
+])
+
 let preloadingView = Feature(name: "PreloadingView",
                              additionalDependencies: [
                                  TargetDependency.external(name: "DesignSystem"),
@@ -76,6 +82,7 @@ let rootView = Feature(
         mainView,
         preloadingView,
         onboardingView,
+        appLockView,
         TargetDependency.target(name: "\(Constants.projectName)CoreUI"),
         TargetDependency.external(name: "VersionChecker")
     ]
@@ -87,7 +94,8 @@ let mainiOSAppFeatures = [
     settingsView,
     preloadingView,
     onboardingView,
-    accountsView
+    accountsView,
+    appLockView
 ]
 
 let project = Project(

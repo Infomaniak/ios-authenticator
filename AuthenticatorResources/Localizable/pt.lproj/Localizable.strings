@@ -3,8 +3,8 @@
  * Project: Authenticator
  * Locale: pt, Portuguese
  * Tagged: ios
- * Exported by: Philippe Weidmann
- * Exported at: Wed, 20 May 2026 08:50:17 +0200
+ * Exported by: Killian Mathias
+ * Exported at: Fri, 22 May 2026 14:49:49 +0200
  */
 
 /* loco:69d6617d0ee9dd38d50c99e2 */
@@ -126,6 +126,9 @@
 
 /* loco:6984a2f068397af26e00c502 */
 "avatarContentDescription" = "Avatar da conta";
+
+/* loco:6a10505049203225280a0f27 */
+"buttonUnlock" = "Desbloquear";
 
 /* loco:695e8b5c59029a2c62047642 */
 "callButton" = "Ligar";
@@ -264,6 +267,9 @@
 
 /* loco:695e9bbb6734592dc60d0973 */
 "locationLoginTitle" = "Local";
+
+/* loco:6a104b65fbc6345db00c9b2a */
+"lockAppTitle" = "Aplicação bloqueada";
 
 /* loco:695e87462daa8c005402c422 */
 "logInButton" = "Entrar";
