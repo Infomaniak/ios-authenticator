@@ -16,6 +16,7 @@
  along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
+import CoreAuthenticator
 import Foundation
 @preconcurrency import InfomaniakCore
 import LocalAuthentication
@@ -46,13 +47,20 @@ public struct URLConstants: Sendable {
     public static let matomo = URLConstants(urlString: "https://analytics.infomaniak.com/matomo.php")
 
     public static let accountActivity =
-        URLConstants(urlString: "https://\(Constants.managerHost)/v3/ng/profile/user/connection-history/activity")
+        URLConstants(urlString: CoreAuthenticator.UrlConstants.shared.managerUrl(
+            host: ApiEnvironment.current.host,
+            path: CoreAuthenticator.UrlConstants.shared.ACTIVITY_MANAGER_URL
+        ))
     public static let accountParameters =
-        URLConstants(
-            urlString: "https://\(Constants.managerHost)/v3/ng/profile/user/security-and-recovery-parameters/dashboard?global-settings=user-account-security"
-        )
-    public static let support = URLConstants(urlString: "https://infomaniak.com/gtl/help")
-    public static let recoverPassword = URLConstants(urlString: "https://login.infomaniak.com/fr/recover/password")
+        URLConstants(urlString: CoreAuthenticator.UrlConstants.shared.managerUrl(
+            host: ApiEnvironment.current.host,
+            path: CoreAuthenticator.UrlConstants.shared.SETTINGS_MANAGER_URL
+
+        ))
+    public static let support =
+        URLConstants(urlString: CoreAuthenticator.UrlConstants.shared.HELP_SUPPORT_URL)
+    public static let recoverPassword =
+        URLConstants(urlString: CoreAuthenticator.UrlConstants.shared.RECOVER_PASSWORD_URL + "/password")
 
     private var urlString: String
 
