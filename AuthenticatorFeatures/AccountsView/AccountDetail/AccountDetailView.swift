@@ -32,6 +32,7 @@ struct AccountDetailView: View {
     @State private var presentedWebViewURL: URL?
 
     @State private var isFetchingChallenges = false
+    @State private var fetchCompleted = false
 
     @Environment(\.dismiss) private var dismiss
 
@@ -45,8 +46,14 @@ struct AccountDetailView: View {
                         Text(AuthenticatorResourcesStrings.refreshPendingLoginsButton)
                             .frame(maxWidth: .infinity, alignment: .leading)
 
-                        if isFetchingChallenges {
-                            ProgressView()
+                        ZStack {
+                            if isFetchingChallenges {
+                                ProgressView()
+                            }
+
+                            Image(systemName: "checkmark")
+                                .scaleEffect(fetchCompleted ? 1 : 0)
+                                .animation(.default, value: fetchCompleted)
                         }
                     }
                 }
@@ -123,6 +130,9 @@ struct AccountDetailView: View {
         guard !isFetchingChallenges else { return }
         isFetchingChallenges = true
 
+        let feedback = UINotificationFeedbackGenerator()
+        feedback.prepare()
+
         Task {
             @InjectService var tokenStore: TokenStore
             @InjectService var accountManager: AccountManagerable
@@ -142,6 +152,11 @@ struct AccountDetailView: View {
             await inAppTwoFactorAuthenticationManager.checkConnectionAttemptsFor(session: session)
 
             isFetchingChallenges = false
+            fetchCompleted = true
+            feedback.notificationOccurred(.success)
+
+            try? await Task.sleep(for: .seconds(1))
+            fetchCompleted = false
         }
     }
 }
