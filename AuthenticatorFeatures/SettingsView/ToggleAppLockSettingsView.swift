@@ -29,7 +29,7 @@ struct ToggleAppLockSettingsView: View {
 
     var body: some View {
         Toggle(
-            AuthenticatorResourcesStrings.unlockingWithBiometry(Constants.biometryContext.localizedReason),
+            AuthenticatorResourcesStrings.unlockingWithBiometry(Constants.biometryType == .faceID ? "Face ID" : "Touch ID"),
             isOn: $isAppLockEnabled
         )
         .onChange(of: isAppLockEnabled) { newValue in

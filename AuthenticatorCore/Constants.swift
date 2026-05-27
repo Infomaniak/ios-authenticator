@@ -35,11 +35,7 @@ public enum Constants {
 
     public static let managerHost = "manager.\(ApiEnvironment.current.host)"
 
-    public static var biometryContext: LAContext {
-        let context = LAContext()
-        context.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: nil)
-        return context
-    }
+    public static let biometryType: LABiometryType = LAContext().biometryType
 }
 
 public struct URLConstants: Sendable {

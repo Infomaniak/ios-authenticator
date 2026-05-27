@@ -16,6 +16,7 @@
  along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
+import AuthenticatorAppLockView
 import AuthenticatorCoreUI
 import AuthenticatorMainView
 import AuthenticatorOnboardingView
@@ -44,6 +45,8 @@ public struct RootView: View {
     public var body: some View {
         ZStack {
             switch rootViewState.state {
+            case .appLocked:
+                LockedAppView()
             case .mainView(let mainViewState):
                 MainView()
                     .environmentObject(mainViewState)
