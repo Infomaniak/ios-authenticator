@@ -3,8 +3,8 @@
  * Project: Authenticator
  * Locale: pt, Portuguese
  * Tagged: ios
- * Exported by: Killian Mathias
- * Exported at: Fri, 22 May 2026 14:49:49 +0200
+ * Exported by: Philippe Weidmann
+ * Exported at: Wed, 27 May 2026 15:01:55 +0200
  */
 
 /* loco:69d6617d0ee9dd38d50c99e2 */
@@ -297,9 +297,6 @@
 
 /* loco:695e9ce7fb4842ffed0c4603 */
 "loginRequestExpiredTitle" = "Esta solicitação de login expirou";
-
-/* loco:6a02ca13d3a7abc94b0e30e2 */
-"migrationWarningDescription" = "A transição para a nova aplicação não pôde ser concluída para uma ou mais das suas contas.";
 
 /* loco:695e9dbf2e191d3ca00bfb15 */
 "noInternetTitle" = "Sem conexão com a internet";

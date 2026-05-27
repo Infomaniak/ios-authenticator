@@ -40,7 +40,11 @@ public struct AccountsView: View {
     public init() {}
 
     private var shouldDisplayWarning: Bool {
-        !mainViewState.accounts.allSatisfy { $0.status == .protected }
+        mainViewState.accounts.contains { $0.status == .partiallyProtected }
+    }
+
+    private var notMigratedCount: Int {
+        mainViewState.accounts.count { $0.status == .loggedOut }
     }
 
     public var body: some View {
@@ -55,6 +59,15 @@ public struct AccountsView: View {
                         StatusHeaderView(
                             type: .warning,
                             description: AuthenticatorResourcesStrings.actionRequiredDescription,
+                        )
+                        .textCase(nil)
+                        .listRowInsets(EdgeInsets(top: IKPadding.medium, leading: 0, bottom: IKPadding.large, trailing: 0))
+                    }
+
+                    if notMigratedCount > 0 {
+                        StatusHeaderView(
+                            type: .warning,
+                            description: AuthenticatorResourcesStrings.migrationWarningDescription(notMigratedCount),
                         )
                         .textCase(nil)
                         .listRowInsets(EdgeInsets(top: IKPadding.medium, leading: 0, bottom: IKPadding.large, trailing: 0))

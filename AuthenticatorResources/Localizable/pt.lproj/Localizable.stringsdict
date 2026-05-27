@@ -4,10 +4,27 @@
  Loco ios export: Xcode Stringsdict (legacy)
  Project: Authenticator
  Locale: pt, Portuguese
- Tagged: Tag not found
+ Tagged: ios-stringsdict
  Exported by: Philippe Weidmann
- Exported at: Tue, 19 May 2026 08:29:06 +0200
+ Exported at: Wed, 27 May 2026 15:01:56 +0200
 -->
 <plist version="1.0">
-  <dict></dict>
+  <dict>
+    <key>migrationWarningDescription</key>
+    <dict>
+      <key>NSStringLocalizedFormatKey</key>
+      <string>%#@value@</string>
+      <key>value</key>
+      <dict>
+        <key>NSStringFormatSpecTypeKey</key>
+        <string>NSStringPluralRuleType</string>
+        <key>NSStringFormatValueTypeKey</key>
+        <string>d</string>
+        <key>one</key>
+        <string>Inicie novamente a sessão para proteger a sua conta.</string>
+        <key>other</key>
+        <string>Inicie novamente a sessão para proteger as suas contas.</string>
+      </dict>
+    </dict>
+  </dict>
 </plist>
