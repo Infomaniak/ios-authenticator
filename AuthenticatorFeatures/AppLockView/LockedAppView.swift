@@ -49,13 +49,14 @@ public struct LockedAppView: View {
             }
 
             VStack {
-                AuthenticatorResourcesAsset.Images.onboardingLogo.swiftUIImage
-                    .resizable()
-                    .scaledToFit()
-                    .frame(height: LockedAppView.onboardingLogoHeight)
-                    .accessibilityHidden(true)
-
-                Spacer()
+                VStack {
+                    AuthenticatorResourcesAsset.Images.onboardingLogo.swiftUIImage
+                        .resizable()
+                        .scaledToFit()
+                        .frame(height: LockedAppView.onboardingLogoHeight)
+                        .accessibilityHidden(true)
+                }
+                .frame(maxHeight: .infinity, alignment: .leading)
 
                 Button(AuthenticatorResourcesStrings.buttonUnlock, action: unlockApp)
                     .buttonStyle(.ikBorderedProminent)
