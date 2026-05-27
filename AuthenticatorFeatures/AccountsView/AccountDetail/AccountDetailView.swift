@@ -33,6 +33,8 @@ struct AccountDetailView: View {
 
     @State private var isFetchingChallenges = false
 
+    @Environment(\.dismiss) private var dismiss
+
     let account: UIAccount
 
     var body: some View {
@@ -114,6 +116,7 @@ struct AccountDetailView: View {
             @InjectService var accountManager: AccountManagerable
             await accountManager.removeAccount(userId: account.id)
         }
+        dismiss()
     }
 
     private func fetchChallenges() {
