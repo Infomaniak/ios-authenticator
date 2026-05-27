@@ -20,6 +20,8 @@ import AuthenticatorCore
 import AuthenticatorCoreUI
 import AuthenticatorResources
 import AuthenticatorRootView
+import InfomaniakCoreCommonUI
+import InfomaniakDI
 import SwiftUI
 
 @main
@@ -40,7 +42,21 @@ struct AuthenticatorApp: App {
             RootView()
                 .environmentObject(rootViewState)
                 .preferredColorScheme(theme.asColorScheme)
+                .sceneLifecycle(willEnterForeground: willEnterForeground, didEnterBackground: didEnterBackground)
         }
         .defaultAppStorage(.shared)
+    }
+
+    private func willEnterForeground() {
+        Task {
+            await rootViewState.transitionToLockViewIfNeeded()
+        }
+    }
+
+    private func didEnterBackground() {
+        @LazyInjectService var appLockHelper: AppLockHelper
+        if UserDefaults.shared.isAppLockEnabled && rootViewState.state != .appLocked {
+            appLockHelper.setTime()
+        }
     }
 }

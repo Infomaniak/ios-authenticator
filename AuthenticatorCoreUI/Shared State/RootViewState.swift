@@ -73,6 +73,8 @@ public enum RootViewType: @MainActor Equatable {
 @MainActor
 public final class RootViewState: ObservableObject {
     @InjectService private var authenticatorFacade: AuthenticatorFacade
+    @InjectService private var appLockHelper: AppLockHelper
+    @InjectService private var accountManager: AccountManagerable
 
     private static let logger = Logger(category: "RootViewState")
 
@@ -126,14 +128,18 @@ public final class RootViewState: ObservableObject {
     }
 
     public func transitionToMainViewIfPossible() async {
-        @LazyInjectService var appLockHelper: AppLockHelper
-        @InjectService var accountManager: AccountManagerable
         let accountsEmpty = await accountManager.accounts.isEmpty
-
         if UserDefaults.shared.isAppLockEnabled && appLockHelper.isAppLocked && !accountsEmpty {
             state = .appLocked
         } else {
             state = .mainView(MainViewState())
+        }
+    }
+
+    public func transitionToLockViewIfNeeded() async {
+        let accountsEmpty = await accountManager.accounts.isEmpty
+        if UserDefaults.shared.isAppLockEnabled && appLockHelper.isAppLocked && !accountsEmpty {
+            state = .appLocked
         }
     }
 
