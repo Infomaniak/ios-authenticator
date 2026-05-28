@@ -30,7 +30,12 @@ public enum Constants {
     public static let matomoId = "40"
 
     public static func autologinURL(to destination: URL) -> URL? {
-        return URL(string: "https://\(Constants.managerHost)/v3/mobile_login/?url=\(destination.absoluteString)")
+        var components = URLComponents()
+        components.scheme = "https"
+        components.host = managerHost
+        components.path = "/v3/mobile_login/"
+        components.queryItems = [URLQueryItem(name: "url", value: destination.absoluteString)]
+        return components.url
     }
 
     public static let managerHost = "manager.\(ApiEnvironment.current.host)"
