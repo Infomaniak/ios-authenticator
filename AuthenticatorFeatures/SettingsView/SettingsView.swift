@@ -20,6 +20,7 @@ import AuthenticatorCore
 import AuthenticatorCoreUI
 import AuthenticatorResources
 import DesignSystem
+import InfomaniakCore
 import InfomaniakCoreCommonUI
 import InfomaniakDI
 import InfomaniakPrivacyManagement
@@ -83,6 +84,8 @@ public struct SettingsView: View {
                         AuthenticatorTrailingLabel(\.contactSupportTitle, iconKey: \.squareArrowDiagonalUp)
                     }
                     .accessibilityHint(AuthenticatorResourcesStrings.contentDescriptionButtonExternalLink)
+                } footer: {
+                    Text(CorePlatform.appVersionLabel(fallbackAppName: "Infomaniak Authenticator"))
                 }
                 .authSectionStyle()
             }
