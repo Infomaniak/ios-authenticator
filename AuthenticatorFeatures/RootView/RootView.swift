@@ -31,9 +31,9 @@ public extension IKButtonTheme {
         tertiary: Color.gray.opacity(0.4),
         disabledPrimary: TintShapeStyle.tint.opacity(0.5),
         disabledSecondary: TintShapeStyle.tint.opacity(0.4),
-        error: Color.red,
-        smallFont: .callout,
-        mediumFont: .body
+        error: .red, // Default value
+        smallFont: .callout, // Default value
+        mediumFont: .Token.bodyBold
     )
 }
 

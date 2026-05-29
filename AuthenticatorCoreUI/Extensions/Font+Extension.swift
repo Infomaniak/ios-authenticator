@@ -23,7 +23,7 @@ public extension Font {
         public static let title2 = Font.title2.bold()
 
         public static let body = Font.body
-        public static let bodyBold = Font.body.bold()
+        public static let bodyBold = Font.body.weight(.semibold)
 
         public static let headline = Font.headline
         public static let subheadline = Font.subheadline
