@@ -73,6 +73,7 @@ public struct StatusHeaderView: View {
             roundedRectangle
                 .stroke(type.statusColor.foreground, lineWidth: 1)
         }
+        .ikButtonTheme(.statusAlert)
     }
 
     public enum StatusHeaderType {
