@@ -178,12 +178,10 @@ public actor AccountManager: AccountManagerable {
     public func removeAccount(userId: Int64) async {
         deviceManager.forgetLocalDeviceHash(forUserId: Int(userId))
 
-        guard let token = tokenStore.removeTokenFor(userId: TokenStore.UserId(userId)) else {
-            return
-        }
+        let token = tokenStore.removeTokenFor(userId: TokenStore.UserId(userId))
 
         do {
-            try await authenticatorFacade.removeAccount(token: token.accessToken, id: userId)
+            try await authenticatorFacade.removeAccount(token: token?.accessToken, id: userId)
         } catch {
             SentryDebug.capture(error: error)
         }
