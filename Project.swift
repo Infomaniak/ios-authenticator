@@ -89,7 +89,7 @@ let mainiOSAppFeatures = [
     settingsView,
     preloadingView,
     onboardingView,
-    accountsView,
+    accountsView
 ]
 
 let project = Project(

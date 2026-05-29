@@ -70,7 +70,6 @@ public enum RootViewType: @MainActor Equatable {
 @MainActor
 public final class RootViewState: ObservableObject {
     @InjectService private var authenticatorFacade: AuthenticatorFacade
-    @InjectService private var accountManager: AccountManagerable
 
     private static let logger = Logger(category: "RootViewState")
 

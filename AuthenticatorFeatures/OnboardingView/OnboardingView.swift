@@ -16,6 +16,7 @@
  along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
+import AppLock
 import AuthenticationServices
 import AuthenticatorCore
 import AuthenticatorCoreUI
@@ -30,7 +31,6 @@ import InfomaniakOnboarding
 import InterAppLogin
 import SwiftModalPresentation
 import SwiftUI
-import AppLock
 
 public struct OnboardingView: View {
     @EnvironmentObject private var rootViewState: RootViewState
