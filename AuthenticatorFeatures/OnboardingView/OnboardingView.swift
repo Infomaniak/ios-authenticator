@@ -30,6 +30,7 @@ import InfomaniakOnboarding
 import InterAppLogin
 import SwiftModalPresentation
 import SwiftUI
+import AppLock
 
 public struct OnboardingView: View {
     @EnvironmentObject private var rootViewState: RootViewState

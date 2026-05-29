@@ -20,7 +20,6 @@ import Foundation
 import InfomaniakCore
 
 public extension UserDefaults.Keys {
-    static let appLock = UserDefaults.Keys(rawValue: "appLock")
     static let notificationsEnabled = UserDefaults.Keys(rawValue: "notificationsEnabled")
     static let matomoAuthorized = UserDefaults.Keys(rawValue: "matomoAuthorized")
     static let sentryAuthorized = UserDefaults.Keys(rawValue: "sentryAuthorized")
@@ -28,18 +27,6 @@ public extension UserDefaults.Keys {
 }
 
 public extension UserDefaults {
-    var isAppLockEnabled: Bool {
-        get {
-            if object(forKey: key(.appLock)) == nil {
-                set(DefaultPreferences.appLock, forKey: key(.appLock))
-            }
-            return bool(forKey: key(.appLock))
-        }
-        set {
-            set(newValue, forKey: key(.appLock))
-        }
-    }
-
     var isSentryAuthorized: Bool {
         get {
             if object(forKey: key(.sentryAuthorized)) == nil {

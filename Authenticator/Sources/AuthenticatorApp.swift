@@ -16,6 +16,7 @@
  along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
+import AppLock
 import AuthenticatorCore
 import AuthenticatorCoreUI
 import AuthenticatorResources
@@ -31,6 +32,8 @@ struct AuthenticatorApp: App {
     // periphery:ignore - Making sure the DI is registered at a very early stage of the app launch.
     private let dependencyInjectionHook = TargetAssembly()
 
+    @InjectService var appLockHelper: AppLockHelper
+
     @AppStorage(UserDefaults.shared.key(.theme), store: .shared) private var theme = DefaultPreferences.theme
 
     @UIApplicationDelegateAdaptor private var appDelegateAdaptor: AppDelegate
@@ -42,20 +45,13 @@ struct AuthenticatorApp: App {
             RootView()
                 .environmentObject(rootViewState)
                 .preferredColorScheme(theme.asColorScheme)
-                .sceneLifecycle(willEnterForeground: willEnterForeground, didEnterBackground: didEnterBackground)
+                .sceneLifecycle(didEnterBackground: didEnterBackground)
         }
         .defaultAppStorage(.shared)
     }
 
-    private func willEnterForeground() {
-        Task {
-            await rootViewState.transitionToLockViewIfNeeded()
-        }
-    }
-
     private func didEnterBackground() {
-        @LazyInjectService var appLockHelper: AppLockHelper
-        if UserDefaults.shared.isAppLockEnabled && rootViewState.state != .appLocked {
+        if UserDefaults.shared.isAppLockEnabled {
             appLockHelper.setTime()
         }
     }

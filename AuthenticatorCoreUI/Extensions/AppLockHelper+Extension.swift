@@ -19,6 +19,7 @@
 import AuthenticatorResources
 import Foundation
 import InfomaniakCoreCommonUI
+import AppLock
 
 public extension AppLockHelper {
     func canEnableAppLock() async -> Bool {

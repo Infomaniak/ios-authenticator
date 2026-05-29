@@ -20,17 +20,6 @@ import Foundation
 import ProjectDescription
 import ProjectDescriptionHelpers
 
-let appLockView = Feature(
-    name: "AppLockView",
-    additionalDependencies: [
-        TargetDependency.target(name: "\(Constants.projectName)Resources"),
-        TargetDependency.external(name: "DesignSystem"),
-        TargetDependency.external(name: "InfomaniakDI"),
-        TargetDependency.external(name: "InfomaniakCoreCommonUI"),
-        TargetDependency.external(name: "InfomaniakCoreSwiftUI")
-    ]
-)
-
 let preloadingView = Feature(name: "PreloadingView",
                              additionalDependencies: [
                                  TargetDependency.external(name: "DesignSystem"),
@@ -44,6 +33,7 @@ let accountsView = Feature(
         TargetDependency.target(name: "\(Constants.projectName)Resources"),
         TargetDependency.external(name: "NukeUI"),
         TargetDependency.external(name: "InAppTwoFactorAuthentication"),
+        TargetDependency.external(name: "AppLock"),
         TargetDependency.external(name: "InfomaniakConcurrency"),
         TargetDependency.external(name: "InfomaniakCoreSwiftUI")
     ]
@@ -65,6 +55,7 @@ let mainView = Feature(
         accountsView,
         TargetDependency.target(name: "\(Constants.projectName)Resources"),
         TargetDependency.external(name: "InAppTwoFactorAuthentication"),
+        TargetDependency.external(name: "AppLock"),
         TargetDependency.external(name: "InfomaniakCoreUIResources"),
         TargetDependency.external(name: "InfomaniakConcurrency"),
         TargetDependency.external(name: "VersionChecker")
@@ -87,7 +78,6 @@ let rootView = Feature(
         mainView,
         preloadingView,
         onboardingView,
-        appLockView,
         TargetDependency.target(name: "\(Constants.projectName)CoreUI"),
         TargetDependency.external(name: "VersionChecker")
     ]
@@ -100,7 +90,6 @@ let mainiOSAppFeatures = [
     preloadingView,
     onboardingView,
     accountsView,
-    appLockView
 ]
 
 let project = Project(
@@ -135,6 +124,7 @@ let project = Project(
                 .external(name: "InfomaniakDI"),
                 .external(name: "InfomaniakNotifications"),
                 .external(name: "InAppTwoFactorAuthentication"),
+                .external(name: "AppLock"),
                 rootView.asDependency
             ],
             settings: .settings(base: Constants.baseSettings),
@@ -164,7 +154,8 @@ let project = Project(
                     .external(name: "InfomaniakLogin"),
                     .external(name: "InfomaniakNotifications"),
                     .external(name: "InterAppLogin"),
-                    .external(name: "Sentry-Dynamic")
+                    .external(name: "Sentry-Dynamic"),
+                    .external(name: "AppLock")
                 ],
                 settings: .settings(base: Constants.baseSettings)),
         .target(name: "\(Constants.projectName)CoreUI",

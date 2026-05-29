@@ -16,6 +16,8 @@
  along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
+import AppLock
+import AuthenticatorResources
 import CoreAuthenticator
 import DeviceAssociation
 import Foundation
@@ -132,7 +134,11 @@ open class TargetAssembly: @unchecked Sendable {
                 return matomo
             },
             Factory(type: AppLockHelper.self) { _, _ in
-                AppLockHelper()
+                AppLockHelper(
+                    logoImage: AuthenticatorResourcesAsset.Images.onboardingLogo.swiftUIImage,
+                    lockImage: AuthenticatorResourcesAsset.Images.lock.swiftUIImage,
+                    userDefaults: UserDefaults.shared
+                )
             }
         ]
     }

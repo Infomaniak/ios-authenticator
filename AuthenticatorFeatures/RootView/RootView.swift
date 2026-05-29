@@ -45,8 +45,6 @@ public struct RootView: View {
     public var body: some View {
         ZStack {
             switch rootViewState.state {
-            case .appLocked:
-                LockedAppView()
             case .mainView(let mainViewState):
                 MainView()
                     .environmentObject(mainViewState)
