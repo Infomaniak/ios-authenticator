@@ -44,7 +44,8 @@ let settingsView = Feature(
     additionalDependencies: [
         TargetDependency.target(name: "\(Constants.projectName)Resources"),
         TargetDependency.external(name: "InfomaniakPrivacyManagement"),
-        TargetDependency.external(name: "InfomaniakCoreUIResources")
+        TargetDependency.external(name: "InfomaniakCoreUIResources"),
+        TargetDependency.external(name: "AppLock")
     ]
 )
 
@@ -69,7 +70,8 @@ let onboardingView = Feature(name: "OnboardingView", additionalDependencies: [
     TargetDependency.external(name: "Lottie"),
     TargetDependency.external(name: "InterAppLogin"),
     TargetDependency.external(name: "SwiftModalPresentation"),
-    TargetDependency.external(name: "InfomaniakCreateAccount")
+    TargetDependency.external(name: "InfomaniakCreateAccount"),
+    TargetDependency.external(name: "AppLock")
 ])
 
 let rootView = Feature(
@@ -172,7 +174,8 @@ let project = Project(
                     .external(name: "InfomaniakCoreSwiftUI"),
                     .external(name: "InfomaniakCore"),
                     .external(name: "DesignSystem"),
-                    .external(name: "NukeUI")
+                    .external(name: "NukeUI"),
+                    .external(name: "AppLock")
                 ],
                 settings: .settings(base: Constants.baseSettings)),
         .target(name: "\(Constants.projectName)Resources",
