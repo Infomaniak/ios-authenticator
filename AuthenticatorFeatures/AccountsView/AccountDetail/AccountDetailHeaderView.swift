@@ -21,6 +21,7 @@ import AuthenticatorCoreUI
 import AuthenticatorResources
 import CoreAuthenticator
 import DesignSystem
+import InfomaniakCoreUIResources
 import InfomaniakDI
 import SwiftUI
 
@@ -31,6 +32,13 @@ struct AccountDetailHeaderView: View {
     @State private var mustReloginAccount: UIMustReLoginAccount?
 
     let account: UIAccount
+
+    private var contactSupportAction: (title: String, action: () -> Void) {
+        (
+            title: AuthenticatorResourcesStrings.contactSupportTitle,
+            action: { openURL(URLConstants.support.url) }
+        )
+    }
 
     var body: some View {
         VStack(alignment: .leading, spacing: IKPadding.large) {
@@ -71,10 +79,21 @@ struct AccountDetailHeaderView: View {
                     type: .warning,
                     description: AuthenticatorResourcesStrings.errorLoginFailed,
                     primaryButton: (title: AuthenticatorResourcesStrings.logInButton, action: loginAccountTapped),
-                    secondaryButton: (
-                        title: AuthenticatorResourcesStrings.contactSupportTitle,
-                        action: { openURL(URLConstants.support.url) }
-                    )
+                    secondaryButton: contactSupportAction
+                )
+            } else if account.status == .loginFailedRetriable {
+                StatusHeaderView(
+                    type: .warning,
+                    description: AuthenticatorResourcesStrings.errorLoginFailed,
+                    primaryButton: (title: CoreUILocalizable.buttonRetry, action: retryButtonTapped),
+                    secondaryButton: contactSupportAction
+                )
+            } else if account.status == .loginFailed {
+                StatusHeaderView(
+                    type: .error,
+                    description: AuthenticatorResourcesStrings.errorLoginFailed,
+                    primaryButton: nil,
+                    secondaryButton: contactSupportAction
                 )
             }
         }
@@ -89,14 +108,25 @@ struct AccountDetailHeaderView: View {
     private func loginAccountTapped() {
         Task {
             @InjectService var authenticatorFacade: AuthenticatorFacade
-            guard let account = await authenticatorFacade.account(id: account.id) else { return }
-            guard let accountStatus = account.status as? AccountStatusNotConnectedReLogin else { return }
+            guard let account = await authenticatorFacade.account(id: account.id),
+                  let accountStatus = account.status as? AccountStatusNotConnectedReLogin else { return }
 
             mustReloginAccount = UIMustReLoginAccount(
                 account: UIAccount(account: account),
                 status: accountStatus,
                 skip: nil
             )
+        }
+    }
+
+    private func retryButtonTapped() {
+        Task {
+            @InjectService var authenticatorFacade: AuthenticatorFacade
+            guard let account = await authenticatorFacade.account(id: account.id),
+                  let accountStatus = account.status as? AccountStatusNotConnectedLoginFailed,
+                  let retry = accountStatus.issue as? IssueRetriable else { return }
+
+            retry.proceed(false)
         }
     }
 }
@@ -111,4 +141,12 @@ struct AccountDetailHeaderView: View {
 
 #Preview {
     AccountDetailHeaderView(account: PreviewHelper.sampleUIAccount3)
+}
+
+#Preview {
+    AccountDetailHeaderView(account: PreviewHelper.sampleUIAccount4)
+}
+
+#Preview {
+    AccountDetailHeaderView(account: PreviewHelper.sampleUIAccount5)
 }

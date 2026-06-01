@@ -43,6 +43,8 @@ public struct UIAccount: Identifiable, Hashable, Sendable {
         case protected
         case partiallyProtected
         case loggedOut
+        case loginFailed
+        case loginFailedRetriable
 
         public var color: Color.Token.StatusColors {
             switch self {
@@ -50,7 +52,7 @@ public struct UIAccount: Identifiable, Hashable, Sendable {
                 .valid
             case .partiallyProtected:
                 .warning
-            case .loggedOut:
+            case .loggedOut, .loginFailed, .loginFailedRetriable:
                 .disabled
             }
         }
@@ -61,7 +63,7 @@ public struct UIAccount: Identifiable, Hashable, Sendable {
                 AuthenticatorResourcesAsset.Images.shieldCheck.swiftUIImage
             case .partiallyProtected:
                 AuthenticatorResourcesAsset.Images.shieldExclamationmark.swiftUIImage
-            case .loggedOut:
+            case .loggedOut, .loginFailed, .loginFailedRetriable:
                 AuthenticatorResourcesAsset.Images.circleSlash.swiftUIImage
             }
         }
@@ -72,7 +74,7 @@ public struct UIAccount: Identifiable, Hashable, Sendable {
                 AuthenticatorResourcesStrings.accountProtected
             case .partiallyProtected:
                 AuthenticatorResourcesStrings.accountPartiallyProtectedTitle
-            case .loggedOut:
+            case .loggedOut, .loginFailed, .loginFailedRetriable:
                 AuthenticatorResourcesStrings.accountLoggedOut
             }
         }
@@ -118,6 +120,12 @@ extension UIAccount.Status {
             }
         case is AccountStatusNotConnectedReLogin:
             self = .loggedOut
+        case let loginFailed as AccountStatusNotConnectedLoginFailed:
+            if loginFailed.issue is IssueRetriable {
+                self = .loginFailedRetriable
+            } else {
+                self = .loginFailed
+            }
         default:
             self = .loggedOut
         }
