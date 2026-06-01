@@ -43,6 +43,22 @@ public enum PreviewHelper {
         status: .loggedOut
     )
 
+    public static let sampleUIAccount4 = UIAccount(
+        id: 4,
+        name: "Paul Anderson",
+        email: "paul.anderson@infomaniak.com",
+        profilePictureURL: nil,
+        status: .loginFailed
+    )
+
+    public static let sampleUIAccount5 = UIAccount(
+        id: 5,
+        name: "Paul Anderson",
+        email: "paul.anderson@infomaniak.com",
+        profilePictureURL: nil,
+        status: .loginFailedRetriable
+    )
+
     public static let sampleUIAccounts = [
         Self.sampleUIAccount,
         Self.sampleUIAccount2,
