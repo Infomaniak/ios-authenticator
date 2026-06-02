@@ -112,7 +112,11 @@ public actor AccountManager: AccountManagerable {
                     appBundleId: Constants.bundleId
                 )
                 await tokenStore.addToken(newToken: derivedApiToken, associatedDeviceId: deviceId)
-                return SharedUserProfile(from: accountToDerive.userProfile, sharedApiToken: SharedApiToken(from: derivedApiToken))
+
+                let temporaryApiFetcher = ApiFetcher(token: derivedApiToken, delegate: refreshTokenDelegate)
+                let user = try await userProfileStore.updateUserProfile(with: temporaryApiFetcher, options: [.security])
+
+                return SharedUserProfile(from: user, sharedApiToken: SharedApiToken(from: derivedApiToken))
             } catch {
                 Logger.general.warning("Failed to derive token for \(accountToDerive.userId): \(error)")
                 return nil
