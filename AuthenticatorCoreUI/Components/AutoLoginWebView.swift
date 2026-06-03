@@ -32,9 +32,10 @@ extension URL: @retroactive Identifiable {
 public extension View {
     func autoLoginWebView(
         protectedURL: Binding<URL?>,
-        userId: Int
+        userId: Int,
+        onDismiss: (() -> Void)? = nil
     ) -> some View {
-        modifier(AutoLoginWebViewModifier(protectedURL: protectedURL, userId: userId))
+        modifier(AutoLoginWebViewModifier(protectedURL: protectedURL, userId: userId, onDismiss: onDismiss))
     }
 }
 
@@ -43,10 +44,11 @@ public struct AutoLoginWebViewModifier: ViewModifier {
 
     @Binding var protectedURL: URL?
     let userId: Int
+    let onDismiss: (() -> Void)?
 
     public func body(content: Content) -> some View {
         content
-            .sheet(item: $protectedURL) { url in
+            .sheet(item: $protectedURL, onDismiss: onDismiss) { url in
                 NavigationStack {
                     AutoLoginWebView(protectedURL: url, userId: userId) { _ in
                         isLoading = false

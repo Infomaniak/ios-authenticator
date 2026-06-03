@@ -65,6 +65,10 @@ final class TokenBridgeImplementation: AuthenticatorBridge {
     }
 
     func __persistTokenForAccount(userId: Int64, token: SharedApiToken) async throws {
+        guard !token.isTemporary && !token.accessToken.isEmpty else {
+            return
+        }
+
         tokenStore.removeTokenFor(userId: TokenStore.UserId(userId))
 
         @InjectService var deviceManager: DeviceManagerable
