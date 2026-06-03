@@ -89,7 +89,7 @@ struct AccountDetailView: View {
         }
         .authListStyle()
         .scrollBounceBehavior(.basedOnSize)
-        .autoLoginWebView(protectedURL: $presentedWebViewURL, userId: Int(account.id))
+        .autoLoginWebView(protectedURL: $presentedWebViewURL, userId: Int(account.id), onDismiss: refreshProfiles)
         .alert(AuthenticatorResourcesStrings.disconnectAccountWarningTitle, isPresented: $isShowingDisconnectWarningAlert) {
             if !account.isDisabled {
                 Button(AuthenticatorResourcesStrings.checkMyMethodsButton) {
@@ -126,6 +126,11 @@ struct AccountDetailView: View {
             await accountManager.removeAccount(userId: account.id)
         }
         dismiss()
+    }
+
+    private func refreshProfiles() {
+        @InjectService var authenticatorFacade: AuthenticatorFacade
+        authenticatorFacade.refreshUserProfiles()
     }
 
     private func fetchChallenges() {

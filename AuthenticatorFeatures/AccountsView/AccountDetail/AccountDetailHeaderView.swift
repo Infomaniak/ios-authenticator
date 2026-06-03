@@ -72,7 +72,7 @@ struct AccountDetailHeaderView: View {
                 roundedRectangle
                     .stroke(Color.Token.Surface.tertiary, lineWidth: 1)
             }
-            .autoLoginWebView(protectedURL: $presentedWebViewUrl, userId: Int(account.id))
+            .autoLoginWebView(protectedURL: $presentedWebViewUrl, userId: Int(account.id), onDismiss: refreshProfiles)
 
             if account.status == .loggedOut {
                 StatusHeaderView(
@@ -117,6 +117,11 @@ struct AccountDetailHeaderView: View {
                 skip: nil
             )
         }
+    }
+
+    private func refreshProfiles() {
+        @InjectService var authenticatorFacade: AuthenticatorFacade
+        authenticatorFacade.refreshUserProfiles()
     }
 
     private func retryButtonTapped() {
