@@ -32,7 +32,7 @@ struct AuthenticatorApp: App {
     // periphery:ignore - Making sure the DI is registered at a very early stage of the app launch.
     private let dependencyInjectionHook = TargetAssembly()
 
-    @InjectService var appLockHelper: AppLockHelper
+    @LazyInjectService var appLockHelper: AppLockHelper
 
     @AppStorage(UserDefaults.shared.key(.theme), store: .shared) private var theme = DefaultPreferences.theme
 
@@ -45,9 +45,13 @@ struct AuthenticatorApp: App {
             RootView()
                 .environmentObject(rootViewState)
                 .preferredColorScheme(theme.asColorScheme)
-                .sceneLifecycle(didEnterBackground: didEnterBackground)
+                .sceneLifecycle(willEnterForeground: willEnterForeground, didEnterBackground: didEnterBackground)
         }
         .defaultAppStorage(.shared)
+    }
+
+    private func willEnterForeground() {
+        appLockHelper.startObservation()
     }
 
     private func didEnterBackground() {
