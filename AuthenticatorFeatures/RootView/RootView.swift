@@ -23,19 +23,6 @@ import AuthenticatorPreloadingView
 import InfomaniakCoreSwiftUI
 import SwiftUI
 
-public extension IKButtonTheme {
-    static let mainTheme = IKButtonTheme(
-        primary: TintShapeStyle.tint,
-        secondary: Color.white,
-        tertiary: Color.gray.opacity(0.4),
-        disabledPrimary: TintShapeStyle.tint.opacity(0.5),
-        disabledSecondary: TintShapeStyle.tint.opacity(0.4),
-        error: .red, // Default value
-        smallFont: .callout, // Default value
-        mediumFont: .Token.bodyBold
-    )
-}
-
 public struct RootView: View {
     @EnvironmentObject private var rootViewState: RootViewState
 

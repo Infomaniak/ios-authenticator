@@ -132,13 +132,6 @@ open class TargetAssembly: @unchecked Sendable {
                 matomo.optOut(true)
                 #endif
                 return matomo
-            },
-            Factory(type: AppLockHelper.self) { _, _ in
-                AppLockHelper(
-                    logoImage: AuthenticatorResourcesAsset.Images.onboardingLogo.swiftUIImage,
-                    lockImage: AuthenticatorResourcesAsset.Images.lock.swiftUIImage,
-                    userDefaults: UserDefaults.shared
-                )
             }
         ]
     }

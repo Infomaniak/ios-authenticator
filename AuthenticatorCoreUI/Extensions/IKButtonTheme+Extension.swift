@@ -30,4 +30,15 @@ public extension IKButtonTheme {
         smallFont: .callout, // Default value
         mediumFont: .Token.headline
     )
+
+    static let mainTheme = IKButtonTheme(
+        primary: TintShapeStyle.tint,
+        secondary: Color.white,
+        tertiary: Color.gray.opacity(0.4),
+        disabledPrimary: TintShapeStyle.tint.opacity(0.5),
+        disabledSecondary: TintShapeStyle.tint.opacity(0.4),
+        error: .red, // Default value
+        smallFont: .callout, // Default value
+        mediumFont: .Token.bodyBold
+    )
 }
