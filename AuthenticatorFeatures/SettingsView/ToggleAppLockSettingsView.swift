@@ -42,7 +42,7 @@ struct ToggleAppLockSettingsView: View {
 
     private func toggleAppLock() {
         Task {
-            @InjectService var appLockHelper: AppLockHelper
+            @InjectService var appLockHelper: AppLockHelping
             let enabled = await appLockHelper.canEnableAppLock()
             if !enabled {
                 didFailToEnableAppLock()

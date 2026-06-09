@@ -148,7 +148,7 @@ public struct OnboardingView: View {
 
     private func enableBiometry(index: Int) {
         Task {
-            @InjectService var appLockHelper: AppLockHelper
+            @InjectService var appLockHelper: AppLockHelping
             let enabled = await appLockHelper.canEnableAppLock()
 
             UserDefaults.shared.isAppLockEnabled = enabled

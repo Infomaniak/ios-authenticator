@@ -32,7 +32,7 @@ struct AuthenticatorApp: App {
     // periphery:ignore - Making sure the DI is registered at a very early stage of the app launch.
     private let dependencyInjectionHook = AuthenticatorAppTargetAssembly()
 
-    @LazyInjectService var appLockHelper: any AppLockHelping
+    @LazyInjectService var appLockHelper: AppLockHelping
 
     @AppStorage(UserDefaults.shared.key(.theme), store: .shared) private var theme = DefaultPreferences.theme
 

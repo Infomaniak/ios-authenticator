@@ -21,7 +21,7 @@ import AuthenticatorResources
 import Foundation
 import InfomaniakCoreCommonUI
 
-public extension AppLockHelper {
+public extension AppLockHelping {
     func canEnableAppLock() async -> Bool {
         setTime()
 
