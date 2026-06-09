@@ -1,5 +1,5 @@
 {
-  "originHash" : "965b256dd768f3657bb1a14a631896e5dd3a75a33e15f8cb61680119e7aac9e2",
+  "originHash" : "79ee4ef8811b343f3d980a9bb0856862215dc6b962881c6dba88f32d1c7c307c",
   "pins" : [
     {
       "identity" : "alamofire",
@@ -60,8 +60,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/Infomaniak/ios-features",
       "state" : {
-        "revision" : "24f1d37409f91593f751c8c51527cf3cb82b9966",
-        "version" : "8.10.1"
+        "branch" : "fix/app-lock-construction",
+        "revision" : "084756ca93c568aaf6cbaf0637aa181341c207f4"
       }
     },
     {

@@ -23,14 +23,15 @@ import AuthenticatorResources
 import Foundation
 import InfomaniakCoreSwiftUI
 import InfomaniakDI
+import SwiftUI
 
 class AuthenticatorAppTargetAssembly: TargetAssembly, @unchecked Sendable {
     override class func getCommonServices() -> [Factory] {
         return super.getCommonServices() + [
-            Factory(type: AppLockHelper.self) { _, _ in
+            Factory(type: (any AppLockHelping).self) { _, _ in
                 AppLockHelper(
                     appLockUIConfiguration: AppLockUIConfiguration(
-                        logoImage: AuthenticatorResourcesAsset.Images.onboardingLogo.swiftUIImage,
+                        logoView: { Text("Test") },
                         lockImage: AuthenticatorResourcesAsset.Images.lock.swiftUIImage,
                         ikButtonTheme: .mainTheme
                     ),
