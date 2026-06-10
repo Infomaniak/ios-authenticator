@@ -76,7 +76,7 @@ public struct AccountLabel: View {
             case .small:
                 .Token.headline
             case .large:
-                .Token.title2
+                .Token.title2Bold
             }
         }
 

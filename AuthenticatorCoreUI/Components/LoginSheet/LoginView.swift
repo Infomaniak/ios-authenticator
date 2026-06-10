@@ -92,7 +92,7 @@ public struct LoginView: View {
             } header: {
                 VStack(alignment: .center, spacing: IKPadding.medium) {
                     Text(AuthenticatorResourcesStrings.logInTitle)
-                        .font(.Token.title2)
+                        .font(.Token.title2Bold)
 
                     Text(AuthenticatorResourcesStrings.logInDescription)
                         .font(.Token.callout)

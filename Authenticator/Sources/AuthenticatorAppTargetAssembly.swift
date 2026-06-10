@@ -31,8 +31,9 @@ class AuthenticatorAppTargetAssembly: TargetAssembly, @unchecked Sendable {
             Factory(type: (any AppLockHelping).self) { _, _ in
                 AppLockHelper(
                     appLockUIConfiguration: AppLockUIConfiguration(
-                        logoView: { Text("Test") },
+                        logoView: { Text(Constants.appName).font(.Token.title2) },
                         lockImage: AuthenticatorResourcesAsset.Images.lock.swiftUIImage,
+                        lockImageSize: 300,
                         ikButtonTheme: .mainTheme
                     ),
                     userDefaults: UserDefaults.shared
