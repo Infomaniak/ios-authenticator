@@ -36,7 +36,7 @@ struct OnboardingProgressBarBottomView: View {
     var body: some View {
         VStack(spacing: IKPadding.medium) {
             Text(title)
-                .font(.Token.title2)
+                .font(.Token.title2Bold)
 
             ProgressView()
         }

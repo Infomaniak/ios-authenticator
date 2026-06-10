@@ -20,17 +20,6 @@ import Foundation
 import ProjectDescription
 import ProjectDescriptionHelpers
 
-let appLockView = Feature(
-    name: "AppLockView",
-    additionalDependencies: [
-        TargetDependency.target(name: "\(Constants.projectName)Resources"),
-        TargetDependency.external(name: "DesignSystem"),
-        TargetDependency.external(name: "InfomaniakDI"),
-        TargetDependency.external(name: "InfomaniakCoreCommonUI"),
-        TargetDependency.external(name: "InfomaniakCoreSwiftUI")
-    ]
-)
-
 let preloadingView = Feature(name: "PreloadingView",
                              additionalDependencies: [
                                  TargetDependency.external(name: "DesignSystem"),
@@ -44,6 +33,7 @@ let accountsView = Feature(
         TargetDependency.target(name: "\(Constants.projectName)Resources"),
         TargetDependency.external(name: "NukeUI"),
         TargetDependency.external(name: "InAppTwoFactorAuthentication"),
+        TargetDependency.external(name: "AppLock"),
         TargetDependency.external(name: "InfomaniakConcurrency"),
         TargetDependency.external(name: "InfomaniakCoreSwiftUI")
     ]
@@ -54,7 +44,8 @@ let settingsView = Feature(
     additionalDependencies: [
         TargetDependency.target(name: "\(Constants.projectName)Resources"),
         TargetDependency.external(name: "InfomaniakPrivacyManagement"),
-        TargetDependency.external(name: "InfomaniakCoreUIResources")
+        TargetDependency.external(name: "InfomaniakCoreUIResources"),
+        TargetDependency.external(name: "AppLock")
     ]
 )
 
@@ -65,6 +56,7 @@ let mainView = Feature(
         accountsView,
         TargetDependency.target(name: "\(Constants.projectName)Resources"),
         TargetDependency.external(name: "InAppTwoFactorAuthentication"),
+        TargetDependency.external(name: "AppLock"),
         TargetDependency.external(name: "InfomaniakCoreUIResources"),
         TargetDependency.external(name: "InfomaniakConcurrency"),
         TargetDependency.external(name: "VersionChecker")
@@ -78,7 +70,8 @@ let onboardingView = Feature(name: "OnboardingView", additionalDependencies: [
     TargetDependency.external(name: "Lottie"),
     TargetDependency.external(name: "InterAppLogin"),
     TargetDependency.external(name: "SwiftModalPresentation"),
-    TargetDependency.external(name: "InfomaniakCreateAccount")
+    TargetDependency.external(name: "InfomaniakCreateAccount"),
+    TargetDependency.external(name: "AppLock")
 ])
 
 let rootView = Feature(
@@ -87,7 +80,6 @@ let rootView = Feature(
         mainView,
         preloadingView,
         onboardingView,
-        appLockView,
         TargetDependency.target(name: "\(Constants.projectName)CoreUI"),
         TargetDependency.external(name: "VersionChecker")
     ]
@@ -99,8 +91,7 @@ let mainiOSAppFeatures = [
     settingsView,
     preloadingView,
     onboardingView,
-    accountsView,
-    appLockView
+    accountsView
 ]
 
 let project = Project(
@@ -135,6 +126,7 @@ let project = Project(
                 .external(name: "InfomaniakDI"),
                 .external(name: "InfomaniakNotifications"),
                 .external(name: "InAppTwoFactorAuthentication"),
+                .external(name: "AppLock"),
                 rootView.asDependency
             ],
             settings: .settings(base: Constants.baseSettings),
@@ -164,7 +156,8 @@ let project = Project(
                     .external(name: "InfomaniakLogin"),
                     .external(name: "InfomaniakNotifications"),
                     .external(name: "InterAppLogin"),
-                    .external(name: "Sentry-Dynamic")
+                    .external(name: "Sentry-Dynamic"),
+                    .external(name: "AppLock")
                 ],
                 settings: .settings(base: Constants.baseSettings)),
         .target(name: "\(Constants.projectName)CoreUI",
@@ -181,7 +174,8 @@ let project = Project(
                     .external(name: "InfomaniakCoreSwiftUI"),
                     .external(name: "InfomaniakCore"),
                     .external(name: "DesignSystem"),
-                    .external(name: "NukeUI")
+                    .external(name: "NukeUI"),
+                    .external(name: "AppLock")
                 ],
                 settings: .settings(base: Constants.baseSettings)),
         .target(name: "\(Constants.projectName)Resources",

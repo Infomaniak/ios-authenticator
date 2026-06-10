@@ -16,6 +16,7 @@
  along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
+import AppLock
 import AuthenticationServices
 import AuthenticatorCore
 import AuthenticatorCoreUI
@@ -147,7 +148,7 @@ public struct OnboardingView: View {
 
     private func enableBiometry(index: Int) {
         Task {
-            @InjectService var appLockHelper: AppLockHelper
+            @InjectService var appLockHelper: AppLockHelping
             let enabled = await appLockHelper.canEnableAppLock()
 
             UserDefaults.shared.isAppLockEnabled = enabled

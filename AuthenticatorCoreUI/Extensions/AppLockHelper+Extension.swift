@@ -16,11 +16,12 @@
  along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
+import AppLock
 import AuthenticatorResources
 import Foundation
 import InfomaniakCoreCommonUI
 
-public extension AppLockHelper {
+public extension AppLockHelping {
     func canEnableAppLock() async -> Bool {
         setTime()
 

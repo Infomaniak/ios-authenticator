@@ -20,7 +20,8 @@ import SwiftUI
 
 public extension Font {
     enum Token {
-        public static let title2 = Font.title2.bold()
+        public static let title2 = Font.title2
+        public static let title2Bold = Font.title2.bold()
 
         public static let body = Font.body
         public static let bodyBold = Font.body.weight(.semibold)

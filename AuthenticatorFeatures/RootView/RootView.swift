@@ -16,26 +16,12 @@
  along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-import AuthenticatorAppLockView
 import AuthenticatorCoreUI
 import AuthenticatorMainView
 import AuthenticatorOnboardingView
 import AuthenticatorPreloadingView
 import InfomaniakCoreSwiftUI
 import SwiftUI
-
-public extension IKButtonTheme {
-    static let mainTheme = IKButtonTheme(
-        primary: TintShapeStyle.tint,
-        secondary: Color.white,
-        tertiary: Color.gray.opacity(0.4),
-        disabledPrimary: TintShapeStyle.tint.opacity(0.5),
-        disabledSecondary: TintShapeStyle.tint.opacity(0.4),
-        error: .red, // Default value
-        smallFont: .callout, // Default value
-        mediumFont: .Token.bodyBold
-    )
-}
 
 public struct RootView: View {
     @EnvironmentObject private var rootViewState: RootViewState
@@ -45,8 +31,6 @@ public struct RootView: View {
     public var body: some View {
         ZStack {
             switch rootViewState.state {
-            case .appLocked:
-                LockedAppView()
             case .mainView(let mainViewState):
                 MainView()
                     .environmentObject(mainViewState)

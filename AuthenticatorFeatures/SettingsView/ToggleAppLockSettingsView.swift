@@ -16,6 +16,7 @@
  along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
+import AppLock
 import AuthenticatorCore
 import AuthenticatorResources
 import InfomaniakCoreCommonUI
@@ -41,7 +42,7 @@ struct ToggleAppLockSettingsView: View {
 
     private func toggleAppLock() {
         Task {
-            @InjectService var appLockHelper: AppLockHelper
+            @InjectService var appLockHelper: AppLockHelping
             let enabled = await appLockHelper.canEnableAppLock()
             if !enabled {
                 didFailToEnableAppLock()
