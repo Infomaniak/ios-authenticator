@@ -205,6 +205,11 @@ __attribute__((swift_name("SkieKotlinFlow")))
 - (void)collectCollector:(id<CoreAuthenticatorKotlinx_coroutines_coreFlowCollector>)collector completionHandler:(void (^)(NSError * _Nullable))completionHandler __attribute__((swift_name("collect(collector:completionHandler:)")));
 @end
 
+
+/**
+ * @note annotations
+ *   kotlin.SubclassOptInRequired(markerClass=[NormalClass(value=kotlinx/coroutines/ExperimentalForInheritanceCoroutinesApi)])
+*/
 __attribute__((swift_name("Kotlinx_coroutines_coreSharedFlow")))
 @protocol CoreAuthenticatorKotlinx_coroutines_coreSharedFlow <CoreAuthenticatorKotlinx_coroutines_coreFlow>
 @required
@@ -222,6 +227,11 @@ __attribute__((swift_name("Kotlinx_coroutines_coreFlowCollector")))
 - (void)emitValue:(id _Nullable)value completionHandler:(void (^)(NSError * _Nullable))completionHandler __attribute__((swift_name("emit(value:completionHandler:)")));
 @end
 
+
+/**
+ * @note annotations
+ *   kotlin.SubclassOptInRequired(markerClass=[NormalClass(value=kotlinx/coroutines/ExperimentalForInheritanceCoroutinesApi)])
+*/
 __attribute__((swift_name("Kotlinx_coroutines_coreMutableSharedFlow")))
 @protocol CoreAuthenticatorKotlinx_coroutines_coreMutableSharedFlow <CoreAuthenticatorKotlinx_coroutines_coreSharedFlow, CoreAuthenticatorKotlinx_coroutines_coreFlowCollector>
 @required
@@ -262,12 +272,22 @@ __attribute__((swift_name("SkieKotlinMutableSharedFlow")))
 - (BOOL)tryEmitValue:(T)value __attribute__((swift_name("tryEmit(value:)")));
 @end
 
+
+/**
+ * @note annotations
+ *   kotlin.SubclassOptInRequired(markerClass=[NormalClass(value=kotlinx/coroutines/ExperimentalForInheritanceCoroutinesApi)])
+*/
 __attribute__((swift_name("Kotlinx_coroutines_coreStateFlow")))
 @protocol CoreAuthenticatorKotlinx_coroutines_coreStateFlow <CoreAuthenticatorKotlinx_coroutines_coreSharedFlow>
 @required
 @property (readonly) id _Nullable value __attribute__((swift_name("value")));
 @end
 
+
+/**
+ * @note annotations
+ *   kotlin.SubclassOptInRequired(markerClass=[NormalClass(value=kotlinx/coroutines/ExperimentalForInheritanceCoroutinesApi)])
+*/
 __attribute__((swift_name("Kotlinx_coroutines_coreMutableStateFlow")))
 @protocol CoreAuthenticatorKotlinx_coroutines_coreMutableStateFlow <CoreAuthenticatorKotlinx_coroutines_coreStateFlow, CoreAuthenticatorKotlinx_coroutines_coreMutableSharedFlow>
 @required
@@ -1041,12 +1061,12 @@ __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("IssueRetriable")))
 @interface CoreAuthenticatorIssueRetriable : CoreAuthenticatorBase <CoreAuthenticatorIssue>
 @property (readonly) id<CoreAuthenticatorIssueRetriableCause> cause __attribute__((swift_name("cause")));
-@property (readonly) void (^proceed)(CoreAuthenticatorBoolean *shouldRetry) __attribute__((swift_name("proceed")));
-- (instancetype)initWithCause:(id<CoreAuthenticatorIssueRetriableCause>)cause proceed:(void (^)(CoreAuthenticatorBoolean *shouldRetry))proceed __attribute__((swift_name("init(cause:proceed:)"))) __attribute__((objc_designated_initializer));
-- (CoreAuthenticatorIssueRetriable *)doCopyCause:(id<CoreAuthenticatorIssueRetriableCause>)cause proceed:(void (^)(CoreAuthenticatorBoolean *shouldRetry))proceed __attribute__((swift_name("doCopy(cause:proceed:)")));
+@property (readonly) void (^proceed)(CoreAuthenticatorBoolean *) __attribute__((swift_name("proceed")));
+- (instancetype)initWithCause:(id<CoreAuthenticatorIssueRetriableCause>)cause proceed:(void (^)(CoreAuthenticatorBoolean *))proceed __attribute__((swift_name("init(cause:proceed:)"))) __attribute__((objc_designated_initializer));
+- (CoreAuthenticatorIssueRetriable *)doCopyCause:(id<CoreAuthenticatorIssueRetriableCause>)cause proceed:(void (^)(CoreAuthenticatorBoolean *))proceed __attribute__((swift_name("doCopy(cause:proceed:)")));
 - (CoreAuthenticatorIssueRetriable *)doCopy__Skie_DefaultArguments__106 __attribute__((swift_name("doCopy__Skie_DefaultArguments__106()")));
 - (CoreAuthenticatorIssueRetriable *)doCopy__Skie_DefaultArguments__107Cause:(id<CoreAuthenticatorIssueRetriableCause>)cause __attribute__((swift_name("doCopy__Skie_DefaultArguments__107(cause:)")));
-- (CoreAuthenticatorIssueRetriable *)doCopy__Skie_DefaultArguments__108Proceed:(void (^)(CoreAuthenticatorBoolean *shouldRetry))proceed __attribute__((swift_name("doCopy__Skie_DefaultArguments__108(proceed:)")));
+- (CoreAuthenticatorIssueRetriable *)doCopy__Skie_DefaultArguments__108Proceed:(void (^)(CoreAuthenticatorBoolean *))proceed __attribute__((swift_name("doCopy__Skie_DefaultArguments__108(proceed:)")));
 
 /**
  * When coming from kAuth, if at least one account was successfully migrated, we don't have this at all.
@@ -2777,6 +2797,11 @@ __attribute__((swift_name("Kotlinx_serialization_coreEncoder")))
 @property (readonly) CoreAuthenticatorKotlinx_serialization_coreSerializersModule *serializersModule __attribute__((swift_name("serializersModule")));
 @end
 
+
+/**
+ * @note annotations
+ *   kotlin.SubclassOptInRequired(markerClass=[NormalClass(value=kotlinx/serialization/SealedSerializationApi)])
+*/
 __attribute__((swift_name("Kotlinx_serialization_coreSerialDescriptor")))
 @protocol CoreAuthenticatorKotlinx_serialization_coreSerialDescriptor
 @required
@@ -3124,12 +3149,12 @@ __attribute__((swift_name("KotlinIntIterator")))
 __attribute__((swift_name("Kotlinx_serialization_coreSerializersModuleCollector")))
 @protocol CoreAuthenticatorKotlinx_serialization_coreSerializersModuleCollector
 @required
-- (void)contextualKClass:(id<CoreAuthenticatorKotlinKClass>)kClass provider:(id<CoreAuthenticatorKotlinx_serialization_coreKSerializer> (^)(NSArray<id<CoreAuthenticatorKotlinx_serialization_coreKSerializer>> *typeArgumentsSerializers))provider __attribute__((swift_name("contextual(kClass:provider:)")));
+- (void)contextualKClass:(id<CoreAuthenticatorKotlinKClass>)kClass provider:(id<CoreAuthenticatorKotlinx_serialization_coreKSerializer> (^)(NSArray<id<CoreAuthenticatorKotlinx_serialization_coreKSerializer>> *))provider __attribute__((swift_name("contextual(kClass:provider:)")));
 - (void)contextualKClass:(id<CoreAuthenticatorKotlinKClass>)kClass serializer:(id<CoreAuthenticatorKotlinx_serialization_coreKSerializer>)serializer __attribute__((swift_name("contextual(kClass:serializer:)")));
 - (void)polymorphicBaseClass:(id<CoreAuthenticatorKotlinKClass>)baseClass actualClass:(id<CoreAuthenticatorKotlinKClass>)actualClass actualSerializer:(id<CoreAuthenticatorKotlinx_serialization_coreKSerializer>)actualSerializer __attribute__((swift_name("polymorphic(baseClass:actualClass:actualSerializer:)")));
-- (void)polymorphicDefaultBaseClass:(id<CoreAuthenticatorKotlinKClass>)baseClass defaultDeserializerProvider:(id<CoreAuthenticatorKotlinx_serialization_coreDeserializationStrategy> _Nullable (^)(NSString * _Nullable className))defaultDeserializerProvider __attribute__((swift_name("polymorphicDefault(baseClass:defaultDeserializerProvider:)"))) __attribute__((deprecated("Deprecated in favor of function with more precise name: polymorphicDefaultDeserializer")));
-- (void)polymorphicDefaultDeserializerBaseClass:(id<CoreAuthenticatorKotlinKClass>)baseClass defaultDeserializerProvider:(id<CoreAuthenticatorKotlinx_serialization_coreDeserializationStrategy> _Nullable (^)(NSString * _Nullable className))defaultDeserializerProvider __attribute__((swift_name("polymorphicDefaultDeserializer(baseClass:defaultDeserializerProvider:)")));
-- (void)polymorphicDefaultSerializerBaseClass:(id<CoreAuthenticatorKotlinKClass>)baseClass defaultSerializerProvider:(id<CoreAuthenticatorKotlinx_serialization_coreSerializationStrategy> _Nullable (^)(id value))defaultSerializerProvider __attribute__((swift_name("polymorphicDefaultSerializer(baseClass:defaultSerializerProvider:)")));
+- (void)polymorphicDefaultBaseClass:(id<CoreAuthenticatorKotlinKClass>)baseClass defaultDeserializerProvider:(id<CoreAuthenticatorKotlinx_serialization_coreDeserializationStrategy> _Nullable (^)(NSString * _Nullable))defaultDeserializerProvider __attribute__((swift_name("polymorphicDefault(baseClass:defaultDeserializerProvider:)"))) __attribute__((deprecated("Deprecated in favor of function with more precise name: polymorphicDefaultDeserializer")));
+- (void)polymorphicDefaultDeserializerBaseClass:(id<CoreAuthenticatorKotlinKClass>)baseClass defaultDeserializerProvider:(id<CoreAuthenticatorKotlinx_serialization_coreDeserializationStrategy> _Nullable (^)(NSString * _Nullable))defaultDeserializerProvider __attribute__((swift_name("polymorphicDefaultDeserializer(baseClass:defaultDeserializerProvider:)")));
+- (void)polymorphicDefaultSerializerBaseClass:(id<CoreAuthenticatorKotlinKClass>)baseClass defaultSerializerProvider:(id<CoreAuthenticatorKotlinx_serialization_coreSerializationStrategy> _Nullable (^)(id))defaultSerializerProvider __attribute__((swift_name("polymorphicDefaultSerializer(baseClass:defaultSerializerProvider:)")));
 @end
 
 __attribute__((swift_name("KotlinByteIterator")))
