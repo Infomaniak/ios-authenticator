@@ -132,6 +132,10 @@ public final class RootViewState: ObservableObject {
 
                 mustReLoginAccount = nil
 
+                if case .updateRequired = state {
+                    continue
+                }
+
                 if status is AppStatusLoginRequiredMigratingFromLegacyKAuth {
                     state = .migration(.migration)
                 } else if status is AppStatusLoginRequiredNotMigrating {
