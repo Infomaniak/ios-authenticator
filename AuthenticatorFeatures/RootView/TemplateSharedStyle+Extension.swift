@@ -27,8 +27,8 @@ public extension TemplateSharedStyle {
         titleTextStyle: .init(font: .Token.title2, color: .Token.Text.primary),
         descriptionTextStyle: .init(font: .Token.body, color: .Token.Text.secondary),
         buttonStyle: .init(
-            background: .Token.Surface.tertiary,
-            textStyle: .init(font: .Token.headline, color: .Token.Text.primary),
+            background: .Token.StatusColors.suggestion.button,
+            textStyle: .init(font: .Token.headline, color: .Token.Text.white),
             height: IKButtonHeight.large,
             radius: IKRadius.large
         )
