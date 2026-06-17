@@ -24,10 +24,17 @@ import AuthenticatorSettingsView
 @preconcurrency import InAppTwoFactorAuthentication
 import InfomaniakConcurrency
 @preconcurrency import InfomaniakCore
+import InfomaniakCoreCommonUI
 import InfomaniakDI
 import SwiftUI
+import VersionChecker
 
 public struct MainView: View {
+    @LazyInjectService private var matomo: MatomoUtils
+
+    @EnvironmentObject private var mainViewState: MainViewState
+    @Environment(\.openURL) private var openURL
+
     public init() {}
 
     public var body: some View {
@@ -43,6 +50,20 @@ public struct MainView: View {
                 }
         }
         .sceneLifecycle(willEnterForeground: willEnterForeground)
+        .discoveryPresenter(
+            isPresented: $mainViewState.isShowingUpdateAvailable,
+            alertBackgroundColor: .Token.Surface.primary,
+            sheetBackgroundColor: .Token.Surface.primary
+        ) {
+            UpdateVersionView(image: AuthenticatorResourcesAsset.Images.circleExclamationmark.swiftUIImage) { willUpdate in
+                if willUpdate {
+                    openURL(UpdateLink.getStoreURL())
+                    matomo.track(eventWithCategory: .appUpdate, name: "discoverNow")
+                } else {
+                    matomo.track(eventWithCategory: .appUpdate, name: "discoverLater")
+                }
+            }
+        }
     }
 
     private func willEnterForeground() {
