@@ -23,7 +23,9 @@ import AuthenticatorResources
 import AuthenticatorRootView
 import InfomaniakCoreCommonUI
 import InfomaniakDI
+import OSLog
 import SwiftUI
+import VersionChecker
 
 @main
 struct AuthenticatorApp: App {
@@ -52,11 +54,37 @@ struct AuthenticatorApp: App {
 
     private func willEnterForeground() {
         appLockHelper.startObservation()
+        checkAppVersion()
     }
 
     private func didEnterBackground() {
         if UserDefaults.shared.isAppLockEnabled {
             appLockHelper.setTime()
+        }
+    }
+
+    private func checkAppVersion() {
+        let _: Task<Void, Never> = Task {
+            do {
+                let versionStatus = try await VersionChecker.standard.checkAppVersionStatus(platform: .ios)
+
+                guard versionStatus != .updateIsRequired else {
+                    rootViewState.enterUpdateRequired()
+                    return
+                }
+
+                if rootViewState.state == .updateRequired {
+                    rootViewState.exitUpdateRequired()
+                    return
+                }
+
+                if versionStatus == .canBeUpdated,
+                   case .mainView(let mainViewState) = rootViewState.state {
+                    mainViewState.isShowingUpdateAvailable = true
+                }
+            } catch {
+                Logger.general.error("Error while checking version status: \(error)")
+            }
         }
     }
 }

@@ -174,4 +174,12 @@ public final class RootViewState: ObservableObject {
                 )
         }
     }
+
+    public func enterUpdateRequired() {
+        state = .updateRequired
+    }
+
+    public func exitUpdateRequired() {
+        state = .preloading
+    }
 }
