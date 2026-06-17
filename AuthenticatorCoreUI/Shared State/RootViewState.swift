@@ -77,6 +77,8 @@ public final class RootViewState: ObservableObject {
     @Published public var mustReLoginAccount: UIMustReLoginAccount?
     private var lastKnownAppStatus: AppStatus?
 
+    private var stateBeforeUpdateRequired: RootViewType?
+
     public init() {
         observeAppStatus()
     }
@@ -176,10 +178,13 @@ public final class RootViewState: ObservableObject {
     }
 
     public func enterUpdateRequired() {
+        guard state != .updateRequired else { return }
+        stateBeforeUpdateRequired = state
         state = .updateRequired
     }
 
     public func exitUpdateRequired() {
-        state = .preloading
+        state = stateBeforeUpdateRequired ?? .preloading
+        stateBeforeUpdateRequired = nil
     }
 }
