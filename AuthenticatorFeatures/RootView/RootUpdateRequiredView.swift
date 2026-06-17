@@ -26,7 +26,7 @@ struct RootUpdateRequiredView: View {
 
     var body: some View {
         UpdateRequiredView(
-            image: AuthenticatorResourcesAsset.Images.circleExclamationmark.swiftUIImage,
+            image: AuthenticatorResourcesAsset.Images.onboardingGrid.swiftUIImage,
             sharedStyle: TemplateSharedStyle.authenticator
         ) {
             openURL(UpdateLink.getStoreURL())

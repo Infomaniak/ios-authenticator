@@ -55,7 +55,7 @@ public struct MainView: View {
             alertBackgroundColor: .Token.Surface.primary,
             sheetBackgroundColor: .Token.Surface.primary
         ) {
-            UpdateVersionView(image: AuthenticatorResourcesAsset.Images.circleExclamationmark.swiftUIImage) { willUpdate in
+            UpdateVersionView(image: AuthenticatorResourcesAsset.Images.onboardingGrid.swiftUIImage) { willUpdate in
                 if willUpdate {
                     openURL(UpdateLink.getStoreURL())
                     matomo.track(eventWithCategory: .appUpdate, name: "discoverNow")
