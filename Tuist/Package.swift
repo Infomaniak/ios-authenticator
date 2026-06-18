@@ -37,6 +37,7 @@ let package = Package(
     dependencies: [
         .package(url: "https://github.com/airbnb/lottie-spm.git", .upToNextMajor(from: "4.5.1")),
         .package(url: "https://github.com/getsentry/sentry-cocoa", .upToNextMajor(from: "9.8.0")),
+        .package(url: "https://github.com/Infomaniak/android-authenticator", .upToNextMajor(from: "0.0.2")),
         .package(url: "https://github.com/Infomaniak/ios-core", .upToNextMajor(from: "18.11.0")),
         .package(url: "https://github.com/Infomaniak/ios-core-ui", .upToNextMajor(from: "24.12.0")),
         .package(url: "https://github.com/Infomaniak/ios-create-account", .upToNextMajor(from: "23.2.0")),
