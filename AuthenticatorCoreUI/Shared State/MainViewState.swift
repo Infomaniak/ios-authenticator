@@ -113,6 +113,14 @@ public final class MainViewState: ObservableObject, @MainActor Equatable {
     }
 
     public static func == (lhs: MainViewState, rhs: MainViewState) -> Bool {
-        return true // TODO: Implement proper equality check based on properties
+        if lhs.selectedAccount != rhs.selectedAccount {
+            return false
+        }
+
+        if lhs.accounts != rhs.accounts {
+            return false
+        }
+
+        return true
     }
 }
