@@ -77,6 +77,8 @@ public final class RootViewState: ObservableObject {
     @Published public var mustReLoginAccount: UIMustReLoginAccount?
     private var lastKnownAppStatus: AppStatus?
 
+    private var stateBeforeUpdateRequired: RootViewType?
+
     public init() {
         observeAppStatus()
     }
@@ -130,6 +132,10 @@ public final class RootViewState: ObservableObject {
 
                 mustReLoginAccount = nil
 
+                if case .updateRequired = state {
+                    continue
+                }
+
                 if status is AppStatusLoginRequiredMigratingFromLegacyKAuth {
                     state = .migration(.migration)
                 } else if status is AppStatusLoginRequiredNotMigrating {
@@ -173,5 +179,16 @@ public final class RootViewState: ObservableObject {
                     "Trying to set \(String(describing: step)) step while not in an onboarding flow. \(currentStateMessage)"
                 )
         }
+    }
+
+    public func enterUpdateRequired() {
+        guard state != .updateRequired else { return }
+        stateBeforeUpdateRequired = state
+        state = .updateRequired
+    }
+
+    public func exitUpdateRequired() {
+        state = stateBeforeUpdateRequired ?? .preloading
+        stateBeforeUpdateRequired = nil
     }
 }

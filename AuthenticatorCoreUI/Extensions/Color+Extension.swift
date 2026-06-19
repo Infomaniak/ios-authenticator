@@ -34,6 +34,7 @@ public extension Color {
             public static let secondary = Color(light: AuthColor.neutralBlue500, dark: AuthColor.neutralBlue200)
             public static let tertiary = Color(light: AuthColor.neutralBlue400, dark: AuthColor.neutralBlue300)
             public static let coloredBackground = Color(light: AuthColor.neutralBlue100, dark: AuthColor.neutralBlue800)
+            public static let white = Color(light: AuthColor.white, dark: AuthColor.white)
         }
 
         /// General background colors

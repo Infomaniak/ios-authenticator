@@ -81,6 +81,8 @@ let rootView = Feature(
         preloadingView,
         onboardingView,
         TargetDependency.target(name: "\(Constants.projectName)CoreUI"),
+        TargetDependency.target(name: "\(Constants.projectName)Resources"),
+        TargetDependency.target(name: "\(Constants.projectName)Core"),
         TargetDependency.external(name: "VersionChecker")
     ]
 )
@@ -127,6 +129,7 @@ let project = Project(
                 .external(name: "InfomaniakNotifications"),
                 .external(name: "InAppTwoFactorAuthentication"),
                 .external(name: "AppLock"),
+                .external(name: "VersionChecker"),
                 rootView.asDependency
             ],
             settings: .settings(base: Constants.baseSettings),
@@ -175,7 +178,8 @@ let project = Project(
                     .external(name: "InfomaniakCore"),
                     .external(name: "DesignSystem"),
                     .external(name: "NukeUI"),
-                    .external(name: "AppLock")
+                    .external(name: "AppLock"),
+                    .external(name: "SwiftModalPresentation")
                 ],
                 settings: .settings(base: Constants.baseSettings)),
         .target(name: "\(Constants.projectName)Resources",

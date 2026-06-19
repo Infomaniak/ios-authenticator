@@ -39,7 +39,7 @@ public struct RootView: View {
             case .newAccount(let step), .migration(let step), .addAccount(let step):
                 OnboardingView(currentStep: step)
             case .updateRequired:
-                Text("Updated required") // TODO: Implement update required screen
+                RootUpdateRequiredView()
             }
         }
         .ikButtonTheme(.mainTheme)

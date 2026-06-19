@@ -19,6 +19,7 @@
 import CoreAuthenticator
 import InfomaniakDI
 import OSLog
+import SwiftModalPresentation
 import SwiftUI
 
 @MainActor
@@ -29,6 +30,8 @@ public final class MainViewState: ObservableObject, @MainActor Equatable {
     @Published public var accounts: [UIAccount]
     @Published public var accountAlert: UIAccountAlert?
     @Published public var accountAlertConfirmation: UIAccountAlert?
+
+    @ModalPublished public var isShowingUpdateAvailable = false
 
     public var isShowingAccountAlert: Bool {
         get {
