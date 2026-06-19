@@ -68,21 +68,19 @@ struct AuthenticatorApp: App {
             do {
                 let versionStatus = try await VersionChecker.standard.checkAppVersionStatus(platform: .ios)
 
-                await MainActor.run {
-                    if versionStatus == .updateIsRequired {
-                        rootViewState.enterUpdateRequired()
-                        return
-                    }
+                if versionStatus == .updateIsRequired {
+                    rootViewState.enterUpdateRequired()
+                    return
+                }
 
-                    if rootViewState.state == .updateRequired {
-                        rootViewState.exitUpdateRequired()
-                        return
-                    }
+                if rootViewState.state == .updateRequired {
+                    rootViewState.exitUpdateRequired()
+                    return
+                }
 
-                    if versionStatus == .canBeUpdated,
-                       case .mainView(let mainViewState) = rootViewState.state {
-                        mainViewState.isShowingUpdateAvailable = true
-                    }
+                if versionStatus == .canBeUpdated,
+                   case .mainView(let mainViewState) = rootViewState.state {
+                    mainViewState.isShowingUpdateAvailable = true
                 }
             } catch {
                 Logger.general.error("Error while checking version status: \(error)")
