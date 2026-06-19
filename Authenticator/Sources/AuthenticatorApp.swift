@@ -41,7 +41,6 @@ struct AuthenticatorApp: App {
     @UIApplicationDelegateAdaptor private var appDelegateAdaptor: AppDelegate
 
     @StateObject private var rootViewState = RootViewState()
-    @State private var versionCheckTask: Task<Void, Never>?
 
     var body: some Scene {
         WindowGroup {
@@ -65,12 +64,9 @@ struct AuthenticatorApp: App {
     }
 
     private func checkAppVersion() {
-        versionCheckTask?.cancel()
-
-        versionCheckTask = Task {
+        Task {
             do {
                 let versionStatus = try await VersionChecker.standard.checkAppVersionStatus(platform: .ios)
-                guard !Task.isCancelled else { return }
 
                 await MainActor.run {
                     if versionStatus == .updateIsRequired {
@@ -88,8 +84,6 @@ struct AuthenticatorApp: App {
                         mainViewState.isShowingUpdateAvailable = true
                     }
                 }
-            } catch is CancellationError {
-                // Ignore cancellation
             } catch {
                 Logger.general.error("Error while checking version status: \(error)")
             }
