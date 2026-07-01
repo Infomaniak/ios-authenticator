@@ -40,7 +40,9 @@ public enum SentryDebug {
         }
     }
 
-    public static func capture(error: Error) {
-        SentrySDK.capture(error: error)
+    public static func capture(error: Error, userId: Int64) {
+        SentrySDK.capture(error: error) { scope in
+            scope.setUser(User(userId: String(userId)))
+        }
     }
 }
