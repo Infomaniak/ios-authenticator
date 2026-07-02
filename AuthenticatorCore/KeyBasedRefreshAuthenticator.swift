@@ -65,7 +65,7 @@ final class KeyBasedRefreshAuthenticator: OAuthAuthenticator {
         } catch {
             Logger.general.error("Failed to refresh token retry left \(retryLeft): \(error)")
             guard retryLeft > 0 else {
-                SentryDebug.capture(error: error)
+                SentryDebug.capture(error: error, userId: Int64(userId))
                 throw error
             }
 

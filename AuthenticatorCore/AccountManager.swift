@@ -188,7 +188,7 @@ public actor AccountManager: AccountManagerable {
         do {
             try await authenticatorFacade.removeAccount(token: token?.accessToken, id: userId)
         } catch {
-            SentryDebug.capture(error: error)
+            SentryDebug.capture(error: error, userId: userId)
         }
 
         if accounts.isEmpty {
