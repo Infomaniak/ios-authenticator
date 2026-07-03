@@ -116,7 +116,7 @@ public struct LoginView: View {
                         .controlSize(.large)
                         .disabled(password.isEmpty)
                         .buttonStyle(.ikBorderedProminent)
-                        .ikButtonLoading(account.status.sendCredentials == nil)
+                        .ikButtonLoading(account.status.isSendingCredentials)
                         .ikButtonFullWidth(true)
                         .padding(.vertical, value: .small)
                 }
