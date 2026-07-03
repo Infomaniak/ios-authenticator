@@ -104,15 +104,12 @@ public actor AccountManager: AccountManagerable {
     }
 
     public func createAccounts(accountsToDerive: [ConnectedAccount]) async throws {
-        let deviceId = try await deviceManager.getOrCreateCurrentDevice().uid
-
         let userProfiles: [SharedUserProfile] = await accountsToDerive.asyncCompactMap { [self] accountToDerive in
             do {
                 let derivedApiToken = try await networkLoginService.derivateApiToken(
                     for: accountToDerive,
                     appBundleId: Constants.bundleId
                 )
-                await tokenStore.addToken(newToken: derivedApiToken, associatedDeviceId: deviceId)
 
                 let temporaryApiFetcher = ApiFetcher(token: derivedApiToken, delegate: refreshTokenDelegate)
                 let user = try await userProfileStore.updateUserProfile(with: temporaryApiFetcher, options: [.security])
@@ -128,12 +125,8 @@ public actor AccountManager: AccountManagerable {
     }
 
     public func createAccount(token: ApiToken) async throws {
-        let deviceId = try await deviceManager.getOrCreateCurrentDevice().uid
-
         let temporaryApiFetcher = ApiFetcher(token: token, delegate: refreshTokenDelegate)
         let user = try await userProfileStore.updateUserProfile(with: temporaryApiFetcher, options: [.security])
-
-        tokenStore.addToken(newToken: token, associatedDeviceId: deviceId)
 
         try await createAccounts(sharedUserProfiles: [SharedUserProfile(from: user, sharedApiToken: SharedApiToken(from: token))])
     }
