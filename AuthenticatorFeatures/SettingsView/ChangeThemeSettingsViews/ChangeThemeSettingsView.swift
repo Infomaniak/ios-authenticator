@@ -32,6 +32,7 @@ struct ChangeThemeSettingsView: View {
         .authScrollViewStyle()
         .navigationTitle(AuthenticatorResourcesStrings.themeTitle)
         .navigationBarTitleDisplayMode(.inline)
+        .matomoView(view: ["ThemeSettings"])
     }
 }
 

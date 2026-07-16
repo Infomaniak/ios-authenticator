@@ -123,6 +123,7 @@ struct AccountDetailView: View {
         } message: {
             Text(AuthenticatorResourcesStrings.disconnectAccountOnThisDeviceDescription)
         }
+        .matomoView(view: ["AccountDetails"])
     }
 
     private func disconnectUser() {

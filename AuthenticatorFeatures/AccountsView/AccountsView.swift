@@ -85,6 +85,7 @@ public struct AccountsView: View {
             }
         }
         .accountsViewAlert()
+        .matomoView(view: ["AccountList"])
     }
 
     private func refreshAccountsList() async {

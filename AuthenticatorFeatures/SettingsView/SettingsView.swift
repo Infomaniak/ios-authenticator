@@ -106,6 +106,7 @@ public struct SettingsView: View {
             .sceneLifecycle(willEnterForeground: willEnterForeground)
             .animation(.default, value: isNotificationsEnabled)
         }
+        .matomoView(view: ["Settings"])
     }
 
     private func willEnterForeground() {
