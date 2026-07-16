@@ -1,4 +1,3 @@
-//
 /*
  Infomaniak Authenticator - iOS App
  Copyright (C) 2026 Infomaniak Network SA
@@ -25,4 +24,3 @@ public extension MatomoUtils.EventCategory {
     static let settingsGeneral = MatomoUtils.EventCategory(displayName: "settingsGeneral")
     static let migration = MatomoUtils.EventCategory(displayName: "migration")
 }
-
