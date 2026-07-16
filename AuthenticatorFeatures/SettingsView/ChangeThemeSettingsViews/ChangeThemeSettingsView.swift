@@ -19,6 +19,7 @@
 import AuthenticatorCore
 import AuthenticatorCoreUI
 import AuthenticatorResources
+import InfomaniakCoreCommonUI
 import SwiftUI
 
 struct ChangeThemeSettingsView: View {

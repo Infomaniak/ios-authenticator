@@ -90,7 +90,6 @@ final class LoginHandler: InfomaniakLoginDelegate, ObservableObject {
                 hideCreateAccountButton: true
             )
             try await loginSuccessful(code: result.code, codeVerifier: result.verifier)
-            matomo.track(eventWithCategory: .accountCategory, name: "loggedIn")
         } catch {
             loginFailed(error: error)
         }
@@ -102,7 +101,6 @@ final class LoginHandler: InfomaniakLoginDelegate, ObservableObject {
 
         do {
             try await accountManager.createAccounts(accountsToDerive: accounts)
-            matomo.track(eventWithCategory: .accountCategory, name: "loggedIn")
         } catch {
             loginFailed(error: error)
         }
@@ -125,6 +123,7 @@ final class LoginHandler: InfomaniakLoginDelegate, ObservableObject {
 
     private func loginSuccessful(code: String, codeVerifier verifier: String) async throws {
         try await accountManager.createAndSetCurrentAccount(code: code, codeVerifier: verifier)
+        matomo.track(eventWithCategory: .accountCategory, name: "loggedIn")
     }
 
     private func loginFailed(error: Error) {

@@ -24,6 +24,7 @@ import DesignSystem
 @preconcurrency import InAppTwoFactorAuthentication
 import InfomaniakConcurrency
 import InfomaniakCore
+import InfomaniakCoreCommonUI
 import InfomaniakCoreSwiftUI
 import InfomaniakDI
 import SwiftUI

@@ -43,6 +43,7 @@ struct OnboardingButtonsView: View {
 
     var body: some View {
         ContinueWithAccountView(isLoading: loginHandler.isLoading, excludingUserIds: excludedUserIds) {
+            matomo.track(eventWithCategory: .accountCategory, name: "openLoginWebview")
             login()
         } onLoginWithAccountsPressed: { accounts in
             matomo.track(eventWithCategory: .accountCategory, name: "openLoginWebview")

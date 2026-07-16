@@ -35,8 +35,8 @@ struct ToggleAppLockSettingsView: View {
             isOn: $isAppLockEnabled
         )
         .onChange(of: isAppLockEnabled) { newValue in
-            matomo.track(eventWithCategory: .settingsGeneral, name: "toggleBiometry")
             guard isProcessingUserAction != newValue else { return }
+            matomo.track(eventWithCategory: .settingsGeneral, name: "toggleBiometry")
             isProcessingUserAction = newValue
             toggleAppLock()
         }
