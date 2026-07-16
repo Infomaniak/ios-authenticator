@@ -20,7 +20,9 @@ import AuthenticatorCore
 import AuthenticatorResources
 import CoreAuthenticator
 import DesignSystem
+import InfomaniakCoreCommonUI
 import InfomaniakCoreSwiftUI
+import InfomaniakDI
 import SwiftUI
 
 public struct LoginView: View {
@@ -111,6 +113,10 @@ public struct LoginView: View {
                     }
                     .padding(.top, value: .large)
                     .accessibilityHint(AuthenticatorResourcesStrings.contentDescriptionButtonExternalLink)
+                    .onTapGesture {
+                        @LazyInjectService var matomo: MatomoUtils
+                        matomo.track(eventWithCategory: .migration, name: "openForgotPasswordWebview")
+                    }
 
                     Button(AuthenticatorResourcesStrings.continueButton, action: onContinueTapped)
                         .controlSize(.large)

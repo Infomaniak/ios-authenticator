@@ -27,7 +27,7 @@ import InfomaniakPrivacyManagement
 import SwiftUI
 
 public struct SettingsView: View {
-    @InjectService private var matomo: MatomoUtils
+    @LazyInjectService private var matomo: MatomoUtils
 
     @AppStorage(UserDefaults.shared.key(.notificationsEnabled)) private var isNotificationsEnabled = DefaultPreferences
         .notificationsEnabled
@@ -41,6 +41,9 @@ public struct SettingsView: View {
             List {
                 Section {
                     Toggle(AuthenticatorResourcesStrings.enableNotifications, isOn: $isNotificationsEnabled)
+                        .onChange(of: isNotificationsEnabled) { _ in
+                            matomo.track(eventWithCategory: .settingsGeneral, name: "toggleNotification")
+                        }
                     ToggleAppLockSettingsView()
                     NavigationLink(AuthenticatorResourcesStrings.themeTitle) {
                         ChangeThemeSettingsView()
@@ -52,7 +55,10 @@ public struct SettingsView: View {
                             description: AuthenticatorResourcesStrings.allowDeviceNotificationsDescription,
                             primaryButton: (
                                 title: AuthenticatorResourcesStrings.openSettingsButton,
-                                action: openPhoneSettings
+                                action: {
+                                    matomo.track(eventWithCategory: .settingsGeneral, name: "openNotificationSettings")
+                                    openPhoneSettings()
+                                }
                             )
                         )
                         .textCase(nil)
@@ -79,11 +85,17 @@ public struct SettingsView: View {
                         AuthenticatorTrailingLabel(\.feedbackTitle, iconKey: \.squareArrowDiagonalUp)
                     }
                     .accessibilityHint(AuthenticatorResourcesStrings.contentDescriptionButtonExternalLink)
+                    .onTapGesture {
+                        matomo.track(eventWithCategory: .settingsGeneral, name: "openFeedbackWebview")
+                    }
 
                     Link(destination: URLConstants.support.url) {
                         AuthenticatorTrailingLabel(\.contactSupportTitle, iconKey: \.squareArrowDiagonalUp)
                     }
                     .accessibilityHint(AuthenticatorResourcesStrings.contentDescriptionButtonExternalLink)
+                    .onTapGesture {
+                        matomo.track(eventWithCategory: .settingsGeneral, name: "openSupportWebview")
+                    }
                 } footer: {
                     Text(CorePlatform.appVersionLabel(fallbackAppName: "Infomaniak Authenticator"))
                 }

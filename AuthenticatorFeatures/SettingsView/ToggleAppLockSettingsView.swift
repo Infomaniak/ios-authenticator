@@ -24,6 +24,7 @@ import InfomaniakDI
 import SwiftUI
 
 struct ToggleAppLockSettingsView: View {
+    @LazyInjectService private var matomo: MatomoUtils
     @AppStorage(UserDefaults.shared.key(.appLock)) private var isAppLockEnabled: Bool = DefaultPreferences.appLock
 
     @State private var isProcessingUserAction = false
@@ -34,6 +35,7 @@ struct ToggleAppLockSettingsView: View {
             isOn: $isAppLockEnabled
         )
         .onChange(of: isAppLockEnabled) { newValue in
+            matomo.track(eventWithCategory: .settingsGeneral, name: "toggleBiometry")
             guard isProcessingUserAction != newValue else { return }
             isProcessingUserAction = newValue
             toggleAppLock()

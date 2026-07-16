@@ -23,10 +23,13 @@ import CoreAuthenticator
 import DesignSystem
 import InAppTwoFactorAuthentication
 @preconcurrency import InfomaniakCore
+import InfomaniakCoreCommonUI
 import InfomaniakDI
 import SwiftUI
 
 struct AccountDetailView: View {
+    @LazyInjectService private var matomo: MatomoUtils
+
     @State private var isShowingDisconnectConfirmationAlert = false
     @State private var isShowingDisconnectWarningAlert = false
     @State private var presentedWebViewURL: URL?
@@ -66,6 +69,7 @@ struct AccountDetailView: View {
 
             Section {
                 Button {
+                    matomo.track(eventWithCategory: .accountCategory, name: "openHistoryWebview")
                     presentedWebViewURL = URLConstants.accountActivity.url
                 } label: {
                     AuthenticatorTrailingLabel(\.activityHistoryButton, iconKey: \.squareArrowDiagonalUp)
@@ -74,6 +78,7 @@ struct AccountDetailView: View {
                 .disabled(account.isDisabled)
 
                 Button {
+                    matomo.track(eventWithCategory: .accountCategory, name: "openSettingsWebview")
                     presentedWebViewURL = URLConstants.accountParameters.url
                 } label: {
                     AuthenticatorTrailingLabel(\.accountSettingsButton, iconKey: \.squareArrowDiagonalUp)
@@ -121,6 +126,7 @@ struct AccountDetailView: View {
     }
 
     private func disconnectUser() {
+        matomo.track(eventWithCategory: .accountCategory, name: "disconnect")
         Task {
             @InjectService var accountManager: AccountManagerable
             await accountManager.removeAccount(userId: account.id)

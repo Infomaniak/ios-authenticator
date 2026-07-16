@@ -112,7 +112,8 @@ public final class RootViewState: ObservableObject {
         guard let appStatusSetupComplete = lastKnownAppStatus as? AppStatusSetupComplete else {
             return
         }
-
+        @LazyInjectService var matomo: MatomoUtils
+        matomo.track(eventWithCategory: .accountCategory, name: "askAddAccount")
         appStatusSetupComplete.addAnAccount()
     }
 
