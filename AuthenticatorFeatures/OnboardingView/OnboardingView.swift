@@ -94,12 +94,15 @@ public struct OnboardingView: View {
             switch steps[index] {
             case .login, .addAccount:
                 OnboardingButtonsView(loginHandler: loginHandler)
+                    .matomoView(view: ["OnboardingStart"])
             case .loginInProgress, .migrationInProgress:
                 EmptyView()
+                    .matomoView(view: ["SecuringAccount"])
             case .migration:
                 MigrateAccountsBottomView {
                     goToNextStep(index: index)
                 }
+                .matomoView(view: ["Migration"])
             case .success:
                 Button(AuthenticatorResourcesStrings.continueButton) {
                     goToNextStep(index: index)
@@ -108,6 +111,7 @@ public struct OnboardingView: View {
                 .ikButtonFullWidth(true)
                 .controlSize(.large)
                 .padding(.horizontal, value: .large)
+                .matomoView(view: ["OnboardingComplete"])
             case .biometry:
                 VStack {
                     Button(AuthenticatorResourcesStrings.enableButton) {
@@ -136,6 +140,7 @@ public struct OnboardingView: View {
                     .controlSize(.large)
                     .padding(.horizontal, value: .large)
                 }
+                .matomoView(view: ["NotificationPermission"])
             }
         }
         .appBackground()

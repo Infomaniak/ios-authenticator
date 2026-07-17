@@ -16,27 +16,11 @@
  along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-import AuthenticatorCore
-import AuthenticatorCoreUI
-import AuthenticatorResources
-import InfomaniakCoreCommonUI
-import SwiftUI
+import Foundation
+@preconcurrency import InfomaniakCoreCommonUI
 
-struct ChangeThemeSettingsView: View {
-    var body: some View {
-        Form {
-            ForEach(Theme.allCases) { theme in
-                ChangeThemeSettingsCell(theme: theme)
-            }
-            .authSectionStyle()
-        }
-        .authScrollViewStyle()
-        .navigationTitle(AuthenticatorResourcesStrings.themeTitle)
-        .navigationBarTitleDisplayMode(.inline)
-        .matomoView(view: ["ThemeSettings"])
-    }
-}
-
-#Preview {
-    ChangeThemeSettingsView()
+public extension MatomoUtils.EventCategory {
+    static let accountCategory = MatomoUtils.EventCategory(displayName: "account")
+    static let settingsGeneral = MatomoUtils.EventCategory(displayName: "settingsGeneral")
+    static let migration = MatomoUtils.EventCategory(displayName: "migration")
 }

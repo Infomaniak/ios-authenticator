@@ -22,12 +22,15 @@ import AuthenticatorResources
 import CoreAuthenticator
 import DesignSystem
 import InfomaniakCore
+import InfomaniakCoreCommonUI
 import InfomaniakCoreSwiftUI
 import InfomaniakCoreUIResources
 import InfomaniakDI
 import SwiftUI
 
 struct MigrateAccountsBottomView: View {
+    @LazyInjectService private var matomo: MatomoUtils
+
     @State private var accounts: [UIAccount]?
     @State private var isLoading = false
     @State private var isShowingAccountsList = false
@@ -49,6 +52,7 @@ struct MigrateAccountsBottomView: View {
                !accounts.isEmpty {
                 Button {
                     guard accounts.count > 1 else { return }
+                    matomo.track(eventWithCategory: .migration, name: "showRecoverableAccounts")
                     isShowingAccountsList.toggle()
                 } label: {
                     if accounts.count == 1,
@@ -62,9 +66,12 @@ struct MigrateAccountsBottomView: View {
                 .disabled(isLoading)
             }
 
-            Button(AuthenticatorResourcesStrings.startButton, action: onStartMigration)
-                .buttonStyle(.ikBorderedProminent)
-                .ikButtonLoading(isLoading)
+            Button(AuthenticatorResourcesStrings.startButton) {
+                matomo.track(eventWithCategory: .migration, name: "migrationStart")
+                onStartMigration()
+            }
+            .buttonStyle(.ikBorderedProminent)
+            .ikButtonLoading(isLoading)
         }
         .ikButtonFullWidth(true)
         .controlSize(.large)

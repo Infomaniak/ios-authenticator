@@ -24,6 +24,7 @@ import DesignSystem
 @preconcurrency import InAppTwoFactorAuthentication
 import InfomaniakConcurrency
 import InfomaniakCore
+import InfomaniakCoreCommonUI
 import InfomaniakCoreSwiftUI
 import InfomaniakDI
 import SwiftUI
@@ -85,6 +86,7 @@ public struct AccountsView: View {
             }
         }
         .accountsViewAlert()
+        .matomoView(view: ["AccountList"])
     }
 
     private func refreshAccountsList() async {

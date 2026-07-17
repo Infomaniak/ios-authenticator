@@ -19,6 +19,7 @@
 import AuthenticationServices
 import AuthenticatorCore
 import AuthenticatorResources
+import InfomaniakCoreCommonUI
 import InfomaniakCoreUIResources
 import InfomaniakDI
 import InfomaniakLogin
@@ -29,6 +30,7 @@ import SwiftUI
 final class LoginHandler: InfomaniakLoginDelegate, ObservableObject {
     @LazyInjectService private var loginService: InfomaniakLoginable
     @LazyInjectService private var accountManager: AccountManagerable
+    @LazyInjectService private var matomo: MatomoUtils
 
     @Published var isLoading = false
     @Published var error: ErrorDomain?
@@ -99,6 +101,7 @@ final class LoginHandler: InfomaniakLoginDelegate, ObservableObject {
 
         do {
             try await accountManager.createAccounts(accountsToDerive: accounts)
+            matomo.track(eventWithCategory: .accountCategory, name: "loggedIn")
         } catch {
             loginFailed(error: error)
         }
@@ -121,6 +124,7 @@ final class LoginHandler: InfomaniakLoginDelegate, ObservableObject {
 
     private func loginSuccessful(code: String, codeVerifier verifier: String) async throws {
         try await accountManager.createAndSetCurrentAccount(code: code, codeVerifier: verifier)
+        matomo.track(eventWithCategory: .accountCategory, name: "loggedIn")
     }
 
     private func loginFailed(error: Error) {

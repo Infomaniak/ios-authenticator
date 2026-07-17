@@ -32,6 +32,7 @@ import SwiftModalPresentation
 import SwiftUI
 
 struct OnboardingButtonsView: View {
+    @LazyInjectService private var matomo: MatomoUtils
     @InjectService private var accountManager: AccountManagerable
 
     @State private var excludedUserIds: [Int] = []
@@ -42,10 +43,12 @@ struct OnboardingButtonsView: View {
 
     var body: some View {
         ContinueWithAccountView(isLoading: loginHandler.isLoading, excludingUserIds: excludedUserIds) {
+            matomo.track(eventWithCategory: .accountCategory, name: "openLoginWebview")
             login()
         } onLoginWithAccountsPressed: { accounts in
             login(with: accounts)
         } onCreateAccountPressed: {
+            matomo.track(eventWithCategory: .accountCategory, name: "openCreationWebview")
             isPresentingCreateAccount = true
         }
         .id(excludedUserIds)
