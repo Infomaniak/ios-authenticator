@@ -46,7 +46,6 @@ struct OnboardingButtonsView: View {
             matomo.track(eventWithCategory: .accountCategory, name: "openLoginWebview")
             login()
         } onLoginWithAccountsPressed: { accounts in
-            matomo.track(eventWithCategory: .accountCategory, name: "openLoginWebview")
             login(with: accounts)
         } onCreateAccountPressed: {
             matomo.track(eventWithCategory: .accountCategory, name: "openCreationWebview")

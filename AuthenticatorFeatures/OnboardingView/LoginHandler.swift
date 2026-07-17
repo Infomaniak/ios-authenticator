@@ -101,6 +101,7 @@ final class LoginHandler: InfomaniakLoginDelegate, ObservableObject {
 
         do {
             try await accountManager.createAccounts(accountsToDerive: accounts)
+            matomo.track(eventWithCategory: .accountCategory, name: "loggedIn")
         } catch {
             loginFailed(error: error)
         }

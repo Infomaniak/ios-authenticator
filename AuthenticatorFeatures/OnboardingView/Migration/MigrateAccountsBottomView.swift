@@ -66,11 +66,9 @@ struct MigrateAccountsBottomView: View {
                 .disabled(isLoading)
             }
 
-            Button {
+            Button(AuthenticatorResourcesStrings.startButton) {
                 matomo.track(eventWithCategory: .migration, name: "migrationStart")
                 onStartMigration()
-            } label: {
-                Text(AuthenticatorResourcesStrings.startButton)
             }
             .buttonStyle(.ikBorderedProminent)
             .ikButtonLoading(isLoading)
