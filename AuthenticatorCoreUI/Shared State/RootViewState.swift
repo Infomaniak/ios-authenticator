@@ -168,7 +168,11 @@ public final class RootViewState: ObservableObject {
     func newOnboardingStepFromCurrentState(_ step: OnboardingStep) {
         switch state {
         case .migration:
-            state = .migration(step)
+            if step == .loginInProgress {
+                state = .migration(.migrationInProgress)
+            } else {
+                state = .migration(step)
+            }
         case .newAccount:
             state = .newAccount(step)
         case .addAccount:
