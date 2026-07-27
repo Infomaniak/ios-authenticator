@@ -34,10 +34,16 @@ extension UserProfile {
 
 extension SharedUserProfile: @retroactive @unchecked Sendable {
     convenience init(from userProfile: UserProfile, sharedApiToken: SharedApiToken) {
-        let lastChangedPasswordDate = userProfile.preferences?.security?.dateLastChangedPassword ?? Date.now
+        let lastChangedPasswordTime: KotlinLong?
+        if let lastChangedPasswordDate = userProfile.preferences?.security?.dateLastChangedPassword {
+            lastChangedPasswordTime = KotlinLong(value: Int64(lastChangedPasswordDate.timeIntervalSince1970))
+        } else {
+            lastChangedPasswordTime = nil
+        }
+
         let sharedSecurity = SharedSecurity(
             score: Int32(userProfile.preferences?.security?.score ?? 100),
-            dateLastChangedPassword: Int64(lastChangedPasswordDate.timeIntervalSince1970)
+            dateLastChangedPassword: lastChangedPasswordTime
         )
         self.init(
             id: Int32(userProfile.id),
