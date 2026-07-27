@@ -42,7 +42,7 @@ struct OnboardingButtonsView: View {
 
     @ObservedObject var loginHandler: LoginHandler
 
-    private var shouldUseWithAccounts: Bool {
+    private var shouldDisplayInterAppLogin: Bool {
         #if DEBUG
         if ApiEnvironment.current == .prod {
             return false
@@ -55,7 +55,7 @@ struct OnboardingButtonsView: View {
         ContinueWithAccountView(
             isLoading: loginHandler.isLoading,
             excludingUserIds: excludedUserIds,
-            shouldUseWithAccounts: shouldUseWithAccounts
+            shouldDisplayInterAppLogin: shouldDisplayInterAppLogin
         ) {
             matomo.track(eventWithCategory: .accountCategory, name: "openLoginWebview")
             login()
