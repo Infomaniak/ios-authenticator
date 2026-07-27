@@ -31,6 +31,7 @@ let accountsView = Feature(
     name: "AccountsView",
     additionalDependencies: [
         TargetDependency.target(name: "\(Constants.projectName)Resources"),
+        TargetDependency.external(name: "CoreAuthenticator"),
         TargetDependency.external(name: "NukeUI"),
         TargetDependency.external(name: "InAppTwoFactorAuthentication"),
         TargetDependency.external(name: "AppLock"),
@@ -65,6 +66,7 @@ let mainView = Feature(
 
 let onboardingView = Feature(name: "OnboardingView", additionalDependencies: [
     TargetDependency.target(name: "\(Constants.projectName)Resources"),
+    TargetDependency.external(name: "CoreAuthenticator"),
     TargetDependency.external(name: "InfomaniakCoreUIResources"),
     TargetDependency.external(name: "InfomaniakOnboarding"),
     TargetDependency.external(name: "Lottie"),
@@ -173,6 +175,7 @@ let project = Project(
                 dependencies: [
                     .target(name: "\(Constants.projectName)Core"),
                     .target(name: "\(Constants.projectName)Resources"),
+                    .external(name: "CoreAuthenticator"),
                     .external(name: "InfomaniakCoreUIResources"),
                     .external(name: "InfomaniakCoreSwiftUI"),
                     .external(name: "InfomaniakCore"),
