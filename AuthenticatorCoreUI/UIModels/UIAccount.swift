@@ -16,6 +16,7 @@
  along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
+import AuthenticatorCore
 import AuthenticatorResources
 import CoreAuthenticator
 import SwiftUI
@@ -64,7 +65,7 @@ public struct UIAccount: Identifiable, Hashable, Sendable {
             case .partiallyProtected:
                 AuthenticatorResourcesAsset.Images.shieldExclamationmark.swiftUIImage
             case .loggedOut, .loginFailed, .loginFailedRetriable:
-                AuthenticatorResourcesAsset.Images.circleSlash.swiftUIImage
+                AuthenticatorResourcesAsset.Images.circleExclamationmark.swiftUIImage
             }
         }
 
