@@ -21,6 +21,7 @@ import AuthenticatorCore
 import AuthenticatorCoreUI
 import AuthenticatorResources
 import DesignSystem
+@preconcurrency import InfomaniakCore
 import InfomaniakCoreCommonUI
 import InfomaniakCoreUIResources
 import InfomaniakCreateAccount
@@ -41,8 +42,21 @@ struct OnboardingButtonsView: View {
 
     @ObservedObject var loginHandler: LoginHandler
 
+    private var shouldDisplayInterAppLogin: Bool {
+        #if DEBUG
+        if ApiEnvironment.current == .prod {
+            return false
+        }
+        #endif
+        return true
+    }
+
     var body: some View {
-        ContinueWithAccountView(isLoading: loginHandler.isLoading, excludingUserIds: excludedUserIds) {
+        ContinueWithAccountView(
+            isLoading: loginHandler.isLoading,
+            excludingUserIds: excludedUserIds,
+            shouldDisplayInterAppLogin: shouldDisplayInterAppLogin
+        ) {
             matomo.track(eventWithCategory: .accountCategory, name: "openLoginWebview")
             login()
         } onLoginWithAccountsPressed: { accounts in
