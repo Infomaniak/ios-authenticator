@@ -45,4 +45,8 @@ public enum SentryDebug {
             scope.setUser(User(userId: String(userId)))
         }
     }
+
+    public static func capture(message: String) {
+        SentrySDK.capture(message: message)
+    }
 }

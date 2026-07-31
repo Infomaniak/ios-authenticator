@@ -1,5 +1,5 @@
 {
-  "originHash" : "be0d4bd83f8b08c1a0a45575d09cc97fc1554d0139cb59bb443c6ab6e3da12e1",
+  "originHash" : "1fdfb662aa7342bf9db5647d51852c5710c153cbef70c8015bc0814ca680a8d4",
   "pins" : [
     {
       "identity" : "alamofire",
@@ -15,8 +15,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/Infomaniak/android-authenticator",
       "state" : {
-        "revision" : "de174ce9085b25e8993e57b70bf8b49979b62ad0",
-        "version" : "0.0.3"
+        "revision" : "23514116f18d711e1b8ad32765de87ba7962fc33",
+        "version" : "0.0.4"
       }
     },
     {
