@@ -127,7 +127,10 @@ extension UIAccount.Status {
             } else {
                 self = .loginFailed
             }
+        case is AccountStatusNotConnected:
+            self = .loggedOut
         default:
+            SentryDebug.capture(message: "Unhandled Account Status \(accountStatus)")
             self = .loggedOut
         }
     }

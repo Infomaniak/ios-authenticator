@@ -52,7 +52,7 @@ final class TokenBridgeImplementation: AuthenticatorBridge {
 
     func __persistUserProfile(userProfile: SharedUserProfile) async throws {
         let localUserProfile = UserProfile(from: userProfile)
-        try await __persistTokenForAccount(userId: Int64(userProfile.id), token: userProfile.apiToken)
+        try await __attemptPersistingTokenForAccount(userId: Int64(userProfile.id), token: userProfile.apiToken)
         await accountManager.userProfileStore.addUserProfile(localUserProfile)
     }
 
@@ -64,7 +64,7 @@ final class TokenBridgeImplementation: AuthenticatorBridge {
         return SharedApiToken(from: token.apiToken)
     }
 
-    func __persistTokenForAccount(userId: Int64, token: SharedApiToken) async throws {
+    func __attemptPersistingTokenForAccount(userId: Int64, token: SharedApiToken) async throws {
         guard !token.isTemporary && !token.accessToken.isEmpty else {
             return
         }
