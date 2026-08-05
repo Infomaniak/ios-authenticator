@@ -85,17 +85,11 @@ public struct SettingsView: View {
                         AuthenticatorTrailingLabel(\.feedbackTitle, iconKey: \.squareArrowDiagonalUp)
                     }
                     .accessibilityHint(AuthenticatorResourcesStrings.contentDescriptionButtonExternalLink)
-                    .onTapGesture {
-                        matomo.track(eventWithCategory: .settingsGeneral, name: "openFeedbackWebview")
-                    }
 
                     Link(destination: URLConstants.support.url) {
                         AuthenticatorTrailingLabel(\.contactSupportTitle, iconKey: \.squareArrowDiagonalUp)
                     }
                     .accessibilityHint(AuthenticatorResourcesStrings.contentDescriptionButtonExternalLink)
-                    .onTapGesture {
-                        matomo.track(eventWithCategory: .settingsGeneral, name: "openSupportWebview")
-                    }
                 } footer: {
                     Text(CorePlatform.appVersionLabel(fallbackAppName: "Infomaniak Authenticator"))
                 }

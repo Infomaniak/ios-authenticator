@@ -113,10 +113,6 @@ public struct LoginView: View {
                     }
                     .padding(.top, value: .large)
                     .accessibilityHint(AuthenticatorResourcesStrings.contentDescriptionButtonExternalLink)
-                    .onTapGesture {
-                        @InjectService var matomo: MatomoUtils
-                        matomo.track(eventWithCategory: .migration, name: "openForgotPasswordWebview")
-                    }
 
                     Button(AuthenticatorResourcesStrings.continueButton, action: onContinueTapped)
                         .controlSize(.large)
