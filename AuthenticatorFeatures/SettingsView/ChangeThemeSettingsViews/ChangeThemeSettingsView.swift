@@ -20,6 +20,7 @@ import AuthenticatorCore
 import AuthenticatorCoreUI
 import AuthenticatorResources
 import InfomaniakCoreCommonUI
+import InfomaniakCoreUIResources
 import SwiftUI
 
 struct ChangeThemeSettingsView: View {
@@ -31,7 +32,7 @@ struct ChangeThemeSettingsView: View {
             .authSectionStyle()
         }
         .authScrollViewStyle()
-        .navigationTitle(AuthenticatorResourcesStrings.themeTitle)
+        .navigationTitle(InfomaniakCoreUIResources.CoreUILocalizable.themeTitle)
         .navigationBarTitleDisplayMode(.inline)
         .matomoView(view: ["ThemeSettings"])
     }

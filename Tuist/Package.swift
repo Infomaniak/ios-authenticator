@@ -39,7 +39,7 @@ let package = Package(
         .package(url: "https://github.com/getsentry/sentry-cocoa", .upToNextMajor(from: "9.8.0")),
         .package(url: "https://github.com/Infomaniak/multiplatform-authenticator", .upToNextMajor(from: "0.0.11")),
         .package(url: "https://github.com/Infomaniak/ios-core", .upToNextMajor(from: "19.0.0")),
-        .package(url: "https://github.com/Infomaniak/ios-core-ui", .upToNextMajor(from: "26.0.0")),
+        .package(url: "https://github.com/Infomaniak/ios-core-ui", .upToNextMajor(from: "26.1.0")),
         .package(url: "https://github.com/Infomaniak/ios-core-uikit", .upToNextMajor(from: "2.0.0")),
         .package(url: "https://github.com/Infomaniak/ios-create-account", .upToNextMajor(from: "25.0.0")),
         .package(url: "https://github.com/Infomaniak/ios-device-check", .upToNextMajor(from: "1.1.1")),
