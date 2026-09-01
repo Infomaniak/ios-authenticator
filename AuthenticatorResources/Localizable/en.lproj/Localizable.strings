@@ -430,15 +430,6 @@
 /* loco:695e97c480cab9ddd40df272 */
 "supportResponseDelay" = "We will respond within the next 24 business hours.";
 
-/* loco:6984aaf72ee9e539cc034522 */
-"themeDark" = "Dark";
-
-/* loco:6984aaea096886f05104ebd2 */
-"themeLight" = "Light";
-
-/* loco:6984ab07a677e4296f00a552 */
-"themeSystem" = "System";
-
 /* loco:695e981795a53b5f09055eb2 */
 "ticketSentSuccessDescription" = "We are doing our best to ensure an agent responds to you as soon as possible.";
 
