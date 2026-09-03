@@ -18,6 +18,7 @@
 
 import AuthenticatorResources
 import Foundation
+import InfomaniakCoreUIResources
 import SwiftUI
 
 public enum Theme: String, Sendable, CaseIterable, Identifiable {
@@ -43,11 +44,11 @@ public enum Theme: String, Sendable, CaseIterable, Identifiable {
     public var localizedName: String {
         switch self {
         case .dark:
-            return AuthenticatorResourcesStrings.themeDark
+            return InfomaniakCoreUIResources.CoreUILocalizable.themeDark
         case .light:
-            return AuthenticatorResourcesStrings.themeLight
+            return InfomaniakCoreUIResources.CoreUILocalizable.themeLight
         case .system:
-            return AuthenticatorResourcesStrings.themeSystem
+            return InfomaniakCoreUIResources.CoreUILocalizable.themeSystem
         }
     }
 

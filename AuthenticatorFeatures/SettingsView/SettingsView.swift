@@ -22,6 +22,7 @@ import AuthenticatorResources
 import DesignSystem
 import InfomaniakCore
 import InfomaniakCoreCommonUI
+import InfomaniakCoreUIResources
 import InfomaniakDI
 import InfomaniakPrivacyManagement
 import SwiftUI
@@ -45,7 +46,7 @@ public struct SettingsView: View {
                             matomo.track(eventWithCategory: .settingsGeneral, name: "toggleNotification")
                         }
                     ToggleAppLockSettingsView()
-                    NavigationLink(AuthenticatorResourcesStrings.themeTitle) {
+                    NavigationLink(InfomaniakCoreUIResources.CoreUILocalizable.themeTitle) {
                         ChangeThemeSettingsView()
                     }
                 } header: {

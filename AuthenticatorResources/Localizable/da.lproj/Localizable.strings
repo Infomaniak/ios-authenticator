@@ -430,18 +430,6 @@
 /* loco:695e97c480cab9ddd40df272 */
 "supportResponseDelay" = "Vi vil svare inden for de næste 24 arbejdstimer.";
 
-/* loco:6984aaf72ee9e539cc034522 */
-"themeDark" = "Mørk";
-
-/* loco:6984aaea096886f05104ebd2 */
-"themeLight" = "Lys";
-
-/* loco:6984ab07a677e4296f00a552 */
-"themeSystem" = "System";
-
-/* loco:6984a5b068e4c318150d2475 */
-"themeTitle" = "Tema";
-
 /* loco:695e981795a53b5f09055eb2 */
 "ticketSentSuccessDescription" = "Vi gør vores bedste for at sikre, at en agent svarer dig så hurtigt som muligt.";
 

@@ -430,18 +430,6 @@
 /* loco:695e97c480cab9ddd40df272 */
 "supportResponseDelay" = "Responderemos nas próximas 24 horas úteis.";
 
-/* loco:6984aaf72ee9e539cc034522 */
-"themeDark" = "Escuro";
-
-/* loco:6984aaea096886f05104ebd2 */
-"themeLight" = "Claro";
-
-/* loco:6984ab07a677e4296f00a552 */
-"themeSystem" = "Sistema";
-
-/* loco:6984a5b068e4c318150d2475 */
-"themeTitle" = "Tema";
-
 /* loco:695e981795a53b5f09055eb2 */
 "ticketSentSuccessDescription" = "Estamos fazendo o possível para garantir que um agente responda o mais rápido possível.";
 
