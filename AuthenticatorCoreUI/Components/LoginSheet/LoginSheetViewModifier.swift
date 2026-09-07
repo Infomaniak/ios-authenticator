@@ -66,10 +66,13 @@ struct ReLoginSheetViewModifier: ViewModifier {
         guard let accountId = account?.id else { return }
 
         for await accounts in authenticatorFacade.accounts {
-            guard let account = accounts.first(where: { $0.id == accountId }),
-                  let accountStatus = account.status as? AccountStatusNotConnectedReLogin else { return }
+            guard let account = accounts.first(where: { $0.id == accountId }) else { continue }
 
-            self.account?.status = accountStatus
+            if let accountStatus = account.status as? AccountStatusNotConnectedReLogin {
+                self.account?.status = accountStatus
+            } else {
+                self.account = nil
+            }
         }
     }
 }

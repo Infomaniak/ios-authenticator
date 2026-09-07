@@ -1,5 +1,5 @@
 {
-  "originHash" : "d231b76db54388cfcd266430656d8ac509f20024a13f929dcc492ebdfd2cc3e2",
+  "originHash" : "17e107757456107b9dbd06d7c68bf95fef6d96ef09660eb0d856e7213da9a765",
   "pins" : [
     {
       "identity" : "alamofire",
@@ -132,8 +132,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/Infomaniak/multiplatform-authenticator",
       "state" : {
-        "revision" : "5b2c856034962618936e8c5f5a88b6e7713e582b",
-        "version" : "0.0.11"
+        "revision" : "9d550926b8e51e118fd68f84a325c0424b5945ac",
+        "version" : "0.0.12"
       }
     },
     {
