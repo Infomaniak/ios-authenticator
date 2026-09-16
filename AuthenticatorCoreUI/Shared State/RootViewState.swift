@@ -126,7 +126,7 @@ public final class RootViewState: ObservableObject {
     }
 
     func observeAppStatus() {
-        Task {
+        _ = Task {
             for try await status in authenticatorFacade.appStatus {
                 Self.logger.info("Received new app status: \(String(describing: status))")
                 lastKnownAppStatus = status

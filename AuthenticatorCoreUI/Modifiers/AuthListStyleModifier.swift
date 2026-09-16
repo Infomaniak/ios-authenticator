@@ -18,6 +18,7 @@
 
 import SwiftUI
 
+@MainActor
 public extension List {
     func authListStyle() -> some View {
         listStyle(.insetGrouped)

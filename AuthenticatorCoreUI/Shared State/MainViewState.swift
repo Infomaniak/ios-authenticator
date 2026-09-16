@@ -61,7 +61,7 @@ public final class MainViewState: ObservableObject, @MainActor Equatable {
     }
 
     func observeAccounts() {
-        Task {
+        _ = Task {
             for try await newAccounts in authenticatorFacade.accounts {
                 let newUIAccounts = newAccounts.map { UIAccount(account: $0) }
                 let accountWithChangedPassword = firstAccountWithChangedPassword(accounts: newAccounts)
