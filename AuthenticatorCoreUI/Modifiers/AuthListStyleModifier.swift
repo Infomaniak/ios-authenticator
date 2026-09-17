@@ -18,7 +18,6 @@
 
 import SwiftUI
 
-@MainActor
 public extension List {
     func authListStyle() -> some View {
         listStyle(.insetGrouped)
@@ -27,7 +26,7 @@ public extension List {
 }
 
 public extension View {
-    func authScrollViewStyle() -> some View {
+    nonisolated func authScrollViewStyle() -> some View {
         scrollContentBackground(.hidden)
             .appBackground()
     }
