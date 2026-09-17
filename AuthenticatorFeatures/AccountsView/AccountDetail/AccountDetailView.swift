@@ -21,7 +21,7 @@ import AuthenticatorCoreUI
 import AuthenticatorResources
 import CoreAuthenticator
 import DesignSystem
-import InAppTwoFactorAuthentication
+@preconcurrency import InAppTwoFactorAuthentication
 @preconcurrency import InfomaniakCore
 import InfomaniakCoreCommonUI
 import InfomaniakDI

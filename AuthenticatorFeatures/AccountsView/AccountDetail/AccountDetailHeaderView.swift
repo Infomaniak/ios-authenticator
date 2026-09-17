@@ -19,7 +19,7 @@
 import AuthenticatorCore
 import AuthenticatorCoreUI
 import AuthenticatorResources
-import CoreAuthenticator
+@preconcurrency import CoreAuthenticator
 import DesignSystem
 import InfomaniakCoreUIResources
 import InfomaniakDI
