@@ -1,5 +1,5 @@
 {
-  "originHash" : "0552fe3b1279f4ff7d67cdec1b2b0e100046a5eb7faa62fb163ca2c08ce0c571",
+  "originHash" : "98db79844b12ef3ef255fd86d7b723070756ffd23cc101a05b127c1a0988fa52",
   "pins" : [
     {
       "identity" : "alamofire",
@@ -105,8 +105,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/Infomaniak/ios-onboarding",
       "state" : {
-        "branch" : "fix/onboarding-display-on-iphone-duo",
-        "revision" : "693ae7cd2e4dadfe4b24063134a1e7a5d434517b"
+        "revision" : "73057f3484a081f322a720a11b1c32741d26b63c",
+        "version" : "1.5.0"
       }
     },
     {
