@@ -50,7 +50,8 @@ public struct PreloadingView: View {
                 logoImage
                     .resizable()
                     .aspectRatio(contentMode: .fit)
-                    .frame(width: 96)
+                    .frame(width: 80)
+                    .padding(.top, -56)
                     .alignmentGuide(.splashScreenIconAlignment) { d in d[VerticalAlignment.center] }
 
                 ProgressView()
@@ -58,7 +59,8 @@ public struct PreloadingView: View {
                     .tint(.white)
             }
         }
-        .safeAreaInset(edge: .bottom, spacing: 0) {
+        .ignoresSafeArea()
+        .safeAreaInset(edge: .bottom) {
             infomaniakLogoImage
                 .padding(.bottom, value: .medium)
         }
