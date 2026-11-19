@@ -34,13 +34,12 @@ public struct AccountLabel: View {
         HStack {
             LazyImage(url: account.profilePictureURL) { state in
                 if let image = state.image {
-                    AvatarImage(image: image, size: size.iconSize)
+                    AvatarImage(image: image)
                 } else {
                     InitialsView(
                         initials: NameFormatter(fullName: account.name).initials,
                         backgroundColor: Color.backgroundColor(from: account.hashValue),
-                        foregroundColor: Color.Token.Text.coloredBackground,
-                        size: size.iconSize
+                        foregroundColor: Color.Token.Text.coloredBackground
                     )
                 }
             }
